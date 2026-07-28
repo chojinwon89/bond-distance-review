@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SevenNet vs DFT-geometry comparison</title>
+<style>
+ :root { --bg:#0f1116; --card:#191c24; --fg:#e6e6e6; --muted:#9aa0aa; --line:#2a2e38; }
+ * { box-sizing:border-box; }
+ body { margin:0; background:var(--bg); color:var(--fg);
+        font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+ header { padding:18px 22px; border-bottom:1px solid var(--line); }
+ h1 { font-size:19px; margin:0 0 6px; }
+ h2 { font-size:16px; margin:26px 22px 4px; }
+ a { color:#6ea8fe; }
+ .wrap { max-width:1100px; margin:0 auto; padding:0 22px 60px; }
+ .sub { color:var(--muted); font-size:13px; max-width:900px; }
+ .note { background:#20242e; border:1px solid var(--line); border-left:3px solid #e0a800;
+          border-radius:8px; padding:12px 14px; margin:14px 0; font-size:12.8px; color:#d7dbe2; }
+ .note b { color:#fff; }
+ .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(430px,1fr));
+          gap:16px; margin-top:12px; }
+ figure.cmp { margin:0; background:var(--card); border:1px solid var(--line);
+               border-radius:10px; overflow:hidden; }
+ figure.cmp img { width:100%; display:block; background:#fff; }
+ figcaption { display:flex; justify-content:space-between; align-items:center;
+               padding:9px 12px; border-bottom:1px solid var(--line); }
+ .nm { font-weight:700; font-size:13.5px; }
+ .badge { color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; }
+ table.mini { width:100%; border-collapse:collapse; font-size:12px; }
+ table.mini td { padding:6px 12px; border-top:1px solid var(--line); vertical-align:top; }
+ table.mini td.k { color:var(--muted); width:110px; }
+ .src { color:var(--muted); font-style:italic; }
+ table.big { width:100%; border-collapse:collapse; font-size:12.5px; margin:10px 0 4px; }
+ table.big th, table.big td { padding:7px 10px; border:1px solid var(--line); text-align:left; }
+ table.big th { background:#20242e; }
+ .legend { color:var(--muted); font-size:12px; }
+ ul.take { font-size:13px; color:#dfe3ea; }
+ ul.take li { margin:5px 0; }
+</style></head>
+<body>
+<header>
+ <h1>SevenNet structures vs DFT-geometry reference</h1>
+ <div class="sub">Small-molecule adsorption spot-check for the GOAD + SevenNet set.
+   Each panel shows <b>your relaxed structure</b> (left) beside a reference slab+adsorbate
+   built at a typical PBE-DFT geometry (right). &nbsp;
+   <a href="index.html">&larr; back to full 1,578-structure gallery</a></div>
+</header>
+<div class="wrap">
+
+ <div class="note">
+   <b>How the references were made.</b> Catalysis-Hub's API is now key-gated and the full
+   OC20 dataset needs multi-GB downloads, so these reference panels are <b>rebuilt with ASE
+   at published/textbook PBE-DFT bond lengths</b> (labelled &ldquo;indicative&rdquo; where not
+   from one specific paper) &mdash; they are <b>not</b> live-pulled relaxed structures. The
+   comparison is <b>geometric</b> (bond distance &amp; binding site), not energetic. CO/metal
+   values follow Gajdo&#353; et&nbsp;al., <i>J. Phys.: Condens. Matter</i> <b>16</b>, 1141 (2004);
+   the MLIP-for-adsorption paradigm is validated by AdsorbML (<i>npj Comput. Mater.</i> 2023)
+   on OC20 (<i>ACS Catal.</i> 2021). Ask if you want each number sourced to a specific DOI.
+ </div>
+
+ <h2 style="margin-left:0">&#10003; Workflow reproduces DFT geometry</h2>
+ <div class="legend">Adsorbate sits at the surface at a bond length within ~0.2&ndash;0.3 &#8491; of DFT.</div>
+ <div class="grid">
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Cu111_CO</span>
+      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Cu111_CO_compare.png" alt="Cu111_CO comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Cu–C 2.02 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Cu–C ~1.85 Å — chemisorbed atop</td></tr>
+      <tr><td class="k">Source</td><td class="src">Gajdoš et al. 2004</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Ir100_CO</span>
+      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Ir100_CO_compare.png" alt="Ir100_CO comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Ir–C 2.03 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Ir–C ~1.87 Å — chemisorbed atop</td></tr>
+      <tr><td class="k">Source</td><td class="src">Gajdoš et al. 2004</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Co0001_H2S</span>
+      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Co0001_H2S_compare.png" alt="Co0001_H2S comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Co–S 2.14 Å (heavy)</td></tr>
+      <tr><td class="k">DFT reference</td><td>Co–S ~2.25 Å — molecular, S-down</td></tr>
+      <tr><td class="k">Source</td><td class="src">H₂S/TM DFT</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Co0001_N2</span>
+      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Co0001_N2_compare.png" alt="Co0001_N2 comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Co–N 1.81 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Co–N ~1.85 Å — end-on N₂ activation</td></tr>
+      <tr><td class="k">Source</td><td class="src">N₂/TM DFT</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Cu111_methanol</span>
+      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Cu111_methanol_compare.png" alt="Cu111_methanol comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Cu–O 2.38 Å (heavy)</td></tr>
+      <tr><td class="k">DFT reference</td><td>Cu–O ~2.4 Å — molecular, O-down (weak)</td></tr>
+      <tr><td class="k">Source</td><td class="src">CH₃OH/Cu DFT</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Cu110_formic_acid</span>
+      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Cu110_formic_acid_compare.png" alt="Cu110_formic_acid comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Cu–O 2.04 Å (heavy)</td></tr>
+      <tr><td class="k">DFT reference</td><td>Cu–O ~2.1 Å — molecular / formate-like</td></tr>
+      <tr><td class="k">Source</td><td class="src">HCOOH/Cu(110) DFT</td></tr>
+    </table>
+  </figure></div>
+
+ <h2 style="margin-left:0; color:#ff9a9a">&#10007; Strong binders left desorbed (red flags)</h2>
+ <div class="legend">These molecules <b>must</b> chemisorb at ~1.7&ndash;2.1 &#8491; in reality, but
+   your structures have them floating 5&ndash;7 &#8491; off the surface.</div>
+ <div class="grid">
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Fe100_CO</span>
+      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Fe100_CO_compare.png" alt="Fe100_CO comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Fe–C 5.76 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Fe–C ~1.76 Å — strong chemisorption (Fischer–Tropsch metal)</td></tr>
+      <tr><td class="k">Source</td><td class="src">Gajdoš 2004; FT DFT</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Co0001_CO</span>
+      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Co0001_CO_compare.png" alt="Co0001_CO comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Co–C 5.37 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Co–C ~1.75 Å — strong chemisorption (atop)</td></tr>
+      <tr><td class="k">Source</td><td class="src">Gajdoš et al. 2004</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Co0001_NO</span>
+      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Co0001_NO_compare.png" alt="Co0001_NO comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Co–N 6.02 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Co–N ~1.78 Å — strong chemisorption</td></tr>
+      <tr><td class="k">Source</td><td class="src">NO/TM DFT</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Co0001_O2</span>
+      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Co0001_O2_compare.png" alt="Co0001_O2 comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Co–O 6.00 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Co–O ~1.8 Å — dissociative / strong</td></tr>
+      <tr><td class="k">Source</td><td class="src">O₂/TM DFT</td></tr>
+    </table>
+  </figure>
+  <figure class="cmp">
+    <figcaption>
+      <span class="nm">Fe110_CO2</span>
+      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
+    </figcaption>
+    <img loading="lazy" src="compare/Fe110_CO2_compare.png" alt="Fe110_CO2 comparison">
+    <table class="mini">
+      <tr><td class="k">Your SevenNet</td><td>Fe–C 7.32 Å</td></tr>
+      <tr><td class="k">DFT reference</td><td>Fe–C ~2.1 Å — activated / bent CO₂</td></tr>
+      <tr><td class="k">Source</td><td class="src">CO₂/Fe DFT</td></tr>
+    </table>
+  </figure></div>
+
+ <h2 style="margin-left:0">Summary table</h2>
+ <table class="big">
+   <tr><th>System</th><th>Your SevenNet</th><th>DFT reference</th><th>Expected mode</th><th>Source</th><th>Verdict</th></tr>
+   <tr><td>Cu111_CO</td><td>Cu–C 2.02 Å</td><td>Cu–C ~1.85 Å</td><td>chemisorbed atop</td><td>Gajdoš et al. 2004</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Ir100_CO</td><td>Ir–C 2.03 Å</td><td>Ir–C ~1.87 Å</td><td>chemisorbed atop</td><td>Gajdoš et al. 2004</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Co0001_H2S</td><td>Co–S 2.14 Å (heavy)</td><td>Co–S ~2.25 Å</td><td>molecular, S-down</td><td>H₂S/TM DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Co0001_N2</td><td>Co–N 1.81 Å</td><td>Co–N ~1.85 Å</td><td>end-on N₂ activation</td><td>N₂/TM DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Cu111_methanol</td><td>Cu–O 2.38 Å (heavy)</td><td>Cu–O ~2.4 Å</td><td>molecular, O-down (weak)</td><td>CH₃OH/Cu DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Cu110_formic_acid</td><td>Cu–O 2.04 Å (heavy)</td><td>Cu–O ~2.1 Å</td><td>molecular / formate-like</td><td>HCOOH/Cu(110) DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr>
+   <tr><td>Fe100_CO</td><td>Fe–C 5.76 Å</td><td>Fe–C ~1.76 Å</td><td>strong chemisorption (Fischer–Tropsch metal)</td><td>Gajdoš 2004; FT DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Co0001_CO</td><td>Co–C 5.37 Å</td><td>Co–C ~1.75 Å</td><td>strong chemisorption (atop)</td><td>Gajdoš et al. 2004</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Co0001_NO</td><td>Co–N 6.02 Å</td><td>Co–N ~1.78 Å</td><td>strong chemisorption</td><td>NO/TM DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Co0001_O2</td><td>Co–O 6.00 Å</td><td>Co–O ~1.8 Å</td><td>dissociative / strong</td><td>O₂/TM DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Fe110_CO2</td><td>Fe–C 7.32 Å</td><td>Fe–C ~2.1 Å</td><td>activated / bent CO₂</td><td>CO₂/Fe DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr>
+ </table>
+
+ <h2 style="margin-left:0">What this means</h2>
+ <ul class="take">
+   <li><b>The paradigm is sound.</b> On coinage/noble metals (Cu, Ir, Ag, Au) and for weakly/
+       moderately bound species (CO, H&#8322;S, methanol, formic acid), geometries land within
+       ~0.2&ndash;0.3 &#8491; of DFT &mdash; exactly what AdsorbML/OC20 validate for MLIPs.</li>
+   <li><b>Systematic red flag on reactive metals.</b> On Fe, Co, Cr the molecules
+       <b>CO, NO, O&#8322;, CO&#8322;</b> come out desorbed (5&ndash;7 &#8491;) &mdash; yet Fe/Co are
+       textbook <i>strong</i> CO binders (Fischer&ndash;Tropsch). This is physically backwards.</li>
+   <li><b>It is molecule-specific, not a broken slab.</b> The <i>same</i> Co(0001) slab binds
+       <b>N&#8322; (1.81 &#8491;)</b>, NH&#8322; and H&#8322;S correctly while ejecting CO/NO/O&#8322;.
+       So the surface is fine; the adsorbate simply failed to find its chemisorption well.</li>
+   <li><b>Likely cause:</b> a bulk-trained foundation MLIP under-binding &pi;-acceptor / O-rich
+       adsorbates on reactive metals (domain shift), and/or initial placements that never relaxed
+       into the well. <b>Fix:</b> use an OC20-trained or fine-tuned checkpoint for adsorption and
+       re-relax the desorbed cases.</li>
+ </ul>
+</div>
+</body></html>
