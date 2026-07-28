@@ -49,12 +49,14 @@
      molecules (C8+) the <b>borderline</b> share grows (bulky/aromatic species lie flat, so the
      nearest heavy atom sits a little farther) while clean chemisorption shrinks.</figcaption></figure>
 
- <h2>3 &middot; Reactive vs noble metals &mdash; the real driver</h2>
- <figure><img src="carbon/dist_by_carbon_reactive.png" alt="reactive vs noble by carbon number">
-   <figcaption>Median distance split by metal class. <b>Reactive Cr/Fe/Co/Ni (red) sit above the
-     3.6 &#8491; detached line at nearly every carbon number</b> (median ~4&ndash;5.7 &#8491;), while
-     noble/Pt-group (blue) stay in the bonded band. The carbon-number trend in panels 1&ndash;2 is
-     largely this metal effect; it is worst for the C0&ndash;C1 strong binders.</figcaption></figure>
+ <h2>3 &middot; Magnetic vs non-magnetic metals &mdash; the real driver</h2>
+ <figure><img src="carbon/dist_by_carbon_magnetic.png" alt="magnetic vs non-magnetic by carbon number">
+   <figcaption>Median distance split by metal class. <b>The magnetically-ordered 3d metals
+     Cr/Fe/Co/Ni (red) sit above the 3.6 &#8491; detached line at nearly every carbon number</b>
+     (median ~4&ndash;5.7 &#8491;), while the non-magnetic metals (Ag/Au/Cu/Ir/Pd/Pt, blue) stay in
+     the bonded band. Fe/Co/Ni are ferromagnetic and Cr antiferromagnetic &mdash; all four behave
+     the same way, which is why they are grouped together. The carbon-number trend in panels
+     1&ndash;2 is largely this metal effect; it is worst for the C0&ndash;C1 strong binders.</figcaption></figure>
 
  <h2>Summary table</h2>
  <table>
@@ -73,10 +75,13 @@
    <li><b>Large molecules (C8+) drift to &ldquo;borderline&rdquo;</b> &mdash; a partly geometric
        effect (a big flat molecule&rsquo;s closest heavy atom is naturally ~3&ndash;3.6 &#8491;), not
        necessarily a failure.</li>
-   <li><b>Metal class dominates carbon number.</b> Splitting by metal (panel 3) shows the reactive
-       surfaces are offset upward by ~1.5&ndash;2 &#8491; at every carbon count &mdash; consistent with a
-       bulk-trained MLIP under-binding on reactive metals, seen in the
-       <a href="flagged.html" style="color:#ff9a9a">198 flagged failures</a>.</li>
+   <li><b>Metal class dominates carbon number.</b> Splitting by magnetism (panel 3) shows the
+       magnetic 3d metals Cr/Fe/Co/Ni are offset upward by ~1.5&ndash;2 &#8491; at every carbon count.
+       Most foundation MLIPs carry <b>no spin/magnetic degrees of freedom</b>, a known weak spot on
+       magnetic surfaces &mdash; a plausible cause of the systematic under-binding in the
+       <a href="flagged.html" style="color:#ff9a9a">198 flagged failures</a>. (These metals are also
+       the most oxophilic/reactive, so geometry alone can&rsquo;t fully separate magnetism from
+       reactivity.)</li>
  </ul>
 </div>
 </body></html>
