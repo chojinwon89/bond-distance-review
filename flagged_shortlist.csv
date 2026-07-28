@@ -1,0 +1,199 @@
+name,surface,metal,molecule,category,dist,min_dist,min_dist_heavy,pair_heavy,tier,conf,reason,png
+Fe110_CO2,Fe110,Fe,CO2,detached,7.32,7.321,7.321,Fe-C,1,high,CO2: C activation (bent) on reactive Fe; should chemisorb,Fe110_CO2.png
+Fe110_H2O,Fe110,Fe,H2O,detached,6.57,5.853,6.566,Fe-O,1,high,H2O: O lone-pair on reactive Fe; should chemisorb,Fe110_H2O.png
+Cr110_H2O,Cr110,Cr,H2O,detached,6.4,5.563,6.401,Cr-O,1,high,H2O: O lone-pair on reactive Cr; should chemisorb,Cr110_H2O.png
+Cr100_H2O,Cr100,Cr,H2O,detached,6.19,5.619,6.192,Cr-O,1,high,H2O: O lone-pair on reactive Cr; should chemisorb,Cr100_H2O.png
+Fe111_H2O,Fe111,Fe,H2O,detached,6.08,5.561,6.077,Fe-O,1,high,H2O: O lone-pair on reactive Fe; should chemisorb,Fe111_H2O.png
+Fe100_H2O,Fe100,Fe,H2O,detached,6.07,5.489,6.066,Fe-O,1,high,H2O: O lone-pair on reactive Fe; should chemisorb,Fe100_H2O.png
+Co0001_NO,Co0001,Co,NO,detached,6.02,6.023,6.023,Co-N,1,high,NO binds all TMs (N-down radical); should be ~1.8–2.4 Å,Co0001_NO.png
+Fe111_CO2,Fe111,Fe,CO2,detached,6.01,6.006,6.006,Fe-O,1,high,CO2: C activation (bent) on reactive Fe; should chemisorb,Fe111_CO2.png
+Co0001_O2,Co0001,Co,O2,detached,6.0,5.995,5.995,Co-O,1,high,O2: O₂ dissociation on reactive Co; should chemisorb,Co0001_O2.png
+Cr100_O2,Cr100,Cr,O2,detached,6.0,5.997,5.997,Cr-O,1,high,O2: O₂ dissociation on reactive Cr; should chemisorb,Cr100_O2.png
+Cr110_CO2,Cr110,Cr,CO2,detached,6.0,6.005,6.005,Cr-O,1,high,CO2: C activation (bent) on reactive Cr; should chemisorb,Cr110_CO2.png
+Ni111_CO2,Ni111,Ni,CO2,detached,6.0,5.997,5.997,Ni-O,1,high,CO2: C activation (bent) on reactive Ni; should chemisorb,Ni111_CO2.png
+Cr111_CO2,Cr111,Cr,CO2,detached,5.98,5.978,5.978,Cr-O,1,high,CO2: C activation (bent) on reactive Cr; should chemisorb,Cr111_CO2.png
+Cr111_H2O,Cr111,Cr,H2O,detached,5.98,5.336,5.978,Cr-O,1,high,H2O: O lone-pair on reactive Cr; should chemisorb,Cr111_H2O.png
+Co0001_H2O,Co0001,Co,H2O,detached,5.97,5.233,5.969,Co-O,1,high,H2O: O lone-pair on reactive Co; should chemisorb,Co0001_H2O.png
+Fe100_CO2,Fe100,Fe,CO2,detached,5.96,5.957,5.957,Fe-C,1,high,CO2: C activation (bent) on reactive Fe; should chemisorb,Fe100_CO2.png
+Ni100_CO2,Ni100,Ni,CO2,detached,5.95,5.947,5.947,Ni-C,1,high,CO2: C activation (bent) on reactive Ni; should chemisorb,Ni100_CO2.png
+Cr100_carbonate,Cr100,Cr,carbonate,detached,5.93,5.928,5.928,Cr-C,1,high,carbonate binds all TMs (carbonate O); should be ~1.8–2.4 Å,Cr100_carbonate.png
+Ni110_CO2,Ni110,Ni,CO2,detached,5.9,5.896,5.896,Ni-C,1,high,CO2: C activation (bent) on reactive Ni; should chemisorb,Ni110_CO2.png
+Co0001_carbonate,Co0001,Co,carbonate,detached,5.88,5.884,5.884,Co-C,1,high,carbonate binds all TMs (carbonate O); should be ~1.8–2.4 Å,Co0001_carbonate.png
+Co0001_CO2,Co0001,Co,CO2,detached,5.87,5.872,5.872,Co-C,1,high,CO2: C activation (bent) on reactive Co; should chemisorb,Co0001_CO2.png
+Cr100_CO2,Cr100,Cr,CO2,detached,5.87,5.87,5.87,Cr-C,1,high,CO2: C activation (bent) on reactive Cr; should chemisorb,Cr100_CO2.png
+Co0001_NO2,Co0001,Co,NO2,detached,5.79,5.789,5.789,Co-N,1,high,NO2 binds all TMs (N/O radical); should be ~1.8–2.4 Å,Co0001_NO2.png
+Cr100_NO,Cr100,Cr,NO,detached,5.76,5.756,5.756,Cr-N,1,high,NO binds all TMs (N-down radical); should be ~1.8–2.4 Å,Cr100_NO.png
+Fe100_CO,Fe100,Fe,CO,detached,5.76,5.757,5.757,Fe-C,1,high,CO binds all TMs (C-down π-acceptor); should be ~1.8–2.4 Å,Fe100_CO.png
+Cr100_CO,Cr100,Cr,CO,detached,5.71,5.712,5.712,Cr-C,1,high,CO binds all TMs (C-down π-acceptor); should be ~1.8–2.4 Å,Cr100_CO.png
+Cr100_NO2,Cr100,Cr,NO2,detached,5.66,5.66,5.66,Cr-N,1,high,NO2 binds all TMs (N/O radical); should be ~1.8–2.4 Å,Cr100_NO2.png
+Cr100_formate,Cr100,Cr,formate,detached,5.58,4.479,5.576,Cr-C,1,high,"formate binds all TMs (carboxylate O,O); should be ~1.8–2.4 Å",Cr100_formate.png
+Co0001_formate,Co0001,Co,formate,detached,5.51,4.404,5.506,Co-C,1,high,"formate binds all TMs (carboxylate O,O); should be ~1.8–2.4 Å",Co0001_formate.png
+Fe110_CO,Fe110,Fe,CO,detached,5.49,5.485,5.485,Fe-C,1,high,CO binds all TMs (C-down π-acceptor); should be ~1.8–2.4 Å,Fe110_CO.png
+Fe111_CO,Fe111,Fe,CO,detached,5.46,5.457,5.457,Fe-C,1,high,CO binds all TMs (C-down π-acceptor); should be ~1.8–2.4 Å,Fe111_CO.png
+Co0001_SO2,Co0001,Co,SO2,detached,5.42,5.42,5.42,Co-S,1,high,SO2 binds all TMs (S/O anchor); should be ~1.8–2.4 Å,Co0001_SO2.png
+Cr111_CO,Cr111,Cr,CO,detached,5.39,5.391,5.391,Cr-C,1,high,CO binds all TMs (C-down π-acceptor); should be ~1.8–2.4 Å,Cr111_CO.png
+Co0001_CO,Co0001,Co,CO,detached,5.38,5.375,5.375,Co-C,1,high,CO binds all TMs (C-down π-acceptor); should be ~1.8–2.4 Å,Co0001_CO.png
+Cr110_CO,Cr110,Cr,CO,detached,5.38,5.38,5.38,Cr-C,1,high,CO binds all TMs (C-down π-acceptor); should be ~1.8–2.4 Å,Cr110_CO.png
+Cr100_SO2,Cr100,Cr,SO2,detached,5.34,5.337,5.337,Cr-S,1,high,SO2 binds all TMs (S/O anchor); should be ~1.8–2.4 Å,Cr100_SO2.png
+Cr100_HCO,Cr100,Cr,HCO,detached,5.3,4.555,5.305,Cr-C,1,high,HCO binds all TMs (radical); should be ~1.8–2.4 Å,Cr100_HCO.png
+Co0001_HCO,Co0001,Co,HCO,detached,4.79,4.056,4.788,Co-C,1,high,HCO binds all TMs (radical); should be ~1.8–2.4 Å,Co0001_HCO.png
+Co0001_DMSO,Co0001,Co,DMSO,borderline,3.8,3.188,3.801,Co-C,1,med,"DMSO binds all TMs (S anchor); borderline contact, likely weak/failed",Co0001_DMSO.png
+Au111_NH3,Au111,Au,NH3,borderline,3.64,3.179,3.643,Au-N,1,med,"NH3 binds all TMs (N lone-pair donor); borderline contact, likely weak/failed",Au111_NH3.png
+Cr100_DMSO,Cr100,Cr,DMSO,borderline,3.58,3.155,3.577,Cr-C,1,med,"DMSO binds all TMs (S anchor); borderline contact, likely weak/failed",Cr100_DMSO.png
+Au111_SO2,Au111,Au,SO2,borderline,3.48,3.476,3.476,Au-S,1,med,"SO2 binds all TMs (S/O anchor); borderline contact, likely weak/failed",Au111_SO2.png
+Au111_thiophene,Au111,Au,thiophene,borderline,3.37,3.207,3.371,Au-C,1,med,"thiophene binds all TMs (S (thiophene) anchor); borderline contact, likely weak/failed",Au111_thiophene.png
+Au100_thiophene,Au100,Au,thiophene,borderline,3.27,3.1,3.272,Au-C,1,med,"thiophene binds all TMs (S (thiophene) anchor); borderline contact, likely weak/failed",Au100_thiophene.png
+Ag100_H2S,Ag100,Ag,H2S,borderline,3.08,3.079,3.079,Ag-S,1,med,"H2S binds all TMs (S anchor); borderline contact, likely weak/failed",Ag100_H2S.png
+Ag111_thiophene,Ag111,Ag,thiophene,borderline,3.06,3.064,3.064,Ag-S,1,med,"thiophene binds all TMs (S (thiophene) anchor); borderline contact, likely weak/failed",Ag111_thiophene.png
+Ag111_HCO,Ag111,Ag,HCO,borderline,3.03,3.031,3.031,Ag-O,1,med,"HCO binds all TMs (radical); borderline contact, likely weak/failed",Ag111_HCO.png
+Co0001_itaconic_acid,Co0001,Co,itaconic_acid,detached,6.42,5.92,6.421,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_itaconic_acid.png
+Cr110_DME,Cr110,Cr,DME,detached,6.39,5.315,6.394,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_DME.png
+Fe110_DME,Fe110,Fe,DME,detached,6.31,5.352,6.31,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_DME.png
+Fe100_itaconic_acid,Fe100,Fe,itaconic_acid,detached,6.06,5.058,6.064,Fe-O,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_itaconic_acid.png
+Fe110_formic_acid,Fe110,Fe,formic_acid,detached,6.05,5.02,6.052,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_formic_acid.png
+Co0001_oxalic_acid,Co0001,Co,oxalic_acid,detached,6.03,5.992,6.028,Co-O,2,med,O-organic should bind via O on reactive Co; detached,Co0001_oxalic_acid.png
+Co0001_sorbitol,Co0001,Co,sorbitol,detached,6.03,4.99,6.034,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_sorbitol.png
+Co0001_gluconic_acid,Co0001,Co,gluconic_acid,detached,6.01,6.015,6.015,Co-O,2,med,O-organic should bind via O on reactive Co; detached,Co0001_gluconic_acid.png
+Co0001_malonic_acid,Co0001,Co,malonic_acid,detached,6.01,5.156,6.011,Co-O,2,med,O-organic should bind via O on reactive Co; detached,Co0001_malonic_acid.png
+Co0001_muconic_acid,Co0001,Co,muconic_acid,detached,6.0,5.869,5.995,Co-O,2,med,O-organic should bind via O on reactive Co; detached,Co0001_muconic_acid.png
+Co0001_glycolic_acid,Co0001,Co,glycolic_acid,detached,5.96,5.029,5.959,Co-O,2,med,O-organic should bind via O on reactive Co; detached,Co0001_glycolic_acid.png
+Co0001_malic_acid,Co0001,Co,malic_acid,detached,5.96,5.958,5.958,Co-O,2,med,O-organic should bind via O on reactive Co; detached,Co0001_malic_acid.png
+Cr100_hydroquinone,Cr100,Cr,hydroquinone,detached,5.85,5.682,5.847,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_hydroquinone.png
+Cr100_malonic_acid,Cr100,Cr,malonic_acid,detached,5.82,4.769,5.819,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_malonic_acid.png
+Cr100_citric_acid,Cr100,Cr,citric_acid,detached,5.8,5.106,5.802,Cr-O,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_citric_acid.png
+Fe110_glycerol,Fe110,Fe,glycerol,detached,5.8,4.831,5.8,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_glycerol.png
+Co0001_vanillin,Co0001,Co,vanillin,detached,5.78,5.348,5.784,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_vanillin.png
+Cr111_formic_acid,Cr111,Cr,formic_acid,detached,5.75,4.885,5.751,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_formic_acid.png
+Cr110_formic_acid,Cr110,Cr,formic_acid,detached,5.74,4.787,5.74,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_formic_acid.png
+Cr100_dimethyl_succinate,Cr100,Cr,dimethyl_succinate,detached,5.73,4.65,5.727,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_dimethyl_succinate.png
+Fe100_formic_acid,Fe100,Fe,formic_acid,detached,5.69,4.658,5.689,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_formic_acid.png
+Cr100_D-xylopyranose,Cr100,Cr,D-xylopyranose,detached,5.67,4.813,5.673,Cr-O,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_D-xylopyranose.png
+Fe111_formic_acid,Fe111,Fe,formic_acid,detached,5.67,4.643,5.674,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_formic_acid.png
+Cr100_glycolic_acid,Cr100,Cr,glycolic_acid,detached,5.66,4.639,5.659,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_glycolic_acid.png
+Cr100_gluconic_acid,Cr100,Cr,gluconic_acid,detached,5.64,5.146,5.638,Cr-O,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_gluconic_acid.png
+Co0001_tartaric_acid,Co0001,Co,tartaric_acid,detached,5.61,4.745,5.608,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_tartaric_acid.png
+Cr100_hydroxyacetaldehyde,Cr100,Cr,hydroxyacetaldehyde,detached,5.6,4.541,5.599,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_hydroxyacetaldehyde.png
+Cr100_glycerol,Cr100,Cr,glycerol,detached,5.56,4.574,5.559,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_glycerol.png
+Fe100_glycerol,Fe100,Fe,glycerol,detached,5.56,4.545,5.559,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_glycerol.png
+Cr100_formic_acid,Cr100,Cr,formic_acid,detached,5.54,4.656,5.539,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_formic_acid.png
+Co0001_hydroquinone,Co0001,Co,hydroquinone,detached,5.51,5.161,5.508,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_hydroquinone.png
+Co0001_citric_acid,Co0001,Co,citric_acid,detached,5.5,4.649,5.503,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_citric_acid.png
+Cr100_alpha-D-glucopyranose,Cr100,Cr,alpha-D-glucopyranose,detached,5.5,4.622,5.503,Cr-O,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_alpha-D-glucopyranose.png
+Cr110_glycerol,Cr110,Cr,glycerol,detached,5.49,4.669,5.493,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_glycerol.png
+Co0001_formic_acid,Co0001,Co,formic_acid,detached,5.46,4.415,5.456,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_formic_acid.png
+Cr100_4-methylguaiacol,Cr100,Cr,4-methylguaiacol,detached,5.46,4.844,5.46,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_4-methylguaiacol.png
+Cr100_glyoxal,Cr100,Cr,glyoxal,detached,5.44,4.681,5.44,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_glyoxal.png
+Fe100_lactic_acid,Fe100,Fe,lactic_acid,detached,5.43,4.491,5.433,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_lactic_acid.png
+Ni111_glycerol,Ni111,Ni,glycerol,detached,5.41,4.485,5.405,Ni-C,2,med,O-organic should bind via O on reactive Ni; detached,Ni111_glycerol.png
+Co0001_D-xylopyranose,Co0001,Co,D-xylopyranose,detached,5.4,4.442,5.4,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_D-xylopyranose.png
+Co0001_dimethyl_succinate,Co0001,Co,dimethyl_succinate,detached,5.39,4.531,5.394,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_dimethyl_succinate.png
+Co0001_alpha-D-glucopyranose,Co0001,Co,alpha-D-glucopyranose,detached,5.38,4.345,5.383,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_alpha-D-glucopyranose.png
+Fe110_3-hydroxypropionic_acid,Fe110,Fe,3-hydroxypropionic_acid,detached,5.34,4.58,5.336,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_3-hydroxypropionic_acid.png
+Cr100_formaldehyde,Cr100,Cr,formaldehyde,detached,5.33,4.616,5.334,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_formaldehyde.png
+Cr100_acetal,Cr100,Cr,acetal,detached,5.32,4.373,5.315,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_acetal.png
+"Cr100_1,6-anhydroglucofuranose",Cr100,Cr,"1,6-anhydroglucofuranose",detached,5.31,4.551,5.309,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,"Cr100_1,6-anhydroglucofuranose.png"
+Fe100_DME,Fe100,Fe,DME,detached,5.28,4.484,5.279,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_DME.png
+Fe100_3-hydroxypropionic_acid,Fe100,Fe,3-hydroxypropionic_acid,detached,5.27,4.395,5.267,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_3-hydroxypropionic_acid.png
+Cr100_D-fructofuranose,Cr100,Cr,D-fructofuranose,detached,5.25,4.547,5.255,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_D-fructofuranose.png
+Co0001_syringaldehyde,Co0001,Co,syringaldehyde,detached,5.23,4.266,5.229,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_syringaldehyde.png
+Cr100_malic_acid,Cr100,Cr,malic_acid,detached,5.23,4.476,5.226,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_malic_acid.png
+Co0001_succinic_acid,Co0001,Co,succinic_acid,detached,5.2,4.322,5.202,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_succinic_acid.png
+Cr110_3-hydroxypropionic_acid,Cr110,Cr,3-hydroxypropionic_acid,detached,5.17,4.381,5.173,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_3-hydroxypropionic_acid.png
+Cr100_5-methylfurfural,Cr100,Cr,5-methylfurfural,detached,5.16,4.475,5.16,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_5-methylfurfural.png
+Cr100_DME,Cr100,Cr,DME,detached,5.13,4.322,5.129,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_DME.png
+Cr100_isoeugenol,Cr100,Cr,isoeugenol,detached,5.13,4.389,5.134,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_isoeugenol.png
+Co0001_xylitol,Co0001,Co,xylitol,detached,5.1,4.145,5.099,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_xylitol.png
+Cr110_methanol,Cr110,Cr,methanol,detached,5.08,4.481,5.075,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_methanol.png
+Cr111_3-hydroxypropionic_acid,Cr111,Cr,3-hydroxypropionic_acid,detached,5.06,4.262,5.059,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_3-hydroxypropionic_acid.png
+Cr100_3-hydroxypropionic_acid,Cr100,Cr,3-hydroxypropionic_acid,detached,5.05,4.26,5.049,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_3-hydroxypropionic_acid.png
+Co0001_glyoxal,Co0001,Co,glyoxal,detached,5.03,3.99,5.031,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_glyoxal.png
+Cr100_angelica_lactone,Cr100,Cr,angelica_lactone,detached,5.03,4.227,5.028,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_angelica_lactone.png
+Cr100_ethyl_acetate,Cr100,Cr,ethyl_acetate,detached,5.03,4.132,5.027,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_ethyl_acetate.png
+Cr100_glutaric_acid,Cr100,Cr,glutaric_acid,detached,5.01,4.396,5.009,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_glutaric_acid.png
+Cr100_pyruvic_acid,Cr100,Cr,pyruvic_acid,detached,4.98,4.042,4.977,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_pyruvic_acid.png
+Cr100_furfuryl_alcohol,Cr100,Cr,furfuryl_alcohol,detached,4.97,4.383,4.966,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_furfuryl_alcohol.png
+Cr100_levoglucosan,Cr100,Cr,levoglucosan,detached,4.95,3.936,4.952,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_levoglucosan.png
+Cr100_methylmethacrylate,Cr100,Cr,methylmethacrylate,detached,4.93,4.504,4.934,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_methylmethacrylate.png
+Cr100_gamma_butyrolactone,Cr100,Cr,gamma_butyrolactone,detached,4.92,4.087,4.918,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_gamma_butyrolactone.png
+Fe100_pyruvic_acid,Fe100,Fe,pyruvic_acid,detached,4.89,4.158,4.891,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_pyruvic_acid.png
+Cr100_itaconic_acid,Cr100,Cr,itaconic_acid,detached,4.88,4.516,4.881,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_itaconic_acid.png
+Cr110_itaconic_acid,Cr110,Cr,itaconic_acid,detached,4.88,4.278,4.88,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_itaconic_acid.png
+Cr111_5-HMF,Cr111,Cr,5-HMF,detached,4.86,4.609,4.856,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_5-HMF.png
+Fe110_pyruvic_acid,Fe110,Fe,pyruvic_acid,detached,4.86,4.038,4.856,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_pyruvic_acid.png
+Cr100_ethylene_glycol,Cr100,Cr,ethylene_glycol,detached,4.83,4.181,4.83,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_ethylene_glycol.png
+Cr100_guaiacol,Cr100,Cr,guaiacol,detached,4.82,4.658,4.819,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_guaiacol.png
+Cr111_DME,Cr111,Cr,DME,detached,4.82,4.26,4.819,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_DME.png
+Fe111_DME,Fe111,Fe,DME,detached,4.81,4.199,4.811,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_DME.png
+Co0001_formaldehyde,Co0001,Co,formaldehyde,detached,4.79,4.056,4.788,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_formaldehyde.png
+Co0001_pyruvic_acid,Co0001,Co,pyruvic_acid,detached,4.79,3.869,4.792,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_pyruvic_acid.png
+Cr110_methylmethacrylate,Cr110,Cr,methylmethacrylate,detached,4.79,3.714,4.785,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_methylmethacrylate.png
+Cr111_pyruvic_acid,Cr111,Cr,pyruvic_acid,detached,4.78,4.016,4.78,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_pyruvic_acid.png
+Cr100_diethyl_ether,Cr100,Cr,diethyl_ether,detached,4.77,3.948,4.769,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_diethyl_ether.png
+Cr110_acetic_acid,Cr110,Cr,acetic_acid,detached,4.76,3.767,4.764,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_acetic_acid.png
+Fe110_acetic_acid,Fe110,Fe,acetic_acid,detached,4.75,3.76,4.746,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_acetic_acid.png
+Cr110_pyruvic_acid,Cr110,Cr,pyruvic_acid,detached,4.74,3.843,4.744,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_pyruvic_acid.png
+Co0001_D-fructofuranose,Co0001,Co,D-fructofuranose,detached,4.73,4.064,4.731,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_D-fructofuranose.png
+Cr110_acetaldehyde,Cr110,Cr,acetaldehyde,detached,4.73,3.977,4.732,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_acetaldehyde.png
+Co0001_hydroxyacetaldehyde,Co0001,Co,hydroxyacetaldehyde,detached,4.71,3.827,4.707,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_hydroxyacetaldehyde.png
+Ni100_glycerol,Ni100,Ni,glycerol,detached,4.71,3.885,4.707,Ni-C,2,med,O-organic should bind via O on reactive Ni; detached,Ni100_glycerol.png
+Co0001_levoglucosan,Co0001,Co,levoglucosan,detached,4.7,3.811,4.697,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_levoglucosan.png
+Fe100_methylmethacrylate,Fe100,Fe,methylmethacrylate,detached,4.7,4.341,4.695,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_methylmethacrylate.png
+Cr100_methanol,Cr100,Cr,methanol,detached,4.69,4.26,4.69,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_methanol.png
+Cr100_5-HMF,Cr100,Cr,5-HMF,detached,4.66,4.337,4.66,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_5-HMF.png
+Fe100_methanol,Fe100,Fe,methanol,detached,4.66,4.227,4.655,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_methanol.png
+Cr100_acetaldehyde,Cr100,Cr,acetaldehyde,detached,4.65,4.12,4.647,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_acetaldehyde.png
+Cr110_lactic_acid,Cr110,Cr,lactic_acid,detached,4.65,4.239,4.651,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_lactic_acid.png
+Cr100_2-ethylphenol,Cr100,Cr,2-ethylphenol,detached,4.64,4.237,4.645,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_2-ethylphenol.png
+Co0001_ethylene_glycol,Co0001,Co,ethylene_glycol,detached,4.63,3.723,4.629,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_ethylene_glycol.png
+Cr100_levulinic_acid,Cr100,Cr,levulinic_acid,detached,4.63,3.682,4.634,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_levulinic_acid.png
+Fe100_5-HMF,Fe100,Fe,5-HMF,detached,4.62,3.693,4.624,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_5-HMF.png
+Cr100_acetic_acid,Cr100,Cr,acetic_acid,detached,4.61,4.097,4.609,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_acetic_acid.png
+Fe110_methanol,Fe110,Fe,methanol,detached,4.59,3.989,4.593,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_methanol.png
+Co0001_3-hydroxypropionic_acid,Co0001,Co,3-hydroxypropionic_acid,detached,4.57,3.817,4.565,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_3-hydroxypropionic_acid.png
+Cr110_furfural,Cr110,Cr,furfural,detached,4.57,3.634,4.567,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_furfural.png
+Cr110_isopropanol,Cr110,Cr,isopropanol,detached,4.57,3.606,4.565,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_isopropanol.png
+Cr110_5-HMF,Cr110,Cr,5-HMF,detached,4.56,3.625,4.562,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_5-HMF.png
+Cr110_valeric_acid,Cr110,Cr,valeric_acid,detached,4.56,3.769,4.557,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_valeric_acid.png
+Fe110_5-HMF,Fe110,Fe,5-HMF,detached,4.55,3.625,4.546,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_5-HMF.png
+Fe110_acetaldehyde,Fe110,Fe,acetaldehyde,detached,4.55,3.749,4.554,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_acetaldehyde.png
+Cr100_furan,Cr100,Cr,furan,detached,4.53,4.101,4.528,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_furan.png
+Cr100_gamma_valerolactone,Cr100,Cr,gamma_valerolactone,detached,4.53,3.673,4.534,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_gamma_valerolactone.png
+Cr110_propionic_acid,Cr110,Cr,propionic_acid,detached,4.53,3.907,4.531,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_propionic_acid.png
+Cr111_methanol,Cr111,Cr,methanol,detached,4.53,4.152,4.531,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_methanol.png
+Fe110_lactic_acid,Fe110,Fe,lactic_acid,detached,4.52,4.143,4.524,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_lactic_acid.png
+Ni110_glycerol,Ni110,Ni,glycerol,detached,4.52,3.851,4.522,Ni-C,2,med,O-organic should bind via O on reactive Ni; detached,Ni110_glycerol.png
+Co0001_methanol,Co0001,Co,methanol,detached,4.51,3.907,4.515,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_methanol.png
+Cr100_ethanol,Cr100,Cr,ethanol,detached,4.51,3.914,4.515,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_ethanol.png
+Cr100_isopropanol,Cr100,Cr,isopropanol,detached,4.51,3.914,4.512,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_isopropanol.png
+Fe110_itaconic_acid,Fe110,Fe,itaconic_acid,detached,4.5,3.734,4.501,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe110_itaconic_acid.png
+Fe100_acetic_acid,Fe100,Fe,acetic_acid,detached,4.49,4.166,4.485,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_acetic_acid.png
+Fe111_methanol,Fe111,Fe,methanol,detached,4.49,4.194,4.492,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_methanol.png
+Cr100_acetone,Cr100,Cr,acetone,detached,4.48,3.805,4.476,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_acetone.png
+Cr110_butyric_acid,Cr110,Cr,butyric_acid,detached,4.48,3.632,4.482,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_butyric_acid.png
+Cr111_furfural,Cr111,Cr,furfural,detached,4.47,3.797,4.47,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_furfural.png
+Fe111_glycerol,Fe111,Fe,glycerol,detached,4.47,3.929,4.47,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_glycerol.png
+Cr111_glycerol,Cr111,Cr,glycerol,detached,4.46,3.69,4.46,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_glycerol.png
+Cr100_2-butanol,Cr100,Cr,2-butanol,detached,4.45,3.912,4.449,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_2-butanol.png
+Cr100_lactic_acid,Cr100,Cr,lactic_acid,detached,4.45,3.974,4.454,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_lactic_acid.png
+Cr110_cyclopentanone,Cr110,Cr,cyclopentanone,detached,4.38,3.659,4.376,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr110_cyclopentanone.png
+Cr111_cyclopentanone,Cr111,Cr,cyclopentanone,detached,4.38,3.718,4.376,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_cyclopentanone.png
+Fe111_pyruvic_acid,Fe111,Fe,pyruvic_acid,detached,4.38,3.693,4.383,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_pyruvic_acid.png
+"Co0001_1,6-anhydroglucofuranose",Co0001,Co,"1,6-anhydroglucofuranose",detached,4.37,3.932,4.371,Co-C,2,med,O-organic should bind via O on reactive Co; detached,"Co0001_1,6-anhydroglucofuranose.png"
+Cr100_acetophenone,Cr100,Cr,acetophenone,detached,4.36,4.221,4.359,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_acetophenone.png
+Cr111_itaconic_acid,Cr111,Cr,itaconic_acid,detached,4.36,3.814,4.357,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_itaconic_acid.png
+Fe111_itaconic_acid,Fe111,Fe,itaconic_acid,detached,4.36,3.765,4.356,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_itaconic_acid.png
+Fe100_propanol,Fe100,Fe,propanol,detached,4.34,3.665,4.339,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_propanol.png
+Cr100_2-furanone,Cr100,Cr,2-furanone,detached,4.33,3.773,4.329,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_2-furanone.png
+Fe111_5-HMF,Fe111,Fe,5-HMF,detached,4.33,3.628,4.328,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_5-HMF.png
+Cr100_furfural,Cr100,Cr,furfural,detached,4.32,3.648,4.315,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_furfural.png
+Fe100_isopropanol,Fe100,Fe,isopropanol,detached,4.3,3.698,4.302,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe100_isopropanol.png
+Co0001_methyl_formate,Co0001,Co,methyl_formate,detached,4.27,3.951,4.273,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_methyl_formate.png
+Cr100_benzaldehyde,Cr100,Cr,benzaldehyde,detached,4.27,4.102,4.268,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr100_benzaldehyde.png
+Cr111_lactic_acid,Cr111,Cr,lactic_acid,detached,4.26,3.843,4.264,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_lactic_acid.png
+Co0001_DME,Co0001,Co,DME,detached,4.09,3.657,4.089,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_DME.png
+Fe111_lactic_acid,Fe111,Fe,lactic_acid,detached,4.07,3.635,4.066,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_lactic_acid.png
+Co0001_lactic_acid,Co0001,Co,lactic_acid,detached,4.0,3.635,4.003,Co-C,2,med,O-organic should bind via O on reactive Co; detached,Co0001_lactic_acid.png
+Cr111_ethanol,Cr111,Cr,ethanol,detached,3.98,3.641,3.975,Cr-C,2,med,O-organic should bind via O on reactive Cr; detached,Cr111_ethanol.png
+Fe111_acetic_acid,Fe111,Fe,acetic_acid,detached,3.93,3.606,3.928,Fe-C,2,med,O-organic should bind via O on reactive Fe; detached,Fe111_acetic_acid.png
+Cu110_3-MTHF,Cu110,Cu,3-MTHF,detached,4.53,3.911,4.53,Cu-O,2,low,O-organic often binds Cu via O; detached,Cu110_3-MTHF.png
+Cu111_3-MTHF,Cu111,Cu,3-MTHF,detached,3.7,3.677,3.697,Cu-O,2,low,O-organic often binds Cu via O; detached,Cu111_3-MTHF.png
