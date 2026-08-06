@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Temporary self-heal: retry every 6h so the site auto-publishes as soon as
+  # GitHub restores Pages for this account. Remove this schedule once live.
+  schedule:
+    - cron: '23 */6 * * *'
 
 permissions:
   contents: read
