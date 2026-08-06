@@ -21,14 +21,18 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Build minimal test site
+        run: |
+          mkdir -p _min
+          printf '<!doctype html><meta charset=utf-8><title>ok</title><h1>pages backend test OK</h1>' > _min/index.html
+          touch _min/.nojekyll
+          ls -la _min
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_min'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
