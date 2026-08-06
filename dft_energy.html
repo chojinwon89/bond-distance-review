@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DFT vs SevenNet-OMNI — single-point adsorption energies</title>
+<style>
+ :root { --bg:#0f1116; --card:#191c24; --fg:#e6e6e6; --muted:#9aa0aa; --line:#2a2e38; }
+ * { box-sizing:border-box; }
+ body { margin:0; background:var(--bg); color:var(--fg);
+        font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+ header { padding:18px 22px; border-bottom:1px solid var(--line); }
+ h1 { font-size:19px; margin:0 0 6px; }
+ h2 { font-size:16px; margin:30px 0 4px; }
+ h3 { font-size:13.5px; margin:18px 0 2px; color:#cfd4dd; }
+ a { color:#6ea8fe; }
+ .wrap { max-width:1100px; margin:0 auto; padding:0 22px 70px; }
+ .sub { color:var(--muted); font-size:13px; max-width:920px; }
+ .note { background:#20242e; border:1px solid var(--line); border-left:3px solid #e0a800;
+          border-radius:8px; padding:12px 14px; margin:14px 0; font-size:12.8px; color:#d7dbe2; }
+ .note b { color:#fff; }
+ .fig { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:14px 0; }
+ .fig img { width:100%; display:block; }
+ .legend { color:var(--muted); font-size:12px; margin:2px 0 8px; }
+ table.big { width:100%; border-collapse:collapse; font-size:12.5px; margin:8px 0 4px; }
+ table.big th, table.big td { padding:7px 10px; border:1px solid var(--line); text-align:right; }
+ table.big th { background:#20242e; text-align:right; position:sticky; top:0; }
+ table.big td.l, table.big th.l { text-align:left; }
+ tr.good td { background:rgba(44,160,44,0.10); }
+ tr.bad  td { background:rgba(214,39,40,0.12); }
+ tr.mid  td { background:rgba(224,168,0,0.08); }
+ .pill { font-size:10.5px; font-weight:700; padding:1px 7px; border-radius:999px; color:#fff; }
+ .mag { background:#8a5cf6; } .nonmag { background:#3d4350; color:#c9ced8; }
+ .u { color:#ff9a9a; } .o { color:#7ee0a1; }
+ ul.take { font-size:13px; color:#dfe3ea; max-width:940px; }
+ ul.take li { margin:7px 0; }
+ code { background:#20242e; padding:1px 5px; border-radius:5px; font-size:12px; }
+ .two { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+ @media (max-width:820px){ .two{grid-template-columns:1fr;} }
+ .kpi { display:flex; gap:10px; flex-wrap:wrap; margin:12px 0; }
+ .kpi div { background:var(--card); border:1px solid var(--line); border-radius:9px; padding:9px 13px; }
+ .kpi b { font-size:17px; } .kpi span { color:var(--muted); font-size:11.5px; display:block; }
+</style></head>
+<body>
+<header>
+ <h1>DFT vs SevenNet-OMNI &mdash; single-point adsorption energies</h1>
+ <div class="sub">Energy-model spot-check for the GOAD + SevenNet set: for each relaxed structure the
+   adsorption energy is evaluated <b>once</b> with DFT and once with the SevenNet-OMNI MLIP <b>at the
+   same geometry</b>, so the gap <code>&Delta; = E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT)</code>
+   isolates the <b>energy model</b>, not the relaxation. 1,895 points &middot; 4 DFT functionals &middot;
+   22 surfaces &middot; 123 molecules.
+   &nbsp;<a href="index.html">&larr; gallery</a> &middot;
+   <a href="dft_comparison.html">geometry comparison</a> &middot;
+   <a href="carbon_trends.html">C-number trends</a> &middot;
+   <a href="molecule_trends.html">by-molecule</a> &middot;
+   <a href="flagged.html" style="color:#ff9a9a">likely failures</a> &middot;
+   <a href="dft_singlepoint_vs_sevennet.csv" download>download data (CSV)</a></div>
+</header>
+<div class="wrap">
+
+ <div class="fig">
+   <img src="dft_singlepoint_vs_sevennet.png" alt="DFT vs SevenNet-OMNI adsorption-energy parity plots for PBE, PBE+D3, BEEF-vdW and r2SCAN">
+ </div>
+ <div class="legend">Parity panels colour-coded by metal, marker-coded by molecule class. The panels clip
+   to a &plusmn;5&nbsp;eV window; a handful of extreme single-point outliers (below) fall outside it.</div>
+
+ <div class="kpi">
+   <div><b>1,895</b><span>DFT/ML pairs</span></div>
+   <div><b>0.40 eV</b><span>best functional MAE (BEEF-vdW)</span></div>
+   <div><b>0.31 eV</b><span>best metal MAE (Ni)</span></div>
+   <div><b>4.5 eV</b><span>worst metal MAE (Fe)</span></div>
+   <div><b>&minus;0.31 eV</b><span>overall bias (ML under-binds)</span></div>
+ </div>
+
+ <div class="note">
+   <b>How to read this.</b> A negative <code>&Delta;</code> means SevenNet <b>under-binds</b> (predicts a
+   weaker/less-negative adsorption energy) relative to DFT; positive means it over-binds. Two headline MAEs
+   are shown per functional: the <b>&plusmn;5&nbsp;eV window</b> value (matches the figure) and the
+   <b>all-point</b> value (includes the extreme outliers). Median&nbsp;|&Delta;| (medAE) and the fraction
+   within 0.5&nbsp;eV are robust to those outliers. <b>Coverage is uneven</b> &mdash; Au is 51% of all points,
+   Cr has PBE only, and Fe/Co were not run with BEEF-vdW &mdash; so cross-metal comparisons are indicative,
+   not perfectly matched.
+ </div>
+
+ <!-- ============================ FUNCTIONALS ============================ -->
+ <h2>1 &middot; Which DFT functional does SevenNet agree with?</h2>
+ <div class="legend">Pooled over all metals/molecules. SevenNet-OMNI is a dispersion-aware potential, so it
+   tracks the <b>dispersion-corrected</b> functionals best.</div>
+ <table class="big">
+   <tr><th class="l">DFT functional</th><th>n</th><th>MAE (&plusmn;5 window)</th><th>MAE (all pts)</th>
+       <th>medAE</th><th>within 0.5 eV</th><th>bias &Delta;</th><th>R&sup2;</th><th class="l">verdict</th></tr>
+   <tr class="good"><td class="l"><b>BEEF-vdW</b></td><td>492</td><td>0.40</td><td>0.51</td><td>0.29</td><td>74%</td><td>+0.12</td><td>&minus;0.03</td><td class="l">best &mdash; near-zero bias</td></tr>
+   <tr class="good"><td class="l"><b>PBE+D3</b></td><td>403</td><td>0.45</td><td>0.73</td><td>0.26</td><td>74%</td><td>&minus;0.14</td><td>+0.11</td><td class="l">best median; tight core</td></tr>
+   <tr class="bad"><td class="l">PBE</td><td>477</td><td>0.83</td><td>1.06</td><td>0.64</td><td>36%</td><td>&minus;0.35</td><td>&minus;0.11</td><td class="l">no dispersion &rarr; drifts</td></tr>
+   <tr class="bad"><td class="l">r&sup2;SCAN</td><td>523</td><td>0.88</td><td>1.02</td><td>0.74</td><td>28%</td><td class="u">&minus;0.81</td><td>&minus;0.53</td><td class="l">worst; ML under-binds hard</td></tr>
+ </table>
+ <ul class="take">
+   <li><b>SevenNet-OMNI reproduces dispersion-corrected DFT well.</b> Against <b>BEEF-vdW</b> and
+       <b>PBE+D3</b> the median error is ~0.26&ndash;0.29&nbsp;eV and ~3 in 4 points land within 0.5&nbsp;eV,
+       with essentially no systematic bias &mdash; the level of agreement AdsorbML/OC20 report for MLIPs.</li>
+   <li><b>Against bare PBE and r&sup2;SCAN it is much worse.</b> r&sup2;SCAN carries a large
+       <b>&minus;0.81&nbsp;eV under-binding bias</b> (R&sup2;&nbsp;=&nbsp;&minus;0.53): SevenNet's training
+       target simply is not the r&sup2;SCAN surface. If you benchmark this MLIP, compare it to
+       BEEF-vdW / PBE+D3, not to r&sup2;SCAN.</li>
+ </ul>
+
+ <!-- ============================ METALS ============================ -->
+ <h2>2 &middot; By surface metal &mdash; agreement collapses on Fe/Co/Cr</h2>
+ <div class="legend">Sorted best&rarr;worst by MAE (pooled over functionals). <span class="pill mag">MAG</span>
+   = magnetic 3d metal (Fe, Co, Ni ferromagnetic; Cr antiferromagnetic).</div>
+ <table class="big">
+   <tr><th class="l">metal</th><th>n</th><th>MAE</th><th>RMSE</th><th>medAE</th><th>within 0.5 eV</th>
+       <th>bias &Delta;</th><th>R&sup2;</th><th class="l">character</th></tr>
+   <tr class="good"><td class="l">Ni <span class="pill mag">MAG</span></td><td>105</td><td>0.31</td><td>0.42</td><td>0.24</td><td>80%</td><td>&minus;0.19</td><td>+0.15</td><td class="l">excellent (magnetic, yet fine)</td></tr>
+   <tr class="good"><td class="l">Ag</td><td>56</td><td>0.34</td><td>0.92</td><td>0.23</td><td>95%</td><td>&minus;0.06</td><td>+0.08</td><td class="l">excellent</td></tr>
+   <tr class="good"><td class="l">Cu</td><td>314</td><td>0.43</td><td>0.83</td><td>0.31</td><td>81%</td><td>&minus;0.03</td><td>+0.05</td><td class="l">excellent</td></tr>
+   <tr class="mid"><td class="l">Pd</td><td>105</td><td>0.63</td><td>0.68</td><td>0.58</td><td>32%</td><td class="u">&minus;0.63</td><td>&minus;1.15</td><td class="l">systematic under-bind</td></tr>
+   <tr class="mid"><td class="l">Au</td><td>975</td><td>0.68</td><td>1.21</td><td>0.49</td><td>51%</td><td>&minus;0.10</td><td>+0.07</td><td class="l">good core, fat tails</td></tr>
+   <tr class="mid"><td class="l">Pt</td><td>104</td><td>0.82</td><td>0.89</td><td>0.81</td><td>20%</td><td class="u">&minus;0.82</td><td>&minus;1.18</td><td class="l">systematic under-bind</td></tr>
+   <tr class="bad"><td class="l">Co <span class="pill mag">MAG</span></td><td>167</td><td>1.80</td><td>2.63</td><td>1.27</td><td>22%</td><td class="u">&minus;1.37</td><td>&minus;0.27</td><td class="l">poor</td></tr>
+   <tr class="bad"><td class="l">Cr <span class="pill mag">MAG</span></td><td>30</td><td>3.51</td><td>4.12</td><td>3.77</td><td>13%</td><td class="o">+2.76</td><td>&minus;0.78</td><td class="l">very poor (PBE only)</td></tr>
+   <tr class="bad"><td class="l">Fe <span class="pill mag">MAG</span></td><td>39</td><td>4.52</td><td>4.86</td><td>4.38</td><td>0%</td><td class="u">&minus;4.11</td><td>&minus;2.82</td><td class="l">catastrophic</td></tr>
+ </table>
+ <ul class="take">
+   <li><b>The coinage/noble metals are solved.</b> Ni, Ag, Cu, Au sit at MAE&nbsp;0.31&ndash;0.68&nbsp;eV with
+       near-zero bias &mdash; SevenNet is production-grade there.</li>
+   <li><b>Fe, Co, Cr are where it breaks.</b> Pooled over these three, MAE&nbsp;=&nbsp;<b>2.47&nbsp;eV</b>
+       (vs 0.63&nbsp;eV on all non-magnetic metals). On <b>Fe</b> not a single point lands within 0.5&nbsp;eV
+       and the bias is <b>&minus;4.1&nbsp;eV</b>; on <b>Cr</b> the bias flips to <b>+2.8&nbsp;eV</b>. These are
+       the strongly-reactive, high-spin surfaces where the ML potential-energy surface diverges from DFT.</li>
+   <li><b>It is not "magnetism" per se &mdash; it is Fe/Co/Cr.</b> <b>Ni is ferromagnetic and yet the single
+       best metal</b> in the set. So the failure tracks the strong, spin-polarised <i>bonding</i> of
+       Fe/Co/Cr rather than magnetism as a label &mdash; exactly the regime the
+       <a href="https://github.com/chojinwon89/VASP">magnetic-surface-aware GOAD</a> work targets.</li>
+   <li><b>Pt and Pd are a quieter, separate problem.</b> Their MAE is modest but <b>every</b> point
+       under-binds (bias &minus;0.4 to &minus;1.0&nbsp;eV across <i>all four</i> functionals, pooled R&sup2;&nbsp;&lt;&nbsp;&minus;1):
+       a consistent offset, not scatter &mdash; a candidate for a simple per-metal correction.</li>
+ </ul>
+
+ <!-- ============================ FAMILIES ============================ -->
+ <h2>3 &middot; By molecule family &mdash; carbonyls &amp; acids are hardest</h2>
+ <div class="legend">Sorted best&rarr;worst by MAE. Each molecule is assigned to one family by functional-group
+   priority (see note at the foot of the page).</div>
+ <table class="big">
+   <tr><th class="l">molecule family</th><th># mol</th><th>n</th><th>MAE</th><th>medAE</th>
+       <th>within 0.5 eV</th><th>bias &Delta;</th><th class="l">note</th></tr>
+   <tr class="good"><td class="l">Inorganic / small probes</td><td>11</td><td>175</td><td>0.59</td><td>0.35</td><td>73%</td><td>&minus;0.18</td><td class="l">CO, CO<sub>2</sub>, N<sub>2</sub>, NH<sub>3</sub>, H<sub>2</sub>O&hellip;</td></tr>
+   <tr class="good"><td class="l">Alkanes</td><td>11</td><td>221</td><td>0.59</td><td>0.52</td><td>49%</td><td>&minus;0.47</td><td class="l">weak physisorbers</td></tr>
+   <tr class="good"><td class="l">Alkenes / dienes</td><td>9</td><td>273</td><td>0.70</td><td>0.43</td><td>57%</td><td>&minus;0.51</td><td class="l">&pi;-binding, mostly fine</td></tr>
+   <tr class="mid"><td class="l">Aromatics / heteroaromatics</td><td>18</td><td>198</td><td>0.81</td><td>0.47</td><td>53%</td><td>&minus;0.14</td><td class="l">good median, heavy tails</td></tr>
+   <tr class="mid"><td class="l">Aldehydes</td><td>14</td><td>138</td><td>0.81</td><td>0.59</td><td>43%</td><td>&minus;0.48</td><td class="l">C=O binding</td></tr>
+   <tr class="mid"><td class="l">Alcohols / polyols / sugars</td><td>17</td><td>410</td><td>0.87</td><td>0.51</td><td>50%</td><td>&minus;0.32</td><td class="l">largest bin (sugars)</td></tr>
+   <tr class="bad"><td class="l">Esters / ethers / lactones</td><td>13</td><td>129</td><td>1.03</td><td>0.55</td><td>46%</td><td>&minus;0.20</td><td class="l">multidentate O</td></tr>
+   <tr class="bad"><td class="l">Hydroxy / keto acids</td><td>8</td><td>78</td><td>1.11</td><td>0.75</td><td>37%</td><td>+0.02</td><td class="l">lactic, citric, pyruvic&hellip;</td></tr>
+   <tr class="bad"><td class="l">Carboxylic acids</td><td>11</td><td>139</td><td>1.14</td><td>0.45</td><td>55%</td><td>&minus;0.08</td><td class="l">bimodal: fine or way off</td></tr>
+   <tr class="bad"><td class="l">Ketones</td><td>11</td><td>134</td><td>1.16</td><td>0.65</td><td>41%</td><td>&minus;0.38</td><td class="l">worst family MAE</td></tr>
+ </table>
+ <ul class="take">
+   <li><b>Clean gradient by chemistry.</b> Small inorganic probes and saturated/unsaturated
+       <b>hydrocarbons</b> are easiest (MAE ~0.6&ndash;0.7&nbsp;eV); <b>oxygenates that bind through
+       carbonyl or carboxyl groups</b> &mdash; ketones, carboxylic and hydroxy/keto acids, esters/lactones
+       &mdash; are the hardest (MAE ~1.0&ndash;1.2&nbsp;eV, only ~40% within 0.5&nbsp;eV).</li>
+   <li><b>Medians vs means diverge for the O-rich families.</b> Carboxylic acids have a good median
+       (0.45&nbsp;eV) but MAE 1.14&nbsp;eV &mdash; most are fine and a minority (often on Au/Fe) are
+       badly off, dragging the mean. This is a tail problem, not a uniform shift.</li>
+ </ul>
+
+ <!-- ============================ SIZE ============================ -->
+ <h2>4 &middot; Error grows with molecule size</h2>
+ <div class="legend">Binned by total atom count (from the bond-distance table). Agreement degrades
+   monotonically as molecules get larger &mdash; the same size effect seen for CHGNet on big oxygenates.</div>
+ <table class="big">
+   <tr><th class="l">size (total atoms)</th><th>n</th><th>MAE</th><th>medAE</th><th>within 0.5 eV</th><th>bias &Delta;</th></tr>
+   <tr class="good"><td class="l">tiny (&le;4)</td><td>186</td><td>0.64</td><td>0.37</td><td>70%</td><td>&minus;0.18</td></tr>
+   <tr class="good"><td class="l">small (5&ndash;9)</td><td>458</td><td>0.74</td><td>0.42</td><td>59%</td><td>&minus;0.26</td></tr>
+   <tr class="mid"><td class="l">medium (10&ndash;15)</td><td>816</td><td>0.85</td><td>0.52</td><td>49%</td><td>&minus;0.47</td></tr>
+   <tr class="mid"><td class="l">large (16&ndash;21)</td><td>306</td><td>0.90</td><td>0.59</td><td>45%</td><td>&minus;0.19</td></tr>
+   <tr class="bad"><td class="l">very large (22+)</td><td>129</td><td>1.24</td><td>0.75</td><td>36%</td><td>+0.05</td></tr>
+ </table>
+ <div class="legend">within-0.5&nbsp;eV falls from <b>70% &rarr; 36%</b> and MAE nearly doubles from tiny to
+   very-large molecules &mdash; independent confirmation, on energies, of the large-molecule accuracy gap.</div>
+
+ <!-- ============================ BEST / WORST ============================ -->
+ <h2>5 &middot; Best and worst individual systems</h2>
+ <div class="two">
+   <div>
+     <h3 class="o">&#10003; Tightest agreement (mean |&Delta;| over functionals)</h3>
+     <table class="big">
+       <tr><th class="l">system</th><th class="l">family</th><th>|&Delta;| eV</th></tr>
+       <tr class="good"><td class="l">Ni100 &middot; CO<sub>2</sub></td><td class="l">Inorganic</td><td>0.07</td></tr>
+       <tr class="good"><td class="l">Ag111 &middot; ethene</td><td class="l">Alkene</td><td>0.08</td></tr>
+       <tr class="good"><td class="l">Au110 &middot; N<sub>2</sub></td><td class="l">Inorganic</td><td>0.10</td></tr>
+       <tr class="good"><td class="l">Ni111 &middot; CO<sub>2</sub></td><td class="l">Inorganic</td><td>0.11</td></tr>
+       <tr class="good"><td class="l">Cu111 &middot; methanol</td><td class="l">Alcohol</td><td>0.12</td></tr>
+       <tr class="good"><td class="l">Ni100 &middot; ethanol</td><td class="l">Alcohol</td><td>0.12</td></tr>
+       <tr class="good"><td class="l">Ag111 &middot; propanol</td><td class="l">Alcohol</td><td>0.13</td></tr>
+       <tr class="good"><td class="l">Cu111 &middot; ethene / ethylene</td><td class="l">Alkene</td><td>0.13</td></tr>
+       <tr class="good"><td class="l">Cu111 &middot; lactic acid</td><td class="l">Hydroxy acid</td><td>0.14</td></tr>
+     </table>
+     <div class="legend">Small molecules on coinage/Ni surfaces &mdash; the sweet spot.</div>
+   </div>
+   <div>
+     <h3 class="u">&#10007; Largest disagreement</h3>
+     <table class="big">
+       <tr><th class="l">system</th><th class="l">family</th><th>|&Delta;| eV</th><th>dir.</th></tr>
+       <tr class="bad"><td class="l">Au111 &middot; sorbitol</td><td class="l">Polyol</td><td>7.9</td><td>over</td></tr>
+       <tr class="bad"><td class="l">Fe111 &middot; benzene</td><td class="l">Aromatic</td><td>7.8</td><td class="u">under</td></tr>
+       <tr class="bad"><td class="l">Fe111 &middot; acetaldehyde</td><td class="l">Aldehyde</td><td>7.7</td><td class="u">under</td></tr>
+       <tr class="bad"><td class="l">Fe111 &middot; propionic acid</td><td class="l">Acid</td><td>7.6</td><td class="u">under</td></tr>
+       <tr class="bad"><td class="l">Cr111 &middot; toluene</td><td class="l">Aromatic</td><td>7.3</td><td>over</td></tr>
+       <tr class="bad"><td class="l">Fe111 &middot; 5-heptanone</td><td class="l">Ketone</td><td>7.2</td><td class="u">under</td></tr>
+       <tr class="bad"><td class="l">Au111 &middot; citric acid</td><td class="l">Hydroxy acid</td><td>7.2</td><td>over</td></tr>
+       <tr class="bad"><td class="l">Cr111 &middot; 5-heptanone</td><td class="l">Ketone</td><td>7.0</td><td>over</td></tr>
+       <tr class="bad"><td class="l">Au111/110/100 &middot; succinic acid</td><td class="l">Acid</td><td>7.0</td><td>over</td></tr>
+     </table>
+     <div class="legend">Magnetic Fe/Co/Cr (ML under-binds) plus a cluster of large Au&middot;polyol/acid
+       cases (ML over-binds). 89 points exceed |&Delta;|&nbsp;&gt;&nbsp;4&nbsp;eV: 58 on Fe/Co/Cr, 25 on Au.</div>
+   </div>
+ </div>
+
+ <!-- ============================ TAKEAWAYS ============================ -->
+ <h2>6 &middot; What this means</h2>
+ <ul class="take">
+   <li><b>Use a dispersion-corrected reference.</b> SevenNet-OMNI matches <b>BEEF-vdW</b> (MAE 0.40&nbsp;eV,
+       zero bias) and <b>PBE+D3</b> (medAE 0.26&nbsp;eV) well; treat its numbers as approximating those,
+       not PBE or r&sup2;SCAN.</li>
+   <li><b>Trust it on Ni/Ag/Cu/Au + small hydrocarbons &amp; inorganics;</b> distrust it on
+       <b>Fe/Co/Cr</b> and on <b>large multi-carbonyl oxygenates</b>. Those two axes &mdash; magnetic
+       strong-binders and big O-rich molecules &mdash; stack: the very-worst systems are Fe/Co/Cr with an
+       adsorbate, or large Au&middot;polyol/acid.</li>
+   <li><b>The failures are directional and structured, not random.</b> Fe/Co under-bind, Cr over-binds,
+       Pt/Pd carry a flat &minus;0.4&ndash;1.0&nbsp;eV offset. Structured error is <i>correctable</i> &mdash;
+       per-metal offsets for Pt/Pd, and a spin/geometry-aware refiner for Fe/Co/Cr (the GOAD hybrid
+       explorer/refiner route).</li>
+   <li><b>Caveat &mdash; these are single points.</b> DFT and ML share one geometry, so a &plusmn;8&nbsp;eV gap
+       means the ML-relaxed structure sits where DFT sees strong repulsion (or spurious binding) &mdash;
+       most acute on magnetic surfaces. It reflects a wrong ML minimum, not necessarily smooth energy noise.</li>
+   <li><b>Caveat &mdash; coverage.</b> Au is 51% of the data; Cr is PBE-only and Fe/Co lack BEEF-vdW, so their
+       pooled MAEs mix functionals. Filling Fe/Co/Cr &times; BEEF-vdW/PBE+D3 would firm up the magnetic story.</li>
+ </ul>
+
+ <div class="note" style="border-left-color:#6ea8fe">
+   <b>Molecule-family rule.</b> Each of the 123 molecules is assigned to exactly one family by
+   first-match priority: inorganic/small probe &rarr; hydroxy&sol;keto acid &rarr; carboxylic acid &rarr;
+   ester&sol;ether&sol;lactone &rarr; ketone &rarr; aldehyde &rarr; alcohol&sol;polyol &rarr; aromatic &rarr;
+   alkene &rarr; alkane. So aromatic aldehydes (furfural, vanillin) count as <i>aldehydes</i>, phenols as
+   <i>aromatics</i>, and lactones as <i>esters/ethers</i>. Metrics: <code>MAE</code>=mean&nbsp;|&Delta;|,
+   <code>medAE</code>=median&nbsp;|&Delta;|, <code>bias</code>=mean&nbsp;&Delta; (ML&minus;DFT),
+   <code>R&sup2;</code> for predicting DFT from ML. Source data:
+   <a href="dft_singlepoint_vs_sevennet.csv" download>dft_singlepoint_vs_sevennet.csv</a>.
+ </div>
+</div>
+</body></html>
