@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SevenNet vs MatterSim: relaxed-geometry benchmark</title>
+<style>
+ :root { --bg:#0f1116; --card:#191c24; --fg:#e6e6e6; --muted:#9aa0aa; --line:#2a2e38; }
+ * { box-sizing:border-box; }
+ body { margin:0; background:var(--bg); color:var(--fg);
+        font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+ header { padding:18px 22px; border-bottom:1px solid var(--line); }
+ h1 { font-size:20px; margin:0 0 6px; } h2 { font-size:16px; margin:26px 0 8px; }
+ a { color:#6ea8fe; }
+ .wrap { max-width:1100px; margin:0 auto; padding:0 22px 70px; }
+ .sub { color:var(--muted); font-size:13px; max-width:960px; }
+ .cards { display:flex; gap:12px; flex-wrap:wrap; margin:14px 0; }
+ .kpi { background:var(--card); border:1px solid var(--line); border-radius:10px;
+         padding:12px 15px; min-width:150px; }
+ .kpi b { font-size:22px; display:block; }
+ .kpi.sev b { color:#4c9be8; } .kpi.mat b { color:#e8894c; }
+ .note { background:#20242e; border:1px solid var(--line); border-left:3px solid #4c78a8;
+          border-radius:8px; padding:12px 14px; margin:12px 0; font-size:13px; color:#d7dbe2; }
+ .note.warn { border-left-color:#c9a227; }
+ figure { margin:8px 0; background:#fff; border:1px solid var(--line); border-radius:10px; }
+ figure img { width:100%; display:block; border-radius:10px; }
+ figcaption { color:var(--muted); font-size:12px; padding:6px 10px; }
+ .controls { display:flex; gap:10px; align-items:center; margin:10px 0; flex-wrap:wrap; }
+ select,input { background:var(--card); color:var(--fg); border:1px solid var(--line);
+                 border-radius:8px; padding:6px 9px; font-size:13px; }
+ table { width:100%; border-collapse:collapse; font-size:12px; }
+ th,td { padding:6px 8px; border-bottom:1px solid var(--line); text-align:right; white-space:nowrap; }
+ th { position:sticky; top:0; background:#20242e; cursor:pointer; }
+ td.l,th.l { text-align:left; }
+ .sev { background:rgba(76,155,232,.07); } .mat { background:rgba(232,137,76,.07); }
+ .ok { color:#5fd08a; } .bad { color:#ff8a8a; } .warn { color:#f0c33c; }
+ .pill { font-size:10px; padding:1px 6px; border-radius:9px; border:1px solid var(--line); }
+ .mag { color:#ff9a9a; }
+ .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:14px; margin-top:12px; }
+ .g { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px; }
+ .g h3 { margin:0 0 2px; font-size:13px; } .g .m { color:var(--muted); font-size:11px; margin-bottom:6px; }
+ .pair { display:flex; gap:6px; } .pair>div { flex:1; text-align:center; }
+ .pair img { width:100%; border-radius:6px; background:#fff; }
+ .pair .cap { font-size:11px; }
+</style></head>
+<body>
+<header>
+ <h1>Does the MLIP predict a good <em>final geometry</em>? &nbsp;SevenNet vs MatterSim vs DFT</h1>
+ <div class="sub">14 well-characterised adsorbate/metal systems relaxed from an identical
+   starting guess with two foundation MLIPs (SevenNet-0 and MatterSim v1.0.0-1M), then compared
+   to literature DFT/experimental geometry. &nbsp;
+   <a href="index.html">gallery</a> &middot; <a href="flagged.html" style="color:#ff9a9a">likely failures</a>
+   &middot; <a href="dft_comparison.html">DFT comparison</a> &middot;
+   <a href="molecule_trends.html">by-molecule</a></div>
+</header>
+<div class="wrap">
+
+ <div class="cards">
+   <div class="kpi sev"><b>13/14</b>SevenNet within &plusmn;0.3&#8491; of ref M&ndash;X</div>
+   <div class="kpi mat"><b>10/14</b>MatterSim within &plusmn;0.3&#8491;</div>
+   <div class="kpi sev"><b>1</b>SevenNet ejected (E<sub>ads</sub>&ge;0)</div>
+   <div class="kpi mat"><b>5</b>MatterSim ejected (E<sub>ads</sub>&ge;0)</div>
+ </div>
+
+ <div class="note"><b>Headline.</b> On <b>non-magnetic</b> metals (Pt, Cu, Pd) both MLIPs reproduce the
+   DFT metal&ndash;adsorbate bond to within ~0.1&#8491; and pick the right site. On <b>magnetic 3d</b>
+   metals (Ni, Co, Fe) they diverge: <b>SevenNet keeps CO chemisorbed</b> (Co&ndash;C 1.77&#8491;,
+   Ni&ndash;C 2.01&#8491;, Fe&ndash;C 2.25&#8491;) while <b>MatterSim ejects it</b> (Fe&ndash;C 4.96&#8491;,
+   E<sub>ads</sub>&ge;0). Neither model carries spin, yet they behave very differently &mdash; so the
+   &ldquo;magnetic metals eject strong binders&rdquo; effect you saw is <i>model-dependent</i>, not
+   inevitable.</div>
+
+ <h2>SevenNet keeps CO bound on magnetic metals; MatterSim ejects it</h2>
+ <figure><img src="mlip/montage_magnetic.png" alt="magnetic montage">
+   <figcaption>Same slab, same start, same reference. Left = SevenNet, right = MatterSim.</figcaption></figure>
+
+ <h2>Bond-length error vs the DFT/experimental reference</h2>
+ <figure><img src="mlip/fig_dMX.png" alt="dMX error">
+   <figcaption>Relaxed minus reference metal&ndash;adsorbate distance. Green = within &plusmn;0.3&#8491;.
+     Systems below the dashed line are magnetic 3d metals.</figcaption></figure>
+
+ <h2>Binding vs ejection (adsorption energy)</h2>
+ <figure><img src="mlip/fig_Eads.png" alt="Eads">
+   <figcaption>E<sub>ads</sub> from each MLIP (same model used for slab + gas reference).
+     Shaded region E<sub>ads</sub>&ge;0 = the adsorbate does not bind.</figcaption></figure>
+
+ <h2>Every system, side by side</h2>
+ <div class="controls">
+   <label>Show <select id="fmag"><option value="">all</option>
+     <option value="mag">magnetic 3d only</option><option value="non">non-magnetic only</option></select></label>
+   <label>Sort <select id="sort"><option value="none">as listed</option>
+     <option value="sev">|SevenNet error|</option><option value="mat">|MatterSim error|</option>
+     <option value="diff">|Sev−Mat| disagreement</option></select></label>
+   <span id="count" class="sub"></span>
+ </div>
+ <div style="max-height:64vh;overflow:auto;border:1px solid var(--line);border-radius:8px">
+ <table id="tbl"><thead><tr>
+   <th class="l">system</th><th class="l">surf</th><th>ref site</th><th>ref M&ndash;X</th>
+   <th class="sev">Sev site</th><th class="sev">Sev d</th><th class="sev">&Delta;</th><th class="sev">E<sub>ads</sub></th>
+   <th class="mat">Mat site</th><th class="mat">Mat d</th><th class="mat">&Delta;</th><th class="mat">E<sub>ads</sub></th>
+ </tr></thead><tbody></tbody></table>
+ </div>
+
+ <div class="grid" id="grid"></div>
+
+ <div class="note warn" style="margin-top:26px"><b>How to read this / caveats.</b>
+   <ul style="margin:6px 0 0 18px;padding:0">
+   <li>The comparison is <b>geometric</b>. Reference numbers are literature-typical PBE/experimental
+     values (see each card&rsquo;s source) &mdash; replace them with your own DFT or an OC20 / Catalysis-Hub
+     pull for a quantitative benchmark.</li>
+   <li>Both MLIPs are <b>spin-free</b> foundation models; MatterSim here is the small 1M checkpoint.
+     A larger MatterSim or a spin-aware model may behave differently.</li>
+   <li>Cell p(3&times;3), 4 layers, bottom 2 fixed, one coverage; E<sub>ads</sub> uses each model&rsquo;s own
+     gas-molecule reference (molecular references for foundation MLIPs are imperfect).</li>
+   <li>A large distance is not always wrong: N&#8322; is a genuinely weak binder, so a long Ni&ndash;N is
+     physical.</li>
+   </ul></div>
+
+ <div class="note"><b>How to begin (reproduce / extend).</b> In the isolated venv
+   (<code>~/mlip-bench-venv</code>, has torch + sevenn + mattersim):
+   <pre style="white-space:pre-wrap;margin:6px 0 0">python mlip_benchmark.py --list                     # the curated system list + references
+python mlip_benchmark.py --calc emt --systems emt    # validate the pipeline, no GPU/torch model needed
+python mlip_benchmark.py --calc sevennet --calc mattersim --systems all --png
+python mlip_bench_plots.py                            # figures + montage</pre>
+   Add a system by appending one <code>S(...)</code> row in <code>mlip_benchmark.py</code> (metal, facet,
+   adsorbate, initial site/height, and the reference geometry). To probe the CO/Pt(111) site puzzle,
+   compare the final energy of <code>CO_Pt111_atop</code> vs <code>CO_Pt111_fcc</code>.</div>
+</div>
+<script>
+const DATA=[{"id":"CO_Pt111_atop","surface":"Pt(111)","metal":"Pt","ads":"CO","mag":false,"refsite":"atop","ref_dMX":1.85,"MX":"Pt-C","ref_dint":1.15,"INT":"C-O","note":"CO/Pt(111) SITE PUZZLE: expt=atop, plain PBE wrongly prefers fcc hollow -- a classic MLIP stress test","src":"Ogletree 1986 SurfSci 173,351; Feibelman 2001 JPCB 105,4018","sev":{"site":"atop","dMX":1.877,"err":0.027,"dint":1.162,"h":2.168,"E":-1.764,"conv":true},"mat":{"site":"atop","dMX":1.887,"err":0.037,"dint":1.156,"h":2.078,"E":-1.1,"conv":true}},{"id":"CO_Pt111_fcc","surface":"Pt(111)","metal":"Pt","ads":"CO","mag":false,"refsite":"fcc","ref_dMX":2.05,"MX":"Pt-C","ref_dint":1.16,"INT":"C-O","note":"same system started in the fcc hollow; compare final energy vs the atop start to read out the MLIP's site preference","src":"Feibelman 2001 JPCB 105,4018","sev":{"site":"hollow(3f)","dMX":2.104,"err":0.054,"dint":1.198,"h":1.413,"E":-2.268,"conv":true},"mat":{"site":"hollow(3f)","dMX":2.067,"err":0.017,"dint":1.195,"h":1.353,"E":-1.822,"conv":true}},{"id":"CO_Cu111_atop","surface":"Cu(111)","metal":"Cu","ads":"CO","mag":false,"refsite":"atop","ref_dMX":1.83,"MX":"Cu-C","ref_dint":1.15,"INT":"C-O","note":"CO binds atop Cu(111), weak-moderate","src":"Hollins 1983; DFT","sev":{"site":"atop","dMX":1.902,"err":0.072,"dint":1.155,"h":2.058,"E":-0.558,"conv":true},"mat":{"site":"atop","dMX":1.824,"err":-0.006,"dint":1.153,"h":1.883,"E":-0.526,"conv":true}},{"id":"CO_Ni111_fcc","surface":"Ni(111)","metal":"Ni","ads":"CO","mag":true,"refsite":"fcc hollow","ref_dMX":1.85,"MX":"Ni-C","ref_dint":1.19,"INT":"C-O","note":"MAGNETIC metal: DFT needs spin; hollow CO, C-O stretched to ~1.19","src":"Eichler 2003 SurfSci 526,332","sev":{"site":"hollow(3f)","dMX":2.013,"err":0.163,"dint":1.197,"h":1.446,"E":-0.517,"conv":true},"mat":{"site":"hollow(3f)","dMX":2.241,"err":0.391,"dint":1.198,"h":1.799,"E":0.606,"conv":true}},{"id":"CO_Pd111_fcc","surface":"Pd(111)","metal":"Pd","ads":"CO","mag":false,"refsite":"fcc hollow","ref_dMX":2.05,"MX":"Pd-C","ref_dint":1.17,"INT":"C-O","note":"Pd(111) favours the fcc hollow at low coverage","src":"Loffreda 1998; Honkala DFT","sev":{"site":"hollow(3f)","dMX":2.086,"err":0.036,"dint":1.19,"h":1.413,"E":-2.067,"conv":true},"mat":{"site":"hollow(3f)","dMX":2.093,"err":0.043,"dint":1.187,"h":1.408,"E":-1.7,"conv":true}},{"id":"O_Pt111_fcc","surface":"Pt(111)","metal":"Pt","ads":"O","mag":false,"refsite":"fcc hollow","ref_dMX":2.0,"MX":"Pt-O","ref_dint":null,"INT":null,"note":"atomic O in the fcc hollow, O-Pt ~2.0","src":"Todorova 2006; Hafner DFT","sev":{"site":"hollow(3f)","dMX":2.026,"err":0.026,"dint":null,"h":1.173,"E":-1.459,"conv":true},"mat":{"site":"hollow(3f)","dMX":2.023,"err":0.023,"dint":null,"h":1.132,"E":-0.363,"conv":true}},{"id":"H_Pt111_fcc","surface":"Pt(111)","metal":"Pt","ads":"H","mag":false,"refsite":"fcc/atop (near-degenerate)","ref_dMX":1.55,"MX":"Pt-H","ref_dint":null,"INT":null,"note":"light atom, shallow PES -- hard MLIP case","src":"Olsen 1999; Kresse DFT","sev":{"site":"hollow(3f)","dMX":1.861,"err":-0.009,"dint":null,"h":0.883,"E":-0.897,"conv":true},"mat":{"site":"hollow(3f)","dMX":1.894,"err":0.024,"dint":null,"h":1.01,"E":-0.163,"conv":true}},{"id":"NO_Pt111_fcc","surface":"Pt(111)","metal":"Pt","ads":"NO","mag":false,"refsite":"fcc hollow","ref_dMX":1.95,"MX":"Pt-N","ref_dint":1.18,"INT":"N-O","note":"N-down NO in fcc hollow at low coverage","src":"Aizawa 1999; DFT","sev":{"site":"hollow(3f)","dMX":2.031,"err":0.081,"dint":1.23,"h":1.26,"E":-2.545,"conv":true},"mat":{"site":"hollow(3f)","dMX":2.03,"err":0.08,"dint":1.212,"h":1.265,"E":-1.723,"conv":true}},{"id":"NH3_Pt111_top","surface":"Pt(111)","metal":"Pt","ads":"NH3","mag":false,"refsite":"atop (N lone pair down)","ref_dMX":2.1,"MX":"Pt-N","ref_dint":null,"INT":null,"note":"molecular NH3 datives through N atop","src":"Offermans 2007; DFT","sev":{"site":"atop","dMX":2.06,"err":-0.04,"dint":null,"h":2.071,"E":-1.728,"conv":true},"mat":{"site":"atop","dMX":2.167,"err":0.067,"dint":null,"h":2.215,"E":-0.52,"conv":true}},{"id":"H2O_Pt111_top","surface":"Pt(111)","metal":"Pt","ads":"H2O","mag":false,"refsite":"atop, near-flat","ref_dMX":2.4,"MX":"Pt-O","ref_dint":null,"INT":null,"note":"weak; O nearly atop, molecular plane ~parallel","src":"Michaelides 2003; Carrasco 2012","sev":{"site":"atop","dMX":2.032,"err":-0.368,"dint":null,"h":2.105,"E":-0.387,"conv":true},"mat":{"site":"atop","dMX":4.105,"err":1.705,"dint":null,"h":4.103,"E":0.016,"conv":true}},{"id":"N2_Ni111_top","surface":"Ni(111)","metal":"Ni","ads":"N2","mag":true,"refsite":"atop, end-on","ref_dMX":1.9,"MX":"Ni-N","ref_dint":1.12,"INT":"N-N","note":"MAGNETIC: N2 is a WEAK binder; DFT binds end-on only on reactive metals, desorbs on coinage -- so a large distance here can be CORRECT","src":"Mortensen 1998; DFT","sev":{"site":"atop","dMX":2.171,"err":0.271,"dint":1.122,"h":2.28,"E":0.047,"conv":true},"mat":{"site":"atop","dMX":1.822,"err":-0.078,"dint":1.125,"h":2.036,"E":0.027,"conv":true}},{"id":"CO_Fe100_hollow","surface":"Fe(100)","metal":"Fe","ads":"CO","mag":true,"refsite":"4-fold hollow, strongly activated","ref_dMX":1.95,"MX":"Fe-C","ref_dint":1.2,"INT":"C-O","note":"MAGNETIC bcc: Fischer-Tropsch metal, CO tilts in the 4-fold hollow, C-O strongly stretched (pre-dissociation)","src":"Bromfield 2005; Ono DFT","sev":{"site":"hollow(4f)","dMX":2.25,"err":0.3,"dint":1.231,"h":1.131,"E":-0.388,"conv":true},"mat":{"site":"hollow(4f)","dMX":4.955,"err":3.005,"dint":1.144,"h":4.522,"E":0.0,"conv":true}},{"id":"CO_Co0001_top","surface":"Co(0001)","metal":"Co","ads":"CO","mag":true,"refsite":"atop","ref_dMX":1.75,"MX":"Co-C","ref_dint":1.16,"INT":"C-O","note":"MAGNETIC hcp: atop CO -- the same slab that ejected CO in your SevenNet set","src":"Gajdos 2004 JPCM 16,1141","sev":{"site":"atop","dMX":1.773,"err":0.023,"dint":1.169,"h":1.892,"E":-1.049,"conv":true},"mat":{"site":"atop","dMX":2.109,"err":0.359,"dint":1.176,"h":2.399,"E":0.537,"conv":true}},{"id":"C2H4_Pt111_bri","surface":"Pt(111)","metal":"Pt","ads":"C2H4","mag":false,"refsite":"di-sigma (bridge)","ref_dMX":2.1,"MX":"Pt-C","ref_dint":1.49,"INT":"C-C","note":"rehybridisation test: C=C (1.33) stretches toward 1.49 as it binds di-sigma","src":"Watson 2001; Cremer 1996","sev":{"site":"atop","dMX":2.04,"err":-0.06,"dint":1.481,"h":1.979,"E":-2.548,"conv":true},"mat":{"site":"atop","dMX":2.06,"err":-0.04,"dint":1.498,"h":2.025,"E":-1.603,"conv":true}}];
+const f2=x=>x==null?'':(x>=0?'+':'')+x.toFixed(2);
+const tb=document.querySelector('#tbl tbody'), grid=document.getElementById('grid'),
+      count=document.getElementById('count');
+function cls(err){ if(err==null) return ''; const a=Math.abs(err);
+  return a<=0.3?'ok':(a<=0.6?'warn':'bad'); }
+function ecls(v){ return v==null?'':(v>=-0.10?'bad':'ok'); }
+function view(){
+  const fm=document.getElementById('fmag').value, so=document.getElementById('sort').value;
+  let d=DATA.filter(r=> fm=='' || (fm=='mag'&&r.mag) || (fm=='non'&&!r.mag));
+  const ae=(r,k)=> (r[k]&&r[k].err!=null)?Math.abs(r[k].err):-1;
+  if(so=='sev') d=[...d].sort((a,b)=>ae(b,'sev')-ae(a,'sev'));
+  if(so=='mat') d=[...d].sort((a,b)=>ae(b,'mat')-ae(a,'mat'));
+  if(so=='diff') d=[...d].sort((a,b)=>
+     Math.abs((b.sev?.dMX||0)-(b.mat?.dMX||0))-Math.abs((a.sev?.dMX||0)-(a.mat?.dMX||0)));
+  count.textContent=d.length+' systems';
+  tb.innerHTML=d.map(r=>{
+    const S=r.sev,M=r.mat;
+    return `<tr>
+     <td class="l">${r.id.replace(/_/g,' ')} ${r.mag?'<span class="pill mag">mag</span>':''}</td>
+     <td class="l">${r.surface}</td><td>${r.refsite.split('(')[0]}</td>
+     <td>${r.MX} ${r.ref_dMX}</td>
+     <td class="sev l">${S?S.site:'-'}</td><td class="sev">${S?S.dMX.toFixed(2):'-'}</td>
+     <td class="sev ${cls(S?.err)}">${S?f2(S.err):'-'}</td>
+     <td class="sev ${ecls(S?.E)}">${S?f2(S.E):'-'}</td>
+     <td class="mat l">${M?M.site:'-'}</td><td class="mat">${M?M.dMX.toFixed(2):'-'}</td>
+     <td class="mat ${cls(M?.err)}">${M?f2(M.err):'-'}</td>
+     <td class="mat ${ecls(M?.E)}">${M?f2(M.E):'-'}</td></tr>`;}).join('');
+  grid.innerHTML=d.map(r=>{
+    const S=r.sev,M=r.mat;
+    const cap=(D)=>D?`${D.site} &middot; ${r.MX} ${D.dMX.toFixed(2)}Å &middot; `+
+       `<span class="${ecls(D.E)}">E ${f2(D.E)}</span>`:'-';
+    return `<div class="g">
+      <h3>${r.id.replace(/_/g,' ')} ${r.mag?'<span class="pill mag">magnetic</span>':''}</h3>
+      <div class="m">ref: ${r.refsite} &middot; ${r.MX} ${r.ref_dMX}Å &middot; ${r.src}</div>
+      <div class="pair">
+       <div><img src="mlip/png/${r.id}_sevennet.png"><div class="cap" style="color:#4c9be8">SevenNet</div>
+         <div class="cap">${cap(S)}</div></div>
+       <div><img src="mlip/png/${r.id}_mattersim.png"><div class="cap" style="color:#e8894c">MatterSim</div>
+         <div class="cap">${cap(M)}</div></div>
+      </div>
+      <div class="m" style="margin-top:6px">${r.note}</div></div>`;}).join('');
+}
+document.getElementById('fmag').onchange=view;
+document.getElementById('sort').onchange=view;
+view();
+</script>
+</body></html>
