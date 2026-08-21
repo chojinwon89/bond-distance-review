@@ -1,0 +1,32 @@
+id,surface,ads,ref_site,ref_dMX,sevennet_site,sevennet_dMX,sevennet_dMXerr,sevennet_Eads,mattersim_site,mattersim_dMX,mattersim_dMXerr,mattersim_Eads
+CO_Pt111_atop,Pt(111),CO,atop,1.85,atop,1.877,0.027,-1.764,atop,1.887,0.037,-1.1
+CO_Pt111_fcc,Pt(111),CO,fcc,2.05,hollow(3f),2.104,0.054,-2.268,hollow(3f),2.067,0.017,-1.822
+CO_Cu111_atop,Cu(111),CO,atop,1.83,atop,1.902,0.072,-0.558,atop,1.824,-0.006,-0.526
+CO_Ni111_fcc,Ni(111),CO,fcc hollow,1.85,hollow(3f),2.013,0.163,-0.517,hollow(3f),2.241,0.391,0.606
+CO_Pd111_fcc,Pd(111),CO,fcc hollow,2.05,hollow(3f),2.086,0.036,-2.067,hollow(3f),2.093,0.043,-1.7
+O_Pt111_fcc,Pt(111),O,fcc hollow,2.0,hollow(3f),2.026,0.026,-1.459,hollow(3f),2.023,0.023,-0.363
+H_Pt111_fcc,Pt(111),H,fcc hollow,1.87,hollow(3f),1.861,-0.009,-0.897,hollow(3f),1.894,0.024,-0.163
+NO_Pt111_fcc,Pt(111),NO,fcc hollow,1.95,hollow(3f),2.031,0.081,-2.545,hollow(3f),2.03,0.08,-1.723
+NH3_Pt111_top,Pt(111),NH3,atop (N lone pair down),2.1,atop,2.06,-0.04,-1.728,atop,2.167,0.067,-0.52
+H2O_Pt111_top,Pt(111),H2O,"atop, near-flat",2.4,atop,2.032,-0.368,-0.387,atop,4.106,1.706,0.015
+N2_Ni111_top,Ni(111),N2,"atop, end-on",1.9,atop,2.171,0.271,0.047,atop,1.822,-0.078,0.027
+CO_Fe100_hollow,Fe(100),CO,"4-fold hollow, strongly activated",1.95,hollow(4f),2.25,0.3,-0.388,hollow(4f),4.955,3.005,0.0
+CO_Co0001_top,Co(0001),CO,atop,1.75,atop,1.773,0.023,-1.049,atop,2.109,0.359,0.537
+C2H4_Pt111_bri,Pt(111),C2H4,di-sigma (bridge),2.1,atop,2.04,-0.06,-2.548,atop,2.06,-0.04,-1.603
+CO2_Cu111_top,Cu(111),CO2,atop / physisorbed,2.3,atop,2.946,0.646,-0.181,atop,4.884,2.584,-0.0
+CH4_Pt111_top,Pt(111),CH4,atop / physisorbed,3.1,atop,1.982,-1.118,-0.841,atop,2.513,-0.587,-0.182
+CH3_Pt111_top,Pt(111),CH3,atop,2.08,atop,2.017,-0.063,-2.91,atop,2.02,-0.06,-1.84
+OH_Pt111_top,Pt(111),OH,atop / bridge,2.0,atop,1.944,-0.056,-1.794,atop,2.031,0.031,-0.623
+CH3OH_Cu111_top,Cu(111),CH3OH,atop (O lone pair down),2.1,atop,2.589,0.489,-0.188,atop,2.429,0.329,-0.123
+H2CO_Pt111_top,Pt(111),H2CO,atop (eta1-O) / eta2,2.1,atop,2.011,-0.089,-0.484,atop,4.896,2.796,0.0
+HCOOH_Cu111_top,Cu(111),HCOOH,atop (carbonyl O down),2.2,atop,3.122,0.922,-0.076,bridge,5.137,2.937,0.0
+CH3O_Cu111_fcc,Cu(111),CH3O,fcc hollow (O down),1.95,hollow(3f),1.951,0.001,-2.345,hollow(3f),2.031,0.081,-1.823
+C2H6_Pt111_top,Pt(111),C2H6,atop / physisorbed,3.2,atop,2.191,-1.009,-0.762,atop,2.552,-0.648,-0.276
+C2H2_Pd111_bri,Pd(111),C2H2,di-sigma / bridge,2.05,atop,1.995,-0.055,-2.409,bridge,2.014,-0.036,-1.793
+CH3CHO_Pt111_top,Pt(111),CH3CHO,atop (eta1-O),2.1,atop,1.849,-0.251,-1.23,atop,2.448,0.348,0.313
+CH3COOH_Pt111_top,Pt(111),CH3COOH,atop (carbonyl O down),2.1,atop,2.044,-0.056,-0.905,atop,2.096,-0.004,-0.253
+C2H5OH_Pt111_top,Pt(111),CH3CH2OH,atop (O lone pair down),2.2,atop,1.938,-0.262,-1.305,hollow(3f),2.607,0.407,-0.094
+DME_Pt111_top,Pt(111),CH3OCH3,atop (ether O down),2.3,atop,2.038,-0.262,-0.901,atop,2.183,-0.117,-0.056
+H2S_Pt111_top,Pt(111),H2S,atop (S down),2.3,atop,2.301,0.001,-0.733,atop,4.096,1.796,0.001
+SO2_Pt111_top,Pt(111),SO2,atop / eta2 (S down),2.2,atop,2.337,0.137,-0.546,atop,2.273,0.073,-0.07
+HCN_Pt111_top,Pt(111),HCN,"atop, end-on (N down)",2.0,atop,2.008,0.008,-1.418,atop,2.034,0.034,-0.066

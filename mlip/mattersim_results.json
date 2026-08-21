@@ -1,0 +1,1174 @@
+[
+ {
+  "id": "CO_Pt111_atop",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CO",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop",
+  "d_MX": 1.887,
+  "ref_d_MX": 1.85,
+  "pair": "Pt-C",
+  "dMX_err": 0.037,
+  "d_int": 1.156,
+  "ref_d_int": 1.15,
+  "int_lbl": "C-O",
+  "dint_err": 0.006,
+  "height": 2.078,
+  "ref_height": 1.85,
+  "E_ads": -1.1,
+  "internal": [
+   [
+    "C-O",
+    1.156
+   ]
+  ]
+ },
+ {
+  "id": "CO_Pt111_fcc",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CO",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "fcc",
+  "d_MX": 2.067,
+  "ref_d_MX": 2.05,
+  "pair": "Pt-C",
+  "dMX_err": 0.017,
+  "d_int": 1.195,
+  "ref_d_int": 1.16,
+  "int_lbl": "C-O",
+  "dint_err": 0.035,
+  "height": 1.353,
+  "ref_height": 1.32,
+  "E_ads": -1.822,
+  "internal": [
+   [
+    "C-O",
+    1.195
+   ]
+  ]
+ },
+ {
+  "id": "CO_Cu111_atop",
+  "calc": "mattersim",
+  "surface": "Cu(111)",
+  "ads": "CO",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop",
+  "d_MX": 1.824,
+  "ref_d_MX": 1.83,
+  "pair": "Cu-C",
+  "dMX_err": -0.006,
+  "d_int": 1.153,
+  "ref_d_int": 1.15,
+  "int_lbl": "C-O",
+  "dint_err": 0.003,
+  "height": 1.883,
+  "ref_height": 1.83,
+  "E_ads": -0.526,
+  "internal": [
+   [
+    "C-O",
+    1.153
+   ]
+  ]
+ },
+ {
+  "id": "CO_Ni111_fcc",
+  "calc": "mattersim",
+  "surface": "Ni(111)",
+  "ads": "CO",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "fcc hollow",
+  "d_MX": 2.241,
+  "ref_d_MX": 1.85,
+  "pair": "Ni-C",
+  "dMX_err": 0.391,
+  "d_int": 1.198,
+  "ref_d_int": 1.19,
+  "int_lbl": "C-O",
+  "dint_err": 0.008,
+  "height": 1.799,
+  "ref_height": 1.3,
+  "E_ads": 0.606,
+  "internal": [
+   [
+    "C-O",
+    1.198
+   ]
+  ]
+ },
+ {
+  "id": "CO_Pd111_fcc",
+  "calc": "mattersim",
+  "surface": "Pd(111)",
+  "ads": "CO",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "fcc hollow",
+  "d_MX": 2.093,
+  "ref_d_MX": 2.05,
+  "pair": "Pd-C",
+  "dMX_err": 0.043,
+  "d_int": 1.187,
+  "ref_d_int": 1.17,
+  "int_lbl": "C-O",
+  "dint_err": 0.017,
+  "height": 1.408,
+  "ref_height": 1.28,
+  "E_ads": -1.7,
+  "internal": [
+   [
+    "C-O",
+    1.187
+   ]
+  ]
+ },
+ {
+  "id": "O_Pt111_fcc",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "O",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "fcc hollow",
+  "d_MX": 2.023,
+  "ref_d_MX": 2.0,
+  "pair": "Pt-O",
+  "dMX_err": 0.023,
+  "d_int": null,
+  "ref_d_int": null,
+  "int_lbl": null,
+  "dint_err": null,
+  "height": 1.132,
+  "ref_height": 1.2,
+  "E_ads": -0.363,
+  "internal": []
+ },
+ {
+  "id": "H_Pt111_fcc",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "H",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "fcc hollow",
+  "d_MX": 1.894,
+  "ref_d_MX": 1.87,
+  "pair": "Pt-H",
+  "dMX_err": 0.024,
+  "d_int": null,
+  "ref_d_int": null,
+  "int_lbl": null,
+  "dint_err": null,
+  "height": 1.01,
+  "ref_height": 0.9,
+  "E_ads": -0.163,
+  "internal": []
+ },
+ {
+  "id": "NO_Pt111_fcc",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "NO",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "fcc hollow",
+  "d_MX": 2.03,
+  "ref_d_MX": 1.95,
+  "pair": "Pt-N",
+  "dMX_err": 0.08,
+  "d_int": 1.212,
+  "ref_d_int": 1.18,
+  "int_lbl": "N-O",
+  "dint_err": 0.032,
+  "height": 1.265,
+  "ref_height": 1.3,
+  "E_ads": -1.723,
+  "internal": [
+   [
+    "N-O",
+    1.212
+   ]
+  ]
+ },
+ {
+  "id": "NH3_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "NH3",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop (N lone pair down)",
+  "d_MX": 2.167,
+  "ref_d_MX": 2.1,
+  "pair": "Pt-N",
+  "dMX_err": 0.067,
+  "d_int": null,
+  "ref_d_int": null,
+  "int_lbl": null,
+  "dint_err": null,
+  "height": 2.215,
+  "ref_height": 2.1,
+  "E_ads": -0.52,
+  "internal": [
+   [
+    "N-H",
+    1.024
+   ],
+   [
+    "N-H",
+    1.024
+   ],
+   [
+    "N-H",
+    1.024
+   ],
+   [
+    "H-H",
+    1.704
+   ],
+   [
+    "H-H",
+    1.704
+   ],
+   [
+    "H-H",
+    1.704
+   ]
+  ]
+ },
+ {
+  "id": "H2O_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "H2O",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop, near-flat",
+  "d_MX": 4.106,
+  "ref_d_MX": 2.4,
+  "pair": "Pt-O",
+  "dMX_err": 1.706,
+  "d_int": null,
+  "ref_d_int": null,
+  "int_lbl": null,
+  "dint_err": null,
+  "height": 4.103,
+  "ref_height": 2.4,
+  "E_ads": 0.015,
+  "internal": [
+   [
+    "O-H",
+    0.977
+   ],
+   [
+    "O-H",
+    0.977
+   ],
+   [
+    "H-H",
+    1.533
+   ]
+  ]
+ },
+ {
+  "id": "N2_Ni111_top",
+  "calc": "mattersim",
+  "surface": "Ni(111)",
+  "ads": "N2",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop, end-on",
+  "d_MX": 1.822,
+  "ref_d_MX": 1.9,
+  "pair": "Ni-N",
+  "dMX_err": -0.078,
+  "d_int": 1.125,
+  "ref_d_int": 1.12,
+  "int_lbl": "N-N",
+  "dint_err": 0.005,
+  "height": 2.036,
+  "ref_height": 1.9,
+  "E_ads": 0.027,
+  "internal": [
+   [
+    "N-N",
+    1.125
+   ]
+  ]
+ },
+ {
+  "id": "CO_Fe100_hollow",
+  "calc": "mattersim",
+  "surface": "Fe(100)",
+  "ads": "CO",
+  "converged": true,
+  "site": "hollow(4f)",
+  "ref_site": "4-fold hollow, strongly activated",
+  "d_MX": 4.955,
+  "ref_d_MX": 1.95,
+  "pair": "Fe-C",
+  "dMX_err": 3.005,
+  "d_int": 1.144,
+  "ref_d_int": 1.2,
+  "int_lbl": "C-O",
+  "dint_err": -0.056,
+  "height": 4.522,
+  "ref_height": 1.1,
+  "E_ads": 0.0,
+  "internal": [
+   [
+    "C-O",
+    1.144
+   ]
+  ]
+ },
+ {
+  "id": "CO_Co0001_top",
+  "calc": "mattersim",
+  "surface": "Co(0001)",
+  "ads": "CO",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop",
+  "d_MX": 2.109,
+  "ref_d_MX": 1.75,
+  "pair": "Co-C",
+  "dMX_err": 0.359,
+  "d_int": 1.176,
+  "ref_d_int": 1.16,
+  "int_lbl": "C-O",
+  "dint_err": 0.016,
+  "height": 2.399,
+  "ref_height": 1.75,
+  "E_ads": 0.537,
+  "internal": [
+   [
+    "C-O",
+    1.176
+   ]
+  ]
+ },
+ {
+  "id": "C2H4_Pt111_bri",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "C2H4",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "di-sigma (bridge)",
+  "d_MX": 2.06,
+  "ref_d_MX": 2.1,
+  "pair": "Pt-C",
+  "dMX_err": -0.04,
+  "d_int": 1.498,
+  "ref_d_int": 1.49,
+  "int_lbl": "C-C",
+  "dint_err": 0.008,
+  "height": 2.025,
+  "ref_height": 2.1,
+  "E_ads": -1.603,
+  "internal": [
+   [
+    "C-C",
+    1.498
+   ],
+   [
+    "C-H",
+    1.1
+   ],
+   [
+    "C-H",
+    1.1
+   ],
+   [
+    "C-H",
+    1.1
+   ],
+   [
+    "C-H",
+    1.1
+   ]
+  ]
+ },
+ {
+  "id": "CO2_Cu111_top",
+  "calc": "mattersim",
+  "surface": "Cu(111)",
+  "ads": "CO2",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop / physisorbed",
+  "d_MX": 4.884,
+  "ref_d_MX": 2.3,
+  "pair": "Cu-O",
+  "dMX_err": 2.584,
+  "d_int": 1.176,
+  "ref_d_int": 1.16,
+  "int_lbl": "C-O",
+  "dint_err": 0.016,
+  "height": 4.884,
+  "ref_height": 2.6,
+  "E_ads": -0.0,
+  "internal": [
+   [
+    "C-O",
+    1.176
+   ],
+   [
+    "C-O",
+    1.176
+   ]
+  ]
+ },
+ {
+  "id": "CH4_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CH4",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop / physisorbed",
+  "d_MX": 2.513,
+  "ref_d_MX": 3.1,
+  "pair": "Pt-H",
+  "dMX_err": -0.587,
+  "d_int": 1.097,
+  "ref_d_int": 1.09,
+  "int_lbl": "C-H",
+  "dint_err": 0.007,
+  "height": 2.368,
+  "ref_height": 2.8,
+  "E_ads": -0.182,
+  "internal": [
+   [
+    "C-H",
+    1.097
+   ],
+   [
+    "C-H",
+    1.097
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "H-H",
+    1.792
+   ],
+   [
+    "H-H",
+    1.8
+   ],
+   [
+    "H-H",
+    1.8
+   ],
+   [
+    "H-H",
+    1.8
+   ],
+   [
+    "H-H",
+    1.785
+   ]
+  ]
+ },
+ {
+  "id": "CH3_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CH3",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop",
+  "d_MX": 2.02,
+  "ref_d_MX": 2.08,
+  "pair": "Pt-C",
+  "dMX_err": -0.06,
+  "d_int": 1.101,
+  "ref_d_int": 1.09,
+  "int_lbl": "C-H",
+  "dint_err": 0.011,
+  "height": 2.134,
+  "ref_height": 2.1,
+  "E_ads": -1.84,
+  "internal": [
+   [
+    "C-H",
+    1.101
+   ],
+   [
+    "C-H",
+    1.101
+   ],
+   [
+    "C-H",
+    1.101
+   ]
+  ]
+ },
+ {
+  "id": "OH_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "OH",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop / bridge",
+  "d_MX": 2.031,
+  "ref_d_MX": 2.0,
+  "pair": "Pt-O",
+  "dMX_err": 0.031,
+  "d_int": 0.963,
+  "ref_d_int": 0.97,
+  "int_lbl": "O-H",
+  "dint_err": -0.007,
+  "height": 2.115,
+  "ref_height": 2.0,
+  "E_ads": -0.623,
+  "internal": [
+   [
+    "O-H",
+    0.963
+   ]
+  ]
+ },
+ {
+  "id": "CH3OH_Cu111_top",
+  "calc": "mattersim",
+  "surface": "Cu(111)",
+  "ads": "CH3OH",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop (O lone pair down)",
+  "d_MX": 2.429,
+  "ref_d_MX": 2.1,
+  "pair": "Cu-O",
+  "dMX_err": 0.329,
+  "d_int": 1.461,
+  "ref_d_int": 1.43,
+  "int_lbl": "C-O",
+  "dint_err": 0.031,
+  "height": 2.481,
+  "ref_height": 2.3,
+  "E_ads": -0.123,
+  "internal": [
+   [
+    "C-O",
+    1.461
+   ],
+   [
+    "C-H",
+    1.091
+   ],
+   [
+    "C-H",
+    1.1
+   ],
+   [
+    "C-H",
+    1.1
+   ],
+   [
+    "O-H",
+    0.974
+   ],
+   [
+    "H-H",
+    1.799
+   ],
+   [
+    "H-H",
+    1.799
+   ],
+   [
+    "H-H",
+    1.798
+   ]
+  ]
+ },
+ {
+  "id": "H2CO_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "H2CO",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop (eta1-O) / eta2",
+  "d_MX": 4.896,
+  "ref_d_MX": 2.1,
+  "pair": "Pt-O",
+  "dMX_err": 2.796,
+  "d_int": 1.215,
+  "ref_d_int": 1.21,
+  "int_lbl": "C-O",
+  "dint_err": 0.005,
+  "height": 4.904,
+  "ref_height": 2.2,
+  "E_ads": 0.0,
+  "internal": [
+   [
+    "O-C",
+    1.215
+   ],
+   [
+    "C-H",
+    1.115
+   ],
+   [
+    "C-H",
+    1.115
+   ]
+  ]
+ },
+ {
+  "id": "HCOOH_Cu111_top",
+  "calc": "mattersim",
+  "surface": "Cu(111)",
+  "ads": "HCOOH",
+  "converged": true,
+  "site": "bridge",
+  "ref_site": "atop (carbonyl O down)",
+  "d_MX": 5.137,
+  "ref_d_MX": 2.2,
+  "pair": "Cu-H",
+  "dMX_err": 2.937,
+  "d_int": null,
+  "ref_d_int": null,
+  "int_lbl": null,
+  "dint_err": null,
+  "height": 5.1,
+  "ref_height": 2.3,
+  "E_ads": 0.0,
+  "internal": [
+   [
+    "O-C",
+    1.365
+   ],
+   [
+    "O-H",
+    0.979
+   ],
+   [
+    "C-O",
+    1.212
+   ],
+   [
+    "C-H",
+    1.102
+   ]
+  ]
+ },
+ {
+  "id": "CH3O_Cu111_fcc",
+  "calc": "mattersim",
+  "surface": "Cu(111)",
+  "ads": "CH3O",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "fcc hollow (O down)",
+  "d_MX": 2.031,
+  "ref_d_MX": 1.95,
+  "pair": "Cu-O",
+  "dMX_err": 0.081,
+  "d_int": 1.438,
+  "ref_d_int": 1.42,
+  "int_lbl": "C-O",
+  "dint_err": 0.018,
+  "height": 1.353,
+  "ref_height": 1.9,
+  "E_ads": -1.823,
+  "internal": [
+   [
+    "C-O",
+    1.438
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "H-H",
+    1.798
+   ],
+   [
+    "H-H",
+    1.798
+   ],
+   [
+    "H-H",
+    1.795
+   ]
+  ]
+ },
+ {
+  "id": "C2H6_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "C2H6",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop / physisorbed",
+  "d_MX": 2.552,
+  "ref_d_MX": 3.2,
+  "pair": "Pt-H",
+  "dMX_err": -0.648,
+  "d_int": 1.527,
+  "ref_d_int": 1.53,
+  "int_lbl": "C-C",
+  "dint_err": -0.003,
+  "height": 2.343,
+  "ref_height": 2.9,
+  "E_ads": -0.276,
+  "internal": [
+   [
+    "C-C",
+    1.527
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "H-H",
+    1.774
+   ],
+   [
+    "H-H",
+    1.774
+   ],
+   [
+    "H-H",
+    1.774
+   ],
+   [
+    "H-H",
+    1.768
+   ],
+   [
+    "H-H",
+    1.768
+   ],
+   [
+    "H-H",
+    1.768
+   ]
+  ]
+ },
+ {
+  "id": "C2H2_Pd111_bri",
+  "calc": "mattersim",
+  "surface": "Pd(111)",
+  "ads": "C2H2",
+  "converged": true,
+  "site": "bridge",
+  "ref_site": "di-sigma / bridge",
+  "d_MX": 2.014,
+  "ref_d_MX": 2.05,
+  "pair": "Pd-C",
+  "dMX_err": -0.036,
+  "d_int": 1.377,
+  "ref_d_int": 1.32,
+  "int_lbl": "C-C",
+  "dint_err": 0.057,
+  "height": 1.575,
+  "ref_height": 1.7,
+  "E_ads": -1.793,
+  "internal": [
+   [
+    "C-C",
+    1.377
+   ],
+   [
+    "C-H",
+    1.096
+   ],
+   [
+    "C-H",
+    1.096
+   ]
+  ]
+ },
+ {
+  "id": "CH3CHO_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CH3CHO",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop (eta1-O)",
+  "d_MX": 2.448,
+  "ref_d_MX": 2.1,
+  "pair": "Pt-O",
+  "dMX_err": 0.348,
+  "d_int": 1.234,
+  "ref_d_int": 1.22,
+  "int_lbl": "C-O",
+  "dint_err": 0.014,
+  "height": 2.5,
+  "ref_height": 2.2,
+  "E_ads": 0.313,
+  "internal": [
+   [
+    "O-C",
+    1.234
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "C-C",
+    1.494
+   ],
+   [
+    "C-H",
+    1.101
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "H-H",
+    1.787
+   ],
+   [
+    "H-H",
+    1.786
+   ],
+   [
+    "H-H",
+    1.739
+   ]
+  ]
+ },
+ {
+  "id": "CH3COOH_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CH3COOH",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop (carbonyl O down)",
+  "d_MX": 2.096,
+  "ref_d_MX": 2.1,
+  "pair": "Pt-H",
+  "dMX_err": -0.004,
+  "d_int": 1.521,
+  "ref_d_int": 1.5,
+  "int_lbl": "C-C",
+  "dint_err": 0.021,
+  "height": 2.161,
+  "ref_height": 2.3,
+  "E_ads": -0.253,
+  "internal": [
+   [
+    "C-O",
+    1.218
+   ],
+   [
+    "C-O",
+    1.35
+   ],
+   [
+    "C-C",
+    1.521
+   ],
+   [
+    "O-H",
+    1.023
+   ],
+   [
+    "C-H",
+    1.093
+   ],
+   [
+    "C-H",
+    1.095
+   ],
+   [
+    "C-H",
+    1.095
+   ],
+   [
+    "H-H",
+    1.8
+   ],
+   [
+    "H-H",
+    1.799
+   ],
+   [
+    "H-H",
+    1.76
+   ]
+  ]
+ },
+ {
+  "id": "C2H5OH_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CH3CH2OH",
+  "converged": true,
+  "site": "hollow(3f)",
+  "ref_site": "atop (O lone pair down)",
+  "d_MX": 2.607,
+  "ref_d_MX": 2.2,
+  "pair": "Pt-H",
+  "dMX_err": 0.407,
+  "d_int": 1.439,
+  "ref_d_int": 1.43,
+  "int_lbl": "C-O",
+  "dint_err": 0.009,
+  "height": 2.253,
+  "ref_height": 2.3,
+  "E_ads": -0.094,
+  "internal": [
+   [
+    "C-C",
+    1.528
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "C-H",
+    1.098
+   ],
+   [
+    "C-O",
+    1.439
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "C-H",
+    1.103
+   ],
+   [
+    "O-H",
+    0.985
+   ],
+   [
+    "H-H",
+    1.775
+   ],
+   [
+    "H-H",
+    1.78
+   ],
+   [
+    "H-H",
+    1.78
+   ],
+   [
+    "H-H",
+    1.767
+   ]
+  ]
+ },
+ {
+  "id": "DME_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "CH3OCH3",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop (ether O down)",
+  "d_MX": 2.183,
+  "ref_d_MX": 2.3,
+  "pair": "Pt-O",
+  "dMX_err": -0.117,
+  "d_int": 1.454,
+  "ref_d_int": 1.41,
+  "int_lbl": "C-O",
+  "dint_err": 0.044,
+  "height": 2.223,
+  "ref_height": 2.4,
+  "E_ads": -0.056,
+  "internal": [
+   [
+    "C-O",
+    1.454
+   ],
+   [
+    "C-H",
+    1.104
+   ],
+   [
+    "C-H",
+    1.099
+   ],
+   [
+    "C-H",
+    1.099
+   ],
+   [
+    "O-C",
+    1.454
+   ],
+   [
+    "C-H",
+    1.104
+   ],
+   [
+    "C-H",
+    1.099
+   ],
+   [
+    "C-H",
+    1.099
+   ],
+   [
+    "H-H",
+    1.796
+   ],
+   [
+    "H-H",
+    1.796
+   ]
+  ]
+ },
+ {
+  "id": "H2S_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "H2S",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop (S down)",
+  "d_MX": 4.096,
+  "ref_d_MX": 2.3,
+  "pair": "Pt-S",
+  "dMX_err": 1.796,
+  "d_int": 1.345,
+  "ref_d_int": 1.34,
+  "int_lbl": "S-H",
+  "dint_err": 0.005,
+  "height": 4.064,
+  "ref_height": 2.4,
+  "E_ads": 0.001,
+  "internal": [
+   [
+    "S-H",
+    1.345
+   ],
+   [
+    "S-H",
+    1.345
+   ]
+  ]
+ },
+ {
+  "id": "SO2_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "SO2",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop / eta2 (S down)",
+  "d_MX": 2.273,
+  "ref_d_MX": 2.2,
+  "pair": "Pt-S",
+  "dMX_err": 0.073,
+  "d_int": 1.449,
+  "ref_d_int": 1.44,
+  "int_lbl": "S-O",
+  "dint_err": 0.009,
+  "height": 2.487,
+  "ref_height": 2.2,
+  "E_ads": -0.07,
+  "internal": [
+   [
+    "S-O",
+    1.449
+   ],
+   [
+    "S-O",
+    1.449
+   ]
+  ]
+ },
+ {
+  "id": "HCN_Pt111_top",
+  "calc": "mattersim",
+  "surface": "Pt(111)",
+  "ads": "HCN",
+  "converged": true,
+  "site": "atop",
+  "ref_site": "atop, end-on (N down)",
+  "d_MX": 2.034,
+  "ref_d_MX": 2.0,
+  "pair": "Pt-N",
+  "dMX_err": 0.034,
+  "d_int": 1.164,
+  "ref_d_int": 1.16,
+  "int_lbl": "C-N",
+  "dint_err": 0.004,
+  "height": 2.182,
+  "ref_height": 2.1,
+  "E_ads": -0.066,
+  "internal": [
+   [
+    "C-N",
+    1.164
+   ],
+   [
+    "C-H",
+    1.078
+   ]
+  ]
+ }
+]
