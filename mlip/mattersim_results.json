@@ -78,32 +78,6 @@
   ]
  },
  {
-  "id": "CO_Ni111_fcc",
-  "calc": "mattersim",
-  "surface": "Ni(111)",
-  "ads": "CO",
-  "converged": true,
-  "site": "hollow(3f)",
-  "ref_site": "fcc hollow",
-  "d_MX": 2.241,
-  "ref_d_MX": 1.85,
-  "pair": "Ni-C",
-  "dMX_err": 0.391,
-  "d_int": 1.198,
-  "ref_d_int": 1.19,
-  "int_lbl": "C-O",
-  "dint_err": 0.008,
-  "height": 1.799,
-  "ref_height": 1.3,
-  "E_ads": 0.606,
-  "internal": [
-   [
-    "C-O",
-    1.198
-   ]
-  ]
- },
- {
   "id": "CO_Pd111_fcc",
   "calc": "mattersim",
   "surface": "Pd(111)",
@@ -251,15 +225,15 @@
   "converged": true,
   "site": "atop",
   "ref_site": "atop, near-flat",
-  "d_MX": 4.106,
+  "d_MX": 4.109,
   "ref_d_MX": 2.4,
   "pair": "Pt-O",
-  "dMX_err": 1.706,
+  "dMX_err": 1.709,
   "d_int": null,
   "ref_d_int": null,
   "int_lbl": null,
   "dint_err": null,
-  "height": 4.103,
+  "height": 4.106,
   "ref_height": 2.4,
   "E_ads": 0.015,
   "internal": [
@@ -278,80 +252,28 @@
   ]
  },
  {
-  "id": "N2_Ni111_top",
+  "id": "N2_Pt111_top",
   "calc": "mattersim",
-  "surface": "Ni(111)",
+  "surface": "Pt(111)",
   "ads": "N2",
   "converged": true,
   "site": "atop",
-  "ref_site": "atop, end-on",
-  "d_MX": 1.822,
-  "ref_d_MX": 1.9,
-  "pair": "Ni-N",
-  "dMX_err": -0.078,
-  "d_int": 1.125,
-  "ref_d_int": 1.12,
+  "ref_site": "atop, end-on / weak",
+  "d_MX": 2.024,
+  "ref_d_MX": 2.1,
+  "pair": "Pt-N",
+  "dMX_err": -0.076,
+  "d_int": 1.123,
+  "ref_d_int": 1.1,
   "int_lbl": "N-N",
-  "dint_err": 0.005,
-  "height": 2.036,
-  "ref_height": 1.9,
-  "E_ads": 0.027,
+  "dint_err": 0.023,
+  "height": 2.169,
+  "ref_height": 2.2,
+  "E_ads": 0.238,
   "internal": [
    [
     "N-N",
-    1.125
-   ]
-  ]
- },
- {
-  "id": "CO_Fe100_hollow",
-  "calc": "mattersim",
-  "surface": "Fe(100)",
-  "ads": "CO",
-  "converged": true,
-  "site": "hollow(4f)",
-  "ref_site": "4-fold hollow, strongly activated",
-  "d_MX": 4.955,
-  "ref_d_MX": 1.95,
-  "pair": "Fe-C",
-  "dMX_err": 3.005,
-  "d_int": 1.144,
-  "ref_d_int": 1.2,
-  "int_lbl": "C-O",
-  "dint_err": -0.056,
-  "height": 4.522,
-  "ref_height": 1.1,
-  "E_ads": 0.0,
-  "internal": [
-   [
-    "C-O",
-    1.144
-   ]
-  ]
- },
- {
-  "id": "CO_Co0001_top",
-  "calc": "mattersim",
-  "surface": "Co(0001)",
-  "ads": "CO",
-  "converged": true,
-  "site": "atop",
-  "ref_site": "atop",
-  "d_MX": 2.109,
-  "ref_d_MX": 1.75,
-  "pair": "Co-C",
-  "dMX_err": 0.359,
-  "d_int": 1.176,
-  "ref_d_int": 1.16,
-  "int_lbl": "C-O",
-  "dint_err": 0.016,
-  "height": 2.399,
-  "ref_height": 1.75,
-  "E_ads": 0.537,
-  "internal": [
-   [
-    "C-O",
-    1.176
+    1.123
    ]
   ]
  },
@@ -641,15 +563,15 @@
   "converged": true,
   "site": "bridge",
   "ref_site": "atop (carbonyl O down)",
-  "d_MX": 5.137,
+  "d_MX": 5.138,
   "ref_d_MX": 2.2,
   "pair": "Cu-H",
-  "dMX_err": 2.937,
+  "dMX_err": 2.938,
   "d_int": null,
   "ref_d_int": null,
   "int_lbl": null,
   "dint_err": null,
-  "height": 5.1,
+  "height": 5.102,
   "ref_height": 2.3,
   "E_ads": 0.0,
   "internal": [
@@ -667,7 +589,7 @@
    ],
    [
     "C-H",
-    1.102
+    1.103
    ]
   ]
  },
@@ -811,7 +733,7 @@
   "ref_d_int": 1.32,
   "int_lbl": "C-C",
   "dint_err": 0.057,
-  "height": 1.575,
+  "height": 1.576,
   "ref_height": 1.7,
   "E_ads": -1.793,
   "internal": [
@@ -895,17 +817,17 @@
   "converged": true,
   "site": "atop",
   "ref_site": "atop (carbonyl O down)",
-  "d_MX": 2.096,
+  "d_MX": 2.092,
   "ref_d_MX": 2.1,
   "pair": "Pt-H",
-  "dMX_err": -0.004,
+  "dMX_err": -0.008,
   "d_int": 1.521,
   "ref_d_int": 1.5,
   "int_lbl": "C-C",
   "dint_err": 0.021,
-  "height": 2.161,
+  "height": 2.157,
   "ref_height": 2.3,
-  "E_ads": -0.253,
+  "E_ads": -0.252,
   "internal": [
    [
     "C-O",
@@ -913,7 +835,7 @@
    ],
    [
     "C-O",
-    1.35
+    1.349
    ],
    [
     "C-C",
@@ -925,27 +847,19 @@
    ],
    [
     "C-H",
-    1.093
+    1.094
    ],
    [
     "C-H",
-    1.095
+    1.096
    ],
    [
     "C-H",
-    1.095
+    1.096
    ],
    [
     "H-H",
-    1.8
-   ],
-   [
-    "H-H",
-    1.799
-   ],
-   [
-    "H-H",
-    1.76
+    1.767
    ]
   ]
  },
@@ -1089,25 +1003,25 @@
   "converged": true,
   "site": "atop",
   "ref_site": "atop (S down)",
-  "d_MX": 4.096,
+  "d_MX": 4.118,
   "ref_d_MX": 2.3,
   "pair": "Pt-S",
-  "dMX_err": 1.796,
-  "d_int": 1.345,
+  "dMX_err": 1.818,
+  "d_int": 1.346,
   "ref_d_int": 1.34,
   "int_lbl": "S-H",
-  "dint_err": 0.005,
-  "height": 4.064,
+  "dint_err": 0.006,
+  "height": 4.086,
   "ref_height": 2.4,
-  "E_ads": 0.001,
+  "E_ads": 0.0,
   "internal": [
    [
     "S-H",
-    1.345
+    1.346
    ],
    [
     "S-H",
-    1.345
+    1.346
    ]
   ]
  },

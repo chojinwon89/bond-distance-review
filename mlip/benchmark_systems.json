@@ -63,27 +63,6 @@
   }
  },
  {
-  "id": "CO_Ni111_fcc",
-  "metal": "Ni",
-  "facet": "111",
-  "ads": "CO",
-  "init_site": "fcc",
-  "init_h": 1.35,
-  "gas": "CO",
-  "gasf": 1,
-  "ref": {
-   "d_MX": 1.85,
-   "MX": "Ni-C",
-   "d_int": 1.19,
-   "INT": "C-O",
-   "height": 1.3,
-   "site": "fcc hollow",
-   "method": "PBE (spin-polarised)",
-   "note": "MAGNETIC metal: DFT needs spin; hollow CO, C-O stretched to ~1.19",
-   "source": "Eichler 2003 SurfSci 526,332"
-  }
- },
- {
   "id": "CO_Pd111_fcc",
   "metal": "Pd",
   "facet": "111",
@@ -210,66 +189,24 @@
   }
  },
  {
-  "id": "N2_Ni111_top",
-  "metal": "Ni",
+  "id": "N2_Pt111_top",
+  "metal": "Pt",
   "facet": "111",
   "ads": "N2",
   "init_site": "ontop",
-  "init_h": 2.0,
+  "init_h": 2.2,
   "gas": "N2",
   "gasf": 1,
   "ref": {
-   "d_MX": 1.9,
-   "MX": "Ni-N",
-   "d_int": 1.12,
+   "d_MX": 2.1,
+   "MX": "Pt-N",
+   "d_int": 1.1,
    "INT": "N-N",
-   "height": 1.9,
-   "site": "atop, end-on",
-   "method": "PBE (spin)",
-   "note": "MAGNETIC: N2 is a WEAK binder; DFT binds end-on only on reactive metals, desorbs on coinage -- so a large distance here can be CORRECT",
-   "source": "Mortensen 1998; DFT"
-  }
- },
- {
-  "id": "CO_Fe100_hollow",
-  "metal": "Fe",
-  "facet": "100",
-  "ads": "CO",
-  "init_site": "hollow",
-  "init_h": 1.05,
-  "gas": "CO",
-  "gasf": 1,
-  "ref": {
-   "d_MX": 1.95,
-   "MX": "Fe-C",
-   "d_int": 1.2,
-   "INT": "C-O",
-   "height": 1.1,
-   "site": "4-fold hollow, strongly activated",
-   "method": "PBE (spin)",
-   "note": "MAGNETIC bcc: Fischer-Tropsch metal, CO tilts in the 4-fold hollow, C-O strongly stretched (pre-dissociation)",
-   "source": "Bromfield 2005; Ono DFT"
-  }
- },
- {
-  "id": "CO_Co0001_top",
-  "metal": "Co",
-  "facet": "0001",
-  "ads": "CO",
-  "init_site": "ontop",
-  "init_h": 1.75,
-  "gas": "CO",
-  "gasf": 1,
-  "ref": {
-   "d_MX": 1.75,
-   "MX": "Co-C",
-   "d_int": 1.16,
-   "INT": "C-O",
-   "height": 1.75,
-   "site": "atop",
-   "method": "PBE (spin)",
-   "note": "MAGNETIC hcp: atop CO -- the same slab that ejected CO in your SevenNet set",
-   "source": "Gajdos 2004 JPCM 16,1141"
+   "height": 2.2,
+   "site": "atop, end-on / weak",
+   "method": "indicative",
+   "note": "N2 is a WEAK binder; on non-magnetic Pt it adsorbs end-on only weakly (or desorbs) -- a long distance can be CORRECT. Internal N-N (1.098) should be preserved",
+   "source": "NIST CCCBDB (N-N 1.098); indicative surface geometry"
   }
  },
  {

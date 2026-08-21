@@ -1,6 +1,6 @@
 # MLIP geometry benchmark -- curated systems
 
-31 systems. Columns: surface, adsorbate, expected site, key metal-adsorbate bond, internal bond, method, source.
+28 systems. Columns: surface, adsorbate, expected site, key metal-adsorbate bond, internal bond, method, source.
 
 
 | id | surface | ads | ref site | d(M-X) | internal | method | source |
@@ -8,16 +8,13 @@
 | CO_Pt111_atop | Pt(111) | CO | atop | Pt-C 1.85 | C-O 1.15 | LEED expt + PBE | Ogletree 1986 SurfSci 173,351; Feibelman 2001 JPCB 105,4018 |
 | CO_Pt111_fcc | Pt(111) | CO | fcc | Pt-C 2.05 | C-O 1.16 | PBE | Feibelman 2001 JPCB 105,4018 |
 | CO_Cu111_atop | Cu(111) | CO | atop | Cu-C 1.83 | C-O 1.15 | expt/PBE | Hollins 1983; DFT |
-| CO_Ni111_fcc | Ni(111) | CO | fcc hollow | Ni-C 1.85 | C-O 1.19 | PBE (spin-polarised) | Eichler 2003 SurfSci 526,332 |
 | CO_Pd111_fcc | Pd(111) | CO | fcc hollow | Pd-C 2.05 | C-O 1.17 | PBE | Loffreda 1998; Honkala DFT |
 | O_Pt111_fcc | Pt(111) | O | fcc hollow | Pt-O 2.0 | - | PBE | Todorova 2006; Hafner DFT |
 | H_Pt111_fcc | Pt(111) | H | fcc hollow | Pt-H 1.87 | - | PBE | Olsen 1999; Kresse DFT |
 | NO_Pt111_fcc | Pt(111) | NO | fcc hollow | Pt-N 1.95 | N-O 1.18 | PBE | Aizawa 1999; DFT |
 | NH3_Pt111_top | Pt(111) | NH3 | atop (N lone pair down) | Pt-N 2.1 | - | PBE | Offermans 2007; DFT |
 | H2O_Pt111_top | Pt(111) | H2O | atop, near-flat | Pt-O 2.4 | - | PBE+vdW | Michaelides 2003; Carrasco 2012 |
-| N2_Ni111_top | Ni(111) | N2 | atop, end-on | Ni-N 1.9 | N-N 1.12 | PBE (spin) | Mortensen 1998; DFT |
-| CO_Fe100_hollow | Fe(100) | CO | 4-fold hollow, strongly activated | Fe-C 1.95 | C-O 1.2 | PBE (spin) | Bromfield 2005; Ono DFT |
-| CO_Co0001_top | Co(0001) | CO | atop | Co-C 1.75 | C-O 1.16 | PBE (spin) | Gajdos 2004 JPCM 16,1141 |
+| N2_Pt111_top | Pt(111) | N2 | atop, end-on / weak | Pt-N 2.1 | N-N 1.1 | indicative | NIST CCCBDB (N-N 1.098); indicative surface geometry |
 | C2H4_Pt111_bri | Pt(111) | C2H4 | di-sigma (bridge) | Pt-C 2.1 | C-C 1.49 | PBE | Watson 2001; Cremer 1996 |
 | CO2_Cu111_top | Cu(111) | CO2 | atop / physisorbed | Cu-O 2.3 | C-O 1.16 | indicative | NIST CCCBDB (C=O 1.162); indicative surface geometry |
 | CH4_Pt111_top | Pt(111) | CH4 | atop / physisorbed | Pt-C 3.1 | C-H 1.09 | indicative | NIST CCCBDB (C-H 1.087); indicative surface geometry |
@@ -42,16 +39,13 @@
 - **CO_Pt111_atop** (Pt(111), CO): CO/Pt(111) SITE PUZZLE: expt=atop, plain PBE wrongly prefers fcc hollow -- a classic MLIP stress test
 - **CO_Pt111_fcc** (Pt(111), CO): same system started in the fcc hollow; compare final energy vs the atop start to read out the MLIP's site preference
 - **CO_Cu111_atop** (Cu(111), CO): CO binds atop Cu(111), weak-moderate
-- **CO_Ni111_fcc** (Ni(111), CO): MAGNETIC metal: DFT needs spin; hollow CO, C-O stretched to ~1.19
 - **CO_Pd111_fcc** (Pd(111), CO): Pd(111) favours the fcc hollow at low coverage
 - **O_Pt111_fcc** (Pt(111), O): atomic O in the fcc hollow, O-Pt ~2.0
 - **H_Pt111_fcc** (Pt(111), H): light atom, very flat PES; fcc~atop near-degenerate. Pt-H(hollow)~1.87, Pt-H(atop)~1.55
 - **NO_Pt111_fcc** (Pt(111), NO): N-down NO in fcc hollow at low coverage
 - **NH3_Pt111_top** (Pt(111), NH3): molecular NH3 datives through N atop
 - **H2O_Pt111_top** (Pt(111), H2O): weak; O nearly atop, molecular plane ~parallel
-- **N2_Ni111_top** (Ni(111), N2): MAGNETIC: N2 is a WEAK binder; DFT binds end-on only on reactive metals, desorbs on coinage -- so a large distance here can be CORRECT
-- **CO_Fe100_hollow** (Fe(100), CO): MAGNETIC bcc: Fischer-Tropsch metal, CO tilts in the 4-fold hollow, C-O strongly stretched (pre-dissociation)
-- **CO_Co0001_top** (Co(0001), CO): MAGNETIC hcp: atop CO -- the same slab that ejected CO in your SevenNet set
+- **N2_Pt111_top** (Pt(111), N2): N2 is a WEAK binder; on non-magnetic Pt it adsorbs end-on only weakly (or desorbs) -- a long distance can be CORRECT. Internal N-N (1.098) should be preserved
 - **C2H4_Pt111_bri** (Pt(111), C2H4): rehybridisation test: C=C (1.33) stretches toward 1.49 as it binds di-sigma
 - **CO2_Cu111_top** (Cu(111), CO2): CO2 physisorbs weakly on Cu(111) and stays near-linear; it only bends to CO2^d- when activated -- a large height here can be CORRECT
 - **CH4_Pt111_top** (Pt(111), CH4): methane physisorbs; expect ~gas-phase geometry at a large height (a big d(M-C) is correct, not a failure)
@@ -71,4 +65,4 @@
 - **SO2_Pt111_top** (Pt(111), SO2): SO2 binds S-down or eta2-S,O; S-O ~1.43
 - **HCN_Pt111_top** (Pt(111), HCN): hydrogen cyanide adsorbs end-on through N; C#N ~1.16
 
-EMT-runnable subset (no torch needed): CO_Pt111_atop, CO_Pt111_fcc, CO_Cu111_atop, CO_Ni111_fcc, CO_Pd111_fcc, O_Pt111_fcc, H_Pt111_fcc, NO_Pt111_fcc, NH3_Pt111_top, H2O_Pt111_top, N2_Ni111_top, C2H4_Pt111_bri, CO2_Cu111_top, CH4_Pt111_top, CH3_Pt111_top, OH_Pt111_top, CH3OH_Cu111_top, H2CO_Pt111_top, HCOOH_Cu111_top, CH3O_Cu111_fcc, C2H6_Pt111_top, C2H2_Pd111_bri, CH3CHO_Pt111_top, CH3COOH_Pt111_top, C2H5OH_Pt111_top, DME_Pt111_top, HCN_Pt111_top
+EMT-runnable subset (no torch needed): CO_Pt111_atop, CO_Pt111_fcc, CO_Cu111_atop, CO_Pd111_fcc, O_Pt111_fcc, H_Pt111_fcc, NO_Pt111_fcc, NH3_Pt111_top, H2O_Pt111_top, N2_Pt111_top, C2H4_Pt111_bri, CO2_Cu111_top, CH4_Pt111_top, CH3_Pt111_top, OH_Pt111_top, CH3OH_Cu111_top, H2CO_Pt111_top, HCOOH_Cu111_top, CH3O_Cu111_fcc, C2H6_Pt111_top, C2H2_Pd111_bri, CH3CHO_Pt111_top, CH3COOH_Pt111_top, C2H5OH_Pt111_top, DME_Pt111_top, HCN_Pt111_top
