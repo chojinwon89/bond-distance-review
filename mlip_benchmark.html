@@ -20,6 +20,12 @@
  .note { background:#20242e; border:1px solid var(--line); border-left:3px solid #4c78a8;
           border-radius:8px; padding:12px 14px; margin:12px 0; font-size:13px; color:#d7dbe2; }
  .note.warn { border-left-color:#c9a227; }
+ .status { background:#1c2620; border:1px solid #2f5741; border-left:3px solid #4bb97a;
+            border-radius:8px; padding:12px 15px; margin:14px 0; font-size:13px; color:#d7f0e0; }
+ .status b { color:#7fe3a6; }
+ .status .live { display:inline-block; font-size:10px; font-weight:700; letter-spacing:.5px;
+                  color:#0c1a12; background:#4bb97a; border-radius:9px; padding:1px 7px;
+                  margin-right:8px; vertical-align:1px; }
  figure { margin:8px 0; background:#fff; border:1px solid var(--line); border-radius:10px; }
  figure img { width:100%; display:block; border-radius:10px; }
  figcaption { color:var(--muted); font-size:12px; padding:6px 10px; }
@@ -59,6 +65,18 @@
    <a href="mlip/mattersim_results.json">MatterSim</a> results (json)</span></div>
 </header>
 <div class="wrap">
+
+ <div class="status">
+   <span class="live">DFT VALIDATION IN PROGRESS</span>
+   <b>Stage&nbsp;B DFT reference calculations are now running on Perlmutter.</b>
+   The MLIP-relaxed geometries below are being validated against full DFT
+   geometry optimizations (VASP) with <b>PBE, PBE-D3, r2scan and BEEF-vdW</b>
+   across the full <b>477-system</b> grid (25 molecules &times; 7 non-magnetic
+   metals &times; 3 facets) &mdash; <b>476/477 staged</b> so far. DFT E<sub>ads</sub>
+   and bond-distance columns will populate here as jobs converge. &nbsp;
+   <a href="https://github.com/chojinwon89/VASP/blob/main/README_Perlmutter.md">
+   full Perlmutter workflow &raquo;</a>
+ </div>
 
  <div class="cards">
    <div class="kpi sev"><b>22/28</b>SevenNet within &plusmn;0.3&#8491; of ref M&ndash;X</div>
