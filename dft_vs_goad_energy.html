@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DFT vs GOAD+MLIP — relaxed adsorption energies</title>
+<style>
+ :root { --bg:#0f1116; --card:#191c24; --fg:#e6e6e6; --muted:#9aa0aa; --line:#2a2e38; }
+ * { box-sizing:border-box; }
+ body { margin:0; background:var(--bg); color:var(--fg);
+        font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+ header { padding:18px 22px; border-bottom:1px solid var(--line); }
+ h1 { font-size:19px; margin:0 0 6px; }
+ h2 { font-size:16px; margin:30px 0 4px; }
+ h3 { font-size:13.5px; margin:18px 0 2px; color:#cfd4dd; }
+ a { color:#6ea8fe; }
+ .wrap { max-width:1100px; margin:0 auto; padding:0 22px 70px; }
+ .sub { color:var(--muted); font-size:13px; max-width:920px; }
+ .note { background:#20242e; border:1px solid var(--line); border-left:3px solid #e0a800;
+          border-radius:8px; padding:12px 14px; margin:14px 0; font-size:12.8px; color:#d7dbe2; }
+ .note b { color:#fff; }
+ .fig { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:14px 0; }
+ .fig img { width:100%; display:block; }
+ .legend { color:var(--muted); font-size:12px; margin:2px 0 8px; }
+ table.big { width:100%; border-collapse:collapse; font-size:12.5px; margin:8px 0 4px; }
+ table.big th, table.big td { padding:7px 10px; border:1px solid var(--line); text-align:right; }
+ table.big th { background:#20242e; text-align:right; position:sticky; top:0; }
+ table.big td.l, table.big th.l { text-align:left; }
+ tr.good td { background:rgba(44,160,44,0.10); }
+ tr.bad  td { background:rgba(214,39,40,0.12); }
+ tr.mid  td { background:rgba(224,168,0,0.08); }
+ .pill { font-size:10.5px; font-weight:700; padding:1px 7px; border-radius:999px; color:#fff; }
+ .mag { background:#8a5cf6; } .nonmag { background:#3d4350; color:#c9ced8; }
+ .u { color:#ff9a9a; } .o { color:#7ee0a1; }
+ ul.take { font-size:13px; color:#dfe3ea; max-width:940px; }
+ ul.take li { margin:7px 0; }
+ code { background:#20242e; padding:1px 5px; border-radius:5px; font-size:12px; }
+ .two { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+ @media (max-width:820px){ .two{grid-template-columns:1fr;} }
+ .kpi { display:flex; gap:10px; flex-wrap:wrap; margin:12px 0; }
+ .kpi div { background:var(--card); border:1px solid var(--line); border-radius:9px; padding:9px 13px; }
+ .kpi b { font-size:17px; } .kpi span { color:var(--muted); font-size:11.5px; display:block; }
+</style></head>
+<body>
+<header>
+ <h1>DFT vs GOAD+MLIP &mdash; relaxed adsorption energies</h1>
+ <div class="sub">End-to-end check of the GOAD + SevenNet-OMNI workflow against DFT: each system is
+   <b>independently relaxed</b> by DFT and by GOAD+MLIP, and the adsorption energies of the two
+   <b>separately optimized</b> structures are compared &mdash; so the gap
+   <code>&Delta; = E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT)</code> folds in both the energy model
+   <b>and</b> any relaxation differences. 58 matched pairs &middot; 4 DFT functionals &middot;
+   3 metals (Cu, Pd, Pt) &middot; 4 molecules (CO<sub>2</sub>, ethane, ethene, ethanol) &middot;
+   21 unique surface/molecule systems.
+   &nbsp;<a href="index.html">&larr; gallery</a> &middot;
+   <a href="dft_energy.html">single-point DFT vs ML</a> &middot;
+   <a href="dft_comparison.html">geometry comparison</a> &middot;
+   <a href="mlip_benchmark.html" style="color:#d0a3ff">SevenNet vs MatterSim</a> &middot;
+   <a href="flagged.html" style="color:#ff9a9a">likely failures</a> &middot;
+   <a href="dft_vs_mlip_matched.csv" download>download data (CSV)</a></div>
+</header>
+<div class="wrap">
+
+ <div class="fig">
+   <img src="dft_vs_mlip_all_functionals.png" alt="Parity plots of GOAD+MLIP vs DFT relaxed adsorption energies for PBE, PBE+D3, BEEF-vdW and r2SCAN">
+ </div>
+ <div class="legend">One parity panel per DFT functional. Each point is a system that was relaxed
+   <b>independently</b> in DFT and in GOAD+MLIP; the ML adsorption energy is plotted against the DFT value.</div>
+
+ <div class="kpi">
+   <div><b>58</b><span>matched DFT/ML pairs</span></div>
+   <div><b>21</b><span>unique systems</span></div>
+   <div><b>0.14 eV</b><span>best functional MAE (BEEF-vdW)</span></div>
+   <div><b>0.25 eV</b><span>overall MAE</span></div>
+   <div><b>&minus;0.16 eV</b><span>overall bias (ML over-binds)</span></div>
+   <div><b>95%</b><span>within 0.5 eV</span></div>
+ </div>
+
+ <div class="note">
+   <b>How this differs from the <a href="dft_energy.html">single-point page</a>.</b> There, DFT and ML score
+   the <b>same</b> geometry, isolating the energy model. Here, DFT and GOAD+MLIP each run their <b>own</b>
+   relaxation and we compare the resulting adsorption energies &mdash; the realistic end-to-end test of the
+   workflow. A <b>negative</b> <code>&Delta;</code> means GOAD+MLIP predicts a <b>stronger</b> (more negative)
+   binding than DFT (over-binds); positive means it under-binds. The overlap is small (Cu/Pd/Pt &times;
+   CO<sub>2</sub>/ethane/ethene/ethanol), and functional coverage is uneven &mdash; PBE has 21 pairs while
+   BEEF-vdW has 10 &mdash; so R&sup2; on these narrow energy ranges is noisy and MAE/bias are the reliable
+   metrics.
+ </div>
+
+ <!-- ============================ FUNCTIONALS ============================ -->
+ <h2>1 &middot; Which DFT functional does GOAD+MLIP match after relaxation?</h2>
+ <div class="legend">Pooled over the matched Cu/Pd/Pt systems. SevenNet-OMNI is dispersion-aware, so it
+   tracks the <b>dispersion-corrected</b> functionals (BEEF-vdW, PBE+D3) closest.</div>
+ <table class="big">
+   <tr><th class="l">DFT functional</th><th>n</th><th>MAE (eV)</th><th>RMSE (eV)</th>
+       <th>bias &Delta; (eV)</th><th>within 0.5 eV</th><th class="l">verdict</th></tr>
+   <tr class="good"><td class="l"><b>BEEF-vdW</b></td><td>10</td><td>0.14</td><td>0.16</td><td>&minus;0.11</td><td>100%</td><td class="l">best &mdash; smallest error &amp; bias</td></tr>
+   <tr class="good"><td class="l"><b>PBE+D3</b></td><td>16</td><td>0.18</td><td>0.24</td><td class="o">+0.13</td><td>88%</td><td class="l">tight; slight under-bind</td></tr>
+   <tr class="mid"><td class="l">r&sup2;SCAN</td><td>11</td><td>0.26</td><td>0.28</td><td>&minus;0.22</td><td>100%</td><td class="l">consistent over-bind</td></tr>
+   <tr class="bad"><td class="l">PBE</td><td>21</td><td>0.36</td><td>0.38</td><td class="u">&minus;0.36</td><td>95%</td><td class="l">no dispersion &rarr; ML over-binds</td></tr>
+ </table>
+ <ul class="take">
+   <li><b>BEEF-vdW is the reference GOAD+MLIP reproduces best</b> &mdash; MAE&nbsp;0.14&nbsp;eV, bias only
+       &minus;0.11&nbsp;eV, every point within 0.5&nbsp;eV. PBE+D3 is a close second (MAE&nbsp;0.18&nbsp;eV).</li>
+   <li><b>Bare PBE shows the expected systematic offset.</b> Because PBE has no dispersion, GOAD+MLIP looks
+       like it <b>over-binds</b> by a uniform &minus;0.36&nbsp;eV &mdash; that is the missing van-der-Waals
+       attraction PBE lacks, not an MLIP error. Benchmark this workflow against BEEF-vdW / PBE+D3.</li>
+ </ul>
+
+ <!-- ============================ METALS ============================ -->
+ <h2>2 &middot; By surface metal</h2>
+ <div class="legend">Pooled over functionals. Bias is <code>E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT)</code>.</div>
+ <table class="big">
+   <tr><th class="l">metal</th><th>n</th><th>MAE (eV)</th><th>bias &Delta; (eV)</th><th>within 0.5 eV</th><th class="l">character</th></tr>
+   <tr class="good"><td class="l">Cu</td><td>22</td><td>0.21</td><td>&minus;0.02</td><td>91%</td><td class="l">excellent &mdash; near-zero bias</td></tr>
+   <tr class="mid"><td class="l">Pd</td><td>22</td><td>0.27</td><td>&minus;0.25</td><td>95%</td><td class="l">mild over-bind</td></tr>
+   <tr class="mid"><td class="l">Pt</td><td>14</td><td>0.30</td><td>&minus;0.23</td><td>100%</td><td class="l">mild over-bind</td></tr>
+ </table>
+
+ <!-- ============================ MOLECULES ============================ -->
+ <h2>3 &middot; By molecule</h2>
+ <div class="legend">Pooled over functionals and metals.</div>
+ <table class="big">
+   <tr><th class="l">molecule</th><th>n</th><th>MAE (eV)</th><th>bias &Delta; (eV)</th><th class="l">note</th></tr>
+   <tr class="good"><td class="l">ethanol</td><td>19</td><td>0.22</td><td>&minus;0.10</td><td class="l">best &mdash; strongest binder, well captured</td></tr>
+   <tr class="mid"><td class="l">ethene</td><td>7</td><td>0.25</td><td class="o">+0.16</td><td class="l">only molecule ML under-binds</td></tr>
+   <tr class="mid"><td class="l">ethane</td><td>27</td><td>0.25</td><td>&minus;0.24</td><td class="l">weak physisorber; PBE offset dominates</td></tr>
+   <tr class="bad"><td class="l">CO<sub>2</sub></td><td>5</td><td>0.43</td><td class="u">&minus;0.43</td><td class="l">largest gap (PBE-only pairs)</td></tr>
+ </table>
+
+ <!-- ============================ TAKEAWAYS ============================ -->
+ <h2>4 &middot; Takeaways</h2>
+ <ul class="take">
+   <li><b>The GOAD+MLIP workflow reproduces dispersion-corrected DFT adsorption energies well.</b> Against
+       BEEF-vdW the end-to-end MAE is <b>0.14&nbsp;eV</b> and against PBE+D3 it is <b>0.18&nbsp;eV</b>, with
+       95% of all 58 pairs inside 0.5&nbsp;eV &mdash; competitive with the single-point energy-only agreement.</li>
+   <li><b>The apparent PBE disagreement is physics, not an MLIP failure.</b> The uniform
+       &minus;0.36&nbsp;eV offset vs bare PBE is the dispersion contribution SevenNet-OMNI includes and PBE
+       omits; it disappears once you compare to a vdW-corrected functional.</li>
+   <li><b>Metals are all in good shape.</b> Cu is essentially unbiased (MAE&nbsp;0.21&nbsp;eV); Pd/Pt show a
+       small &minus;0.2&nbsp;eV over-binding but still keep &ge;95% of points within 0.5&nbsp;eV.</li>
+   <li><b>Caveat &mdash; small, uneven overlap.</b> Only 21 systems (Cu/Pd/Pt &times; four C<sub>1</sub>&ndash;C<sub>2</sub>
+       molecules) have both a converged DFT relaxation and a matching GOAD+MLIP structure. Extending the DFT
+       set to more surfaces/molecules would sharpen these numbers; the per-molecule CO<sub>2</sub> row in
+       particular rests on only 5 pairs.</li>
+ </ul>
+
+</div>
+</body></html>
