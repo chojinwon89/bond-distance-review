@@ -1,0 +1,2 @@
+surface,molecule,functional,min_dist_dft,pair_dft,min_dist_mlip,pair_mlip,d_min_dist,rmsd,max_disp,max_disp_atom,mlip_cif
+Ag111,C2H2,beef_vdw,3.606,Ag-C,3.346,Ag-C,0.26,1.355,8.452,Ag29,Ag111_acetylene_sevennet_omni.cif
