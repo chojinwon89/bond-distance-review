@@ -1,225 +1,482 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SevenNet vs DFT-geometry comparison</title>
+<title>GOAD+SevenNet vs DFT — structure & geometry</title>
 <style>
- :root { --bg:#0f1116; --card:#191c24; --fg:#e6e6e6; --muted:#9aa0aa; --line:#2a2e38; }
- * { box-sizing:border-box; }
- body { margin:0; background:var(--bg); color:var(--fg);
-        font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
- header { padding:18px 22px; border-bottom:1px solid var(--line); }
- h1 { font-size:19px; margin:0 0 6px; }
- h2 { font-size:16px; margin:26px 22px 4px; }
- a { color:#6ea8fe; }
- .wrap { max-width:1100px; margin:0 auto; padding:0 22px 60px; }
- .sub { color:var(--muted); font-size:13px; max-width:900px; }
- .note { background:#20242e; border:1px solid var(--line); border-left:3px solid #e0a800;
-          border-radius:8px; padding:12px 14px; margin:14px 0; font-size:12.8px; color:#d7dbe2; }
- .note b { color:#fff; }
- .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(430px,1fr));
-          gap:16px; margin-top:12px; }
- figure.cmp { margin:0; background:var(--card); border:1px solid var(--line);
-               border-radius:10px; overflow:hidden; }
- figure.cmp img { width:100%; display:block; background:#fff; }
- figcaption { display:flex; justify-content:space-between; align-items:center;
-               padding:9px 12px; border-bottom:1px solid var(--line); }
- .nm { font-weight:700; font-size:13.5px; }
- .badge { color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:999px; }
- table.mini { width:100%; border-collapse:collapse; font-size:12px; }
- table.mini td { padding:6px 12px; border-top:1px solid var(--line); vertical-align:top; }
- table.mini td.k { color:var(--muted); width:110px; }
- .src { color:var(--muted); font-style:italic; }
- table.big { width:100%; border-collapse:collapse; font-size:12.5px; margin:10px 0 4px; }
- table.big th, table.big td { padding:7px 10px; border:1px solid var(--line); text-align:left; }
- table.big th { background:#20242e; }
- .legend { color:var(--muted); font-size:12px; }
- ul.take { font-size:13px; color:#dfe3ea; }
- ul.take li { margin:5px 0; }
+ :root{--bg:#0f1116;--card:#191c24;--fg:#e6e6e6;--muted:#9aa0aa;--line:#2a2e38;}
+ *{box-sizing:border-box;}
+ body{margin:0;background:var(--bg);color:var(--fg);
+   font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+ header{padding:18px 22px;border-bottom:1px solid var(--line);}
+ h1{font-size:19px;margin:0 0 6px;} h2{font-size:16px;margin:30px 0 4px;}
+ h3{font-size:13.5px;margin:16px 0 2px;color:#cfd4dd;}
+ a{color:#6ea8fe;}
+ .wrap{max-width:1150px;margin:0 auto;padding:0 22px 70px;}
+ .sub{color:var(--muted);font-size:13px;max-width:960px;}
+ .note{background:#20242e;border:1px solid var(--line);border-left:3px solid #e0a800;
+   border-radius:8px;padding:12px 14px;margin:14px 0;font-size:12.8px;color:#d7dbe2;}
+ .note b{color:#fff;}
+ .note.info{border-left-color:#4c78a8;}
+ .status{background:#1c2620;border:1px solid #2f5741;border-left:3px solid #4bb97a;
+   border-radius:8px;padding:12px 15px;margin:14px 0;font-size:12.8px;color:#d7f0e0;}
+ .status b{color:#7fe3a6;}
+ .status .live{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.5px;
+   color:#0c1a12;background:#4bb97a;border-radius:9px;padding:1px 7px;margin-right:8px;}
+ .status .pend{background:#c9a227;color:#1c1400;}
+ .fig{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:14px 0;}
+ .fig img{width:100%;display:block;}
+ .legend{color:var(--muted);font-size:12px;margin:2px 0 8px;}
+ table.big{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0 4px;}
+ table.big th,table.big td{padding:7px 10px;border:1px solid var(--line);text-align:right;}
+ table.big th{background:#20242e;}
+ table.big td.l,table.big th.l{text-align:left;}
+ tr.good td{background:rgba(44,160,44,.10);} tr.bad td{background:rgba(214,39,40,.12);}
+ tr.mid td{background:rgba(224,168,0,.08);}
+ .kpi{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0;}
+ .kpi div{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 13px;}
+ .kpi b{font-size:17px;} .kpi span{color:var(--muted);font-size:11.5px;display:block;}
+ .controls{display:flex;gap:10px;align-items:center;margin:10px 0;flex-wrap:wrap;}
+ select,input{background:var(--card);color:var(--fg);border:1px solid var(--line);
+   border-radius:8px;padding:6px 9px;font-size:13px;}
+ table.data{width:100%;border-collapse:collapse;font-size:12px;}
+ table.data th,table.data td{padding:6px 8px;border-bottom:1px solid var(--line);
+   text-align:right;white-space:nowrap;}
+ table.data th{position:sticky;top:0;background:#20242e;cursor:pointer;}
+ table.data td.l,table.data th.l{text-align:left;}
+ .u{color:#ff9a9a;} .o{color:#7ee0a1;}
+ .pill{font-size:10px;padding:1px 6px;border-radius:9px;border:1px solid var(--line);color:#c9ced8;}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:12px;}
+ .g{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;}
+ .g h3{margin:0 0 4px;font-size:13.5px;color:#fff;}
+ .g .m{color:var(--muted);font-size:11px;margin-bottom:6px;}
+ .pair{display:flex;gap:8px;}
+ .pair>div{flex:1;text-align:center;}
+ .pair img{width:100%;border-radius:6px;background:#fff;}
+ .pair .cap{font-size:10.5px;color:var(--muted);margin-top:2px;}
+ .ph{display:flex;align-items:center;justify-content:center;height:150px;border-radius:6px;
+   background:#141821;border:1px dashed #39404e;color:#6b7280;font-size:11px;text-align:center;padding:6px;}
+ table.mini{width:100%;border-collapse:collapse;font-size:11px;margin-top:8px;}
+ table.mini th,table.mini td{padding:3px 5px;border-bottom:1px solid var(--line);text-align:right;}
+ table.mini td.l,table.mini th.l{text-align:left;} table.mini th{color:var(--muted);font-weight:600;}
+ .tag{font-size:10px;padding:1px 6px;border-radius:9px;background:#222833;color:#c9ced8;border:1px solid var(--line);}
 </style></head>
 <body>
 <header>
- <h1>SevenNet structures vs DFT-geometry reference</h1>
- <div class="sub">Small-molecule adsorption spot-check for the GOAD + SevenNet set.
-   Each panel shows <b>your relaxed structure</b> (left) beside a reference slab+adsorbate
-   built at a typical PBE-DFT geometry (right). &nbsp;
-   <a href="index.html">&larr; full gallery</a> &middot; <a href="dft_energy.html" style="color:#7ee0a1">energy agreement</a> &middot; <a href="flagged.html" style="color:#ff9a9a">likely failures (198)</a> &middot; <a href="carbon_trends.html">C-number trends</a> &middot; <a href="molecule_trends.html">by-molecule</a> &middot; <a href="mlip_benchmark.html" style="color:#d0a3ff">SevenNet vs MatterSim &rarr;</a></div>
+ <h1>GOAD+SevenNet vs DFT &mdash; structure &amp; geometry</h1>
+ <div class="sub">Side-by-side relaxed structures, metal&ndash;adsorbate bond distance and binding site for each benchmark system. MLIP side is live; DFT side fills in from the cluster geometry extraction.<br><a href="index.html">&larr; gallery</a> &middot; <a href="dft_vs_goad_energy.html">binding energy</a> &middot; <a href="dft_comparison.html">structure &amp; geometry</a> &middot; <a href="dft_energy.html">single-point DFT vs ML</a> &middot; <a href="mlip_benchmark.html" style="color:#d0a3ff">SevenNet vs MatterSim</a> &middot; <a href="flagged.html" style="color:#ff9a9a">likely failures</a></div>
 </header>
 <div class="wrap">
 
- <div class="note">
-   <b>How the references were made.</b> Catalysis-Hub's API is now key-gated and the full
-   OC20 dataset needs multi-GB downloads, so these reference panels are <b>rebuilt with ASE
-   at published/textbook PBE-DFT bond lengths</b> (labelled &ldquo;indicative&rdquo; where not
-   from one specific paper) &mdash; they are <b>not</b> live-pulled relaxed structures. The
-   comparison is <b>geometric</b> (bond distance &amp; binding site), not energetic. CO/metal
-   values follow Gajdo&#353; et&nbsp;al., <i>J. Phys.: Condens. Matter</i> <b>16</b>, 1141 (2004);
-   the MLIP-for-adsorption paradigm is validated by AdsorbML (<i>npj Comput. Mater.</i> 2023)
-   on OC20 (<i>ACS Catal.</i> 2021). Ask if you want each number sourced to a specific DOI.
+ <div class="status">
+   <span class="live">MLIP SIDE READY</span>
+   <b>44 systems</b> show the GOAD+SevenNet-OMNI relaxed structure, its
+   metal&ndash;adsorbate bond distance and binding site (computed with the same
+   minimum-image contact metric used cluster-side).
+   <span class="live pend">DFT GEOMETRY 0/44</span>
+   the DFT final structures, bond distances and sites populate here once
+   <code>compare_dft_mlip_structures.py</code> is run on the cluster (where the
+   CONTCARs live) and its CSV + rendered PNGs are synced back.
  </div>
-
- <h2 style="margin-left:0">&#10003; Workflow reproduces DFT geometry</h2>
- <div class="legend">Adsorbate sits at the surface at a bond length within ~0.2&ndash;0.3 &#8491; of DFT.</div>
- <div class="grid">
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Cu111_CO</span>
-      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Cu111_CO_compare.png" alt="Cu111_CO comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Cu–C 2.02 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Cu–C ~1.85 Å — chemisorbed atop</td></tr>
-      <tr><td class="k">Source</td><td class="src">Gajdoš et al. 2004</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Ir100_CO</span>
-      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Ir100_CO_compare.png" alt="Ir100_CO comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Ir–C 2.03 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Ir–C ~1.87 Å — chemisorbed atop</td></tr>
-      <tr><td class="k">Source</td><td class="src">Gajdoš et al. 2004</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Co0001_H2S</span>
-      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Co0001_H2S_compare.png" alt="Co0001_H2S comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Co–S 2.14 Å (heavy)</td></tr>
-      <tr><td class="k">DFT reference</td><td>Co–S ~2.25 Å — molecular, S-down</td></tr>
-      <tr><td class="k">Source</td><td class="src">H₂S/TM DFT</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Co0001_N2</span>
-      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Co0001_N2_compare.png" alt="Co0001_N2 comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Co–N 1.81 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Co–N ~1.85 Å — end-on N₂ activation</td></tr>
-      <tr><td class="k">Source</td><td class="src">N₂/TM DFT</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Cu111_methanol</span>
-      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Cu111_methanol_compare.png" alt="Cu111_methanol comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Cu–O 2.38 Å (heavy)</td></tr>
-      <tr><td class="k">DFT reference</td><td>Cu–O ~2.4 Å — molecular, O-down (weak)</td></tr>
-      <tr><td class="k">Source</td><td class="src">CH₃OH/Cu DFT</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Cu110_formic_acid</span>
-      <span class="badge" style="background:#2ca02c">MATCH ✓</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Cu110_formic_acid_compare.png" alt="Cu110_formic_acid comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Cu–O 2.04 Å (heavy)</td></tr>
-      <tr><td class="k">DFT reference</td><td>Cu–O ~2.1 Å — molecular / formate-like</td></tr>
-      <tr><td class="k">Source</td><td class="src">HCOOH/Cu(110) DFT</td></tr>
-    </table>
-  </figure></div>
-
- <h2 style="margin-left:0; color:#ff9a9a">&#10007; Strong binders left desorbed (red flags)</h2>
- <div class="legend">These molecules <b>must</b> chemisorb at ~1.7&ndash;2.1 &#8491; in reality, but
-   your structures have them floating 5&ndash;7 &#8491; off the surface.</div>
- <div class="grid">
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Fe100_CO</span>
-      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Fe100_CO_compare.png" alt="Fe100_CO comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Fe–C 5.76 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Fe–C ~1.76 Å — strong chemisorption (Fischer–Tropsch metal)</td></tr>
-      <tr><td class="k">Source</td><td class="src">Gajdoš 2004; FT DFT</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Co0001_CO</span>
-      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Co0001_CO_compare.png" alt="Co0001_CO comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Co–C 5.37 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Co–C ~1.75 Å — strong chemisorption (atop)</td></tr>
-      <tr><td class="k">Source</td><td class="src">Gajdoš et al. 2004</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Co0001_NO</span>
-      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Co0001_NO_compare.png" alt="Co0001_NO comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Co–N 6.02 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Co–N ~1.78 Å — strong chemisorption</td></tr>
-      <tr><td class="k">Source</td><td class="src">NO/TM DFT</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Co0001_O2</span>
-      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Co0001_O2_compare.png" alt="Co0001_O2 comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Co–O 6.00 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Co–O ~1.8 Å — dissociative / strong</td></tr>
-      <tr><td class="k">Source</td><td class="src">O₂/TM DFT</td></tr>
-    </table>
-  </figure>
-  <figure class="cmp">
-    <figcaption>
-      <span class="nm">Fe110_CO2</span>
-      <span class="badge" style="background:#d62728">MISMATCH ✗</span>
-    </figcaption>
-    <img loading="lazy" src="compare/Fe110_CO2_compare.png" alt="Fe110_CO2 comparison">
-    <table class="mini">
-      <tr><td class="k">Your SevenNet</td><td>Fe–C 7.32 Å</td></tr>
-      <tr><td class="k">DFT reference</td><td>Fe–C ~2.1 Å — activated / bent CO₂</td></tr>
-      <tr><td class="k">Source</td><td class="src">CO₂/Fe DFT</td></tr>
-    </table>
-  </figure></div>
-
- <h2 style="margin-left:0">Summary table</h2>
- <table class="big">
-   <tr><th>System</th><th>Your SevenNet</th><th>DFT reference</th><th>Expected mode</th><th>Source</th><th>Verdict</th></tr>
-   <tr><td>Cu111_CO</td><td>Cu–C 2.02 Å</td><td>Cu–C ~1.85 Å</td><td>chemisorbed atop</td><td>Gajdoš et al. 2004</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Ir100_CO</td><td>Ir–C 2.03 Å</td><td>Ir–C ~1.87 Å</td><td>chemisorbed atop</td><td>Gajdoš et al. 2004</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Co0001_H2S</td><td>Co–S 2.14 Å (heavy)</td><td>Co–S ~2.25 Å</td><td>molecular, S-down</td><td>H₂S/TM DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Co0001_N2</td><td>Co–N 1.81 Å</td><td>Co–N ~1.85 Å</td><td>end-on N₂ activation</td><td>N₂/TM DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Cu111_methanol</td><td>Cu–O 2.38 Å (heavy)</td><td>Cu–O ~2.4 Å</td><td>molecular, O-down (weak)</td><td>CH₃OH/Cu DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr><tr><td>Cu110_formic_acid</td><td>Cu–O 2.04 Å (heavy)</td><td>Cu–O ~2.1 Å</td><td>molecular / formate-like</td><td>HCOOH/Cu(110) DFT</td><td style='color:#2ca02c;font-weight:700'>MATCH ✓</td></tr>
-   <tr><td>Fe100_CO</td><td>Fe–C 5.76 Å</td><td>Fe–C ~1.76 Å</td><td>strong chemisorption (Fischer–Tropsch metal)</td><td>Gajdoš 2004; FT DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Co0001_CO</td><td>Co–C 5.37 Å</td><td>Co–C ~1.75 Å</td><td>strong chemisorption (atop)</td><td>Gajdoš et al. 2004</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Co0001_NO</td><td>Co–N 6.02 Å</td><td>Co–N ~1.78 Å</td><td>strong chemisorption</td><td>NO/TM DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Co0001_O2</td><td>Co–O 6.00 Å</td><td>Co–O ~1.8 Å</td><td>dissociative / strong</td><td>O₂/TM DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr><tr><td>Fe110_CO2</td><td>Fe–C 7.32 Å</td><td>Fe–C ~2.1 Å</td><td>activated / bent CO₂</td><td>CO₂/Fe DFT</td><td style='color:#d62728;font-weight:700'>MISMATCH ✗</td></tr>
- </table>
-
- <h2 style="margin-left:0">What this means</h2>
- <ul class="take">
-   <li><b>The paradigm is sound.</b> On coinage/noble metals (Cu, Ir, Ag, Au) and for weakly/
-       moderately bound species (CO, H&#8322;S, methanol, formic acid), geometries land within
-       ~0.2&ndash;0.3 &#8491; of DFT &mdash; exactly what AdsorbML/OC20 validate for MLIPs.</li>
-   <li><b>Systematic red flag on reactive metals.</b> On Fe, Co, Cr the molecules
-       <b>CO, NO, O&#8322;, CO&#8322;</b> come out desorbed (5&ndash;7 &#8491;) &mdash; yet Fe/Co are
-       textbook <i>strong</i> CO binders (Fischer&ndash;Tropsch). This is physically backwards.</li>
-   <li><b>It is molecule-specific, not a broken slab.</b> The <i>same</i> Co(0001) slab binds
-       <b>N&#8322; (1.81 &#8491;)</b>, NH&#8322; and H&#8322;S correctly while ejecting CO/NO/O&#8322;.
-       So the surface is fine; the adsorbate simply failed to find its chemisorption well.</li>
-   <li><b>Likely cause:</b> a bulk-trained foundation MLIP under-binding &pi;-acceptor / O-rich
-       adsorbates on reactive metals (domain shift), and/or initial placements that never relaxed
-       into the well. <b>Fix:</b> use an OC20-trained or fine-tuned checkpoint for adsorption and
-       re-relax the desorbed cases.</li>
- </ul>
+ <div class="note">Binding site is a <b>coarse coordination label</b> (metal neighbours of the
+   closest adsorbate atom within +0.45 &#8491; of the shortest contact: 1&rarr;atop, 2&rarr;bridge,
+   &ge;3&rarr;hollow). For weakly physisorbed alkanes the site is indicative only; the
+   <b>bond distance</b> and <b>contact pair</b> are the robust metrics.</div>
+<h2>Per-system structure &amp; geometry (44 systems)</h2><div class="grid">
+   <div class="g">
+     <h3>Cu100 &middot; CO₂ <span class="tag">other</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 3.563 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_CO2_mlip.png" alt="Cu100 CO2 MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.03</td><td>-0.36</td><td class="u">-0.33</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>-0.36</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td>-0.06</td><td>-0.36</td><td class="u">-0.30</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.36</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; ethane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 3.063 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_ethane_mlip.png" alt="Cu100 ethane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.01</td><td>-0.32</td><td class="u">-0.30</td></tr><tr><td class="l">PBE+D3</td><td>-0.33</td><td>-0.32</td><td class="">+0.02</td></tr><tr><td class="l">r²SCAN</td><td>-0.06</td><td>-0.32</td><td class="u">-0.25</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.32</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; ethanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 2.207 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_ethanol_mlip.png" alt="Cu100 ethanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.20</td><td>-0.50</td><td class="u">-0.30</td></tr><tr><td class="l">PBE+D3</td><td>-0.70</td><td>-0.50</td><td class="o">+0.20</td></tr><tr><td class="l">r²SCAN</td><td>-0.43</td><td>-0.50</td><td class="u">-0.08</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.50</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; ethene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Cu-C 2.875 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_ethene_mlip.png" alt="Cu100 ethene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.06</td><td>-0.23</td><td class="u">-0.17</td></tr><tr><td class="l">PBE+D3</td><td>-0.75</td><td>-0.23</td><td class="o">+0.52</td></tr><tr><td class="l">r²SCAN</td><td>-0.19</td><td>-0.23</td><td class="">-0.04</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.23</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; glycerol <span class="tag">polyol</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 2.161 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_glycerol_mlip.png" alt="Cu100 glycerol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.44</td><td>-0.77</td><td class="u">-0.32</td></tr><tr><td class="l">PBE+D3</td><td>-1.25</td><td>-0.77</td><td class="o">+0.48</td></tr><tr><td class="l">r²SCAN</td><td>-0.83</td><td>-0.77</td><td class="o">+0.06</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.77</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; isopropanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 2.177 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_isopropanol_mlip.png" alt="Cu100 isopropanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.23</td><td>-0.56</td><td class="u">-0.33</td></tr><tr><td class="l">PBE+D3</td><td>-0.84</td><td>-0.56</td><td class="o">+0.28</td></tr><tr><td class="l">r²SCAN</td><td>-0.42</td><td>-0.56</td><td class="u">-0.13</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.56</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; propane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 2.903 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_propane_mlip.png" alt="Cu100 propane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.02</td><td>-0.32</td><td class="u">-0.30</td></tr><tr><td class="l">PBE+D3</td><td>-0.43</td><td>-0.32</td><td class="o">+0.10</td></tr><tr><td class="l">r²SCAN</td><td>-0.09</td><td>-0.32</td><td class="u">-0.23</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.32</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; propanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 2.22 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_propanol_mlip.png" alt="Cu100 propanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.24</td><td>-0.56</td><td class="u">-0.32</td></tr><tr><td class="l">PBE+D3</td><td>-0.88</td><td>-0.56</td><td class="o">+0.32</td></tr><tr><td class="l">r²SCAN</td><td>-0.47</td><td>-0.56</td><td class="u">-0.10</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.56</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu100 &middot; propene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 3.009 &#8491;</b> &middot; site <b>bridge</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu100_propene_mlip.png" alt="Cu100 propene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.07</td><td>-0.23</td><td class="u">-0.16</td></tr><tr><td class="l">PBE+D3</td><td>-0.81</td><td>-0.23</td><td class="o">+0.58</td></tr><tr><td class="l">r²SCAN</td><td>-0.15</td><td>-0.23</td><td class="u">-0.08</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.23</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu110 &middot; CO₂ <span class="tag">other</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 3.569 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu110_CO2_mlip.png" alt="Cu110 CO2 MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>0.46</td><td>-0.37</td><td class="u">-0.83</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>-0.37</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td>0.33</td><td>-0.37</td><td class="u">-0.70</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.37</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu111 &middot; ethane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 3.056 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu111_ethane_mlip.png" alt="Cu111 ethane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu111 &middot; ethene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 3.429 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu111_ethene_mlip.png" alt="Cu111 ethene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu111 &middot; glycerol <span class="tag">polyol</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 2.77 &#8491;</b> &middot; site <b>bridge</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu111_glycerol_mlip.png" alt="Cu111 glycerol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu111 &middot; isopropanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 2.533 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu111_isopropanol_mlip.png" alt="Cu111 isopropanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu111 &middot; propane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 2.913 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu111_propane_mlip.png" alt="Cu111 propane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu111 &middot; propanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Cu-O 2.398 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu111_propanol_mlip.png" alt="Cu111 propanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Cu111 &middot; propene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Cu-H 3.321 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Cu111_propene_mlip.png" alt="Cu111 propene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; CO₂ <span class="tag">other</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 3.267 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_CO2_mlip.png" alt="Pd100 CO2 MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; ethane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Pd-H 2.271 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_ethane_mlip.png" alt="Pd100 ethane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; ethanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.24 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_ethanol_mlip.png" alt="Pd100 ethanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; ethene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Pd-C 2.078 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_ethene_mlip.png" alt="Pd100 ethene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; glycerol <span class="tag">polyol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.291 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_glycerol_mlip.png" alt="Pd100 glycerol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; isopropanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.262 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_isopropanol_mlip.png" alt="Pd100 isopropanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; propane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Pd-H 2.085 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_propane_mlip.png" alt="Pd100 propane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; propanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.261 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_propanol_mlip.png" alt="Pd100 propanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd100 &middot; propene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Pd-C 2.075 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd100_propene_mlip.png" alt="Pd100 propene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td class="l" style="color:#6b7280">&mdash;</td><td>n/a</td><td>&mdash;</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>n/a</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; CO₂ <span class="tag">other</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 3.341 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_CO2_mlip.png" alt="Pd111 CO2 MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.39</td><td>-0.45</td><td class="u">-0.06</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>-0.45</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td>-0.66</td><td>-0.45</td><td class="o">+0.21</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.45</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; ethane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Pd-H 2.362 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_ethane_mlip.png" alt="Pd111 ethane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.41</td><td>-0.46</td><td class="">-0.04</td></tr><tr><td class="l">PBE+D3</td><td>-0.79</td><td>-0.46</td><td class="o">+0.34</td></tr><tr><td class="l">r²SCAN</td><td>-0.73</td><td>-0.46</td><td class="o">+0.28</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.46</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; ethanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.272 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_ethanol_mlip.png" alt="Pd111 ethanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.64</td><td>-0.67</td><td class="">-0.03</td></tr><tr><td class="l">PBE+D3</td><td>-1.14</td><td>-0.67</td><td class="o">+0.47</td></tr><tr><td class="l">r²SCAN</td><td>-1.09</td><td>-0.67</td><td class="o">+0.42</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.67</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; ethene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Pd-C 2.142 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_ethene_mlip.png" alt="Pd111 ethene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-1.09</td><td>-1.27</td><td class="u">-0.17</td></tr><tr><td class="l">PBE+D3</td><td>-1.52</td><td>-1.27</td><td class="o">+0.25</td></tr><tr><td class="l">r²SCAN</td><td>-1.55</td><td>-1.27</td><td class="o">+0.29</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-1.27</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; glycerol <span class="tag">polyol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.279 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_glycerol_mlip.png" alt="Pd111 glycerol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.85</td><td>-1.01</td><td class="u">-0.16</td></tr><tr><td class="l">PBE+D3</td><td>-1.63</td><td>-1.01</td><td class="o">+0.62</td></tr><tr><td class="l">r²SCAN</td><td>-1.45</td><td>-1.01</td><td class="o">+0.44</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-1.01</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; isopropanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.276 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_isopropanol_mlip.png" alt="Pd111 isopropanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.62</td><td>-0.77</td><td class="u">-0.14</td></tr><tr><td class="l">PBE+D3</td><td>-1.26</td><td>-0.77</td><td class="o">+0.50</td></tr><tr><td class="l">r²SCAN</td><td>-1.12</td><td>-0.77</td><td class="o">+0.36</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.77</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; propane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Pd-H 2.297 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_propane_mlip.png" alt="Pd111 propane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.41</td><td>-0.47</td><td class="u">-0.06</td></tr><tr><td class="l">PBE+D3</td><td>-0.91</td><td>-0.47</td><td class="o">+0.44</td></tr><tr><td class="l">r²SCAN</td><td>-0.78</td><td>-0.47</td><td class="o">+0.31</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.47</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; propanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pd-O 2.268 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_propanol_mlip.png" alt="Pd111 propanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.64</td><td>-0.71</td><td class="u">-0.07</td></tr><tr><td class="l">PBE+D3</td><td>-1.28</td><td>-0.71</td><td class="o">+0.57</td></tr><tr><td class="l">r²SCAN</td><td>-1.14</td><td>-0.71</td><td class="o">+0.42</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.71</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pd111 &middot; propene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Pd-C 2.167 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pd111_propene_mlip.png" alt="Pd111 propene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.99</td><td>-1.18</td><td class="u">-0.19</td></tr><tr><td class="l">PBE+D3</td><td>-1.57</td><td>-1.18</td><td class="o">+0.39</td></tr><tr><td class="l">r²SCAN</td><td>-1.52</td><td>-1.18</td><td class="o">+0.34</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-1.18</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; CO₂ <span class="tag">other</span></h3>
+     <div class="m">MLIP contact: <b>Pt-O 3.481 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_CO2_mlip.png" alt="Pt111 CO2 MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.87</td><td>-0.49</td><td class="o">+0.38</td></tr><tr><td class="l">PBE+D3</td><td class="l" style="color:#6b7280">&mdash;</td><td>-0.49</td><td>&mdash;</td></tr><tr><td class="l">r²SCAN</td><td>-1.40</td><td>-0.49</td><td class="o">+0.92</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.49</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; ethane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Pt-H 2.608 &#8491;</b> &middot; site <b>bridge</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_ethane_mlip.png" alt="Pt111 ethane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.86</td><td>-0.43</td><td class="o">+0.43</td></tr><tr><td class="l">PBE+D3</td><td>-1.40</td><td>-0.43</td><td class="o">+0.97</td></tr><tr><td class="l">r²SCAN</td><td>-1.42</td><td>-0.43</td><td class="o">+0.98</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.43</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; ethanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pt-O 2.273 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_ethanol_mlip.png" alt="Pt111 ethanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-1.10</td><td>-0.60</td><td class="o">+0.50</td></tr><tr><td class="l">PBE+D3</td><td>-1.78</td><td>-0.60</td><td class="o">+1.18</td></tr><tr><td class="l">r²SCAN</td><td>-1.81</td><td>-0.60</td><td class="o">+1.21</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.60</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; ethene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Pt-C 2.163 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_ethene_mlip.png" alt="Pt111 ethene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-1.66</td><td>-1.32</td><td class="o">+0.34</td></tr><tr><td class="l">PBE+D3</td><td>-2.31</td><td>-1.32</td><td class="o">+0.98</td></tr><tr><td class="l">r²SCAN</td><td>-2.36</td><td>-1.32</td><td class="o">+1.04</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-1.32</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; glycerol <span class="tag">polyol</span></h3>
+     <div class="m">MLIP contact: <b>Pt-O 2.348 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_glycerol_mlip.png" alt="Pt111 glycerol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-1.30</td><td>-0.82</td><td class="o">+0.49</td></tr><tr><td class="l">PBE+D3</td><td>-2.24</td><td>-0.82</td><td class="o">+1.42</td></tr><tr><td class="l">r²SCAN</td><td>-2.07</td><td>-0.82</td><td class="o">+1.26</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.82</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; isopropanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pt-H 1.797 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_isopropanol_mlip.png" alt="Pt111 isopropanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-1.03</td><td>-0.71</td><td class="o">+0.33</td></tr><tr><td class="l">PBE+D3</td><td>-1.85</td><td>-0.71</td><td class="o">+1.14</td></tr><tr><td class="l">r²SCAN</td><td>-1.69</td><td>-0.71</td><td class="o">+0.98</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.71</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; propane <span class="tag">alkane</span></h3>
+     <div class="m">MLIP contact: <b>Pt-H 2.803 &#8491;</b> &middot; site <b>hollow</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_propane_mlip.png" alt="Pt111 propane MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-0.88</td><td>-0.46</td><td class="o">+0.42</td></tr><tr><td class="l">PBE+D3</td><td>-1.56</td><td>-0.46</td><td class="o">+1.10</td></tr><tr><td class="l">r²SCAN</td><td>-1.46</td><td>-0.46</td><td class="o">+0.99</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.46</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; propanol <span class="tag">alcohol</span></h3>
+     <div class="m">MLIP contact: <b>Pt-O 2.306 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_propanol_mlip.png" alt="Pt111 propanol MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-1.12</td><td>-0.73</td><td class="o">+0.39</td></tr><tr><td class="l">PBE+D3</td><td>-1.96</td><td>-0.73</td><td class="o">+1.23</td></tr><tr><td class="l">r²SCAN</td><td>-1.87</td><td>-0.73</td><td class="o">+1.14</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-0.73</td><td>&mdash;</td></tr></table>
+   </div>
+   <div class="g">
+     <h3>Pt111 &middot; propene <span class="tag">alkene</span></h3>
+     <div class="m">MLIP contact: <b>Pt-C 2.067 &#8491;</b> &middot; site <b>atop</b></div>
+     <div class="pair">
+       <div><img src="dftcmp/png/Pt111_propene_mlip.png" alt="Pt111 propene MLIP"><div class="cap">GOAD+SevenNet-OMNI</div></div>
+       <div><div class="ph">DFT structure<br>pending cluster<br>extraction</div><div class="cap">DFT (relaxed)</div></div>
+     </div>
+     <table class="mini"><tr><th class="l">func</th><th>E_ads DFT</th><th>E_ads ML</th><th>&Delta;</th></tr><tr><td class="l">PBE</td><td>-1.87</td><td>-1.68</td><td class="o">+0.19</td></tr><tr><td class="l">PBE+D3</td><td>-2.69</td><td>-1.68</td><td class="o">+1.01</td></tr><tr><td class="l">r²SCAN</td><td>-2.65</td><td>-1.68</td><td class="o">+0.97</td></tr><tr><td class="l">BEEF-vdW</td><td class="l" style="color:#6b7280">ref broken</td><td>-1.68</td><td>&mdash;</td></tr></table>
+   </div></div>
 </div>
 </body></html>

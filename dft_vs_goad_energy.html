@@ -1,146 +1,151 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DFT vs GOAD+MLIP — relaxed adsorption energies</title>
+<title>DFT vs GOAD+SevenNet — relaxed adsorption energies</title>
 <style>
- :root { --bg:#0f1116; --card:#191c24; --fg:#e6e6e6; --muted:#9aa0aa; --line:#2a2e38; }
- * { box-sizing:border-box; }
- body { margin:0; background:var(--bg); color:var(--fg);
-        font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
- header { padding:18px 22px; border-bottom:1px solid var(--line); }
- h1 { font-size:19px; margin:0 0 6px; }
- h2 { font-size:16px; margin:30px 0 4px; }
- h3 { font-size:13.5px; margin:18px 0 2px; color:#cfd4dd; }
- a { color:#6ea8fe; }
- .wrap { max-width:1100px; margin:0 auto; padding:0 22px 70px; }
- .sub { color:var(--muted); font-size:13px; max-width:920px; }
- .note { background:#20242e; border:1px solid var(--line); border-left:3px solid #e0a800;
-          border-radius:8px; padding:12px 14px; margin:14px 0; font-size:12.8px; color:#d7dbe2; }
- .note b { color:#fff; }
- .fig { background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; margin:14px 0; }
- .fig img { width:100%; display:block; }
- .legend { color:var(--muted); font-size:12px; margin:2px 0 8px; }
- table.big { width:100%; border-collapse:collapse; font-size:12.5px; margin:8px 0 4px; }
- table.big th, table.big td { padding:7px 10px; border:1px solid var(--line); text-align:right; }
- table.big th { background:#20242e; text-align:right; position:sticky; top:0; }
- table.big td.l, table.big th.l { text-align:left; }
- tr.good td { background:rgba(44,160,44,0.10); }
- tr.bad  td { background:rgba(214,39,40,0.12); }
- tr.mid  td { background:rgba(224,168,0,0.08); }
- .pill { font-size:10.5px; font-weight:700; padding:1px 7px; border-radius:999px; color:#fff; }
- .mag { background:#8a5cf6; } .nonmag { background:#3d4350; color:#c9ced8; }
- .u { color:#ff9a9a; } .o { color:#7ee0a1; }
- ul.take { font-size:13px; color:#dfe3ea; max-width:940px; }
- ul.take li { margin:7px 0; }
- code { background:#20242e; padding:1px 5px; border-radius:5px; font-size:12px; }
- .two { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
- @media (max-width:820px){ .two{grid-template-columns:1fr;} }
- .kpi { display:flex; gap:10px; flex-wrap:wrap; margin:12px 0; }
- .kpi div { background:var(--card); border:1px solid var(--line); border-radius:9px; padding:9px 13px; }
- .kpi b { font-size:17px; } .kpi span { color:var(--muted); font-size:11.5px; display:block; }
+ :root{--bg:#0f1116;--card:#191c24;--fg:#e6e6e6;--muted:#9aa0aa;--line:#2a2e38;}
+ *{box-sizing:border-box;}
+ body{margin:0;background:var(--bg);color:var(--fg);
+   font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+ header{padding:18px 22px;border-bottom:1px solid var(--line);}
+ h1{font-size:19px;margin:0 0 6px;} h2{font-size:16px;margin:30px 0 4px;}
+ h3{font-size:13.5px;margin:16px 0 2px;color:#cfd4dd;}
+ a{color:#6ea8fe;}
+ .wrap{max-width:1150px;margin:0 auto;padding:0 22px 70px;}
+ .sub{color:var(--muted);font-size:13px;max-width:960px;}
+ .note{background:#20242e;border:1px solid var(--line);border-left:3px solid #e0a800;
+   border-radius:8px;padding:12px 14px;margin:14px 0;font-size:12.8px;color:#d7dbe2;}
+ .note b{color:#fff;}
+ .note.info{border-left-color:#4c78a8;}
+ .status{background:#1c2620;border:1px solid #2f5741;border-left:3px solid #4bb97a;
+   border-radius:8px;padding:12px 15px;margin:14px 0;font-size:12.8px;color:#d7f0e0;}
+ .status b{color:#7fe3a6;}
+ .status .live{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.5px;
+   color:#0c1a12;background:#4bb97a;border-radius:9px;padding:1px 7px;margin-right:8px;}
+ .status .pend{background:#c9a227;color:#1c1400;}
+ .fig{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:14px 0;}
+ .fig img{width:100%;display:block;}
+ .legend{color:var(--muted);font-size:12px;margin:2px 0 8px;}
+ table.big{width:100%;border-collapse:collapse;font-size:12.5px;margin:8px 0 4px;}
+ table.big th,table.big td{padding:7px 10px;border:1px solid var(--line);text-align:right;}
+ table.big th{background:#20242e;}
+ table.big td.l,table.big th.l{text-align:left;}
+ tr.good td{background:rgba(44,160,44,.10);} tr.bad td{background:rgba(214,39,40,.12);}
+ tr.mid td{background:rgba(224,168,0,.08);}
+ .kpi{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0;}
+ .kpi div{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 13px;}
+ .kpi b{font-size:17px;} .kpi span{color:var(--muted);font-size:11.5px;display:block;}
+ .controls{display:flex;gap:10px;align-items:center;margin:10px 0;flex-wrap:wrap;}
+ select,input{background:var(--card);color:var(--fg);border:1px solid var(--line);
+   border-radius:8px;padding:6px 9px;font-size:13px;}
+ table.data{width:100%;border-collapse:collapse;font-size:12px;}
+ table.data th,table.data td{padding:6px 8px;border-bottom:1px solid var(--line);
+   text-align:right;white-space:nowrap;}
+ table.data th{position:sticky;top:0;background:#20242e;cursor:pointer;}
+ table.data td.l,table.data th.l{text-align:left;}
+ .u{color:#ff9a9a;} .o{color:#7ee0a1;}
+ .pill{font-size:10px;padding:1px 6px;border-radius:9px;border:1px solid var(--line);color:#c9ced8;}
+ .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:12px;}
+ .g{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;}
+ .g h3{margin:0 0 4px;font-size:13.5px;color:#fff;}
+ .g .m{color:var(--muted);font-size:11px;margin-bottom:6px;}
+ .pair{display:flex;gap:8px;}
+ .pair>div{flex:1;text-align:center;}
+ .pair img{width:100%;border-radius:6px;background:#fff;}
+ .pair .cap{font-size:10.5px;color:var(--muted);margin-top:2px;}
+ .ph{display:flex;align-items:center;justify-content:center;height:150px;border-radius:6px;
+   background:#141821;border:1px dashed #39404e;color:#6b7280;font-size:11px;text-align:center;padding:6px;}
+ table.mini{width:100%;border-collapse:collapse;font-size:11px;margin-top:8px;}
+ table.mini th,table.mini td{padding:3px 5px;border-bottom:1px solid var(--line);text-align:right;}
+ table.mini td.l,table.mini th.l{text-align:left;} table.mini th{color:var(--muted);font-weight:600;}
+ .tag{font-size:10px;padding:1px 6px;border-radius:9px;background:#222833;color:#c9ced8;border:1px solid var(--line);}
 </style></head>
 <body>
 <header>
- <h1>DFT vs GOAD+MLIP &mdash; relaxed adsorption energies</h1>
- <div class="sub">End-to-end check of the GOAD + SevenNet-OMNI workflow against DFT: each system is
-   <b>independently relaxed</b> by DFT and by GOAD+MLIP, and the adsorption energies of the two
-   <b>separately optimized</b> structures are compared &mdash; so the gap
-   <code>&Delta; = E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT)</code> folds in both the energy model
-   <b>and</b> any relaxation differences. 58 matched pairs &middot; 4 DFT functionals &middot;
-   3 metals (Cu, Pd, Pt) &middot; 4 molecules (CO<sub>2</sub>, ethane, ethene, ethanol) &middot;
-   21 unique surface/molecule systems.
-   &nbsp;<a href="index.html">&larr; gallery</a> &middot;
-   <a href="dft_energy.html">single-point DFT vs ML</a> &middot;
-   <a href="dft_comparison.html">geometry comparison</a> &middot;
-   <a href="mlip_benchmark.html" style="color:#d0a3ff">SevenNet vs MatterSim</a> &middot;
-   <a href="flagged.html" style="color:#ff9a9a">likely failures</a> &middot;
-   <a href="dft_vs_mlip_matched.csv" download>download data (CSV)</a></div>
+ <h1>DFT vs GOAD+SevenNet &mdash; relaxed adsorption energies</h1>
+ <div class="sub">Each system is <b>independently relaxed</b> by DFT and by GOAD+SevenNet-OMNI; we compare the adsorption energies of the two <b>separately optimized</b> structures. Cu/Pd/Pt &middot; C1&ndash;C3 molecules &middot; <a href="dft_vs_mlip_pairs.csv" download>download pairs (CSV)</a><br><a href="index.html">&larr; gallery</a> &middot; <a href="dft_vs_goad_energy.html">binding energy</a> &middot; <a href="dft_comparison.html">structure &amp; geometry</a> &middot; <a href="dft_energy.html">single-point DFT vs ML</a> &middot; <a href="mlip_benchmark.html" style="color:#d0a3ff">SevenNet vs MatterSim</a> &middot; <a href="flagged.html" style="color:#ff9a9a">likely failures</a></div>
 </header>
 <div class="wrap">
 
- <div class="fig">
-   <img src="dft_vs_mlip_all_functionals.png" alt="Parity plots of GOAD+MLIP vs DFT relaxed adsorption energies for PBE, PBE+D3, BEEF-vdW and r2SCAN">
+ <div class="status">
+   <span class="live">DATA REFRESHED</span>
+   <b>Rebuilt from the re-run DFT set</b> (slab references re-matched by metal-atom
+   count in <code>vasp_slab</code>) &mdash; this supersedes the earlier published
+   numbers. <span class="pend" style="display:inline-block;font-size:10px;font-weight:700;border-radius:9px;padding:1px 7px;">BEEF-vdW PENDING</span>
+   its gas/slab references are non-physical and are being recomputed, so it has
+   no valid pairs yet.
  </div>
- <div class="legend">One parity panel per DFT functional. Each point is a system that was relaxed
-   <b>independently</b> in DFT and in GOAD+MLIP; the ML adsorption energy is plotted against the DFT value.</div>
+
+ <div class="fig"><img src="dft_vs_mlip_all.png" alt="DFT vs SevenNet-OMNI adsorption-energy parity plots per functional"></div>
+ <div class="legend">One parity panel per DFT functional. Each point is a system relaxed
+   <b>independently</b> by DFT and by GOAD+SevenNet-OMNI; the ML adsorption energy is plotted
+   against the DFT value. Grey band = &plusmn;0.3 eV.</div>
 
  <div class="kpi">
-   <div><b>58</b><span>matched DFT/ML pairs</span></div>
-   <div><b>21</b><span>unique systems</span></div>
-   <div><b>0.14 eV</b><span>best functional MAE (BEEF-vdW)</span></div>
-   <div><b>0.25 eV</b><span>overall MAE</span></div>
-   <div><b>&minus;0.16 eV</b><span>overall bias (ML over-binds)</span></div>
-   <div><b>95%</b><span>within 0.5 eV</span></div>
+   <div><b>80</b><span>matched pairs (filtered)</span></div>
+   <div><b>28</b><span>unique systems</span></div>
+   <div><b>PBE</b><span>best-agreeing functional</span></div>
+   <div><b>0.28 eV</b><span>best-functional MAE</span></div>
+   <div><b>3</b><span>metals (Cu, Pd, Pt)</span></div>
  </div>
 
- <div class="note">
-   <b>How this differs from the <a href="dft_energy.html">single-point page</a>.</b> There, DFT and ML score
-   the <b>same</b> geometry, isolating the energy model. Here, DFT and GOAD+MLIP each run their <b>own</b>
-   relaxation and we compare the resulting adsorption energies &mdash; the realistic end-to-end test of the
-   workflow. A <b>negative</b> <code>&Delta;</code> means GOAD+MLIP predicts a <b>stronger</b> (more negative)
-   binding than DFT (over-binds); positive means it under-binds. The overlap is small (Cu/Pd/Pt &times;
-   CO<sub>2</sub>/ethane/ethene/ethanol), and functional coverage is uneven &mdash; PBE has 21 pairs while
-   BEEF-vdW has 10 &mdash; so R&sup2; on these narrow energy ranges is noisy and MAE/bias are the reliable
-   metrics.
- </div>
+ <div class="note">Statistics use the same sanity filter as the accuracy report:
+   drop pairs whose DFT E<sub>ads</sub> &gt; 0.5 eV (broken reference) or |&Delta;| &gt; 5 eV
+   (gross outlier). <b>&Delta; = E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT)</b>; negative
+   &rArr; ML binds more strongly (over-binds).</div>
 
- <!-- ============================ FUNCTIONALS ============================ -->
- <h2>1 &middot; Which DFT functional does GOAD+MLIP match after relaxation?</h2>
- <div class="legend">Pooled over the matched Cu/Pd/Pt systems. SevenNet-OMNI is dispersion-aware, so it
-   tracks the <b>dispersion-corrected</b> functionals (BEEF-vdW, PBE+D3) closest.</div>
- <table class="big">
-   <tr><th class="l">DFT functional</th><th>n</th><th>MAE (eV)</th><th>RMSE (eV)</th>
-       <th>bias &Delta; (eV)</th><th>within 0.5 eV</th><th class="l">verdict</th></tr>
-   <tr class="good"><td class="l"><b>BEEF-vdW</b></td><td>10</td><td>0.14</td><td>0.16</td><td>&minus;0.11</td><td>100%</td><td class="l">best &mdash; smallest error &amp; bias</td></tr>
-   <tr class="good"><td class="l"><b>PBE+D3</b></td><td>16</td><td>0.18</td><td>0.24</td><td class="o">+0.13</td><td>88%</td><td class="l">tight; slight under-bind</td></tr>
-   <tr class="mid"><td class="l">r&sup2;SCAN</td><td>11</td><td>0.26</td><td>0.28</td><td>&minus;0.22</td><td>100%</td><td class="l">consistent over-bind</td></tr>
-   <tr class="bad"><td class="l">PBE</td><td>21</td><td>0.36</td><td>0.38</td><td class="u">&minus;0.36</td><td>95%</td><td class="l">no dispersion &rarr; ML over-binds</td></tr>
- </table>
- <ul class="take">
-   <li><b>BEEF-vdW is the reference GOAD+MLIP reproduces best</b> &mdash; MAE&nbsp;0.14&nbsp;eV, bias only
-       &minus;0.11&nbsp;eV, every point within 0.5&nbsp;eV. PBE+D3 is a close second (MAE&nbsp;0.18&nbsp;eV).</li>
-   <li><b>Bare PBE shows the expected systematic offset.</b> Because PBE has no dispersion, GOAD+MLIP looks
-       like it <b>over-binds</b> by a uniform &minus;0.36&nbsp;eV &mdash; that is the missing van-der-Waals
-       attraction PBE lacks, not an MLIP error. Benchmark this workflow against BEEF-vdW / PBE+D3.</li>
- </ul>
+ <h2>1 &middot; Which DFT functional does GOAD+SevenNet match?</h2>
+ <div class="legend">Pooled over the matched Cu/Pd/Pt systems. &starf; = best MAE.</div>
+ <table class="big"><tr><th class="l">DFT functional</th><th>n</th><th>MAE (eV)</th><th>RMSE (eV)</th><th>bias &Delta; (eV)</th><th>R&sup2;</th><th>within 0.5 eV</th><th class="l">note</th></tr><tr class="good"><td class="l"><b>PBE</b> &starf;</td><td>28</td><td>0.277</td><td>0.325</td><td class="">-0.031</td><td>0.623</td><td>93%</td><td class="l"></td></tr><tr class="bad"><td class="l"><b>PBE+D3</b></td><td>24</td><td>0.629</td><td>0.739</td><td class="o">+0.629</td><td>-0.540</td><td>50%</td><td class="l"></td></tr><tr class="bad"><td class="l"><b>r²SCAN</b></td><td>28</td><td>0.519</td><td>0.653</td><td class="o">+0.383</td><td>0.247</td><td>64%</td><td class="l"></td></tr><tr class="bad"><td class="l"><b>BEEF-vdW</b></td><td>0</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td>n/a</td><td class="l">references broken &mdash; recompute</td></tr></table>
 
- <!-- ============================ METALS ============================ -->
+ <div class="note info"><b>Read with care.</b> In this re-run PBE agrees best (near-zero bias)
+   while PBE+D3 and r&sup2;SCAN show ML <i>under</i>-binding &mdash; the opposite of the physically
+   expected dispersion trend and of the earlier run. That, together with the broken BEEF-vdW
+   references, points to a problem in the D3 / r&sup2;SCAN / BEEF reference energies rather than
+   in the MLIP. Treat PBE as the trustworthy column until the vdW references are re-run.</div>
+
  <h2>2 &middot; By surface metal</h2>
- <div class="legend">Pooled over functionals. Bias is <code>E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT)</code>.</div>
- <table class="big">
-   <tr><th class="l">metal</th><th>n</th><th>MAE (eV)</th><th>bias &Delta; (eV)</th><th>within 0.5 eV</th><th class="l">character</th></tr>
-   <tr class="good"><td class="l">Cu</td><td>22</td><td>0.21</td><td>&minus;0.02</td><td>91%</td><td class="l">excellent &mdash; near-zero bias</td></tr>
-   <tr class="mid"><td class="l">Pd</td><td>22</td><td>0.27</td><td>&minus;0.25</td><td>95%</td><td class="l">mild over-bind</td></tr>
-   <tr class="mid"><td class="l">Pt</td><td>14</td><td>0.30</td><td>&minus;0.23</td><td>100%</td><td class="l">mild over-bind</td></tr>
- </table>
+ <table class="big"><tr><th class="l">metal</th><th>n</th><th>MAE (eV)</th><th>bias &Delta; (eV)</th><th>within 0.5 eV</th></tr><tr class="good"><td class="l">Cu</td><td>28</td><td>0.280</td><td class="u">-0.097</td><td>86%</td></tr><tr class="good"><td class="l">Pd</td><td>26</td><td>0.291</td><td class="o">+0.219</td><td>92%</td></tr><tr class="bad"><td class="l">Pt</td><td>26</td><td>0.845</td><td class="o">+0.845</td><td>31%</td></tr></table>
 
- <!-- ============================ MOLECULES ============================ -->
  <h2>3 &middot; By molecule</h2>
- <div class="legend">Pooled over functionals and metals.</div>
- <table class="big">
-   <tr><th class="l">molecule</th><th>n</th><th>MAE (eV)</th><th>bias &Delta; (eV)</th><th class="l">note</th></tr>
-   <tr class="good"><td class="l">ethanol</td><td>19</td><td>0.22</td><td>&minus;0.10</td><td class="l">best &mdash; strongest binder, well captured</td></tr>
-   <tr class="mid"><td class="l">ethene</td><td>7</td><td>0.25</td><td class="o">+0.16</td><td class="l">only molecule ML under-binds</td></tr>
-   <tr class="mid"><td class="l">ethane</td><td>27</td><td>0.25</td><td>&minus;0.24</td><td class="l">weak physisorber; PBE offset dominates</td></tr>
-   <tr class="bad"><td class="l">CO<sub>2</sub></td><td>5</td><td>0.43</td><td class="u">&minus;0.43</td><td class="l">largest gap (PBE-only pairs)</td></tr>
- </table>
+ <table class="big"><tr><th class="l">molecule</th><th>n</th><th>MAE (eV)</th><th>bias &Delta; (eV)</th><th>within 0.5 eV</th></tr><tr class="mid"><td class="l">ethane</td><td>9</td><td>0.401</td><td class="o">+0.268</td><td>78%</td></tr><tr class="mid"><td class="l">ethanol</td><td>9</td><td>0.486</td><td class="o">+0.396</td><td>67%</td></tr><tr class="mid"><td class="l">ethene</td><td>9</td><td>0.423</td><td class="o">+0.336</td><td>67%</td></tr><tr class="bad"><td class="l">glycerol</td><td>9</td><td>0.583</td><td class="o">+0.475</td><td>67%</td></tr><tr class="mid"><td class="l">isopropanol</td><td>9</td><td>0.466</td><td class="o">+0.330</td><td>78%</td></tr><tr class="mid"><td class="l">propane</td><td>9</td><td>0.439</td><td class="o">+0.308</td><td>78%</td></tr><tr class="bad"><td class="l">propanol</td><td>9</td><td>0.506</td><td class="o">+0.398</td><td>67%</td></tr><tr class="mid"><td class="l">propene</td><td>9</td><td>0.434</td><td class="o">+0.339</td><td>67%</td></tr><tr class="mid"><td class="l">CO₂</td><td>8</td><td>0.466</td><td class="u">-0.089</td><td>62%</td></tr></table>
 
- <!-- ============================ TAKEAWAYS ============================ -->
- <h2>4 &middot; Takeaways</h2>
- <ul class="take">
-   <li><b>The GOAD+MLIP workflow reproduces dispersion-corrected DFT adsorption energies well.</b> Against
-       BEEF-vdW the end-to-end MAE is <b>0.14&nbsp;eV</b> and against PBE+D3 it is <b>0.18&nbsp;eV</b>, with
-       95% of all 58 pairs inside 0.5&nbsp;eV &mdash; competitive with the single-point energy-only agreement.</li>
-   <li><b>The apparent PBE disagreement is physics, not an MLIP failure.</b> The uniform
-       &minus;0.36&nbsp;eV offset vs bare PBE is the dispersion contribution SevenNet-OMNI includes and PBE
-       omits; it disappears once you compare to a vdW-corrected functional.</li>
-   <li><b>Metals are all in good shape.</b> Cu is essentially unbiased (MAE&nbsp;0.21&nbsp;eV); Pd/Pt show a
-       small &minus;0.2&nbsp;eV over-binding but still keep &ge;95% of points within 0.5&nbsp;eV.</li>
-   <li><b>Caveat &mdash; small, uneven overlap.</b> Only 21 systems (Cu/Pd/Pt &times; four C<sub>1</sub>&ndash;C<sub>2</sub>
-       molecules) have both a converged DFT relaxation and a matching GOAD+MLIP structure. Extending the DFT
-       set to more surfaces/molecules would sharpen these numbers; the per-molecule CO<sub>2</sub> row in
-       particular rests on only 5 pairs.</li>
- </ul>
+ <h2>4 &middot; Every matched pair</h2>
+ <div class="controls">
+   <label>functional <select id="ff"><option value="">all</option><option>PBE</option><option>PBE+D3</option><option>r²SCAN</option></select></label>
+   <label>metal <select id="fm"><option value="">all</option><option>Cu</option><option>Pd</option><option>Pt</option></select></label>
+   <input id="fq" placeholder="filter molecule/surface&hellip;" size="18">
+   <span class="legend" id="cnt"></span>
+ </div>
+ <table class="data" id="tbl"><thead><tr>
+   <th class="l" data-k="f">functional</th><th class="l" data-k="s">surface</th>
+   <th class="l" data-k="m">molecule</th><th class="l" data-k="cls">class</th>
+   <th data-k="dft">E_ads DFT</th><th data-k="ml">E_ads ML</th><th data-k="d">&Delta; (ML&minus;DFT)</th>
+ </tr></thead><tbody></tbody></table>
+
+ <script>
+ const DATA=[{"f":"PBE","s":"Cu100","m":"CO\u2082","cls":"other","dft":-0.032,"ml":-0.361,"d":-0.329},{"f":"PBE","s":"Cu100","m":"ethane","cls":"alkane","dft":-0.012,"ml":-0.315,"d":-0.304},{"f":"PBE","s":"Cu100","m":"ethanol","cls":"alcohol","dft":-0.203,"ml":-0.503,"d":-0.3},{"f":"PBE","s":"Cu100","m":"ethene","cls":"alkene","dft":-0.06,"ml":-0.231,"d":-0.171},{"f":"PBE","s":"Cu100","m":"glycerol","cls":"polyol","dft":-0.444,"ml":-0.768,"d":-0.324},{"f":"PBE","s":"Cu100","m":"isopropanol","cls":"alcohol","dft":-0.226,"ml":-0.558,"d":-0.332},{"f":"PBE","s":"Cu100","m":"propane","cls":"alkane","dft":-0.024,"ml":-0.323,"d":-0.298},{"f":"PBE","s":"Cu100","m":"propanol","cls":"alcohol","dft":-0.243,"ml":-0.563,"d":-0.32},{"f":"PBE","s":"Cu100","m":"propene","cls":"alkene","dft":-0.065,"ml":-0.225,"d":-0.16},{"f":"PBE","s":"Cu110","m":"CO\u2082","cls":"other","dft":0.461,"ml":-0.367,"d":-0.829},{"f":"PBE","s":"Pd111","m":"CO\u2082","cls":"other","dft":-0.385,"ml":-0.448,"d":-0.062},{"f":"PBE","s":"Pd111","m":"ethane","cls":"alkane","dft":-0.41,"ml":-0.455,"d":-0.045},{"f":"PBE","s":"Pd111","m":"ethanol","cls":"alcohol","dft":-0.641,"ml":-0.674,"d":-0.033},{"f":"PBE","s":"Pd111","m":"ethene","cls":"alkene","dft":-1.092,"ml":-1.266,"d":-0.174},{"f":"PBE","s":"Pd111","m":"glycerol","cls":"polyol","dft":-0.846,"ml":-1.008,"d":-0.162},{"f":"PBE","s":"Pd111","m":"isopropanol","cls":"alcohol","dft":-0.621,"ml":-0.765,"d":-0.144},{"f":"PBE","s":"Pd111","m":"propane","cls":"alkane","dft":-0.411,"ml":-0.472,"d":-0.061},{"f":"PBE","s":"Pd111","m":"propanol","cls":"alcohol","dft":-0.643,"ml":-0.713,"d":-0.07},{"f":"PBE","s":"Pd111","m":"propene","cls":"alkene","dft":-0.988,"ml":-1.176,"d":-0.188},{"f":"PBE","s":"Pt111","m":"CO\u2082","cls":"other","dft":-0.867,"ml":-0.487,"d":0.381},{"f":"PBE","s":"Pt111","m":"ethane","cls":"alkane","dft":-0.864,"ml":-0.434,"d":0.43},{"f":"PBE","s":"Pt111","m":"ethanol","cls":"alcohol","dft":-1.099,"ml":-0.599,"d":0.501},{"f":"PBE","s":"Pt111","m":"ethene","cls":"alkene","dft":-1.662,"ml":-1.324,"d":0.338},{"f":"PBE","s":"Pt111","m":"glycerol","cls":"polyol","dft":-1.302,"ml":-0.817,"d":0.485},{"f":"PBE","s":"Pt111","m":"isopropanol","cls":"alcohol","dft":-1.034,"ml":-0.709,"d":0.325},{"f":"PBE","s":"Pt111","m":"propane","cls":"alkane","dft":-0.879,"ml":-0.463,"d":0.416},{"f":"PBE","s":"Pt111","m":"propanol","cls":"alcohol","dft":-1.116,"ml":-0.728,"d":0.389},{"f":"PBE","s":"Pt111","m":"propene","cls":"alkene","dft":-1.868,"ml":-1.681,"d":0.186},{"f":"PBE+D3","s":"Cu100","m":"ethane","cls":"alkane","dft":-0.334,"ml":-0.315,"d":0.019},{"f":"PBE+D3","s":"Cu100","m":"ethanol","cls":"alcohol","dft":-0.701,"ml":-0.503,"d":0.198},{"f":"PBE+D3","s":"Cu100","m":"ethene","cls":"alkene","dft":-0.751,"ml":-0.231,"d":0.52},{"f":"PBE+D3","s":"Cu100","m":"glycerol","cls":"polyol","dft":-1.245,"ml":-0.768,"d":0.478},{"f":"PBE+D3","s":"Cu100","m":"isopropanol","cls":"alcohol","dft":-0.835,"ml":-0.558,"d":0.278},{"f":"PBE+D3","s":"Cu100","m":"propane","cls":"alkane","dft":-0.426,"ml":-0.323,"d":0.103},{"f":"PBE+D3","s":"Cu100","m":"propanol","cls":"alcohol","dft":-0.881,"ml":-0.563,"d":0.318},{"f":"PBE+D3","s":"Cu100","m":"propene","cls":"alkene","dft":-0.806,"ml":-0.225,"d":0.581},{"f":"PBE+D3","s":"Pd111","m":"ethane","cls":"alkane","dft":-0.792,"ml":-0.455,"d":0.337},{"f":"PBE+D3","s":"Pd111","m":"ethanol","cls":"alcohol","dft":-1.141,"ml":-0.674,"d":0.467},{"f":"PBE+D3","s":"Pd111","m":"ethene","cls":"alkene","dft":-1.515,"ml":-1.266,"d":0.25},{"f":"PBE+D3","s":"Pd111","m":"glycerol","cls":"polyol","dft":-1.628,"ml":-1.008,"d":0.62},{"f":"PBE+D3","s":"Pd111","m":"isopropanol","cls":"alcohol","dft":-1.264,"ml":-0.765,"d":0.498},{"f":"PBE+D3","s":"Pd111","m":"propane","cls":"alkane","dft":-0.911,"ml":-0.472,"d":0.439},{"f":"PBE+D3","s":"Pd111","m":"propanol","cls":"alcohol","dft":-1.279,"ml":-0.713,"d":0.566},{"f":"PBE+D3","s":"Pd111","m":"propene","cls":"alkene","dft":-1.568,"ml":-1.176,"d":0.392},{"f":"PBE+D3","s":"Pt111","m":"ethane","cls":"alkane","dft":-1.403,"ml":-0.434,"d":0.969},{"f":"PBE+D3","s":"Pt111","m":"ethanol","cls":"alcohol","dft":-1.775,"ml":-0.599,"d":1.176},{"f":"PBE+D3","s":"Pt111","m":"ethene","cls":"alkene","dft":-2.308,"ml":-1.324,"d":0.984},{"f":"PBE+D3","s":"Pt111","m":"glycerol","cls":"polyol","dft":-2.235,"ml":-0.817,"d":1.419},{"f":"PBE+D3","s":"Pt111","m":"isopropanol","cls":"alcohol","dft":-1.851,"ml":-0.709,"d":1.142},{"f":"PBE+D3","s":"Pt111","m":"propane","cls":"alkane","dft":-1.561,"ml":-0.463,"d":1.098},{"f":"PBE+D3","s":"Pt111","m":"propanol","cls":"alcohol","dft":-1.956,"ml":-0.728,"d":1.229},{"f":"PBE+D3","s":"Pt111","m":"propene","cls":"alkene","dft":-2.691,"ml":-1.681,"d":1.01},{"f":"r\u00b2SCAN","s":"Cu100","m":"CO\u2082","cls":"other","dft":-0.061,"ml":-0.361,"d":-0.3},{"f":"r\u00b2SCAN","s":"Cu100","m":"ethane","cls":"alkane","dft":-0.065,"ml":-0.315,"d":-0.251},{"f":"r\u00b2SCAN","s":"Cu100","m":"ethanol","cls":"alcohol","dft":-0.427,"ml":-0.503,"d":-0.076},{"f":"r\u00b2SCAN","s":"Cu100","m":"ethene","cls":"alkene","dft":-0.187,"ml":-0.231,"d":-0.044},{"f":"r\u00b2SCAN","s":"Cu100","m":"glycerol","cls":"polyol","dft":-0.831,"ml":-0.768,"d":0.064},{"f":"r\u00b2SCAN","s":"Cu100","m":"isopropanol","cls":"alcohol","dft":-0.423,"ml":-0.558,"d":-0.135},{"f":"r\u00b2SCAN","s":"Cu100","m":"propane","cls":"alkane","dft":-0.089,"ml":-0.323,"d":-0.233},{"f":"r\u00b2SCAN","s":"Cu100","m":"propanol","cls":"alcohol","dft":-0.467,"ml":-0.563,"d":-0.096},{"f":"r\u00b2SCAN","s":"Cu100","m":"propene","cls":"alkene","dft":-0.148,"ml":-0.225,"d":-0.077},{"f":"r\u00b2SCAN","s":"Cu110","m":"CO\u2082","cls":"other","dft":0.331,"ml":-0.367,"d":-0.699},{"f":"r\u00b2SCAN","s":"Pd111","m":"CO\u2082","cls":"other","dft":-0.661,"ml":-0.448,"d":0.213},{"f":"r\u00b2SCAN","s":"Pd111","m":"ethane","cls":"alkane","dft":-0.732,"ml":-0.455,"d":0.277},{"f":"r\u00b2SCAN","s":"Pd111","m":"ethanol","cls":"alcohol","dft":-1.091,"ml":-0.674,"d":0.417},{"f":"r\u00b2SCAN","s":"Pd111","m":"ethene","cls":"alkene","dft":-1.552,"ml":-1.266,"d":0.286},{"f":"r\u00b2SCAN","s":"Pd111","m":"glycerol","cls":"polyol","dft":-1.445,"ml":-1.008,"d":0.437},{"f":"r\u00b2SCAN","s":"Pd111","m":"isopropanol","cls":"alcohol","dft":-1.124,"ml":-0.765,"d":0.359},{"f":"r\u00b2SCAN","s":"Pd111","m":"propane","cls":"alkane","dft":-0.785,"ml":-0.472,"d":0.312},{"f":"r\u00b2SCAN","s":"Pd111","m":"propanol","cls":"alcohol","dft":-1.136,"ml":-0.713,"d":0.423},{"f":"r\u00b2SCAN","s":"Pd111","m":"propene","cls":"alkene","dft":-1.517,"ml":-1.176,"d":0.341},{"f":"r\u00b2SCAN","s":"Pt111","m":"CO\u2082","cls":"other","dft":-1.403,"ml":-0.487,"d":0.917},{"f":"r\u00b2SCAN","s":"Pt111","m":"ethane","cls":"alkane","dft":-1.417,"ml":-0.434,"d":0.983},{"f":"r\u00b2SCAN","s":"Pt111","m":"ethanol","cls":"alcohol","dft":-1.81,"ml":-0.599,"d":1.211},{"f":"r\u00b2SCAN","s":"Pt111","m":"ethene","cls":"alkene","dft":-2.362,"ml":-1.324,"d":1.039},{"f":"r\u00b2SCAN","s":"Pt111","m":"glycerol","cls":"polyol","dft":-2.074,"ml":-0.817,"d":1.257},{"f":"r\u00b2SCAN","s":"Pt111","m":"isopropanol","cls":"alcohol","dft":-1.69,"ml":-0.709,"d":0.981},{"f":"r\u00b2SCAN","s":"Pt111","m":"propane","cls":"alkane","dft":-1.456,"ml":-0.463,"d":0.993},{"f":"r\u00b2SCAN","s":"Pt111","m":"propanol","cls":"alcohol","dft":-1.871,"ml":-0.728,"d":1.144},{"f":"r\u00b2SCAN","s":"Pt111","m":"propene","cls":"alkene","dft":-2.648,"ml":-1.681,"d":0.967}];
+ const tb=document.querySelector("#tbl tbody"), cnt=document.getElementById("cnt");
+ let sortK="s", sortA=true;
+ function draw(){
+   const ff=document.getElementById("ff").value, fm=document.getElementById("fm").value,
+         fq=document.getElementById("fq").value.toLowerCase();
+   let rows=DATA.filter(r=>(!ff||r.f===ff)&&(!fm||r.s.startsWith(fm))&&
+     (!fq||(r.m+r.s).toLowerCase().includes(fq)));
+   rows.sort((a,b)=>{let x=a[sortK],y=b[sortK];return (x<y?-1:x>y?1:0)*(sortA?1:-1);});
+   tb.innerHTML=rows.map(r=>{
+     const dc=r.d<-0.05?'u':r.d>0.05?'o':'';
+     return `<tr><td class="l">${r.f}</td><td class="l">${r.s}</td><td class="l">${r.m}</td>`+
+       `<td class="l"><span class="pill">${r.cls}</span></td><td>${r.dft.toFixed(3)}</td>`+
+       `<td>${r.ml.toFixed(3)}</td><td class="${dc}">${r.d>=0?'+':''}${r.d.toFixed(3)}</td></tr>`;
+   }).join("");
+   cnt.textContent=rows.length+" rows";
+ }
+ document.querySelectorAll("#tbl th").forEach(th=>th.onclick=()=>{
+   const k=th.dataset.k; sortA=(sortK===k)?!sortA:true; sortK=k; draw();});
+ ["ff","fm","fq"].forEach(id=>document.getElementById(id).oninput=draw);
+ draw();
+ </script>
 
 </div>
 </body></html>
