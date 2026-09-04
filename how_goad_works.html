@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How GOAD works — global search vs DFT relaxation</title>
+<style>
+ :root{--bg:#0f1116;--card:#191c24;--fg:#e6e6e6;--muted:#9aa0aa;--line:#2a2e38;--accent:#ffd479;}
+ *{box-sizing:border-box;}
+ body{margin:0;background:var(--bg);color:var(--fg);
+   font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+ header{padding:18px 22px;border-bottom:1px solid var(--line);}
+ h1{font-size:20px;margin:0 0 6px;}
+ h2{font-size:16.5px;margin:34px 0 6px;border-bottom:1px solid var(--line);padding-bottom:4px;}
+ h3{font-size:13.8px;margin:18px 0 2px;color:#cfd4dd;}
+ a{color:#6ea8fe;}
+ .wrap{max-width:980px;margin:0 auto;padding:6px 22px 80px;}
+ .sub{color:var(--muted);font-size:13px;max-width:960px;}
+ p{max-width:820px;}
+ .note{background:#20242e;border:1px solid var(--line);border-left:3px solid var(--accent);
+   border-radius:8px;padding:12px 14px;margin:16px 0;font-size:12.9px;color:#d7dbe2;max-width:820px;}
+ .note b{color:#fff;}
+ .note.info{border-left-color:#4c78a8;}
+ .tag{background:#1c2620;border:1px solid #2f5741;border-left:3px solid #4bb97a;
+   border-radius:8px;padding:14px 16px;margin:18px 0;font-size:14px;color:#d7f0e0;max-width:820px;}
+ .tag b{color:#7fe3a6;}
+ pre.ascii{background:#0b0d12;border:1px solid var(--line);border-radius:8px;
+   padding:12px 14px;overflow:auto;color:#aeb6c2;font-size:11.5px;line-height:1.35;max-width:820px;}
+ code{background:#0b0d12;border:1px solid var(--line);border-radius:5px;padding:1px 5px;
+   font-size:12px;color:#d6b3ff;}
+ table.big{width:100%;max-width:900px;border-collapse:collapse;font-size:12.8px;margin:12px 0 4px;}
+ table.big th,table.big td{padding:8px 11px;border:1px solid var(--line);text-align:left;vertical-align:top;}
+ table.big th{background:#20242e;}
+ table.big tr:nth-child(even) td{background:#161922;}
+ .eq{background:var(--card);border:1px solid var(--line);border-radius:9px;
+   padding:6px 14px;margin:12px 0;overflow-x:auto;max-width:900px;}
+ .eqn{color:var(--muted);font-size:12px;margin:2px 0 10px;max-width:820px;}
+ .genes{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;}
+ .genes div{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 13px;font-size:12px;}
+ .genes b{font-size:15px;color:#fff;display:block;}
+ pre.mermaid{background:#0b0d12;border:1px solid var(--line);border-radius:10px;padding:14px;margin:14px 0;max-width:900px;}
+ .src{color:var(--muted);font-size:12px;margin-top:6px;}
+ hr{border:0;border-top:1px solid var(--line);margin:30px 0;}
+</style>
+<script>
+ window.MathJax = {
+   tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']],processEscapes:true},
+   svg:{fontCache:'global'},
+   options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}
+ };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true,theme:'dark',securityLevel:'loose'});</script>
+</head>
+<body>
+<header>
+ <h1>How GOAD finds the lowest-energy structure</h1>
+ <div class="sub">A genetic-algorithm <b>global</b> search over a compact adsorbate genome &mdash; and why that solves a different problem than a DFT geometry optimization, which relaxes <b>locally</b> to the nearest minimum.<br>
+ <a href="index.html">&larr; gallery</a> &middot; <a href="dft_vs_goad_energy.html">binding energy</a> &middot; <a href="dft_comparison.html">structure &amp; geometry</a> &middot; <a href="method_validation.html">method validation</a> &middot; <a href="how_goad_works.html" style="color:var(--accent)">how GOAD works</a> &middot; <a href="dft_energy.html">single-point DFT vs ML</a> &middot; <a href="mlip_benchmark.html">SevenNet vs MatterSim</a> &middot; <a href="flagged.html" style="color:#ff9a9a">likely failures</a></div>
+</header>
+<div class="wrap">
+
+<p>This page explains the search strategy behind the GOAD&nbsp;+&nbsp;SevenNet-OMNI structures in this benchmark: what GOAD actually optimizes, how the genetic algorithm (GA) converges on the lowest-energy adsorption geometry, the exact equations it uses, and how all of that differs from a DFT relaxation that &ldquo;rolls downhill&rdquo; on the potential-energy surface (PES).</p>
+<div class="note info">Grounded in the engine source <code>goad_v1/ga/genetic_algorithm.py</code>. Full write-up: <a href="https://github.com/chojinwon89/VASP/blob/main/GOAD_ALGORITHM.md">GOAD_ALGORITHM.md</a> &middot; engine app: <a href="https://github.com/chojinwon89/VASP/blob/main/GOAD_ENGINE.md">GOAD_ENGINE.md</a>.</div>
+
+<h2>1. The problem: one PES, many valleys</h2>
+<p>Put a molecule near a surface and its energy is a function of <b>all</b> the atomic coordinates &mdash; the <b>potential-energy surface (PES)</b>. For an adsorbate this is not a simple bowl but a rugged landscape with <i>many</i> minima, because the molecule can sit at different <b>sites</b> (atop / bridge / hollow), in different <b>orientations</b>, and in different <b>conformations</b>:</p>
+<pre class="ascii"> E
+ |   \          /\            /\
+ |    \        /  \    /\    /  \        &lt;- each valley = one locally stable
+ |     \  /\  /    \  /  \  /    \          adsorption geometry (a local minimum)
+ |      \/  \/      \/    \/      \___
+ |                        ^
+ |                        +-- global minimum = the structure we actually want
+ +------------------------------------------&gt; configuration (site, orientation, torsion...)</pre>
+<p>The <b>global minimum</b> is the physically correct, most stable structure. The difficulty is that valleys are separated by <b>energy barriers</b>: you cannot reach the deepest valley from a random start just by going downhill, because a downhill path stops at the bottom of whatever valley you happen to start in.</p>
+
+<h2>2. What GOAD optimizes: a compact &ldquo;genome&rdquo;, not raw coordinates</h2>
+<p>GOAD does <b>not</b> search all $3M$ Cartesian coordinates. It fixes the surface and treats the molecule as a semi-rigid body, encoding each candidate placement as a short vector &mdash; the <b>genome</b>:</p>
+<div class="genes">
+ <div><b>3</b> position &mdash; centre-of-mass $(x,y,z)$</div>
+ <div><b>3</b> orientation &mdash; ZYX Euler $(\alpha,\beta,\gamma)$</div>
+ <div><b>N</b> torsions &mdash; one dihedral per rotatable bond</div>
+</div>
+<p>So a butanol placement is ~9 numbers, not ~45 Cartesian coordinates. This small, chemically meaningful space of dimension $6+N$ is what makes a <b>global</b> search affordable. Generation&nbsp;0 is biased, not random: the reactive atom is seeded near its known bond distance (lowest O at ~2.3&nbsp;&Aring;, else lowest C at ~2.1&nbsp;&Aring; above the surface), and each candidate is built as <i>apply torsions &rarr; centre &rarr; rotate &rarr; translate</i>.</p>
+
+<h3>Fitness = adsorption energy from a fast MLIP</h3>
+<p>Each candidate is scored by a <b>single-point</b> adsorption energy (no relaxation) with the surface atoms <b>fixed</b> (<code>FixAtoms</code>), using a machine-learning interatomic potential (MLIP) &mdash; <b>SevenNet-OMNI</b> here (the engine also supports MatterSim / CHGNet / MACE). One MLIP energy is milliseconds-to-seconds; one DFT energy is minutes-to-hours &mdash; that speed is what lets GOAD score <b>thousands</b> of candidates. Lower is fitter.</p>
+
+<h2>3. The genetic-algorithm loop</h2>
+<p>The GA keeps a <b>population</b> of placements (default 30) and improves them over <b>generations</b> (up to 200) by mimicking natural selection:</p>
+<pre class="mermaid">
+flowchart TD
+    A["Initialize population<br/>(random x,y,orientation,torsions;<br/>reactive atom biased toward surface)"] --> B["Evaluate fitness<br/>E_ads for every individual (MLIP, surface fixed)"]
+    B --> C{"Improved in last<br/>30 generations?"}
+    C -->|"no (&lt; 0.001 eV)"| Z["Stop early &rarr; return best structure"]
+    C -->|yes| D["Elitism: keep best 5 unchanged"]
+    D --> E["Tournament selection<br/>(pick 5, best one wins &rarr; parent)"]
+    E --> F{"crossover?<br/>(rate 0.7)"}
+    F -->|yes| G["Crossover: position from parent A,<br/>orientation from parent B, torsions mixed"]
+    F -->|no| H["Mutate one gene block:<br/>position / orientation / torsions"]
+    G --> I["New generation"]
+    H --> I
+    I --> B
+    Z --> R["Post-GA local relaxation (BFGS, fmax=0.02 eV/&Aring;)<br/>&rarr; final adsorption structure"]
+</pre>
+<p>The operators are what make this a <b>global</b> search rather than a downhill walk. <b>Tournament selection</b>&nbsp;+&nbsp;<b>elitism</b> drive the population toward low energy (exploitation); <b>crossover</b> recombines <i>parts</i> of two good solutions (site of one, orientation of another) and can land in a valley neither parent occupied; <b>mutation</b> nudges position, orientation, or torsions and can hop over a barrier (exploration). The GA returns the best <b>genome</b> &mdash; the right <b>basin</b>. A final <b>local BFGS relaxation</b> then settles every atom to that basin&rsquo;s exact bottom. <b>Global search first, local refinement second.</b></p>
+
+<h2>4. The equations GOAD actually uses</h2>
+<p>Everything above reduces to a handful of formulas that live in the engine.</p>
+
+<h3>(1) The objective &mdash; a global minimization over the genome</h3>
+<div class="eq">$$\mathbf{g}^{\star}=\arg\min_{\mathbf{g}}\;E_{\text{ads}}(\mathbf{g}),\qquad \mathbf{g}=(x,y,z,\;\alpha,\beta,\gamma,\;\theta_{1},\dots,\theta_{N})\in\mathbb{R}^{6+N}.$$</div>
+<p class="eqn">Dimensionality is $6+N$, not $3M$ for $M$ atoms &mdash; that reduction is what makes a global search affordable.</p>
+
+<h3>(2) The fitness &mdash; single-point adsorption energy, surface fixed</h3>
+<div class="eq">$$E_{\text{ads}}=E_{\text{slab+mol}}-E_{\text{slab}}-E_{\text{mol}}.$$</div>
+<p class="eqn">Evaluated once per candidate with <code>FixAtoms</code> on every slab atom. $E_{\text{slab}}$ and $E_{\text{mol}}$ are precomputed constants, so scoring costs <b>one</b> MLIP energy call.</p>
+
+<h3>(3) Genome &rarr; coordinates &mdash; the rigid-body placement operator</h3>
+<div class="eq">$$\mathbf{r}_i' = R(\alpha,\beta,\gamma)\,(\mathbf{r}_i-\mathbf{r}_{\text{com}})+\mathbf{t},\qquad \mathbf{t}=(x,y,z),\qquad R=R_z(\gamma)\,R_y(\beta)\,R_x(\alpha).$$</div>
+<p class="eqn">Centre the molecule, apply the ZYX Euler rotation about the centre of mass, then translate to $(x,y,z)$.</p>
+
+<h3>(4) Chemically-biased initialization</h3>
+<div class="eq">$$\min_i z_i^{\text{reactive}} = z_{\text{surf}}^{\max}+d,\qquad d=2.3\ \text{Å}\ \text{(if O present)},\quad 2.1\ \text{Å}\ \text{(otherwise)}.$$</div>
+<p class="eqn">In generation 0 the height is set so the lowest reactive atom sits at its known bond distance above the top surface layer $z_{\text{surf}}^{\max}$.</p>
+
+<h3>(5) Selection + elitism</h3>
+<div class="eq">$$\text{parent}=\arg\min_{i\in\mathcal{T}}E_i,\quad \mathcal{T}\subset\{1,\dots,P\},\;|\mathcal{T}|=5;\qquad \text{keep top } e=5 \text{ unchanged}.$$</div>
+<p class="eqn">Parents come from a size-5 tournament (fittest of five random candidates); the best five individuals survive each generation untouched.</p>
+
+<h3>(6) Crossover &mdash; applied with probability $p_c=0.7$</h3>
+<div class="eq">$$\mathbf{p}_c=\mathbf{p}_A,\qquad \boldsymbol{\omega}_c=\boldsymbol{\omega}_B,\qquad \theta_i^{\,c}=\theta_i^{A}\ \text{if } u\lt 0.5\ \text{else}\ \theta_i^{B},\quad u\sim\mathcal{U}(0,1).$$</div>
+<p class="eqn">The child takes position from parent $A$, orientation from parent $B$, and each torsion from either parent by a coin flip.</p>
+
+<h3>(7) Mutation &mdash; applied with probability $1-p_c=0.3$ (one gene block)</h3>
+<div class="eq">$$\mathbf{p}\leftarrow \mathbf{p}+\mathcal{N}(0,\sigma_p^2\mathbf{I}),\ \sigma_p=0.5\ \text{Å};\qquad \boldsymbol{\omega}\leftarrow(\boldsymbol{\omega}+\mathcal{N}(0,\sigma_o^2\mathbf{I}))\bmod 360^\circ,\ \sigma_o=10^\circ;$$</div>
+<div class="eq">$$\theta_i\leftarrow(\theta_i+\mathcal{N}(0,\sigma_t^2))\bmod 360^\circ,\ \sigma_t=20^\circ;\qquad z\leftarrow \operatorname{clip}\!\big(z,\ z_{\text{surf}}^{\max}+b,\ z_{\text{surf}}^{\max}+h_{\max}\big).$$</div>
+<p class="eqn">One block (position / orientation / torsions) is nudged by Gaussian noise; the height is clamped back into the interaction window after every move.</p>
+
+<h3>(8) Early stopping</h3>
+<div class="eq">$$\text{stop when } E_{\text{best}}\ \text{fails to improve by}\ \gt\tau\ \text{for } 30 \text{ consecutive generations},\quad \tau=10^{-3}\ \text{eV}.$$</div>
+
+<h3>(9) Post-GA local relaxation (the only force-based step)</h3>
+<div class="eq">$$F_{\max}=\max_i\lVert \mathbf{f}_i\rVert=\max_i\lVert-\nabla_{\mathbf{r}_i}E\rVert\le 0.02\ \text{eV/Å}.$$</div>
+<p class="eqn">The GA winner is relaxed with BFGS until the largest atomic force falls below threshold &mdash; a <b>local</b> move that finds the exact bottom of the basin the GA selected.</p>
+
+<div class="note"><b>Default constants</b> (all overridable): population $P=30$, generations $\le 200$, $p_c=0.7$, elite $e=5$, tournament $=5$, $\sigma_p=0.5$&nbsp;&Aring;, $\sigma_o=10^\circ$, $\sigma_t=20^\circ$, early-stop 30&nbsp;gens&nbsp;/&nbsp;$10^{-3}$&nbsp;eV, BFGS $F_{\max}=0.02$&nbsp;eV/&Aring;.</div>
+
+<h2>5. How this differs from a DFT geometry optimization</h2>
+<p>A DFT &ldquo;relaxation&rdquo; is a <b>local optimizer</b>. From a starting structure $\mathbf{x}_0$ it computes forces (the gradient of the PES, from solving the Kohn&ndash;Sham equations) and steps atoms downhill until they vanish:</p>
+<div class="eq">$$\mathbf{x}_0 \;\xrightarrow{\ \text{follow } -\nabla E\ }\; \mathbf{x}^{\ast}\quad\text{with}\quad \nabla E(\mathbf{x}^{\ast})=0,$$</div>
+<p>which is the <b>nearest local minimum</b> &mdash; the bottom of whatever valley the starting guess was already in. It never crosses a barrier. GOAD&rsquo;s objective, by contrast, is the global $\arg\min$ over the <i>whole</i> landscape.</p>
+<pre class="ascii"> Local (DFT relaxation): one ball, released once, rolls to the nearest bottom.
+
+        start o                         start o
+               \                               \
+     /\        _\/          vs.       /\        _\/        &lt;- both stop here, in
+    /  \      /            depends    /  \      /             whatever local min
+   /    \____/             on where  /    \____/              was closest; the deeper
+        ^ nearest local min          valley on the right is never found.
+
+ Global (GOAD GA): a whole population scattered across the landscape, bred toward
+ the deepest valley -- so the global minimum IS discovered, then relaxed locally.</pre>
+
+<p>There are really <b>two independent</b> differences &mdash; the <b>search strategy</b> and the <b>energy source</b>:</p>
+<table class="big">
+<tr><th>Axis</th><th>DFT geometry optimization</th><th>GOAD genetic algorithm</th></tr>
+<tr><td><b>Search strategy</b></td><td><b>Local</b> &mdash; follows forces to the <i>nearest</i> minimum</td><td><b>Global</b> &mdash; a population explores many basins and recombines them</td></tr>
+<tr><td><b>Uses gradients?</b></td><td>Yes &mdash; needs forces $-\nabla E$ every step</td><td>No &mdash; needs only <i>energy values</i> to rank (derivative-free)</td></tr>
+<tr><td><b>Coordinates</b></td><td>all $3M$ Cartesian atoms</td><td>compact genome: $3+3+N$ (surface fixed)</td></tr>
+<tr><td><b>Stochastic?</b></td><td>Deterministic (same start &rarr; same minimum)</td><td>Stochastic (random init, mutation, tournaments)</td></tr>
+<tr><td><b>Result</b></td><td><i>a</i> local minimum, dictated by the initial guess</td><td>an approximation to the <b>global</b> minimum</td></tr>
+<tr><td><b>Energy source</b></td><td>first-principles DFT &mdash; accurate, minutes&ndash;hours/eval</td><td>MLIP surrogate (SevenNet-OMNI) &mdash; approximate, ms&ndash;s/eval</td></tr>
+<tr><td><b>Barriers</b></td><td>cannot cross them</td><td>can hop across via mutation/crossover</td></tr>
+</table>
+<div class="tag"><b>DFT optimization answers &ldquo;what is the exact bottom of <i>this</i> valley?&rdquo; GOAD answers &ldquo;<i>which</i> valley is the deepest?&rdquo;</b> They are complementary: a DFT relaxation is only as good as the structure you feed it &mdash; start it in the wrong valley and it faithfully converges to the wrong local minimum.</div>
+
+<h2>6. Why this matters for the benchmark</h2>
+<p>The whole pipeline is: <b>GOAD&rsquo;s GA (global search, MLIP energies) picks the basin &rarr; a local relaxation settles the geometry &rarr; DFT is the reference of record.</b> This benchmark measures whether that fast global search lands in the <i>same</i> valley DFT would, and whether the MLIP energies track the DFT energies. If GOAD&nbsp;+&nbsp;MLIP reproduces the DFT global-minimum <b>geometry</b> (bond distance, adsorption site) and <b>energy ranking</b>, the cheap global search can stand in for exhaustive DFT structure-searching &mdash; DFT still supplies the accurate final energies, GOAD removes the need to guess <i>which</i> structure to compute.</p>
+<p>See the <a href="method_validation.html"><b>method-validation page</b></a> for the quantitative version of this argument (geometry parity, site-prediction accuracy, energy-ranking correlation, and screening efficiency).</p>
+
+<hr>
+<h3>One-paragraph summary</h3>
+<p>GOAD encodes an adsorbate placement as a short genome &mdash; surface position, orientation, and one dihedral per rotatable bond &mdash; and runs a genetic algorithm that scores candidates by their MLIP adsorption energy (single-point, surface fixed), using tournament selection, elitism, crossover, and mutation to breed the population toward the lowest-energy <b>basin</b> of the PES, then relaxes the winner locally with BFGS. A DFT geometry optimization, by contrast, is a purely <b>local</b> move: it follows first-principles forces downhill from a single starting structure to the nearest minimum and cannot escape that valley. GOAD does the <b>global</b> search (which structure?) with cheap energies; DFT provides the <b>local</b>, accurate reference (how deep, exactly?).</p>
+<p class="src">Source: <a href="https://github.com/chojinwon89/VASP/blob/main/GOAD_ALGORITHM.md">GOAD_ALGORITHM.md</a> &middot; engine: <a href="https://github.com/chojinwon89/VASP/blob/main/goad_v1/ga/genetic_algorithm.py">goad_v1/ga/genetic_algorithm.py</a></p>
+
+</div>
+</body></html>
