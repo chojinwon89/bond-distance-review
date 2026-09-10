@@ -31,10 +31,12 @@ def update():
                'CH3OCH3': 'DME', 'CH3OH': 'methanol', 'CH4': 'methane',
                'H2CO': 'formaldehyde', 'HCOOH': 'formic_acid'}
     relaxed = {}
+    audited = {}
     for row in csv.DictReader((ROOT / 'dft_perlmutter_energy_audit.csv').open()):
+        key = row['surface'], aliases.get(row['molecule'], row['molecule']), row['functional']
+        audited.setdefault(key, []).append(row)
         if row['publishable'] != 'true':
             continue
-        key = row['surface'], aliases.get(row['molecule'], row['molecule']), row['functional']
         # If multiple adsorption sites exist, use the lowest verified energy.
         if key not in relaxed or float(row['E_ads']) < float(relaxed[key]['E_ads']):
             relaxed[key] = row
@@ -93,8 +95,23 @@ def update():
                     refreshed.append({'surface': surface, 'molecule': molecule, 'functional': functional,
                                       'system': current['system'], 'E_ads_DFT': energy,
                                       'E_ads_ML': ml_energy, 'delta_eV': None if ml_energy is None else ml_energy-energy})
-                elif 'title=' not in tds[1]:
-                    tds[1] = tds[1].replace('<td', '<td title="Previously published value; not verified by the current Perlmutter extraction"', 1)
+                else:
+                    candidates = audited.get(key, [])
+                    labels = {'pseudopotential_mismatch': 'POTCAR mismatch',
+                              'slab_mismatch': 'Slab size mismatch',
+                              'composition_mismatch': 'Composition mismatch',
+                              'metadata_missing': 'Metadata missing',
+                              'energy_review': 'Energy needs review',
+                              'unconverged': 'Not converged', 'error': 'Output missing/incomplete'}
+                    if candidates:
+                        candidate = next((r for r in candidates if r['status'] == 'pseudopotential_mismatch'), candidates[0])
+                        status = labels.get(candidate['status'], 'Needs review')
+                        detail = ' | '.join(r['system'] + ': ' + r['note'] + '; ' + r['convergence'] for r in candidates)
+                    else:
+                        status, detail = 'Not audited', 'No matching result in the current Perlmutter audit'
+                    tds[1] = '<td class="audit-status" title="{}">{}</td>'.format(html.escape(detail, quote=True), status)
+                    # Never retain an earlier numerical difference for an invalid reference.
+                    tds[3] = '<td>&mdash;</td>'
                 cells = ''.join(tds)
                 values = lookup.get(key)
                 if values is None:
@@ -117,8 +134,13 @@ def update():
   <div class="note info"><b>Single-point adsorption energies added:</b> {len(matched)} functional results across {len(systems)} of the 415 systems below, from the site's published single-point dataset.
   <br><b>Perlmutter energy refresh ({datetime.now(timezone.utc).date().isoformat()}):</b> {len(refreshed)} verified relaxed results are included;
   {added} fill previously unavailable functional entries and {changed} update earlier values.
-  Only completed, converged calculations with compatible slab references and passing the collector's energy checks are used for this refresh.
-  Other relaxed values remain from the previous publication and are identified by their tooltips. Structure images are from the earlier geometry extraction.
+  These results pass completion, electronic/ionic convergence, atom-count and composition checks,
+  matching OUTCAR POTCAR TITEL identities for each element, and the |E<sub>ads</sub>| &le; 5 eV review screen.
+  Positive absolute total energies are allowed; their sign does not determine convergence or reference compatibility.
+  <br><b>Reference compatibility correction:</b> "POTCAR mismatch" means the adsorption calculation and a reference use different potentials
+  (for example Ag versus Ag_pv), even when both converged. Hover over a status for the potential names and component convergence.
+  Incompatible or unverified relaxed values and their ML differences are withheld; the audit retains component energies and raw subtraction results for diagnosis.
+  Structure images are from the earlier geometry extraction; the single-point dataset has not been re-audited against these OUTCARs.
   <a href="dft_comparison_perlmutter.csv" download>Verified relaxed energies</a> &middot;
   <a href="dft_perlmutter_energy_audit.csv" download>Full extraction and status report</a>.
   <br>All table energies are in <b>eV</b>; &Delta; = E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT).
