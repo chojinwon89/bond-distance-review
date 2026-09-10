@@ -1,0 +1,554 @@
+surface,molecule,functional,ML,SPE,relaxed,residual,relaxation_gap,total,provenance,complex_directory
+Ag100,CH3,pbe,-1.61,-1.8390008,-1.857,0.2290007999999999,0.017999199999999993,0.2469999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CH3/singlepoint/PBE
+Ag100,CH3,pbe_d3,-1.61,-1.98716845,-2.087,0.3771684499999999,0.09983155000000021,0.4770000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CH3/singlepoint/PBE_D3
+Ag100,CH3,r2scan,-1.61,-2.14481128,-2.24,0.5348112799999998,0.09518872000000034,0.6300000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CH3/singlepoint/r2scan
+Ag100,CO,pbe,-0.5,-0.96149176,-0.976,0.46149176000000003,0.01450823999999995,0.476,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CO/singlepoint/PBE
+Ag100,CO,pbe_d3,-0.5,-1.08974976,-1.184,0.5897497599999999,0.09425024000000004,0.6839999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CO/singlepoint/PBE_D3
+Ag100,CO,r2scan,-0.5,-1.39957917,-1.473,0.89957917,0.0734208300000001,0.9730000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CO/singlepoint/r2scan
+Ag100,CO2,pbe,-0.36,-0.016716,-1.18,-0.343284,1.163284,0.82,Previously published single-point result,
+Ag100,CO2,r2scan,-0.36,0.129711,-2.17,-0.489711,2.299711,1.81,Previously published single-point result,
+Ag100,DME,r2scan,-0.24,-1.22879125,-1.33,0.98879125,0.10120875000000007,1.09,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag100_DME/singlepoint/r2scan
+Ag100,H2,pbe,-0.25,-0.59191114,-0.62,0.34191114,0.028088859999999993,0.37,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2/singlepoint/PBE
+Ag100,H2,pbe_d3,-0.25,-0.58491653,-0.7,0.33491653,0.11508346999999997,0.44999999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2/singlepoint/PBE_D3
+Ag100,H2,r2scan,-0.25,-0.99311016,-1.1,0.74311016,0.10688984000000012,0.8500000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2/singlepoint/r2scan
+Ag100,H2O,pbe,-0.5,-0.78954563,-0.814,0.28954563,0.024454369999999948,0.31399999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2O/singlepoint/PBE
+Ag100,H2O,pbe_d3,-0.5,-0.87509706,-1.0,0.37509706,0.12490294000000002,0.5,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2O/singlepoint/PBE_D3
+Ag100,H2O,r2scan,-0.5,-1.24885914,-1.377,0.74885914,0.12814086000000002,0.877,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2O/singlepoint/r2scan
+Ag100,H2S,pbe,-0.44,-0.7855992,-0.843,0.34559920000000005,0.05740079999999992,0.40299999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2S/singlepoint/PBE
+Ag100,H2S,pbe_d3,-0.44,-1.00200046,-1.173,0.5620004600000001,0.17099953999999995,0.7330000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2S/singlepoint/PBE_D3
+Ag100,N2,pbe,-0.05,-0.6295869,-0.64,0.5795868999999999,0.010413100000000064,0.59,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_N2/singlepoint/PBE
+Ag100,N2,pbe_d3,-0.05,-0.62360826,-0.71,0.57360826,0.08639173999999994,0.6599999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_N2/singlepoint/PBE_D3
+Ag100,N2,r2scan,-0.05,-1.02017659,-1.113,0.9701765899999999,0.09282341000000005,1.063,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_N2/singlepoint/r2scan
+Ag100,NH3,pbe,-0.73,-1.03560514,-1.05,0.30560513999999994,0.01439486000000012,0.32000000000000006,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_NH3/singlepoint/PBE
+Ag100,NH3,pbe_d3,-0.73,-1.15808355,-1.275,0.42808355,0.11691644999999995,0.5449999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_NH3/singlepoint/PBE_D3
+Ag100,NH3,r2scan,-0.73,-1.50351096,-1.61,0.7735109600000001,0.10648904000000003,0.8800000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_NH3/singlepoint/r2scan
+Ag100,NO,pbe,-0.67,-1.52213637,-1.59,0.8521363699999999,0.06786363000000017,0.92,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_NO/singlepoint/PBE
+Ag100,NO,pbe_d3,-0.67,-1.67254399,-1.839,1.00254399,0.16645600999999988,1.169,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_NO/singlepoint/PBE_D3
+Ag100,SO2,pbe,-0.54,-1.2806747,-1.324,0.7406747,0.04332530000000001,0.784,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_SO2/singlepoint/PBE
+Ag100,SO2,pbe_d3,-0.54,-1.65635803,-1.834,1.11635803,0.17764197000000004,1.294,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_SO2/singlepoint/PBE_D3
+Ag100,acetaldehyde,pbe,-0.5,-0.6981102,-0.719,0.19811020000000001,0.02088979999999996,0.21899999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag100_acetaldehyde/singlepoint/PBE
+Ag100,acetaldehyde,pbe_d3,-0.5,-0.89424528,-1.031,0.39424528000000003,0.13675471999999989,0.5309999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag100_acetaldehyde/singlepoint/PBE_D3
+Ag100,acetaldehyde,r2scan,-0.5,-1.20374345,-1.32,0.7037434499999999,0.11625655000000013,0.8200000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag100_acetaldehyde/singlepoint/r2scan
+Ag100,acetic_acid,r2scan,-0.58,-1.35827899,-1.464,0.7782789900000001,0.1057210099999999,0.884,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag100_acetic_acid/singlepoint/r2scan
+Ag100,ethane,pbe,-0.29,-0.020495,-1.18,-0.269505,1.159505,0.8899999999999999,Previously published single-point result,
+Ag100,ethane,pbe_d3,-0.29,-0.021602,-1.48,-0.26839799999999997,1.458398,1.19,Previously published single-point result,
+Ag100,ethane,r2scan,-0.29,0.136341,-2.15,-0.42634099999999997,2.2863409999999997,1.8599999999999999,Previously published single-point result,
+Ag100,ethanol,pbe,-0.44,-0.149495,-1.31,-0.290505,1.1605050000000001,0.8700000000000001,Previously published single-point result,
+Ag100,ethanol,pbe_d3,-0.44,-0.236753,-1.66,-0.203247,1.423247,1.22,Previously published single-point result,
+Ag100,ethanol,r2scan,-0.44,-0.085159,-2.25,-0.354841,2.164841,1.81,Previously published single-point result,
+Ag100,ethene,pbe,-0.21,-0.020847,-0.682,-0.189153,0.6611530000000001,0.4720000000000001,Previously published single-point result,
+Ag100,ethene,pbe_d3,-0.21,-0.103482,-1.059,-0.10651799999999999,0.955518,0.849,Previously published single-point result,
+Ag100,ethene,r2scan,-0.21,0.060396,-1.27,-0.27039599999999997,1.330396,1.06,Previously published single-point result,
+Ag100,formaldehyde,pbe,-0.32,-0.70405927,-0.719,0.38405927,0.014940729999999958,0.39899999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formaldehyde/singlepoint/PBE
+Ag100,formaldehyde,pbe_d3,-0.32,-0.82033294,-0.932,0.5003329400000001,0.11166706000000004,0.6120000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formaldehyde/singlepoint/PBE_D3
+Ag100,formate,pbe,-2.21,-3.60800063,-3.62,1.3980006299999999,0.011999370000000287,1.4100000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formate/singlepoint/PBE
+Ag100,formate,pbe_d3,-2.21,-3.84787003,-3.97,1.6378700300000002,0.12212997000000003,1.7600000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formate/singlepoint/PBE_D3
+Ag100,formate,r2scan,-2.21,-4.65683122,-4.78,2.44683122,0.12316878000000031,2.5700000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formate/singlepoint/r2scan
+Ag100,formic_acid,pbe,-0.4,-0.813405,-0.833,0.413405,0.019594999999999918,0.43299999999999994,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formic_acid/singlepoint/PBE
+Ag100,formic_acid,pbe_d3,-0.4,-1.02567146,-1.145,0.6256714600000001,0.11932853999999993,0.745,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formic_acid/singlepoint/PBE_D3
+Ag100,formic_acid,r2scan,-0.4,-1.3213044,-1.43,0.9213044,0.10869559999999989,1.0299999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formic_acid/singlepoint/r2scan
+Ag100,glycerol,pbe,-0.68,-0.117322,-1.35,-0.562678,1.2326780000000002,0.67,Previously published single-point result,
+Ag100,glycerol,pbe_d3,-0.68,-0.430144,-1.94,-0.24985600000000002,1.5098559999999999,1.2599999999999998,Previously published single-point result,
+Ag100,glycerol,r2scan,-0.68,-0.187839,-2.55,-0.49216100000000007,2.362161,1.8699999999999997,Previously published single-point result,
+Ag100,isopropanol,pbe,-0.49,-0.77918272,-1.32,0.28918272,0.5408172800000001,0.8300000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_isopropanol/singlepoint/PBE
+Ag100,isopropanol,pbe_d3,-0.49,-1.07192745,-1.76,0.58192745,0.68807255,1.27,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_isopropanol/singlepoint/PBE_D3
+Ag100,isopropanol,r2scan,-0.49,-1.30576301,-2.41,0.81576301,1.1042369900000002,1.9200000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_isopropanol/singlepoint/r2scan
+Ag100,methane,pbe,-0.42,-0.62950171,-0.636,0.20950171,0.006498290000000018,0.21600000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CH4/singlepoint/PBE
+Ag100,methane,pbe_d3,-0.42,-0.70095937,-0.801,0.28095937,0.10004063000000007,0.38100000000000006,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CH4/singlepoint/PBE_D3
+Ag100,methane,r2scan,-0.42,-1.05659736,-1.149,0.6365973600000001,0.09240263999999998,0.7290000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_CH4/singlepoint/r2scan
+Ag100,methanol,pbe,-0.4,-0.77726027,-0.789,0.37726026999999995,0.01173973000000006,0.389,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_methanol/singlepoint/PBE
+Ag100,methanol,pbe_d3,-0.4,-0.92340573,-1.076,0.52340573,0.15259427000000003,0.676,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_methanol/singlepoint/PBE_D3
+Ag100,methanol,r2scan,-0.4,-1.26692331,-1.38,0.8669233099999999,0.11307668999999998,0.9799999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_methanol/singlepoint/r2scan
+Ag100,propane,pbe,-0.31,-0.63252999,-1.18,0.32252999,0.54747001,0.8699999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propane/singlepoint/PBE
+Ag100,propane,pbe_d3,-0.31,-0.88109262,-1.58,0.5710926199999999,0.6989073800000001,1.27,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propane/singlepoint/PBE_D3
+Ag100,propane,r2scan,-0.31,-1.10443455,-2.22,0.7944345499999999,1.1155654500000003,1.9100000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propane/singlepoint/r2scan
+Ag100,propanol,pbe,-0.47,-0.78799188,-1.33,0.31799188,0.5420081200000001,0.8600000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propanol/singlepoint/PBE
+Ag100,propanol,pbe_d3,-0.47,-1.13401899,-1.7,0.66401899,0.56598101,1.23,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propanol/singlepoint/PBE_D3
+Ag100,propanol,r2scan,-0.47,-1.33693262,-2.39,0.86693262,1.05306738,1.9200000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propanol/singlepoint/r2scan
+Ag100,propene,pbe,-0.21,-0.69306202,-1.23,0.48306202,0.53693798,1.02,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propene/singlepoint/PBE
+Ag100,propene,pbe_d3,-0.21,-0.94567444,-1.77,0.73567444,0.82432556,1.56,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propene/singlepoint/PBE_D3
+Ag100,propene,r2scan,-0.21,-1.18493951,-2.27,0.97493951,1.08506049,2.06,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag100_propene/singlepoint/r2scan
+Ag110,CH3,pbe,-1.77,-1.5826137,-1.595,-0.1873863,0.012386299999999961,-0.17500000000000004,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CH3/singlepoint/PBE
+Ag110,CH3,pbe_d3,-1.77,-1.76284296,-1.792,-0.007157040000000059,0.02915704000000008,0.02200000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CH3/singlepoint/PBE_D3
+Ag110,CH3,r2scan,-1.77,-1.79332203,-1.861,0.023322029999999883,0.06767797000000009,0.09099999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CH3/singlepoint/r2scan
+Ag110,CO,pbe,-0.57,-0.73656935,-0.755,0.16656935000000006,0.018430649999999993,0.18500000000000005,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CO/singlepoint/PBE
+Ag110,CO,pbe_d3,-0.57,-0.90907045,-0.944,0.33907045,0.034929549999999976,0.374,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CO/singlepoint/PBE_D3
+Ag110,CO,r2scan,-0.57,-1.07175432,-1.143,0.50175432,0.07124568000000009,0.5730000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CO/singlepoint/r2scan
+Ag110,CO2,pbe,-0.39,-0.42126768,-0.424,0.031267679999999964,0.0027323200000000103,0.033999999999999975,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CO2/singlepoint/PBE
+Ag110,CO2,r2scan,-0.39,-0.7686192,-0.802,0.37861919999999993,0.0333808000000001,0.41200000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CO2/singlepoint/r2scan
+Ag110,DME,r2scan,-0.31,-0.83656161,-1.018,0.5265616099999999,0.18143839000000006,0.708,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_DME/singlepoint/r2scan
+Ag110,H2,pbe,-0.27,-0.3597476,-0.36,0.08974759999999998,0.00025239999999998597,0.08999999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2/singlepoint/PBE
+Ag110,H2,pbe_d3,-0.27,-0.41966007,-0.43,0.14966006999999998,0.010339929999999997,0.15999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2/singlepoint/PBE_D3
+Ag110,H2,r2scan,-0.27,-0.65676206,-0.69,0.38676206,0.03323793999999991,0.41999999999999993,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2/singlepoint/r2scan
+Ag110,H2O,pbe,-0.58,-0.64391967,-0.649,0.0639196700000001,0.005080329999999966,0.06900000000000006,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2O/singlepoint/PBE
+Ag110,H2O,pbe_d3,-0.58,-0.81882597,-0.832,0.23882597000000005,0.013174029999999948,0.252,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2O/singlepoint/PBE_D3
+Ag110,H2O,r2scan,-0.58,-1.02071792,-1.07,0.4407179200000001,0.049282080000000006,0.4900000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2O/singlepoint/r2scan
+Ag110,H2S,pbe,-0.5,-0.60920691,-0.629,0.10920691000000005,0.019793089999999958,0.129,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2S/singlepoint/PBE
+Ag110,H2S,pbe_d3,-0.5,-0.92582197,-0.963,0.42582197,0.03717802999999997,0.46299999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2S/singlepoint/PBE_D3
+Ag110,H2S,r2scan,-0.5,-0.99182063,-1.052,0.49182063,0.060179370000000065,0.552,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2S/singlepoint/r2scan
+Ag110,N2,pbe,-0.05,-0.39545281,-0.396,0.34545281,0.0005471900000000307,0.34600000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_N2/singlepoint/PBE
+Ag110,N2,pbe_d3,-0.05,-0.44962845,-0.455,0.39962845,0.005371550000000003,0.405,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_N2/singlepoint/PBE_D3
+Ag110,N2,r2scan,-0.05,-0.67151951,-0.704,0.6215195099999999,0.03248048999999997,0.6539999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_N2/singlepoint/r2scan
+Ag110,NH3,pbe,-0.81,-0.82717215,-0.831,0.01717214999999994,0.003827849999999966,0.020999999999999908,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_NH3/singlepoint/PBE
+Ag110,NH3,pbe_d3,-0.81,-0.99863707,-1.015,0.18863706999999996,0.016362929999999887,0.20499999999999985,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_NH3/singlepoint/PBE_D3
+Ag110,NH3,r2scan,-0.81,-1.20185371,-1.24,0.3918537099999999,0.03814629000000003,0.42999999999999994,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_NH3/singlepoint/r2scan
+Ag110,NO,pbe,-0.81,-1.22027753,-1.344,0.4102775299999999,0.12372247000000014,0.534,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_NO/singlepoint/PBE
+Ag110,NO,pbe_d3,-0.81,-1.44597951,-1.506,0.6359795099999999,0.06002049000000009,0.696,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_NO/singlepoint/PBE_D3
+Ag110,SO2,pbe,-0.68,-0.92398209,-0.948,0.24398208999999993,0.024017909999999976,0.2679999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_SO2/singlepoint/PBE
+Ag110,SO2,pbe_d3,-0.68,-1.38630873,-1.459,0.70630873,0.07269126999999997,0.779,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_SO2/singlepoint/PBE_D3
+Ag110,acetaldehyde,pbe,-0.59,-0.47597273,-0.511,-0.11402726999999996,0.03502727,-0.07899999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_acetaldehyde/singlepoint/PBE
+Ag110,acetaldehyde,pbe_d3,-0.59,-0.74167078,-0.785,0.15167078,0.04332922000000006,0.19500000000000006,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_acetaldehyde/singlepoint/PBE_D3
+Ag110,acetaldehyde,r2scan,-0.59,-0.89961086,-0.956,0.30961086000000004,0.05638913999999995,0.366,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_acetaldehyde/singlepoint/r2scan
+Ag110,acetic_acid,r2scan,-0.68,-1.08320116,-1.126,0.40320115999999995,0.042798839999999894,0.44599999999999984,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_acetic_acid/singlepoint/r2scan
+Ag110,ethane,pbe,-0.38,-0.41146521,-0.414,0.03146521000000002,0.0025347899999999535,0.033999999999999975,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_ethane/singlepoint/PBE
+Ag110,ethane,pbe_d3,-0.38,-0.59929504,-0.603,0.21929504,0.0037049599999999794,0.22299999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_ethane/singlepoint/PBE_D3
+Ag110,ethane,r2scan,-0.38,-0.73212595,-0.76,0.35212595,0.027874049999999984,0.38,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag110_ethane/singlepoint/r2scan
+Ag110,ethanol,pbe,-0.55,-0.224505,-1.3,-0.32549500000000003,1.075495,0.75,Previously published single-point result,
+Ag110,ethanol,pbe_d3,-0.55,-0.474308,-1.67,-0.07569200000000004,1.195692,1.1199999999999999,Previously published single-point result,
+Ag110,ethanol,r2scan,-0.55,-0.239902,-2.19,-0.31009800000000004,1.9500979999999999,1.64,Previously published single-point result,
+Ag110,ethene,pbe,-0.41,-0.141595,-0.595,-0.268405,0.45340499999999995,0.185,Previously published single-point result,
+Ag110,ethene,pbe_d3,-0.41,-0.411256,-0.916,0.0012560000000000349,0.5047440000000001,0.506,Previously published single-point result,
+Ag110,ethene,r2scan,-0.41,-0.179103,-1.05,-0.23089699999999996,0.870897,0.6400000000000001,Previously published single-point result,
+Ag110,formaldehyde,pbe,-0.41,-0.50759535,-0.534,0.09759535000000003,0.02640465000000003,0.12400000000000005,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formaldehyde/singlepoint/PBE
+Ag110,formaldehyde,pbe_d3,-0.41,-0.73299925,-0.759,0.32299925,0.026000750000000017,0.34900000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formaldehyde/singlepoint/PBE_D3
+Ag110,formaldehyde,r2scan,-0.41,-0.92338785,-0.974,0.51338785,0.05061214999999997,0.5640000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formaldehyde/singlepoint/r2scan
+Ag110,formate,pbe,-2.33,-3.30712298,-3.31,0.9771229799999999,0.002877020000000119,0.98,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formate/singlepoint/PBE
+Ag110,formate,pbe_d3,-2.33,-3.61480911,-3.65,1.2848091099999999,0.035190889999999975,1.3199999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formate/singlepoint/PBE_D3
+Ag110,formate,r2scan,-2.33,-4.28542931,-4.37,1.9554293099999995,0.0845706900000005,2.04,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formate/singlepoint/r2scan
+Ag110,formic_acid,pbe,-0.48,-0.62006101,-0.629,0.14006101000000004,0.00893898999999998,0.14900000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formic_acid/singlepoint/PBE
+Ag110,formic_acid,pbe_d3,-0.48,-0.90546236,-0.932,0.42546236000000004,0.02653764000000003,0.45200000000000007,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formic_acid/singlepoint/PBE_D3
+Ag110,formic_acid,r2scan,-0.48,-1.04443886,-1.105,0.5644388600000001,0.0605611399999999,0.625,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formic_acid/singlepoint/r2scan
+Ag110,glycerol,pbe,-0.96,-0.90417453,-1.41,-0.05582546999999993,0.5058254699999999,0.44999999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_glycerol/singlepoint/PBE
+Ag110,glycerol,pbe_d3,-0.96,-1.45163228,-1.94,0.49163228000000014,0.48836771999999984,0.98,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_glycerol/singlepoint/PBE_D3
+Ag110,glycerol,r2scan,-0.96,-1.43106921,-2.54,0.47106921,1.10893079,1.58,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_glycerol/singlepoint/r2scan
+Ag110,isopropanol,pbe,-0.59,-0.237413,-1.31,-0.352587,1.072587,0.7200000000000001,Previously published single-point result,
+Ag110,isopropanol,pbe_d3,-0.59,-0.587492,-1.74,-0.0025079999999999547,1.152508,1.15,Previously published single-point result,
+Ag110,isopropanol,r2scan,-0.59,-0.294978,-2.3,-0.29502199999999995,2.005022,1.71,Previously published single-point result,
+Ag110,methane,pbe,-0.46,-0.39027692,-0.393,-0.06972307999999999,0.002723079999999989,-0.067,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CH4/singlepoint/PBE
+Ag110,methane,pbe_d3,-0.46,-0.53172909,-0.539,0.07172909,0.007270910000000019,0.07900000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CH4/singlepoint/PBE_D3
+Ag110,methane,r2scan,-0.46,-0.71312235,-0.746,0.25312235,0.03287764999999998,0.286,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_CH4/singlepoint/r2scan
+Ag110,methanol,pbe,-0.48,-0.61578729,-0.625,0.13578729,0.009212710000000013,0.14500000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_methanol/singlepoint/PBE
+Ag110,methanol,pbe_d3,-0.48,-0.82557198,-0.872,0.34557198,0.046428020000000014,0.392,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_methanol/singlepoint/PBE_D3
+Ag110,methanol,r2scan,-0.48,-1.01087754,-1.068,0.5308775400000001,0.057122459999999986,0.5880000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_methanol/singlepoint/r2scan
+Ag110,propane,pbe,-0.38,-0.41432294,-1.07,0.03432293999999997,0.6556770600000001,0.6900000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_propane/singlepoint/PBE
+Ag110,propane,pbe_d3,-0.38,-0.63232045,-1.47,0.25232045000000003,0.8376795499999999,1.0899999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_propane/singlepoint/PBE_D3
+Ag110,propane,r2scan,-0.38,-0.72861939,-2.01,0.34861939,1.2813806099999998,1.63,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_propane/singlepoint/r2scan
+Ag110,propanol,pbe,-0.54,-0.243158,-1.32,-0.29684200000000005,1.076842,0.78,Previously published single-point result,
+Ag110,propanol,pbe_d3,-0.54,-0.5436,-1.73,0.0035999999999999366,1.1864,1.19,Previously published single-point result,
+Ag110,propanol,r2scan,-0.54,-0.255189,-2.3,-0.28481100000000004,2.0448109999999997,1.7599999999999998,Previously published single-point result,
+Ag110,propene,pbe,-0.34,-0.51154589,-1.27,0.17154588999999992,0.7584541100000001,0.9299999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_propene/singlepoint/PBE
+Ag110,propene,pbe_d3,-0.34,-0.88711618,-1.72,0.54711618,0.8328838199999999,1.38,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_propene/singlepoint/PBE_D3
+Ag110,propene,r2scan,-0.34,-0.94387381,-2.28,0.6038738100000001,1.3361261899999999,1.9399999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag110_propene/singlepoint/r2scan
+Ag111,CH3,pbe,-1.53,-1.44896442,-1.48,-0.08103558,0.03103557999999995,-0.050000000000000044,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CH3/singlepoint/PBE
+Ag111,CH3,pbe_d3,-1.53,-1.57621776,-1.73,0.04621776,0.15378223999999996,0.19999999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CH3/singlepoint/PBE_D3
+Ag111,CH3,r2scan,-1.53,-1.82020558,-1.92,0.2902055800000001,0.09979441999999983,0.3899999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CH3/singlepoint/r2scan
+Ag111,CO,pbe,-0.43,-0.56903372,-0.59,0.13903371999999997,0.020966280000000004,0.15999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CO/singlepoint/PBE
+Ag111,CO,pbe_d3,-0.43,-0.64460994,-0.83,0.21460994000000005,0.1853900599999999,0.39999999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CO/singlepoint/PBE_D3
+Ag111,CO,r2scan,-0.43,-1.01845657,-1.31,0.58845657,0.29154343000000016,0.8800000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CO/singlepoint/r2scan
+Ag111,CO2,pbe,-0.36,-0.001847,-1.235,-0.358153,1.2331530000000002,0.8750000000000001,Previously published single-point result,
+Ag111,CO2,r2scan,-0.36,-0.008145,-2.17,-0.351855,2.161855,1.81,Previously published single-point result,
+Ag111,DME,r2scan,-0.2,-1.15349875,-1.32,0.9534987500000001,0.16650125000000005,1.12,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag111_DME/singlepoint/r2scan
+Ag111,H2,pbe,-0.23,-0.62771715,-0.68,0.39771714999999996,0.0522828500000001,0.45000000000000007,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2/singlepoint/PBE
+Ag111,H2,pbe_d3,-0.23,-0.56243131,-0.78,0.33243131000000004,0.21756869,0.55,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2/singlepoint/PBE_D3
+Ag111,H2,r2scan,-0.23,-1.03420513,-1.21,0.8042051299999999,0.17579487000000005,0.98,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2/singlepoint/r2scan
+Ag111,H2O,pbe,-0.45,-0.74378743,-0.8,0.29378743,0.05621257000000002,0.35000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2O/singlepoint/PBE
+Ag111,H2O,pbe_d3,-0.45,-0.76693169,-1.01,0.31693169000000004,0.24306830999999995,0.56,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2O/singlepoint/PBE_D3
+Ag111,H2O,r2scan,-0.45,-1.20206615,-1.38,0.7520661500000001,0.17793384999999984,0.9299999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2O/singlepoint/r2scan
+Ag111,H2S,pbe,-0.37,-0.72680963,-0.8,0.35680963,0.07319037000000006,0.43000000000000005,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2S/singlepoint/PBE
+Ag111,H2S,pbe_d3,-0.37,-0.87846267,-1.14,0.50846267,0.2615373299999999,0.7699999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2S/singlepoint/PBE_D3
+Ag111,N2,pbe,-0.05,-0.66266226,-0.7,0.6126622599999999,0.03733774000000001,0.6499999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_N2/singlepoint/PBE
+Ag111,N2,pbe_d3,-0.05,-0.5860237,-0.78,0.5360237,0.1939763,0.73,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_N2/singlepoint/PBE_D3
+Ag111,N2,r2scan,-0.05,-1.05975117,-1.24,1.00975117,0.18024883000000003,1.19,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_N2/singlepoint/r2scan
+Ag111,NH3,pbe,-0.6,-0.93979859,-0.97,0.33979859,0.030201409999999984,0.37,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_NH3/singlepoint/PBE
+Ag111,NH3,pbe_d3,-0.6,-1.01190343,-1.23,0.41190343000000007,0.21809656999999993,0.63,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_NH3/singlepoint/PBE_D3
+Ag111,NH3,r2scan,-0.6,-1.44411182,-1.63,0.8441118200000001,0.18588817999999985,1.0299999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_NH3/singlepoint/r2scan
+Ag111,NO,pbe,-0.54,-1.18534753,-1.24,0.64534753,0.05465246999999995,0.7,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_NO/singlepoint/PBE
+Ag111,NO,pbe_d3,-0.54,-1.28147781,-1.46,0.7414778099999999,0.17852219000000003,0.9199999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_NO/singlepoint/PBE_D3
+Ag111,SO2,pbe,-0.28,-0.6940321,-0.77,0.4140321,0.07596789999999998,0.49,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_SO2/singlepoint/PBE
+Ag111,SO2,pbe_d3,-0.28,-0.98528819,-1.22,0.70528819,0.23471180999999997,0.94,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_SO2/singlepoint/PBE_D3
+Ag111,acetaldehyde,pbe,-0.41,-0.67488017,-0.72,0.26488017,0.04511982999999997,0.31,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag111_acetaldehyde/singlepoint/PBE
+Ag111,acetaldehyde,pbe_d3,-0.41,-0.78577793,-0.98,0.37577793,0.19422207000000002,0.5700000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag111_acetaldehyde/singlepoint/PBE_D3
+Ag111,acetaldehyde,r2scan,-0.41,-1.17633314,-1.33,0.7663331400000002,0.15366685999999996,0.9200000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag111_acetaldehyde/singlepoint/r2scan
+Ag111,acetic_acid,r2scan,-0.47,-1.3252793,-1.48,0.8552793000000001,0.15472069999999993,1.01,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ag111_acetic_acid/singlepoint/r2scan
+Ag111,ethane,pbe,-0.27,-0.001734,-1.221,-0.268266,1.2192660000000002,0.9510000000000001,Previously published single-point result,
+Ag111,ethane,pbe_d3,-0.27,-0.133735,-1.478,-0.13626500000000002,1.344265,1.208,Previously published single-point result,
+Ag111,ethane,r2scan,-0.27,0.000281,-2.168,-0.270281,2.1682810000000003,1.8980000000000001,Previously published single-point result,
+Ag111,ethanol,pbe,-0.38,-0.085274,-1.317,-0.294726,1.2317259999999999,0.9369999999999999,Previously published single-point result,
+Ag111,ethanol,pbe_d3,-0.38,-0.271032,-1.654,-0.10896800000000001,1.382968,1.274,Previously published single-point result,
+Ag111,ethanol,r2scan,-0.38,-0.157044,-2.29,-0.22295600000000002,2.132956,1.9100000000000001,Previously published single-point result,
+Ag111,ethene,pbe,-0.17,-0.033948,-0.72,-0.136052,0.686052,0.5499999999999999,Previously published single-point result,
+Ag111,ethene,pbe_d3,-0.17,-0.183861,-1.09,0.013860999999999984,0.906139,0.92,Previously published single-point result,
+Ag111,ethene,r2scan,-0.17,-0.062174,-1.31,-0.107826,1.247826,1.1400000000000001,Previously published single-point result,
+Ag111,formaldehyde,pbe,-0.26,-0.67587271,-0.72,0.41587271000000003,0.04412728999999993,0.45999999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formaldehyde/singlepoint/PBE
+Ag111,formaldehyde,pbe_d3,-0.26,-0.69779009,-0.9,0.43779009,0.20220991,0.64,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formaldehyde/singlepoint/PBE_D3
+Ag111,formate,pbe,-1.98,-3.2039268,-3.21,1.2239268,0.00607319999999989,1.23,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formate/singlepoint/PBE
+Ag111,formate,pbe_d3,-1.98,-3.39579107,-3.57,1.41579107,0.17420892999999982,1.5899999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formate/singlepoint/PBE_D3
+Ag111,formate,r2scan,-1.98,-4.21887567,-4.34,2.23887567,0.12112432999999978,2.36,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formate/singlepoint/r2scan
+Ag111,formic_acid,pbe,-0.34,-0.77185521,-0.81,0.43185521,0.03814479000000004,0.47000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formic_acid/singlepoint/PBE
+Ag111,formic_acid,pbe_d3,-0.34,-0.89855632,-1.14,0.5585563199999999,0.24144367999999994,0.7999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formic_acid/singlepoint/PBE_D3
+Ag111,formic_acid,r2scan,-0.34,-1.26629362,-1.48,0.9262936199999998,0.21370638000000008,1.14,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formic_acid/singlepoint/r2scan
+Ag111,glycerol,pbe,-0.58,-0.82956066,-1.4,0.24956066,0.57043934,0.82,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_glycerol/singlepoint/PBE
+Ag111,glycerol,pbe_d3,-0.58,-1.21178856,-2.02,0.63178856,0.80821144,1.44,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_glycerol/singlepoint/PBE_D3
+Ag111,glycerol,r2scan,-0.58,-1.43216909,-2.46,0.85216909,1.02783091,1.88,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_glycerol/singlepoint/r2scan
+Ag111,isopropanol,pbe,-0.41,-0.75542756,-1.33,0.34542756,0.5745724400000001,0.9200000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_isopropanol/singlepoint/PBE
+Ag111,isopropanol,pbe_d3,-0.41,-0.98518463,-1.81,0.5751846300000001,0.82481537,1.4000000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_isopropanol/singlepoint/PBE_D3
+Ag111,isopropanol,r2scan,-0.41,-1.29000638,-2.39,0.88000638,1.0999936200000002,1.9800000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_isopropanol/singlepoint/r2scan
+Ag111,methane,pbe,-0.39,-0.66337777,-0.7,0.27337776999999996,0.03662222999999998,0.30999999999999994,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CH4/singlepoint/PBE
+Ag111,methane,pbe_d3,-0.39,-0.67467854,-0.86,0.28467854000000004,0.18532145999999994,0.47,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CH4/singlepoint/PBE_D3
+Ag111,methane,r2scan,-0.39,-1.09451254,-1.27,0.70451254,0.17548746000000004,0.88,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_CH4/singlepoint/r2scan
+Ag111,methanol,pbe,-0.33,-0.75804448,-0.79,0.42804448,0.031955520000000015,0.46,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_methanol/singlepoint/PBE
+Ag111,methanol,pbe_d3,-0.33,-0.84902785,-1.09,0.5190278500000001,0.24097215000000005,0.76,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_methanol/singlepoint/PBE_D3
+Ag111,methanol,r2scan,-0.33,-1.26376968,-1.39,0.9337696799999999,0.1262303199999999,1.0599999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_methanol/singlepoint/r2scan
+Ag111,propane,pbe,-0.28,-0.67959321,-1.23,0.3995932099999999,0.55040679,0.95,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_propane/singlepoint/PBE
+Ag111,propane,pbe_d3,-0.28,-0.84625628,-1.56,0.56625628,0.7137437200000001,1.28,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_propane/singlepoint/PBE_D3
+Ag111,propane,r2scan,-0.28,-1.13970961,-2.2,0.8597096099999999,1.0602903900000002,1.9200000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_propane/singlepoint/r2scan
+Ag111,propanol,pbe,-0.39,-0.114057,-1.35,-0.275943,1.235943,0.9600000000000001,Previously published single-point result,
+Ag111,propanol,pbe_d3,-0.39,-0.408185,-1.8,0.018185000000000007,1.391815,1.4100000000000001,Previously published single-point result,
+Ag111,propanol,r2scan,-0.39,-0.211786,-2.38,-0.178214,2.168214,1.9899999999999998,Previously published single-point result,
+Ag111,propene,pbe,-0.18,-0.70042847,-1.26,0.5204284699999999,0.55957153,1.08,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_propene/singlepoint/PBE
+Ag111,propene,pbe_d3,-0.18,-0.84155042,-1.73,0.66155042,0.88844958,1.55,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_propene/singlepoint/PBE_D3
+Ag111,propene,r2scan,-0.18,-1.16899951,-2.23,0.98899951,1.06100049,2.05,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Ag111_propene/singlepoint/r2scan
+Au111,CH3,pbe,-1.79,-1.23323139,-1.28,-0.55676861,0.04676860999999999,-0.51,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CH3/singlepoint/PBE
+Au111,CH3,pbe_d3,-1.79,-1.28941242,-1.48,-0.5005875800000001,0.1905875800000001,-0.31000000000000005,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CH3/singlepoint/PBE_D3
+Au111,CH3,r2scan,-1.79,-1.05214848,-1.19,-0.73785152,0.1378515199999999,-0.6000000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CH3/singlepoint/r2scan
+Au111,CO,pbe,-0.59,-0.07125681,-0.13,-0.5187431899999999,0.05874319,-0.45999999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CO/singlepoint/PBE
+Au111,CO,pbe_d3,-0.59,-0.07447963,-0.29,-0.51552037,0.21552036999999996,-0.3,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CO/singlepoint/PBE_D3
+Au111,CO,r2scan,-0.59,0.0457819,-0.1,-0.6357819,0.14578190000000002,-0.49,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CO/singlepoint/r2scan
+Au111,CO2,pbe,-0.4,0.012193,-0.024,-0.41219300000000003,0.036193,-0.376,Previously published single-point result,
+Au111,CO2,r2scan,-0.4,0.102859,-0.06,-0.5028590000000001,0.162859,-0.34,Previously published single-point result,
+Au111,DME,r2scan,-0.16,0.41687548,-0.02,-0.57687548,0.43687548000000004,-0.14,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_DME/singlepoint/r2scan
+Au111,H2,pbe,-0.24,0.1341625,-0.0,-0.37416249999999995,0.1341625,-0.24,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2/singlepoint/PBE
+Au111,H2,pbe_d3,-0.24,0.31018137,-0.08,-0.55018137,0.39018137,-0.15999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2/singlepoint/PBE_D3
+Au111,H2,r2scan,-0.24,0.30145392,-0.02,-0.5414539199999999,0.32145392,-0.22,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2/singlepoint/r2scan
+Au111,H2O,pbe,-0.51,0.07552183,-0.04,-0.58552183,0.11552182999999999,-0.47000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2O/singlepoint/PBE
+Au111,H2O,pbe_d3,-0.51,0.15524861,-0.3,-0.66524861,0.45524861,-0.21000000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2O/singlepoint/PBE_D3
+Au111,H2O,r2scan,-0.51,0.1929756,-0.1,-0.7029756,0.2929756,-0.41000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2O/singlepoint/r2scan
+Au111,H2S,pbe,-0.41,0.06683798,-0.14,-0.47683798,0.20683798000000003,-0.26999999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2S/singlepoint/PBE
+Au111,H2S,pbe_d3,-0.41,-0.00381036,-0.54,-0.40618963999999996,0.53618964,0.13000000000000006,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2S/singlepoint/PBE_D3
+Au111,N2,pbe,-0.09,0.11984266,-0.01,-0.20984266000000001,0.12984266,-0.08,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_N2/singlepoint/PBE
+Au111,N2,pbe_d3,-0.09,0.28257291,-0.1,-0.37257291000000003,0.38257291000000004,0.010000000000000009,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_N2/singlepoint/PBE_D3
+Au111,N2,r2scan,-0.09,0.29187976,-0.02,-0.38187976,0.31187976,-0.06999999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_N2/singlepoint/r2scan
+Au111,NH3,pbe,-0.54,0.05984804,-0.06,-0.59984804,0.11984803999999999,-0.48000000000000004,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_NH3/singlepoint/PBE
+Au111,NH3,pbe_d3,-0.54,0.08107265,-0.31,-0.62107265,0.39107265,-0.23000000000000004,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_NH3/singlepoint/PBE_D3
+Au111,NH3,r2scan,-0.54,0.16449438,-0.13,-0.7044943800000001,0.29449438,-0.41000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_NH3/singlepoint/r2scan
+Au111,NO,pbe,-0.68,-0.5772008,-0.66,-0.10279920000000009,0.08279920000000007,-0.020000000000000018,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_NO/singlepoint/PBE
+Au111,NO,pbe_d3,-0.68,-0.56398345,-0.86,-0.11601655,0.29601654999999993,0.17999999999999994,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_NO/singlepoint/PBE_D3
+Au111,SO2,pbe,-0.26,0.05524914,-0.05,-0.31524914000000004,0.10524914,-0.21000000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_SO2/singlepoint/PBE
+Au111,SO2,pbe_d3,-0.26,-0.03914382,-0.53,-0.22085618,0.49085618000000003,0.27,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_SO2/singlepoint/PBE_D3
+Au111,acetaldehyde,pbe,-0.27,0.07079847,-0.05,-0.34079847,0.12079847,-0.22000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_acetaldehyde/singlepoint/PBE
+Au111,acetaldehyde,pbe_d3,-0.27,0.01451808,-0.4,-0.28451808,0.41451808,0.13,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_acetaldehyde/singlepoint/PBE_D3
+Au111,acetaldehyde,r2scan,-0.27,0.14541139,0.05,-0.41541139000000005,0.09541139,-0.32,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_acetaldehyde/singlepoint/r2scan
+Au111,acetic_acid,r2scan,-0.36,0.04518788,-0.19,-0.40518788,0.23518788000000002,-0.16999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_acetic_acid/singlepoint/r2scan
+Au111,ethane,pbe,-0.24,0.10807813,-0.01,-0.34807813,0.11807812999999999,-0.22999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_ethane/singlepoint/PBE
+Au111,ethane,pbe_d3,-0.24,0.06668247,-0.29,-0.30668247,0.35668247,0.04999999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_ethane/singlepoint/PBE_D3
+Au111,ethane,r2scan,-0.24,0.21132448,0.07,-0.45132448000000003,0.14132448,-0.31,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_ethane/singlepoint/r2scan
+Au111,ethanol,pbe,-0.28,0.35027781,-0.06,-0.63027781,0.41027781,-0.22000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_ethanol/singlepoint/PBE
+Au111,ethanol,pbe_d3,-0.28,0.27546129,-0.49,-0.55546129,0.76546129,0.20999999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_ethanol/singlepoint/PBE_D3
+Au111,ethanol,r2scan,-0.28,0.42420521,-0.13,-0.70420521,0.55420521,-0.15000000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Au111_ethanol/singlepoint/r2scan
+Au111,ethene,pbe,-0.19,-0.020577,-0.03,-0.169423,0.009422999999999997,-0.16,Previously published single-point result,
+Au111,ethene,pbe_d3,-0.19,-0.099057,-0.45,-0.090943,0.350943,0.26,Previously published single-point result,
+Au111,ethene,r2scan,-0.19,0.024275,-0.01,-0.214275,0.034275,-0.18,Previously published single-point result,
+Au111,formaldehyde,pbe,-0.21,0.04776452,-0.07,-0.25776452,0.11776452000000001,-0.13999999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formaldehyde/singlepoint/PBE
+Au111,formaldehyde,pbe_d3,-0.21,0.09071155,-0.34,-0.30071155,0.43071155000000005,0.13000000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formaldehyde/singlepoint/PBE_D3
+Au111,formate,pbe,-1.47,-2.157517,-2.19,0.6875169999999999,0.03248300000000004,0.72,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formate/singlepoint/PBE
+Au111,formate,pbe_d3,-1.47,-2.32231791,-2.5,0.8523179100000002,0.1776820899999998,1.03,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formate/singlepoint/PBE_D3
+Au111,formate,r2scan,-1.47,-2.54218465,-2.69,1.0721846499999999,0.14781535000000012,1.22,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formate/singlepoint/r2scan
+Au111,formic_acid,pbe,-0.37,0.02078081,-0.1,-0.39078081,0.12078081,-0.27,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formic_acid/singlepoint/PBE
+Au111,formic_acid,pbe_d3,-0.37,-0.01193799,-0.46,-0.35806201,0.44806201,0.09000000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formic_acid/singlepoint/PBE_D3
+Au111,formic_acid,r2scan,-0.37,0.10794063,-0.25,-0.47794063,0.35794063,-0.12,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formic_acid/singlepoint/r2scan
+Au111,glycerol,pbe,-0.59,0.251876,-0.26,-0.841876,0.511876,-0.32999999999999996,Previously published single-point result,
+Au111,glycerol,pbe_d3,-0.59,-0.071518,-0.87,-0.518482,0.798482,0.28,Previously published single-point result,
+Au111,glycerol,r2scan,-0.59,0.262698,-0.41,-0.852698,0.672698,-0.18,Previously published single-point result,
+Au111,isopropanol,pbe,-0.33,0.202074,-0.09,-0.532074,0.292074,-0.24000000000000002,Previously published single-point result,
+Au111,isopropanol,pbe_d3,-0.33,0.018965,-0.59,-0.348965,0.608965,0.25999999999999995,Previously published single-point result,
+Au111,isopropanol,r2scan,-0.33,0.263387,-0.24,-0.593387,0.503387,-0.09000000000000002,Previously published single-point result,
+Au111,methane,pbe,-0.37,0.12883942,-0.0,-0.49883942000000003,0.12883942,-0.37,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CH4/singlepoint/PBE
+Au111,methane,pbe_d3,-0.37,0.1764705,-0.2,-0.5464705,0.37647050000000004,-0.16999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CH4/singlepoint/PBE_D3
+Au111,methane,r2scan,-0.37,0.24813672,-0.06,-0.61813672,0.30813672000000003,-0.31,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_CH4/singlepoint/r2scan
+Au111,methanol,pbe,-0.26,0.29737614,-0.06,-0.55737614,0.35737614,-0.2,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_methanol/singlepoint/PBE
+Au111,methanol,pbe_d3,-0.26,0.2761696,-0.33,-0.5361696,0.6061696000000001,0.07,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_methanol/singlepoint/PBE_D3
+Au111,methanol,r2scan,-0.26,0.37910021,0.08,-0.6391002100000001,0.29910021,-0.34,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_methanol/singlepoint/r2scan
+Au111,propane,pbe,-0.24,0.200327,-0.03,-0.440327,0.230327,-0.21,Previously published single-point result,
+Au111,propane,pbe_d3,-0.24,0.158504,-0.42,-0.39850399999999997,0.578504,0.18,Previously published single-point result,
+Au111,propane,r2scan,-0.24,0.314647,-0.1,-0.554647,0.414647,-0.13999999999999999,Previously published single-point result,
+Au111,propanol,pbe,-0.32,0.22102328,-0.09,-0.54102328,0.31102328,-0.23,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Au111_propanol/singlepoint/PBE
+Au111,propanol,pbe_d3,-0.32,-0.02455623,-0.63,-0.29544377,0.60544377,0.31,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Au111_propanol/singlepoint/PBE_D3
+Au111,propanol,r2scan,-0.32,0.26000903,-0.28,-0.58000903,0.54000903,-0.03999999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Au111_propanol/singlepoint/r2scan
+Au111,propene,pbe,-0.2,0.310988,-0.07,-0.510988,0.380988,-0.13,Previously published single-point result,
+Au111,propene,pbe_d3,-0.2,0.299802,-0.62,-0.499802,0.919802,0.42,Previously published single-point result,
+Au111,propene,r2scan,-0.2,0.447503,-0.21,-0.6475029999999999,0.657503,0.009999999999999981,Previously published single-point result,
+Cu100,CO,pbe,-1.19,-0.774517,-0.781,-0.41548299999999994,0.0064830000000000165,-0.4089999999999999,Previously published single-point result,
+Cu100,CO,pbe_d3,-1.19,-0.912229,-1.027,-0.277771,0.11477099999999996,-0.16300000000000003,Previously published single-point result,
+Cu100,CO,r2scan,-1.19,-0.643117,-0.95,-0.5468829999999999,0.3068829999999999,-0.24,Previously published single-point result,
+Cu100,CO2,pbe,-0.36,-0.018852,-0.032,-0.341148,0.013148,-0.32799999999999996,Previously published single-point result,
+Cu100,CO2,r2scan,-0.36,0.121635,-0.06,-0.481635,0.181635,-0.3,Previously published single-point result,
+Cu100,DME,pbe,-0.27,-4.702579,-4.76,4.4325790000000005,0.05742099999999972,4.49,Previously published single-point result,
+Cu100,DME,r2scan,-0.27,-0.219224,-0.23,-0.050776000000000016,0.010776000000000008,-0.04000000000000001,Previously published single-point result,
+Cu100,H2O,pbe,-0.57,-0.227119,-0.246,-0.342881,0.01888100000000001,-0.32399999999999995,Previously published single-point result,
+Cu100,H2O,pbe_d3,-0.57,-0.395095,-0.476,-0.17490499999999998,0.080905,-0.09399999999999997,Previously published single-point result,
+Cu100,H2O,r2scan,-0.57,-0.154422,-0.36,-0.41557799999999995,0.20557799999999998,-0.20999999999999996,Previously published single-point result,
+Cu100,acetaldehyde,pbe,-0.6,-0.173058,-0.209,-0.426942,0.035942,-0.391,Previously published single-point result,
+Cu100,acetaldehyde,pbe_d3,-0.6,-0.40066,-0.487,-0.19933999999999996,0.08633999999999997,-0.11299999999999999,Previously published single-point result,
+Cu100,acetaldehyde,r2scan,-0.6,-0.153771,-0.37,-0.446229,0.216229,-0.22999999999999998,Previously published single-point result,
+Cu100,acetic_acid,r2scan,-0.75,-0.297445,-0.47,-0.452555,0.17255499999999996,-0.28,Previously published single-point result,
+Cu100,ethane,pbe,-0.32,-0.00073,-0.014,-0.31927,0.01327,-0.306,Previously published single-point result,
+Cu100,ethane,pbe_d3,-0.32,-0.278812,-0.367,-0.041188,0.08818799999999999,0.046999999999999986,Previously published single-point result,
+Cu100,ethane,r2scan,-0.32,0.130669,0.0,-0.450669,0.130669,-0.32,Previously published single-point result,
+Cu100,ethanol,pbe,-0.5,-0.221076,-0.237,-0.278924,0.015923999999999994,-0.263,Previously published single-point result,
+Cu100,ethanol,pbe_d3,-0.5,-0.603753,-0.728,0.10375299999999998,0.124247,0.22799999999999998,Previously published single-point result,
+Cu100,ethanol,r2scan,-0.5,-0.208993,-0.36,-0.291007,0.15100699999999997,-0.14,Previously published single-point result,
+Cu100,ethene,pbe,-0.47,0.174342,-0.172,-0.644342,0.346342,-0.298,Previously published single-point result,
+Cu100,ethene,pbe_d3,-0.47,-0.40452,-0.736,-0.06547999999999998,0.33148,0.266,Previously published single-point result,
+Cu100,ethene,r2scan,-0.47,-0.001031,-0.43,-0.46896899999999997,0.428969,-0.03999999999999998,Previously published single-point result,
+Cu100,formic_acid,pbe,-0.53,-0.249791,-0.275,-0.28020900000000004,0.02520900000000001,-0.255,Previously published single-point result,
+Cu100,formic_acid,pbe_d3,-0.53,-0.505619,-0.623,-0.024380999999999986,0.11738099999999996,0.09299999999999997,Previously published single-point result,
+Cu100,formic_acid,r2scan,-0.53,-0.205827,-0.48,-0.32417300000000004,0.274173,-0.050000000000000044,Previously published single-point result,
+Cu100,methanol,pbe,-0.47,-0.229864,-0.247,-0.24013599999999996,0.017135999999999985,-0.22299999999999998,Previously published single-point result,
+Cu100,methanol,pbe_d3,-0.47,-0.479442,-0.591,0.009442000000000006,0.11155799999999999,0.121,Previously published single-point result,
+Cu100,methanol,r2scan,-0.47,-0.191448,-0.32,-0.27855199999999997,0.128552,-0.14999999999999997,Previously published single-point result,
+Cu110,CO,pbe,-1.35,-0.47514149,-0.485,-0.8748585100000001,0.009858509999999987,-0.8650000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_CO/singlepoint/PBE
+Cu110,CO,pbe_d3,-1.35,-0.70332252,-0.71,-0.6466774800000001,0.006677480000000013,-0.6400000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_CO/singlepoint/PBE_D3
+Cu110,CO,r2scan,-1.35,-0.60258284,-0.674,-0.7474171600000001,0.07141716000000009,-0.676,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_CO/singlepoint/r2scan
+Cu110,CO2,pbe,-0.41,0.46728581,0.462,-0.87728581,0.005285810000000002,-0.872,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_CO2/singlepoint/PBE
+Cu110,CO2,r2scan,-0.41,0.41495551,0.33,-0.82495551,0.08495551000000001,-0.74,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_CO2/singlepoint/r2scan
+Cu110,DME,r2scan,-0.34,0.19294527,-0.028,-0.53294527,0.22094527,-0.312,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_DME/singlepoint/r2scan
+Cu110,H2O,pbe,-0.71,0.17916552,0.161,-0.8891655199999999,0.01816551999999999,-0.871,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Cu110_H2O/singlepoint/PBE
+Cu110,H2O,pbe_d3,-0.71,-0.05016451,-0.102,-0.65983549,0.05183548999999999,-0.608,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Cu110_H2O/singlepoint/PBE_D3
+Cu110,H2O,r2scan,-0.71,0.01668809,-0.047,-0.72668809,0.06368809,-0.6629999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Cu110_H2O/singlepoint/r2scan
+Cu110,acetaldehyde,pbe,-0.75,0.26466574,0.24,-1.0146657399999999,0.02466573999999999,-0.99,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_acetaldehyde/singlepoint/PBE
+Cu110,acetaldehyde,pbe_d3,-0.75,-0.05545677,-0.078,-0.69454323,0.022543229999999997,-0.672,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_acetaldehyde/singlepoint/PBE_D3
+Cu110,acetaldehyde,r2scan,-0.75,0.06653838,-0.01,-0.81653838,0.07653837999999999,-0.74,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_acetaldehyde/singlepoint/r2scan
+Cu110,acetic_acid,r2scan,-0.86,-0.15221005,-0.224,-0.70778995,0.07178994999999999,-0.636,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_acetic_acid/singlepoint/r2scan
+Cu110,ethane,pbe,-0.43,0.48277365,0.477,-0.91277365,0.005773650000000019,-0.907,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_ethane/singlepoint/PBE
+Cu110,ethane,pbe_d3,-0.43,0.22730077,0.225,-0.65730077,0.0023007700000000075,-0.655,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_ethane/singlepoint/PBE_D3
+Cu110,ethane,r2scan,-0.43,0.4416618,0.386,-0.8716618,0.055661799999999984,-0.8160000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Cu110_ethane/singlepoint/r2scan
+Cu110,ethene,pbe,-0.81,-0.187404,0.033,-0.622596,-0.220404,-0.8430000000000001,Previously published single-point result,
+Cu110,ethene,pbe_d3,-0.81,-0.718271,-0.519,-0.09172900000000006,-0.19927099999999998,-0.29100000000000004,Previously published single-point result,
+Cu110,ethene,r2scan,-0.81,-0.431379,-0.299,-0.37862100000000004,-0.13237900000000002,-0.5110000000000001,Previously published single-point result,
+Cu110,formic_acid,pbe,-0.69,0.11241251,0.09,-0.8024125099999999,0.022412509999999997,-0.7799999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_formic_acid/singlepoint/PBE
+Cu110,formic_acid,pbe_d3,-0.69,-0.2793875,-0.306,-0.41061249999999994,0.026612499999999983,-0.38399999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_formic_acid/singlepoint/PBE_D3
+Cu110,formic_acid,r2scan,-0.69,-0.11120357,-0.19,-0.5787964299999999,0.07879643,-0.49999999999999994,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_formic_acid/singlepoint/r2scan
+Cu110,glycerol,pbe_d3,-1.07,-0.79847925,-0.14,-0.2715207500000001,-0.65847925,-0.93,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu110_glycerol/singlepoint/PBE_D3
+Cu110,glycerol,r2scan,-1.07,-0.29145602,0.13,-0.77854398,-0.42145602,-1.2000000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu110_glycerol/singlepoint/r2scan
+Cu110,isopropanol,pbe_d3,-0.72,-0.874534,0.48,0.15453400000000006,-1.3545340000000001,-1.2,Previously published single-point result,
+Cu110,methanol,pbe,-0.59,0.21307308,0.138,-0.80307308,0.07507307999999999,-0.728,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_methanol/singlepoint/PBE
+Cu110,methanol,pbe_d3,-0.59,-0.23053566,-0.232,-0.35946433999999994,0.0014643400000000084,-0.358,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_methanol/singlepoint/PBE_D3
+Cu110,methanol,r2scan,-0.59,-0.05583787,-0.15,-0.53416213,0.09416213,-0.43999999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu110_methanol/singlepoint/r2scan
+Cu110,propanol,pbe_d3,-0.69,-0.837272,0.49,0.14727200000000007,-1.327272,-1.18,Previously published single-point result,
+Cu110,propene,pbe_d3,-0.64,-1.008091,0.35,0.36809100000000006,-1.358091,-0.99,Previously published single-point result,
+Cu111,CO,pbe_d3,-1.24,-1.027625,0.44,-0.21237499999999998,-1.467625,-1.68,Previously published single-point result,
+Cu111,CO,r2scan,-1.24,-0.82369,0.42,-0.41630999999999996,-1.24369,-1.66,Previously published single-point result,
+Cu111,DME,pbe,-0.22,-4.710881,-3.06,4.490881,-1.6508809999999996,2.84,Previously published single-point result,
+Ir100,CO,pbe,-2.7,-2.15745469,-2.232,-0.5425453100000004,0.07454531000000042,-0.46799999999999997,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_CO/singlepoint/PBE
+Ir100,CO,pbe_d3,-2.7,-2.39442956,-2.488,-0.30557044000000033,0.09357044000000014,-0.2120000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_CO/singlepoint/PBE_D3
+Ir100,CO,beef_vdw,-2.7,-2.00209666,-2.131,-0.6979033400000003,0.12890333999999992,-0.5690000000000004,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_CO/singlepoint/beef_vdw
+Ir100,CO2,pbe,-0.37,0.03561155,-0.024,-0.40561155,0.05961155,-0.346,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_CO2/singlepoint/PBE
+Ir100,CO2,beef_vdw,-0.37,-0.17084479,-0.267,-0.19915521,0.09615521000000002,-0.10299999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_CO2/singlepoint/beef_vdw
+Ir100,DME,beef_vdw,-0.48,0.37716513,-0.736,-0.85716513,1.11316513,0.256,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_DME/singlepoint/beef_vdw
+Ir100,H2O,pbe,-0.86,-0.41398145,-0.488,-0.44601855,0.07401855000000002,-0.372,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ir100_H2O/singlepoint/PBE
+Ir100,H2O,pbe_d3,-0.86,-0.61996892,-0.706,-0.24003107999999995,0.08603107999999993,-0.15400000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ir100_H2O/singlepoint/PBE_D3
+Ir100,H2O,beef_vdw,-0.86,-0.37921914,-0.542,-0.48078086,0.16278086000000003,-0.31799999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ir100_H2O/singlepoint/beef_vdw
+Ir100,acetaldehyde,pbe,-0.74,0.5140942,-0.586,-1.2540942,1.1000942,-0.15400000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_acetaldehyde/singlepoint/PBE
+Ir100,acetaldehyde,pbe_d3,-0.74,0.04479533,-0.946,-0.78479533,0.99079533,0.20599999999999996,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_acetaldehyde/singlepoint/PBE_D3
+Ir100,acetaldehyde,beef_vdw,-0.74,0.26672549,-0.77,-1.00672549,1.03672549,0.030000000000000027,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_acetaldehyde/singlepoint/beef_vdw
+Ir100,acetic_acid,beef_vdw,-1.04,-0.65162812,-0.902,-0.38837188,0.25037188,-0.138,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_acetic_acid/singlepoint/beef_vdw
+Ir100,ethane,pbe,-0.45,0.61794039,-0.003,-1.06794039,0.62094039,-0.447,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethane/singlepoint/PBE
+Ir100,ethane,pbe_d3,-0.45,0.14336327,-0.383,-0.59336327,0.52636327,-0.067,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethane/singlepoint/PBE_D3
+Ir100,ethane,beef_vdw,-0.45,0.32009198,-0.313,-0.77009198,0.63309198,-0.137,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethane/singlepoint/beef_vdw
+Ir100,ethanol,pbe,-0.79,0.52756891,-0.533,-1.3175689099999999,1.06056891,-0.257,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethanol/singlepoint/PBE
+Ir100,ethanol,pbe_d3,-0.79,-0.04929567,-1.031,-0.74070433,0.9817043299999999,0.24099999999999988,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethanol/singlepoint/PBE_D3
+Ir100,ethanol,beef_vdw,-0.79,0.21048422,-0.828,-1.0004842200000001,1.03848422,0.03799999999999992,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethanol/singlepoint/beef_vdw
+Ir100,ethene,pbe,-2.16,-1.40269005,-1.407,-0.7573099500000002,0.004309950000000118,-0.7530000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethene/singlepoint/PBE
+Ir100,ethene,pbe_d3,-2.16,-1.85974065,-1.937,-0.30025935000000015,0.07725935000000006,-0.2230000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethene/singlepoint/PBE_D3
+Ir100,ethene,beef_vdw,-2.16,-1.44245721,-1.381,-0.7175427900000002,-0.06145720999999993,-0.7790000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir100_ethene/singlepoint/beef_vdw
+Ir100,formic_acid,pbe,-1.02,-0.44083117,-0.66,-0.57916883,0.21916883000000004,-0.36,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_formic_acid/singlepoint/PBE
+Ir100,formic_acid,pbe_d3,-1.02,-0.82552818,-1.032,-0.19447182000000007,0.20647182000000008,0.01200000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_formic_acid/singlepoint/PBE_D3
+Ir100,formic_acid,beef_vdw,-1.02,-0.46789987,-0.797,-0.55210013,0.32910013000000005,-0.22299999999999998,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_formic_acid/singlepoint/beef_vdw
+Ir100,methanol,pbe,-0.77,0.30390082,-0.535,-1.07390082,0.8389008200000001,-0.235,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_methanol/singlepoint/PBE
+Ir100,methanol,pbe_d3,-0.77,-0.09271323,-0.912,-0.67728677,0.81928677,0.14200000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_methanol/singlepoint/PBE_D3
+Ir100,methanol,beef_vdw,-0.77,0.1262201,-0.746,-0.8962201000000001,0.8722201,-0.02400000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_methanol/singlepoint/beef_vdw
+Ir110,CO,pbe,-2.77,-2.15308254,-2.322,-0.6169174599999998,0.16891745999999985,-0.44799999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir110_CO/singlepoint/PBE
+Ir110,CO,pbe_d3,-2.77,-2.35561889,-2.532,-0.4143811099999999,0.1763811099999999,-0.238,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir110_CO/singlepoint/PBE_D3
+Ir110,CO,r2scan,-2.77,-1.94148896,-2.12,-0.82851104,0.17851104000000007,-0.6499999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir110_CO/singlepoint/r2scan
+Ir110,CO,beef_vdw,-2.77,-2.04939756,-2.209,-0.72060244,0.15960244,-0.5609999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir110_CO/singlepoint/beef_vdw
+Ir110,CO2,pbe,-0.43,0.0142502,-0.041,-0.4442502,0.0552502,-0.389,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir110_CO2/singlepoint/PBE
+Ir110,CO2,r2scan,-0.43,-0.05935679,-0.12,-0.37064321,0.060643209999999996,-0.31,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir110_CO2/singlepoint/r2scan
+Ir110,CO2,beef_vdw,-0.43,-0.26629535,-0.307,-0.16370465,0.04070465000000001,-0.123,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir110_CO2/singlepoint/beef_vdw
+Ir110,DME,r2scan,-0.64,0.84180753,-0.751,-1.48180753,1.59280753,0.11099999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_DME/singlepoint/r2scan
+Ir110,DME,beef_vdw,-0.64,0.61368417,-0.952,-1.25368417,1.56568417,0.31199999999999994,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_DME/singlepoint/beef_vdw
+Ir110,H2O,pbe,-1.01,-0.54752177,-0.612,-0.46247823,0.06447822999999997,-0.398,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ir110_H2O/singlepoint/PBE
+Ir110,H2O,pbe_d3,-1.01,-0.75145248,-0.859,-0.25854752000000003,0.10754752000000001,-0.15100000000000002,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ir110_H2O/singlepoint/PBE_D3
+Ir110,H2O,r2scan,-1.01,-0.58865002,-0.744,-0.42134998,0.15534998,-0.266,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ir110_H2O/singlepoint/r2scan
+Ir110,H2O,beef_vdw,-1.01,-0.5991321,-0.686,-0.41086790000000006,0.08686790000000011,-0.32399999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ir110_H2O/singlepoint/beef_vdw
+Ir110,acetaldehyde,pbe,-0.84,-0.52793182,-0.788,-0.3120681799999999,0.26006818,-0.051999999999999935,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_acetaldehyde/singlepoint/PBE
+Ir110,acetaldehyde,pbe_d3,-0.84,-1.05708533,-1.117,0.21708533000000008,0.05991466999999995,0.277,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_acetaldehyde/singlepoint/PBE_D3
+Ir110,acetaldehyde,r2scan,-0.84,-0.66088717,-0.868,-0.17911283,0.20711283000000003,0.028000000000000025,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_acetaldehyde/singlepoint/r2scan
+Ir110,acetaldehyde,beef_vdw,-0.84,-0.66889145,-0.95,-0.17110854999999991,0.2811085499999999,0.10999999999999999,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_acetaldehyde/singlepoint/beef_vdw
+Ir110,acetic_acid,beef_vdw,-0.95,0.80917882,-1.107,-1.7591788199999998,1.9161788199999998,0.15700000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_acetic_acid/singlepoint/beef_vdw
+Ir110,ethane,pbe,-0.51,0.6787744,-0.079,-1.1887744,0.7577744,-0.431,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethane/singlepoint/PBE
+Ir110,ethane,pbe_d3,-0.51,0.10514699,-0.632,-0.61514699,0.7371469900000001,0.122,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethane/singlepoint/PBE_D3
+Ir110,ethane,r2scan,-0.51,0.65708231,-0.188,-1.16708231,0.84508231,-0.322,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethane/singlepoint/r2scan
+Ir110,ethane,beef_vdw,-0.51,0.42668156,-0.412,-0.93668156,0.8386815599999999,-0.09800000000000003,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethane/singlepoint/beef_vdw
+Ir110,ethanol,pbe,-0.95,0.9271151,-0.701,-1.8771151,1.6281151,-0.249,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethanol/singlepoint/PBE
+Ir110,ethanol,pbe_d3,-0.95,0.32551478,-1.211,-1.27551478,1.53651478,0.2610000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethanol/singlepoint/PBE_D3
+Ir110,ethanol,r2scan,-0.95,0.89356703,-0.879,-1.84356703,1.77256703,-0.07099999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethanol/singlepoint/r2scan
+Ir110,ethanol,beef_vdw,-0.95,0.65731867,-1.023,-1.60731867,1.68031867,0.07299999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethanol/singlepoint/beef_vdw
+Ir110,ethene,pbe,-2.25,-1.5951983,-1.804,-0.6548016999999999,0.20880169999999998,-0.44599999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethene/singlepoint/PBE
+Ir110,ethene,pbe_d3,-2.25,-2.00179336,-2.185,-0.2482066399999998,0.18320663999999987,-0.06499999999999995,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethene/singlepoint/PBE_D3
+Ir110,ethene,r2scan,-2.25,-1.70699959,-1.878,-0.5430004100000001,0.17100041,-0.3720000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethene/singlepoint/r2scan
+Ir110,ethene,beef_vdw,-2.25,-1.72469031,-1.876,-0.52530969,0.15130968999999994,-0.3740000000000001,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethylene/singlepoint/beef_vdw
+Pd100,CO2,pbe,-0.47,-0.012082,-0.39,-0.457918,0.37791800000000003,-0.07999999999999996,Previously published single-point result,
+Pd100,CO2,r2scan,-0.47,-0.011999,-0.64,-0.458001,0.628001,0.17000000000000004,Previously published single-point result,
+Pd100,ethane,pbe,-0.51,0.286291,-0.42,-0.7962910000000001,0.706291,-0.09000000000000002,Previously published single-point result,
+Pd100,ethane,pbe_d3,-0.51,0.009317,-0.78,-0.519317,0.789317,0.27,Previously published single-point result,
+Pd100,ethane,r2scan,-0.51,0.124356,-0.69,-0.634356,0.814356,0.17999999999999994,Previously published single-point result,
+Pd100,ethanol,pbe,-0.71,0.082037,-0.65,-0.792037,0.732037,-0.05999999999999994,Previously published single-point result,
+Pd100,ethanol,pbe_d3,-0.71,-0.269482,-1.1,-0.44051799999999997,0.8305180000000001,0.3900000000000001,Previously published single-point result,
+Pd100,ethanol,r2scan,-0.71,-0.077738,-1.03,-0.632262,0.952262,0.32000000000000006,Previously published single-point result,
+Pd100,ethene,pbe,-1.44,-0.730604,-1.053,-0.7093959999999999,0.3223959999999999,-0.387,Previously published single-point result,
+Pd100,ethene,pbe_d3,-1.44,-1.014044,-1.478,-0.425956,0.46395600000000004,0.038000000000000034,Previously published single-point result,
+Pd100,ethene,r2scan,-1.44,-0.921841,-1.38,-0.5181589999999999,0.45815899999999987,-0.06000000000000005,Previously published single-point result,
+Pd100,glycerol,pbe,-0.95,0.059747,-0.81,-1.009747,0.869747,-0.1399999999999999,Previously published single-point result,
+Pd100,glycerol,pbe_d3,-0.95,-0.549666,-1.6,-0.40033399999999997,1.050334,0.6500000000000001,Previously published single-point result,
+Pd100,glycerol,r2scan,-0.95,-0.171535,-1.34,-0.778465,1.168465,0.3900000000000001,Previously published single-point result,
+Pd100,isopropanol,pbe,-0.82,0.163967,-0.68,-0.9839669999999999,0.843967,-0.1399999999999999,Previously published single-point result,
+Pd100,isopropanol,pbe_d3,-0.82,-0.274793,-1.27,-0.545207,0.995207,0.45000000000000007,Previously published single-point result,
+Pd100,isopropanol,r2scan,-0.82,-0.022033,-1.11,-0.797967,1.0879670000000001,0.29000000000000015,Previously published single-point result,
+Pd100,propane,pbe,-0.62,0.30172,-0.43,-0.92172,0.7317199999999999,-0.19,Previously published single-point result,
+Pd100,propane,pbe_d3,-0.62,-0.110862,-0.91,-0.509138,0.799138,0.29000000000000004,Previously published single-point result,
+Pd100,propane,r2scan,-0.62,0.091393,-0.78,-0.7113929999999999,0.8713930000000001,0.16000000000000003,Previously published single-point result,
+Pd100,propanol,pbe,-0.8,0.201573,-0.69,-1.001573,0.891573,-0.1100000000000001,Previously published single-point result,
+Pd100,propanol,pbe_d3,-0.8,-0.265708,-1.25,-0.534292,0.984292,0.44999999999999996,Previously published single-point result,
+Pd100,propanol,r2scan,-0.8,-0.012474,-1.1,-0.7875260000000001,1.087526,0.30000000000000004,Previously published single-point result,
+Pd100,propene,pbe,-1.46,-0.724909,-1.13,-0.7350909999999999,0.40509099999999987,-0.33000000000000007,Previously published single-point result,
+Pd100,propene,pbe_d3,-1.46,-1.172533,-1.72,-0.2874669999999999,0.5474669999999999,0.26,Previously published single-point result,
+Pd100,propene,r2scan,-1.46,-1.013176,-1.64,-0.4468239999999999,0.6268239999999998,0.17999999999999994,Previously published single-point result,
+Pd110,CO2,pbe,-0.48,-0.006238,-0.143,-0.47376199999999996,0.136762,-0.33699999999999997,Previously published single-point result,
+Pd110,CO2,r2scan,-0.48,0.019815,-0.278,-0.499815,0.29781500000000005,-0.20199999999999996,Previously published single-point result,
+Pd110,ethane,pbe,-0.57,0.203366,-0.31,-0.773366,0.513366,-0.25999999999999995,Previously published single-point result,
+Pd110,ethane,pbe_d3,-0.57,-0.299371,-0.67,-0.27062899999999995,0.37062900000000004,0.10000000000000009,Previously published single-point result,
+Pd110,ethane,r2scan,-0.57,-0.098791,-0.59,-0.47120899999999993,0.49120899999999995,0.020000000000000018,Previously published single-point result,
+Pd110,ethanol,pbe,-0.82,0.300594,-0.69,-1.1205939999999999,0.990594,-0.13,Previously published single-point result,
+Pd110,ethanol,pbe_d3,-0.82,-0.251637,-1.19,-0.568363,0.938363,0.37,Previously published single-point result,
+Pd110,ethanol,r2scan,-0.82,-0.014446,-1.1,-0.805554,1.0855540000000001,0.28000000000000014,Previously published single-point result,
+Pd110,ethene,pbe,-1.6,-1.181582,-1.076,-0.4184180000000002,-0.10558199999999984,-0.524,Previously published single-point result,
+Pd110,ethene,pbe_d3,-1.6,-1.510368,-1.491,-0.08963200000000016,-0.01936799999999983,-0.10899999999999999,Previously published single-point result,
+Pd110,ethene,r2scan,-1.6,-1.259789,-1.307,-0.34021100000000004,0.04721099999999989,-0.29300000000000015,Previously published single-point result,
+Pd110,glycerol,pbe,-1.27,-0.181028,-1.01,-1.088972,0.828972,-0.26,Previously published single-point result,
+Pd110,glycerol,pbe_d3,-1.27,-1.036354,-1.82,-0.23364600000000002,0.7836460000000001,0.55,Previously published single-point result,
+Pd110,glycerol,r2scan,-1.27,-0.625744,-1.63,-0.644256,1.0042559999999998,0.3599999999999999,Previously published single-point result,
+Pd110,isopropanol,pbe,-0.93,0.209125,-0.7,-1.139125,0.909125,-0.2300000000000001,Previously published single-point result,
+Pd110,isopropanol,pbe_d3,-0.93,-0.488992,-1.3,-0.44100800000000007,0.8110080000000001,0.37,Previously published single-point result,
+Pd110,isopropanol,r2scan,-0.93,-0.160566,-1.16,-0.7694340000000001,0.9994339999999999,0.22999999999999987,Previously published single-point result,
+Pd110,propane,pbe,-0.6,0.216216,-0.38,-0.8162159999999999,0.596216,-0.21999999999999997,Previously published single-point result,
+Pd110,propane,pbe_d3,-0.6,-0.41057,-0.91,-0.18943,0.49943000000000004,0.31000000000000005,Previously published single-point result,
+Pd110,propane,r2scan,-0.6,-0.15492,-0.79,-0.44508,0.6350800000000001,0.19000000000000006,Previously published single-point result,
+Pd110,propanol,pbe,-0.89,0.172579,-0.65,-1.062579,0.8225790000000001,-0.24,Previously published single-point result,
+Pd110,propanol,pbe_d3,-0.89,-0.526076,-1.26,-0.363924,0.733924,0.37,Previously published single-point result,
+Pd110,propanol,r2scan,-0.89,-0.167952,-1.14,-0.722048,0.9720479999999999,0.2499999999999999,Previously published single-point result,
+Pd110,propene,pbe,-1.54,-1.035294,-1.35,-0.5047060000000001,0.31470600000000015,-0.18999999999999995,Previously published single-point result,
+Pd110,propene,pbe_d3,-1.54,-1.515632,-1.9,-0.024367999999999945,0.3843679999999998,0.3599999999999999,Previously published single-point result,
+Pd110,propene,r2scan,-1.54,-1.170191,-1.77,-0.36980900000000005,0.599809,0.22999999999999998,Previously published single-point result,
+Pd111,CO2,pbe,-0.45,0.002886,-0.387,-0.452886,0.389886,-0.063,Previously published single-point result,
+Pd111,CO2,r2scan,-0.45,0.047327,-0.66,-0.497327,0.707327,0.21000000000000002,Previously published single-point result,
+Pd111,ethane,pbe,-0.46,0.417112,-0.398,-0.877112,0.8151120000000001,-0.062,Previously published single-point result,
+Pd111,ethane,pbe_d3,-0.46,0.296577,-0.792,-0.756577,1.088577,0.332,Previously published single-point result,
+Pd111,ethane,r2scan,-0.46,0.372454,-0.67,-0.832454,1.042454,0.21000000000000002,Previously published single-point result,
+Pd111,ethanol,pbe,-0.67,0.199947,-0.643,-0.869947,0.842947,-0.027000000000000024,Previously published single-point result,
+Pd111,ethanol,pbe_d3,-0.67,0.016718,-1.142,-0.686718,1.158718,0.47199999999999986,Previously published single-point result,
+Pd111,ethanol,r2scan,-0.67,0.16283,-1.087,-0.8328300000000001,1.24983,0.4169999999999999,Previously published single-point result,
+Pd111,ethene,pbe,-1.27,-0.706096,-0.88,-0.5639040000000001,0.17390400000000006,-0.39,Previously published single-point result,
+Pd111,ethene,pbe_d3,-1.27,-0.910449,-1.31,-0.35955100000000006,0.3995510000000001,0.040000000000000036,Previously published single-point result,
+Pd111,ethene,r2scan,-1.27,-0.84133,-1.18,-0.42867,0.3386699999999999,-0.09000000000000008,Previously published single-point result,
+Pd111,glycerol,pbe,-1.01,0.268436,-0.85,-1.2784360000000001,1.118436,-0.16000000000000003,Previously published single-point result,
+Pd111,glycerol,pbe_d3,-1.01,-0.285881,-1.63,-0.724119,1.3441189999999998,0.6199999999999999,Previously published single-point result,
+Pd111,glycerol,r2scan,-1.01,0.091683,-1.45,-1.101683,1.541683,0.43999999999999995,Previously published single-point result,
+Pd111,isopropanol,pbe,-0.77,0.2184,-0.62,-0.9884000000000001,0.8384,-0.15000000000000002,Previously published single-point result,
+Pd111,isopropanol,pbe_d3,-0.77,-0.081211,-1.26,-0.688789,1.178789,0.49,Previously published single-point result,
+Pd111,isopropanol,r2scan,-0.77,0.144185,-1.12,-0.914185,1.2641850000000001,0.3500000000000001,Previously published single-point result,
+Pd111,propane,pbe,-0.49,0.314324,-0.41,-0.804324,0.724324,-0.08000000000000002,Previously published single-point result,
+Pd111,propane,pbe_d3,-0.49,0.043155,-0.91,-0.533155,0.953155,0.42000000000000004,Previously published single-point result,
+Pd111,propane,r2scan,-0.49,0.217863,-0.78,-0.707863,0.997863,0.29000000000000004,Previously published single-point result,
+Pd111,propanol,pbe,-0.76,0.199131,-0.64,-0.959131,0.8391310000000001,-0.12,Previously published single-point result,
+Pd111,propanol,pbe_d3,-0.76,-0.185175,-1.28,-0.574825,1.094825,0.52,Previously published single-point result,
+Pd111,propanol,r2scan,-0.76,0.054292,-1.14,-0.814292,1.194292,0.3799999999999999,Previously published single-point result,
+Pd111,propene,pbe,-1.18,-0.454165,-0.99,-0.725835,0.5358350000000001,-0.18999999999999995,Previously published single-point result,
+Pd111,propene,pbe_d3,-1.18,-0.721973,-1.57,-0.45802699999999996,0.8480270000000001,0.3900000000000001,Previously published single-point result,
+Pd111,propene,r2scan,-1.18,-0.631717,-1.52,-0.548283,0.888283,0.3400000000000001,Previously published single-point result,
+Pt100,CO2,pbe,-0.51,0.007467,-0.8,-0.517467,0.807467,0.29000000000000004,Previously published single-point result,
+Pt100,CO2,r2scan,-0.51,-0.022218,-1.32,-0.487782,1.297782,0.81,Previously published single-point result,
+Pt100,ethane,pbe,-0.48,0.467108,-0.8,-0.9471080000000001,1.2671080000000001,0.32000000000000006,Previously published single-point result,
+Pt100,ethane,pbe_d3,-0.48,0.175973,-1.27,-0.6559729999999999,1.445973,0.79,Previously published single-point result,
+Pt100,ethane,r2scan,-0.48,0.385165,-1.33,-0.865165,1.715165,0.8500000000000001,Previously published single-point result,
+Pt100,ethanol,pbe,-0.71,0.396098,-1.16,-1.106098,1.556098,0.44999999999999996,Previously published single-point result,
+Pt100,ethanol,pbe_d3,-0.71,-0.006611,-1.72,-0.7033889999999999,1.713389,1.01,Previously published single-point result,
+Pt100,ethanol,r2scan,-0.71,0.284814,-1.82,-0.994814,2.104814,1.11,Previously published single-point result,
+Pt100,ethene,pbe,-1.61,-1.123251,-1.569,-0.4867490000000001,0.44574899999999995,-0.04100000000000015,Previously published single-point result,
+Pt100,ethene,r2scan,-1.61,-1.384339,-2.118,-0.2256610000000001,0.7336609999999999,0.5079999999999998,Previously published single-point result,
+Pt100,glycerol,pbe,-1.05,0.375458,-1.35,-1.4254580000000001,1.7254580000000002,0.30000000000000004,Previously published single-point result,
+Pt100,glycerol,pbe_d3,-1.05,-0.387397,-2.29,-0.662603,1.902603,1.24,Previously published single-point result,
+Pt100,glycerol,r2scan,-1.05,0.191501,-2.12,-1.241501,2.3115010000000002,1.07,Previously published single-point result,
+Pt100,isopropanol,pbe,-0.79,0.39772,-1.16,-1.18772,1.55772,0.3699999999999999,Previously published single-point result,
+Pt100,isopropanol,pbe_d3,-0.79,-0.086262,-1.89,-0.703738,1.8037379999999998,1.0999999999999999,Previously published single-point result,
+Pt100,isopropanol,r2scan,-0.79,0.281353,-1.87,-1.071353,2.1513530000000003,1.08,Previously published single-point result,
+Pt100,propane,pbe,-0.54,0.603941,-0.81,-1.1439409999999999,1.413941,0.27,Previously published single-point result,
+Pt100,propane,pbe_d3,-0.54,0.068781,-1.4,-0.608781,1.468781,0.8599999999999999,Previously published single-point result,
+Pt100,propane,r2scan,-0.54,0.431783,-1.38,-0.9717830000000001,1.811783,0.8399999999999999,Previously published single-point result,
+Pt100,propanol,pbe,-0.81,0.431394,-1.21,-1.241394,1.641394,0.3999999999999999,Previously published single-point result,
+Pt100,propanol,pbe_d3,-0.81,-0.177131,-1.9,-0.632869,1.722869,1.0899999999999999,Previously published single-point result,
+Pt100,propanol,r2scan,-0.81,0.249757,-1.84,-1.059757,2.089757,1.03,Previously published single-point result,
+Pt100,propene,pbe,-1.82,-0.882234,-2.03,-0.9377660000000001,1.1477659999999998,0.20999999999999974,Previously published single-point result,
+Pt100,propene,pbe_d3,-1.82,-1.388925,-2.73,-0.4310750000000001,1.341075,0.9099999999999999,Previously published single-point result,
+Pt100,propene,r2scan,-1.82,-1.161979,-2.81,-0.658021,1.648021,0.99,Previously published single-point result,
+Pt110,CO2,pbe,-0.51,-0.013791,-0.324,-0.496209,0.310209,-0.186,Previously published single-point result,
+Pt110,CO2,r2scan,-0.51,0.040729,-0.595,-0.550729,0.635729,0.08499999999999996,Previously published single-point result,
+Pt110,ethane,pbe,-0.56,0.429967,-0.69,-0.989967,1.119967,0.1299999999999999,Previously published single-point result,
+Pt110,ethane,pbe_d3,-0.56,-0.182197,-1.14,-0.37780300000000006,0.957803,0.5799999999999998,Previously published single-point result,
+Pt110,ethane,r2scan,-0.56,0.162675,-1.29,-0.7226750000000001,1.452675,0.73,Previously published single-point result,
+Pt110,ethanol,pbe,-0.9,0.630937,-1.1,-1.530937,1.730937,0.20000000000000007,Previously published single-point result,
+Pt110,ethanol,pbe_d3,-0.9,-0.054662,-1.72,-0.845338,1.665338,0.82,Previously published single-point result,
+Pt110,ethanol,r2scan,-0.9,0.346504,-1.91,-1.246504,2.256504,1.0099999999999998,Previously published single-point result,
+Pt110,ethene,pbe,-2.09,-1.087876,-1.624,-1.0021239999999998,0.536124,-0.46599999999999975,Previously published single-point result,
+Pt110,ethene,pbe_d3,-2.09,-1.633567,-2.229,-0.45643299999999987,0.5954330000000001,0.13900000000000023,Previously published single-point result,
+Pt110,ethene,r2scan,-2.09,-1.423642,-2.084,-0.6663579999999998,0.660358,-0.005999999999999783,Previously published single-point result,
+Pt110,glycerol,pbe,-1.18,0.131789,-1.25,-1.3117889999999999,1.381789,0.07000000000000006,Previously published single-point result,
+Pt110,glycerol,pbe_d3,-1.18,-0.962507,-2.2,-0.21749299999999994,1.2374930000000002,1.0200000000000002,Previously published single-point result,
+Pt110,glycerol,r2scan,-1.18,-0.354909,-2.15,-0.825091,1.795091,0.97,Previously published single-point result,
+Pt110,isopropanol,pbe,-0.98,0.53637,-1.15,-1.51637,1.68637,0.16999999999999993,Previously published single-point result,
+Pt110,isopropanol,pbe_d3,-0.98,-0.325101,-1.9,-0.654899,1.5748989999999998,0.9199999999999999,Previously published single-point result,
+Pt110,isopropanol,r2scan,-0.98,0.190303,-2.0,-1.170303,2.190303,1.02,Previously published single-point result,
+Pt110,propane,pbe,-0.65,0.623245,-0.7,-1.2732450000000002,1.323245,0.04999999999999993,Previously published single-point result,
+Pt110,propane,pbe_d3,-0.65,-0.119266,-1.2,-0.530734,1.0807339999999999,0.5499999999999999,Previously published single-point result,
+Pt110,propane,r2scan,-0.65,0.313227,-1.37,-0.963227,1.683227,0.7200000000000001,Previously published single-point result,
+Pt110,propanol,pbe,-0.94,0.716635,-1.14,-1.656635,1.8566349999999998,0.19999999999999996,Previously published single-point result,
+Pt110,propanol,pbe_d3,-0.94,-0.119741,-1.86,-0.820259,1.740259,0.9200000000000002,Previously published single-point result,
+Pt110,propanol,r2scan,-0.94,0.387352,-1.98,-1.3273519999999999,2.367352,1.04,Previously published single-point result,
+Pt110,propene,pbe,-1.71,-0.469789,-1.87,-1.240211,1.400211,0.16000000000000014,Previously published single-point result,
+Pt110,propene,pbe_d3,-1.71,-1.268611,-2.65,-0.44138900000000003,1.381389,0.94,Previously published single-point result,
+Pt110,propene,r2scan,-1.71,-0.883893,-2.81,-0.8261069999999999,1.926107,1.1,Previously published single-point result,
+Pt111,CO2,pbe,-0.49,0.031065,-0.875,-0.521065,0.906065,0.385,Previously published single-point result,
+Pt111,CO2,r2scan,-0.49,0.139984,-1.4,-0.629984,1.539984,0.9099999999999999,Previously published single-point result,
+Pt111,ethane,pbe,-0.43,0.567431,-0.86,-0.997431,1.427431,0.43,Previously published single-point result,
+Pt111,ethane,pbe_d3,-0.43,0.444498,-1.4,-0.874498,1.844498,0.97,Previously published single-point result,
+Pt111,ethane,r2scan,-0.43,0.665243,-1.42,-1.095243,2.085243,0.99,Previously published single-point result,
+Pt111,ethanol,pbe,-0.64,0.372939,-1.1,-1.012939,1.4729390000000002,0.4600000000000001,Previously published single-point result,
+Pt111,ethanol,pbe_d3,-0.64,0.146383,-1.78,-0.786383,1.926383,1.1400000000000001,Previously published single-point result,
+Pt111,ethanol,r2scan,-0.64,0.440529,-1.81,-1.080529,2.2505290000000002,1.17,Previously published single-point result,
+Pt111,ethene,pbe,-1.79,-0.892164,-1.66,-0.8978360000000001,0.767836,-0.13000000000000012,Previously published single-point result,
+Pt111,ethene,pbe_d3,-1.79,-1.041394,-2.31,-0.7486060000000001,1.2686060000000001,0.52,Previously published single-point result,
+Pt111,ethene,r2scan,-1.79,-0.915283,-2.36,-0.8747170000000001,1.4447169999999998,0.5699999999999998,Previously published single-point result,
+Pt111,glycerol,pbe,-0.82,0.197953,-1.3,-1.0179529999999999,1.497953,0.4800000000000001,Previously published single-point result,
+Pt111,glycerol,pbe_d3,-0.82,-0.364378,-2.24,-0.45562199999999997,1.8756220000000003,1.4200000000000004,Previously published single-point result,
+Pt111,glycerol,r2scan,-0.82,0.193289,-2.07,-1.0132889999999999,2.263289,1.25,Previously published single-point result,
+Pt111,isopropanol,pbe,-0.71,0.400961,-1.03,-1.110961,1.430961,0.32000000000000006,Previously published single-point result,
+Pt111,isopropanol,pbe_d3,-0.71,0.10068,-1.85,-0.81068,1.9506800000000002,1.1400000000000001,Previously published single-point result,
+Pt111,isopropanol,r2scan,-0.71,0.479393,-1.69,-1.189393,2.169393,0.98,Previously published single-point result,
+Pt111,propane,pbe,-0.49,0.579893,-0.88,-1.069893,1.459893,0.39,Previously published single-point result,
+Pt111,propane,pbe_d3,-0.49,0.236041,-1.56,-0.7260409999999999,1.796041,1.07,Previously published single-point result,
+Pt111,propane,r2scan,-0.49,0.597551,-1.46,-1.087551,2.057551,0.97,Previously published single-point result,
+Pt111,propanol,pbe,-0.73,0.33121,-1.12,-1.06121,1.45121,0.3900000000000001,Previously published single-point result,
+Pt111,propanol,pbe_d3,-0.73,-0.114665,-1.96,-0.615335,1.845335,1.23,Previously published single-point result,
+Pt111,propanol,r2scan,-0.73,0.314478,-1.87,-1.044478,2.184478,1.1400000000000001,Previously published single-point result,
+Pt111,propene,pbe,-1.68,-0.944099,-1.87,-0.7359009999999999,0.9259010000000001,0.19000000000000017,Previously published single-point result,
+Pt111,propene,pbe_d3,-1.68,-1.419234,-2.69,-0.26076599999999983,1.2707659999999998,1.01,Previously published single-point result,
+Pt111,propene,r2scan,-1.68,-1.140563,-2.65,-0.5394369999999999,1.509437,0.97,Previously published single-point result,

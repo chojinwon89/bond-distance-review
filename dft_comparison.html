@@ -130,6 +130,50 @@
   <a href="dft_kestrel_singlepoint_sources.json">Calculation settings and source records</a> &middot;
   <a href="dft_comparison_singlepoint_published.csv" download>Original published single-point snapshot</a>.</div>
 <!-- /kestrel-singlepoint-note -->
+<!-- energy-decomposition -->
+<section id="energy-decomposition" aria-labelledby="energy-analysis-title">
+<h2 id="energy-analysis-title">Energy differences: method residual and relaxation</h2>
+<p><b>(ML &minus; relaxed DFT) = (ML &minus; SPE) + (SPE &minus; relaxed DFT).</b>
+All terms here are adsorption energies in eV. Subtracting the same-geometry residual from the total leaves
+<b>(ML &minus; relaxed DFT) &minus; (ML &minus; SPE) = SPE &minus; relaxed DFT</b>, not ML &minus; relaxed DFT &minus; SPE.</p>
+<p><b>Interpretation:</b> ML &minus; SPE measures a same-geometry model discrepancy only when the ML and SPE structures
+and adsorption-reference conventions match. It includes ML approximation error, functional differences and reference offsets;
+it is not a pure functional correction. SPE &minus; relaxed DFT is a relaxation contribution only with compatible references,
+potentials, numerical settings and a linked initial/final geometry. It is not a functional-independent "true error".</p>
+<p><b>Current evidence is descriptive:</b> 553 complete ML/SPE/relaxed triples across 205 exact
+surface/molecule pairs out of 732 published SPE entries. Missing inputs are omitted, never treated as zero.
+All panels use the same triples within each functional. Historical and audited results are mixed; geometry identity and
+cross-run reference compatibility have not been established. Kestrel SPE values currently subtract relaxed molecule/slab
+references; the newly submitted reference SPE jobs are not included. POTCAR variants were allowed by the existing publication
+policy, which does not establish physical reference equivalence. The existing energy screen can bias these distributions.</p>
+<p>One ML value is used consistently per row: the displayed relaxed-comparison ML energy. Historical SPE differences sometimes
+used another ML reference; those published differences remain unchanged and are not used in these plots.
+Displayed ML/relaxed precision limits the derived differences. Formate and formic acid remain separate.</p>
+<h3>Paired discrepancy distributions</h3>
+<img src="energy_decomposition_distributions.png" alt="Three box plots of ML minus SPE, SPE minus relaxed DFT, and total discrepancy by functional" loading="lazy" style="width:100%;height:auto;max-width:850px">
+<p class="legend">Median line; box = 25th&ndash;75th percentiles; whiskers = 1.5 interquartile ranges; all outliers shown. Different functionals have different coverage.</p>
+<div class="energy-scroll"><table class="big"><thead><tr><th>Functional</th><th>n</th><th>Mean ML&minus;SPE</th><th>MAE ML&minus;SPE</th><th>Mean SPE&minus;relaxed</th><th>MAE ML&minus;relaxed</th></tr></thead><tbody><tr><td>PBE</td><td>185</td><td>-0.323</td><td>0.637</td><td>+0.454</td><td>0.432</td></tr><tr><td>PBE+D3</td><td>173</td><td>-0.089</td><td>0.445</td><td>+0.547</td><td>0.603</td></tr><tr><td>r2SCAN</td><td>175</td><td>-0.202</td><td>0.680</td><td>+0.736</td><td>0.746</td></tr><tr><td>BEEF-vdW</td><td>20</td><td>-0.756</td><td>0.756</td><td>+0.616</td><td>0.237</td></tr></tbody></table></div>
+<h3>Functional sensitivity on a common cohort</h3>
+<img src="energy_functional_shifts.png" alt="Paired single-point adsorption energy shifts relative to PBE on the common four-functional cohort" loading="lazy" style="width:100%;height:auto;max-width:850px">
+<p>110 systems have SPE values for all four functionals; ML and relaxed energies are not required for this panel. PBE+D3: -0.334 eV mean (-0.297 median); r2SCAN: -0.074 eV mean (-0.043 median); BEEF-vdW: -0.344 eV mean (-0.270 median).
+Negative shifts mean stronger adsorption than PBE. Pairing removes system-composition imbalance, but does not prove identical
+geometry or settings. These are observed method/reference shifts, not isolated exchange-correlation effects or an accuracy ranking.</p>
+<h3>Cancellation versus reinforcement</h3>
+<img src="energy_decomposition_scatter.png" alt="Scatter plots of residual against observed relaxation gap; the diagonal marks zero total discrepancy" loading="lazy" style="width:100%;height:auto;max-width:720px">
+<p>Each point is an exact surface/molecule/functional triple. Its x + y value is the total ML&minus;relaxed discrepancy.
+Opposite signs cancel; equal signs reinforce. A negative gap below &minus;0.01 eV occurs in
+14 triples: these require provenance/geometry review, not clipping.
+For genuinely matched calculations relaxed to a lower energy with identical references, the gap should be nonnegative.</p>
+<p><b>Legacy-column warning:</b> the retained ML &minus; SPE &minus; DFT (relaxed) column is literal arithmetic,
+not an error decomposition or a corrected physical error. It is excluded from this analysis.</p>
+<p><a href="energy_decomposition.csv" download>Paired data and provenance</a> &middot;
+<a href="energy_decomposition_summary.csv" download>Summary statistics</a> &middot;
+<a href="energy_functional_cohort.csv" download>Common functional cohort</a> &middot;
+<a href="energy_decomposition_metadata.json">Cohort counts and source checksum</a> &middot;
+<a href="https://vasp.at/wiki/index.php/NSW">VASP ionic-step definition</a> &middot;
+<a href="scripts/ENERGY_DECOMPOSITION.md">Analysis methodology</a></p>
+</section>
+<!-- /energy-decomposition -->
 <h2>Per-system structure &amp; geometry (415 systems)</h2><div class="controls filterbar" id="filterbar"><label>slab / surface <select id="fsurf"><option value="">all</option><option value="Ag100">Ag100</option><option value="Ag110">Ag110</option><option value="Ag111">Ag111</option><option value="Au111">Au111</option><option value="Cu100">Cu100</option><option value="Cu110">Cu110</option><option value="Cu111">Cu111</option><option value="Ir100">Ir100</option><option value="Ir110">Ir110</option><option value="Ir111">Ir111</option><option value="Pd100">Pd100</option><option value="Pd110">Pd110</option><option value="Pd111">Pd111</option><option value="Pt100">Pt100</option><option value="Pt110">Pt110</option><option value="Pt111">Pt111</option><option value="Rh100">Rh100</option><option value="Rh110">Rh110</option><option value="Rh111">Rh111</option></select></label><label>molecule <select id="fmol"><option value="">all</option><option value="CH3">CH₃</option><option value="CO">CO</option><option value="CO2">CO₂</option><option value="DME">DME</option><option value="H2">H₂</option><option value="H2O">H₂O</option><option value="H2S">H₂S</option><option value="N2">N₂</option><option value="NH3">NH₃</option><option value="NO">NO</option><option value="O2">O₂</option><option value="SO2">SO₂</option><option value="acetaldehyde">acetaldehyde</option><option value="acetic_acid">acetic_acid</option><option value="ethane">ethane</option><option value="ethanol">ethanol</option><option value="ethene">ethene</option><option value="formaldehyde">formaldehyde</option><option value="formate">formate</option><option value="formic_acid">formic_acid</option><option value="glycerol">glycerol</option><option value="isopropanol">isopropanol</option><option value="methane">methane</option><option value="methanol">methanol</option><option value="propane">propane</option><option value="propanol">propanol</option><option value="propene">propene</option></select></label><input id="fq" placeholder="type surface or molecule&hellip;" size="20"><button id="freset" type="button">reset</button><span class="legend" id="fcnt"></span></div><div class="grid">
    <div class="g" data-surf="Ag100" data-mol="CH3">
      <h3>Ag100 &middot; CH₃ <span class="tag"></span></h3>
