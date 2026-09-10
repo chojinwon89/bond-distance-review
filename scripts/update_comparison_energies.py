@@ -16,9 +16,14 @@ ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONALS = {'PBE': 'pbe', 'PBE+D3': 'pbe_d3', 'r²SCAN': 'r2scan', 'BEEF-vdW': 'beef_vdw'}
 
 
+def read_csv(name):
+    with (ROOT / name).open(newline="") as source:
+        return list(csv.DictReader(source))
+
+
 def update():
     lookup = {}
-    for row in csv.DictReader((ROOT / 'dft_singlepoint_vs_sevennet.csv').open()):
+    for row in read_csv('dft_singlepoint_vs_sevennet.csv'):
         key = row['surface'], row['molecule'], row['functional']
         if key in lookup:
             raise ValueError(f'Duplicate single-point key: {key}')
@@ -32,7 +37,7 @@ def update():
                'H2CO': 'formaldehyde', 'HCOOH': 'formic_acid'}
     relaxed = {}
     audited = {}
-    for row in csv.DictReader((ROOT / 'dft_perlmutter_energy_audit.csv').open()):
+    for row in read_csv('dft_perlmutter_energy_audit.csv'):
         key = row['surface'], aliases.get(row['molecule'], row['molecule']), row['functional']
         audited.setdefault(key, []).append(row)
         if row['publishable'] != 'true':
@@ -41,13 +46,16 @@ def update():
         if key not in relaxed or float(row['E_ads']) < float(relaxed[key]['E_ads']):
             relaxed[key] = row
     ml = {(r['surface'], r['molecule'], r['functional']): float(r['E_ads_ML'])
-          for r in csv.DictReader((ROOT / 'dft_vs_mlip_pairs.csv').open())}
+          for r in read_csv('dft_vs_mlip_pairs.csv')}
     previous = {(r['surface'], r['molecule'], r['functional']): float(r['E_ads_DFT'])
-                for r in csv.DictReader((ROOT / 'dft_vs_mlip_pairs.csv').open())}
+                for r in read_csv('dft_vs_mlip_pairs.csv')}
+    published = {(r['surface'], r['molecule'], r['functional']): r
+                 for r in read_csv('dft_comparison_published_relaxed.csv')}
     ml_by_system = {}
     for (surface, molecule, functional), value in ml.items():
         ml_by_system.setdefault((surface, molecule), set()).add(value)
     refreshed = []
+    retained = []
     path = ROOT / 'dft_comparison.html' 
     page = path.read_text().replace('minmax(330px,1fr)', 'minmax(min(100%,480px),1fr)')
     # Make regeneration idempotent.
@@ -109,9 +117,27 @@ def update():
                         detail = ' | '.join(r['system'] + ': ' + r['note'] + '; ' + r['convergence'] for r in candidates)
                     else:
                         status, detail = 'Not audited', 'No matching result in the current Perlmutter audit'
-                    tds[1] = '<td class="audit-status" title="{}">{}</td>'.format(html.escape(detail, quote=True), status)
-                    # Never retain an earlier numerical difference for an invalid reference.
-                    tds[3] = '<td>&mdash;</td>'
+                    # Retain a previously displayed number when the new audit cannot
+                    # replace it. The committed snapshot also recovers values hidden
+                    # by the earlier audit-only rendering change.
+                    displayed = html.unescape(re.sub('<[^>]+>', '', tds[1]))
+                    try:
+                        has_displayed_energy = math.isfinite(float(displayed))
+                    except ValueError:
+                        has_displayed_energy = False
+                    saved = published.get(key)
+                    if not has_displayed_energy and saved:
+                        displayed = saved['E_ads_DFT']
+                        tds[2] = '<td>{}</td>'.format(html.escape(saved['E_ads_ML']))
+                        tds[3] = '<td>{}</td>'.format(html.escape(saved['delta_eV']))
+                    if has_displayed_energy or saved:
+                        annotation = 'Previously published energy retained; current audit: ' + status + '. ' + detail
+                        tds[1] = '<td title="{}">{}</td>'.format(html.escape(annotation, quote=True), html.escape(displayed))
+                        retained.append(key)
+                    else:
+                        annotation = 'No previously published energy; current audit: ' + status + '. ' + detail
+                        tds[1] = '<td title="{}">&mdash;</td>'.format(html.escape(annotation, quote=True))
+                        tds[3] = '<td>&mdash;</td>'
                 cells = ''.join(tds)
                 values = lookup.get(key)
                 if values is None:
@@ -139,8 +165,12 @@ def update():
   Positive absolute total energies are allowed; their sign does not determine convergence or reference compatibility.
   <br><b>Project reference policy:</b> POTCAR variants such as Ag and Ag_pv are treated as equivalent for filtering.
   Potential identity differences do not exclude a result; the original potential names remain in the audit.
-  No energy offset or correction is applied. Hover over excluded entries for their remaining screening reason and convergence status.
-  Unscreened relaxed energies and their ML differences are withheld; raw component energies and subtraction results remain in the audit.
+  No energy offset or correction is applied.
+  <br><b>Previously published values preserved:</b> {len(retained)} additional relaxed energies and their published ML differences are retained
+  when the current audit cannot supply a replacement. These are historical results, not newly screened results.
+  Hover over an energy or dash for its provenance and current audit findings; audit findings do not replace published energies.
+  A dash in a relaxed DFT cell means neither a published value nor a new screened result is available.
+  <a href="dft_comparison_published_relaxed.csv" download>Published relaxed-energy snapshot</a>.
   Structure images are from the earlier geometry extraction; the single-point dataset has not been re-audited against these OUTCARs.
   <a href="dft_comparison_perlmutter.csv" download>Screened relaxed energies</a> &middot;
   <a href="dft_perlmutter_energy_audit.csv" download>Full extraction and status report</a>.
@@ -161,7 +191,7 @@ def update():
         writer.writeheader()
         writer.writerows(matched)
     with (ROOT / 'dft_comparison_perlmutter.csv').open('w', newline='') as out:
-        writer = csv.DictWriter(out, fieldnames=list(refreshed[0]))
+        writer = csv.DictWriter(out, fieldnames=['surface', 'molecule', 'functional', 'system', 'E_ads_DFT', 'E_ads_ML', 'delta_eV'])
         writer.writeheader()
         writer.writerows(refreshed)
     print(f'Added {len(matched)} single-point results across {len(systems)} systems; refreshed {len(refreshed)} relaxed results')

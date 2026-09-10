@@ -11,7 +11,7 @@ potential-identity check. The page also retains 418 published single-point
 results across 133 systems; those source calculations have not been re-audited.
 
 CH3/Ag100 BEEF-vdW is no longer excluded for Ag versus Ag_pv. Its raw energy
-subtraction is -26.05120794 eV, so it still displays "Energy needs review"
+subtraction is -26.05120794 eV, so its audit annotation is "Energy needs review"
 because the independent |E_ads| <= 5 eV screen remains enabled. All three
 component calculations converged. Raw and component energies are downloadable
 in the audit even when excluded from the screened comparison.
@@ -56,3 +56,18 @@ Outputs:
 - `dft_comparison_perlmutter.csv`: only energies passing the current checks.
 - `dft_comparison_singlepoint.csv`: displayed published single-point values.
 - `dft_comparison.html`: comparison tables, diagnostic labels and audit links.
+
+## Preserve published results
+
+The page combines newly screened results with previously published energies.
+The committed `dft_comparison_published_relaxed.csv` recovers the 1,087 numeric
+relaxed entries from publication commit `11b026e8de754c84d5b784e3036e0063b5e3c391`,
+before the audit-only rendering change. It preserves the displayed precision,
+ML values and differences. Of these, 665 have current screened replacements;
+422 are retained with historical provenance and current audit details in their
+tooltips. Current numeric page values are also retained on subsequent refreshes
+when no new screened replacement is available. Findings such as slab-size
+mismatch or no audit match are annotations, not replacement cell contents.
+Where no published number and no screened result exist, a dash is shown.
+The screened CSV remains limited to screened results; it is not a download of
+all retained historical table values. Audit component and raw data are preserved.
