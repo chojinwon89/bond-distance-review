@@ -1,0 +1,3990 @@
+{
+  "source_root": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best",
+  "fully_relaxed_directories_scanned": 12128,
+  "rotation": "-70x,20y,10z",
+  "show_unit_cell": 2,
+  "ase_version": "3.29.0",
+  "selection_policy": "Ag111 formate: supplied BEEF-vdW example first. Otherwise PBE, PBE+D3, r2SCAN, BEEF-vdW. Ties: shallowest path, then lexical path. Only verified completed relaxations qualify; energies are not used.",
+  "missing_targets": [
+    [
+      "Ag100",
+      "H2"
+    ],
+    [
+      "Ag100",
+      "O2"
+    ],
+    [
+      "Ag100",
+      "formate"
+    ],
+    [
+      "Ag110",
+      "H2"
+    ],
+    [
+      "Ag110",
+      "O2"
+    ],
+    [
+      "Ag110",
+      "formate"
+    ],
+    [
+      "Ag111",
+      "H2"
+    ],
+    [
+      "Ag111",
+      "O2"
+    ],
+    [
+      "Ag111",
+      "formate"
+    ],
+    [
+      "Au111",
+      "H2"
+    ],
+    [
+      "Au111",
+      "O2"
+    ],
+    [
+      "Au111",
+      "formate"
+    ],
+    [
+      "Cu111",
+      "CO"
+    ],
+    [
+      "Cu111",
+      "formic_acid"
+    ],
+    [
+      "Cu111",
+      "methanol"
+    ]
+  ],
+  "candidates": [
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 6.047893427605378e-06,
+      "max_unconstrained_force_eV_A": 0.04860905534980082,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 42,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "cb0bca449b586f810e9d28c8a451558e6a5d463626c5b95e1464ee877f374876"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "a5ee45ae62d68df5dee8c262fca578764c5b57f784f8baee3c3febb4c270f85f"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "a5bd9e2e63c5baa5f0716c17b53dcce32f298e18b82c2fac0858583b92fd9bf7"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "8195dbecb3264da6747815bb34b7688f5b8ad5555cd4b6d7d0f8c50fb3671603"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag100_H2_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "87de6aee0ce6af2003c15cac64b0bac4d505ba828ef50d4b3024ac902ed90a68"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 7.3978941942900595e-06,
+      "max_unconstrained_force_eV_A": 0.04935915522980514,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 21,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "2fe40ec8efbd0faf5e8ca34b45d5cfc414b1e371e3c7f2362538fa1cc35bd196"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "6d6cd82b8461196137ab8b8aa534c11fb9ae1131f1e7ecb77b06d42baf7cbba1"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "e39e026c22bb055dcd652fcfa62986635a41a80fb4cb5851e960a657c05bd2d4"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "8195dbecb3264da6747815bb34b7688f5b8ad5555cd4b6d7d0f8c50fb3671603"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 7.450761262781248e-06,
+      "max_unconstrained_force_eV_A": 0.042983803379877866,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 65,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "9f8c2ec627b32b2e0f579fabbe92a2dfb068b54fd1451211bfa15bb498dccc29"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "e5b724a5d1371db7ba578072a9d06a4a76c2660a8805f109759219b95e4d9f7c"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "9c95e1168c593c72a3804e04b7d8dd2390077ceb1dcf1afad0edf257fe07d13c"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "8195dbecb3264da6747815bb34b7688f5b8ad5555cd4b6d7d0f8c50fb3671603"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 6.539865343239475e-06,
+      "max_unconstrained_force_eV_A": 0.045038129534873,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 14,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "42678978ea6d34202673e7aa7fa369b72f4cf7ff38b3419c77ea56dcf910acd2"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "16b9ee1297447beb5ed7b6b774984391ef7877022f119be2d8de3aed6af70b58"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "ba6c2989bc967e786d2c5b6129336b6ba6c1c256d824ead5f9412fba3bfc8805"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "8195dbecb3264da6747815bb34b7688f5b8ad5555cd4b6d7d0f8c50fb3671603"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.311193448585229e-06,
+      "max_unconstrained_force_eV_A": 0.04319302390432974,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 16,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "fba35c95acafb0a188da9e2f7ed766a968873415721fc6f3ea149021364d2990"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "65a9028d9ae8bd33c0a533ca728eb83252819383a43a7e59034852b78d466fcb"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "0114a3cae3f783eb9d03c0426c5b2082d0a6b214514b9658f5227229f35384e6"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "fc396d5e30682690bda69d18938d9c6ad76e0489af582b4b1a1236b60b3a2443"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag100_O2_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "d864a97ee95eb7d2ad11fbce27a034780550332460496faeee54e01cf742bb82"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.4006941311169246e-06,
+      "max_unconstrained_force_eV_A": 0.04897999838709675,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 13,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "dd257a910ab7727154c3738606ae67eee475f0c03d19cca8c0d6dd51440fa72d"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "601d0664b482d8e385ebfb836d6ace472e08d440fc75a2febbc385a3d20d9490"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "40eb3cbff72a3453afedb25842d7fb90664c17446ed256b3d243201367bf7336"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "fc396d5e30682690bda69d18938d9c6ad76e0489af582b4b1a1236b60b3a2443"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.148517590874355e-06,
+      "max_unconstrained_force_eV_A": 0.04521940213005917,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 20,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "3d3297d4592e96b893c56158f0d336357f758507dad61ca6b9eeb69e64be4d12"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "5206785bd1f5d8b6d4d1673fea9254dfc1b9e7166cce3810d89e2858dcc1dfde"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "1a6ebde9f6bf0605068417af5c6c12e5ac72f71595a51ea60f176ae33cf6762d"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "fc396d5e30682690bda69d18938d9c6ad76e0489af582b4b1a1236b60b3a2443"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.802753634469193e-06,
+      "max_unconstrained_force_eV_A": 0.03988786473352516,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 24,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "e66a2b2760c73b85c693c0ece6ac21db51607997c1462d745d30adaebf1006c4"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "f0023f404a685054b45663ebbf863c8574adecec0b496ea5545d20daff6843c4"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "9667c076002b8153dd889a89f3466c5944ed1714cd3b618e2715c1b9180419f9"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "fc396d5e30682690bda69d18938d9c6ad76e0489af582b4b1a1236b60b3a2443"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag100_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.765019995832045e-06,
+      "max_unconstrained_force_eV_A": 0.03389873900309568,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 23,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "6fbc9426c329fe2fec3cc2ccec95863c692f41ed73a75d786f68b98c20501de4"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "09b8339db49a67967f0b46fcbbe83073e01ed34f126fd26dfc3beb51300dff43"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "ff2b0652fa6a4449554e76d74e81adf04a94a5be3ea95b8457fcc31fdd1cc990"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "d91034cf684230d0665379df089fb3a1157db28105c2517e6a79aed2dd3da9e8"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag100_formate_dft.png",
+      "available_converged_functionals": [
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "cff576dc30d6b805d93aedfa4c1df59c9461d1c744d874bbdf94e6ca1b560f08"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 6.650386074844453e-06,
+      "max_unconstrained_force_eV_A": 0.04200042468832904,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 44,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "d6e32d2d19da99cde8c2fe376a652bb0f77b782f997cab1ffc994fb19d6a052b"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "065dfc0aec85d43b80a625b6ea1a22ca51dddf3f5cf28d7669bbb29925fa61bf"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "615d0724f3e61ca3ea478bd1fcb224dc9a8e0155da32689df1b2c6ad0eee8608"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "d91034cf684230d0665379df089fb3a1157db28105c2517e6a79aed2dd3da9e8"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "incar": {
+        "SYSTEM": "Ag100_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "unfinished",
+      "reason": "unfinished"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag100_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.438361277466545e-06,
+      "max_unconstrained_force_eV_A": 0.030627760349068948,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 43,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "08f9259c650de49d799c39712dcf6e340f409501604580db46303e21779f39f9"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "4cc1d0eb395ba9dd5ddfd7d26c85251e09bd7a32695d6626b5e33129b0762450"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "85738cecfc846aeaf5f3ca920aebba87703188fd0f6f4d8650f222a7b2adc311"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "d91034cf684230d0665379df089fb3a1157db28105c2517e6a79aed2dd3da9e8"
+        }
+      }
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag100_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "H": 2
+      },
+      "max_position_difference_A": 6.1704454582011735e-06,
+      "max_unconstrained_force_eV_A": 0.0485120390212574,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 13,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "5a6cb293b989bd253b639b2395ef26ce5ce39d0673b2d4366ef60c0199c0d5c4"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "7ace46cd31a9494770ee56dd9803c19090ace7785d53dfaa3e5784d370cf4d1a"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "6676e95ca04325b29961db024a0aba75c05682e73f3e058fddef3b36f37730d7"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "95c85f00ae94519bbeb81afd5a9639697708724c28ccff3a94958bcbf54ac407"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag110_H2_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "r2SCAN"
+      ],
+      "image_sha256": "82907605306f2307303486af141137a92cc9901f10f19d603f32c5829c95d804"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "incar": {
+        "SYSTEM": "Ag110_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "unfinished",
+      "reason": "unfinished"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "H": 2
+      },
+      "max_position_difference_A": 7.047259881192243e-06,
+      "max_unconstrained_force_eV_A": 0.02393860432439619,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 61,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "7375b04be296e945f1cb7d525bc579f572d4cf8f42acc05afdcdaaa49715b7e1"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "d47720a049a589b6fa407be6e1f43493ea9dd45218feb845d9546c74335a65c6"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "f5220fd91eeff035ca77ce7404911e634cd59bed1b8bf7e413b1d0d01bf12939"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "95c85f00ae94519bbeb81afd5a9639697708724c28ccff3a94958bcbf54ac407"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "H": 2
+      },
+      "max_position_difference_A": 7.656258702937068e-06,
+      "max_unconstrained_force_eV_A": 0.039597298506337524,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 18,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "71fb5efe5619aac6a588696b2e6557ad6aab99c114a095c14d6c65e54cfd4e84"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "d7c0b295c37c84b3151eca307d1d74966de06da23e3d5b6deffe004ad7a455c3"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "7b9d9429235d1aee5ad83456236ee42259742f7935b97de946f873313c18ac7e"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "95c85f00ae94519bbeb81afd5a9639697708724c28ccff3a94958bcbf54ac407"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "O": 2
+      },
+      "max_position_difference_A": 7.034348329707775e-06,
+      "max_unconstrained_force_eV_A": 0.03751180844747424,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 19,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "096dcd272107981b5b11ce9ebe4b9a4526ac8b2e10a8aa954bef7e9d2525dbb8"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "aab0f78bf7b5a4f843c90cfba26c4cc3a3f5b182201c0503476208f155b98790"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "b126a13c92c414ea2342b51f1393a29443f00352f9b07cc2805947c4ebb273d4"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "62d1c01d71ca0f584f7f44954a5ded5910f985e11462652a5a54481362d758a0"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag110_O2_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "463fe229e026c4ee796a1d00a0794dbef38be2c5f05fac208d3498dc730f11dc"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "O": 2
+      },
+      "max_position_difference_A": 6.826572130722956e-06,
+      "max_unconstrained_force_eV_A": 0.049953140301686745,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 17,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "05056dc23e673cc54ec5e9c8345a80f8bfeb135cd218497df3762ae047a341d0"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "5a04c2c61c4b98ea0facd0dfab303b09cfffbd18665bca52edb6016574c6d3dc"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "505b1191d510657f5c35df3cd4309612d9d46d694236c9df69622abbf5bdd249"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "62d1c01d71ca0f584f7f44954a5ded5910f985e11462652a5a54481362d758a0"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "O": 2
+      },
+      "max_position_difference_A": 6.641135875496416e-06,
+      "max_unconstrained_force_eV_A": 0.040467832027426424,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 14,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "5ed2321930b6fec3f19289bb1b89550284a6627237ef6540e7047165397146e2"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "76aaf1823c4cc9bf195513cdce71d9d9701b24687d1ca430191354ab7236ea4b"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "b262cef4dc061b2e3a61d8d369875be7882d6a5bf7abaaaeea6af1fab836973a"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "62d1c01d71ca0f584f7f44954a5ded5910f985e11462652a5a54481362d758a0"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "O": 2
+      },
+      "max_position_difference_A": 6.035123144421851e-06,
+      "max_unconstrained_force_eV_A": 0.04047584300542732,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 26,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "03d9e4a45054d9ca19f125f5ec8b50d59cffd4ef2598d8850c3fcc91ba47e782"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "a95b9617ebd2c0dfd5014b8b373c391c3794c1b43c3b1142a31d76fd8aa3ad03"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "fe21e957e2e5e0c2f57a263c702ea5e5f26e4b56bf45a6b745118e70f3e437a4"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "62d1c01d71ca0f584f7f44954a5ded5910f985e11462652a5a54481362d758a0"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag110_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.607829212790168e-06,
+      "max_unconstrained_force_eV_A": 0.046308549577804746,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 16,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "a4855175b37eede69c2ad7665d59846b7c69e36a1780a0c1e18376e003436c29"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "959eb196b47c04f8df52a00cd22bcdf901168a034ac063db396793d8225ed564"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "32983de1b98c44c526ebc54448ffcc806e11cfd170904a28278ebc93bd4112f0"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "e4a1dee4267a38905ea4ca5b8c8f8cdd1c8e795bd76bb5b9714e21a41ea6ce53"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag110_formate_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "8b8b95dcd9744b51b74b04dae37a457e53c4c6b6e535e7f895242f9e64b75c37"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 6.770243423720838e-06,
+      "max_unconstrained_force_eV_A": 0.04126797753706862,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 36,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "36c2ee1862affa5517d72fa2b0117f8528a0ebd8842b8378113a9ddba230fc1b"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "e4ec525f3ca0c8e73289df3537c4cea20f3e651fdd3aa39034dbec74b57476e1"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "311aebeee480909a75e81f1e341e3e4919bc9e57a5b1c0b7617cd74b33860c44"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "e4a1dee4267a38905ea4ca5b8c8f8cdd1c8e795bd76bb5b9714e21a41ea6ce53"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.690507195838845e-06,
+      "max_unconstrained_force_eV_A": 0.037135496899866574,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 34,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "f182dd9cba66fd9ee75dc3c924ee0fd9b05c5518047ebfed5d96234b3e282de6"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "a4b12a01edd207c5a8beeacab2bb254dc60ee22548d2a1a7406036175b2eb1fa"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "479f51c92fd7fbcbf8e65ac531f1843d2df15f48e36815470eaf9f2967f6188d"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "e4a1dee4267a38905ea4ca5b8c8f8cdd1c8e795bd76bb5b9714e21a41ea6ce53"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag110_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 24,
+      "composition": {
+        "Ag": 24,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 6.559372966909064e-06,
+      "max_unconstrained_force_eV_A": 0.04493226927276209,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 31,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "7eeb38ff3d4c154203af0460275521d626b89da568b4c3402d51f6d86a2a32ac"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "c97d2557ff9f62ece75fb8cbc05c220c1f4be2979285f6763c2bf5e5bcde2428"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "fab133afaeed07400c72bd55a07aab43cb5582da35af0133f3e220d04fa47e52"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "e4a1dee4267a38905ea4ca5b8c8f8cdd1c8e795bd76bb5b9714e21a41ea6ce53"
+        }
+      }
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag110_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 6.793568822228627e-06,
+      "max_unconstrained_force_eV_A": 0.04554168256663339,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 16,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "53e06807e339c3e4ec6a36a5e342048062704e693e86dfdd5a94607fce047de8"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "e8c81c35b70e497df2af7cb21a07b6b417b60faa5ddcef9e7ea9a8c66f300475"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "5cd5178f69d03baabb79a8cc3567fc7778aaf4cc79d97750931545340fa192c4"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "b69b501e6d04e9c1bbaee6e987fed3d2d793e6b84dbc5e7a41b22b3978279a8c"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag111_H2_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3"
+      ],
+      "image_sha256": "f33fdac2568bab3ec4bb960ed275e9367d58946c87ab20d1bdf7f91acaf27344"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 6.150642799912615e-06,
+      "max_unconstrained_force_eV_A": 0.04804533476832064,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 18,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "36b02d1fa49ae3c021998abd7db1b4f7d696c6b8de973e80391825d32b6a9de5"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "2e34868f0e4847c47ae35f4eeb8253bde7b30a70ecb3dfaa1ef9bbe7e3cc14b6"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "f9d116c8a9a317594dc37419b7d8c1b20f9852fc2856ac22aad0b011f73218e2"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "b69b501e6d04e9c1bbaee6e987fed3d2d793e6b84dbc5e7a41b22b3978279a8c"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 6.669268200641652e-06,
+      "max_unconstrained_force_eV_A": 0.046226848021469084,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 43,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "90807d451d89830001d1bd2dffe4c335b4a68dfff53144ca000b573ac77b4c5b"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "d26ed4dfc3a92ab15b718e3d6cd776221b70de783f5c3b947c853a7869a01ec0"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "7428d878c820e258d302373e51b446a1e03eafa0f8dfad383dfc3600888a4116"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "b69b501e6d04e9c1bbaee6e987fed3d2d793e6b84dbc5e7a41b22b3978279a8c"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "incar": {
+        "SYSTEM": "Ag111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "unfinished",
+      "reason": "unfinished"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 6.3371661844532e-06,
+      "max_unconstrained_force_eV_A": 0.03275597272254329,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 18,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "22cd12d7df1760bc0787f6252f605cd603cc3c58d6b8e0d480acf8b2d4bde6e9"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "98aeade3223dd488f57fec09d3e9592a68c8ad211612cd432ad46fc161248abd"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "3923295c0031f4bfb9190c1bff52d3284d8a71a61a27a6a539fe67b847802878"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "f73e62480176f89eba9a3ef289a97d487f4b125cfe46082d59669e428e4f809e"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag111_O2_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "2ec044e41e5ceb18b5b96768e31a6898fed1dc0c9ad3daf11f7a86b86b04040e"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.074025186454073e-06,
+      "max_unconstrained_force_eV_A": 0.036176515061569985,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 104,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "931f4eac2451bde0e06feb0adcfa4647ec894149288f71b2b13515bff7f7c372"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "0d3eecb94b8187ce3535a5f7ee97033c050f78da1b74d9220589b444288ee416"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "e422071d149327a659179791150286c12b9ba11c1e5ddb7451559d26056a6672"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "f73e62480176f89eba9a3ef289a97d487f4b125cfe46082d59669e428e4f809e"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.1494323462730715e-06,
+      "max_unconstrained_force_eV_A": 0.027679090194585514,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 5,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "9495c27c90d1a22bddf747f1b628c1a77fa92c2221309cc0471204d5344d740b"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "855062187690c1b35063d2ce14b7606a3cfc929a3ec1f56347a9230dd749a1da"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "2b3ee259bc16c77c49c0ff56ed3a330e9da03b8c379a30a0a9fbaedd546dfbaa"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "f73e62480176f89eba9a3ef289a97d487f4b125cfe46082d59669e428e4f809e"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 6.150642799912615e-06,
+      "max_unconstrained_force_eV_A": 0.04952182108929355,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 15,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "64f04db7e1b849ae6088bb585486fb8682893fc6f8aa73df7a8ba802f2bdd5a1"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "ac0acb0a96382dda2f9db611b7b336d167628e1148666eba85ea19fa36c4f4fc"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "c835d084a8a549d7d95fde15307658a792cb72b4f181be825e67163e8b881d09"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "f73e62480176f89eba9a3ef289a97d487f4b125cfe46082d59669e428e4f809e"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Ag111_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.55869181896181e-06,
+      "max_unconstrained_force_eV_A": 0.04843147162744489,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 11,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "29da798bb6685f4b5e03f8e889aa9be83db3aecf337f2d1e154dc1b9c7ce4830"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "345e775c65ece4ccae22b6ec88674778c373942caf6adcd5406ac2573a1f15d4"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "fcf5a6eb9b4831e30ccde974ee81a2b40918eab43d86d05089e46d847aa5e99e"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "7e49282fd77f441a427e3d15e536e53acf15e488e3e63951a833d74ce2310d7e"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.437674001009804e-06,
+      "max_unconstrained_force_eV_A": 0.024527984527881616,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 73,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "ffb22e691a6f8cf03e6de2c4fa59d27b7bf3c429191ece1990263fdc2ff6e16f"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "746474d910f88e6d72c56d33855fb4cb50bef500aa544d6a20af3f12eb2ca3ab"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "d168444bfeeafdbd0f14e545dcce69bedf4ef7769b4a7b704002ec8039dcfc1f"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "7e49282fd77f441a427e3d15e536e53acf15e488e3e63951a833d74ce2310d7e"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.646206226356539e-06,
+      "max_unconstrained_force_eV_A": 0.04510795732462289,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 40,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "54803b99120addeb98a2f8810c1dd93cb0743ab1da17a6f6913f168027c5e3bd"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "b50ff223a9e62ebcbabff7df9e4a944d878ee8486024178c11bfbe879fd6a379"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "ae1e59a76042270cb9997b31d6c8bd029ca7bebd4a7549c3cc13ae717716342c"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "7e49282fd77f441a427e3d15e536e53acf15e488e3e63951a833d74ce2310d7e"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Ag111_formate_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "97e4c7c23725310cdc8122dd1f738d660642bcc4363e2547bb8ff6449f0b991a"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Ag111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Ag": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 8.181465711834768e-06,
+      "max_unconstrained_force_eV_A": 0.0490521831726173,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 68,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "72a3ed6d6449c221bd2b13aecce33915dc33fb9e0c91e34341315625bd7bc2ba"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "248b6bb5e76e4e92cff5c192c803cb6406de84c289108b7eeec16ba0470803f3"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "5a4b77dfb4238e3512c4ff2a765b71aa69f91dc070a6b70196afce22a535743e"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "7e49282fd77f441a427e3d15e536e53acf15e488e3e63951a833d74ce2310d7e"
+        }
+      }
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ag111_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 7.528876004725098e-06,
+      "max_unconstrained_force_eV_A": 0.04769305686365679,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 16,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "e7f665370f569b01a7a1febb369bd1910958573402142ecf54c0d12fd955faef"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "c04a8cddff5f8f33f623156d6145c891a0718324d28e05d397825fb956eeca2b"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "d90f29d7c0d869ce92a68a65bfa771c377b167df31e8f23fc99a82682075ccd9"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "1f80d91b0ea895fdaf711d187074e2f5cb64daba0825ccf69341ca4b67409d91"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Au111_H2_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "0eb47654698607088c5129f4a91f09c7ebf7be285096ba9ddeb2c7d919fe3c0a"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 6.892440594181518e-06,
+      "max_unconstrained_force_eV_A": 0.04745783173513092,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 19,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "f3fd5b86365181ce3725096dc12d16a4eacf6a320b714342adc9d85391acf1f6"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "1ee3664d6b25a0cb5124869cbe8b47fc679459b1a0115f983145044cdc3f7548"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "99f75ed4a98afefbefdfb20bb15cd3d3bfe7198be3fb54649257568eb34687fd"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "1f80d91b0ea895fdaf711d187074e2f5cb64daba0825ccf69341ca4b67409d91"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 7.463242509839942e-06,
+      "max_unconstrained_force_eV_A": 0.04032908244679018,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 29,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "67a4a90ea84d4f1bc9c495f3deb4baf78d411a5a5b4325738917a9c94dfdfae6"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "07b20c142969aeeb042d901f9a16a14ab6e154ef7f3c2143bdc2406e6b5dc5f5"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "6c426dfb8208248cbf6503b4a5b14bc0ed9273ef57b63cb931e7ecde7f06ce2d"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "1f80d91b0ea895fdaf711d187074e2f5cb64daba0825ccf69341ca4b67409d91"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_H2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "H": 2
+      },
+      "max_position_difference_A": 7.622549797808321e-06,
+      "max_unconstrained_force_eV_A": 0.04630876881326041,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 26,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "99b6b36919fd58721198fc0b62fbdf4ba2370c01ecdf9f9502d65b2f7ddd9cfb"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "8a8422aefba23f87c02446682cd86e1c49bbcd859ade81aee2b83ab5800db547"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "d7704f5a938f8e3863a705a7d317d7997965b785aafd19d05619e620650c2168"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "1f80d91b0ea895fdaf711d187074e2f5cb64daba0825ccf69341ca4b67409d91"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "H2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_H2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.17268946604198e-06,
+      "max_unconstrained_force_eV_A": 0.036495551660442126,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 27,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "092f88ce1f2a17f895db4fe185899cadbf082eadf8cd589f13ff38d2746c550f"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "05d3ea7f197208c2d14eec2bf7791e41f9787cc9136cdc5941d12ff36e334fc2"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "2584dc5eda2b0061b7f1fa2b56add6432cbb3ad4c5c5d0c8daaa03dc105373d8"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "471f896b9af8b31a8771e88b1886c79b12141a41ad03e2e037137de07407cfed"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Au111_O2_dft.png",
+      "available_converged_functionals": [
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "2fe6db3ed0ed7c7a526e6ccc6a2e2deb07d55949e1467d8377b0913716501f7b"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 6.607641217589944e-06,
+      "max_unconstrained_force_eV_A": 0.04893298679827341,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 26,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "df766ab0bb532d899fe0a4c90ac120e10b8e122a3ffd69ea2ab23e49a79e3710"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "4b7eb35c0410f886819ad0e9847b1c0350873666a605617e9e7383491e127090"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "ad125fc080a3d9ab15aad2693e7e77dba4e8a20927fc31c752351859e4a9a1c7"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "471f896b9af8b31a8771e88b1886c79b12141a41ad03e2e037137de07407cfed"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "incar": {
+        "SYSTEM": "Au111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "unfinished",
+      "reason": "unfinished"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_O2",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "O": 2
+      },
+      "max_position_difference_A": 7.0090622310784525e-06,
+      "max_unconstrained_force_eV_A": 0.020658429006098215,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 16,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "5d9934f9fe001197f85e77cddad3c9dedeb6a4b6d0115ce88b63ac4fdfecb9f1"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "133f3b03bb6aa30cc5722efc5db564b2ff982ec9dde690f0a2122e6e74e8fa1c"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "3f609b1d086d56163ec5b884527a43d5d6e17ea9ad05f9e147fec89e115d3a98"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "471f896b9af8b31a8771e88b1886c79b12141a41ad03e2e037137de07407cfed"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_O2/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_O2/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_O2/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "O2",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C0/Au111_O2/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.871889267456228e-06,
+      "max_unconstrained_force_eV_A": 0.04756423969748702,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 25,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "f4d8e39b6ed01c06fe80070676c6e813dc6e2e89c3495bd149ba2d1f4a751e47"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "dfad7e224b3dcec1917e05065cca5ea5066aebfacda546d4e83ec0f2f67903ac"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "7b904f02224b577a9c8673c84fa43d76d1af7da99f876b219dce053b1395d2df"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "3e0b22dfb8fd1d70b1ffbbb41e8bc44f0157838537865540c6f32524579dbe78"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Au111_formate_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "0eb214b03057fd366a341363198c8cd40148e1673a3af26d3cd65f82bfbdeac4"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 6.98185751541013e-06,
+      "max_unconstrained_force_eV_A": 0.03867408152755538,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 52,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "aec41aa1abecca8abc91383deb6072e42d3f118caf65bcf502ad6fa6e1bb62ac"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "f2fa8829306e6ec4ca4c77a39ef9e677914445340d8e33060781b59334b67454"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "e8bbeace0c4323ad7c6a91b68f41c5dd843951b8276b6d4349c50dca523f8233"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "3e0b22dfb8fd1d70b1ffbbb41e8bc44f0157838537865540c6f32524579dbe78"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.329873692977174e-06,
+      "max_unconstrained_force_eV_A": 0.03997152460189629,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 27,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "2362e4d5a980de915151cb33776d2d67778f86c920c9cf6078a9d119e1556dae"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "c13f70c4f1cb5693f7fed37ca351107b5354edfdfbef9b789979c90564891401"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "13a93c318658740d0e1eba0b14d7d370f59a2930e3bfd172346c07630232967a"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "3e0b22dfb8fd1d70b1ffbbb41e8bc44f0157838537865540c6f32524579dbe78"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Au111_formate",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 36,
+      "composition": {
+        "Au": 36,
+        "C": 1,
+        "O": 2,
+        "H": 1
+      },
+      "max_position_difference_A": 7.401749615910305e-06,
+      "max_unconstrained_force_eV_A": 0.04217312638399008,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 61,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "a4933eda3ec67a978bdc65fba1e409e3b92569484c01ad72fefc4d9da9a67014"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "f2170cee0d0c6966c691c2a6c5e95f5cd4816da965ed716b57d1d9dbc33fc860"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "eb7fb0244b9966e1140b368c20dfc95ca4054fb72ede302adedd41dcbc73e450"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "3e0b22dfb8fd1d70b1ffbbb41e8bc44f0157838537865540c6f32524579dbe78"
+        }
+      }
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formate/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formate/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formate/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Au111",
+      "molecule": "formate",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Au111_formate/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_CO/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_CO/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_CO/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_CO/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_CO",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 1,
+        "C": 1
+      },
+      "max_position_difference_A": 7.206892586032857e-06,
+      "max_unconstrained_force_eV_A": 0.044515935416432624,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 44,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "edaf731f7cba5a325907cb0088c0cc4c94e17a75420ce5ae72cab281ac4ba0e4"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "e037c6718e8f84b99e2064789aad71c6aea3c944daee6eabd9eaa440e903aad8"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "fb76d7d276e575bdf38522d6673f43cba1211429573d93bffc3e66423b0c0f0b"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "44af963b68af8d946287061b9cd4536b4edb6c2811780ada5f09e894ff3f1861"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Cu111_CO_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "2e0558526dcbc7b5e720b1e9d31e42356794329e99aca23c02bdcb8b956bcec7"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_CO",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 1,
+        "C": 1
+      },
+      "max_position_difference_A": 7.364347893839386e-06,
+      "max_unconstrained_force_eV_A": 0.04005963696790075,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 40,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "0a784d11a6480d64343a399be7988851f8b00941fa0ab17d1df401688293718b"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "15486f40045b5a10cac2ccc270e1008fdcbd3ae5d220c54dabf6f009ff5fd7d9"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "09c09b0b07bc710224dd48696b9ee27fc7e0c8efaf7a2f3239ca40b7a4fde755"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "44af963b68af8d946287061b9cd4536b4edb6c2811780ada5f09e894ff3f1861"
+        }
+      }
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_CO",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 1,
+        "C": 1
+      },
+      "max_position_difference_A": 7.3820301524515015e-06,
+      "max_unconstrained_force_eV_A": 0.046208449811695695,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 32,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "b463f6b5f7021f8aacf2504507b93740989a6199a6fb0301af8ab318ee939dab"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "422315cb8c1da77c0f3a7ff1b42ce190cc09b8db378e279809dcfc0639984373"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "4581bf3a97055ec46a86e7b1e9650893a1695d94ad4a96283d911dcfefb7e4a3"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "44af963b68af8d946287061b9cd4536b4edb6c2811780ada5f09e894ff3f1861"
+        }
+      }
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "CO",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_CO",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 1,
+        "C": 1
+      },
+      "max_position_difference_A": 8.001314254114891e-06,
+      "max_unconstrained_force_eV_A": 0.04713710285963702,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 40,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "440607c63c13e07e6eab1c6485e9e5274878d0355c725cfd7e6f007080a17609"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "7fc603f078e523bb55eb662115304e797b0a6053407b5ef68cf197c3e6af2433"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "0a3aaf48a977980aaf2b80a2334e709ba2d51c77a7b088e42b30b46582d298f5"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "44af963b68af8d946287061b9cd4536b4edb6c2811780ada5f09e894ff3f1861"
+        }
+      }
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_formic_acid/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_formic_acid/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_formic_acid/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_formic_acid/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_formic_acid",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 2,
+        "C": 1,
+        "H": 2
+      },
+      "max_position_difference_A": 7.243884527043529e-06,
+      "max_unconstrained_force_eV_A": 0.04280404868701091,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 192,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE/fully_relaxed/CONTCAR",
+          "sha256": "dd6ff8790083975c54f6841167840477387725bab467b94fe7d45792c2eb8387"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE/fully_relaxed/OUTCAR",
+          "sha256": "ab684300ee1de5ac56b729975dcf9252e8388a3d7d6967f97e7479169ee21f07"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE/fully_relaxed/INCAR",
+          "sha256": "a137063ef4291d0b895ff8063f9509a76f2e2dc1344e01f045c792090930d36f"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE/fully_relaxed/POSCAR",
+          "sha256": "b2700536992a8614d74b4d56316ab49c9cbbd03057bb99c3f76189fb8651aa90"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Cu111_formic_acid_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "69f992ded0253d9fe74614728af5ebc0b9f1fc8253fb212a63f408e77c111fb5"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_formic_acid",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 2,
+        "C": 1,
+        "H": 2
+      },
+      "max_position_difference_A": 7.296028035275186e-06,
+      "max_unconstrained_force_eV_A": 0.047883529172357386,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 196,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "8b49a0ffde866396046bfb8a4d8f528ef227028f8a01ed3f43b7af82d67a4753"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "64fb67cafc705699fdaaa0809f65377cdec119529ada13f8f617e16bcb277135"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "a829c04cc4a6f24224194da34b996782bdebebe7cd0856eca4c2b650d3c090cc"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "b2700536992a8614d74b4d56316ab49c9cbbd03057bb99c3f76189fb8651aa90"
+        }
+      }
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_formic_acid",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 2,
+        "C": 1,
+        "H": 2
+      },
+      "max_position_difference_A": 7.225122576583215e-06,
+      "max_unconstrained_force_eV_A": 0.03877139850456777,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 150,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "276592d056f0bc1b6b07c27857c1efc8cac068abf6f5368d26b7dc1fc242a736"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "005175fc1bc67b9257e2a79bb1a98b61cc080d72d66a3e5627ccc0529e3d4ef4"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "bf3fc34071165201fe73b1dbd7cb48db29001355316010a873894e286e5d068d"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "b2700536992a8614d74b4d56316ab49c9cbbd03057bb99c3f76189fb8651aa90"
+        }
+      }
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_formic_acid",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "O": 2,
+        "C": 1,
+        "H": 2
+      },
+      "max_position_difference_A": 7.3361901851761155e-06,
+      "max_unconstrained_force_eV_A": 0.04936383616576006,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 122,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "50813418f7b35ef8fa591c51f49d4f1bea558305fba406e2b531259cf3d1461a"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "475c86a246cdbc63855dc93d68cd5bf4d77451d7ea33e8aa5df183be3588aa80"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "5885c044b6c75de8891fd5561309d45d9babcaee671bb96d4b85a56d11ebfe6a"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "b2700536992a8614d74b4d56316ab49c9cbbd03057bb99c3f76189fb8651aa90"
+        }
+      }
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_methanol/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_methanol/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_methanol/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Cu111_methanol/singlepoint/r2scan/fully_relaxed",
+      "accepted": false,
+      "reason": "Missing/empty CONTCAR"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "PBE",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/PBE/fully_relaxed",
+      "accepted": false,
+      "incar": {
+        "SYSTEM": "Cu111_methanol",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "unfinished",
+      "reason": "unfinished"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "PBE+D3",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/PBE_D3/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_methanol",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "PE",
+        "IVDW": "11",
+        "VDW_S6": "1.0",
+        "VDW_SR": "1.217",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "C": 1,
+        "O": 1,
+        "H": 4
+      },
+      "max_position_difference_A": 7.572996538042453e-06,
+      "max_unconstrained_force_eV_A": 0.04172616720955808,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 231,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/PBE_D3/fully_relaxed/CONTCAR",
+          "sha256": "ec96b7205ba87c40497b37a02fd51173a5d88fc7858383fcf9021511a8c5e56d"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/PBE_D3/fully_relaxed/OUTCAR",
+          "sha256": "cc0bdd8d7ec66294ed2348cd48623158ee75c0d1eb7aaec229d5b8ae9347c9e8"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/PBE_D3/fully_relaxed/INCAR",
+          "sha256": "c681894a2b53bc5bce510e2d465566b334319cfd126d40dd4a80b720fe64f78a"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/PBE_D3/fully_relaxed/POSCAR",
+          "sha256": "bd068f0be306be69fc499850138eecdf47938bd6c1bf15438e4ac2156113d3bb"
+        }
+      },
+      "selected": true,
+      "image": "dftcmp/png/Cu111_methanol_dft.png",
+      "available_converged_functionals": [
+        "BEEF-vdW",
+        "PBE+D3",
+        "r2SCAN"
+      ],
+      "image_sha256": "23c0d6040f9f636bbb9d810c07a5b71b8c465fda53bc959c48ff2bba989e0c15"
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "BEEF-vdW",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/beef_vdw/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_methanol",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "GGA": "BF",
+        "LUSE_VDW": ".TRUE.",
+        "AGGAC": "0.0000",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "C": 1,
+        "O": 1,
+        "H": 4
+      },
+      "max_position_difference_A": 7.06580624349352e-06,
+      "max_unconstrained_force_eV_A": 0.048020045876696116,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 86,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/beef_vdw/fully_relaxed/CONTCAR",
+          "sha256": "dccd42335eefbb3f08f449b60313ccf66b9641d5a886af0d7b6cc857899b0c3f"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/beef_vdw/fully_relaxed/OUTCAR",
+          "sha256": "202360cb6bfec3c9a0ffea4f61d08eb5d5dec08f44c66c7318e16a5b6445313c"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/beef_vdw/fully_relaxed/INCAR",
+          "sha256": "3fc8dd9ef78c3f6d7cd41807323b9d2b0a6d3873ac663a46e9ebf1223093268e"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/beef_vdw/fully_relaxed/POSCAR",
+          "sha256": "bd068f0be306be69fc499850138eecdf47938bd6c1bf15438e4ac2156113d3bb"
+        }
+      }
+    },
+    {
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "functional": "r2SCAN",
+      "source_directory": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/r2scan/fully_relaxed",
+      "accepted": true,
+      "incar": {
+        "SYSTEM": "Cu111_methanol",
+        "NWRITE": "2",
+        "ISTART": "0",
+        "ISPIN": "2",
+        "ENCUT": "450",
+        "NELM": "150",
+        "NELMIN": "4",
+        "EDIFF": "1E-05",
+        "METAGGA": "R2SCAN",
+        "LASPH": ".TRUE.",
+        "NSW": "1000",
+        "IBRION": "2",
+        "ISMEAR": "1",
+        "SIGMA": "0.05",
+        "IALGO": "48",
+        "LDIAG": ".TRUE.",
+        "LREAL": "A",
+        "LWAVE": ".FALSE.",
+        "EDIFFG": "-5E-02"
+      },
+      "convergence": "converged",
+      "metal_count": 64,
+      "composition": {
+        "Cu": 64,
+        "C": 1,
+        "O": 1,
+        "H": 4
+      },
+      "max_position_difference_A": 7.755925076215132e-06,
+      "max_unconstrained_force_eV_A": 0.04803280922452902,
+      "ediffg_eV_A": -0.05,
+      "ionic_steps": 130,
+      "sources": {
+        "CONTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/r2scan/fully_relaxed/CONTCAR",
+          "sha256": "314b714ecf85eeb6d2913094c553d25ec329ac8850a06a7391b8da15a2d9d0ef"
+        },
+        "OUTCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/r2scan/fully_relaxed/OUTCAR",
+          "sha256": "a52694b1772e5d90dc6ca5fa443c3d6193d2aa794f287e19919a1f49d8fe165d"
+        },
+        "INCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/r2scan/fully_relaxed/INCAR",
+          "sha256": "cf9f77b37c16f4ddf201425086f6ae40558257145e58ab4259bd88c99a804bd8"
+        },
+        "POSCAR": {
+          "path": "/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/r2scan/fully_relaxed/POSCAR",
+          "sha256": "bd068f0be306be69fc499850138eecdf47938bd6c1bf15438e4ac2156113d3bb"
+        }
+      }
+    }
+  ]
+}
