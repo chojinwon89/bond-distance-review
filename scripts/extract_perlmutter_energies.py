@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Audit relaxed VASP energies, convergence, composition and POTCAR identities.
+"""Audit relaxed VASP energies, convergence and composition.
 
 Read calculation outputs only. Positive absolute energies are not a failure.
+Project policy: ignore POTCAR identity differences; retain identities in the audit.
 The +/-5 eV adsorption-energy screen is a review flag, not a convergence test.
 """
 import argparse
@@ -84,14 +85,6 @@ def assess(complex_result, slab, molecule, metal):
         return 'error', 'Missing or non-finite component energy', raw
     if not all(p['metadata_ok'] for p in parts):
         return 'metadata_missing', 'Cannot verify OUTCAR species, atom counts and POTCAR TITEL identities', raw
-    mismatches = []
-    for label, ref in [('slab', slab), ('molecule', molecule)]:
-        for element, title in ref['potentials'].items():
-            job_title = complex_result['potentials'].get(element)
-            if job_title != title:
-                mismatches.append('{} {}: complex [{}], reference [{}]'.format(label, element, job_title or 'missing', title))
-    if mismatches:
-        notes.append('; '.join(mismatches))
     comp = complex_result['composition']
     if comp.get(metal, 0) != slab['composition'].get(metal, 0):
         notes.append('slab size mismatch: complex has {} {}, reference has {}'.format(comp.get(metal, 0), metal, slab['composition'].get(metal, 0)))
@@ -101,8 +94,6 @@ def assess(complex_result, slab, molecule, metal):
         status = 'composition_mismatch' if dict(expected) != comp else 'ok'
         if status != 'ok':
             notes.append('Complex composition does not equal slab plus gas molecule')
-    if mismatches:
-        status = 'pseudopotential_mismatch'
     if status != 'ok':
         return status, '; '.join(notes), raw
     if not all(p['convergence'] == 'converged' for p in parts):

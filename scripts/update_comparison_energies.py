@@ -74,7 +74,7 @@ def update():
                 tds = re.findall(r'<td[^>]*>.*?</td>', cells)
                 if current:
                     energy = float(current['E_ads'])
-                    title = html.escape('Verified Perlmutter result: ' + current['system'], quote=True)
+                    title = html.escape('Screened Perlmutter result: ' + current['system'], quote=True)
                     tds[1] = f'<td title="{title}">{energy:.3f}</td>'
                     ml_energy = ml.get(key)
                     candidates = ml_by_system.get((surface, molecule), set())
@@ -132,16 +132,17 @@ def update():
     changed = sum(abs(r['E_ads_DFT'] - previous.get((r['surface'], r['molecule'], r['functional']), r['E_ads_DFT'])) > 2e-6 for r in refreshed)
     note = f'''<!-- single-point-note -->
   <div class="note info"><b>Single-point adsorption energies added:</b> {len(matched)} functional results across {len(systems)} of the 415 systems below, from the site's published single-point dataset.
-  <br><b>Perlmutter energy refresh ({datetime.now(timezone.utc).date().isoformat()}):</b> {len(refreshed)} verified relaxed results are included;
+  <br><b>Perlmutter energy refresh ({datetime.now(timezone.utc).date().isoformat()}):</b> {len(refreshed)} screened relaxed results are included;
   {added} fill previously unavailable functional entries and {changed} update earlier values.
   These results pass completion, electronic/ionic convergence, atom-count and composition checks,
-  matching OUTCAR POTCAR TITEL identities for each element, and the |E<sub>ads</sub>| &le; 5 eV review screen.
+  and the |E<sub>ads</sub>| &le; 5 eV review screen.
   Positive absolute total energies are allowed; their sign does not determine convergence or reference compatibility.
-  <br><b>Reference compatibility correction:</b> "POTCAR mismatch" means the adsorption calculation and a reference use different potentials
-  (for example Ag versus Ag_pv), even when both converged. Hover over a status for the potential names and component convergence.
-  Incompatible or unverified relaxed values and their ML differences are withheld; the audit retains component energies and raw subtraction results for diagnosis.
+  <br><b>Project reference policy:</b> POTCAR variants such as Ag and Ag_pv are treated as equivalent for filtering.
+  Potential identity differences do not exclude a result; the original potential names remain in the audit.
+  No energy offset or correction is applied. Hover over excluded entries for their remaining screening reason and convergence status.
+  Unscreened relaxed energies and their ML differences are withheld; raw component energies and subtraction results remain in the audit.
   Structure images are from the earlier geometry extraction; the single-point dataset has not been re-audited against these OUTCARs.
-  <a href="dft_comparison_perlmutter.csv" download>Verified relaxed energies</a> &middot;
+  <a href="dft_comparison_perlmutter.csv" download>Screened relaxed energies</a> &middot;
   <a href="dft_perlmutter_energy_audit.csv" download>Full extraction and status report</a>.
   <br>All table energies are in <b>eV</b>; &Delta; = E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT).
   E<sub>ads</sub> = E(slab + molecule) &minus; E(slab) &minus; E(molecule).
