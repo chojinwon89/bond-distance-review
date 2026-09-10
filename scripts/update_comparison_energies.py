@@ -22,6 +22,8 @@ def read_csv(name):
 
 
 def update():
+    kestrel_enabled = (ROOT / 'dft_kestrel_singlepoint.csv').exists()
+    retained_spe_csv = (ROOT / 'dft_comparison_singlepoint.csv').read_bytes() if kestrel_enabled else None
     lookup = {}
     for row in read_csv('dft_singlepoint_vs_sevennet.csv'):
         key = row['surface'], row['molecule'], row['functional']
@@ -60,10 +62,10 @@ def update():
     page = path.read_text().replace('minmax(330px,1fr)', 'minmax(min(100%,480px),1fr)')
     # Make regeneration idempotent.
     page = re.sub(r'<!-- single-point-note -->.*?<!-- /single-point-note -->\n?', '', page, flags=re.S)
-    page = re.sub(r'<td class="sp-energy"[^>]*>.*?</td>', '', page)
+    page = re.sub(r'<td class="sp-energy(?: [^"]*)?"[^>]*>.*?</td>', '', page)
     page = page.replace('<div class="energy-scroll">', '').replace('</table><!-- energy-scroll --></div>', '</table>')
     page = re.sub(r'<tr class="energy-groups">.*?</tr>', '', page)
-    page = re.sub(r'<th class="sp-energy"[^>]*>.*?</th>', '', page)
+    page = re.sub(r'<th class="sp-energy(?: [^"]*)?"[^>]*>.*?</th>', '', page)
     matched, systems = [], set()
 
     def card(match):
@@ -156,6 +158,9 @@ def update():
     page = re.sub(r'(<div class="g" data-surf="([^"]+)" data-mol="([^"]+)">)(.*?)(?=<div class="g" data-surf=|<script>)', card, page, flags=re.S)
     added = sum((r['surface'], r['molecule'], r['functional']) not in previous for r in refreshed)
     changed = sum(abs(r['E_ads_DFT'] - previous.get((r['surface'], r['molecule'], r['functional']), r['E_ads_DFT'])) > 2e-6 for r in refreshed)
+    image_note = ('Existing structure images are from the earlier geometry extraction; added Kestrel images carry their own functional and source audit. '
+                  'Geometry metrics retain the earlier extraction, and an image does not imply a new adsorption-energy result;'
+                  if (ROOT / 'dft_structure_sources.json').exists() else 'Structure images are from the earlier geometry extraction;')
     note = f'''<!-- single-point-note -->
   <div class="note info"><b>Single-point adsorption energies added:</b> {len(matched)} functional results across {len(systems)} of the 415 systems below, from the site's published single-point dataset.
   <br><b>Perlmutter energy refresh ({datetime.now(timezone.utc).date().isoformat()}):</b> {len(refreshed)} screened relaxed results are included;
@@ -171,7 +176,7 @@ def update():
   Hover over an energy or dash for its provenance and current audit findings; audit findings do not replace published energies.
   A dash in a relaxed DFT cell means neither a published value nor a new screened result is available.
   <a href="dft_comparison_published_relaxed.csv" download>Published relaxed-energy snapshot</a>.
-  Structure images are from the earlier geometry extraction; the single-point dataset has not been re-audited against these OUTCARs.
+  {image_note} the single-point dataset has not been re-audited against these OUTCARs.
   <a href="dft_comparison_perlmutter.csv" download>Screened relaxed energies</a> &middot;
   <a href="dft_perlmutter_energy_audit.csv" download>Full extraction and status report</a>.
   <br>All table energies are in <b>eV</b>; &Delta; = E<sub>ads</sub>(ML) &minus; E<sub>ads</sub>(DFT).
@@ -195,6 +200,10 @@ def update():
         writer.writeheader()
         writer.writerows(refreshed)
     print(f'Added {len(matched)} single-point results across {len(systems)} systems; refreshed {len(refreshed)} relaxed results')
+    if kestrel_enabled:
+        from update_kestrel_singlepoint import update as update_singlepoint
+        (ROOT / 'dft_comparison_singlepoint.csv').write_bytes(retained_spe_csv)
+        update_singlepoint(ROOT)
 
 if __name__ == '__main__':
     update()
