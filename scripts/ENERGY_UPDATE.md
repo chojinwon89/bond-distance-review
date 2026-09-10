@@ -5,14 +5,19 @@ The 2026-09-09 refresh adds the existing published single-point dataset to the
 functional results across 133 systems. Unmatched single-point rows remain
 available in the full source CSV; missing matches display a dash.
 
-The Perlmutter extraction covers 1,904 functional jobs. Of these, 664 passed the
+The 2026-09-10 Perlmutter extraction covers 1,904 functional jobs. Of these, 665 passed the
 project collector's reference checks and additional final electronic/ionic
 convergence checks for the complex, slab, and gas molecule. Relative to the
-published `dft_vs_mlip_pairs.csv`, 93 are additional functional entries and 26
+published `dft_vs_mlip_pairs.csv`, 94 are additional functional entries and 26
 have changed energies. Previously published entries that cannot currently be
 verified are retained with explicit tooltips, rather than replaced by values
 from incomplete calculations. Images and geometry measurements are the earlier
 published extraction; this update concerns energies.
+
+The 2026-09-10 refresh adds the newly verified N2/Ir111 BEEF-vdW result
+(-0.43191224 eV). The previous 664 verified energies are unchanged. Twenty
+audit rows changed as calculations progressed; incomplete results remain
+excluded from the verified dataset.
 
 Energy convention: final VASP free-energy TOTEN in eV, as in the existing
 `calc_binding_energy.py`; not sigma-to-zero energy. Adsorption energy is complex

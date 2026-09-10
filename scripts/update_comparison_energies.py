@@ -6,6 +6,7 @@ Exact surface/molecule/functional joins avoid conflating distinct structures.
 Verified Perlmutter energies refresh relaxed cells; existing geometry is preserved.
 """
 import csv
+from datetime import datetime, timezone
 import html
 import math
 import re
@@ -114,7 +115,7 @@ def update():
     changed = sum(abs(r['E_ads_DFT'] - previous.get((r['surface'], r['molecule'], r['functional']), r['E_ads_DFT'])) > 2e-6 for r in refreshed)
     note = f'''<!-- single-point-note -->
   <div class="note info"><b>Single-point adsorption energies added:</b> {len(matched)} functional results across {len(systems)} of the 415 systems below, from the site's published single-point dataset.
-  <br><b>Perlmutter energy refresh (2026-09-09):</b> {len(refreshed)} verified relaxed results are included;
+  <br><b>Perlmutter energy refresh ({datetime.now(timezone.utc).date().isoformat()}):</b> {len(refreshed)} verified relaxed results are included;
   {added} fill previously unavailable functional entries and {changed} update earlier values.
   Only completed, converged calculations with compatible slab references and passing the collector's energy checks are used for this refresh.
   Other relaxed values remain from the previous publication and are identified by their tooltips. Structure images are from the earlier geometry extraction.
