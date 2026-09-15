@@ -1,5 +1,11 @@
 # Kestrel single-point additions
 
+This document records the original Kestrel publication snapshot. Current page
+counts and the later policy allowing review-marked unusual energies are in the
+live coverage report. For portable collection of **both relaxed and SPE** results,
+cross-cluster storage and missing-reference searches, use
+[COMPONENT_STORE.md](COMPONENT_STORE.md).
+
 The comparison page retains all 418 published SPE energies and their published
 single-point ML differences, and fills 314 missing functional entries. It now
 shows 732 SPE energies. The published source dataset remains unchanged; the
@@ -36,8 +42,9 @@ References come from `vasp_mol`, `vasp_slab_kestrel`, and existing size-specific
 or matching slabs in `vasp_slab`. No reference energy is scaled by atom count.
 All 314 new entries select matching references from `vasp_slab`; the standard
 `vasp_slab_kestrel` references were audited as well. Selection requires the same
-surface, functional and composition. Molecule aliases use the project's
-`mol_canon.py`; formate and formic acid remain distinct.
+surface, functional and composition. Molecule aliases use the repository's shared
+`molecule_names.py`; an external `mol_canon.py` is not required. Formate and formic
+acid remain distinct.
 
 The extractor audited 393 reference calculations and 2,156 complex candidates.
 706 candidates pass the checks, yielding 665 distinct screened SPE entries.

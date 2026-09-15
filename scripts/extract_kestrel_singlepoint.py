@@ -6,7 +6,7 @@ import csv
 from decimal import Decimal
 import functools
 import gzip
-import importlib.util
+import hashlib
 import json
 import math
 from pathlib import Path
@@ -18,6 +18,7 @@ import numpy as np
 
 from add_missing_dft_images import incar_values, normalize_setting
 from extract_perlmutter_energies import parse_output
+from molecule_names import canonical
 
 ROOT = Path(__file__).resolve().parents[1]
 FUNC_DIRS = {"PBE": "pbe", "PBE_D3": "pbe_d3", "r2scan": "r2scan", "beef_vdw": "beef_vdw"}
@@ -65,7 +66,10 @@ def component(directory):
         parsed = parse_output(head, tail)
         result.update(energy=parsed["energy"], status=parsed["convergence"], composition=parsed["composition"],
                       potentials=parsed["potentials"], outcar_size=path.stat().st_size,
-                      outcar_mtime_ns=path.stat().st_mtime_ns)
+                      outcar_mtime_ns=path.stat().st_mtime_ns,
+                      outcar_head_tail_sha256=hashlib.sha256(head_bytes + b'\0' + tail_bytes).hexdigest())
+        if parsed.get("failure_reason"):
+            result["note"] = parsed["failure_reason"]
         for key in ("NSW", "IBRION", "EDIFF", "EDIFFG", "GGA", "IVDW", "METAGGA", "LUSE_VDW"):
             if key not in settings:
                 continue
@@ -142,21 +146,20 @@ def main():
     parser.add_argument("--output-root", type=Path, default=ROOT)
     args = parser.parse_args()
     project, output = args.project_root.resolve(), args.output_root.resolve()
-    spec = importlib.util.spec_from_file_location("molecule_names", project / "mol_canon.py")
-    names = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(names)
     page = BeautifulSoup((output / "dft_comparison.html").read_text(), "html.parser")
-    targets = {(card["data-surf"], card["data-mol"]) for card in page.select(".g")}
+    targets = {(card["data-surf"], canonical(card["data-mol"])) for card in page.select(".g")}
     surfaces, molecules = {pair[0] for pair in targets}, {pair[1] for pair in targets}
     references = defaultdict(list)
     components = {}
     for role, roots in (("molecule", [project / "vasp_mol"]),
                         ("slab", [project / "vasp_slab_kestrel", project / "vasp_slab"])):
         for root in roots:
+            if not root.is_dir():
+                continue
             for system in sorted(root.iterdir()):
                 if not system.is_dir():
                     continue
-                label = names.canon_molecule(system.name) if role == "molecule" else re.sub(r"_n\d+$", "", system.name)
+                label = canonical(system.name) if role == "molecule" else re.sub(r"_n\d+$", "", system.name)
                 if label not in (molecules if role == "molecule" else surfaces):
                     continue
                 for directory, expected_func in calculation_dirs(system):
@@ -164,12 +167,15 @@ def main():
                     components[str(directory)] = result
                     if expected_func is not None and result["functional"] != expected_func:
                         continue
-                    if result.get("settings", {}).get("SYSTEM") not in (system.name, label):
+                    system_label = result.get("settings", {}).get("SYSTEM", "")
+                    if not (canonical(system_label) == label if role == "molecule" else system_label in (system.name, label)):
                         continue
                     if is_relaxed(result, result["functional"]):
                         references[(role, label, result["functional"])].append(result)
     print(f"Audited {len(components)} reference calculations; {sum(map(len, references.values()))} converged relaxed references.", flush=True)
     best = project / "poscar" / "best"
+    if not best.is_dir():
+        raise SystemExit("No poscar/best directory; existing exports were preserved. Use component_store.py for other layouts.")
     systems = []
     for entry in sorted(best.iterdir()):
         if entry.is_dir() and re.fullmatch(r"C\d+", entry.name):
@@ -183,7 +189,7 @@ def main():
         if len(pair) != 2:
             continue
         surface, raw_molecule = pair
-        molecule = names.canon_molecule(raw_molecule)
+        molecule = canonical(raw_molecule)
         if (surface, molecule) not in targets:
             continue
         metal = re.match(r"[A-Z][a-z]?", surface).group()
@@ -233,6 +239,8 @@ def main():
             selected[key] = row
     for row in selected.values():
         row["selected"] = "true"
+    if not rows:
+        raise SystemExit("No matching candidates; existing exports were preserved.")
     fields = list(rows[0])
     write_csv(output / "dft_kestrel_singlepoint_audit.csv", rows, fields)
     write_csv(output / "dft_kestrel_singlepoint.csv", [selected[key] for key in sorted(selected)], fields)
