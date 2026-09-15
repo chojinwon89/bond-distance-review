@@ -64,6 +64,7 @@ def main():
                     history=subprocess.check_output(['sacct','-X','-j',job,'-n','-P','-o','State'],text=True,stderr=subprocess.DEVNULL).splitlines()
                     state=history[0].strip('|') if history else 'unknown'
                 except (OSError,subprocess.CalledProcessError):state='unknown'
+            state=', '.join(sorted(set(state.splitlines())))
             campaign=dict(job_id=job,state=state,manifest=str(manifest))
             export_file=manifest.parent/'export_submission.json'
             if export_file.exists():campaign['export']=json.loads(export_file.read_text())
@@ -120,12 +121,13 @@ def main():
     (root/'dft_completion_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     page=re.sub(r'<!-- completion-coverage -->.*?<!-- /completion-coverage -->\n?', '',page,flags=re.S)
     jobs=', '.join(c['job_id']+' ('+c['state']+')' for c in campaigns) or 'none'
+    roles=Counter(j['role'] for j in completion)
     note=f'''<!-- completion-coverage -->
 <div class="note info"><b>Completion status ({summary['snapshot'][:10]}):</b>
 {summary['relaxed_energies']} / 1660 relaxed-energy entries and {summary['SPE_energies']} / 1660 SPE entries are available.
 These include {summary['relaxed_energy_review']} relaxed and {summary['SPE_energy_review']} SPE values marked for energy review; they are excluded from paired figure statistics.
 All 415 systems have images on both sides; 15 DFT contact measurements await their source CONTCARs.
-<br><b>Recovery work:</b> two clean-slab references and two electronic SPE retries target five missing entries. Job {html.escape(jobs)}.
+<br><b>Recovery work:</b> {roles['slab']} clean-slab references, {roles['spe']} electronic SPE retries and {roles['molecule']} gas-molecule reference retries. Campaign jobs: {html.escape(jobs)}.
 The existing SPE array continues separately. Pending results are not displayed as completed data.
 <br><a href="dft_completion_coverage.csv" download>Every energy gap and its status</a> &middot;
 <a href="dft_missing_geometry_sources.csv" download>15 required Kestrel CONTCAR paths</a> &middot;

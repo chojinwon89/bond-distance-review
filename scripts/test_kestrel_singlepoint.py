@@ -120,6 +120,8 @@ class RegenerationTests(unittest.TestCase):
                  'dft_comparison_singlepoint_published.csv', 'dft_kestrel_singlepoint.csv',
                  'dft_structure_sources.json', 'dft_perlmutter_singlepoint.csv',
                  'dft_perlmutter_singlepoint_sources.json']
+        files += [name for name in ['dft_cluster_selection.csv','dft_cluster_selection_summary.json','dft_gas_reference_recovery.json']
+                  if (source/name).exists()]
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name in files:

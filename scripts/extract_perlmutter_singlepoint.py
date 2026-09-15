@@ -63,6 +63,11 @@ def main():
                     references[(role, label, result['functional'])].append(result)
     completion = completion_jobs(project)
     for job in completion:
+        if job['role']=='molecule':
+            directory=Path(job['directory']);result=component(directory)
+            result['completion_job']=job;components[str(directory)]=result
+            if is_relaxed(result,job['functional']):references[('molecule',canonical(job['molecule']),job['functional'])].append(result)
+            continue
         if job['role'] != 'slab':
             continue
         directory = Path(job['directory'])

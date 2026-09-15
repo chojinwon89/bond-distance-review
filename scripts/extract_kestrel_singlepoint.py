@@ -94,7 +94,8 @@ def component(directory):
             raise ValueError("Unrecognized functional")
     except (OSError, ValueError, KeyError, IndexError) as error:
         result.update(status="invalid", note=str(error))
-    return result
+    from structure_identity import attach_geometry
+    return attach_geometry(result,directory)
 
 
 def calculation_dirs(system):
