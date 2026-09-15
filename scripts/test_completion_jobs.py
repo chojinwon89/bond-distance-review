@@ -8,17 +8,18 @@ from completion_support import completion_jobs, matching_slab
 
 
 class CompletionTests(unittest.TestCase):
-    def test_supplemental_slab_rejects_wrong_target_cell_and_changed_input(self):
+    def test_supplemental_slab_reuses_same_surface_but_rejects_wrong_cell_and_changed_input(self):
         from ase import Atoms
         from ase.io import write
         with tempfile.TemporaryDirectory() as d:
             root=Path(d);slab=root/'slab';comp=root/'complex';slab.mkdir();comp.mkdir()
             atoms=Atoms('Cu',positions=[[0,0,0]],cell=[5,5,15],pbc=True)
             write(slab/'POSCAR',atoms,format='vasp');write(comp/'POSCAR',atoms,format='vasp')
-            job=dict(role='slab',functional='beef_vdw',target_systems=['C2H4_Cu100'],directory=str(slab),
+            job=dict(role='slab',surface='Cu100',functional='beef_vdw',target_systems=['C2H4_Cu100'],directory=str(slab),
                      staged_sha256={'POSCAR':hashlib.sha256((slab/'POSCAR').read_bytes()).hexdigest()})
             self.assertTrue(matching_slab(job,'C2H4_Cu100','beef_vdw',comp))
-            self.assertFalse(matching_slab(job,'C2H6_Cu100','beef_vdw',comp))
+            self.assertTrue(matching_slab(job,'C2H6_Cu100','beef_vdw',comp))
+            self.assertFalse(matching_slab(job,'C2H6_Rh100','beef_vdw',comp))
             self.assertFalse(matching_slab(job,'C2H4_Cu100','r2scan',comp))
             atoms.cell[0,0]=6;write(comp/'POSCAR',atoms,format='vasp')
             self.assertFalse(matching_slab(job,'C2H4_Cu100','beef_vdw',comp))

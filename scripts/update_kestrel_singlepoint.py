@@ -36,7 +36,7 @@ def relaxed_cells(page):
             for row in re.findall(r'<tr>(.*?)</tr>', page, re.S) if '<td class="l">' in row]
 
 
-def render(page, screened, previous):
+def render(page, screened, previous, missing=None):
     displayed = []
     additions = []
     old_relaxed = relaxed_cells(page)
@@ -57,6 +57,14 @@ def render(page, screened, previous):
                 saved = previous.get(key, {})
                 candidate = screened.get(key)
                 ml, relaxed = number(cells[2]), number(cells[1])
+                relaxed_review = 'energy-review' in cells[1]
+                spe_review = saved.get('SPE_review') == 'true' or 'energy-review' in cells[4]
+                # A later screened result may supersede an explicitly provisional
+                # review value; previously screened/published values retain priority.
+                if spe_review and candidate and candidate.get('status') == 'ok':
+                    cells[4] = '<td class="sp-energy">&mdash;</td>'
+                    cells[6] = '<td class="sp-energy">&mdash;</td>'
+                    saved = {}; spe_review = False
                 spe = number(cells[4])
                 existing_spe = spe is not None
                 delta = number(cells[6])
@@ -85,28 +93,37 @@ def render(page, screened, previous):
                     provenance = candidate.get("provenance", "Kestrel NSW=0 complex with converged relaxed slab and molecule references")
                     source = candidate["complex_directory"]
                     legacy_ml = str(ml) if ml is not None else ""
+                    spe_review = candidate.get('status') == 'energy_review'
                     additions.append(key)
                 value = combined(ml, spe, relaxed)
                 if spe is None:
                     title = "No published SPE value or screened cluster result; see the source audits"
-                    spe_cell = f'<td class="sp-energy" title="{title}">&mdash;</td>'
+                    status = (missing or {}).get(key, {})
+                    title = html.escape(status.get('title',title),quote=True)
+                    label = html.escape(status.get('label','—'))
+                    spe_cell = f'<td class="sp-energy" title="{title}">{label}</td>'
                 else:
                     title = html.escape(provenance + ("; source: " + source if source else ""), quote=True)
-                    spe_cell = f'<td class="sp-energy" title="{title}">{html.escape(display_spe)}</td>'
+                    marker = ' energy-review' if spe_review else ''
+                    spe_cell = f'<td class="sp-energy{marker}" title="{title}">{html.escape(display_spe)}</td>'
                     displayed.append({"surface": surface, "molecule": molecule, "functional": functional,
                         "E_ads_DFT_SP": str(spe), "E_ads_ML_SP": legacy_ml,
                         "delta_SP": str(delta) if delta is not None else "",
                         "ML_minus_SPE_minus_relaxed_DFT": str(value) if value is not None else "",
                         "E_ads_ML_relaxed_displayed": str(ml) if ml is not None else "",
                         "E_ads_DFT_relaxed_displayed": str(relaxed) if relaxed is not None else "",
-                        "provenance": provenance, "complex_directory": source})
+                        "provenance": provenance, "complex_directory": source,
+                        "relaxed_review": str(relaxed_review).lower(), "SPE_review": str(spe_review).lower(),
+                        "analysis_eligible": str(not relaxed_review and not spe_review).lower()})
                 if value is None:
                     combined_cell = '<td class="sp-energy sp-combined" title="Requires ML and DFT in the relaxed comparison and an SPE value">&mdash;</td>'
                 else:
                     title = html.escape(f"ML - SPE - relaxed DFT = {ml} - ({spe}) - ({relaxed}) eV", quote=True)
-                    combined_cell = f'<td class="sp-energy sp-combined" title="{title}">{value:+.3f}</td>'
+                    marker = ' energy-review' if spe_review or relaxed_review else ''
+                    combined_cell = f'<td class="sp-energy sp-combined{marker}" title="{title}">{value:+.3f}</td>'
                 delta_title = "ML minus SPE; published differences retain their original ML reference in the download"
-                delta_cell = f'<td class="sp-energy" title="{delta_title}">{html.escape(display_delta) if delta is not None else "&mdash;"}</td>'
+                marker = ' energy-review' if spe_review and delta is not None else ''
+                delta_cell = f'<td class="sp-energy{marker}" title="{delta_title}">{html.escape(display_delta) if delta is not None else "&mdash;"}</td>'
                 return '<tr>' + ''.join(cells[:4]) + spe_cell + combined_cell + delta_cell + '</tr>'
 
             table_body = re.sub(r'<tr>(.*?)</tr>', row, table_body, flags=re.S)
@@ -138,9 +155,31 @@ def update(root=ROOT):
     for key, row in perlmutter.items():
         row = dict(row, provenance="Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references")
         screened.setdefault(key, row)
-    page, displayed, additions = render(page, screened, previous)
+    audit_path=root/'dft_perlmutter_singlepoint_audit.csv'
+    audit=list(csv.DictReader(audit_path.open())) if audit_path.exists() else []
+    for row in sorted(audit,key=lambda r:(bool(r.get('site')),r['complex_directory'])):
+        if row['status']=='energy_review' and number(row['E_ads_SPE']) is not None:
+            key=row['surface'],row['molecule'],row['functional']
+            screened.setdefault(key,dict(row,provenance='Perlmutter converged NSW=0 result; ENERGY REVIEW: |E_ads| > 5 eV; excluded from figure statistics'))
+    inventory_path=root/'dft_perlmutter_components.csv'
+    inventory={r['directory']:r for r in csv.DictReader(inventory_path.open())} if inventory_path.exists() else {}
+    missing={}
+    for row in sorted(audit,key=lambda r:(bool(r.get('site')),r['complex_directory'])):
+        key=row['surface'],row['molecule'],row['functional']
+        comp=inventory.get(row['complex_directory'],{})
+        state=comp.get('queue_state','')
+        if state in ('PENDING','RUNNING'):
+            label='queued' if state=='PENDING' else 'running'
+            title='SPE '+label+' at snapshot; job '+comp['queue_job']+'; '+row['complex_directory']
+        else:
+            label={'output_missing':'not run','complex_unconverged':'not converged','reference_unavailable':'refs missing'}.get(row['status'],'unavailable')
+            title=row['status']+': '+row['note']+'; '+row['complex_directory']
+        missing.setdefault(key,dict(label=label,title=title))
+    page, displayed, additions = render(page, screened, previous, missing)
     legacy_count = sum(not row["complex_directory"] for row in displayed)
     perlmutter_count = sum(row['provenance'].startswith('Perlmutter') for row in displayed)
+    review_count = sum(row['SPE_review']=='true' for row in displayed)
+    screened_perlmutter_count = sum(row['provenance'].startswith('Perlmutter') and row['SPE_review']!='true' for row in displayed)
     kestrel_count = len(displayed) - legacy_count - perlmutter_count
     systems = len({(row["surface"], row["molecule"]) for row in displayed})
     summary = (f'<b>Single-point adsorption energies:</b> {len(displayed)} functional results across {systems} of the 415 systems below; '
@@ -178,11 +217,17 @@ def update(root=ROOT):
         note = f'''<!-- perlmutter-singlepoint-note -->
   <div class="note info"><b>Perlmutter SPE refresh ({stamp}):</b> {sum(counts.values())} prepared calculations audited;
   {completed} completed with electronic convergence. {len(perlmutter)} adsorption energies pass the existing reference and energy checks;
-  {perlmutter_count} fill previously missing table entries. All earlier published SPE values and differences are retained.
+  {screened_perlmutter_count} screened Perlmutter results are displayed. All earlier published SPE values and differences are retained.
   <br>These calculations use the <b>original ML POSCAR</b>, verified against the recorded staging hashes, with NSW=0.
   E<sub>ads</sub>(SPE) = E(complex) &minus; E(relaxed slab) &minus; E(relaxed molecule), using the same functional and matching composition.
   POTCAR variants follow the existing project policy; no scaling, offsets or sign-based rejection is applied.
   Missing, incomplete and reference-limited results remain in the audit; the SPE batch is still in progress at this snapshot.
+  <br><b>Review values:</b> {review_count} displayed SPE results are marked in amber with a dagger (†): converged components, but |E<sub>ads</sub>| &gt; 5 eV.
+  These values remain available in the tables and download, and are excluded from figure statistics.
+  <b>Queued/running</b> labels describe the scheduler snapshot, not completed energies.
+  <a href="dft_perlmutter_components.csv" download>All relaxed and SPE component totals in vasp_mol, vasp_slab and dft_jobs</a> &middot;
+  <a href="dft_perlmutter_components_summary.json">Component inventory summary</a> &middot;
+  <a href="scripts/RH_CH3_REFRESH.md">Rh–CH3 findings and refresh methodology</a>.
   <br><a href="dft_perlmutter_singlepoint.csv" download>Screened Perlmutter SPE energies and reference paths</a> &middot;
   <a href="dft_perlmutter_singlepoint_audit.csv" download>All SPE candidates and component total energies</a> &middot;
   <a href="dft_perlmutter_singlepoint_sources.json">Settings, convergence and geometry provenance</a>.</div>

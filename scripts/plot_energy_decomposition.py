@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Descriptive paired analysis of published energies; never refilter or replace them."""
+"""Descriptive paired analysis; explicitly marked energy-review values stay in tables only."""
 import csv
 import hashlib
 import json
@@ -24,6 +24,8 @@ def load_rows(path):
     rows = []
     with path.open(newline='') as source:
         for row in csv.DictReader(source):
+            if row.get('relaxed_review') == 'true' or row.get('SPE_review') == 'true':
+                continue
             try:
                 ml, spe, relaxed = [float(row[k]) for k in (
                     'E_ads_ML_relaxed_displayed', 'E_ads_DFT_SP', 'E_ads_DFT_relaxed_displayed')]
@@ -42,6 +44,8 @@ def common_spe(path):
     systems = {}
     with path.open(newline='') as source:
         for row in csv.DictReader(source):
+            if row.get('SPE_review') == 'true':
+                continue
             try:
                 energy = float(row['E_ads_DFT_SP'])
             except ValueError:
@@ -59,6 +63,8 @@ def save(fig, name):
 
 def main():
     source = ROOT / 'dft_comparison_singlepoint.csv'
+    with source.open(newline='') as f: source_rows=list(csv.DictReader(f))
+    review_excluded=sum(r.get('relaxed_review')=='true' or r.get('SPE_review')=='true' for r in source_rows)
     rows = load_rows(source)
     grouped = {f: [r for r in rows if r['functional'] == f] for f in FUNCTIONALS}
     by_system = {}
@@ -131,6 +137,7 @@ def main():
             writer.writeheader()
             writer.writerows(data)
     metadata = dict(source=source.name, sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
+                    displayed_SPE_rows=len(source_rows),energy_review_rows_excluded=review_excluded,
                     paired_rows=len(rows), systems=len(by_system), common_four_functional_systems=len(common),
                     summary=summaries, functional_shifts=shifts,
                     max_identity_error=max(abs(r['residual'] + r['relaxation_gap'] - r['total']) for r in rows))
@@ -151,7 +158,8 @@ and adsorption-reference conventions match. It includes ML approximation error, 
 it is not a pure functional correction. SPE &minus; relaxed DFT is a relaxation contribution only with compatible references,
 potentials, numerical settings and a linked initial/final geometry. It is not a functional-independent "true error".</p>
 <p><b>Current evidence is descriptive:</b> {len(rows)} complete ML/SPE/relaxed triples across {len(by_system)} exact
-surface/molecule pairs out of 732 published SPE entries. Missing inputs are omitted, never treated as zero.
+surface/molecule pairs out of {len(source_rows)} displayed SPE entries. Missing inputs are omitted, never treated as zero.
+{review_excluded} rows with explicitly marked energy-review values are excluded from these paired statistics; the tables retain their values.
 All panels use the same triples within each functional. Historical and audited results are mixed; geometry identity and
 cross-run reference compatibility have not been established. Kestrel SPE values currently subtract relaxed molecule/slab
 references; the newly submitted reference SPE jobs are not included. POTCAR variants were allowed by the existing publication

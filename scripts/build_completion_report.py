@@ -57,8 +57,13 @@ def main():
         submission=manifest.parent/'submission.json'
         if submission.exists():
             record=json.loads(submission.read_text());job=record['job_id']
-            try:state=subprocess.check_output(['squeue','-j',job,'-h','-o','%T'],text=True).strip() or 'finished; see results'
-            except (OSError,subprocess.CalledProcessError):state='unknown'
+            try:state=subprocess.check_output(['squeue','-j',job,'-h','-o','%T'],text=True,stderr=subprocess.DEVNULL).strip()
+            except (OSError,subprocess.CalledProcessError):state=''
+            if not state:
+                try:
+                    history=subprocess.check_output(['sacct','-X','-j',job,'-n','-P','-o','State'],text=True,stderr=subprocess.DEVNULL).splitlines()
+                    state=history[0].strip('|') if history else 'unknown'
+                except (OSError,subprocess.CalledProcessError):state='unknown'
             campaign=dict(job_id=job,state=state,manifest=str(manifest))
             export_file=manifest.parent/'export_submission.json'
             if export_file.exists():campaign['export']=json.loads(export_file.read_text())
@@ -89,15 +94,18 @@ def main():
             f=FUNCTIONALS[cells[0].get_text()];key=(s,m,f)
             er,em,es=[numeric(cells[i].get_text()) for i in [1,2,4]]
             candidates=spe.get(key,[])
-            if es is not None:status='available'
+            spe_review='energy-review' in cells[4].get('class',[])
+            relaxed_review='energy-review' in cells[1].get('class',[])
+            if es is not None:status='available; energy review' if spe_review else 'available'
             elif key in recovery:status=recovery[key]['status']
             elif any(r['complex_directory'] in queued for r in candidates):status='SPE '+next(queued[r['complex_directory']] for r in candidates if r['complex_directory'] in queued).lower()
             elif candidates:status='; '.join(sorted({r['status'] for r in candidates}))
             else:status='no matching Perlmutter calculation; check Kestrel sources'
             rr=relax.get(key,[])
             report.append(dict(surface=s,molecule=m,functional=f,E_ads_ML=em,E_ads_relaxed=er,E_ads_SPE=es,
-                relaxed_status='available' if er is not None else '; '.join(sorted({r['status'] for r in rr})) or 'no matching Perlmutter calculation',
+                relaxed_status=('available; energy review' if relaxed_review else 'available') if er is not None else '; '.join(sorted({r['status'] for r in rr})) or 'no matching Perlmutter calculation',
                 SPE_status=status,completion_job_directory=recovery.get(key,{}).get('directory',''),
+                relaxed_energy_review=relaxed_review,SPE_energy_review=spe_review,
                 dft_contact_available=bool(dft_match),required_CONTCAR=dft_sources.get(key2,'') if not dft_match else ''))
     with (root/'dft_completion_coverage.csv').open('w',newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(report[0]));w.writeheader();w.writerows(report)
@@ -107,6 +115,7 @@ def main():
                  MLIP_images=sum(r['mlip_image'] for r in geometry),DFT_images=sum(r['dft_image'] for r in geometry),
                  DFT_contacts=sum(r['dft_contact_available'] for r in geometry),relaxed_energies=sum(r['E_ads_relaxed'] is not None for r in report),
                  SPE_energies=sum(r['E_ads_SPE'] is not None for r in report),SPE_status=dict(Counter(r['SPE_status'] for r in report)),
+                 relaxed_energy_review=sum(r['relaxed_energy_review'] for r in report),SPE_energy_review=sum(r['SPE_energy_review'] for r in report),
                  main_SPE_array='58164924',main_SPE_queue=dict(states),recovery_campaigns=campaigns)
     (root/'dft_completion_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     page=re.sub(r'<!-- completion-coverage -->.*?<!-- /completion-coverage -->\n?', '',page,flags=re.S)
@@ -114,6 +123,7 @@ def main():
     note=f'''<!-- completion-coverage -->
 <div class="note info"><b>Completion status ({summary['snapshot'][:10]}):</b>
 {summary['relaxed_energies']} / 1660 relaxed-energy entries and {summary['SPE_energies']} / 1660 SPE entries are available.
+These include {summary['relaxed_energy_review']} relaxed and {summary['SPE_energy_review']} SPE values marked for energy review; they are excluded from paired figure statistics.
 All 415 systems have images on both sides; 15 DFT contact measurements await their source CONTCARs.
 <br><b>Recovery work:</b> two clean-slab references and two electronic SPE retries target five missing entries. Job {html.escape(jobs)}.
 The existing SPE array continues separately. Pending results are not displayed as completed data.

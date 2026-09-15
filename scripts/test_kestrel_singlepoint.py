@@ -89,6 +89,26 @@ class SPETableTests(unittest.TestCase):
         self.assertEqual(rows[0]["delta_SP"], "0.456")
         self.assertIn('>+0.456</td>', result)
 
+    def test_review_value_is_visible_flagged_and_excluded_until_screened_replacement(self):
+        reviewed={self.key:dict(E_ads_SPE='-20.123456',complex_directory='/review/SPE',status='energy_review',provenance='Perlmutter ENERGY REVIEW')}
+        page,rows,_=render(fixture(),reviewed,{})
+        self.assertIn('energy-review',page)
+        self.assertEqual(rows[0]['SPE_review'],'true')
+        self.assertEqual(rows[0]['analysis_eligible'],'false')
+        self.assertEqual(rows[0]['E_ads_DFT_SP'],'-20.123456')
+        again,_,_=render(page,reviewed,{self.key:rows[0]})
+        self.assertEqual(page,again)
+        screened={self.key:dict(self.screened[self.key],status='ok')}
+        _,updated,_=render(page,screened,{self.key:rows[0]})
+        self.assertEqual(updated[0]['SPE_review'],'false')
+        self.assertEqual(updated[0]['E_ads_DFT_SP'],'-3.2039268')
+
+    def test_queue_status_does_not_become_an_energy(self):
+        page,rows,_=render(fixture(),{},{},{self.key:dict(label='queued',title='SPE queued; task 123')})
+        self.assertEqual(rows,[])
+        self.assertIn('>queued</td>',page)
+        self.assertIn('task 123',page)
+
 
 class RegenerationTests(unittest.TestCase):
     def test_relaxed_updater_retains_spe_additions_and_layout(self):

@@ -1,28 +1,32 @@
 {
-  "snapshot": "2026-09-15T04:38:14.284824+00:00",
+  "snapshot": "2026-09-15T14:57:16.022611+00:00",
   "systems": 415,
   "functional_entries": 1660,
   "MLIP_images": 415,
   "DFT_images": 415,
   "DFT_contacts": 400,
-  "relaxed_energies": 1103,
-  "SPE_energies": 759,
+  "relaxed_energies": 1311,
+  "SPE_energies": 893,
   "SPE_status": {
-    "available": 759,
-    "SPE pending": 857,
+    "available": 850,
+    "SPE pending": 638,
+    "reference_unavailable": 83,
+    "available; energy review": 43,
     "no matching Perlmutter calculation; check Kestrel sources": 33,
-    "energy_review": 6,
-    "recovery pending": 5
+    "complex_unconverged": 5,
+    "SPE running": 8
   },
+  "relaxed_energy_review": 186,
+  "SPE_energy_review": 43,
   "main_SPE_array": "58164924",
   "main_SPE_queue": {
-    "PENDING": 1671,
-    "RUNNING": 3
+    "PENDING": 1269,
+    "RUNNING": 18
   },
   "recovery_campaigns": [
     {
       "job_id": "58336200",
-      "state": "PENDING",
+      "state": "COMPLETED",
       "manifest": "/pscratch/sd/j/jcho5/VASP/completion_runs/site_gapfill_20260914/manifest.json",
       "export": {
         "job_id": "58336271",

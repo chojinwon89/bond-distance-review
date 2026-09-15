@@ -81,6 +81,24 @@ class PublishedEnergyTests(unittest.TestCase):
         self.assertEqual(before, after)
         self.assertIn('Reference rerun in progress', (self.root / 'dft_comparison.html').read_text())
 
+    def test_review_result_fills_blank_with_flag_but_not_screened_export(self):
+        from bs4 import BeautifulSoup
+        path=self.root/'dft_comparison.html'
+        page=path.read_text()
+        pattern=r'(<div class="g" data-surf="Rh100" data-mol="CH3">)(.*?)(?=<div class="g" data-surf=|<script>)'
+        def blank(match):
+            body=re.sub(r'(<tr><td class="l">BEEF-vdW</td>)<td[^>]*>.*?</td>',r'\1<td>&mdash;</td>',match.group(2),count=1)
+            return match.group(1)+body
+        path.write_text(re.sub(pattern,blank,page,flags=re.S))
+        self.update()
+        page=BeautifulSoup(path.read_text(),'html.parser')
+        card=page.select_one('.g[data-surf="Rh100"][data-mol="CH3"]')
+        row=next(r for r in card.select('tr') if r.select('td') and r.select('td')[0].get_text()=='BEEF-vdW')
+        self.assertIn('energy-review',row.select('td')[1].get('class',[]))
+        self.assertEqual(row.select('td')[1].get_text(),'-28.388')
+        with (self.root/'dft_comparison_perlmutter.csv').open() as f:
+            self.assertFalse(any(r['system']=='CH3_Rh100' and r['functional']=='beef_vdw' for r in csv.DictReader(f)))
+
 
 if __name__ == '__main__':
     unittest.main()

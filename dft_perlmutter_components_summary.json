@@ -1,0 +1,28 @@
+{
+  "extracted_at": "2026-09-15T14:53:02.939643+00:00",
+  "project_root": "/pscratch/sd/j/jcho5/VASP",
+  "policy": "All INCAR paths discovered without ignore rules or recursive symlink following. NSW=0 identifies SPE; NSW>0 identifies relaxation. A raw TOTEN is not an adsorption energy. Nonconverged totals are recorded as diagnostics only.",
+  "calculations": 4554,
+  "by_tree": {
+    "vasp_mol": 557,
+    "vasp_slab": 189,
+    "dft_jobs": 3808
+  },
+  "by_mode": {
+    "relaxation": 2650,
+    "single-point": 1904
+  },
+  "by_status": {
+    "unfinished": 316,
+    "converged": 2476,
+    "ionic_unconverged": 18,
+    "invalid": 1733,
+    "electronic_unconverged": 11
+  },
+  "converged_by_tree_and_mode": {
+    "vasp_mol/relaxation": 436,
+    "vasp_slab/relaxation": 144,
+    "dft_jobs/single-point": 603,
+    "dft_jobs/relaxation": 1293
+  }
+}

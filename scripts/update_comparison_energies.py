@@ -38,10 +38,16 @@ def update():
                'CH3OCH3': 'DME', 'CH3OH': 'methanol', 'CH4': 'methane',
                'H2CO': 'formaldehyde', 'HCOOH': 'formic_acid'}
     relaxed = {}
+    review = {}
     audited = {}
     for row in read_csv('dft_perlmutter_energy_audit.csv'):
         key = row['surface'], aliases.get(row['molecule'], row['molecule']), row['functional']
         audited.setdefault(key, []).append(row)
+        if row['status'] == 'energy_review' and row.get('E_ads_raw'):
+            # Keep the explicit base system before site variants; never choose a
+            # review value by its unusually low energy.
+            if key not in review or (len(row['system'].split('_')), row['system']) < (len(review[key]['system'].split('_')), review[key]['system']):
+                review[key] = row
         if row['publishable'] != 'true':
             continue
         # If multiple adsorption sites exist, use the lowest verified energy.
@@ -57,6 +63,7 @@ def update():
     for (surface, molecule, functional), value in ml.items():
         ml_by_system.setdefault((surface, molecule), set()).add(value)
     refreshed = []
+    reviewed = []
     retained = []
     path = ROOT / 'dft_comparison.html' 
     page = path.read_text().replace('minmax(330px,1fr)', 'minmax(min(100%,480px),1fr)')
@@ -82,10 +89,19 @@ def update():
                 key = surface, molecule, functional
                 current = relaxed.get(key)
                 tds = re.findall(r'<td[^>]*>.*?</td>', cells)
+                displayed = html.unescape(re.sub('<[^>]+>', '', tds[1]))
+                try: has_displayed = math.isfinite(float(displayed))
+                except ValueError: has_displayed = False
+                is_review = False
+                if not current and key in review and (not has_displayed or 'energy-review' in tds[1]) and key not in published:
+                    current = dict(review[key], E_ads=review[key]['E_ads_raw'])
+                    is_review = True
                 if current:
                     energy = float(current['E_ads'])
-                    title = html.escape('Screened Perlmutter result: ' + current['system'], quote=True)
-                    tds[1] = f'<td title="{title}">{energy:.3f}</td>'
+                    annotation = ('Converged Perlmutter result; ENERGY REVIEW: |E_ads| > 5 eV; excluded from figure statistics. ' if is_review else 'Screened Perlmutter result: ') + current['system']
+                    title = html.escape(annotation, quote=True)
+                    marker = ' class="energy-review"' if is_review else ''
+                    tds[1] = f'<td{marker} title="{title}">{energy:.3f}</td>'
                     ml_energy = ml.get(key)
                     candidates = ml_by_system.get((surface, molecule), set())
                     if ml_energy is None and len(candidates) == 1:
@@ -99,12 +115,14 @@ def update():
                             pass
                     if ml_energy is not None:
                         delta = ml_energy - energy
-                        tds[3] = f'<td title="ML minus relaxed DFT">{delta:+.3f}</td>'
+                        delta_title = 'ML minus relaxed DFT' + ('; includes an energy-review value' if is_review else '')
+                        tds[3] = f'<td{marker} title="{delta_title}">{delta:+.3f}</td>'
                     else:
                         tds[3] = '<td>&mdash;</td>'
-                    refreshed.append({'surface': surface, 'molecule': molecule, 'functional': functional,
+                    result = {'surface': surface, 'molecule': molecule, 'functional': functional,
                                       'system': current['system'], 'E_ads_DFT': energy,
-                                      'E_ads_ML': ml_energy, 'delta_eV': None if ml_energy is None else ml_energy-energy})
+                                      'E_ads_ML': ml_energy, 'delta_eV': None if ml_energy is None else ml_energy-energy}
+                    (reviewed if is_review else refreshed).append(result)
                 else:
                     candidates = audited.get(key, [])
                     labels = {'pseudopotential_mismatch': 'POTCAR mismatch',
@@ -134,7 +152,8 @@ def update():
                         tds[3] = '<td>{}</td>'.format(html.escape(saved['delta_eV']))
                     if has_displayed_energy or saved:
                         annotation = 'Previously published energy retained; current audit: ' + status + '. ' + detail
-                        tds[1] = '<td title="{}">{}</td>'.format(html.escape(annotation, quote=True), html.escape(displayed))
+                        marker = ' class="energy-review"' if 'energy-review' in tds[1] else ''
+                        tds[1] = '<td{} title="{}">{}</td>'.format(marker, html.escape(annotation, quote=True), html.escape(displayed))
                         retained.append(key)
                     else:
                         annotation = 'No previously published energy; current audit: ' + status + '. ' + detail
@@ -167,6 +186,10 @@ def update():
   {added} fill previously unavailable functional entries and {changed} update earlier values.
   These results pass completion, electronic/ionic convergence, atom-count and composition checks,
   and the |E<sub>ads</sub>| &le; 5 eV review screen.
+  <br><b>Completed results outside the review range:</b> {len(reviewed)} additional relaxed values are shown in amber with a dagger (†).
+  They passed convergence and composition checks but exceed |E<sub>ads</sub>| = 5 eV; they are not screened benchmark values.
+  They and any derived differences are excluded from the energy-figure statistics.
+  <a href="dft_comparison_review.csv" download>Displayed relaxed results requiring energy review</a>.
   Positive absolute total energies are allowed; their sign does not determine convergence or reference compatibility.
   <br><b>Project reference policy:</b> POTCAR variants such as Ag and Ag_pv are treated as equivalent for filtering.
   Potential identity differences do not exclude a result; the original potential names remain in the audit.
@@ -174,7 +197,7 @@ def update():
   <br><b>Previously published values preserved:</b> {len(retained)} additional relaxed energies and their published ML differences are retained
   when the current audit cannot supply a replacement. These are historical results, not newly screened results.
   Hover over an energy or dash for its provenance and current audit findings; audit findings do not replace published energies.
-  A dash in a relaxed DFT cell means neither a published value nor a new screened result is available.
+  A dash in a relaxed DFT cell means no retained published value or completed, composition-matched result is available.
   <a href="dft_comparison_published_relaxed.csv" download>Published relaxed-energy snapshot</a>.
   {image_note} the single-point dataset has not been re-audited against these OUTCARs.
   <a href="dft_comparison_perlmutter.csv" download>Screened relaxed energies</a> &middot;
@@ -190,6 +213,8 @@ def update():
     page = page.replace('<h2>Per-system structure', note + '<h2>Per-system structure')
     if '.energy-scroll{' not in page:
         page = page.replace('</style>', '.energy-scroll{overflow-x:auto;}\n table.mini th,table.mini td{white-space:nowrap;}\n table.mini .sp-energy{background:rgba(76,120,168,.10);}\n</style>')
+    if '.energy-review::after' not in page:
+        page = page.replace('</style>', 'table.mini td.energy-review{color:#ffd479;background:rgba(224,168,0,.12);}\n.energy-review::after{content:" †";}\n</style>')
     path.write_text(page)
     with (ROOT / 'dft_comparison_singlepoint.csv').open('w', newline='') as out:
         writer = csv.DictWriter(out, fieldnames=list(matched[0]))
@@ -199,6 +224,9 @@ def update():
         writer = csv.DictWriter(out, fieldnames=['surface', 'molecule', 'functional', 'system', 'E_ads_DFT', 'E_ads_ML', 'delta_eV'])
         writer.writeheader()
         writer.writerows(refreshed)
+    with (ROOT / 'dft_comparison_review.csv').open('w', newline='') as out:
+        writer = csv.DictWriter(out, fieldnames=['surface', 'molecule', 'functional', 'system', 'E_ads_DFT', 'E_ads_ML', 'delta_eV'])
+        writer.writeheader(); writer.writerows(reviewed)
     print(f'Added {len(matched)} single-point results across {len(systems)} systems; refreshed {len(refreshed)} relaxed results')
     if kestrel_enabled:
         from update_kestrel_singlepoint import update as update_singlepoint
