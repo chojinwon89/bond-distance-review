@@ -98,7 +98,8 @@ class RegenerationTests(unittest.TestCase):
                  'dft_singlepoint_vs_sevennet.csv', 'dft_vs_mlip_pairs.csv',
                  'dft_comparison_published_relaxed.csv', 'dft_comparison_singlepoint.csv',
                  'dft_comparison_singlepoint_published.csv', 'dft_kestrel_singlepoint.csv',
-                 'dft_structure_sources.json']
+                 'dft_structure_sources.json', 'dft_perlmutter_singlepoint.csv',
+                 'dft_perlmutter_singlepoint_sources.json']
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name in files:
@@ -117,7 +118,10 @@ class RegenerationTests(unittest.TestCase):
             self.assertEqual(first, second)
             self.assertEqual(relaxed_cells(original), relaxed_cells(first))
             self.assertEqual(re.findall(r'<img\b[^>]*>', original), re.findall(r'<img\b[^>]*>', first))
-            self.assertIn('732 functional results', first)
+            import csv
+            with (source / 'dft_comparison_singlepoint.csv').open() as f:
+                expected_count = len(list(csv.DictReader(f)))
+            self.assertIn(f'{expected_count} functional results', first)
             self.assertIn('sp-combined', first)
             self.assertNotIn('<th class="sp-energy">ML</th>', first)
 

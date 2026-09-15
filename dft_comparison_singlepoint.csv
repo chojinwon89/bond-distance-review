@@ -522,6 +522,14 @@ Ir110,ethene,pbe,-1.59519830,-2.25,-0.65480170,1.14919830,-2.25,-1.804,Kestrel N
 Ir110,ethene,pbe_d3,-2.00179336,-2.25,-0.24820664,1.93679336,-2.25,-2.185,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethene/singlepoint/PBE_D3
 Ir110,ethene,r2scan,-1.70699959,-2.25,-0.54300041,1.33499959,-2.25,-1.878,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethene/singlepoint/r2scan
 Ir110,ethene,beef_vdw,-1.72469031,-2.25,-0.52530969,1.35069031,-2.25,-1.876,Kestrel NSW=0 complex with converged relaxed slab and molecule references,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C2/Ir110_ethylene/singlepoint/beef_vdw
+Ir111,ethane,pbe,0.10152203,-0.38,-0.48152203,-0.47652203,-0.38,-0.005,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ir111/singlepoint/PBE
+Ir111,ethane,pbe_d3,-0.09655536,-0.38,-0.28344464,0.06255536,-0.38,-0.346,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ir111/singlepoint/PBE_D3
+Ir111,ethane,r2scan,0.15574542,-0.38,-0.53574542,-0.46274542,-0.38,-0.073,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ir111/singlepoint/r2scan
+Ir111,ethane,beef_vdw,-0.25091594,-0.38,-0.12908406,0.18491594,-0.38,-0.314,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ir111/singlepoint/beef_vdw
+Ir111,ethene,pbe,-0.70634766,-1.37,-0.66365234,0.13034766,-1.37,-0.794,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ir111/singlepoint/PBE
+Ir111,ethene,pbe_d3,-0.97690933,-1.37,-0.39309067,0.86890933,-1.37,-1.262,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ir111/singlepoint/PBE_D3
+Ir111,ethene,r2scan,-0.79731384,-1.37,-0.57268616,0.48831384,-1.37,-1.061,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ir111/singlepoint/r2scan
+Ir111,ethene,beef_vdw,-0.92279659,-1.37,-0.44720341,0.55879659,-1.37,-1.006,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ir111/singlepoint/beef_vdw
 Pd100,CO2,pbe,-0.012082,-0.471163,-0.459081,-0.067918,-0.47,-0.39,Previously published single-point result,
 Pd100,CO2,r2scan,-0.011999,-0.471163,-0.459164,0.181999,-0.47,-0.64,Previously published single-point result,
 Pd100,CO2,beef_vdw,-0.186887,-0.471163,-0.284276,,-0.47,,Previously published single-point result,
@@ -639,6 +647,7 @@ Pt100,ethanol,pbe_d3,-0.006611,-0.709301,-0.70269,1.016611,-0.71,-1.72,Previousl
 Pt100,ethanol,r2scan,0.284814,-0.709301,-0.994115,0.825186,-0.71,-1.82,Previously published single-point result,
 Pt100,ethanol,beef_vdw,0.087618,-0.709301,-0.796919,,-0.71,,Previously published single-point result,
 Pt100,ethene,pbe,-1.123251,-1.614788,-0.491537,1.082251,-1.61,-1.569,Previously published single-point result,
+Pt100,ethene,pbe_d3,-1.96025946,-1.61,0.35025946,2.45725946,-1.61,-2.107,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pt100/singlepoint/PBE_D3
 Pt100,ethene,r2scan,-1.384339,-1.614788,-0.230449,1.892339,-1.61,-2.118,Previously published single-point result,
 Pt100,ethene,beef_vdw,-1.150759,-1.614788,-0.464029,,-1.61,,Previously published single-point result,
 Pt100,glycerol,pbe,0.375458,-1.045982,-1.42144,-0.075458,-1.05,-1.35,Previously published single-point result,
@@ -731,3 +740,21 @@ Pt111,propene,pbe,-0.944099,-1.681343,-0.737244,1.134099,-1.68,-1.87,Previously 
 Pt111,propene,pbe_d3,-1.419234,-1.681343,-0.262109,2.429234,-1.68,-2.69,Previously published single-point result,
 Pt111,propene,r2scan,-1.140563,-1.681343,-0.54078,2.110563,-1.68,-2.65,Previously published single-point result,
 Pt111,propene,beef_vdw,-1.202218,-1.681343,-0.479125,,-1.68,,Previously published single-point result,
+Rh100,ethane,pbe,-0.21181313,-0.59,-0.37818687,-0.00518687,-0.59,-0.373,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh100/singlepoint/PBE
+Rh100,ethane,pbe_d3,-0.59645034,-0.59,0.00645034,0.75545034,-0.59,-0.749,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh100/singlepoint/PBE_D3
+Rh100,ethane,r2scan,-0.59744064,-0.59,0.00744064,0.64144064,-0.59,-0.634,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh100/singlepoint/r2scan
+Rh100,ethene,pbe,-1.40004297,-1.97,-0.56995703,0.93104297,-1.97,-1.501,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh100/singlepoint/PBE
+Rh100,ethene,pbe_d3,-1.82299915,-1.97,-0.14700085,1.82199915,-1.97,-1.969,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh100/singlepoint/PBE_D3
+Rh100,ethene,r2scan,-1.65280682,-1.97,-0.31719318,1.47680682,-1.97,-1.794,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh100/singlepoint/r2scan
+Rh110,ethane,pbe,-0.20134941,-0.62,-0.41865059,-0.13665059,-0.62,-0.282,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh110/singlepoint/PBE
+Rh110,ethane,pbe_d3,-0.58126724,-0.62,-0.03873276,0.56526724,-0.62,-0.604,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh110/singlepoint/PBE_D3
+Rh110,ethane,r2scan,-0.36455411,-0.62,-0.25544589,0.18755411,-0.62,-0.443,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh110/singlepoint/r2scan
+Rh110,ethene,pbe,-1.41168019,-1.99,-0.57831981,0.89168019,-1.99,-1.470,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh110/singlepoint/PBE
+Rh110,ethene,pbe_d3,-1.8176342,-1.99,-0.1723658,1.7056342,-1.99,-1.878,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh110/singlepoint/PBE_D3
+Rh110,ethene,r2scan,-1.5020212,-1.99,-0.4879788,1.1150212,-1.99,-1.603,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh110/singlepoint/r2scan
+Rh111,ethane,pbe,-0.52661587,-0.52,0.00661587,0.70861587,-0.52,-0.702,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh111/singlepoint/PBE
+Rh111,ethane,pbe_d3,-0.73301469,-0.52,0.21301469,1.32201469,-0.52,-1.109,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh111/singlepoint/PBE_D3
+Rh111,ethane,r2scan,-0.68661065,-0.52,0.16661065,0.98661065,-0.52,-0.82,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh111/singlepoint/r2scan
+Rh111,ethene,pbe,-1.45337259,-1.54,-0.08662741,1.51637259,-1.54,-1.603,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/singlepoint/PBE
+Rh111,ethene,pbe_d3,-1.6512151,-1.54,0.1112151,2.1732151,-1.54,-2.062,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/singlepoint/PBE_D3
+Rh111,ethene,r2scan,-1.69975671,-1.54,0.15975671,2.15975671,-1.54,-2.00,Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/singlepoint/r2scan

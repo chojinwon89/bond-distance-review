@@ -3,6 +3,7 @@
 import csv
 from decimal import Decimal, InvalidOperation
 import html
+import json
 from pathlib import Path
 import re
 
@@ -81,13 +82,13 @@ def render(page, screened, previous):
                     display_spe = f"{spe:+.3f}"
                     delta = ml - spe if ml is not None else None
                     display_delta = f"{delta:+.3f}" if delta is not None else ""
-                    provenance = "Kestrel NSW=0 complex with converged relaxed slab and molecule references"
+                    provenance = candidate.get("provenance", "Kestrel NSW=0 complex with converged relaxed slab and molecule references")
                     source = candidate["complex_directory"]
                     legacy_ml = str(ml) if ml is not None else ""
                     additions.append(key)
                 value = combined(ml, spe, relaxed)
                 if spe is None:
-                    title = "No published SPE value or screened Kestrel result; see the Kestrel audit"
+                    title = "No published SPE value or screened cluster result; see the source audits"
                     spe_cell = f'<td class="sp-energy" title="{title}">&mdash;</td>'
                 else:
                     title = html.escape(provenance + ("; source: " + source if source else ""), quote=True)
@@ -133,12 +134,17 @@ def update(root=ROOT):
     previous = read_rows(snapshot)
     previous.update(read_rows(root / "dft_comparison_singlepoint.csv"))
     screened = read_rows(root / "dft_kestrel_singlepoint.csv")
+    perlmutter = read_rows(root / "dft_perlmutter_singlepoint.csv")
+    for key, row in perlmutter.items():
+        row = dict(row, provenance="Perlmutter NSW=0 original ML POSCAR with converged relaxed slab and molecule references")
+        screened.setdefault(key, row)
     page, displayed, additions = render(page, screened, previous)
     legacy_count = sum(not row["complex_directory"] for row in displayed)
-    kestrel_count = len(displayed) - legacy_count
+    perlmutter_count = sum(row['provenance'].startswith('Perlmutter') for row in displayed)
+    kestrel_count = len(displayed) - legacy_count - perlmutter_count
     systems = len({(row["surface"], row["molecule"]) for row in displayed})
     summary = (f'<b>Single-point adsorption energies:</b> {len(displayed)} functional results across {systems} of the 415 systems below; '
-               f'{legacy_count} previously published results retained and {kestrel_count} Kestrel results added using relaxed references.')
+               f'{legacy_count} original published results, {kestrel_count} Kestrel results and {perlmutter_count} Perlmutter results; cluster additions use relaxed references.')
     page = re.sub(r'<b>Single-point adsorption energies(?: added)?:</b>.*?(?=\n  <br><b>Perlmutter)', summary, page, flags=re.S)
     page = page.replace('the single-point dataset has not been re-audited against these OUTCARs.',
                         'historical single-point values are retained; new Kestrel results have a separate source audit.')
@@ -161,12 +167,34 @@ def update(root=ROOT):
 <!-- /kestrel-singlepoint-note -->
 '''
     page = page.replace('<h2>Per-system structure', note + '<h2>Per-system structure')
+    page = re.sub(r'<!-- perlmutter-singlepoint-note -->.*?<!-- /perlmutter-singlepoint-note -->\n?', '', page, flags=re.S)
+    source_path = root / 'dft_perlmutter_singlepoint_sources.json'
+    if source_path.exists():
+        metadata = json.loads(source_path.read_text())
+        counts = metadata['counts']
+        completed = sum(c.get('status') == 'converged' for path, c in metadata['components'].items()
+                        if '/dft_jobs/' in path and '/singlepoint/' in path)
+        stamp = metadata['extracted_at'][:10]
+        note = f'''<!-- perlmutter-singlepoint-note -->
+  <div class="note info"><b>Perlmutter SPE refresh ({stamp}):</b> {sum(counts.values())} prepared calculations audited;
+  {completed} completed with electronic convergence. {len(perlmutter)} adsorption energies pass the existing reference and energy checks;
+  {perlmutter_count} fill previously missing table entries. All earlier published SPE values and differences are retained.
+  <br>These calculations use the <b>original ML POSCAR</b>, verified against the recorded staging hashes, with NSW=0.
+  E<sub>ads</sub>(SPE) = E(complex) &minus; E(relaxed slab) &minus; E(relaxed molecule), using the same functional and matching composition.
+  POTCAR variants follow the existing project policy; no scaling, offsets or sign-based rejection is applied.
+  Missing, incomplete and reference-limited results remain in the audit; the SPE batch is still in progress at this snapshot.
+  <br><a href="dft_perlmutter_singlepoint.csv" download>Screened Perlmutter SPE energies and reference paths</a> &middot;
+  <a href="dft_perlmutter_singlepoint_audit.csv" download>All SPE candidates and component total energies</a> &middot;
+  <a href="dft_perlmutter_singlepoint_sources.json">Settings, convergence and geometry provenance</a>.</div>
+<!-- /perlmutter-singlepoint-note -->
+'''
+        page = page.replace('<h2>Per-system structure', note + '<h2>Per-system structure')
     page_path.write_text(page)
     with (root / "dft_comparison_singlepoint.csv").open("w", newline="") as output:
         writer = csv.DictWriter(output, fieldnames=list(displayed[0]))
         writer.writeheader()
         writer.writerows(displayed)
-    print(f"Displayed {len(displayed)} SPE results ({kestrel_count} Kestrel additions, {legacy_count} preserved); filled {len(additions)} missing cells this run.")
+    print(f"Displayed {len(displayed)} SPE results ({kestrel_count} Kestrel, {perlmutter_count} Perlmutter, {legacy_count} original published); filled {len(additions)} missing cells this run.")
 
 
 if __name__ == "__main__":
