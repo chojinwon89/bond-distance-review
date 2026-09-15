@@ -1,7 +1,7 @@
 {
   "source": "dft_comparison_singlepoint.csv",
-  "sha256": "4952e3a2e6651456c21277bbaffeab279f1433e06f5538cfdff3abe67c64c106",
-  "paired_rows": 580,
+  "sha256": "cc14baca3fbcf6618c49c260a002f5d3d5f4d70d090c1eabedc23df72d560c98",
+  "paired_rows": 582,
   "systems": 213,
   "common_four_functional_systems": 113,
   "summary": [
@@ -25,11 +25,11 @@
     },
     {
       "functional": "r2SCAN",
-      "n": 183,
-      "mean_residual": -0.20273353,
-      "mae_residual": 0.6637992197267758,
-      "mean_gap": 0.7106023824590163,
-      "mae_total": 0.7255956284153005,
+      "n": 185,
+      "mean_residual": -0.18764137010810814,
+      "mae_residual": 0.669523458,
+      "mean_gap": 0.7046305592972972,
+      "mae_total": 0.7323621621621621,
       "negative_gap_count": 3
     },
     {

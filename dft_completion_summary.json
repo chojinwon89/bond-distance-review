@@ -1,0 +1,57 @@
+{
+  "snapshot": "2026-09-15T04:38:14.284824+00:00",
+  "systems": 415,
+  "functional_entries": 1660,
+  "MLIP_images": 415,
+  "DFT_images": 415,
+  "DFT_contacts": 400,
+  "relaxed_energies": 1103,
+  "SPE_energies": 759,
+  "SPE_status": {
+    "available": 759,
+    "SPE pending": 857,
+    "no matching Perlmutter calculation; check Kestrel sources": 33,
+    "energy_review": 6,
+    "recovery pending": 5
+  },
+  "main_SPE_array": "58164924",
+  "main_SPE_queue": {
+    "PENDING": 1671,
+    "RUNNING": 3
+  },
+  "recovery_campaigns": [
+    {
+      "job_id": "58336200",
+      "state": "PENDING",
+      "manifest": "/pscratch/sd/j/jcho5/VASP/completion_runs/site_gapfill_20260914/manifest.json",
+      "export": {
+        "job_id": "58336271",
+        "dependency": "58336200",
+        "output_site": "/pscratch/sd/j/jcho5/VASP/completion_runs/site_gapfill_20260914/reports/site",
+        "automatic_publish": false,
+        "command": [
+          "sbatch",
+          "--parsable",
+          "--dependency=afterany:58336200",
+          "-A",
+          "m5281",
+          "-C",
+          "cpu",
+          "-q",
+          "shared",
+          "-n",
+          "1",
+          "-c",
+          "2",
+          "-t",
+          "00:20:00",
+          "-J",
+          "dft_page_export",
+          "--output=/pscratch/sd/j/jcho5/VASP/completion_runs/site_gapfill_20260914/logs/export_%j.out",
+          "--error=/pscratch/sd/j/jcho5/VASP/completion_runs/site_gapfill_20260914/logs/export_%j.err",
+          "/pscratch/sd/j/jcho5/VASP/completion_runs/site_gapfill_20260914/export_after_jobs.sh"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+surface,molecule,mlip_image,mlip_variant,dft_image,dft_contact_available,missing_geometry_source
+Ag100,H2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_H2/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag100,O2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_O2/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag100,formate,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag100_formate/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag110,H2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_H2/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag110,O2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_O2/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag110,formate,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag110_formate/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag111,H2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_H2/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag111,O2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_O2/singlepoint/PBE/fully_relaxed/CONTCAR
+Ag111,formate,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Ag111_formate/singlepoint/beef_vdw/fully_relaxed/CONTCAR
+Au111,H2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_H2/singlepoint/PBE/fully_relaxed/CONTCAR
+Au111,O2,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_O2/singlepoint/PBE/fully_relaxed/CONTCAR
+Au111,formate,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Au111_formate/singlepoint/PBE/fully_relaxed/CONTCAR
+Cu111,CO,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_CO/singlepoint/PBE/fully_relaxed/CONTCAR
+Cu111,formic_acid,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_formic_acid/singlepoint/PBE/fully_relaxed/CONTCAR
+Cu111,methanol,True,SevenNet-OMNI,True,False,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/Cu111_methanol/singlepoint/PBE_D3/fully_relaxed/CONTCAR

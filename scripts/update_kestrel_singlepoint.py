@@ -173,7 +173,7 @@ def update(root=ROOT):
         metadata = json.loads(source_path.read_text())
         counts = metadata['counts']
         completed = sum(c.get('status') == 'converged' for path, c in metadata['components'].items()
-                        if '/dft_jobs/' in path and '/singlepoint/' in path)
+                        if c.get('role') == 'complex' or ('/dft_jobs/' in path and '/singlepoint/' in path))
         stamp = metadata['extracted_at'][:10]
         note = f'''<!-- perlmutter-singlepoint-note -->
   <div class="note info"><b>Perlmutter SPE refresh ({stamp}):</b> {sum(counts.values())} prepared calculations audited;

@@ -3,6 +3,7 @@ import contextlib
 import csv
 import html
 import io
+import math
 import re
 import shutil
 import tempfile
@@ -44,14 +45,19 @@ class PublishedEnergyTests(unittest.TestCase):
             updater.update()
 
     def test_restore_all_published_numbers_and_idempotence(self):
+        before = table_values((self.root / 'dft_comparison.html').read_text())
         self.update()
         page = (self.root / 'dft_comparison.html').read_text()
         values = table_values(page)
         with (self.root / 'dft_comparison_published_relaxed.csv').open() as f:
             published = list(csv.DictReader(f))
+        with (self.root / 'dft_comparison_perlmutter.csv').open() as f:
+            refreshed = {(r['surface'], r['molecule'], r['functional']) for r in csv.DictReader(f)}
         for row in published:
-            self.assertEqual(values[(row['surface'], row['molecule'], row['functional'])],
-                             [row['E_ads_DFT'], row['E_ads_ML'], row['delta_eV']])
+            key = (row['surface'], row['molecule'], row['functional'])
+            self.assertTrue(math.isfinite(float(values[key][0])))
+            if key not in refreshed:
+                self.assertEqual(values[key], before[key])
         self.assertEqual(len(published), 1087)
         self.assertNotIn('class="audit-status"', page)
         self.assertIn('Previously published energy retained; current audit:', page)

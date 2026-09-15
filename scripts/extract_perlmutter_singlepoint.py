@@ -15,6 +15,8 @@ import re
 import numpy as np
 from extract_kestrel_singlepoint import component, calculation_dirs, is_relaxed, assess, write_csv, FUNC_DIRS
 
+from completion_support import completion_jobs, matching_slab
+
 ROOT = Path(__file__).resolve().parents[1]
 ALIASES = {'C2H2': 'acetylene', 'C2H4': 'ethene', 'ethylene': 'ethene',
            'C2H6': 'ethane', 'CH3CH2OH': 'ethanol', 'C2H5OH': 'ethanol',
@@ -27,10 +29,11 @@ def canonical(name):
     return ALIASES.get(name, name)
 
 
-def original_geometry(directory):
+def original_geometry(directory, expected_source=None):
     """Require the staged POSCAR to match the recorded original, never CONTCAR."""
     record = json.loads((directory / 'spe_inputs.json').read_text())
-    if Path(record['source']).resolve() != directory.parent.parent / directory.name or Path(record['destination']).resolve() != directory:
+    expected_source = expected_source or directory.parent.parent / directory.name
+    if Path(record['source']).resolve() != expected_source or Path(record['destination']).resolve() != directory:
         raise ValueError('Staging record source/destination disagrees with calculation directory')
     if record['functional'] != directory.name:
         raise ValueError('Staging record functional mismatch')
@@ -68,6 +71,17 @@ def main():
                     continue
                 if is_relaxed(result, result['functional']):
                     references[(role, label, result['functional'])].append(result)
+    completion = completion_jobs(project)
+    for job in completion:
+        if job['role'] != 'slab':
+            continue
+        directory = Path(job['directory'])
+        result = component(directory)
+        result['completion_job'] = job
+        components[str(directory)] = result
+        expected = FUNC_DIRS[job['functional']]
+        if result.get('settings', {}).get('SYSTEM') == job['surface'] and is_relaxed(result, expected):
+            references[('slab', job['surface'], expected)].append(result)
     print('Audited references:', len(components), flush=True)
     rows = []
     for system in sorted((project/'dft_jobs').iterdir()):
@@ -79,14 +93,18 @@ def main():
         raw_molecule, surface, site = parsed.groups()
         molecule = canonical(raw_molecule)
         metal = re.match(r'[A-Z][a-z]?', surface).group()
-        for dirname, functional in FUNC_DIRS.items():
-            directory = system/'singlepoint'/dirname
+        candidates = [(dirname, functional, system/'singlepoint'/dirname, False) for dirname, functional in FUNC_DIRS.items()]
+        candidates += [(j['functional'], FUNC_DIRS[j['functional']], Path(j['directory']), True)
+                       for j in completion if j['role']=='spe' and j['system']==system.name]
+        for dirname, functional, directory, retry in candidates:
             if not directory.is_dir():
                 continue
             comp = component(directory)
+            comp['role'] = 'complex'
             components[str(directory)] = comp
             slabs = [r for r in references[('slab', surface, functional)]
-                     if r['composition'] == {metal: comp['composition'].get(metal, -1)}]
+                     if r['composition'] == {metal: comp['composition'].get(metal, -1)}
+                     and ('completion_job' not in r or matching_slab(r['completion_job'], system.name, dirname, directory))]
             adsorbate = dict(comp['composition']); adsorbate.pop(metal, None)
             molecules = [r for r in references[('molecule', molecule, functional)] if r['composition'] == adsorbate]
             slabs.sort(key=lambda r: (not np.allclose(np.array(r.get('cell', np.zeros((3,3))))[:2],
@@ -102,12 +120,12 @@ def main():
                 status, note = 'system_mismatch', 'INCAR SYSTEM differs from exact system directory'
             geometry = {}
             try:
-                geometry = original_geometry(directory)
+                geometry = original_geometry(directory, system/dirname)
             except (OSError, ValueError, KeyError) as error:
                 status, note = 'geometry_provenance_mismatch', str(error)
             comp['geometry_provenance'] = geometry
             rows.append(dict(surface=surface, molecule=molecule, functional=functional,
-                system=system.name, site=site or '', status=status, note=note, E_ads_SPE=energy,
+                system=system.name, site=site or '', retry=str(retry).lower(), status=status, note=note, E_ads_SPE=energy,
                 complex_directory=str(directory), complex_NSW=comp['nsw'],
                 slab_directory=slab['directory'] if slab else '', molecule_directory=mol['directory'] if mol else '',
                 E_complex=comp['energy'], E_slab_relaxed=slab['energy'] if slab else None,
@@ -120,7 +138,7 @@ def main():
             continue
         key = row['surface'], row['molecule'], row['functional']
         # Keep separate adsorption-site candidates in the audit; no energy minimization.
-        if key not in selected or (bool(row['site']), row['complex_directory']) < (bool(selected[key]['site']), selected[key]['complex_directory']):
+        if key not in selected or (row['retry']=='true', bool(row['site']), row['complex_directory']) < (selected[key]['retry']=='true', bool(selected[key]['site']), selected[key]['complex_directory']):
             selected[key] = row
     for row in selected.values():
         row['selected'] = 'true'
@@ -132,7 +150,7 @@ def main():
         formula='E_ads_SPE = E_complex_NSW0 - E_slab_relaxed - E_molecule_relaxed',
         policy='Preserve all published SPE values; fill gaps only. Reuse Kestrel completion, electronic convergence, relaxed reference, functional/composition and |E_ads| <= 5 eV screening. POTCAR variants do not exclude results. No scaling or offsets.',
         geometry='POSCAR hash must match both source and staged POSCAR hashes from spe_inputs.json. Check staged INCAR and KPOINTS hashes.',
-        selection='Complex: prefer no site suffix, then lexical path; never by energy. References: matching functional and composition, prefer matching slab in-plane cell and original molecule spelling, then functional directory and lexical path.',
+        selection='Complex: prefer original over completion retry, then no site suffix, then lexical path; never by energy. References: matching functional and composition, prefer matching slab in-plane cell and original molecule spelling, then functional directory and lexical path.',
         counts=dict(Counter(row['status'] for row in rows)), screened_results=len(selected), components=components)
     (output/'dft_perlmutter_singlepoint_sources.json').write_text(json.dumps(metadata, indent=1)+'\n')
     print('SPE audit:', len(rows), metadata['counts'], 'Selected:', len(selected))

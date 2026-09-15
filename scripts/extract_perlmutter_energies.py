@@ -16,6 +16,8 @@ import math
 import re
 from pathlib import Path
 
+from completion_support import completion_jobs, matching_slab
+
 FUNCTIONALS = {'PBE': 'pbe', 'PBE_D3': 'pbe_d3', 'r2scan': 'r2scan', 'beef_vdw': 'beef_vdw'}
 ENERGY = re.compile(r'free  energy   TOTEN\s*=\s*([-+\d.Ee]+)')
 
@@ -113,6 +115,7 @@ def main():
     collector = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(collector)
     jobs = collector.discover_system_dirs(base / 'dft_jobs')
+    completion = completion_jobs(base)
     rows = []
     for directory, functional in FUNCTIONALS.items():
         for job in jobs:
@@ -122,6 +125,16 @@ def main():
                      base / 'vasp_mol' / gas_name / directory / 'OUTCAR']
             parts = [read_output(p) for p in paths]
             status, note, raw = assess(*parts, metal=collector._surface_metal(surface))
+            if status != 'ok':
+                for extra in completion:
+                    if not matching_slab(extra, job.name, directory, job/directory):
+                        continue
+                    candidate = read_output(Path(extra['directory'])/'OUTCAR')
+                    new_status, new_note, new_raw = assess(parts[0], candidate, parts[2], metal=collector._surface_metal(surface))
+                    if new_status == 'ok':
+                        parts[1] = candidate
+                        status, note, raw = new_status, 'Isolated completion slab reference', new_raw
+                        break
             row = dict(functional=functional, system=job.name, surface=surface, molecule=molecule,
                        source_dir='dft_jobs', E_slab_mol=parts[0]['energy'], E_slab=parts[1]['energy'],
                        E_mol=parts[2]['energy'], E_ads=raw if status == 'ok' else None, status=status, note=note,
