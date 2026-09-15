@@ -39,7 +39,7 @@ an external `mol_canon.py` is no longer required.
 ```bash
 python scripts/component_store.py --store kestrel-components.jsonl.gz collect \
   --cluster kestrel \
-  --project-root /kfs3/scratch/jcho5/goad-global-optimization
+  --project-root /scratch/jcho5/goad-global-optimization
 ```
 
 The read-only collector discovers every INCAR beneath existing `vasp_mol`,
@@ -50,6 +50,9 @@ It does not recursively traverse symlink directories or submit calculations.
 An empty/unavailable collection fails without replacing the store.
 
 Use `--cluster perlmutter --project-root /pscratch/sd/j/jcho5/VASP` for Perlmutter.
+The active Kestrel root above was supplied by the user. Historical exports retain
+their original `/kfs3/scratch/...` paths. The store does not silently merge those
+path spellings; confirm filesystem identity before consolidating observations.
 The parser reads INCAR, POSCAR and OUTCAR/OUTCAR.gz. Settings and composition
 checks are the same as those used by the existing SPE audit.
 
@@ -97,6 +100,37 @@ path for its documented `poscar/best` layouts; the new collector covers a broade
 set of nested relaxed and SPE directories for discovery and reuse. Once a fresh
 Kestrel source export is available, its audited derived records can feed the
 existing page updater. Preserve existing page values when new references fail.
+
+## Use the stored size-specific slabs to fill page gaps
+
+The shared-reference derivation step uses converged size-specific Kestrel slabs,
+including Ag111_n36, Au111_n36, Pd111_n36 and Pt111_n36, alongside Perlmutter
+components. Run it after refreshing the component store and requests:
+
+```bash
+python scripts/shared_reference_energies.py
+python scripts/update_comparison_energies.py
+python scripts/plot_energy_decomposition.py
+python scripts/build_completion_report.py --project-root /pscratch/sd/j/jcho5/VASP
+python scripts/component_store.py report
+```
+
+`dft_shared_reference_energies.csv` records every selected component energy,
+cluster, original path and immutable snapshot ID. It requires converged
+components, the requested calculation mode, chemical identity, functional,
+composition, matching full slab cell, cutoff and stored core settings. SPE
+complexes must pass the original cluster audit through its complex checks.
+Existing numeric page values retain priority. Values outside ±5 eV are displayed
+with the energy-review marker and excluded from paired figure statistics.
+Selection prefers Perlmutter complexes and same-cluster references, then directory
+order; it never selects a reference based on its energy. Earlier selected rows
+remain reproducible when a completed cell disappears from the request list.
+
+The original standard-slab audit remains available as evidence of the failed
+lookup. The shared-reference file supplies the corrected matching path.
+Archived exports lack KPOINTS and selective-dynamics constraints; their reuse
+does not assert a new numerical-convergence study. The user's policy allowing
+POTCAR variants remains in effect, with actual identities retained in the store.
 
 ## September 15, 2026 investigation
 

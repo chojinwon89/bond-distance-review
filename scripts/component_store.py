@@ -254,6 +254,7 @@ def write_explanation(site, current, coverage, summary):
         'complex_unconverged': 'The selected complex output did not pass completion/electronic-convergence checks.',
         'SPE pending': 'The separate NSW=0 calculation was queued at this snapshot. A finished relaxation does not finish its SPE job.',
         'SPE running': 'The separate NSW=0 calculation was running at this snapshot.',
+        'output_missing': 'No output was available in the saved energy audit. The scheduler snapshot may be later; rerun extraction to check recently completed jobs.',
         'no matching Perlmutter calculation; check Kestrel sources': 'No matching Perlmutter SPE candidate; search Kestrel sources using the shared alias list.',
     }
     reason_rows = ''.join(f'<tr><td>{mode}</td><td>{escape(reason)}</td><td>{count}</td><td>{escape(reason_labels.get(reason, reason))}</td></tr>'
@@ -301,6 +302,16 @@ Historical published energies are retained if a newer audit cannot replace them.
 <p>The shared store contains a converged complex candidate for {summary['missing_cells_with_saved_converged_complex']} of the {summary['missing_cells']} missing cells.
 Candidates can have different geometry or site provenance, so this is a search lead, not a count of immediately publishable binding energies.</p>
 <h2>Reusable Perlmutter and Kestrel data</h2>
+<p><strong>Size-specific Kestrel slabs are available.</strong> The saved vasp_slab records include Ag111_n36,
+Au111_n36, Pd111_n36 and Pt111_n36 under all four functionals, along with other slab sizes.
+The active Kestrel location supplied by the user is <code>/scratch/jcho5/goad-global-optimization/vasp_slab</code>.
+Archived records retain their original <code>/kfs3/scratch/...</code> paths.</p>
+<p>The shared-reference derivation now fills missing table cells using these converged, composition- and cell-matched slabs,
+with matching functional, cutoff and stored core settings. Existing numeric entries retain priority.
+Unusual values remain visible with review markers. See the
+<a href="dft_shared_reference_energies.csv" download>derived energies with all three component totals and source paths</a>
+and <a href="dft_shared_reference_audit.json">reference-matching policy and audit</a>.
+This uses saved Kestrel records; it is not a fresh read of the Kestrel filesystem.</p>
 <p>The store currently represents {summary['current_calculations']} distinct cluster/path calculations:
 {summary['by_cluster'].get('perlmutter',0)} Perlmutter and {summary['by_cluster'].get('kestrel',0)} archived Kestrel calculations.
 It keeps total energies even when adsorption is unavailable, together with cluster, absolute source path, canonical molecule,
@@ -323,6 +334,7 @@ The 15 missing DFT contact measurements are a separate geometry-source issue req
     note = '''<!-- component-availability -->
 <div class="note info"><b>A blank binding energy can still have a converged complex.</b>
 Binding energies require compatible complex, clean-slab and gas-molecule results. Ag111–DME PBE has completed relaxed and SPE complexes, but its gas reference is unfinished and its standard Perlmutter slab has the wrong atom count.
+Size-specific Kestrel slabs are now used through the shared-reference audit; Ag111–DME BEEF-vdW is available with an energy-review marker.
 <br><a href="dft_data_gaps.html">Detailed explanation, Ag111–DME component energies, and counts of every gap reason</a> &middot;
 <a href="dft_component_energies.csv" download>Component total energies (Perlmutter + archived Kestrel)</a> &middot;
 <a href="dft_kestrel_search_requests.json" download>Kestrel search requests</a>.</div>

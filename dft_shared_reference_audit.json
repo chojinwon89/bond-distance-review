@@ -1,0 +1,8 @@
+{
+  "active_kestrel_project_root": "/scratch/jcho5/goad-global-optimization",
+  "historical_kestrel_root": "/kfs3/scratch/jcho5/goad-global-optimization",
+  "note": "User supplied active Kestrel path. Archived source paths remain unchanged; root spellings are not silently equated or merged. This run uses saved records, not a live Kestrel filesystem read.",
+  "policy": "Only fill missing cells. Require full slab cell within 1e-5 Angstrom and matching atom counts, functional, completion and stored core settings. SPE complexes must also pass the original cluster audit through the complex checks. KPOINTS and selective-dynamics constraints are not contained in the archived component export; no new numerical-convergence claim is made.",
+  "selected": 98,
+  "rejected_candidates": []
+}

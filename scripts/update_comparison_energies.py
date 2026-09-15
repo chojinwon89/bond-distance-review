@@ -150,7 +150,8 @@ def update():
                     if has_displayed_energy or saved:
                         annotation = 'Previously published energy retained; current audit: ' + status + '. ' + detail
                         marker = ' class="energy-review"' if 'energy-review' in tds[1] else ''
-                        tds[1] = '<td{} title="{}">{}</td>'.format(marker, html.escape(annotation, quote=True), html.escape(displayed))
+                        if not (has_displayed_energy and 'Shared stored references' in tds[1]):
+                            tds[1] = '<td{} title="{}">{}</td>'.format(marker, html.escape(annotation, quote=True), html.escape(displayed))
                         retained.append(key)
                     else:
                         annotation = 'No previously published energy; current audit: ' + status + '. ' + detail
@@ -212,6 +213,8 @@ def update():
         page = page.replace('</style>', '.energy-scroll{overflow-x:auto;}\n table.mini th,table.mini td{white-space:nowrap;}\n table.mini .sp-energy{background:rgba(76,120,168,.10);}\n</style>')
     if '.energy-review::after' not in page:
         page = page.replace('</style>', 'table.mini td.energy-review{color:#ffd479;background:rgba(224,168,0,.12);}\n.energy-review::after{content:" †";}\n</style>')
+    from shared_reference_energies import fill_relaxed, read_rows as shared_rows
+    page = fill_relaxed(page, shared_rows(ROOT))
     path.write_text(page)
     with (ROOT / 'dft_comparison_singlepoint.csv').open('w', newline='') as out:
         writer = csv.DictWriter(out, fieldnames=list(matched[0]))

@@ -82,7 +82,7 @@ Use Python with ASE, NumPy, Matplotlib and BeautifulSoup4:
 
 ```bash
 python scripts/extract_kestrel_singlepoint.py \
-  --project-root /kfs3/scratch/jcho5/goad-global-optimization
+  --project-root /scratch/jcho5/goad-global-optimization
 python scripts/update_kestrel_singlepoint.py
 python -m unittest discover -s scripts -p 'test_*.py'
 ```

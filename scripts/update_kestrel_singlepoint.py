@@ -163,6 +163,11 @@ def update(root=ROOT):
             key=row['surface'],row['molecule'],row['functional']
             screened.setdefault(key,dict(row,provenance='Perlmutter converged NSW=0 result; ENERGY REVIEW: |E_ads| > 5 eV; excluded from figure statistics'))
     inventory_path=root/'dft_perlmutter_components.csv'
+    from shared_reference_energies import read_rows as shared_rows
+    for row in shared_rows(root):
+        if row['mode']=='SPE':
+            key=row['surface'],canonical(row['molecule']),row['functional']
+            screened.setdefault(key,dict(row,E_ads_SPE=row['E_ads']))
     inventory={r['directory']:r for r in csv.DictReader(inventory_path.open())} if inventory_path.exists() else {}
     missing={}
     for row in sorted(audit,key=lambda r:(bool(r.get('site')),r['complex_directory'])):
@@ -181,10 +186,11 @@ def update(root=ROOT):
     perlmutter_count = sum(row['provenance'].startswith('Perlmutter') for row in displayed)
     review_count = sum(row['SPE_review']=='true' for row in displayed)
     screened_perlmutter_count = sum(row['provenance'].startswith('Perlmutter') and row['SPE_review']!='true' for row in displayed)
-    kestrel_count = len(displayed) - legacy_count - perlmutter_count
+    shared_count = sum(row['provenance'].startswith('Shared stored references') for row in displayed)
+    kestrel_count = len(displayed) - legacy_count - perlmutter_count - shared_count
     systems = len({(row["surface"], row["molecule"]) for row in displayed})
     summary = (f'<b>Single-point adsorption energies:</b> {len(displayed)} functional results across {systems} of the 415 systems below; '
-               f'{legacy_count} original published results, {kestrel_count} Kestrel results and {perlmutter_count} Perlmutter results; cluster additions use relaxed references.')
+               f'{legacy_count} original published results, {kestrel_count} Kestrel results, {perlmutter_count} Perlmutter results and {shared_count} results using shared stored references; cluster additions use relaxed references.')
     page = re.sub(r'<b>Single-point adsorption energies(?: added)?:</b>.*?(?=\n  <br><b>Perlmutter)', summary, page, flags=re.S)
     page = page.replace('the single-point dataset has not been re-audited against these OUTCARs.',
                         'historical single-point values are retained; new Kestrel results have a separate source audit.')
@@ -240,7 +246,7 @@ def update(root=ROOT):
         writer = csv.DictWriter(output, fieldnames=list(displayed[0]))
         writer.writeheader()
         writer.writerows(displayed)
-    print(f"Displayed {len(displayed)} SPE results ({kestrel_count} Kestrel, {perlmutter_count} Perlmutter, {legacy_count} original published); filled {len(additions)} missing cells this run.")
+    print(f"Displayed {len(displayed)} SPE results ({kestrel_count} Kestrel, {perlmutter_count} Perlmutter, {shared_count} shared-reference, {legacy_count} original published); filled {len(additions)} missing cells this run.")
 
 
 if __name__ == "__main__":
