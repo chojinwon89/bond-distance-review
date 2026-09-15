@@ -10,7 +10,7 @@ from pathlib import Path
 import re
 import subprocess
 from bs4 import BeautifulSoup
-from extract_perlmutter_singlepoint import canonical
+from molecule_names import canonical
 from completion_support import completion_jobs
 
 ROOT=Path(__file__).resolve().parents[1]

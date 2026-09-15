@@ -16,19 +16,9 @@ import numpy as np
 from extract_kestrel_singlepoint import component, calculation_dirs, is_relaxed, assess, write_csv, FUNC_DIRS
 
 from completion_support import completion_jobs, matching_slab
+from molecule_names import canonical, ALIASES
 
 ROOT = Path(__file__).resolve().parents[1]
-ALIASES = {'C2H2': 'acetylene', 'C2H4': 'ethene', 'ethylene': 'ethene',
-           'C2H6': 'ethane', 'CH3CH2OH': 'ethanol', 'C2H5OH': 'ethanol',
-           'CH3CHO': 'acetaldehyde', 'CH3COOH': 'acetic_acid', 'CH3OCH3': 'DME',
-           'CH3OH': 'methanol', 'CH4': 'methane', 'H2CO': 'formaldehyde',
-           'HCOOH': 'formic_acid', 'CH3O': 'methoxy'}
-
-
-def canonical(name):
-    return ALIASES.get(name, name)
-
-
 def original_geometry(directory, expected_source=None):
     """Require the staged POSCAR to match the recorded original, never CONTCAR."""
     record = json.loads((directory / 'spe_inputs.json').read_text())

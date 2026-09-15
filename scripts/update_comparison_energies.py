@@ -11,6 +11,7 @@ import html
 import math
 import re
 from pathlib import Path
+from molecule_names import canonical
 
 ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONALS = {'PBE': 'pbe', 'PBE+D3': 'pbe_d3', 'r²SCAN': 'r2scan', 'BEEF-vdW': 'beef_vdw'}
@@ -33,15 +34,11 @@ def update():
         assert all(math.isfinite(v) for v in values)
         assert abs(values[1] - values[0] - values[2]) < 2e-6
         lookup[key] = values
-    aliases = {'C2H4': 'ethene', 'C2H6': 'ethane', 'CH3CH2OH': 'ethanol',
-               'C2H5OH': 'ethanol', 'CH3CHO': 'acetaldehyde', 'CH3COOH': 'acetic_acid',
-               'CH3OCH3': 'DME', 'CH3OH': 'methanol', 'CH4': 'methane',
-               'H2CO': 'formaldehyde', 'HCOOH': 'formic_acid'}
     relaxed = {}
     review = {}
     audited = {}
     for row in read_csv('dft_perlmutter_energy_audit.csv'):
-        key = row['surface'], aliases.get(row['molecule'], row['molecule']), row['functional']
+        key = row['surface'], canonical(row['molecule']), row['functional']
         audited.setdefault(key, []).append(row)
         if row['status'] == 'energy_review' and row.get('E_ads_raw'):
             # Keep the explicit base system before site variants; never choose a

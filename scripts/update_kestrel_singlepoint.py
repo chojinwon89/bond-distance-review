@@ -6,6 +6,7 @@ import html
 import json
 from pathlib import Path
 import re
+from molecule_names import canonical
 
 ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONALS = {"PBE": "pbe", "PBE+D3": "pbe_d3", "r\u00b2SCAN": "r2scan", "BEEF-vdW": "beef_vdw"}
@@ -28,7 +29,7 @@ def read_rows(path):
     if not path.exists():
         return {}
     with path.open(newline="") as source:
-        return {(row["surface"], row["molecule"], row["functional"]): row for row in csv.DictReader(source)}
+        return {(row["surface"], canonical(row["molecule"]), row["functional"]): row for row in csv.DictReader(source)}
 
 
 def relaxed_cells(page):

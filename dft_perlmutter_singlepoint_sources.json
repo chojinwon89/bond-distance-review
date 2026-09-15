@@ -1,18 +1,18 @@
 {
- "extracted_at": "2026-09-15T14:56:23.388624+00:00",
+ "extracted_at": "2026-09-15T15:41:53.327166+00:00",
  "project_root": "/pscratch/sd/j/jcho5/VASP",
  "formula": "E_ads_SPE = E_complex_NSW0 - E_slab_relaxed - E_molecule_relaxed",
  "policy": "Preserve all published SPE values; fill gaps only. Reuse Kestrel completion, electronic convergence, relaxed reference, functional/composition and |E_ads| <= 5 eV screening. POTCAR variants do not exclude results. No scaling or offsets.",
  "geometry": "POSCAR hash must match both source and staged POSCAR hashes from spe_inputs.json. Check staged INCAR and KPOINTS hashes.",
  "selection": "Complex: prefer original over completion retry, then no site suffix, then lexical path; never by energy. References: matching functional and composition, prefer matching slab in-plane cell and original molecule spelling, then functional directory and lexical path.",
  "counts": {
-  "reference_unavailable": 295,
-  "complex_unconverged": 28,
-  "ok": 248,
-  "energy_review": 66,
-  "output_missing": 1269
+  "reference_unavailable": 333,
+  "complex_unconverged": 29,
+  "ok": 256,
+  "energy_review": 67,
+  "output_missing": 1221
  },
- "screened_results": 248,
+ "screened_results": 256,
  "components": {
   "/pscratch/sd/j/jcho5/VASP/vasp_slab/Ag100": {
    "directory": "/pscratch/sd/j/jcho5/VASP/vasp_slab/Ag100",
@@ -83789,8 +83789,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Rh111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Rh111/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Rh111/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -1567.15376552,
    "nsw": 0,
    "composition": {
     "Rh": 64,
@@ -83826,9 +83826,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 204800,
-   "outcar_mtime_ns": 1789484095000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 395280,
+   "outcar_mtime_ns": 1789485810000000000,
+   "cell": [
+    [
+     10.756508355409762,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     9.315409491804425,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.58698922118444
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -85285,8 +85301,8 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 106496,
-   "outcar_mtime_ns": 1789484084000000000,
+   "outcar_size": 131072,
+   "outcar_mtime_ns": 1789486389000000000,
    "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
@@ -85527,8 +85543,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Au111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Au111/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Au111/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -1846.58801623,
    "nsw": 0,
    "composition": {
     "Au": 36,
@@ -85564,9 +85580,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 106496,
-   "outcar_mtime_ns": 1789483788000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 339507,
+   "outcar_mtime_ns": 1789486134000000000,
+   "cell": [
+    [
+     8.654987001723343,
+     0.0,
+     0.0
+    ],
+    [
+     4.327493500861672,
+     7.495438612916525,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     37.06676729488102
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -85806,8 +85838,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu100/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu100/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu100/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -702.64447823,
    "nsw": 0,
    "composition": {
     "Cu": 64,
@@ -85843,9 +85875,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 212992,
-   "outcar_mtime_ns": 1789484168000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 294212,
+   "outcar_mtime_ns": 1789484242000000000,
+   "cell": [
+    [
+     10.210621920333747,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     10.210621920333747,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     35.415
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -86380,8 +86428,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu111_top/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu111_top/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu111_top/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -707.68074868,
    "nsw": 0,
    "composition": {
     "Cu": 64,
@@ -86417,9 +86465,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 122880,
-   "outcar_mtime_ns": 1789484112000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 297609,
+   "outcar_mtime_ns": 1789485160000000000,
+   "cell": [
+    [
+     10.210621920333747,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.842657971447272,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.25270341532365
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -87249,8 +87313,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Ir111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Ir111/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Ir111/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -3353.17337037,
    "nsw": 0,
    "composition": {
     "Ir": 64,
@@ -87286,9 +87350,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 155648,
-   "outcar_mtime_ns": 1789483993000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 326473,
+   "outcar_mtime_ns": 1789484681000000000,
+   "cell": [
+    [
+     10.86116015902537,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     9.406040612287402,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.65107510106449
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -88155,8 +88235,8 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 81920,
-   "outcar_mtime_ns": 1789483822000000000,
+   "outcar_size": 139264,
+   "outcar_mtime_ns": 1789486630000000000,
    "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
@@ -88397,8 +88477,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt100/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt100/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt100/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -1869.02056571,
    "nsw": 0,
    "composition": {
     "Pt": 36,
@@ -88434,9 +88514,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 147456,
-   "outcar_mtime_ns": 1789484110000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 279898,
+   "outcar_mtime_ns": 1789484449000000000,
+   "cell": [
+    [
+     8.3155757467538,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.3155757467538,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     35.88
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -88824,8 +88920,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/PBE/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/PBE/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -239.07416058,
    "nsw": 0,
    "composition": {
     "Pt": 36,
@@ -88860,9 +88956,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 204800,
-   "outcar_mtime_ns": 1789484167000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 389357,
+   "outcar_mtime_ns": 1789484246000000000,
+   "cell": [
+    [
+     8.3155757467538,
+     0.0,
+     0.0
+    ],
+    [
+     4.157787873376899,
+     7.201499843782544,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.789639165669996
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -88880,8 +88992,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/PBE_D3/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/PBE_D3/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -259.33254706,
    "nsw": 0,
    "composition": {
     "Pt": 36,
@@ -88919,9 +89031,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 204800,
-   "outcar_mtime_ns": 1789484172000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 391256,
+   "outcar_mtime_ns": 1789484240000000000,
+   "cell": [
+    [
+     8.3155757467538,
+     0.0,
+     0.0
+    ],
+    [
+     4.157787873376899,
+     7.201499843782544,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.789639165669996
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -88976,8 +89104,8 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 73728,
-   "outcar_mtime_ns": 1789483930000000000,
+   "outcar_size": 122880,
+   "outcar_mtime_ns": 1789486629000000000,
    "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
@@ -88996,8 +89124,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/beef_vdw/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/singlepoint/beef_vdw/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "electronic_unconverged",
+   "energy": -125.99650872,
    "nsw": 0,
    "composition": {
     "Pt": 36,
@@ -89034,9 +89162,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 172032,
-   "outcar_mtime_ns": 1789484170000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 566298,
+   "outcar_mtime_ns": 1789486215000000000,
+   "cell": [
+    [
+     8.3155757467538,
+     0.0,
+     0.0
+    ],
+    [
+     4.157787873376899,
+     7.201499843782544,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.789639165669996
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -89645,8 +89789,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/PBE/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/PBE/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -470.30674575,
    "nsw": 0,
    "composition": {
     "Rh": 64,
@@ -89681,9 +89825,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 122880,
-   "outcar_mtime_ns": 1789484166000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 373044,
+   "outcar_mtime_ns": 1789484871000000000,
+   "cell": [
+    [
+     10.756508355409762,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     9.315409491804425,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.58698922118444
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -89701,8 +89861,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/PBE_D3/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/PBE_D3/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -496.57927607,
    "nsw": 0,
    "composition": {
     "Rh": 64,
@@ -89740,9 +89900,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 122880,
-   "outcar_mtime_ns": 1789484171000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 374943,
+   "outcar_mtime_ns": 1789484582000000000,
+   "cell": [
+    [
+     10.756508355409762,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     9.315409491804425,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.58698922118444
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -89760,8 +89936,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -1550.18097352,
    "nsw": 0,
    "composition": {
     "Rh": 64,
@@ -89797,9 +89973,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 73728,
-   "outcar_mtime_ns": 1789484039000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 370607,
+   "outcar_mtime_ns": 1789486350000000000,
+   "cell": [
+    [
+     10.756508355409762,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     9.315409491804425,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.58698922118444
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -89817,8 +90009,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/beef_vdw/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Rh111/singlepoint/beef_vdw/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -267.52469991,
    "nsw": 0,
    "composition": {
     "Rh": 64,
@@ -89855,9 +90047,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 81920,
-   "outcar_mtime_ns": 1789484119000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 366208,
+   "outcar_mtime_ns": 1789485415000000000,
+   "cell": [
+    [
+     10.756508355409762,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     9.315409491804425,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.58698922118444
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -89948,8 +90156,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/PBE_D3/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/PBE_D3/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -129.85002019,
    "nsw": 0,
    "composition": {
     "Ag": 36,
@@ -89987,9 +90195,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 65536,
-   "outcar_mtime_ns": 1789484175000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 250822,
+   "outcar_mtime_ns": 1789484372000000000,
+   "cell": [
+    [
+     8.676200205158938,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.676200205158938,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.135
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90007,8 +90231,8 @@
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/r2scan/INCAR",
    "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/r2scan/OUTCAR",
-   "status": "invalid",
-   "energy": null,
+   "status": "converged",
+   "energy": -788.85490242,
    "nsw": 0,
    "composition": {
     "Ag": 36,
@@ -90044,9 +90268,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "outcar_size": 52840,
-   "outcar_mtime_ns": 1789484147000000000,
-   "note": "Missing/nonfinite final TOTEN",
+   "outcar_size": 246973,
+   "outcar_mtime_ns": 1789485983000000000,
+   "cell": [
+    [
+     8.676200205158938,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.676200205158938,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.135
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90063,12 +90303,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": 9.38333592,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Ag100",
@@ -90092,7 +90342,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag100/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 253708,
+   "outcar_mtime_ns": 1789484713000000000,
+   "cell": [
+    [
+     8.676200205158938,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.676200205158938,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.135
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90110,12 +90378,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -84.12439615,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Ag110",
@@ -90137,7 +90415,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 229395,
+   "outcar_mtime_ns": 1789484489000000000,
+   "cell": [
+    [
+     12.27,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.784133470105959,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.33810010257947
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90154,12 +90450,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -91.11190494,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Ag110",
@@ -90184,7 +90490,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 231294,
+   "outcar_mtime_ns": 1789484455000000000,
+   "cell": [
+    [
+     12.27,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.784133470105959,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.33810010257947
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90201,12 +90525,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/r2scan/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/r2scan/OUTCAR",
+   "status": "converged",
+   "energy": -531.85788799,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Ag110",
@@ -90229,7 +90563,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 227445,
+   "outcar_mtime_ns": 1789484846000000000,
+   "cell": [
+    [
+     12.27,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.784133470105959,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.33810010257947
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90246,12 +90598,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": 1.57730486,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Ag110",
@@ -90275,7 +90637,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag110/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 225165,
+   "outcar_mtime_ns": 1789484493000000000,
+   "cell": [
+    [
+     12.27,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.784133470105959,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.33810010257947
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90293,12 +90673,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -118.39519388,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Ag111",
@@ -90320,7 +90710,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 327213,
+   "outcar_mtime_ns": 1789485118000000000,
+   "cell": [
+    [
+     8.676200205158938,
+     0.0,
+     0.0
+    ],
+    [
+     4.338100102579471,
+     7.513809785987396,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     37.08408780295671
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90337,12 +90745,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -131.49971234,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Ag111",
@@ -90367,7 +90785,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 329112,
+   "outcar_mtime_ns": 1789485427000000000,
+   "cell": [
+    [
+     8.676200205158938,
+     0.0,
+     0.0
+    ],
+    [
+     4.338100102579471,
+     7.513809785987396,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     37.08408780295671
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90384,12 +90820,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Ag111",
@@ -90412,7 +90858,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 90112,
+   "outcar_mtime_ns": 1789486796000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90429,12 +90877,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": 8.52580827,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ag": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ag": "PAW_PBE Ag 02Apr2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Ag111",
@@ -90458,7 +90916,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ag111/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 320783,
+   "outcar_mtime_ns": 1789485451000000000,
+   "cell": [
+    [
+     8.676200205158938,
+     0.0,
+     0.0
+    ],
+    [
+     4.338100102579471,
+     7.513809785987396,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     37.08408780295671
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90476,12 +90952,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -134.15858406,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Au100",
@@ -90503,7 +90989,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 242490,
+   "outcar_mtime_ns": 1789484863000000000,
+   "cell": [
+    [
+     8.650744361036224,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.650744361036224,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.117000000000004
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90520,12 +91024,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -151.45450306,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Au100",
@@ -90550,7 +91064,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 244389,
+   "outcar_mtime_ns": 1789484863000000000,
+   "cell": [
+    [
+     8.650744361036224,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.650744361036224,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.117000000000004
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90567,12 +91099,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/r2scan/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/r2scan/OUTCAR",
+   "status": "converged",
+   "energy": -1840.1347129,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Au100",
@@ -90595,7 +91137,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 245072,
+   "outcar_mtime_ns": 1789485840000000000,
+   "cell": [
+    [
+     8.650744361036224,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.650744361036224,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.117000000000004
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90612,12 +91172,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": -20.57578125,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Au100",
@@ -90641,7 +91211,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au100/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 258580,
+   "outcar_mtime_ns": 1789485241000000000,
+   "cell": [
+    [
+     8.650744361036224,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.650744361036224,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.117000000000004
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90659,12 +91247,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -95.72176919,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Au110",
@@ -90686,7 +91284,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 225291,
+   "outcar_mtime_ns": 1789485110000000000,
+   "cell": [
+    [
+     12.234000000000002,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.767162907357482,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.325372180518116
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90703,12 +91319,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -105.41021149,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Au110",
@@ -90733,7 +91359,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 227190,
+   "outcar_mtime_ns": 1789485152000000000,
+   "cell": [
+    [
+     12.234000000000002,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.767162907357482,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.325372180518116
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90750,12 +91394,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/r2scan/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/r2scan/OUTCAR",
+   "status": "converged",
+   "energy": -1233.03167098,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Au110",
@@ -90778,7 +91432,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 227849,
+   "outcar_mtime_ns": 1789485869000000000,
+   "cell": [
+    [
+     12.234000000000002,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.767162907357482,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.325372180518116
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90795,12 +91467,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": -18.74946978,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Au110",
@@ -90824,7 +91506,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au110/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 236858,
+   "outcar_mtime_ns": 1789485325000000000,
+   "cell": [
+    [
+     12.234000000000002,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.767162907357482,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.325372180518116
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90842,12 +91542,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -135.77561105,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Au111",
@@ -90869,7 +91579,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 334379,
+   "outcar_mtime_ns": 1789486074000000000,
+   "cell": [
+    [
+     8.654987001723343,
+     0.0,
+     0.0
+    ],
+    [
+     4.327493500861672,
+     7.495438612916525,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     37.06676729488102
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90886,12 +91614,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -153.70943388,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Au111",
@@ -90916,7 +91654,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 336278,
+   "outcar_mtime_ns": 1789485955000000000,
+   "cell": [
+    [
+     8.654987001723343,
+     0.0,
+     0.0
+    ],
+    [
+     4.327493500861672,
+     7.495438612916525,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     37.06676729488102
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90933,12 +91689,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Au111",
@@ -90961,7 +91727,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 73728,
+   "outcar_mtime_ns": 1789486505000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -90978,12 +91746,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": -21.97505564,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Au": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Au": "PAW_PBE Au 04Oct2007",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Au111",
@@ -91007,7 +91785,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Au111/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 332358,
+   "outcar_mtime_ns": 1789486167000000000,
+   "cell": [
+    [
+     8.654987001723343,
+     0.0,
+     0.0
+    ],
+    [
+     4.327493500861672,
+     7.495438612916525,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     37.06676729488102
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91025,12 +91821,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -250.81023092,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Cu": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Cu": "PAW_PBE Cu 22Jun2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Cu111_fcc",
@@ -91052,7 +91858,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 301627,
+   "outcar_mtime_ns": 1789485891000000000,
+   "cell": [
+    [
+     10.210621920333747,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.842657971447272,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.25270341532365
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91069,12 +91893,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -273.56013965,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Cu": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Cu": "PAW_PBE Cu 22Jun2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Cu111_fcc",
@@ -91099,7 +91933,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 303526,
+   "outcar_mtime_ns": 1789486425000000000,
+   "cell": [
+    [
+     10.210621920333747,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.842657971447272,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.25270341532365
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91116,12 +91968,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Cu": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Cu": "PAW_PBE Cu 22Jun2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Cu111_fcc",
@@ -91144,7 +92006,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 90112,
+   "outcar_mtime_ns": 1789486791000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91161,12 +92025,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": -38.51444523,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Cu": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Cu": "PAW_PBE Cu 22Jun2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Cu111_fcc",
@@ -91190,7 +92064,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Cu111_fcc/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 304146,
+   "outcar_mtime_ns": 1789486283000000000,
+   "cell": [
+    [
+     10.210621920333747,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.842657971447272,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.25270341532365
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91208,12 +92100,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -321.52464915,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Ir100",
@@ -91235,7 +92137,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 296199,
+   "outcar_mtime_ns": 1789485819000000000,
+   "cell": [
+    [
+     8.145870119269027,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.145870119269027,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     35.76
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91252,12 +92172,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -339.07929518,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Ir100",
@@ -91282,7 +92212,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 298098,
+   "outcar_mtime_ns": 1789486242000000000,
+   "cell": [
+    [
+     8.145870119269027,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.145870119269027,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     35.76
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91299,12 +92247,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Ir100",
@@ -91327,7 +92285,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 172032,
+   "outcar_mtime_ns": 1789486861000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91344,12 +92304,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": -207.29656213,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Ir100",
@@ -91373,7 +92343,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir100/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 462434,
+   "outcar_mtime_ns": 1789486618000000000,
+   "cell": [
+    [
+     8.145870119269027,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     8.145870119269027,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     35.76
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91391,12 +92379,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -213.02874005,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Ir110",
@@ -91418,7 +92416,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 274103,
+   "outcar_mtime_ns": 1789486109000000000,
+   "cell": [
+    [
+     11.52,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.430580079512685,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.07293505963452
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91435,12 +92451,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -222.71235688,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Ir110",
@@ -91465,7 +92491,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 276002,
+   "outcar_mtime_ns": 1789486307000000000,
+   "cell": [
+    [
+     11.52,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.430580079512685,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.07293505963452
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91482,12 +92526,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Ir110",
@@ -91510,7 +92564,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 253952,
+   "outcar_mtime_ns": 1789486906000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91527,12 +92583,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": -135.70415977,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Ir110",
@@ -91556,7 +92622,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir110/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 267283,
+   "outcar_mtime_ns": 1789486303000000000,
+   "cell": [
+    [
+     11.52,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.430580079512685,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.07293505963452
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91574,12 +92658,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Ir111",
@@ -91601,7 +92695,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 180224,
+   "outcar_mtime_ns": 1789486899000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91618,12 +92714,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -597.25368314,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Ir111",
@@ -91648,7 +92754,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 339735,
+   "outcar_mtime_ns": 1789486810000000000,
+   "cell": [
+    [
+     10.86116015902537,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     9.406040612287402,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     36.65107510106449
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91665,12 +92789,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Ir111",
@@ -91693,7 +92827,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 81920,
+   "outcar_mtime_ns": 1789486863000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91710,12 +92846,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/beef_vdw/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/beef_vdw/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Ir": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Ir": "PAW_PBE Ir 06Sep2000",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Ir111",
@@ -91739,7 +92885,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Ir111/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 122880,
+   "outcar_mtime_ns": 1789486868000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91757,12 +92905,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Rh100",
@@ -91784,7 +92942,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 294912,
+   "outcar_mtime_ns": 1789486907000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91801,12 +92961,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE_D3/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE_D3/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Rh100",
@@ -91831,7 +93001,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 262144,
+   "outcar_mtime_ns": 1789486900000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91848,12 +93020,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Rh100",
@@ -91876,7 +93058,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 98304,
+   "outcar_mtime_ns": 1789486852000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91893,12 +93077,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/beef_vdw/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/beef_vdw/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 36,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Rh100",
@@ -91922,7 +93116,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh100/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 196608,
+   "outcar_mtime_ns": 1789486899000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91940,12 +93136,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE/OUTCAR",
+   "status": "converged",
+   "energy": -180.41659666,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Rh110",
@@ -91967,7 +93173,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 358013,
+   "outcar_mtime_ns": 1789486717000000000,
+   "cell": [
+    [
+     11.408999999999999,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.378254177704881,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.03369063327866
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -91984,12 +93208,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE_D3/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE_D3/OUTCAR",
+   "status": "converged",
+   "energy": -188.17505607,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Rh110",
@@ -92014,7 +93248,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 345863,
+   "outcar_mtime_ns": 1789486726000000000,
+   "cell": [
+    [
+     11.408999999999999,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.378254177704881,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.03369063327866
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -92031,12 +93283,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/r2scan/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/r2scan/OUTCAR",
+   "status": "converged",
+   "energy": -587.27020694,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Rh110",
@@ -92059,7 +93321,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 262024,
+   "outcar_mtime_ns": 1789486871000000000,
+   "cell": [
+    [
+     11.408999999999999,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.378254177704881,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.03369063327866
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -92076,12 +93356,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/beef_vdw": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/beef_vdw",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/beef_vdw/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/beef_vdw/OUTCAR.gz",
-   "status": "invalid",
-   "energy": null,
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/beef_vdw/OUTCAR",
+   "status": "converged",
+   "energy": -102.93183499,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 24,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "beef_vdw",
    "settings": {
     "SYSTEM": "CH3O_Rh110",
@@ -92105,7 +93395,25 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh110/singlepoint/beef_vdw/OUTCAR.gz'",
+   "outcar_size": 276319,
+   "outcar_mtime_ns": 1789486888000000000,
+   "cell": [
+    [
+     11.408999999999999,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     5.378254177704881,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     34.03369063327866
+    ]
+   ],
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -92123,12 +93431,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe",
    "settings": {
     "SYSTEM": "CH3O_Rh111",
@@ -92150,7 +93468,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE/OUTCAR.gz'",
+   "outcar_size": 73728,
+   "outcar_mtime_ns": 1789486862000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -92167,12 +93487,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE_D3": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE_D3",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE_D3/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE_D3/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE_D3/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "pbe_d3",
    "settings": {
     "SYSTEM": "CH3O_Rh111",
@@ -92197,7 +93527,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/PBE_D3/OUTCAR.gz'",
+   "outcar_size": 73728,
+   "outcar_mtime_ns": 1789486857000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",
@@ -92214,12 +93546,22 @@
   "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/r2scan": {
    "directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/r2scan",
    "incar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/r2scan/INCAR",
-   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/r2scan/OUTCAR.gz",
+   "outcar": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/r2scan/OUTCAR",
    "status": "invalid",
    "energy": null,
    "nsw": 0,
-   "composition": {},
-   "potentials": {},
+   "composition": {
+    "Rh": 64,
+    "C": 1,
+    "O": 1,
+    "H": 3
+   },
+   "potentials": {
+    "Rh": "PAW_PBE Rh 04Feb2005",
+    "C": "PAW_PBE C 08Apr2002",
+    "O": "PAW_PBE O 08Apr2002",
+    "H": "PAW_PBE H 15Jun2001"
+   },
    "functional": "r2scan",
    "settings": {
     "SYSTEM": "CH3O_Rh111",
@@ -92242,7 +93584,9 @@
     "IBRION": "-1",
     "LCHARG": ".FALSE."
    },
-   "note": "[Errno 2] No such file or directory: '/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3O_Rh111/singlepoint/r2scan/OUTCAR.gz'",
+   "outcar_size": 61747,
+   "outcar_mtime_ns": 1789486895000000000,
+   "note": "Missing/nonfinite final TOTEN",
    "role": "complex",
    "geometry_provenance": {
     "geometry_source": "original ML POSCAR",

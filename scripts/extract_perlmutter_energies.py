@@ -17,6 +17,7 @@ import re
 from pathlib import Path
 
 from completion_support import completion_jobs, matching_slab
+from molecule_names import canonical, equivalent_names
 
 FUNCTIONALS = {'PBE': 'pbe', 'PBE_D3': 'pbe_d3', 'r2scan': 'r2scan', 'beef_vdw': 'beef_vdw'}
 ENERGY = re.compile(r'free  energy   TOTEN\s*=\s*([-+\d.Ee]+)')
@@ -48,7 +49,8 @@ def parse_output(head, tail):
             convergence = 'ionic_unconverged'
         else:
             convergence = 'converged'
-    return dict(energy=energy, convergence=convergence, composition=composition,
+    failure = 'ZBRENT: fatal error in bracketing' if 'ZBRENT: fatal error in bracketing' in tail else ''
+    return dict(energy=energy, convergence=convergence, composition=composition, failure_reason=failure,
                 potentials=potentials, metadata_ok=metadata_ok)
 
 
@@ -99,7 +101,8 @@ def assess(complex_result, slab, molecule, metal):
     if status != 'ok':
         return status, '; '.join(notes), raw
     if not all(p['convergence'] == 'converged' for p in parts):
-        return 'unconverged', 'See component convergence statuses', raw
+        failures='; '.join(label+': '+p['failure_reason'] for label,p in zip(['complex','slab','molecule'],parts) if p.get('failure_reason'))
+        return 'unconverged', failures or 'See component convergence statuses', raw
     if abs(raw) > 5:
         return 'energy_review', '|E_ads| > 5 eV: review required; not evidence of failed convergence', raw
     return 'ok', '', raw
@@ -116,6 +119,7 @@ def main():
     spec.loader.exec_module(collector)
     jobs = collector.discover_system_dirs(base / 'dft_jobs')
     completion = completion_jobs(base)
+    molecule_dirs=[p.name for p in (base/'vasp_mol').iterdir() if p.is_dir()]
     rows = []
     for directory, functional in FUNCTIONALS.items():
         for job in jobs:
@@ -124,6 +128,15 @@ def main():
             paths = [job / directory / 'OUTCAR', base / 'vasp_slab' / surface / directory / 'OUTCAR',
                      base / 'vasp_mol' / gas_name / directory / 'OUTCAR']
             parts = [read_output(p) for p in paths]
+            # Original reference remains preferred when usable. An equivalent
+            # name can recover a missing/failed reference, but an isomer cannot.
+            if parts[2]['convergence'] != 'converged':
+                for name in equivalent_names(molecule,molecule_dirs,preferred=gas_name):
+                    candidate=read_output(base/'vasp_mol'/name/directory/'OUTCAR')
+                    expected=collections.Counter(parts[0]['composition'])-collections.Counter(parts[1]['composition'])
+                    if candidate['convergence']=='converged' and candidate['composition']==dict(expected):
+                        parts[2]=candidate
+                        break
             status, note, raw = assess(*parts, metal=collector._surface_metal(surface))
             if status != 'ok':
                 for extra in completion:
@@ -135,7 +148,7 @@ def main():
                         parts[1] = candidate
                         status, note, raw = new_status, 'Isolated completion slab reference', new_raw
                         break
-            row = dict(functional=functional, system=job.name, surface=surface, molecule=molecule,
+            row = dict(functional=functional, system=job.name, surface=surface, molecule=molecule,canonical_molecule=canonical(molecule),
                        source_dir='dft_jobs', E_slab_mol=parts[0]['energy'], E_slab=parts[1]['energy'],
                        E_mol=parts[2]['energy'], E_ads=raw if status == 'ok' else None, status=status, note=note,
                        convergence='; '.join('{}: {}'.format(k, p['convergence']) for k, p in zip(['complex', 'slab', 'molecule'], parts)),
