@@ -156,6 +156,9 @@ def apply(root=ROOT):
                         cls=' class="sp-energy"' if mode=='SPE' else ''
                         title=html.escape('Gas reference recovery '+retry['job_id']+' '+retry['scheduler_state']+' at snapshot; other component statuses remain in the audit. '+retry['directory'],quote=True)
                         cells[index]=f'<td{cls} title="{title}">{label}</td>'
+                    elif old is None and retry and 'gas ref' in cells[index]:
+                        cls=' class="sp-energy"' if mode=='SPE' else ''
+                        cells[index]=f'<td{cls} title="Gas retry status changed; inspect the component audit for remaining blockers">see audit</td>'
                     continue
                 value=Decimal(selected['E_ads']);old=number(cells[index]);review=selected['status']=='energy_review'
                 if old is not None and selected['complex_cluster']=='kestrel' and selected['kestrel_fallback']!='true':

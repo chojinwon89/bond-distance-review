@@ -1,14 +1,14 @@
 {
   "policy": "Perlmutter first. If |E_ads| > 5 eV, prefer an unflagged Kestrel result only with verified matching structure. Directory names, composition, similar energies and matching cells alone do not prove equal coordinates. Preserve nonselected history; do not substitute gas energies across functionals.",
   "selections": {
-    "No complete matched component set": 1850,
-    "Perlmutter first": 933,
+    "No complete matched component set": 1824,
+    "Perlmutter first": 959,
     "Kestrel candidate held: matching Perlmutter structure not verified": 153,
     "Perlmutter energy review retained; no unflagged Kestrel alternative": 218,
     "Kestrel: no usable Perlmutter binding-energy candidate": 166
   },
-  "candidate_results": 1687,
-  "duplicate_pairs": 196,
+  "candidate_results": 1719,
+  "duplicate_pairs": 202,
   "geometry_verified_pairs": 0,
   "normal_existing_to_review": 54,
   "kestrel_record_provenance": {
@@ -16,14 +16,14 @@
   },
   "access_note": "This build reads the local component store. Archived exports do not constitute a fresh Kestrel filesystem search.",
   "application_status": {
-    "existing value retained": 1080,
-    "missing": 923,
-    "selected candidate applied": 1126,
+    "existing value retained": 1070,
+    "missing": 907,
+    "selected candidate applied": 1152,
     "existing unflagged value retained pending geometry verification": 25,
     "existing value retained; no verified replacement required": 166
   },
   "applied_candidate_cluster": {
-    "perlmutter": 1126
+    "perlmutter": 1152
   },
-  "numeric_changes_recorded": 248
+  "numeric_changes_recorded": 274
 }

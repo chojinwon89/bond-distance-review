@@ -1,28 +1,29 @@
 {
-  "snapshot": "2026-09-15T19:08:14.368443+00:00",
+  "snapshot": "2026-09-15T19:23:57.559228+00:00",
   "systems": 415,
   "functional_entries": 1660,
   "MLIP_images": 415,
   "DFT_images": 415,
   "DFT_contacts": 400,
-  "relaxed_energies": 1371,
-  "SPE_energies": 1026,
+  "relaxed_energies": 1376,
+  "SPE_energies": 1037,
   "SPE_status": {
-    "available": 939,
+    "available": 950,
     "available; energy review": 87,
-    "SPE pending": 510,
-    "SPE running": 8,
-    "recovery pending": 34,
+    "SPE pending": 507,
+    "output_missing": 9,
+    "recovery completed; awaiting usable adsorption result": 5,
+    "recovery pending": 18,
     "no matching Perlmutter calculation; check Kestrel sources": 28,
     "reference_unavailable": 34,
-    "complex_unconverged": 16,
-    "output_missing": 4
+    "SPE running": 6,
+    "complex_unconverged": 16
   },
   "relaxed_energy_review": 229,
   "SPE_energy_review": 87,
   "main_SPE_array": "58164924",
   "main_SPE_queue": {
-    "PENDING": 1049,
+    "PENDING": 1041,
     "RUNNING": 15
   },
   "recovery_campaigns": [

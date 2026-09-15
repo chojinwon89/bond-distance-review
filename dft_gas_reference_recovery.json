@@ -1,13 +1,13 @@
 {
-  "snapshot": "2026-09-15T19:08:07.933699+00:00",
+  "snapshot": "2026-09-15T19:23:54.157242+00:00",
   "jobs": [
     {
       "functional": "pbe",
       "molecule": "DME",
       "job_id": "58376018_0",
-      "scheduler_state": "PENDING",
-      "calculation_status": "not_started",
-      "energy_TOTEN_eV": null,
+      "scheduler_state": "COMPLETED",
+      "calculation_status": "converged",
+      "energy_TOTEN_eV": -46.37768189,
       "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/dme_references_davidson_20260915/molecule/DME/PBE",
       "input_changes": {
         "IBRION": "1",

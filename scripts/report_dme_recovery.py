@@ -15,6 +15,10 @@ def main():
     result=subprocess.run(['squeue','-r','-j',job_id,'-h','-o','%i|%T'],capture_output=True,text=True)
     for line in result.stdout.splitlines():
         job,state=line.split('|');states[job]=state
+    accounting=subprocess.run(['sacct','-j',job_id,'--noheader','--parsable2','--format=JobID,State'],capture_output=True,text=True)
+    for line in accounting.stdout.splitlines():
+        fields=line.split('|')
+        if len(fields)>=2 and '.' not in fields[0]:states.setdefault(fields[0],fields[1].strip())
     rows=[]
     for index,job in enumerate(manifest['jobs']):
         c=component(Path(job['directory']));task=job_id+'_'+str(index)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "component_snapshots": 17118,
+  "component_snapshots": 17119,
   "current_calculations": 7180,
   "by_cluster": {
     "kestrel": 2618,
@@ -8,25 +8,26 @@
   },
   "converged_by_cluster": {
     "kestrel": 1257,
-    "perlmutter": 2689
+    "perlmutter": 2690
   },
-  "missing_cells": 923,
-  "missing_cells_with_saved_converged_complex": 226,
+  "missing_cells": 907,
+  "missing_cells_with_saved_converged_complex": 210,
   "relaxed_blank_reasons": {
-    "unconverged": 140,
-    "slab_mismatch": 35,
+    "unconverged": 136,
+    "slab_mismatch": 34,
     "no matching Perlmutter calculation": 98,
     "error": 16
   },
   "SPE_blank_reasons": {
-    "SPE pending": 510,
-    "SPE running": 8,
-    "recovery pending": 34,
+    "SPE pending": 507,
+    "output_missing": 9,
+    "recovery completed; awaiting usable adsorption result": 5,
+    "recovery pending": 18,
     "no matching Perlmutter calculation; check Kestrel sources": 28,
     "reference_unavailable": 34,
-    "complex_unconverged": 16,
-    "output_missing": 4
+    "SPE running": 6,
+    "complex_unconverged": 16
   },
-  "unconverged_relaxed_cells_with_converged_complex": 76,
+  "unconverged_relaxed_cells_with_converged_complex": 72,
   "caveat": "Website gap reasons use the dated completion snapshot. Live Perlmutter components and archived Kestrel components retain separate provenance. Completed candidate jobs may differ in geometry from the website target."
 }

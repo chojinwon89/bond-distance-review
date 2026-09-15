@@ -251,6 +251,14 @@ def report(store, site):
 def write_explanation(site, current, coverage, summary):
     snapshot = json.loads((site / 'dft_completion_summary.json').read_text())['snapshot']
     escape = html.escape
+    recovery_file=site/'dft_gas_reference_recovery.json'
+    recovered=[]
+    if recovery_file.exists():
+        for job in json.loads(recovery_file.read_text())['jobs']:
+            energy=job.get('energy_TOTEN_eV')
+            value=f'; gas TOTEN {energy:.8f} eV' if job['calculation_status']=='converged' and energy is not None else ''
+            recovered.append(escape(job['functional']+': '+job['scheduler_state']+', '+job['calculation_status']+value))
+    recovery_status='<p><strong>Current recovery snapshot:</strong> '+'; '.join(recovered)+'. Converged retries now supply the matching table references; the failed originals below are retained for diagnosis.</p>' if recovered else ''
     example_paths = [
         ('perlmutter', '/dft_jobs/CH3OCH3_Ag111/PBE', 'DME + Ag111, relaxed'),
         ('perlmutter', '/dft_jobs/CH3OCH3_Ag111/singlepoint/PBE', 'DME + Ag111, SPE'),
@@ -299,6 +307,7 @@ Three suitable component results are needed:</p>
 <p>For the SPE column, the complex must have NSW=0. The current convention uses relaxed slab and gas references for both columns.
 A converged relaxation and a converged SPE are separate results, and neither supplies a missing gas or clean-slab calculation.</p>
 <h2>Ag111 · DME (CH3OCH3), PBE</h2>
+{recovery_status}
 <p><strong>Both complex jobs are converged.</strong> Their total energies are available below and in the shared component download.</p>
 <div class="scroll"><table><thead><tr><th>Component</th><th>TOTEN (eV)</th><th>Atoms</th><th>Output status</th><th>Source and diagnostic</th></tr></thead>
 <tbody>{''.join(example_rows)}</tbody></table></div>
@@ -367,7 +376,7 @@ The 15 missing DFT contact measurements are a separate geometry-source issue req
     comparison = re.sub(r'<!-- component-availability -->.*?<!-- /component-availability -->\n?', '', comparison, flags=re.S)
     note = '''<!-- component-availability -->
 <div class="note info"><b>A blank binding energy can still have a converged complex.</b>
-Binding energies require compatible complex, clean-slab and gas-molecule results. Ag111–DME PBE has completed relaxed and SPE complexes, but its gas reference is unfinished and its standard Perlmutter slab has the wrong atom count.
+Binding energies require compatible complex, clean-slab and gas-molecule results. Ag111–DME PBE has completed relaxed and SPE complexes; its original gas reference failed and its standard Perlmutter slab has the wrong atom count. Converged recovery references are applied when available.
 Size-specific Kestrel slabs are now used through the shared-reference audit; Ag111–DME BEEF-vdW is available with an energy-review marker.
 <br><a href="dft_data_gaps.html">Detailed explanation, Ag111–DME component energies, and counts of every gap reason</a> &middot;
 <a href="dft_component_energies.csv" download>Component total energies (Perlmutter + archived Kestrel)</a> &middot;
