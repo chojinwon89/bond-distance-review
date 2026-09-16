@@ -19,7 +19,6 @@ class SPEAuditTests(unittest.TestCase):
                          composition={"Ag": 36}, settings={"IBRION": "2"})
         self.mol = dict(nsw=500, functional="pbe", status="converged", energy=21.0,
                         composition={"C": 1, "O": 2, "H": 1}, settings={"IBRION": "2"})
-        for c in [self.comp,self.slab,self.mol]:c['potentials']={el:'PAW_PBE '+el+' fixture' for el in c['composition']}
 
     def test_positive_absolute_energies_are_valid(self):
         status, _, energy = assess(self.comp, self.slab, self.mol, "pbe")
@@ -121,7 +120,7 @@ class RegenerationTests(unittest.TestCase):
                  'dft_comparison_singlepoint_published.csv', 'dft_kestrel_singlepoint.csv',
                  'dft_structure_sources.json', 'dft_perlmutter_singlepoint.csv',
                  'dft_perlmutter_singlepoint_sources.json']
-        files += [name for name in ['dft_cluster_selection.csv','dft_cluster_selection_summary.json','dft_gas_reference_recovery.json','dft_potential_mismatches.csv']
+        files += [name for name in ['dft_cluster_selection.csv','dft_cluster_selection_summary.json','dft_gas_reference_recovery.json']
                   if (source/name).exists()]
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

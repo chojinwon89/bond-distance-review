@@ -48,7 +48,7 @@ def derive(comp, slab, gas, mode):
     result=dict(surface=comp['surface'],molecule=comp['molecule'],functional=c['functional'],mode=mode,
         status='energy_review' if abs(energy)>5 else 'ok',E_ads=str(energy),
         E_complex=c['energy'],E_slab=s['energy'],E_molecule=g['energy'],
-        provenance='Converged components; matching PAW TITEL identities, functional, composition, full slab cell and stored core settings. Archived Kestrel provenance retained. No energy scaling or offsets.')
+        provenance='Shared stored references; converged components, matching functional/composition/full slab cell and stored core settings. Archived Kestrel records retain their source provenance. POTCAR variants allowed; no energy scaling or offsets.')
     for role,row in [('complex',comp),('slab',slab),('molecule',gas)]:
         result[role+'_cluster']=row['cluster'];result[role+'_directory']=row['calculation']['directory']
         result[role+'_snapshot_id']=row['snapshot_id']
@@ -64,7 +64,7 @@ def build(root=ROOT):
     spe_allowed=set()
     for filename in ['dft_perlmutter_singlepoint_audit.csv','dft_kestrel_singlepoint_audit.csv']:
         for r in csv.DictReader((root/filename).open()):
-            if r['status'] in ('ok','energy_review','reference_unavailable','potential_mismatch'):
+            if r['status'] in ('ok','energy_review','reference_unavailable'):
                 spe_allowed.add(r['complex_directory'])
     audit=[]
     for request in requests:
@@ -93,10 +93,7 @@ def build(root=ROOT):
                 break
     # Revalidate stored selections by immutable IDs on every regeneration.
     for key,row in list(selected.items()):
-        try:selected[key]=derive(*(byid[row[role+'_snapshot_id']] for role in ['complex','slab','molecule']),row['mode'])
-        except ValueError as error:
-            audit.append(dict(surface=key[0],molecule=key[1],functional=key[2],mode=key[3],reason=str(error)))
-            del selected[key]
+        selected[key]=derive(*(byid[row[role+'_snapshot_id']] for role in ['complex','slab','molecule']),row['mode'])
     with (root/'dft_shared_reference_energies.csv').open('w',newline='') as out:
         writer=csv.DictWriter(out,fieldnames=FIELDS);writer.writeheader();writer.writerows(selected[k] for k in sorted(selected))
     (root/'dft_shared_reference_audit.json').write_text(json.dumps(dict(

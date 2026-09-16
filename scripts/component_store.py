@@ -34,9 +34,6 @@ def identity(directory):
         index=parts.index('completion_runs')
         if len(parts)>index+3 and parts[index+2]=='molecule':
             return dict(role='molecule',surface='',molecule=canonical(parts[index+3]),source_name=parts[index+3])
-        if len(parts)>index+3 and parts[index+2]=='slab':
-            label=parts[index+3];match=re.search(r'([A-Z][a-z]?\d+)',label)
-            return dict(role='slab',surface=match[1] if match else label,molecule='',source_name=label)
     for tree, role in [('vasp_mol', 'molecule'), ('vasp_slab_kestrel', 'slab'), ('vasp_slab', 'slab')]:
         if tree in parts:
             label = parts[parts.index(tree) + 1]
@@ -138,7 +135,7 @@ def collect(cluster, project):
     from completion_support import completion_jobs
     for job in completion_jobs(project):
         directory=Path(job['directory'])
-        if job['role'] in ('molecule','slab'):
+        if job['role']=='molecule':
             records.append(record(cluster,component(directory),dict(kind='live-files',observed_at=observed,project_root=str(project),completion_manifest=str(directory/'completion_inputs.json'))))
     if not records:
         raise ValueError('No calculations found; store preserved')
@@ -165,7 +162,6 @@ def relaxed(c):
 
 
 def reference_candidates(complex_row, components):
-    from potential_matching import potential_match
     c = complex_row['calculation']; metal = re.match(r'[A-Z][a-z]?', complex_row['surface']).group()
     slab_composition = {metal: c['composition'].get(metal, 0)}
     molecule_composition = {k: v for k, v in c['composition'].items() if k != metal}
@@ -178,14 +174,13 @@ def reference_candidates(complex_row, components):
             matches = row['surface'] == complex_row['surface'] and r['composition'] == slab_composition and cell_matches(c.get('cell'), r.get('cell'))
         else:
             matches = row['molecule'] == complex_row['molecule'] and r['composition'] == molecule_composition
-        if matches and potential_match(c,r):
+        if matches:
             candidates[role].append(row['snapshot_id'])
     return dict(complex_snapshot_id=complex_row['snapshot_id'], required_slab_composition=slab_composition,
                 required_molecule_composition=molecule_composition, required_cell_A=c.get('cell'),
                 candidate_reference_ids=candidates,
                 unresolved_roles=[role for role, ids in candidates.items() if not ids],
-                required_potentials=c.get('potentials',{}),
-                policy='Require matching PAW TITEL identities including variant/version; verify geometry, constraints and full settings before deriving energy')
+                policy='Candidates only: verify geometry, constraints and full calculation settings before deriving energy; no cross-cluster automatic substitution')
 
 
 def report(store, site):
@@ -233,11 +228,10 @@ def report(store, site):
                 name=request['molecule'] if role=='molecule' else request['surface']
                 composition=comp['required_molecule_composition'] if role=='molecule' else comp['required_slab_composition']
                 key=(role,name,request['functional'],json.dumps(composition,sort_keys=True),
-                     json.dumps(comp['required_cell_A']) if role=='slab' else '',
-                     json.dumps({el:comp['required_potentials'].get(el) for el in composition},sort_keys=True))
+                     json.dumps(comp['required_cell_A']) if role=='slab' else '')
                 dependencies.setdefault(key,set()).add(cell)
     with (site/'dft_missing_reference_priorities.csv').open('w',newline='') as out:
-        w=csv.writer(out);w.writerow(['role','name','functional','required_composition','required_slab_cell_A','required_potentials','affected_missing_cells','cells'])
+        w=csv.writer(out);w.writerow(['role','name','functional','required_composition','required_slab_cell_A','affected_missing_cells','cells'])
         for key,cells in sorted(dependencies.items(),key=lambda x:(-len(x[1]),x[0])):
             w.writerow([*key,len(cells),json.dumps(sorted(cells))])
     summary = dict(schema_version=SCHEMA, component_snapshots=len(records), current_calculations=len(current),
@@ -283,8 +277,6 @@ def write_explanation(site, current, coverage, summary):
             f'<td>{escape(json.dumps(c["composition"], sort_keys=True))}</td><td>{escape(c["status"])}</td>'
             f'<td><code>{escape(c["directory"])}</code><br>{escape(c.get("note", ""))}</td></tr>')
     reason_labels = {
-        'potential mismatch': 'The former component subtraction used different PAW potentials; a fully matched replacement is not yet available.',
-        'refs unverified': 'The historical number has no fully validated matching-potential component set in the current store.',
         'unconverged': 'At least one component is unfinished or unconverged; this can be the gas reference, not the adsorbed complex.',
         'slab_mismatch': 'The audited slab atom count differs from the complex. Other reference failures may coexist.',
         'no matching Perlmutter calculation': 'No candidate matched the current Perlmutter audit layout and system key. Check Kestrel and other saved layouts.',
@@ -308,12 +300,6 @@ def write_explanation(site, current, coverage, summary):
 <style>body{{margin:0;background:#0f1116;color:#e6e6e6;font:16px/1.6 system-ui,sans-serif}}main{{max-width:1100px;margin:auto;padding:30px 22px 70px}}a{{color:#8abaff}}h1{{font-size:29px}}h2{{margin-top:32px;font-size:22px}}table{{border-collapse:collapse;width:100%;font-size:14px}}td,th{{border:1px solid #444;padding:10px;text-align:left}}th{{background:#20242e}}code{{overflow-wrap:anywhere}}.scroll{{overflow:auto}}.note{{padding:15px;background:#20242e;border-left:3px solid #e0a800}}small{{color:#abb4c5}}</style></head>
 <body><main><a href="dft_comparison.html">← DFT comparison</a>
 <h1>Completed calculations and missing binding energies</h1>
-<div class="note"><strong>Matching-potential policy:</strong> the latest audit found 1,120 historical candidate subtractions
-mixing metal PAW potentials, across Ag, Cu, Pd, Pt and Rh surfaces. A converged job alone cannot validate that subtraction.
-The active table now requires a validated matching-potential component set. <code>potential mismatch</code> identifies known mixed-potential references;
-<code>refs unverified</code> means the historical number cannot currently be validated, not that a mismatch has been proved.
-51 deduplicated clean-slab calculations were submitted as array <code>58411454</code>, at most four concurrent, using the exact metal POTCAR block from the complexes.
-<a href="dft_potential_mismatches.csv">Historical mismatch audit</a> · <a href="dft_potential_slab_recovery.json">Recovery inputs and submission</a>.</div>
 <p>A blank binding-energy cell does <strong>not</strong> mean the adsorbed-complex calculation failed.
 The page reports adsorption energies, while an individual VASP job reports a total energy.
 Three suitable component results are needed:</p>
@@ -339,10 +325,10 @@ The completed BEEF-vdW gas geometry supplies starting coordinates only; each ret
 The first retry array exhausted its electronic iteration limit and was stopped with outputs preserved; the replacement uses the Davidson electronic solver.</p>
 <p>For BEEF-vdW, the saved Perlmutter and Kestrel complex SPE totals differ by about 0.000001 eV.
 Switching that complex does not resolve the unusual binding energy: the current matched references give approximately
-−25.227 eV relaxed and −25.218 eV SPE. The potential audit subsequently identified Ag/Ag_pv mixing in this subtraction; these historical numbers are now withheld from the active table until a matching-potential reference is available.
+−25.227 eV relaxed and −25.218 eV SPE. These values remain visible with review markers.
 The <a href="dft_cluster_duplicates.csv">duplicate comparison</a> records both energies and the available structure evidence.</p>
 <p>DME and CH3OCH3 already resolve to the same molecule. Ethanol is kept distinct despite the shared gross formula C2H6O.
-Potential variants remain recorded; the current policy requires matching PAW identities for complex and references.
+Ag/Ag_pv variants remain recorded and do not exclude values under the project's current filtering policy.
 Converged, composition-matched unusual binding energies are shown with an amber review marker; magnitude alone does not cause these blanks.</p>
 <h2>What the blanks mean across the page</h2>
 <p>Website/scheduler snapshot: <code>{escape(snapshot)}</code>. There are 415 systems × 4 functionals = 1,660 possible entries in each energy column.
@@ -362,7 +348,7 @@ The active Kestrel location supplied by the user is <code>/scratch/jcho5/goad-gl
 Archived records retain their original <code>/kfs3/scratch/...</code> paths.</p>
 <p>The shared-reference derivation now fills missing table cells using these converged, composition- and cell-matched slabs,
 with matching functional, cutoff and stored core settings. The subsequent source-selection pass prefers usable Perlmutter candidates;
-an unusual result can use a Kestrel replacement only with verified structure equivalence. Historical values lacking a validated matching-potential component set are withheld.
+an unusual result can use a Kestrel replacement only with verified structure equivalence. Existing unflagged values are held while an unusual replacement needs geometry verification.
 Unusual values remain visible with review markers. See the
 <a href="dft_shared_reference_energies.csv" download>derived energies with all three component totals and source paths</a>
 and <a href="dft_shared_reference_audit.json">reference-matching policy and audit</a>.
@@ -391,7 +377,7 @@ The 15 missing DFT contact measurements are a separate geometry-source issue req
     note = '''<!-- component-availability -->
 <div class="note info"><b>A blank binding energy can still have a converged complex.</b>
 Binding energies require compatible complex, clean-slab and gas-molecule results. Ag111–DME PBE has completed relaxed and SPE complexes; its original gas reference failed and its standard Perlmutter slab has the wrong atom count. Converged recovery references are applied when available.
-Size-specific Kestrel slabs are used only when their PAW potential identities also match the complex. The potential audit supersedes the earlier variant-permissive policy.
+Size-specific Kestrel slabs are now used through the shared-reference audit; Ag111–DME BEEF-vdW is available with an energy-review marker.
 <br><a href="dft_data_gaps.html">Detailed explanation, Ag111–DME component energies, and counts of every gap reason</a> &middot;
 <a href="dft_component_energies.csv" download>Component total energies (Perlmutter + archived Kestrel)</a> &middot;
 <a href="dft_kestrel_search_requests.json" download>Kestrel search requests</a>.</div>

@@ -56,12 +56,8 @@ class PublishedEnergyTests(unittest.TestCase):
         for row in published:
             key = (row['surface'], row['molecule'], row['functional'])
             self.assertTrue(math.isfinite(float(values[key][0])))
-            # This tests the legacy restoration stage alone. The production
-            # potential-policy pass can withhold numbers afterwards.
-            if key not in refreshed and before[key][0] not in ('potential mismatch','refs unverified'):
+            if key not in refreshed:
                 self.assertEqual(values[key], before[key])
-            elif key not in refreshed:
-                self.assertEqual(float(values[key][0]),float(row['E_ads_DFT']))
         self.assertEqual(len(published), 1087)
         self.assertNotIn('class="audit-status"', page)
         self.assertIn('Previously published energy retained; current audit:', page)

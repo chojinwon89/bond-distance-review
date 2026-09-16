@@ -11,7 +11,7 @@ def components():
     cell=[[8.,0,0],[4.,7.,0],[0,0,37.]]
     def make(cluster,path,energy,composition):
         return record(cluster,dict(directory=path,energy=energy,composition=composition,cell=copy.deepcopy(cell),
-            status='converged',functional='beef_vdw',nsw=100,settings=dict(settings),potentials={el:'PAW_PBE '+el+' fixture' for el in composition}),{'kind':'archived-source-export'})
+            status='converged',functional='beef_vdw',nsw=100,settings=dict(settings),potentials={}),{'kind':'archived-source-export'})
     return [make('perlmutter','/data/dft_jobs/CH3OCH3_Ag111/beef_vdw',-10.65320050,{'Ag':36,'C':2,'O':1,'H':6}),
             make('kestrel','/data/vasp_slab/Ag111_n36/beef_vdw',56.86657689,{'Ag':36}),
             make('perlmutter','/data/vasp_mol/DME/beef_vdw',-42.29312929,{'C':2,'O':1,'H':6})]
@@ -25,16 +25,13 @@ class SharedReferenceTests(unittest.TestCase):
         self.assertEqual(result['slab_cluster'],'kestrel')
 
     def test_invalid_reference_cannot_be_promoted(self):
-        for kind in ['atom_count','cell','unfinished','isomer','cutoff','mode','potential','gas_potential','missing_potential']:
+        for kind in ['atom_count','cell','unfinished','isomer','cutoff','mode']:
             c,s,g=copy.deepcopy(components())
             if kind=='atom_count':s['calculation']['composition']={'Ag':64}
             if kind=='cell':s['calculation']['cell'][0][0]=9.
             if kind=='unfinished':g['calculation']['status']='unfinished'
             if kind=='isomer':g['molecule']='ethanol'
             if kind=='cutoff':s['calculation']['settings']=dict(s['calculation']['settings'],ENCUT='500')
-            if kind=='potential':s['calculation']['potentials']['Ag']='PAW_PBE Ag_pv fixture'
-            if kind=='gas_potential':g['calculation']['potentials']['C']='PAW_PBE C_h fixture'
-            if kind=='missing_potential':s['calculation']['potentials']={}
             with self.subTest(kind=kind),self.assertRaises(ValueError):
                 derive(c,s,g,'SPE' if kind=='mode' else 'relaxed')
 

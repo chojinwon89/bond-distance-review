@@ -95,19 +95,16 @@ def main():
             f=FUNCTIONALS[cells[0].get_text()];key=(s,m,f)
             er,em,es=[numeric(cells[i].get_text()) for i in [1,2,4]]
             candidates=spe.get(key,[])
-            spe_review=es is not None and 'energy-review' in cells[4].get('class',[])
-            relaxed_review=er is not None and 'energy-review' in cells[1].get('class',[])
+            spe_review='energy-review' in cells[4].get('class',[])
+            relaxed_review='energy-review' in cells[1].get('class',[])
             if es is not None:status='available; energy review' if spe_review else 'available'
-            elif cells[4].get_text() in ('potential mismatch','refs unverified'):status=cells[4].get_text()
             elif key in recovery:status=recovery[key]['status']
             elif any(r['complex_directory'] in queued for r in candidates):status='SPE '+next(queued[r['complex_directory']] for r in candidates if r['complex_directory'] in queued).lower()
             elif candidates:status='; '.join(sorted({r['status'] for r in candidates}))
             else:status='no matching Perlmutter calculation; check Kestrel sources'
             rr=relax.get(key,[])
-            relaxed_status=('available; energy review' if relaxed_review else 'available') if er is not None else '; '.join(sorted({r['status'] for r in rr})) or 'no matching Perlmutter calculation'
-            if er is None and cells[1].get_text() in ('potential mismatch','refs unverified'):relaxed_status=cells[1].get_text()
             report.append(dict(surface=s,molecule=m,functional=f,E_ads_ML=em,E_ads_relaxed=er,E_ads_SPE=es,
-                relaxed_status=relaxed_status,
+                relaxed_status=('available; energy review' if relaxed_review else 'available') if er is not None else '; '.join(sorted({r['status'] for r in rr})) or 'no matching Perlmutter calculation',
                 SPE_status=status,completion_job_directory=recovery.get(key,{}).get('directory',''),
                 relaxed_energy_review=relaxed_review,SPE_energy_review=spe_review,
                 dft_contact_available=bool(dft_match),required_CONTCAR=dft_sources.get(key2,'') if not dft_match else ''))
