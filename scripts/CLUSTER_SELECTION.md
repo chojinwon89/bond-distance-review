@@ -1,6 +1,6 @@
 # Perlmutter-first source selection
 
-The user's current policy supersedes the initial fill-only update policy:
+The user's current matching-potential policy supersedes the initial fill-only and variant-permissive update policies:
 prefer Perlmutter; consider Kestrel when a result is missing or unusual, using
 the same structure. Historical totals and previous displayed values remain
 available in the component store and before/after CSVs.
@@ -14,17 +14,15 @@ The implemented selection order is:
    can replace it only when a structure fingerprint verifies equivalence.
    Selecting an energy because it is lower or closer to ML is not allowed.
 3. Without a verified better alternative, retain the unusual Perlmutter result
-   with its review marker. Existing unflagged published values are retained
-   while an unusual proposed replacement still requires geometry verification.
+   with its review marker, provided all references use matching potentials.
 4. Kestrel can fill a missing result when Perlmutter has no usable candidate.
    If a corresponding Perlmutter structure exists, the geometry match is required.
-   Existing Kestrel/published numbers are not replaced by a different Kestrel
-   reference choice merely because Perlmutter has no candidate.
+   Historical numbers without a validated matching-potential component set are withheld; their previous values remain in the audit downloads.
 
 The threshold is explicit and configurable in the existing energy auditors.
 Positive or unusual total energies are never discarded based on sign. POTCAR
-variants remain allowed by the user's filtering policy; actual identities are
-recorded and no energy offsets, scaling or atom-count corrections are applied.
+identities must match for all reference species, including variant and dataset date.
+No energy offsets, scaling or atom-count corrections are applied.
 
 ## Same-structure evidence
 
@@ -74,7 +72,7 @@ Downloads:
 - `dft_cluster_duplicates.csv`: Perlmutter/Kestrel energies and geometry evidence.
 - `dft_cluster_selection.csv`: candidate choice, reason and actual application
   status for all 3,320 relaxed/SPE table cells. A candidate and an applied value
-  are distinct when a previous unflagged result is being held.
+  are distinct when an old number is withheld pending compatible references.
 - `dft_cluster_selection_before.csv`: table values before the first policy pass.
 - `dft_cluster_selection_changes.csv`: numeric changes with their reasons.
 - `dft_missing_reference_priorities.csv`: missing references grouped by affected

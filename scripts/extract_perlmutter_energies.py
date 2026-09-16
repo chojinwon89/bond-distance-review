@@ -2,7 +2,7 @@
 """Audit relaxed VASP energies, convergence and composition.
 
 Read calculation outputs only. Positive absolute energies are not a failure.
-Project policy: ignore POTCAR identity differences; retain identities in the audit.
+Project policy: require matching PAW potential identities; retain raw diagnostic energies.
 The +/-5 eV adsorption-energy screen is a review flag, not a convergence test.
 """
 import argparse
@@ -100,6 +100,9 @@ def assess(complex_result, slab, molecule, metal):
             notes.append('Complex composition does not equal slab plus gas molecule')
     if status != 'ok':
         return status, '; '.join(notes), raw
+    from potential_matching import potential_match
+    if not all(potential_match(complex_result,r) for r in [slab,molecule]):
+        return 'potential_mismatch','Complex and reference PAW potential identities differ or are missing',raw
     if not all(p['convergence'] == 'converged' for p in parts):
         failures='; '.join(label+': '+p['failure_reason'] for label,p in zip(['complex','slab','molecule'],parts) if p.get('failure_reason'))
         return 'unconverged', failures or 'See component convergence statuses', raw

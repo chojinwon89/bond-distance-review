@@ -46,7 +46,7 @@ def build(root=ROOT):
     spe_allowed=set()
     for filename in ['dft_perlmutter_singlepoint_audit.csv','dft_kestrel_singlepoint_audit.csv']:
         for r in read_csv(root/filename):
-            if r['status'] in ('ok','energy_review','reference_unavailable'):spe_allowed.add(r['complex_directory'])
+            if r['status'] in ('ok','energy_review','reference_unavailable','potential_mismatch'):spe_allowed.add(r['complex_directory'])
     for comp in records:
         c=comp['calculation'];key=(comp['surface'],comp['molecule'],c['functional'])
         if comp['role']!='complex' or key not in targets:continue
@@ -101,7 +101,7 @@ def build(root=ROOT):
     write_csv(root/'dft_cluster_selection.csv',selections,FIELDS+['selection_reason','kestrel_fallback','previous_E_ads','candidate_count'])
     duplicate_fields=['surface','molecule','functional','mode','E_ads_perlmutter','E_ads_kestrel','complex_total_difference_eV','perlmutter_directory','kestrel_directory','same_structure','geometry_evidence','selection_reason']
     write_csv(root/'dft_cluster_duplicates.csv',duplicates,duplicate_fields)
-    summary=dict(policy='Perlmutter first. If |E_ads| > 5 eV, prefer an unflagged Kestrel result only with verified matching structure. Directory names, composition, similar energies and matching cells alone do not prove equal coordinates. Preserve nonselected history; do not substitute gas energies across functionals.',
+    summary=dict(policy='Require matching PAW TITEL identities for all component species. Withhold historical numbers lacking validated references. Perlmutter first. If |E_ads| > 5 eV, prefer an unflagged Kestrel result only with verified matching structure. Directory names, composition, similar energies and matching cells alone do not prove equal coordinates. Preserve nonselected history; do not substitute gas energies across functionals.',
         selections=dict(Counter(r['selection_reason'] for r in selections)),candidate_results=len(candidate_rows),duplicate_pairs=len(duplicates),
         geometry_verified_pairs=sum(r['same_structure']=='true' for r in duplicates),
         normal_existing_to_review=sum(bool(r['previous_E_ads']) and abs(Decimal(r['previous_E_ads']))<=5 and r['status']=='energy_review' for r in selections),
@@ -116,6 +116,11 @@ def apply(root=ROOT):
     if not selection_path.exists():return
     selection_rows=read_csv(selection_path)
     selection={(r['surface'],r['molecule'],r['functional'],r['mode']):r for r in selection_rows}
+    potential_audit=root/'dft_potential_mismatches.csv'
+    mismatched={(r['surface'],r['molecule'],r['functional'],r['mode']) for r in read_csv(potential_audit)} if potential_audit.exists() else set()
+    fresh_audit=root/'dft_perlmutter_singlepoint_audit.csv'
+    if potential_audit.exists() and fresh_audit.exists():
+        mismatched.update((r['surface'],canonical(r['molecule']),r['functional'],'SPE') for r in read_csv(fresh_audit) if r['status']=='potential_mismatch')
     recovery_path=root/'dft_gas_reference_recovery.json'
     recovery={r['functional']:r for r in json.loads(recovery_path.read_text())['jobs']} if recovery_path.exists() else {}
     path=root/'dft_comparison.html';page=path.read_text();sp_path=root/'dft_comparison_singlepoint.csv'
@@ -150,6 +155,14 @@ def apply(root=ROOT):
                 selected['applied_E_ads']=str(old) if old is not None else ''
                 selected['application_status']='existing value retained' if old is not None else 'missing'
                 if not selected['E_ads']:
+                    if key+(mode,) in mismatched or (potential_audit.exists() and (old is not None or 'refs unverified' in cells[index])):
+                        cls='sp-energy energy-review' if mode=='SPE' else 'energy-review'
+                        label='potential mismatch' if key+(mode,) in mismatched else 'refs unverified'
+                        cells[index]=f'<td class="{cls}" title="No fully validated replacement with matching PAW potentials is selected; previous numbers remain in the history downloads">{label}</td>'
+                        cells[delta_index]='<td class="sp-energy">&mdash;</td>' if mode=='SPE' else '<td>&mdash;</td>'
+                        selected['applied_E_ads']='';selected['application_status']='withheld: '+label
+                        if mode=='SPE':sp.pop(key,None);cells[5]='<td class="sp-energy sp-combined">&mdash;</td>'
+                        continue
                     retry=recovery.get(functional) if molecule=='DME' else None
                     if old is None and retry and retry['scheduler_state'] in ('PENDING','RUNNING'):
                         label='gas ref queued' if retry['scheduler_state']=='PENDING' else 'gas ref running'
@@ -161,12 +174,12 @@ def apply(root=ROOT):
                         cells[index]=f'<td{cls} title="Gas retry status changed; inspect the component audit for remaining blockers">see audit</td>'
                     continue
                 value=Decimal(selected['E_ads']);old=number(cells[index]);review=selected['status']=='energy_review'
-                if old is not None and selected['complex_cluster']=='kestrel' and selected['kestrel_fallback']!='true':
+                if not potential_audit.exists() and old is not None and selected['complex_cluster']=='kestrel' and selected['kestrel_fallback']!='true':
                     selected['application_status']='existing value retained; no verified replacement required'
                     continue
                 # Existing unflagged values are held while an unusual replacement
                 # lacks a geometry-verified Kestrel comparison. Raw candidates stay downloadable.
-                if old is not None and abs(old)<=5 and 'energy-review' not in cells[index] and review:
+                if not potential_audit.exists() and old is not None and abs(old)<=5 and 'energy-review' not in cells[index] and review:
                     selected['application_status']='existing unflagged value retained pending geometry verification'
                     continue
                 selected['applied_E_ads']=str(value);selected['application_status']='selected candidate applied'
@@ -200,7 +213,11 @@ def apply(root=ROOT):
     page=re.sub(r'<!-- cluster-policy -->.*?<!-- /cluster-policy -->\n?','',page,flags=re.S)
     note='''<!-- cluster-policy -->
 <div class="note info"><b>Source preference:</b> Perlmutter first. For an unusual result (|E<sub>ads</sub>| &gt; 5 eV), a Kestrel alternative must pass completion/reference checks and match the structure fingerprint.
-Matching names or near-identical energies alone are insufficient. Existing unflagged values are retained while an unusual replacement needs geometry verification.
+<br><b>Potential compatibility:</b> Complex and references must use matching PAW potential identities, including variant and dataset date.
+Known mixed-potential values are withheld until compatible references are available. Historical values remain in the
+<a href="dft_potential_mismatches.csv">potential mismatch audit</a>; <a href="dft_potential_audit_summary.json">counts by surface</a>.
+<a href="dft_potential_slab_recovery.json">Matching-potential slab recovery inputs and submission</a>.
+Matching names or near-identical energies alone are insufficient. Under the matching-potential policy, old values lacking a validated component set are withheld rather than assumed compatible.
 Archived Kestrel sources remain labeled; no fresh Kestrel login is claimed.
 <br><b>DME reference recovery:</b> PBE and PBE+D3 gas-reference retries are tracked separately; their totals are used only after convergence.
 <a href="dft_gas_reference_recovery.json">Gas-reference job status</a>.

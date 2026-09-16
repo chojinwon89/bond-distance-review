@@ -3,6 +3,574 @@
   "historical_kestrel_root": "/kfs3/scratch/jcho5/goad-global-optimization",
   "note": "User supplied active Kestrel path. Archived source paths remain unchanged; root spellings are not silently equated or merged. This run uses saved records, not a live Kestrel filesystem read.",
   "policy": "Only fill missing cells. Require full slab cell within 1e-5 Angstrom and matching atom counts, functional, completion and stored core settings. SPE complexes must also pass the original cluster audit through the complex checks. KPOINTS and selective-dynamics constraints are not contained in the archived component export; no new numerical-convergence claim is made.",
-  "selected": 98,
-  "rejected_candidates": []
+  "selected": 27,
+  "rejected_candidates": [
+    {
+      "surface": "Ag100",
+      "molecule": "CO2",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "ethane",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag100",
+      "molecule": "ethanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag110",
+      "molecule": "ethanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "CH3",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "CH3",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "CO",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "CO",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "DME",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "DME",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2O",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2O",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2S",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "H2S",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "N2",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "N2",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "NH3",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "NH3",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "NO",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "NO",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "SO2",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "SO2",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "acetaldehyde",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "acetaldehyde",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "acetic_acid",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "acetic_acid",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "ethene",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formaldehyde",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formaldehyde",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formate",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formic_acid",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "formic_acid",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "isopropanol",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "methane",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "methane",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "methanol",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "methanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "propane",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Ag111",
+      "molecule": "propene",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd100",
+      "molecule": "CO2",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd100",
+      "molecule": "ethane",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd100",
+      "molecule": "ethanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd110",
+      "molecule": "ethanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "CH3",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "CH3",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "CH3",
+      "functional": "pbe",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "CH3",
+      "functional": "pbe_d3",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "DME",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "DME",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "H2O",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "NH3",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "NO",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "SO2",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetaldehyde",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetaldehyde",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetaldehyde",
+      "functional": "pbe",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetaldehyde",
+      "functional": "pbe_d3",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetic_acid",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetic_acid",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "ethene",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "formaldehyde",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "formic_acid",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "methane",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "methane",
+      "functional": "r2scan",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "methanol",
+      "functional": "beef_vdw",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "methanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "methanol",
+      "functional": "pbe",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "methanol",
+      "functional": "pbe_d3",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pd111",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt100",
+      "molecule": "CO2",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt100",
+      "molecule": "ethane",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt100",
+      "molecule": "ethanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt110",
+      "molecule": "ethanol",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt111",
+      "molecule": "formic_acid",
+      "functional": "beef_vdw",
+      "mode": "relaxed",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt111",
+      "molecule": "methanol",
+      "functional": "pbe",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt111",
+      "molecule": "methanol",
+      "functional": "pbe_d3",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    },
+    {
+      "surface": "Pt111",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "mode": "SPE",
+      "reason": "References fail convergence, functional, identity, atom-count or full-cell matching"
+    }
+  ]
 }

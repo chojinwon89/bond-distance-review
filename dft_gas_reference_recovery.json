@@ -1,5 +1,5 @@
 {
-  "snapshot": "2026-09-15T19:23:54.157242+00:00",
+  "snapshot": "2026-09-16T04:32:55.266403+00:00",
   "jobs": [
     {
       "functional": "pbe",
@@ -48,9 +48,9 @@
       "functional": "pbe_d3",
       "molecule": "DME",
       "job_id": "58376018_1",
-      "scheduler_state": "PENDING",
-      "calculation_status": "not_started",
-      "energy_TOTEN_eV": null,
+      "scheduler_state": "COMPLETED",
+      "calculation_status": "converged",
+      "energy_TOTEN_eV": -46.42351862,
       "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/dme_references_davidson_20260915/molecule/DME/PBE_D3",
       "input_changes": {
         "IBRION": "1",

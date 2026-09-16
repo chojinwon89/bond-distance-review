@@ -8,6 +8,7 @@ from component_store import identity, latest, merge, read_store, record, referen
 def fixture(cluster='perlmutter', path='/data/dft_jobs/CH3OCH3_Ag111/PBE', energy=-138., mtime=1):
     return record(cluster, dict(directory=path, energy=energy, status='converged', functional='pbe',
         nsw=100, outcar_mtime_ns=mtime, composition={'Ag':36,'C':2,'O':1,'H':6},
+        potentials={el:'PAW_PBE '+el+' fixture' for el in ['Ag','C','O','H']},
         settings={'IBRION':'2'}, cell=[[8.,0,0],[4.,7.,0],[0,0,37.]]), {'kind':'live-files','observed_at':'2026-09-15'})
 
 

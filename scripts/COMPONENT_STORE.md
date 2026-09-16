@@ -89,8 +89,8 @@ canonical molecule, all recognized spellings, and available complex snapshot IDs
 For completed complexes, requests also contain required slab and molecule atom
 counts, the complex cell, and IDs of converged reference candidates from either
 cluster. Slab candidates must match the full cell within 1e-5 Å; molecule
-candidates must match chemical identity and composition. Potential variants are
-recorded and do not exclude candidates under the project's current policy.
+candidates must match chemical identity and composition. Matching PAW TITEL
+identities (element, variant and dataset date) are required for every reference species.
 
 These are **search candidates**, not automatic cross-cluster substitutions.
 Check geometry provenance, atom constraints, k points, cutoff, spin, smearing,
@@ -125,7 +125,7 @@ cluster, original path and immutable snapshot ID. It requires converged
 components, the requested calculation mode, chemical identity, functional,
 composition, matching full slab cell, cutoff and stored core settings. SPE
 complexes must pass the original cluster audit through its complex checks.
-Existing numeric page values retain priority. Values outside ±5 eV are displayed
+The strict potential policy supersedes preservation of incompatible or unverified historical numbers. Values outside ±5 eV are displayed
 with the energy-review marker and excluded from paired figure statistics.
 Selection prefers Perlmutter complexes and same-cluster references, then directory
 order; it never selects a reference based on its energy. Earlier selected rows
@@ -134,8 +134,8 @@ remain reproducible when a completed cell disappears from the request list.
 The original standard-slab audit remains available as evidence of the failed
 lookup. The shared-reference file supplies the corrected matching path.
 Archived exports lack KPOINTS and selective-dynamics constraints; their reuse
-does not assert a new numerical-convergence study. The user's policy allowing
-POTCAR variants remains in effect, with actual identities retained in the store.
+does not assert a new numerical-convergence study. The user's latest instruction
+requires matching potentials and supersedes the earlier variant-permissive policy.
 
 ## September 15, 2026 investigation
 

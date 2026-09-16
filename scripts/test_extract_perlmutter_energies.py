@@ -21,16 +21,16 @@ class ReferenceAuditTests(unittest.TestCase):
     def test_positive_absolute_energies_can_be_valid(self):
         self.assertEqual(assess(*self.parts, metal='Ag'), ('ok', '', -1))
 
-    def test_potential_variants_are_allowed_by_project_policy(self):
+    def test_metal_potential_variants_are_rejected(self):
         self.parts[1]['potentials']['Ag'] = 'Ag_pv'
         status, note, raw = assess(*self.parts, metal='Ag')
-        self.assertEqual(status, 'ok')
-        self.assertEqual(note, '')
+        self.assertEqual(status, 'potential_mismatch')
+        self.assertIn('potential',note)
         self.assertEqual(raw, -1)
 
-    def test_gas_potential_variants_are_also_ignored(self):
+    def test_gas_potential_variants_are_rejected(self):
         self.parts[2]['potentials']['C'] = 'C_h'
-        self.assertEqual(assess(*self.parts, metal='Ag')[0], 'ok')
+        self.assertEqual(assess(*self.parts, metal='Ag')[0], 'potential_mismatch')
 
     def test_atom_counts_and_composition(self):
         parts = copy.deepcopy(self.parts)
