@@ -183,7 +183,7 @@ def update(root=ROOT):
         missing.setdefault(key,dict(label=label,title=title))
     page, displayed, additions = render(page, screened, previous, missing)
     legacy_count = sum(not row["complex_directory"] for row in displayed)
-    perlmutter_count = sum(row['provenance'].startswith(('Perlmutter','Cluster policy: Perlmutter')) for row in displayed)
+    perlmutter_count = sum(row['provenance'].startswith('Perlmutter') for row in displayed)
     review_count = sum(row['SPE_review']=='true' for row in displayed)
     screened_perlmutter_count = sum(row['provenance'].startswith('Perlmutter') and row['SPE_review']!='true' for row in displayed)
     shared_count = sum(row['provenance'].startswith('Shared stored references') for row in displayed)

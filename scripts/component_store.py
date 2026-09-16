@@ -30,10 +30,6 @@ def digest(value):
 def identity(directory):
     """Resolve explicit directory conventions, preserving molecule/isomer identity."""
     parts = Path(directory).parts
-    if 'completion_runs' in parts:
-        index=parts.index('completion_runs')
-        if len(parts)>index+3 and parts[index+2]=='molecule':
-            return dict(role='molecule',surface='',molecule=canonical(parts[index+3]),source_name=parts[index+3])
     for tree, role in [('vasp_mol', 'molecule'), ('vasp_slab_kestrel', 'slab'), ('vasp_slab', 'slab')]:
         if tree in parts:
             label = parts[parts.index(tree) + 1]
@@ -132,11 +128,6 @@ def collect(cluster, project):
             records.append(record(cluster, component(directory), dict(kind='live-files', observed_at=observed,
                 project_root=str(project), fingerprint='SHA256 of first 100000 bytes + NUL + last 1000000 bytes; not a full-file hash')))
         print('Collected', name, len(paths), flush=True)
-    from completion_support import completion_jobs
-    for job in completion_jobs(project):
-        directory=Path(job['directory'])
-        if job['role']=='molecule':
-            records.append(record(cluster,component(directory),dict(kind='live-files',observed_at=observed,project_root=str(project),completion_manifest=str(directory/'completion_inputs.json'))))
     if not records:
         raise ValueError('No calculations found; store preserved')
     return records
@@ -220,20 +211,6 @@ def report(store, site):
     (site / 'dft_kestrel_search_requests.json').write_text(json.dumps(dict(schema_version=SCHEMA,
         instructions='Search both fully relaxed and NSW=0 jobs using all explicit aliases. Match the listed reference compositions/cells. These are unresolved website cells, not instructions to submit duplicate jobs. Import results with component_store.py; audit derived energies before updating the page.',
         requests=requests), separators=(',', ':')) + '\n')
-    dependencies={}
-    for request in requests:
-        cell=(request['surface'],request['molecule'],request['functional'],request['mode'])
-        for comp in request['completed_complexes']:
-            for role in comp['unresolved_roles']:
-                name=request['molecule'] if role=='molecule' else request['surface']
-                composition=comp['required_molecule_composition'] if role=='molecule' else comp['required_slab_composition']
-                key=(role,name,request['functional'],json.dumps(composition,sort_keys=True),
-                     json.dumps(comp['required_cell_A']) if role=='slab' else '')
-                dependencies.setdefault(key,set()).add(cell)
-    with (site/'dft_missing_reference_priorities.csv').open('w',newline='') as out:
-        w=csv.writer(out);w.writerow(['role','name','functional','required_composition','required_slab_cell_A','affected_missing_cells','cells'])
-        for key,cells in sorted(dependencies.items(),key=lambda x:(-len(x[1]),x[0])):
-            w.writerow([*key,len(cells),json.dumps(sorted(cells))])
     summary = dict(schema_version=SCHEMA, component_snapshots=len(records), current_calculations=len(current),
         by_cluster=dict(Counter(r['cluster'] for r in current)),
         converged_by_cluster=dict(Counter(r['cluster'] for r in current if r['calculation']['status']=='converged')),
@@ -309,15 +286,7 @@ These are two independent blockers. The last gas TOTEN is retained as a diagnost
 It is stored in the raw audit, but is not a valid binding energy. Multiplying the slab energy by 36/64 would not repair the inconsistent surface reference.</p>
 <p>The archived Kestrel <code>Ag111_n36/PBE</code> result has 36 Ag atoms and the same full cell as the complex.
 It is a useful reference candidate; the archived Kestrel PBE DME gas outputs are also unfinished.
-Fresh Kestrel files must be checked for a completed replacement. Every cross-cluster reference choice is recorded in the source-selection download.</p>
-<p>Two isolated Perlmutter DME gas-reference retries (array <code>58376018</code>) now target PBE and PBE+D3.
-Their <a href="dft_gas_reference_recovery.json">dated job-status snapshot</a> distinguishes scheduler state from verified convergence.
-The completed BEEF-vdW gas geometry supplies starting coordinates only; each retry computes its own functional-specific energy.
-The first retry array exhausted its electronic iteration limit and was stopped with outputs preserved; the replacement uses the Davidson electronic solver.</p>
-<p>For BEEF-vdW, the saved Perlmutter and Kestrel complex SPE totals differ by about 0.000001 eV.
-Switching that complex does not resolve the unusual binding energy: the current matched references give approximately
-−25.227 eV relaxed and −25.218 eV SPE. These values remain visible with review markers.
-The <a href="dft_cluster_duplicates.csv">duplicate comparison</a> records both energies and the available structure evidence.</p>
+Fresh Kestrel files must be checked for a completed replacement. The store does not silently combine clusters or select reference energies.</p>
 <p>DME and CH3OCH3 already resolve to the same molecule. Ethanol is kept distinct despite the shared gross formula C2H6O.
 Ag/Ag_pv variants remain recorded and do not exclude values under the project's current filtering policy.
 Converged, composition-matched unusual binding energies are shown with an amber review marker; magnitude alone does not cause these blanks.</p>
@@ -338,8 +307,7 @@ Au111_n36, Pd111_n36 and Pt111_n36 under all four functionals, along with other 
 The active Kestrel location supplied by the user is <code>/scratch/jcho5/goad-global-optimization/vasp_slab</code>.
 Archived records retain their original <code>/kfs3/scratch/...</code> paths.</p>
 <p>The shared-reference derivation now fills missing table cells using these converged, composition- and cell-matched slabs,
-with matching functional, cutoff and stored core settings. The subsequent source-selection pass prefers usable Perlmutter candidates;
-an unusual result can use a Kestrel replacement only with verified structure equivalence. Existing unflagged values are held while an unusual replacement needs geometry verification.
+with matching functional, cutoff and stored core settings. Existing numeric entries retain priority.
 Unusual values remain visible with review markers. See the
 <a href="dft_shared_reference_energies.csv" download>derived energies with all three component totals and source paths</a>
 and <a href="dft_shared_reference_audit.json">reference-matching policy and audit</a>.
@@ -355,8 +323,6 @@ including nested fully_relaxed and singlepoint layouts. NSW determines calculati
 <ul><li><a href="dft_component_energies.csv" download>All component total energies and status (CSV)</a></li>
 <li><a href="dft_component_store.jsonl.gz" download>Reusable component snapshots with full metadata (gzip JSONL)</a></li>
 <li><a href="dft_kestrel_search_requests.json" download>Missing-cell Kestrel search requests, aliases, required atoms/cells and candidate IDs</a></li>
-<li><a href="dft_missing_reference_priorities.csv" download>Missing references grouped by the cells they can complete</a></li>
-<li><a href="dft_cluster_selection.csv" download>Perlmutter-first selection decisions</a> · <a href="dft_cluster_duplicates.csv" download>Cross-cluster duplicate comparisons</a></li>
 <li><a href="dft_component_store_summary.json">Store summary</a> · <a href="dft_completion_coverage.csv" download>Every page cell and its audit status</a></li>
 <li><a href="https://github.com/chojinwon89/bond-distance-review/blob/main/scripts/COMPONENT_STORE.md">Portable collection and merge instructions</a></li></ul>
 <p>Missing binding energies also leave dependent ML differences and comparison points empty. Review-marked energies remain in tables but are excluded from paired figure statistics.

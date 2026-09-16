@@ -1,10 +1,5 @@
 # Total energies, binding-energy gaps, and cluster imports
 
-The current [Perlmutter-first selection policy](CLUSTER_SELECTION.md) now applies
-after the initial fill-only workflow described below. It records every source
-decision and verifies structure identity before an unusual Perlmutter result can
-be replaced by a Kestrel alternative.
-
 The component store separates a completed calculation's VASP free energy TOTEN
 (eV) from a derived adsorption energy. A missing binding energy never deletes
 the available complex total energy. Unfinished totals are retained with their

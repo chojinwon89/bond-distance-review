@@ -232,8 +232,6 @@ def update():
         from update_kestrel_singlepoint import update as update_singlepoint
         (ROOT / 'dft_comparison_singlepoint.csv').write_bytes(retained_spe_csv)
         update_singlepoint(ROOT)
-    from cluster_selection import apply as apply_cluster_selection
-    apply_cluster_selection(ROOT)
 
 if __name__ == '__main__':
     update()
