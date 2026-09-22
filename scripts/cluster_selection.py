@@ -101,7 +101,7 @@ def build(root=ROOT):
     write_csv(root/'dft_cluster_selection.csv',selections,FIELDS+['selection_reason','kestrel_fallback','previous_E_ads','candidate_count'])
     duplicate_fields=['surface','molecule','functional','mode','E_ads_perlmutter','E_ads_kestrel','complex_total_difference_eV','perlmutter_directory','kestrel_directory','same_structure','geometry_evidence','selection_reason']
     write_csv(root/'dft_cluster_duplicates.csv',duplicates,duplicate_fields)
-    summary=dict(policy='Require matching PAW TITEL identities for all component species. Withhold historical numbers lacking validated references. Perlmutter first. If |E_ads| > 5 eV, prefer an unflagged Kestrel result only with verified matching structure. Directory names, composition, similar energies and matching cells alone do not prove equal coordinates. Preserve nonselected history; do not substitute gas energies across functionals.',
+    summary=dict(policy='Require matching PAW TITEL identities for all component species. Preserve historical numbers with explicit audit labels when validated references are unavailable; exclude them from validated statistics. Perlmutter first. If |E_ads| > 5 eV, prefer an unflagged Kestrel result only with verified matching structure. Directory names, composition, similar energies and matching cells alone do not prove equal coordinates. Preserve nonselected history; do not substitute gas energies across functionals.',
         selections=dict(Counter(r['selection_reason'] for r in selections)),candidate_results=len(candidate_rows),duplicate_pairs=len(duplicates),
         geometry_verified_pairs=sum(r['same_structure']=='true' for r in duplicates),
         normal_existing_to_review=sum(bool(r['previous_E_ads']) and abs(Decimal(r['previous_E_ads']))<=5 and r['status']=='energy_review' for r in selections),
@@ -125,6 +125,8 @@ def apply(root=ROOT):
     recovery={r['functional']:r for r in json.loads(recovery_path.read_text())['jobs']} if recovery_path.exists() else {}
     path=root/'dft_comparison.html';page=path.read_text();sp_path=root/'dft_comparison_singlepoint.csv'
     previous=read_csv(sp_path);sp_fields=list(previous[0]);sp={(r['surface'],r['molecule'],r['functional']):r for r in previous}
+    from publication_store import capture
+    historical=capture(root,page,'local-before-selection',previous)
     snapshot=root/'dft_cluster_selection_before.csv'
     if not snapshot.exists():
         from bs4 import BeautifulSoup
@@ -155,13 +157,29 @@ def apply(root=ROOT):
                 selected['applied_E_ads']=str(old) if old is not None else ''
                 selected['application_status']='existing value retained' if old is not None else 'missing'
                 if not selected['E_ads']:
-                    if key+(mode,) in mismatched or (potential_audit.exists() and (old is not None or 'refs unverified' in cells[index])):
-                        cls='sp-energy energy-review' if mode=='SPE' else 'energy-review'
+                    record=historical.get(key+(mode,))
+                    if record and potential_audit.exists():
                         label='potential mismatch' if key+(mode,) in mismatched else 'refs unverified'
-                        cells[index]=f'<td class="{cls}" title="No fully validated replacement with matching PAW potentials is selected; previous numbers remain in the history downloads">{label}</td>'
+                        value=Decimal(record['energy_eV'])
+                        cls=('sp-energy ' if mode=='SPE' else '')+'energy-review historical-energy'
+                        title=html.escape('Historical published value; current audit: '+label+'. Not eligible for validated comparisons. Source '+record['source']+'; '+record['title'],quote=True)
+                        cells[index]=f'<td class="{cls}" data-audit-status="{label}" data-record-id="{record["record_id"]}" title="{title}">{value}</td>'
+                        cells[delta_index]=f'<td class="{cls}" title="Comparison uses a historical, unverified DFT value">{ml-value:+.3f}</td>' if ml is not None else ('<td class="sp-energy">&mdash;</td>' if mode=='SPE' else '<td>&mdash;</td>')
+                        selected['applied_E_ads']=str(value);selected['application_status']='historical retained: '+label
+                        if mode=='SPE':
+                            saved=dict(record.get('spe_metadata') or {field:'' for field in sp_fields})
+                            saved.update(E_ads_DFT_SP=str(value),E_ads_ML_SP=str(ml) if ml is not None else '',delta_SP=str(ml-value) if ml is not None else '',provenance='Historical publication; '+label+'; '+record['source']+'; '+saved.get('provenance',''))
+                            sp[key]=saved
+                        continue
+                    if key+(mode,) in mismatched or (potential_audit.exists() and old is not None):
+                        label='potential mismatch' if key+(mode,) in mismatched else 'refs unverified'
+                        cls='sp-energy energy-review' if mode=='SPE' else 'energy-review'
+                        cells[index]=f'<td class="{cls}">{label}</td>'
                         cells[delta_index]='<td class="sp-energy">&mdash;</td>' if mode=='SPE' else '<td>&mdash;</td>'
-                        selected['applied_E_ads']='';selected['application_status']='withheld: '+label
-                        if mode=='SPE':sp.pop(key,None);cells[5]='<td class="sp-energy sp-combined">&mdash;</td>'
+                        selected['applied_E_ads']=''
+                        selected['application_status']='missing: '+label
+                        if mode=='SPE':
+                            sp.pop(key,None);cells[5]='<td class="sp-energy sp-combined">&mdash;</td>'
                         continue
                     retry=recovery.get(functional) if molecule=='DME' else None
                     if old is None and retry and retry['scheduler_state'] in ('PENDING','RUNNING'):
@@ -208,16 +226,18 @@ def apply(root=ROOT):
             return '<tr>'+''.join(cells)+'</tr>'
         return prefix+re.sub(r'<tr>(.*?)</tr>',row,body,flags=re.S)
     page=CARD.sub(card,page)
+    if '/* historical-energy */' not in page:
+        page=page.replace('</style>', '/* historical-energy */ .historical-energy[data-audit-status]::after {content: "historical: " attr(data-audit-status); display:block; font-size:9px; color:#9a5700;}</style>',1)
     summary_text=f'<b>Single-point adsorption energies:</b> {len(sp)} functional results across {len({(k[0],k[1]) for k in sp})} of the 415 systems below; source choices follow the Perlmutter-first policy and retain explicit provenance.'
     page=re.sub(r'<b>Single-point adsorption energies:</b>.*?(?=\n  <br><b>Perlmutter)',summary_text,page,flags=re.S)
     page=re.sub(r'<!-- cluster-policy -->.*?<!-- /cluster-policy -->\n?','',page,flags=re.S)
     note='''<!-- cluster-policy -->
 <div class="note info"><b>Source preference:</b> Perlmutter first. For an unusual result (|E<sub>ads</sub>| &gt; 5 eV), a Kestrel alternative must pass completion/reference checks and match the structure fingerprint.
 <br><b>Potential compatibility:</b> Complex and references must use matching PAW potential identities, including variant and dataset date.
-Known mixed-potential values are withheld until compatible references are available. Historical values remain in the
+Previously published numbers remain visible with a historical audit badge. Known mixed-potential values are not validated binding energies and are excluded from figure statistics. See the
 <a href="dft_potential_mismatches.csv">potential mismatch audit</a>; <a href="dft_potential_audit_summary.json">counts by surface</a>.
 <a href="dft_potential_slab_recovery.json">Matching-potential slab recovery inputs and submission</a>.
-Matching names or near-identical energies alone are insufficient. Under the matching-potential policy, old values lacking a validated component set are withheld rather than assumed compatible.
+Matching names or near-identical energies alone are insufficient. Old values lacking a validated component set remain stored and displayed as historical, without being assumed compatible. <a href="data/adsorption_results/README.md">Local result archive and recovery policy</a> &middot; <a href="data/adsorption_results/publications.jsonl" download>Immutable publication ledger</a>.
 Archived Kestrel sources remain labeled; no fresh Kestrel login is claimed.
 <br><b>DME reference recovery:</b> PBE and PBE+D3 gas-reference retries are tracked separately; their totals are used only after convergence.
 <a href="dft_gas_reference_recovery.json">Gas-reference job status</a>.
@@ -229,6 +249,7 @@ Archived Kestrel sources remain labeled; no fresh Kestrel login is claimed.
 '''
     page=page.replace('<h2>Per-system structure',note+'<h2>Per-system structure');path.write_text(page)
     write_csv(sp_path,[sp[k] for k in sorted(sp)],sp_fields)
+    capture(root,page,'validated-selection',list(sp.values()))
     selection_fields=[k for k in selection_rows[0] if k not in ('applied_E_ads','application_status')]+['applied_E_ads','application_status']
     for r in selection_rows:
         r.setdefault('applied_E_ads','');r.setdefault('application_status','not on page')

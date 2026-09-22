@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "description": "Local immutable observations; active validation remains separate",
+  "historical_baseline_commit": "23048650b883c5118871d1829a317187a65f0989",
+  "refreshed_baseline_commit": "9d88d3812666d5d0822f160999b9bdf4f0925a02",
+  "files": [
+    {
+      "path": "data/adsorption_results/publications.jsonl",
+      "sha256": "f12f29d672d5f4f8f7359e13128ca046f39e3dc984f4612e0cbafe68efbb9323",
+      "bytes": 8378667
+    },
+    {
+      "path": "dft_component_store.jsonl.gz",
+      "sha256": "5d95d147a446a615e498ccb49c27a426590540792be72734a215868349e004e8",
+      "bytes": 4381081
+    }
+  ],
+  "publication_observations": 7880,
+  "component_snapshots": 18686,
+  "current_component_records_by_cluster": {
+    "kestrel": 2618,
+    "perlmutter": 4974
+  },
+  "historical_cells_by_mode": {
+    "relaxed": 617,
+    "SPE": 354
+  },
+  "historical_cells_by_current_audit": {
+    "refs unverified": 726,
+    "potential mismatch": 245
+  },
+  "selected_component_matched_cells_by_mode": {
+    "relaxed": 772,
+    "SPE": 1010
+  },
+  "selected_energy_review_cells": 24,
+  "validated_paired_plot_points": 701,
+  "caveats": [
+    "Current audit labels describe selection blockers, not proof of the exact references used in every old publication.",
+    "Historical values are excluded from validated figures.",
+    "Kestrel records are archived imports; this recovery did not log in to Kestrel.",
+    "The ledger contains extracted results and provenance, not complete raw VASP output files."
+  ]
+}

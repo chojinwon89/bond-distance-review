@@ -106,6 +106,8 @@ def main():
             rr=relax.get(key,[])
             relaxed_status=('available; energy review' if relaxed_review else 'available') if er is not None else '; '.join(sorted({r['status'] for r in rr})) or 'no matching Perlmutter calculation'
             if er is None and cells[1].get_text() in ('potential mismatch','refs unverified'):relaxed_status=cells[1].get_text()
+            if cells[4].get('data-audit-status'):status='historical; '+cells[4]['data-audit-status']
+            if cells[1].get('data-audit-status'):relaxed_status='historical; '+cells[1]['data-audit-status']
             report.append(dict(surface=s,molecule=m,functional=f,E_ads_ML=em,E_ads_relaxed=er,E_ads_SPE=es,
                 relaxed_status=relaxed_status,
                 SPE_status=status,completion_job_directory=recovery.get(key,{}).get('directory',''),

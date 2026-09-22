@@ -127,6 +127,8 @@ class RegenerationTests(unittest.TestCase):
             root = Path(temporary)
             for name in files:
                 shutil.copyfile(source / name, root / name)
+            if (source / 'data/adsorption_results').exists():
+                shutil.copytree(source / 'data/adsorption_results', root / 'data/adsorption_results')
             original = (root / 'dft_comparison.html').read_text()
             previous_root = legacy.ROOT
             legacy.ROOT = root

@@ -1,3 +1,5 @@
+> **Publication preservation update (2026-09-22):** Previously published numbers now remain visible with historical audit labels when no validated replacement exists. They stay excluded from validated plots. This supersedes earlier display-withholding wording below; scientific compatibility checks are unchanged. See [local result archive](../data/adsorption_results/README.md).
+
 # Matching-potential reference audit
 
 The latest user instruction requires the same potential for each species in the
