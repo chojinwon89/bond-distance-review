@@ -94,7 +94,8 @@ def component(directory):
             raise ValueError("Unrecognized functional")
     except (OSError, ValueError, KeyError, IndexError) as error:
         result.update(status="invalid", note=str(error))
-    return result
+    from structure_identity import attach_geometry
+    return attach_geometry(result,directory)
 
 
 def calculation_dirs(system):
@@ -128,6 +129,9 @@ def assess(complex_result, slab, molecule, functional):
     if dict(expected) != complex_result["composition"]:
         return "composition_mismatch", "Complex does not equal slab plus molecule composition", None
     energy = float(Decimal(str(complex_result["energy"])) - Decimal(str(slab["energy"])) - Decimal(str(molecule["energy"])))
+    from potential_matching import potential_match
+    if not all(potential_match(complex_result,r) for r in [slab,molecule]):
+        return 'potential_mismatch','Complex and reference PAW potential identities differ or are missing; energy retained only as diagnostic',energy
     if abs(energy) > MAX_ADS_EV:
         return "energy_review", "|E_ads| > 5 eV; recorded for review, not a convergence failure", energy
     return "ok", "NSW=0 complex; converged relaxed references; matching composition", energy
@@ -246,7 +250,7 @@ def main():
     write_csv(output / "dft_kestrel_singlepoint.csv", [selected[key] for key in sorted(selected)], fields)
     (output / "dft_kestrel_singlepoint_sources.json").write_text(json.dumps({
         "formula": "E_ads_SPE = E_complex_NSW0 - E_slab_relaxed - E_molecule_relaxed",
-        "policy": "Preserve existing energies; only fill missing SPE cells. Require completion, final electronic convergence, NSW=0 complexes, NSW>0 converged ionic references, functional and composition matches. Same |E_ads| <= 5 eV publication screen. POTCAR variants are recorded but do not exclude results. No energy scaling, offsets, gas-energy overrides, or sign-based rejection.",
+        "policy": "Preserve existing energies; only fill missing SPE cells. Require completion, final electronic convergence, NSW=0 complexes, NSW>0 converged ionic references, functional and composition matches. Same |E_ads| <= 5 eV publication screen. Matching PAW TITEL identities are required; mismatched subtractions are diagnostic only. No energy scaling, offsets, gas-energy overrides, or sign-based rejection.",
         "complex_selection": "Prefer singlepoint directories, then shallowest path, then lexical path; do not select by energy.",
         "reference_selection": "Same surface/molecule, functional and atom counts. Slab: prefer matching in-plane cell, then vasp_slab_kestrel, then lexical path. Molecule: prefer exact original name, then lexical path. Only completed relaxed references qualify.",
         "components": components}, indent=2) + "\n")

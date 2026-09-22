@@ -1,0 +1,29 @@
+{
+  "policy": "Require matching PAW TITEL identities for all component species. Withhold historical numbers lacking validated references. Perlmutter first. If |E_ads| > 5 eV, prefer an unflagged Kestrel result only with verified matching structure. Directory names, composition, similar energies and matching cells alone do not prove equal coordinates. Preserve nonselected history; do not substitute gas energies across functionals.",
+  "selections": {
+    "No complete matched component set": 1521,
+    "Perlmutter first": 1609,
+    "Kestrel candidate held: matching Perlmutter structure not verified": 17,
+    "Kestrel: no usable Perlmutter binding-energy candidate": 149,
+    "Perlmutter energy review retained; no unflagged Kestrel alternative": 24
+  },
+  "candidate_results": 2156,
+  "duplicate_pairs": 336,
+  "geometry_verified_pairs": 0,
+  "normal_existing_to_review": 0,
+  "kestrel_record_provenance": {
+    "archived-source-export": 2618
+  },
+  "access_note": "This build reads the local component store. Archived exports do not constitute a fresh Kestrel filesystem search.",
+  "application_status": {
+    "withheld: refs unverified": 657,
+    "withheld: potential mismatch": 385,
+    "missing": 496,
+    "selected candidate applied": 1782
+  },
+  "applied_candidate_cluster": {
+    "perlmutter": 1633,
+    "kestrel": 149
+  },
+  "numeric_changes_recorded": 583
+}

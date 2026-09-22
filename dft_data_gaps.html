@@ -4,6 +4,12 @@
 <style>body{margin:0;background:#0f1116;color:#e6e6e6;font:16px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:30px 22px 70px}a{color:#8abaff}h1{font-size:29px}h2{margin-top:32px;font-size:22px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid #444;padding:10px;text-align:left}th{background:#20242e}code{overflow-wrap:anywhere}.scroll{overflow:auto}.note{padding:15px;background:#20242e;border-left:3px solid #e0a800}small{color:#abb4c5}</style></head>
 <body><main><a href="dft_comparison.html">← DFT comparison</a>
 <h1>Completed calculations and missing binding energies</h1>
+<div class="note"><strong>Matching-potential policy:</strong> the latest audit found 1,120 historical candidate subtractions
+mixing metal PAW potentials, across Ag, Cu, Pd, Pt and Rh surfaces. A converged job alone cannot validate that subtraction.
+The active table now requires a validated matching-potential component set. <code>potential mismatch</code> identifies known mixed-potential references;
+<code>refs unverified</code> means the historical number cannot currently be validated, not that a mismatch has been proved.
+51 deduplicated clean-slab calculations were submitted as array <code>58411454</code>, at most four concurrent, using the exact metal POTCAR block from the complexes.
+<a href="dft_potential_mismatches.csv">Historical mismatch audit</a> · <a href="dft_potential_slab_recovery.json">Recovery inputs and submission</a>.</div>
 <p>A blank binding-energy cell does <strong>not</strong> mean the adsorbed-complex calculation failed.
 The page reports adsorption energies, while an individual VASP job reports a total energy.
 Three suitable component results are needed:</p>
@@ -11,6 +17,7 @@ Three suitable component results are needed:</p>
 <p>For the SPE column, the complex must have NSW=0. The current convention uses relaxed slab and gas references for both columns.
 A converged relaxation and a converged SPE are separate results, and neither supplies a missing gas or clean-slab calculation.</p>
 <h2>Ag111 · DME (CH3OCH3), PBE</h2>
+<p><strong>Current recovery snapshot:</strong> pbe: COMPLETED, converged; gas TOTEN -46.37768189 eV; pbe_d3: COMPLETED, converged; gas TOTEN -46.42351862 eV. Converged retries now supply the matching table references; the failed originals below are retained for diagnosis.</p>
 <p><strong>Both complex jobs are converged.</strong> Their total energies are available below and in the shared component download.</p>
 <div class="scroll"><table><thead><tr><th>Component</th><th>TOTEN (eV)</th><th>Atoms</th><th>Output status</th><th>Source and diagnostic</th></tr></thead>
 <tbody><tr><td>DME + Ag111, relaxed<br><small>perlmutter</small></td><td>-138.67977025</td><td>{&quot;Ag&quot;: 36, &quot;C&quot;: 2, &quot;H&quot;: 6, &quot;O&quot;: 1}</td><td>converged</td><td><code>/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Ag111/PBE</code><br></td></tr><tr><td>DME + Ag111, SPE<br><small>perlmutter</small></td><td>-138.64591398</td><td>{&quot;Ag&quot;: 36, &quot;C&quot;: 2, &quot;H&quot;: 6, &quot;O&quot;: 1}</td><td>converged</td><td><code>/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Ag111/singlepoint/PBE</code><br></td></tr><tr><td>Standard clean Ag111 slab<br><small>perlmutter</small></td><td>-162.07889390</td><td>{&quot;Ag&quot;: 64}</td><td>converged</td><td><code>/pscratch/sd/j/jcho5/VASP/vasp_slab/Ag111/PBE</code><br></td></tr><tr><td>DME gas reference (CH3OCH3)<br><small>perlmutter</small></td><td>-41.77152124</td><td>{&quot;C&quot;: 2, &quot;H&quot;: 6, &quot;O&quot;: 1}</td><td>unfinished</td><td><code>/pscratch/sd/j/jcho5/VASP/vasp_mol/CH3OCH3/PBE</code><br>ZBRENT: fatal error in bracketing</td></tr><tr><td>DME gas reference (DME alias)<br><small>perlmutter</small></td><td>-41.77152124</td><td>{&quot;C&quot;: 2, &quot;H&quot;: 6, &quot;O&quot;: 1}</td><td>unfinished</td><td><code>/pscratch/sd/j/jcho5/VASP/vasp_mol/DME/PBE</code><br>ZBRENT: fatal error in bracketing</td></tr><tr><td>Saved Kestrel size-specific slab<br><small>kestrel</small></td><td>-91.56082669</td><td>{&quot;Ag&quot;: 36}</td><td>converged</td><td><code>/kfs3/scratch/jcho5/goad-global-optimization/vasp_slab/Ag111_n36/PBE</code><br></td></tr></tbody></table></div>
@@ -21,20 +28,28 @@ These are two independent blockers. The last gas TOTEN is retained as a diagnost
 It is stored in the raw audit, but is not a valid binding energy. Multiplying the slab energy by 36/64 would not repair the inconsistent surface reference.</p>
 <p>The archived Kestrel <code>Ag111_n36/PBE</code> result has 36 Ag atoms and the same full cell as the complex.
 It is a useful reference candidate; the archived Kestrel PBE DME gas outputs are also unfinished.
-Fresh Kestrel files must be checked for a completed replacement. The store does not silently combine clusters or select reference energies.</p>
+Fresh Kestrel files must be checked for a completed replacement. Every cross-cluster reference choice is recorded in the source-selection download.</p>
+<p>Two isolated Perlmutter DME gas-reference retries (array <code>58376018</code>) now target PBE and PBE+D3.
+Their <a href="dft_gas_reference_recovery.json">dated job-status snapshot</a> distinguishes scheduler state from verified convergence.
+The completed BEEF-vdW gas geometry supplies starting coordinates only; each retry computes its own functional-specific energy.
+The first retry array exhausted its electronic iteration limit and was stopped with outputs preserved; the replacement uses the Davidson electronic solver.</p>
+<p>For BEEF-vdW, the saved Perlmutter and Kestrel complex SPE totals differ by about 0.000001 eV.
+Switching that complex does not resolve the unusual binding energy: the current matched references give approximately
+−25.227 eV relaxed and −25.218 eV SPE. The potential audit subsequently identified Ag/Ag_pv mixing in this subtraction; these historical numbers are now withheld from the active table until a matching-potential reference is available.
+The <a href="dft_cluster_duplicates.csv">duplicate comparison</a> records both energies and the available structure evidence.</p>
 <p>DME and CH3OCH3 already resolve to the same molecule. Ethanol is kept distinct despite the shared gross formula C2H6O.
-Ag/Ag_pv variants remain recorded and do not exclude values under the project's current filtering policy.
+Potential variants remain recorded; the current policy requires matching PAW identities for complex and references.
 Converged, composition-matched unusual binding energies are shown with an amber review marker; magnitude alone does not cause these blanks.</p>
 <h2>What the blanks mean across the page</h2>
-<p>Website/scheduler snapshot: <code>2026-09-15T18:16:51.844919+00:00</code>. There are 415 systems × 4 functionals = 1,660 possible entries in each energy column.
-289 relaxed binding energies and 657 SPE binding energies are missing.
+<p>Website/scheduler snapshot: <code>2026-09-22T22:41:04.827307+00:00</code>. There are 415 systems × 4 functionals = 1,660 possible entries in each energy column.
+888 relaxed binding energies and 650 SPE binding energies are missing.
 Counts below are <strong>table cells</strong>, not individual job directories; aliases, adsorption sites and retry layouts can generate multiple job candidates.</p>
-<div class="scroll"><table><thead><tr><th>Column</th><th>Primary audit status</th><th>Missing cells</th><th>Meaning</th></tr></thead><tbody><tr><td>Relaxed</td><td>unconverged</td><td>140</td><td>At least one component is unfinished or unconverged; this can be the gas reference, not the adsorbed complex.</td></tr><tr><td>Relaxed</td><td>no matching Perlmutter calculation</td><td>98</td><td>No candidate matched the current Perlmutter audit layout and system key. Check Kestrel and other saved layouts.</td></tr><tr><td>Relaxed</td><td>slab_mismatch</td><td>35</td><td>The audited slab atom count differs from the complex. Other reference failures may coexist.</td></tr><tr><td>Relaxed</td><td>error</td><td>16</td><td>The reference/output is missing, unreadable or fails a metadata check; inspect the audit note.</td></tr><tr><td>SPE</td><td>SPE pending</td><td>536</td><td>The separate NSW=0 calculation was queued at this snapshot. A finished relaxation does not finish its SPE job.</td></tr><tr><td>SPE</td><td>reference_unavailable</td><td>68</td><td>The SPE complex passed its completion checks, but a suitable converged slab or molecule reference was unavailable.</td></tr><tr><td>SPE</td><td>no matching Perlmutter calculation; check Kestrel sources</td><td>28</td><td>No matching Perlmutter SPE candidate; search Kestrel sources using the shared alias list.</td></tr><tr><td>SPE</td><td>SPE running</td><td>14</td><td>The separate NSW=0 calculation was running at this snapshot.</td></tr><tr><td>SPE</td><td>complex_unconverged</td><td>11</td><td>The selected complex output did not pass completion/electronic-convergence checks.</td></tr></tbody></table></div>
+<div class="scroll"><table><thead><tr><th>Column</th><th>Primary audit status</th><th>Missing cells</th><th>Meaning</th></tr></thead><tbody><tr><td>Relaxed</td><td>refs unverified</td><td>526</td><td>The historical number has no fully validated matching-potential component set in the current store.</td></tr><tr><td>Relaxed</td><td>potential_mismatch</td><td>178</td><td>potential_mismatch</td></tr><tr><td>Relaxed</td><td>no matching Perlmutter calculation</td><td>98</td><td>No candidate matched the current Perlmutter audit layout and system key. Check Kestrel and other saved layouts.</td></tr><tr><td>Relaxed</td><td>unconverged</td><td>34</td><td>At least one component is unfinished or unconverged; this can be the gas reference, not the adsorbed complex.</td></tr><tr><td>Relaxed</td><td>slab_mismatch</td><td>31</td><td>The audited slab atom count differs from the complex. Other reference failures may coexist.</td></tr><tr><td>Relaxed</td><td>error</td><td>16</td><td>The reference/output is missing, unreadable or fails a metadata check; inspect the audit note.</td></tr><tr><td>Relaxed</td><td>potential mismatch</td><td>5</td><td>The former component subtraction used different PAW potentials; a fully matched replacement is not yet available.</td></tr><tr><td>SPE</td><td>potential mismatch</td><td>380</td><td>The former component subtraction used different PAW potentials; a fully matched replacement is not yet available.</td></tr><tr><td>SPE</td><td>refs unverified</td><td>131</td><td>The historical number has no fully validated matching-potential component set in the current store.</td></tr><tr><td>SPE</td><td>reference_unavailable</td><td>79</td><td>The SPE complex passed its completion checks, but a suitable converged slab or molecule reference was unavailable.</td></tr><tr><td>SPE</td><td>no matching Perlmutter calculation; check Kestrel sources</td><td>28</td><td>No matching Perlmutter SPE candidate; search Kestrel sources using the shared alias list.</td></tr><tr><td>SPE</td><td>recovery completed; awaiting usable adsorption result</td><td>18</td><td>recovery completed; awaiting usable adsorption result</td></tr><tr><td>SPE</td><td>complex_unconverged</td><td>12</td><td>The selected complex output did not pass completion/electronic-convergence checks.</td></tr><tr><td>SPE</td><td>recovery completed</td><td>2</td><td>recovery completed</td></tr></tbody></table></div>
 <p>Statuses report the first or grouped audit blocker, not every possible failure. For example, the Ag111–DME relaxed row is classified as slab mismatch even though its gas reference also failed.
-An “unconverged” relaxed row can therefore have a converged complex: this is true for 76 of the 140 rows with that label.
+An “unconverged” relaxed row can therefore have a converged complex: this is true for 15 of the 34 rows with that label.
 Historical published energies are retained if a newer audit cannot replace them.</p>
-<table><thead><tr><th>Functional</th><th>Relaxed blanks</th><th>SPE blanks</th></tr></thead><tbody><tr><td>pbe</td><td>39</td><td>165</td></tr><tr><td>pbe_d3</td><td>65</td><td>179</td></tr><tr><td>r2scan</td><td>85</td><td>144</td></tr><tr><td>beef_vdw</td><td>100</td><td>169</td></tr></tbody></table>
-<p>The shared store contains a converged complex candidate for 226 of the 946 missing cells.
+<table><thead><tr><th>Functional</th><th>Relaxed blanks</th><th>SPE blanks</th></tr></thead><tbody><tr><td>pbe</td><td>180</td><td>138</td></tr><tr><td>pbe_d3</td><td>192</td><td>153</td></tr><tr><td>r2scan</td><td>318</td><td>198</td></tr><tr><td>beef_vdw</td><td>198</td><td>161</td></tr></tbody></table>
+<p>The shared store contains a converged complex candidate for 1025 of the 1538 missing cells.
 Candidates can have different geometry or site provenance, so this is a search lead, not a count of immediately publishable binding energies.</p>
 <h2>Reusable Perlmutter and Kestrel data</h2>
 <p><strong>Size-specific Kestrel slabs are available.</strong> The saved vasp_slab records include Ag111_n36,
@@ -42,13 +57,14 @@ Au111_n36, Pd111_n36 and Pt111_n36 under all four functionals, along with other 
 The active Kestrel location supplied by the user is <code>/scratch/jcho5/goad-global-optimization/vasp_slab</code>.
 Archived records retain their original <code>/kfs3/scratch/...</code> paths.</p>
 <p>The shared-reference derivation now fills missing table cells using these converged, composition- and cell-matched slabs,
-with matching functional, cutoff and stored core settings. Existing numeric entries retain priority.
+with matching functional, cutoff and stored core settings. The subsequent source-selection pass prefers usable Perlmutter candidates;
+an unusual result can use a Kestrel replacement only with verified structure equivalence. Historical values lacking a validated matching-potential component set are withheld.
 Unusual values remain visible with review markers. See the
 <a href="dft_shared_reference_energies.csv" download>derived energies with all three component totals and source paths</a>
 and <a href="dft_shared_reference_audit.json">reference-matching policy and audit</a>.
 This uses saved Kestrel records; it is not a fresh read of the Kestrel filesystem.</p>
-<p>The store currently represents 7176 distinct cluster/path calculations:
-4558 Perlmutter and 2618 archived Kestrel calculations.
+<p>The store currently represents 7592 distinct cluster/path calculations:
+4974 Perlmutter and 2618 archived Kestrel calculations.
 It keeps total energies even when adsorption is unavailable, together with cluster, absolute source path, canonical molecule,
 functional, NSW, composition, cell, potentials, convergence, settings and available output fingerprints.
 Repeated imports preserve distinct output snapshots and do not erase the other cluster.</p>
@@ -58,6 +74,8 @@ including nested fully_relaxed and singlepoint layouts. NSW determines calculati
 <ul><li><a href="dft_component_energies.csv" download>All component total energies and status (CSV)</a></li>
 <li><a href="dft_component_store.jsonl.gz" download>Reusable component snapshots with full metadata (gzip JSONL)</a></li>
 <li><a href="dft_kestrel_search_requests.json" download>Missing-cell Kestrel search requests, aliases, required atoms/cells and candidate IDs</a></li>
+<li><a href="dft_missing_reference_priorities.csv" download>Missing references grouped by the cells they can complete</a></li>
+<li><a href="dft_cluster_selection.csv" download>Perlmutter-first selection decisions</a> · <a href="dft_cluster_duplicates.csv" download>Cross-cluster duplicate comparisons</a></li>
 <li><a href="dft_component_store_summary.json">Store summary</a> · <a href="dft_completion_coverage.csv" download>Every page cell and its audit status</a></li>
 <li><a href="https://github.com/chojinwon89/bond-distance-review/blob/main/scripts/COMPONENT_STORE.md">Portable collection and merge instructions</a></li></ul>
 <p>Missing binding energies also leave dependent ML differences and comparison points empty. Review-marked energies remain in tables but are excluded from paired figure statistics.

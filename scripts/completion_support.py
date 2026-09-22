@@ -21,7 +21,7 @@ def completion_jobs(project):
 def matching_slab(job, system, functional, complex_directory):
     """Reuse a completed clean slab only for the same surface, composition and cell."""
     match=re.fullmatch(r'.+_([A-Z][a-z]?\d+)(?:_.+)?',system)
-    if job['role'] != 'slab' or job['functional'] != functional or not match or match.group(1) != job.get('surface'):
+    if job['role'] != 'slab' or job['functional'].lower() != functional.lower() or not match or match.group(1) != job.get('surface'):
         return False
     import numpy as np
     from ase.io import read

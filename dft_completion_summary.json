@@ -1,29 +1,45 @@
 {
-  "snapshot": "2026-09-15T18:16:51.844919+00:00",
+  "snapshot": "2026-09-22T22:41:04.827307+00:00",
   "systems": 415,
   "functional_entries": 1660,
   "MLIP_images": 415,
   "DFT_images": 415,
   "DFT_contacts": 400,
-  "relaxed_energies": 1371,
-  "SPE_energies": 1003,
+  "relaxed_energies": 772,
+  "SPE_energies": 1010,
   "SPE_status": {
-    "available": 921,
-    "available; energy review": 82,
-    "SPE pending": 536,
-    "reference_unavailable": 68,
+    "potential mismatch": 380,
+    "available": 998,
+    "reference_unavailable": 79,
+    "refs unverified": 131,
     "no matching Perlmutter calculation; check Kestrel sources": 28,
-    "complex_unconverged": 11,
-    "SPE running": 14
+    "complex_unconverged": 12,
+    "available; energy review": 12,
+    "recovery completed": 2,
+    "recovery completed; awaiting usable adsorption result": 18
   },
-  "relaxed_energy_review": 229,
-  "SPE_energy_review": 82,
+  "relaxed_energy_review": 12,
+  "SPE_energy_review": 12,
   "main_SPE_array": "58164924",
   "main_SPE_queue": {
-    "PENDING": 1081,
-    "RUNNING": 19
+    "unavailable": 1
   },
   "recovery_campaigns": [
+    {
+      "job_id": "58374583",
+      "state": "CANCELLED by 107929",
+      "manifest": "/pscratch/sd/j/jcho5/VASP/completion_runs/dme_references_20260915/manifest.json"
+    },
+    {
+      "job_id": "58376018",
+      "state": "COMPLETED",
+      "manifest": "/pscratch/sd/j/jcho5/VASP/completion_runs/dme_references_davidson_20260915/manifest.json"
+    },
+    {
+      "job_id": "58411454",
+      "state": "COMPLETED",
+      "manifest": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/manifest.json"
+    },
     {
       "job_id": "58336200",
       "state": "COMPLETED",

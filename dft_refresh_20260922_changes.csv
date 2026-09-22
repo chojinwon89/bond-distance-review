@@ -1,0 +1,2304 @@
+surface,molecule,functional,mode,previous_eV,current_eV,change,current_status
+Ag100,CH3,pbe,relaxed,-1.857,,withheld_unverified_or_incompatible,refs unverified
+Ag100,CH3,pbe,SPE,-1.839,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,CH3,pbe_d3,relaxed,-2.087,,withheld_unverified_or_incompatible,refs unverified
+Ag100,CH3,pbe_d3,SPE,-1.987,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,CH3,r2scan,relaxed,-2.239,,withheld_unverified_or_incompatible,refs unverified
+Ag100,CH3,r2scan,SPE,-2.145,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,CH3,beef_vdw,relaxed,-26.051,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,CH3,beef_vdw,SPE,-25.989,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,CO,pbe,relaxed,-0.976,,withheld_unverified_or_incompatible,refs unverified
+Ag100,CO,pbe,SPE,-0.961,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,CO,pbe_d3,relaxed,-1.184,,withheld_unverified_or_incompatible,refs unverified
+Ag100,CO,pbe_d3,SPE,-1.09,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,CO,r2scan,relaxed,-1.473,,withheld_unverified_or_incompatible,refs unverified
+Ag100,CO,r2scan,SPE,-1.4,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,CO2,pbe,relaxed,-1.18,-0.026,updated,available
+Ag100,CO2,r2scan,relaxed,-2.17,,withheld_unverified_or_incompatible,refs unverified
+Ag100,CO2,r2scan,SPE,0.13,0.123,updated,available
+Ag100,CO2,beef_vdw,relaxed,-44.332,-0.244,updated,available
+Ag100,CO2,beef_vdw,SPE,-0.152,-0.154,updated,available
+Ag100,DME,r2scan,relaxed,-1.33,,withheld_unverified_or_incompatible,refs unverified
+Ag100,DME,r2scan,SPE,-1.229,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,DME,beef_vdw,relaxed,-25.261,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,DME,beef_vdw,SPE,-25.19,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,H2,pbe,relaxed,-0.62,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2,pbe,SPE,-0.592,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2,pbe_d3,relaxed,-0.7,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2,pbe_d3,SPE,-0.585,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2,r2scan,relaxed,-1.1,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2,r2scan,SPE,-0.993,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2O,pbe,relaxed,-0.814,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2O,pbe,SPE,-0.79,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,H2O,pbe_d3,relaxed,-1.0,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2O,pbe_d3,SPE,-0.875,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,H2O,r2scan,relaxed,-1.377,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2O,r2scan,SPE,-1.249,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,H2S,pbe,relaxed,-0.843,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2S,pbe,SPE,-0.786,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,H2S,pbe_d3,relaxed,-1.173,,withheld_unverified_or_incompatible,refs unverified
+Ag100,H2S,pbe_d3,SPE,-1.002,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,H2S,r2scan,SPE,-1.251,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,H2S,beef_vdw,relaxed,-25.184,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,N2,pbe,relaxed,-0.64,,withheld_unverified_or_incompatible,refs unverified
+Ag100,N2,pbe,SPE,-0.63,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,N2,pbe_d3,relaxed,-0.71,,withheld_unverified_or_incompatible,refs unverified
+Ag100,N2,pbe_d3,SPE,-0.624,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,N2,r2scan,relaxed,-1.113,,withheld_unverified_or_incompatible,refs unverified
+Ag100,N2,r2scan,SPE,-1.02,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,NH3,pbe,relaxed,-1.05,,withheld_unverified_or_incompatible,refs unverified
+Ag100,NH3,pbe,SPE,-1.036,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,NH3,pbe_d3,relaxed,-1.275,,withheld_unverified_or_incompatible,refs unverified
+Ag100,NH3,pbe_d3,SPE,-1.158,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,NH3,r2scan,relaxed,-1.61,,withheld_unverified_or_incompatible,refs unverified
+Ag100,NH3,r2scan,SPE,-1.504,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,NH3,beef_vdw,relaxed,-25.354,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,NO,pbe,relaxed,-1.59,,withheld_unverified_or_incompatible,refs unverified
+Ag100,NO,pbe,SPE,-1.522,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,NO,pbe_d3,relaxed,-1.839,,withheld_unverified_or_incompatible,refs unverified
+Ag100,NO,pbe_d3,SPE,-1.673,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,NO,r2scan,relaxed,-2.54,,withheld_unverified_or_incompatible,refs unverified
+Ag100,NO,beef_vdw,relaxed,-32.437,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,O2,pbe,relaxed,-1.68,,withheld_unverified_or_incompatible,refs unverified
+Ag100,SO2,pbe,relaxed,-1.324,,withheld_unverified_or_incompatible,refs unverified
+Ag100,SO2,pbe,SPE,-1.281,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,SO2,pbe_d3,relaxed,-1.834,,withheld_unverified_or_incompatible,refs unverified
+Ag100,SO2,pbe_d3,SPE,-1.656,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,SO2,r2scan,relaxed,-2.201,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,SO2,r2scan,SPE,-2.007,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,SO2,beef_vdw,relaxed,-25.672,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,acetaldehyde,pbe,relaxed,-0.719,,withheld_unverified_or_incompatible,refs unverified
+Ag100,acetaldehyde,pbe,SPE,-0.698,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,acetaldehyde,pbe_d3,relaxed,-1.031,,withheld_unverified_or_incompatible,refs unverified
+Ag100,acetaldehyde,pbe_d3,SPE,-0.894,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,acetaldehyde,r2scan,relaxed,-1.32,,withheld_unverified_or_incompatible,refs unverified
+Ag100,acetaldehyde,r2scan,SPE,-1.204,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,acetaldehyde,beef_vdw,relaxed,-25.176,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,acetaldehyde,beef_vdw,SPE,-25.093,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,acetic_acid,r2scan,relaxed,-1.464,,withheld_unverified_or_incompatible,refs unverified
+Ag100,acetic_acid,r2scan,SPE,-1.358,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,acetic_acid,beef_vdw,relaxed,-25.282,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,acetic_acid,beef_vdw,SPE,-25.219,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,ethane,pbe,relaxed,-1.18,-0.023,updated,available
+Ag100,ethane,pbe,SPE,-0.02,-0.021,updated,available
+Ag100,ethane,pbe_d3,relaxed,-1.48,-0.26,updated,available
+Ag100,ethane,pbe_d3,SPE,-0.022,-0.007,updated,available
+Ag100,ethane,r2scan,relaxed,-2.15,,withheld_unverified_or_incompatible,refs unverified
+Ag100,ethane,r2scan,SPE,0.136,0.13,updated,available
+Ag100,ethane,beef_vdw,relaxed,-44.37,-0.283,updated,available
+Ag100,ethane,beef_vdw,SPE,-0.186,-0.189,updated,available
+Ag100,ethanol,pbe,relaxed,-1.31,-0.154,updated,available
+Ag100,ethanol,pbe,SPE,-0.149,-0.15,updated,available
+Ag100,ethanol,pbe_d3,relaxed,-1.66,-0.448,updated,available
+Ag100,ethanol,pbe_d3,SPE,-0.237,-0.224,updated,available
+Ag100,ethanol,r2scan,relaxed,-2.25,,withheld_unverified_or_incompatible,refs unverified
+Ag100,ethanol,r2scan,SPE,-0.085,-0.088,updated,available
+Ag100,ethanol,beef_vdw,relaxed,-44.544,-0.456,updated,available
+Ag100,ethanol,beef_vdw,SPE,-0.354,-0.352,updated,available
+Ag100,ethene,pbe,relaxed,-0.682,,withheld_unverified_or_incompatible,refs unverified
+Ag100,ethene,pbe,SPE,-0.021,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,ethene,pbe_d3,relaxed,-1.059,,withheld_unverified_or_incompatible,refs unverified
+Ag100,ethene,pbe_d3,SPE,-0.103,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,ethene,r2scan,relaxed,-1.27,,withheld_unverified_or_incompatible,refs unverified
+Ag100,ethene,r2scan,SPE,0.06,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,ethene,beef_vdw,relaxed,-25.121,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,ethene,beef_vdw,SPE,-0.182,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,formaldehyde,pbe,relaxed,-0.719,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formaldehyde,pbe,SPE,-0.704,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,formaldehyde,pbe_d3,relaxed,-0.932,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formaldehyde,pbe_d3,SPE,-0.82,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,formaldehyde,r2scan,SPE,-1.182,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,formaldehyde,beef_vdw,relaxed,-25.106,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,formate,pbe,relaxed,-3.62,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formate,pbe,SPE,-3.608,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formate,pbe_d3,relaxed,-3.97,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formate,pbe_d3,SPE,-3.848,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formate,r2scan,relaxed,-4.78,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formate,r2scan,SPE,-4.657,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formic_acid,pbe,relaxed,-0.833,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formic_acid,pbe,SPE,-0.813,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,formic_acid,pbe_d3,relaxed,-1.145,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formic_acid,pbe_d3,SPE,-1.026,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,formic_acid,r2scan,relaxed,-1.43,,withheld_unverified_or_incompatible,refs unverified
+Ag100,formic_acid,r2scan,SPE,-1.321,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,formic_acid,beef_vdw,relaxed,-25.221,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,glycerol,pbe,relaxed,-1.35,,withheld_unverified_or_incompatible,refs unverified
+Ag100,glycerol,pbe,SPE,-0.117,-0.118,updated,available
+Ag100,glycerol,pbe_d3,relaxed,-1.94,,withheld_unverified_or_incompatible,refs unverified
+Ag100,glycerol,pbe_d3,SPE,-0.43,-0.415,updated,available
+Ag100,glycerol,r2scan,relaxed,-2.55,,withheld_unverified_or_incompatible,refs unverified
+Ag100,glycerol,r2scan,SPE,-0.188,-0.195,updated,available
+Ag100,glycerol,beef_vdw,SPE,-0.58,,withheld_unverified_or_incompatible,refs unverified
+Ag100,isopropanol,pbe,relaxed,-1.32,,withheld_unverified_or_incompatible,refs unverified
+Ag100,isopropanol,pbe,SPE,-0.779,,withheld_unverified_or_incompatible,refs unverified
+Ag100,isopropanol,pbe_d3,relaxed,-1.76,,withheld_unverified_or_incompatible,refs unverified
+Ag100,isopropanol,pbe_d3,SPE,-1.072,,withheld_unverified_or_incompatible,refs unverified
+Ag100,isopropanol,r2scan,relaxed,-2.41,,withheld_unverified_or_incompatible,refs unverified
+Ag100,isopropanol,r2scan,SPE,-1.306,,withheld_unverified_or_incompatible,refs unverified
+Ag100,methane,pbe,relaxed,-0.636,,withheld_unverified_or_incompatible,refs unverified
+Ag100,methane,pbe,SPE,-0.63,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,methane,pbe_d3,relaxed,-0.801,,withheld_unverified_or_incompatible,refs unverified
+Ag100,methane,pbe_d3,SPE,-0.701,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,methane,r2scan,relaxed,-1.149,,withheld_unverified_or_incompatible,refs unverified
+Ag100,methane,r2scan,SPE,-1.057,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,methane,beef_vdw,relaxed,-24.994,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,methane,beef_vdw,SPE,-24.944,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,methanol,pbe,relaxed,-0.789,,withheld_unverified_or_incompatible,refs unverified
+Ag100,methanol,pbe,SPE,-0.777,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,methanol,pbe_d3,relaxed,-1.076,,withheld_unverified_or_incompatible,refs unverified
+Ag100,methanol,pbe_d3,SPE,-0.923,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,methanol,r2scan,relaxed,-1.38,,withheld_unverified_or_incompatible,refs unverified
+Ag100,methanol,r2scan,SPE,-1.267,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,methanol,beef_vdw,relaxed,-25.214,,withheld_unverified_or_incompatible,potential_mismatch
+Ag100,methanol,beef_vdw,SPE,-25.139,,withheld_unverified_or_incompatible,potential mismatch
+Ag100,propane,pbe,relaxed,-1.18,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propane,pbe,SPE,-0.633,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propane,pbe_d3,relaxed,-1.58,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propane,pbe_d3,SPE,-0.881,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propane,r2scan,relaxed,-2.22,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propane,r2scan,SPE,-1.104,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propanol,pbe,relaxed,-1.33,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propanol,pbe,SPE,-0.788,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propanol,pbe_d3,relaxed,-1.7,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propanol,pbe_d3,SPE,-1.134,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propanol,r2scan,relaxed,-2.39,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propanol,r2scan,SPE,-1.337,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propene,pbe,relaxed,-1.23,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propene,pbe,SPE,-0.693,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propene,pbe_d3,relaxed,-1.77,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propene,pbe_d3,SPE,-0.946,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propene,r2scan,relaxed,-2.27,,withheld_unverified_or_incompatible,refs unverified
+Ag100,propene,r2scan,SPE,-1.185,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CH3,pbe,relaxed,-1.595,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CH3,pbe,SPE,-1.583,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CH3,pbe_d3,relaxed,-1.792,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CH3,pbe_d3,SPE,-1.763,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CH3,r2scan,relaxed,-1.861,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CH3,r2scan,SPE,-1.793,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CH3,beef_vdw,relaxed,-17.658,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,CH3,beef_vdw,SPE,-17.605,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CO,pbe,relaxed,-0.755,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CO,pbe,SPE,-0.737,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CO,pbe_d3,relaxed,-0.944,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CO,pbe_d3,SPE,-0.909,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CO,r2scan,relaxed,-1.143,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CO,r2scan,SPE,-1.072,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CO,beef_vdw,relaxed,-16.792,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,CO2,pbe,relaxed,-0.424,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CO2,pbe,SPE,-0.421,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CO2,r2scan,relaxed,-0.802,,withheld_unverified_or_incompatible,refs unverified
+Ag110,CO2,r2scan,SPE,-0.769,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,CO2,beef_vdw,relaxed,-16.756,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,DME,r2scan,relaxed,-1.018,,withheld_unverified_or_incompatible,refs unverified
+Ag110,DME,r2scan,SPE,-0.837,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,DME,beef_vdw,relaxed,-16.981,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,DME,beef_vdw,SPE,-16.899,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,H2,pbe,relaxed,-0.36,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2,pbe,SPE,-0.36,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2,pbe_d3,relaxed,-0.43,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2,pbe_d3,SPE,-0.42,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2,r2scan,relaxed,-0.69,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2,r2scan,SPE,-0.657,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2O,pbe,relaxed,-0.649,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2O,pbe,SPE,-0.644,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,H2O,pbe_d3,relaxed,-0.832,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2O,pbe_d3,SPE,-0.819,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,H2O,r2scan,relaxed,-1.07,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2O,r2scan,SPE,-1.021,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,H2S,pbe,relaxed,-0.629,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2S,pbe,SPE,-0.609,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,H2S,pbe_d3,relaxed,-0.963,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2S,pbe_d3,SPE,-0.926,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,H2S,r2scan,relaxed,-1.052,,withheld_unverified_or_incompatible,refs unverified
+Ag110,H2S,r2scan,SPE,-0.992,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,H2S,beef_vdw,relaxed,-16.869,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,N2,pbe,relaxed,-0.396,,withheld_unverified_or_incompatible,refs unverified
+Ag110,N2,pbe,SPE,-0.395,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,N2,pbe_d3,relaxed,-0.455,,withheld_unverified_or_incompatible,refs unverified
+Ag110,N2,pbe_d3,SPE,-0.45,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,N2,r2scan,relaxed,-0.704,,withheld_unverified_or_incompatible,refs unverified
+Ag110,N2,r2scan,SPE,-0.672,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,N2,beef_vdw,relaxed,-16.594,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,NH3,pbe,relaxed,-0.831,,withheld_unverified_or_incompatible,refs unverified
+Ag110,NH3,pbe,SPE,-0.827,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,NH3,pbe_d3,relaxed,-1.015,,withheld_unverified_or_incompatible,refs unverified
+Ag110,NH3,pbe_d3,SPE,-0.999,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,NH3,r2scan,relaxed,-1.24,,withheld_unverified_or_incompatible,refs unverified
+Ag110,NH3,r2scan,SPE,-1.202,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,NH3,beef_vdw,relaxed,-17.01,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,NO,pbe,relaxed,-1.344,,withheld_unverified_or_incompatible,refs unverified
+Ag110,NO,pbe,SPE,-1.22,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,NO,pbe_d3,relaxed,-1.506,,withheld_unverified_or_incompatible,refs unverified
+Ag110,NO,pbe_d3,SPE,-1.446,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,NO,r2scan,relaxed,-2.09,,withheld_unverified_or_incompatible,refs unverified
+Ag110,O2,pbe,relaxed,-0.97,,withheld_unverified_or_incompatible,refs unverified
+Ag110,SO2,pbe,relaxed,-0.948,,withheld_unverified_or_incompatible,refs unverified
+Ag110,SO2,pbe,SPE,-0.924,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,SO2,pbe_d3,relaxed,-1.459,,withheld_unverified_or_incompatible,refs unverified
+Ag110,SO2,pbe_d3,SPE,-1.386,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,SO2,r2scan,relaxed,-1.723,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,SO2,r2scan,SPE,-1.599,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,SO2,beef_vdw,relaxed,-17.204,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,acetaldehyde,pbe,relaxed,-0.511,,withheld_unverified_or_incompatible,refs unverified
+Ag110,acetaldehyde,pbe,SPE,-0.476,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,acetaldehyde,pbe_d3,relaxed,-0.785,,withheld_unverified_or_incompatible,refs unverified
+Ag110,acetaldehyde,pbe_d3,SPE,-0.742,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,acetaldehyde,r2scan,relaxed,-0.956,,withheld_unverified_or_incompatible,refs unverified
+Ag110,acetaldehyde,r2scan,SPE,-0.9,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,acetaldehyde,beef_vdw,relaxed,-16.876,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,acetaldehyde,beef_vdw,SPE,-16.755,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,acetic_acid,r2scan,relaxed,-1.126,,withheld_unverified_or_incompatible,refs unverified
+Ag110,acetic_acid,r2scan,SPE,-1.083,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,acetic_acid,beef_vdw,relaxed,-16.998,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,acetic_acid,beef_vdw,SPE,-16.925,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethane,pbe,relaxed,-0.414,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethane,pbe,SPE,-0.411,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethane,pbe_d3,relaxed,-0.603,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethane,pbe_d3,SPE,-0.599,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethane,r2scan,relaxed,-0.76,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethane,r2scan,SPE,-0.732,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethane,beef_vdw,relaxed,-16.751,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,ethane,beef_vdw,SPE,-16.671,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethanol,pbe,relaxed,-1.3,-0.231,updated,available
+Ag110,ethanol,pbe,SPE,-0.225,-0.224,updated,available
+Ag110,ethanol,pbe_d3,relaxed,-1.67,-0.577,updated,available
+Ag110,ethanol,pbe_d3,SPE,-0.474,-0.467,updated,available
+Ag110,ethanol,r2scan,relaxed,-2.19,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethanol,r2scan,SPE,-0.24,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethanol,beef_vdw,relaxed,-44.444,-0.494,updated,available
+Ag110,ethanol,beef_vdw,SPE,-0.372,-0.367,updated,available
+Ag110,ethene,pbe,relaxed,-0.595,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethene,pbe,SPE,-0.142,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethene,pbe_d3,relaxed,-0.916,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethene,pbe_d3,SPE,-0.411,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethene,r2scan,relaxed,-1.05,,withheld_unverified_or_incompatible,refs unverified
+Ag110,ethene,r2scan,SPE,-0.179,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,ethene,beef_vdw,relaxed,-16.886,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,ethene,beef_vdw,SPE,-0.156,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,formaldehyde,pbe,relaxed,-0.534,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formaldehyde,pbe,SPE,-0.508,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,formaldehyde,pbe_d3,relaxed,-0.759,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formaldehyde,pbe_d3,SPE,-0.733,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,formaldehyde,r2scan,relaxed,-0.974,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formaldehyde,r2scan,SPE,-0.923,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,formaldehyde,beef_vdw,relaxed,-16.822,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,formate,pbe,relaxed,-3.31,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formate,pbe,SPE,-3.307,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formate,pbe_d3,relaxed,-3.65,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formate,pbe_d3,SPE,-3.615,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formate,r2scan,relaxed,-4.37,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formate,r2scan,SPE,-4.285,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formic_acid,pbe,relaxed,-0.629,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formic_acid,pbe,SPE,-0.62,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,formic_acid,pbe_d3,relaxed,-0.932,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formic_acid,pbe_d3,SPE,-0.905,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,formic_acid,r2scan,relaxed,-1.105,,withheld_unverified_or_incompatible,refs unverified
+Ag110,formic_acid,r2scan,SPE,-1.044,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,formic_acid,beef_vdw,relaxed,-16.934,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,glycerol,pbe,relaxed,-1.41,,withheld_unverified_or_incompatible,refs unverified
+Ag110,glycerol,pbe,SPE,-0.904,,withheld_unverified_or_incompatible,refs unverified
+Ag110,glycerol,pbe_d3,relaxed,-1.94,,withheld_unverified_or_incompatible,refs unverified
+Ag110,glycerol,pbe_d3,SPE,-1.452,,withheld_unverified_or_incompatible,refs unverified
+Ag110,glycerol,r2scan,relaxed,-2.54,,withheld_unverified_or_incompatible,refs unverified
+Ag110,glycerol,r2scan,SPE,-1.431,,withheld_unverified_or_incompatible,refs unverified
+Ag110,isopropanol,pbe,relaxed,-1.31,,withheld_unverified_or_incompatible,refs unverified
+Ag110,isopropanol,pbe_d3,relaxed,-1.74,,withheld_unverified_or_incompatible,refs unverified
+Ag110,isopropanol,pbe_d3,SPE,-0.587,-0.578,updated,available
+Ag110,isopropanol,r2scan,relaxed,-2.3,,withheld_unverified_or_incompatible,refs unverified
+Ag110,isopropanol,r2scan,SPE,-0.295,,withheld_unverified_or_incompatible,refs unverified
+Ag110,methane,pbe,relaxed,-0.393,,withheld_unverified_or_incompatible,refs unverified
+Ag110,methane,pbe,SPE,-0.39,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,methane,pbe_d3,relaxed,-0.539,,withheld_unverified_or_incompatible,refs unverified
+Ag110,methane,pbe_d3,SPE,-0.532,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,methane,r2scan,relaxed,-0.746,,withheld_unverified_or_incompatible,refs unverified
+Ag110,methane,r2scan,SPE,-0.713,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,methane,beef_vdw,relaxed,-16.652,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,methane,beef_vdw,SPE,-16.584,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,methanol,pbe,relaxed,-0.625,,withheld_unverified_or_incompatible,refs unverified
+Ag110,methanol,pbe,SPE,-0.616,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,methanol,pbe_d3,relaxed,-0.872,,withheld_unverified_or_incompatible,refs unverified
+Ag110,methanol,pbe_d3,SPE,-0.826,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,methanol,r2scan,relaxed,-1.068,,withheld_unverified_or_incompatible,refs unverified
+Ag110,methanol,r2scan,SPE,-1.011,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,methanol,beef_vdw,relaxed,-16.93,,withheld_unverified_or_incompatible,potential_mismatch
+Ag110,methanol,beef_vdw,SPE,-16.854,,withheld_unverified_or_incompatible,potential mismatch
+Ag110,propane,pbe,relaxed,-1.07,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propane,pbe,SPE,-0.414,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propane,pbe_d3,relaxed,-1.47,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propane,pbe_d3,SPE,-0.632,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propane,r2scan,relaxed,-2.01,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propane,r2scan,SPE,-0.729,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propanol,pbe,relaxed,-1.32,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propanol,pbe,SPE,-0.243,-0.242,updated,available
+Ag110,propanol,pbe_d3,relaxed,-1.73,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propanol,pbe_d3,SPE,-0.544,-0.534,updated,available
+Ag110,propanol,r2scan,relaxed,-2.3,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propanol,r2scan,SPE,-0.255,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propene,pbe,relaxed,-1.27,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propene,pbe,SPE,-0.512,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propene,pbe_d3,relaxed,-1.72,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propene,pbe_d3,SPE,-0.887,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propene,r2scan,relaxed,-2.28,,withheld_unverified_or_incompatible,refs unverified
+Ag110,propene,r2scan,SPE,-0.944,,withheld_unverified_or_incompatible,refs unverified
+Ag111,CH3,pbe,relaxed,-1.48,-0.785,updated,available
+Ag111,CH3,pbe,SPE,-1.449,-0.759,updated,available
+Ag111,CH3,pbe_d3,relaxed,-1.73,-1.012,updated,available
+Ag111,CH3,pbe_d3,SPE,-1.576,-0.863,updated,available
+Ag111,CH3,r2scan,relaxed,-1.92,,withheld_unverified_or_incompatible,refs unverified
+Ag111,CH3,r2scan,SPE,-1.82,-0.602,updated,available
+Ag111,CH3,beef_vdw,relaxed,-25.765,-0.892,updated,available
+Ag111,CH3,beef_vdw,SPE,-25.705,-0.832,updated,available
+Ag111,CO,pbe,relaxed,-0.59,0.1,updated,available
+Ag111,CO,pbe,SPE,-0.569,0.121,updated,available
+Ag111,CO,pbe_d3,relaxed,-0.83,-0.12,updated,available
+Ag111,CO,pbe_d3,SPE,-0.645,0.069,updated,available
+Ag111,CO,r2scan,relaxed,-1.31,,withheld_unverified_or_incompatible,refs unverified
+Ag111,CO,r2scan,SPE,-1.018,0.2,updated,available
+Ag111,CO,beef_vdw,relaxed,-25.036,-0.163,updated,available
+Ag111,CO,beef_vdw,SPE,-24.721,0.152,updated,available
+Ag111,CO2,pbe,relaxed,-1.235,,withheld_unverified_or_incompatible,refs unverified
+Ag111,CO2,pbe,SPE,-0.002,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,CO2,r2scan,relaxed,-2.17,,withheld_unverified_or_incompatible,refs unverified
+Ag111,CO2,r2scan,SPE,-0.008,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,CO2,beef_vdw,relaxed,-44.479,,withheld_unverified_or_incompatible,potential_mismatch
+Ag111,CO2,beef_vdw,SPE,-0.153,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,DME,pbe,relaxed,,-0.051,newly_filled,available
+Ag111,DME,pbe,SPE,,-0.017,newly_filled,available
+Ag111,DME,pbe_d3,relaxed,,-0.267,newly_filled,available
+Ag111,DME,pbe_d3,SPE,,-0.084,newly_filled,available
+Ag111,DME,r2scan,relaxed,-1.32,-0.097,updated,available
+Ag111,DME,r2scan,SPE,-1.153,0.064,updated,available
+Ag111,DME,beef_vdw,relaxed,-25.227,-0.354,updated,available
+Ag111,DME,beef_vdw,SPE,-25.218,-0.345,updated,available
+Ag111,H2,pbe,relaxed,-0.68,,withheld_unverified_or_incompatible,refs unverified
+Ag111,H2,pbe,SPE,-0.628,0.063,updated,available
+Ag111,H2,pbe_d3,relaxed,-0.78,,withheld_unverified_or_incompatible,refs unverified
+Ag111,H2,pbe_d3,SPE,-0.562,0.151,updated,available
+Ag111,H2,r2scan,relaxed,-1.21,,withheld_unverified_or_incompatible,refs unverified
+Ag111,H2,r2scan,SPE,-1.034,0.184,updated,available
+Ag111,H2,beef_vdw,SPE,-24.907,-0.034,updated,available
+Ag111,H2O,pbe,relaxed,-0.8,-0.107,updated,available
+Ag111,H2O,pbe,SPE,-0.744,-0.053,updated,available
+Ag111,H2O,pbe_d3,relaxed,-1.01,-0.299,updated,available
+Ag111,H2O,pbe_d3,SPE,-0.767,-0.053,updated,available
+Ag111,H2O,r2scan,relaxed,-1.38,,withheld_unverified_or_incompatible,refs unverified
+Ag111,H2O,r2scan,SPE,-1.202,0.016,updated,available
+Ag111,H2O,beef_vdw,relaxed,-25.112,-0.239,updated,available
+Ag111,H2O,beef_vdw,SPE,-25.075,-0.202,updated,available
+Ag111,H2S,pbe,relaxed,-0.8,-0.107,updated,available
+Ag111,H2S,pbe,SPE,-0.727,-0.036,updated,available
+Ag111,H2S,pbe_d3,relaxed,-1.14,-0.429,updated,available
+Ag111,H2S,pbe_d3,SPE,-0.878,-0.165,updated,available
+Ag111,H2S,r2scan,SPE,-1.214,0.004,updated,available
+Ag111,H2S,beef_vdw,relaxed,-25.167,-0.295,updated,available
+Ag111,H2S,beef_vdw,SPE,-25.133,-0.26,updated,available
+Ag111,N2,pbe,relaxed,-0.7,-0.007,updated,available
+Ag111,N2,pbe,SPE,-0.663,0.028,updated,available
+Ag111,N2,pbe_d3,relaxed,-0.78,-0.071,updated,available
+Ag111,N2,pbe_d3,SPE,-0.586,0.127,updated,available
+Ag111,N2,r2scan,relaxed,-1.24,,withheld_unverified_or_incompatible,refs unverified
+Ag111,N2,r2scan,SPE,-1.06,0.158,updated,available
+Ag111,N2,beef_vdw,relaxed,-24.986,-0.113,updated,available
+Ag111,N2,beef_vdw,SPE,-24.984,-0.111,updated,available
+Ag111,NH3,pbe,relaxed,-0.97,-0.279,updated,available
+Ag111,NH3,pbe,SPE,-0.94,-0.249,updated,available
+Ag111,NH3,pbe_d3,relaxed,-1.23,-0.519,updated,available
+Ag111,NH3,pbe_d3,SPE,-1.012,-0.298,updated,available
+Ag111,NH3,r2scan,relaxed,-1.63,,withheld_unverified_or_incompatible,refs unverified
+Ag111,NH3,r2scan,SPE,-1.444,-0.226,updated,available
+Ag111,NH3,beef_vdw,relaxed,-25.294,-0.421,updated,available
+Ag111,NH3,beef_vdw,SPE,-25.29,-0.417,updated,available
+Ag111,NO,pbe,relaxed,-1.24,-0.548,updated,available
+Ag111,NO,pbe,SPE,-1.185,-0.495,updated,available
+Ag111,NO,pbe_d3,relaxed,-1.46,-0.746,updated,available
+Ag111,NO,pbe_d3,SPE,-1.281,-0.568,updated,available
+Ag111,NO,r2scan,relaxed,-2.15,,withheld_unverified_or_incompatible,refs unverified
+Ag111,NO,beef_vdw,relaxed,-32.198,-7.325,updated,available; energy review
+Ag111,NO,beef_vdw,SPE,-32.157,-7.284,updated,available; energy review
+Ag111,O2,pbe,relaxed,-0.71,,withheld_unverified_or_incompatible,refs unverified
+Ag111,SO2,pbe,relaxed,-0.77,-0.08,updated,available
+Ag111,SO2,pbe,SPE,-0.694,-0.004,updated,available
+Ag111,SO2,pbe_d3,relaxed,-1.22,-0.505,updated,available
+Ag111,SO2,pbe_d3,SPE,-0.985,-0.272,updated,available
+Ag111,SO2,r2scan,SPE,,-0.07,newly_filled,available
+Ag111,SO2,beef_vdw,relaxed,-25.24,-0.367,updated,available
+Ag111,SO2,beef_vdw,SPE,-25.236,-0.363,updated,available
+Ag111,acetaldehyde,pbe,relaxed,-0.72,-0.025,updated,available
+Ag111,acetaldehyde,pbe,SPE,-0.675,0.016,updated,available
+Ag111,acetaldehyde,pbe_d3,relaxed,-0.98,-0.267,updated,available
+Ag111,acetaldehyde,pbe_d3,SPE,-0.786,-0.072,updated,available
+Ag111,acetaldehyde,r2scan,relaxed,-1.33,,withheld_unverified_or_incompatible,refs unverified
+Ag111,acetaldehyde,r2scan,SPE,-1.176,0.042,updated,available
+Ag111,acetaldehyde,beef_vdw,relaxed,-25.166,-0.293,updated,available
+Ag111,acetaldehyde,beef_vdw,SPE,-25.154,-0.281,updated,available
+Ag111,acetic_acid,r2scan,relaxed,-1.48,,withheld_unverified_or_incompatible,refs unverified
+Ag111,acetic_acid,r2scan,SPE,-1.325,-0.107,updated,available
+Ag111,acetic_acid,beef_vdw,relaxed,-25.286,-0.413,updated,available
+Ag111,acetic_acid,beef_vdw,SPE,-25.272,-0.399,updated,available
+Ag111,ethane,pbe,relaxed,-1.221,,withheld_unverified_or_incompatible,refs unverified
+Ag111,ethane,pbe,SPE,-0.002,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethane,pbe_d3,relaxed,-1.478,,withheld_unverified_or_incompatible,refs unverified
+Ag111,ethane,pbe_d3,SPE,-0.134,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethane,r2scan,relaxed,-2.168,,withheld_unverified_or_incompatible,refs unverified
+Ag111,ethane,r2scan,SPE,0.0,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethane,beef_vdw,relaxed,-44.523,,withheld_unverified_or_incompatible,potential_mismatch
+Ag111,ethane,beef_vdw,SPE,-0.2,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethanol,pbe,relaxed,-1.317,,withheld_unverified_or_incompatible,refs unverified
+Ag111,ethanol,pbe,SPE,-0.085,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethanol,pbe_d3,relaxed,-1.654,,withheld_unverified_or_incompatible,refs unverified
+Ag111,ethanol,pbe_d3,SPE,-0.271,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethanol,r2scan,relaxed,-2.29,,withheld_unverified_or_incompatible,refs unverified
+Ag111,ethanol,r2scan,SPE,-0.157,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethanol,beef_vdw,relaxed,-44.647,,withheld_unverified_or_incompatible,potential_mismatch
+Ag111,ethanol,beef_vdw,SPE,-0.31,,withheld_unverified_or_incompatible,potential mismatch
+Ag111,ethene,pbe,relaxed,-0.72,-0.032,updated,available
+Ag111,ethene,pbe,SPE,-0.034,0.002,updated,available
+Ag111,ethene,pbe_d3,relaxed,-1.09,-0.375,updated,available
+Ag111,ethene,pbe_d3,SPE,-0.184,-0.075,updated,available
+Ag111,ethene,r2scan,relaxed,-1.31,,withheld_unverified_or_incompatible,refs unverified
+Ag111,ethene,r2scan,SPE,-0.062,0.061,updated,available
+Ag111,ethene,beef_vdw,relaxed,-25.162,-0.289,updated,available
+Ag111,ethene,beef_vdw,SPE,-0.223,-0.284,updated,available
+Ag111,formaldehyde,pbe,relaxed,-0.72,-0.029,updated,available
+Ag111,formaldehyde,pbe,SPE,-0.676,0.015,updated,available
+Ag111,formaldehyde,pbe_d3,relaxed,-0.9,-0.188,updated,available
+Ag111,formaldehyde,pbe_d3,SPE,-0.698,0.016,updated,available
+Ag111,formaldehyde,r2scan,SPE,-1.13,0.088,updated,available
+Ag111,formaldehyde,beef_vdw,relaxed,-25.099,-0.227,updated,available
+Ag111,formaldehyde,beef_vdw,SPE,-25.087,-0.214,updated,available
+Ag111,formate,pbe,relaxed,-3.21,,withheld_unverified_or_incompatible,refs unverified
+Ag111,formate,pbe,SPE,-3.204,-2.514,updated,available
+Ag111,formate,pbe_d3,relaxed,-3.57,,withheld_unverified_or_incompatible,refs unverified
+Ag111,formate,pbe_d3,SPE,-3.396,-2.682,updated,available
+Ag111,formate,r2scan,relaxed,-4.34,,withheld_unverified_or_incompatible,refs unverified
+Ag111,formate,r2scan,SPE,-4.219,-3.001,updated,available
+Ag111,formate,beef_vdw,SPE,-27.777,-2.904,updated,available
+Ag111,formic_acid,pbe,relaxed,-0.81,-0.12,updated,available
+Ag111,formic_acid,pbe,SPE,-0.772,-0.081,updated,available
+Ag111,formic_acid,pbe_d3,relaxed,-1.14,-0.425,updated,available
+Ag111,formic_acid,pbe_d3,SPE,-0.899,-0.185,updated,available
+Ag111,formic_acid,r2scan,relaxed,-1.48,,withheld_unverified_or_incompatible,refs unverified
+Ag111,formic_acid,r2scan,SPE,-1.266,-0.048,updated,available
+Ag111,formic_acid,beef_vdw,relaxed,-25.229,-0.356,updated,available
+Ag111,formic_acid,beef_vdw,SPE,-25.219,-0.346,updated,available
+Ag111,glycerol,pbe,relaxed,-1.4,,withheld_unverified_or_incompatible,refs unverified
+Ag111,glycerol,pbe,SPE,-0.83,-0.139,updated,available
+Ag111,glycerol,pbe_d3,relaxed,-2.02,,withheld_unverified_or_incompatible,refs unverified
+Ag111,glycerol,pbe_d3,SPE,-1.212,-0.498,updated,available
+Ag111,glycerol,r2scan,relaxed,-2.46,,withheld_unverified_or_incompatible,refs unverified
+Ag111,glycerol,r2scan,SPE,-1.432,-0.214,updated,available
+Ag111,isopropanol,pbe,relaxed,-1.33,,withheld_unverified_or_incompatible,refs unverified
+Ag111,isopropanol,pbe,SPE,-0.755,-0.065,updated,available
+Ag111,isopropanol,pbe_d3,relaxed,-1.81,,withheld_unverified_or_incompatible,refs unverified
+Ag111,isopropanol,pbe_d3,SPE,-0.985,-0.272,updated,available
+Ag111,isopropanol,r2scan,relaxed,-2.39,,withheld_unverified_or_incompatible,refs unverified
+Ag111,isopropanol,r2scan,SPE,-1.29,-0.072,updated,available
+Ag111,isopropanol,beef_vdw,SPE,-25.348,-0.475,updated,available
+Ag111,methane,pbe,relaxed,-0.7,-0.011,updated,available
+Ag111,methane,pbe,SPE,-0.663,0.027,updated,available
+Ag111,methane,pbe_d3,relaxed,-0.86,-0.151,updated,available
+Ag111,methane,pbe_d3,SPE,-0.675,0.039,updated,available
+Ag111,methane,r2scan,relaxed,-1.27,,withheld_unverified_or_incompatible,refs unverified
+Ag111,methane,r2scan,SPE,-1.095,0.123,updated,available
+Ag111,methane,beef_vdw,relaxed,-25.067,-0.194,updated,available
+Ag111,methane,beef_vdw,SPE,-25.065,-0.192,updated,available
+Ag111,methanol,pbe,relaxed,-0.79,-0.098,updated,available
+Ag111,methanol,pbe,SPE,-0.758,-0.068,updated,available
+Ag111,methanol,pbe_d3,relaxed,-1.09,-0.378,updated,available
+Ag111,methanol,pbe_d3,SPE,-0.849,-0.136,updated,available
+Ag111,methanol,r2scan,relaxed,-1.39,,withheld_unverified_or_incompatible,refs unverified
+Ag111,methanol,r2scan,SPE,-1.264,-0.046,updated,available
+Ag111,methanol,beef_vdw,relaxed,-25.212,-0.339,updated,available
+Ag111,methanol,beef_vdw,SPE,-25.204,-0.331,updated,available
+Ag111,propane,pbe,relaxed,-1.23,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propane,pbe,SPE,-0.68,0.011,updated,available
+Ag111,propane,pbe_d3,relaxed,-1.56,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propane,pbe_d3,SPE,-0.846,-0.133,updated,available
+Ag111,propane,r2scan,relaxed,-2.2,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propane,r2scan,SPE,-1.14,0.078,updated,available
+Ag111,propane,beef_vdw,SPE,-25.24,-0.367,updated,available
+Ag111,propanol,pbe,relaxed,-1.35,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propanol,pbe,SPE,-0.114,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propanol,pbe_d3,relaxed,-1.8,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propanol,pbe_d3,SPE,-0.408,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propanol,r2scan,relaxed,-2.38,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propanol,r2scan,SPE,-0.212,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propanol,beef_vdw,SPE,-0.439,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propene,pbe,relaxed,-1.26,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propene,pbe,SPE,-0.7,-0.01,updated,available
+Ag111,propene,pbe_d3,relaxed,-1.73,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propene,pbe_d3,SPE,-0.842,-0.128,updated,available
+Ag111,propene,r2scan,relaxed,-2.23,,withheld_unverified_or_incompatible,refs unverified
+Ag111,propene,r2scan,SPE,-1.169,0.049,updated,available
+Ag111,propene,beef_vdw,SPE,-25.221,-0.349,updated,available
+Au111,CH3,pbe,relaxed,-1.28,-1.279,updated,available
+Au111,CH3,r2scan,relaxed,-1.19,-1.196,updated,available
+Au111,CO,pbe,relaxed,-0.13,-0.127,updated,available
+Au111,CO,pbe_d3,relaxed,-0.29,-0.289,updated,available
+Au111,CO,r2scan,relaxed,-0.1,,withheld_unverified_or_incompatible,refs unverified
+Au111,CO,beef_vdw,SPE,-0.258,0.022,updated,available
+Au111,CO2,pbe,relaxed,-0.024,,withheld_unverified_or_incompatible,refs unverified
+Au111,CO2,pbe,SPE,0.012,,withheld_unverified_or_incompatible,refs unverified
+Au111,CO2,r2scan,relaxed,-0.06,,withheld_unverified_or_incompatible,refs unverified
+Au111,CO2,r2scan,SPE,0.103,,withheld_unverified_or_incompatible,refs unverified
+Au111,CO2,beef_vdw,SPE,-0.157,,withheld_unverified_or_incompatible,refs unverified
+Au111,DME,pbe,relaxed,-4.65,-0.046,updated,available
+Au111,DME,pbe,SPE,,0.07,newly_filled,available
+Au111,DME,pbe_d3,relaxed,,-0.481,newly_filled,available
+Au111,DME,pbe_d3,SPE,,0.057,newly_filled,available
+Au111,DME,r2scan,relaxed,-0.02,,withheld_unverified_or_incompatible,refs unverified
+Au111,DME,r2scan,SPE,0.417,0.193,updated,available
+Au111,DME,beef_vdw,SPE,-0.438,-0.375,updated,available
+Au111,H2,pbe,relaxed,-0.0,,withheld_unverified_or_incompatible,refs unverified
+Au111,H2,pbe_d3,relaxed,-0.08,,withheld_unverified_or_incompatible,refs unverified
+Au111,H2,r2scan,relaxed,-0.02,,withheld_unverified_or_incompatible,refs unverified
+Au111,H2,beef_vdw,SPE,-0.341,-0.062,updated,available
+Au111,H2O,pbe,relaxed,-0.04,-0.041,updated,available
+Au111,H2O,pbe_d3,relaxed,-0.3,-0.301,updated,available
+Au111,H2O,r2scan,relaxed,-0.1,,withheld_unverified_or_incompatible,refs unverified
+Au111,H2O,beef_vdw,SPE,-0.45,-0.17,updated,available
+Au111,H2S,pbe,relaxed,-0.14,-0.144,updated,available
+Au111,H2S,beef_vdw,SPE,-0.549,-0.269,updated,available
+Au111,N2,pbe,relaxed,-0.01,-0.007,updated,available
+Au111,N2,pbe_d3,relaxed,-0.1,-0.099,updated,available
+Au111,N2,r2scan,relaxed,-0.02,,withheld_unverified_or_incompatible,refs unverified
+Au111,N2,beef_vdw,SPE,-0.418,-0.138,updated,available
+Au111,NH3,pbe,relaxed,-0.06,-0.057,updated,available
+Au111,NH3,pbe_d3,relaxed,-0.31,-0.306,updated,available
+Au111,NH3,r2scan,relaxed,-0.13,,withheld_unverified_or_incompatible,refs unverified
+Au111,NH3,beef_vdw,SPE,-0.495,-0.216,updated,available
+Au111,NO,pbe,relaxed,-0.66,-0.658,updated,available
+Au111,NO,pbe_d3,relaxed,-0.86,-0.861,updated,available
+Au111,NO,r2scan,relaxed,-0.96,,withheld_unverified_or_incompatible,refs unverified
+Au111,NO,beef_vdw,SPE,-7.662,-7.382,updated,available; energy review
+Au111,O2,pbe,relaxed,0.39,,withheld_unverified_or_incompatible,refs unverified
+Au111,SO2,pbe,relaxed,-0.05,-0.054,updated,available
+Au111,SO2,pbe_d3,relaxed,-0.53,-0.526,updated,available
+Au111,SO2,beef_vdw,SPE,-0.645,-0.366,updated,available
+Au111,acetaldehyde,pbe,relaxed,-0.05,-0.051,updated,available
+Au111,acetaldehyde,pbe_d3,relaxed,-0.4,-0.396,updated,available
+Au111,acetaldehyde,r2scan,relaxed,0.05,,withheld_unverified_or_incompatible,refs unverified
+Au111,acetaldehyde,beef_vdw,SPE,-0.636,-0.356,updated,available
+Au111,acetic_acid,r2scan,relaxed,-0.19,,withheld_unverified_or_incompatible,refs unverified
+Au111,acetic_acid,beef_vdw,SPE,-0.687,-0.407,updated,available
+Au111,ethane,pbe,relaxed,-0.01,-0.014,updated,available
+Au111,ethane,pbe_d3,relaxed,-0.29,-0.287,updated,available
+Au111,ethane,r2scan,relaxed,0.07,,withheld_unverified_or_incompatible,refs unverified
+Au111,ethane,beef_vdw,SPE,-0.589,-0.31,updated,available
+Au111,ethanol,pbe,relaxed,-0.06,-0.062,updated,available
+Au111,ethanol,pbe,SPE,0.35,0.057,updated,available
+Au111,ethanol,pbe_d3,relaxed,-0.49,-0.488,updated,available
+Au111,ethanol,pbe_d3,SPE,0.275,0.012,updated,available
+Au111,ethanol,r2scan,relaxed,-0.13,,withheld_unverified_or_incompatible,refs unverified
+Au111,ethanol,r2scan,SPE,0.424,0.146,updated,available
+Au111,ethanol,beef_vdw,SPE,-0.414,-0.384,updated,available
+Au111,ethene,pbe,relaxed,-0.03,-0.034,updated,available
+Au111,ethene,pbe,SPE,-0.021,0.089,updated,available
+Au111,ethene,pbe_d3,relaxed,-0.45,-0.447,updated,available
+Au111,ethene,pbe_d3,SPE,-0.099,0.051,updated,available
+Au111,ethene,r2scan,relaxed,-0.01,,withheld_unverified_or_incompatible,refs unverified
+Au111,ethene,r2scan,SPE,0.024,0.178,updated,available
+Au111,ethene,beef_vdw,SPE,-0.24,-0.32,updated,available
+Au111,formaldehyde,pbe,relaxed,-0.07,-0.068,updated,available
+Au111,formaldehyde,pbe_d3,relaxed,-0.34,-0.339,updated,available
+Au111,formaldehyde,beef_vdw,SPE,-0.564,-0.285,updated,available
+Au111,formate,pbe,relaxed,-2.19,,withheld_unverified_or_incompatible,refs unverified
+Au111,formate,pbe_d3,relaxed,-2.5,,withheld_unverified_or_incompatible,refs unverified
+Au111,formate,r2scan,relaxed,-2.69,,withheld_unverified_or_incompatible,refs unverified
+Au111,formate,beef_vdw,SPE,-2.846,-2.567,updated,available
+Au111,formic_acid,pbe,relaxed,-0.1,-0.099,updated,available
+Au111,formic_acid,pbe_d3,relaxed,-0.46,-0.456,updated,available
+Au111,formic_acid,r2scan,relaxed,-0.25,,withheld_unverified_or_incompatible,refs unverified
+Au111,formic_acid,beef_vdw,SPE,-0.625,-0.346,updated,available
+Au111,glycerol,pbe,relaxed,-0.26,,withheld_unverified_or_incompatible,refs unverified
+Au111,glycerol,pbe,SPE,0.252,,withheld_unverified_or_incompatible,refs unverified
+Au111,glycerol,pbe_d3,relaxed,-0.87,,withheld_unverified_or_incompatible,refs unverified
+Au111,glycerol,pbe_d3,SPE,-0.072,,withheld_unverified_or_incompatible,refs unverified
+Au111,glycerol,r2scan,relaxed,-0.41,,withheld_unverified_or_incompatible,refs unverified
+Au111,glycerol,r2scan,SPE,0.263,,withheld_unverified_or_incompatible,refs unverified
+Au111,glycerol,beef_vdw,SPE,-0.348,,withheld_unverified_or_incompatible,refs unverified
+Au111,isopropanol,pbe,relaxed,-0.09,,withheld_unverified_or_incompatible,refs unverified
+Au111,isopropanol,pbe,SPE,0.202,,withheld_unverified_or_incompatible,refs unverified
+Au111,isopropanol,pbe_d3,relaxed,-0.59,,withheld_unverified_or_incompatible,refs unverified
+Au111,isopropanol,pbe_d3,SPE,0.019,,withheld_unverified_or_incompatible,refs unverified
+Au111,isopropanol,r2scan,relaxed,-0.24,,withheld_unverified_or_incompatible,refs unverified
+Au111,isopropanol,r2scan,SPE,0.263,,withheld_unverified_or_incompatible,refs unverified
+Au111,isopropanol,beef_vdw,SPE,-0.3,,withheld_unverified_or_incompatible,refs unverified
+Au111,methane,pbe,relaxed,-0.0,-0.005,updated,available
+Au111,methane,pbe_d3,relaxed,-0.2,-0.197,updated,available
+Au111,methane,r2scan,relaxed,-0.06,,withheld_unverified_or_incompatible,refs unverified
+Au111,methane,beef_vdw,SPE,-0.486,-0.206,updated,available
+Au111,methanol,pbe,SPE,0.297,0.061,updated,available
+Au111,methanol,pbe_d3,relaxed,-0.33,-0.333,updated,available
+Au111,methanol,pbe_d3,SPE,0.276,0.079,updated,available
+Au111,methanol,r2scan,relaxed,0.08,,withheld_unverified_or_incompatible,refs unverified
+Au111,methanol,r2scan,SPE,0.379,0.181,updated,available
+Au111,methanol,beef_vdw,SPE,-0.405,-0.297,updated,available
+Au111,propane,pbe,relaxed,-0.03,,withheld_unverified_or_incompatible,refs unverified
+Au111,propane,pbe,SPE,0.2,,withheld_unverified_or_incompatible,refs unverified
+Au111,propane,pbe_d3,relaxed,-0.42,,withheld_unverified_or_incompatible,refs unverified
+Au111,propane,pbe_d3,SPE,0.159,,withheld_unverified_or_incompatible,refs unverified
+Au111,propane,r2scan,relaxed,-0.1,,withheld_unverified_or_incompatible,refs unverified
+Au111,propane,r2scan,SPE,0.315,,withheld_unverified_or_incompatible,refs unverified
+Au111,propane,beef_vdw,SPE,-0.234,,withheld_unverified_or_incompatible,refs unverified
+Au111,propanol,pbe,relaxed,-0.09,,withheld_unverified_or_incompatible,refs unverified
+Au111,propanol,pbe_d3,relaxed,-0.63,,withheld_unverified_or_incompatible,refs unverified
+Au111,propanol,r2scan,relaxed,-0.28,,withheld_unverified_or_incompatible,refs unverified
+Au111,propanol,beef_vdw,SPE,-0.698,-0.418,updated,available
+Au111,propene,pbe,relaxed,-0.07,,withheld_unverified_or_incompatible,refs unverified
+Au111,propene,pbe,SPE,0.311,,withheld_unverified_or_incompatible,refs unverified
+Au111,propene,pbe_d3,relaxed,-0.62,,withheld_unverified_or_incompatible,refs unverified
+Au111,propene,pbe_d3,SPE,0.3,,withheld_unverified_or_incompatible,refs unverified
+Au111,propene,r2scan,relaxed,-0.21,,withheld_unverified_or_incompatible,refs unverified
+Au111,propene,r2scan,SPE,0.448,,withheld_unverified_or_incompatible,refs unverified
+Au111,propene,beef_vdw,SPE,-0.096,,withheld_unverified_or_incompatible,refs unverified
+Cu100,CH3,beef_vdw,relaxed,-1.274,,withheld_unverified_or_incompatible,refs unverified
+Cu100,CH3,beef_vdw,SPE,-1.231,,withheld_unverified_or_incompatible,refs unverified
+Cu100,CO,r2scan,relaxed,-0.95,,withheld_unverified_or_incompatible,refs unverified
+Cu100,CO,beef_vdw,relaxed,-0.667,,withheld_unverified_or_incompatible,refs unverified
+Cu100,CO2,r2scan,relaxed,-0.06,,withheld_unverified_or_incompatible,refs unverified
+Cu100,CO2,beef_vdw,relaxed,-0.243,,withheld_unverified_or_incompatible,refs unverified
+Cu100,DME,pbe,relaxed,-4.76,-0.15,updated,available
+Cu100,DME,pbe,SPE,-4.703,-0.134,updated,available
+Cu100,DME,pbe_d3,relaxed,,-0.651,newly_filled,available
+Cu100,DME,pbe_d3,SPE,,-0.44,newly_filled,available
+Cu100,DME,r2scan,relaxed,-0.23,,withheld_unverified_or_incompatible,refs unverified
+Cu100,DME,r2scan,SPE,-0.219,-0.043,updated,available
+Cu100,DME,beef_vdw,relaxed,-0.486,,withheld_unverified_or_incompatible,refs unverified
+Cu100,DME,beef_vdw,SPE,-0.415,,withheld_unverified_or_incompatible,refs unverified
+Cu100,H2O,r2scan,relaxed,-0.36,,withheld_unverified_or_incompatible,refs unverified
+Cu100,H2O,beef_vdw,relaxed,-0.341,,withheld_unverified_or_incompatible,refs unverified
+Cu100,H2S,pbe,SPE,,-0.243,newly_filled,available
+Cu100,H2S,pbe_d3,SPE,,-0.581,newly_filled,available
+Cu100,H2S,r2scan,SPE,,-0.112,newly_filled,available
+Cu100,H2S,beef_vdw,relaxed,-0.416,,withheld_unverified_or_incompatible,refs unverified
+Cu100,N2,pbe,SPE,,-0.003,newly_filled,available
+Cu100,N2,pbe_d3,SPE,,-0.054,newly_filled,available
+Cu100,N2,r2scan,SPE,,0.181,newly_filled,available
+Cu100,N2,beef_vdw,relaxed,-0.13,,withheld_unverified_or_incompatible,refs unverified
+Cu100,NH3,pbe,SPE,,-0.556,newly_filled,available
+Cu100,NH3,pbe_d3,SPE,,-0.83,newly_filled,available
+Cu100,NH3,r2scan,SPE,,-0.499,newly_filled,available
+Cu100,NO,pbe,SPE,,-1.764,newly_filled,available
+Cu100,NO,pbe_d3,SPE,,-1.884,newly_filled,available
+Cu100,SO2,pbe,SPE,,-0.788,newly_filled,available
+Cu100,SO2,pbe_d3,SPE,,-1.179,newly_filled,available
+Cu100,SO2,r2scan,SPE,,-1.068,newly_filled,available
+Cu100,SO2,beef_vdw,relaxed,-0.968,,withheld_unverified_or_incompatible,refs unverified
+Cu100,acetaldehyde,r2scan,relaxed,-0.37,,withheld_unverified_or_incompatible,refs unverified
+Cu100,acetic_acid,pbe_d3,SPE,-7.253,,withheld_unverified_or_incompatible,refs unverified
+Cu100,acetic_acid,r2scan,relaxed,-0.47,,withheld_unverified_or_incompatible,refs unverified
+Cu100,acetic_acid,beef_vdw,relaxed,-0.546,,withheld_unverified_or_incompatible,refs unverified
+Cu100,acetic_acid,beef_vdw,SPE,-0.463,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethane,r2scan,relaxed,0.0,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethane,beef_vdw,relaxed,-0.274,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethane,beef_vdw,SPE,-0.198,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethanol,pbe_d3,SPE,-0.604,-0.606,updated,available
+Cu100,ethanol,r2scan,relaxed,-0.36,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethanol,r2scan,SPE,-0.209,-0.205,updated,available
+Cu100,ethanol,beef_vdw,relaxed,-0.528,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethanol,beef_vdw,SPE,-0.448,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethene,pbe,SPE,0.174,-0.093,updated,available
+Cu100,ethene,pbe_d3,SPE,-0.405,-0.536,updated,available
+Cu100,ethene,r2scan,relaxed,-0.43,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethene,r2scan,SPE,-0.001,-0.088,updated,available
+Cu100,ethene,beef_vdw,relaxed,-0.36,,withheld_unverified_or_incompatible,refs unverified
+Cu100,ethene,beef_vdw,SPE,-0.158,,withheld_unverified_or_incompatible,refs unverified
+Cu100,formaldehyde,pbe,SPE,,-0.125,newly_filled,available
+Cu100,formaldehyde,pbe_d3,SPE,,-0.332,newly_filled,available
+Cu100,formaldehyde,r2scan,SPE,,-0.089,newly_filled,available
+Cu100,formaldehyde,beef_vdw,relaxed,-0.349,,withheld_unverified_or_incompatible,refs unverified
+Cu100,formic_acid,r2scan,relaxed,-0.48,,withheld_unverified_or_incompatible,refs unverified
+Cu100,formic_acid,beef_vdw,relaxed,-0.46,,withheld_unverified_or_incompatible,refs unverified
+Cu100,methane,r2scan,SPE,,0.147,newly_filled,available
+Cu100,methane,beef_vdw,relaxed,-0.192,,withheld_unverified_or_incompatible,refs unverified
+Cu100,methane,beef_vdw,SPE,-0.118,,withheld_unverified_or_incompatible,refs unverified
+Cu100,methanol,r2scan,relaxed,-0.32,,withheld_unverified_or_incompatible,refs unverified
+Cu100,methanol,beef_vdw,relaxed,-0.458,,withheld_unverified_or_incompatible,refs unverified
+Cu100,methanol,beef_vdw,SPE,-0.377,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CH3,pbe,relaxed,-1.216,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CH3,pbe,SPE,-1.208,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CH3,pbe_d3,relaxed,-1.568,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CH3,pbe_d3,SPE,-1.563,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CH3,r2scan,relaxed,-1.342,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CH3,r2scan,SPE,-1.276,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CH3,beef_vdw,relaxed,-32.38,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,CH3,beef_vdw,SPE,-32.341,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CO,pbe,relaxed,-0.485,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CO,pbe,SPE,-0.475,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CO,pbe_d3,relaxed,-0.71,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CO,pbe_d3,SPE,-0.703,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CO,r2scan,relaxed,-0.674,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CO,r2scan,SPE,-0.603,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CO,beef_vdw,SPE,-1.332,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CO2,pbe,relaxed,0.462,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CO2,pbe,SPE,0.467,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CO2,r2scan,relaxed,0.33,,withheld_unverified_or_incompatible,refs unverified
+Cu110,CO2,r2scan,SPE,0.415,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,CO2,beef_vdw,relaxed,-30.948,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,CO2,beef_vdw,SPE,-0.727,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,DME,pbe,relaxed,-4.34,,withheld_unverified_or_incompatible,refs unverified
+Cu110,DME,r2scan,relaxed,-0.028,,withheld_unverified_or_incompatible,refs unverified
+Cu110,DME,r2scan,SPE,0.193,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,DME,beef_vdw,relaxed,-31.289,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,DME,beef_vdw,SPE,-0.747,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,H2O,pbe,relaxed,0.161,,withheld_unverified_or_incompatible,refs unverified
+Cu110,H2O,pbe,SPE,0.179,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,H2O,pbe_d3,relaxed,-0.102,,withheld_unverified_or_incompatible,refs unverified
+Cu110,H2O,pbe_d3,SPE,-0.05,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,H2O,r2scan,relaxed,-0.047,,withheld_unverified_or_incompatible,refs unverified
+Cu110,H2O,r2scan,SPE,0.017,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,H2O,beef_vdw,SPE,-0.866,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,H2S,pbe,relaxed,0.102,,withheld_unverified_or_incompatible,refs unverified
+Cu110,H2S,pbe_d3,relaxed,-0.361,,withheld_unverified_or_incompatible,refs unverified
+Cu110,H2S,r2scan,relaxed,-0.101,,withheld_unverified_or_incompatible,refs unverified
+Cu110,H2S,beef_vdw,relaxed,-31.212,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,N2,pbe,relaxed,0.355,,withheld_unverified_or_incompatible,refs unverified
+Cu110,N2,pbe_d3,relaxed,0.117,,withheld_unverified_or_incompatible,refs unverified
+Cu110,N2,r2scan,relaxed,0.181,,withheld_unverified_or_incompatible,refs unverified
+Cu110,N2,beef_vdw,relaxed,-30.865,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,NH3,pbe,relaxed,-0.148,,withheld_unverified_or_incompatible,refs unverified
+Cu110,NH3,pbe_d3,relaxed,-0.48,,withheld_unverified_or_incompatible,refs unverified
+Cu110,NH3,r2scan,relaxed,-0.36,,withheld_unverified_or_incompatible,refs unverified
+Cu110,NH3,beef_vdw,relaxed,-31.414,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,NO,pbe,relaxed,-1.022,,withheld_unverified_or_incompatible,refs unverified
+Cu110,NO,pbe_d3,relaxed,-1.24,,withheld_unverified_or_incompatible,refs unverified
+Cu110,NO,beef_vdw,relaxed,-38.768,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,SO2,pbe,relaxed,-0.657,,withheld_unverified_or_incompatible,refs unverified
+Cu110,SO2,pbe_d3,relaxed,-1.183,,withheld_unverified_or_incompatible,refs unverified
+Cu110,SO2,r2scan,relaxed,-1.426,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,SO2,beef_vdw,relaxed,-31.981,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,acetaldehyde,pbe,relaxed,0.24,,withheld_unverified_or_incompatible,refs unverified
+Cu110,acetaldehyde,pbe,SPE,0.265,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,acetaldehyde,pbe_d3,relaxed,-0.078,,withheld_unverified_or_incompatible,refs unverified
+Cu110,acetaldehyde,pbe_d3,SPE,-0.055,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,acetaldehyde,r2scan,relaxed,-0.01,,withheld_unverified_or_incompatible,refs unverified
+Cu110,acetaldehyde,r2scan,SPE,0.067,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,acetaldehyde,beef_vdw,relaxed,-31.177,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,acetaldehyde,beef_vdw,SPE,-0.918,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,acetic_acid,r2scan,relaxed,-0.224,,withheld_unverified_or_incompatible,refs unverified
+Cu110,acetic_acid,r2scan,SPE,-0.152,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,acetic_acid,beef_vdw,relaxed,-31.369,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,acetic_acid,beef_vdw,SPE,-1.132,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethane,pbe,relaxed,0.477,,withheld_unverified_or_incompatible,refs unverified
+Cu110,ethane,pbe,SPE,0.483,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethane,pbe_d3,relaxed,0.225,,withheld_unverified_or_incompatible,refs unverified
+Cu110,ethane,pbe_d3,SPE,0.227,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethane,r2scan,relaxed,0.386,,withheld_unverified_or_incompatible,refs unverified
+Cu110,ethane,r2scan,SPE,0.442,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethane,beef_vdw,relaxed,-30.961,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,ethane,beef_vdw,SPE,-0.738,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethene,pbe,relaxed,0.033,,withheld_unverified_or_incompatible,refs unverified
+Cu110,ethene,pbe,SPE,-0.187,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethene,pbe_d3,relaxed,-0.519,,withheld_unverified_or_incompatible,refs unverified
+Cu110,ethene,pbe_d3,SPE,-0.718,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethene,r2scan,relaxed,-0.299,,withheld_unverified_or_incompatible,refs unverified
+Cu110,ethene,r2scan,SPE,-0.431,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,ethene,beef_vdw,relaxed,-31.315,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,ethene,beef_vdw,SPE,-0.129,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,formaldehyde,pbe,relaxed,0.248,,withheld_unverified_or_incompatible,refs unverified
+Cu110,formaldehyde,pbe_d3,relaxed,-0.074,,withheld_unverified_or_incompatible,refs unverified
+Cu110,formaldehyde,r2scan,relaxed,0.022,,withheld_unverified_or_incompatible,refs unverified
+Cu110,formaldehyde,beef_vdw,relaxed,-31.095,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,formic_acid,pbe,relaxed,0.09,,withheld_unverified_or_incompatible,refs unverified
+Cu110,formic_acid,pbe,SPE,0.112,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,formic_acid,pbe_d3,relaxed,-0.306,,withheld_unverified_or_incompatible,refs unverified
+Cu110,formic_acid,pbe_d3,SPE,-0.279,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,formic_acid,r2scan,relaxed,-0.19,,withheld_unverified_or_incompatible,refs unverified
+Cu110,formic_acid,r2scan,SPE,-0.111,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,formic_acid,beef_vdw,relaxed,-31.274,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,formic_acid,beef_vdw,SPE,-1.025,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,glycerol,pbe,SPE,0.214,,withheld_unverified_or_incompatible,refs unverified
+Cu110,glycerol,pbe_d3,relaxed,-0.14,,withheld_unverified_or_incompatible,refs unverified
+Cu110,glycerol,pbe_d3,SPE,-0.798,,withheld_unverified_or_incompatible,refs unverified
+Cu110,glycerol,r2scan,relaxed,0.13,,withheld_unverified_or_incompatible,refs unverified
+Cu110,glycerol,r2scan,SPE,-0.291,,withheld_unverified_or_incompatible,refs unverified
+Cu110,glycerol,beef_vdw,SPE,-1.245,,withheld_unverified_or_incompatible,refs unverified
+Cu110,isopropanol,pbe,SPE,-0.365,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,isopropanol,pbe_d3,relaxed,0.48,,withheld_unverified_or_incompatible,refs unverified
+Cu110,isopropanol,pbe_d3,SPE,-0.875,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,isopropanol,r2scan,SPE,-0.395,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,isopropanol,beef_vdw,SPE,-0.661,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methane,pbe,relaxed,0.495,,withheld_unverified_or_incompatible,refs unverified
+Cu110,methane,pbe,SPE,0.5,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methane,pbe_d3,relaxed,0.297,,withheld_unverified_or_incompatible,refs unverified
+Cu110,methane,pbe_d3,SPE,0.299,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methane,r2scan,relaxed,0.405,,withheld_unverified_or_incompatible,refs unverified
+Cu110,methane,r2scan,SPE,0.459,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methane,beef_vdw,relaxed,-30.862,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,methane,beef_vdw,SPE,-30.826,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methanol,pbe,relaxed,0.138,,withheld_unverified_or_incompatible,refs unverified
+Cu110,methanol,pbe,SPE,0.213,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methanol,pbe_d3,relaxed,-0.232,,withheld_unverified_or_incompatible,refs unverified
+Cu110,methanol,pbe_d3,SPE,-0.231,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methanol,r2scan,relaxed,-0.15,,withheld_unverified_or_incompatible,refs unverified
+Cu110,methanol,r2scan,SPE,-0.056,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,methanol,beef_vdw,relaxed,-31.259,,withheld_unverified_or_incompatible,potential_mismatch
+Cu110,methanol,beef_vdw,SPE,-0.925,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propanol,pbe,SPE,-0.117,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propanol,pbe_d3,relaxed,0.49,,withheld_unverified_or_incompatible,refs unverified
+Cu110,propanol,pbe_d3,SPE,-0.837,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propanol,r2scan,SPE,-0.384,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propanol,beef_vdw,SPE,-0.301,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propene,pbe,SPE,-0.371,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propene,pbe_d3,relaxed,0.35,,withheld_unverified_or_incompatible,refs unverified
+Cu110,propene,pbe_d3,SPE,-1.008,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propene,r2scan,SPE,-0.443,,withheld_unverified_or_incompatible,potential mismatch
+Cu110,propene,beef_vdw,SPE,-0.537,,withheld_unverified_or_incompatible,potential mismatch
+Cu111,CH3,pbe,relaxed,0.313,-1.302,updated,available
+Cu111,CH3,pbe,SPE,0.343,-1.272,updated,available
+Cu111,CH3,pbe_d3,relaxed,-0.076,-1.646,updated,available
+Cu111,CH3,pbe_d3,SPE,0.018,-1.552,updated,available
+Cu111,CH3,r2scan,SPE,0.375,-1.076,updated,available
+Cu111,CH3,beef_vdw,relaxed,-82.998,-1.342,updated,available
+Cu111,CH3,beef_vdw,SPE,-82.915,-1.258,updated,available
+Cu111,CO,pbe,SPE,-0.92,-0.916,updated,available
+Cu111,CO,pbe_d3,relaxed,0.44,,withheld_unverified_or_incompatible,refs unverified
+Cu111,CO,pbe_d3,SPE,-1.028,-1.015,updated,available
+Cu111,CO,r2scan,relaxed,0.42,,withheld_unverified_or_incompatible,refs unverified
+Cu111,CO,r2scan,SPE,-0.824,-0.833,updated,available
+Cu111,CO2,pbe,SPE,-0.01,-0.009,updated,available
+Cu111,CO2,r2scan,SPE,0.168,0.155,updated,available
+Cu111,CO2,beef_vdw,SPE,-0.168,-0.169,updated,available
+Cu111,DME,pbe,relaxed,-3.06,-0.068,updated,available
+Cu111,DME,pbe,SPE,-4.711,-0.047,updated,available
+Cu111,DME,pbe_d3,relaxed,,-0.641,newly_filled,available
+Cu111,DME,pbe_d3,SPE,,-0.216,newly_filled,available
+Cu111,DME,r2scan,SPE,-0.134,0.104,updated,available
+Cu111,DME,beef_vdw,relaxed,-82.099,-0.442,updated,available
+Cu111,DME,beef_vdw,SPE,-0.39,-0.307,updated,available
+Cu111,H2O,pbe,relaxed,1.547,-0.068,updated,available
+Cu111,H2O,pbe,SPE,-0.062,-0.06,updated,available
+Cu111,H2O,pbe_d3,relaxed,1.162,-0.408,updated,available
+Cu111,H2O,pbe_d3,SPE,-0.179,-0.175,updated,available
+Cu111,H2O,r2scan,SPE,0.094,0.083,updated,available
+Cu111,H2O,beef_vdw,relaxed,-81.838,-0.181,updated,available
+Cu111,H2O,beef_vdw,SPE,-0.111,-0.112,updated,available
+Cu111,H2S,pbe,relaxed,1.366,-0.249,updated,available
+Cu111,H2S,pbe,SPE,,-0.064,newly_filled,available
+Cu111,H2S,pbe_d3,relaxed,0.831,-0.739,updated,available
+Cu111,H2S,pbe_d3,SPE,,-0.334,newly_filled,available
+Cu111,H2S,r2scan,SPE,,0.057,newly_filled,available
+Cu111,H2S,beef_vdw,relaxed,-82.013,-0.356,updated,available
+Cu111,H2S,beef_vdw,SPE,,-0.2,newly_filled,available
+Cu111,N2,pbe,relaxed,1.604,-0.011,updated,available
+Cu111,N2,pbe,SPE,,0.002,newly_filled,available
+Cu111,N2,pbe_d3,relaxed,1.482,-0.088,updated,available
+Cu111,N2,pbe_d3,SPE,,0.015,newly_filled,available
+Cu111,N2,r2scan,SPE,,0.203,newly_filled,available
+Cu111,N2,beef_vdw,relaxed,-81.789,-0.132,updated,available
+Cu111,N2,beef_vdw,SPE,,-0.057,newly_filled,available
+Cu111,NH3,pbe,relaxed,1.104,-0.511,updated,available
+Cu111,NH3,pbe,SPE,,-0.488,newly_filled,available
+Cu111,NH3,pbe_d3,relaxed,0.704,-0.866,updated,available
+Cu111,NH3,pbe_d3,SPE,,-0.75,newly_filled,available
+Cu111,NH3,r2scan,relaxed,0.792,-0.658,updated,available
+Cu111,NH3,r2scan,SPE,,-0.456,newly_filled,available
+Cu111,NH3,beef_vdw,relaxed,-82.271,-0.614,updated,available
+Cu111,NH3,beef_vdw,SPE,,-0.521,newly_filled,available
+Cu111,NO,pbe,relaxed,0.035,-1.58,updated,available
+Cu111,NO,pbe,SPE,,-1.547,newly_filled,available
+Cu111,NO,pbe_d3,relaxed,-0.213,-1.783,updated,available
+Cu111,NO,pbe_d3,SPE,,-1.678,newly_filled,available
+Cu111,NO,beef_vdw,relaxed,-89.776,-8.119,updated,available; energy review
+Cu111,NO,beef_vdw,SPE,,-8.044,newly_filled,available; energy review
+Cu111,SO2,pbe,relaxed,1.055,-0.56,updated,available
+Cu111,SO2,pbe,SPE,,-0.52,newly_filled,available
+Cu111,SO2,pbe_d3,relaxed,0.527,-1.043,updated,available
+Cu111,SO2,pbe_d3,SPE,,-0.925,newly_filled,available
+Cu111,SO2,r2scan,SPE,,-0.806,newly_filled,available
+Cu111,SO2,beef_vdw,relaxed,-82.408,-0.751,updated,available
+Cu111,SO2,beef_vdw,SPE,,-0.666,newly_filled,available
+Cu111,acetaldehyde,pbe,relaxed,1.451,-0.164,updated,available
+Cu111,acetaldehyde,pbe,SPE,-0.146,-0.144,updated,available
+Cu111,acetaldehyde,pbe_d3,relaxed,1.086,-0.484,updated,available
+Cu111,acetaldehyde,pbe_d3,SPE,-0.351,-0.348,updated,available
+Cu111,acetaldehyde,r2scan,SPE,-0.112,-0.123,updated,available
+Cu111,acetaldehyde,beef_vdw,relaxed,-82.07,-0.413,updated,available
+Cu111,acetaldehyde,beef_vdw,SPE,-0.311,-0.312,updated,available
+Cu111,acetic_acid,pbe_d3,SPE,-7.164,,withheld_unverified_or_incompatible,refs unverified
+Cu111,acetic_acid,r2scan,SPE,-0.237,-0.247,updated,available
+Cu111,acetic_acid,beef_vdw,relaxed,-82.173,-0.517,updated,available
+Cu111,acetic_acid,beef_vdw,SPE,-0.417,-0.418,updated,available
+Cu111,ethane,pbe,relaxed,1.593,-0.022,updated,available
+Cu111,ethane,pbe,SPE,-0.014,-0.012,updated,available
+Cu111,ethane,pbe_d3,relaxed,1.149,-0.421,updated,available
+Cu111,ethane,pbe_d3,SPE,-0.236,-0.232,updated,available
+Cu111,ethane,r2scan,relaxed,1.362,-0.089,updated,available
+Cu111,ethane,r2scan,SPE,0.138,0.128,updated,available
+Cu111,ethane,beef_vdw,relaxed,-81.955,-0.298,updated,available
+Cu111,ethanol,pbe,relaxed,1.493,-0.122,updated,available
+Cu111,ethanol,pbe,SPE,-0.109,-0.107,updated,available
+Cu111,ethanol,pbe_d3,relaxed,0.928,-0.643,updated,available
+Cu111,ethanol,pbe_d3,SPE,-0.361,-0.36,updated,available
+Cu111,ethanol,r2scan,SPE,-0.023,-0.03,updated,available
+Cu111,ethanol,beef_vdw,relaxed,-82.097,-0.44,updated,available
+Cu111,ethanol,beef_vdw,SPE,-0.362,-0.358,updated,available
+Cu111,ethene,pbe,relaxed,1.569,-0.046,updated,available
+Cu111,ethene,pbe,SPE,-0.034,-0.032,updated,available
+Cu111,ethene,pbe_d3,relaxed,0.785,-0.785,updated,available
+Cu111,ethene,pbe_d3,SPE,-0.238,-0.211,updated,available
+Cu111,ethene,beef_vdw,relaxed,-81.975,-0.319,updated,available
+Cu111,ethene,beef_vdw,SPE,-0.231,-0.229,updated,available
+Cu111,formaldehyde,pbe,relaxed,1.524,-0.091,updated,available
+Cu111,formaldehyde,pbe,SPE,,-0.068,newly_filled,available
+Cu111,formaldehyde,pbe_d3,relaxed,1.164,-0.406,updated,available
+Cu111,formaldehyde,pbe_d3,SPE,,-0.181,newly_filled,available
+Cu111,formaldehyde,r2scan,SPE,,0.046,newly_filled,available
+Cu111,formaldehyde,beef_vdw,relaxed,-81.985,-0.328,updated,available
+Cu111,formaldehyde,beef_vdw,SPE,,-0.23,newly_filled,available
+Cu111,formic_acid,pbe,SPE,-0.119,-0.128,updated,available
+Cu111,formic_acid,pbe_d3,SPE,-0.313,-0.33,updated,available
+Cu111,formic_acid,r2scan,SPE,0.011,-0.017,updated,available
+Cu111,formic_acid,beef_vdw,SPE,-0.292,-0.303,updated,available
+Cu111,isopropanol,pbe,SPE,-0.134,-0.132,updated,available
+Cu111,isopropanol,pbe_d3,SPE,-0.519,-0.515,updated,available
+Cu111,isopropanol,r2scan,SPE,-0.087,-0.098,updated,available
+Cu111,isopropanol,beef_vdw,SPE,-0.482,-0.483,updated,available
+Cu111,methane,pbe,relaxed,1.603,-0.012,updated,available
+Cu111,methane,pbe,SPE,1.612,-0.003,updated,available
+Cu111,methane,pbe_d3,relaxed,1.294,-0.276,updated,available
+Cu111,methane,pbe_d3,SPE,1.459,-0.111,updated,available
+Cu111,methane,r2scan,relaxed,1.39,-0.06,updated,available
+Cu111,methane,r2scan,SPE,,0.152,newly_filled,available
+Cu111,methane,beef_vdw,relaxed,-81.86,-0.204,updated,available
+Cu111,methane,beef_vdw,SPE,-81.792,-0.135,updated,available
+Cu111,methanol,pbe,SPE,-0.158,-0.155,updated,available
+Cu111,methanol,pbe_d3,SPE,-0.364,-0.369,updated,available
+Cu111,methanol,r2scan,SPE,-0.093,-0.114,updated,available
+Cu111,methanol,beef_vdw,SPE,-0.338,-0.336,updated,available
+Cu111,propane,pbe,SPE,-0.019,-0.017,updated,available
+Cu111,propane,pbe_d3,SPE,-0.338,-0.334,updated,available
+Cu111,propane,r2scan,SPE,0.124,0.113,updated,available
+Cu111,propanol,pbe,SPE,-0.169,-0.167,updated,available
+Cu111,propanol,pbe_d3,SPE,-0.585,-0.581,updated,available
+Cu111,propanol,r2scan,SPE,-0.135,-0.146,updated,available
+Cu111,propanol,beef_vdw,SPE,-0.516,-0.517,updated,available
+Cu111,propene,pbe,SPE,-0.044,-0.042,updated,available
+Cu111,propene,pbe_d3,SPE,-0.298,-0.294,updated,available
+Cu111,propene,r2scan,SPE,0.1,0.089,updated,available
+Cu111,propene,beef_vdw,SPE,-0.306,-0.307,updated,available
+Ir100,CH3,r2scan,relaxed,-2.144,,withheld_unverified_or_incompatible,refs unverified
+Ir100,CH3,r2scan,SPE,-2.101,,withheld_unverified_or_incompatible,refs unverified
+Ir100,CO,r2scan,relaxed,-2.342,,withheld_unverified_or_incompatible,refs unverified
+Ir100,CO2,r2scan,relaxed,-0.105,,withheld_unverified_or_incompatible,refs unverified
+Ir100,CO2,beef_vdw,SPE,-0.171,,withheld_unverified_or_incompatible,refs unverified
+Ir100,DME,pbe,relaxed,-4.96,-0.359,updated,available
+Ir100,DME,pbe,SPE,,-0.307,newly_filled,available
+Ir100,DME,pbe_d3,relaxed,,-0.915,newly_filled,available
+Ir100,DME,pbe_d3,SPE,,-0.838,newly_filled,available
+Ir100,DME,r2scan,relaxed,-0.693,,withheld_unverified_or_incompatible,refs unverified
+Ir100,DME,r2scan,SPE,-0.629,,withheld_unverified_or_incompatible,refs unverified
+Ir100,DME,beef_vdw,SPE,0.377,-0.615,updated,available
+Ir100,H2O,pbe,SPE,-0.414,-0.413,updated,available
+Ir100,H2O,pbe_d3,SPE,-0.62,-0.619,updated,available
+Ir100,H2O,r2scan,relaxed,-0.665,,withheld_unverified_or_incompatible,refs unverified
+Ir100,H2O,beef_vdw,SPE,-0.379,-0.378,updated,available
+Ir100,H2S,pbe,SPE,,-2.528,newly_filled,available
+Ir100,H2S,pbe_d3,SPE,,-2.996,newly_filled,available
+Ir100,H2S,r2scan,relaxed,-2.944,,withheld_unverified_or_incompatible,refs unverified
+Ir100,H2S,beef_vdw,SPE,,-2.459,newly_filled,available
+Ir100,N2,pbe,SPE,,-0.747,newly_filled,available
+Ir100,N2,pbe_d3,SPE,,-0.986,newly_filled,available
+Ir100,N2,r2scan,relaxed,-0.913,,withheld_unverified_or_incompatible,refs unverified
+Ir100,N2,beef_vdw,SPE,,-0.69,newly_filled,available
+Ir100,NH3,pbe,SPE,,-1.21,newly_filled,available
+Ir100,NH3,pbe_d3,SPE,,-1.509,newly_filled,available
+Ir100,NH3,r2scan,relaxed,-1.468,,withheld_unverified_or_incompatible,refs unverified
+Ir100,NH3,beef_vdw,SPE,,-1.182,newly_filled,available
+Ir100,NO,pbe,SPE,,-2.999,newly_filled,available
+Ir100,NO,pbe_d3,SPE,,-3.218,newly_filled,available
+Ir100,NO,beef_vdw,SPE,,-9.484,newly_filled,available; energy review
+Ir100,SO2,pbe,SPE,,-2.128,newly_filled,available
+Ir100,SO2,pbe_d3,SPE,,-2.661,newly_filled,available
+Ir100,SO2,r2scan,relaxed,-2.774,,withheld_unverified_or_incompatible,refs unverified
+Ir100,SO2,beef_vdw,SPE,,-2.088,newly_filled,available
+Ir100,acetaldehyde,pbe,SPE,0.514,-0.515,updated,available
+Ir100,acetaldehyde,pbe_d3,SPE,0.045,-0.865,updated,available
+Ir100,acetaldehyde,r2scan,relaxed,-0.807,,withheld_unverified_or_incompatible,refs unverified
+Ir100,acetaldehyde,r2scan,SPE,-0.749,,withheld_unverified_or_incompatible,refs unverified
+Ir100,acetaldehyde,beef_vdw,SPE,0.267,-0.641,updated,available
+Ir100,acetic_acid,r2scan,relaxed,-0.957,,withheld_unverified_or_incompatible,refs unverified
+Ir100,acetic_acid,r2scan,SPE,-0.835,,withheld_unverified_or_incompatible,refs unverified
+Ir100,ethane,pbe,SPE,0.618,0.078,updated,available
+Ir100,ethane,pbe_d3,SPE,0.143,-0.309,updated,available
+Ir100,ethane,r2scan,relaxed,-0.12,,withheld_unverified_or_incompatible,refs unverified
+Ir100,ethane,r2scan,SPE,0.059,,withheld_unverified_or_incompatible,refs unverified
+Ir100,ethane,beef_vdw,SPE,0.32,-0.18,updated,available
+Ir100,ethanol,pbe,SPE,0.528,-0.456,updated,available
+Ir100,ethanol,pbe_d3,SPE,-0.049,-0.95,updated,available
+Ir100,ethanol,r2scan,relaxed,-0.803,,withheld_unverified_or_incompatible,refs unverified
+Ir100,ethanol,r2scan,SPE,-0.744,,withheld_unverified_or_incompatible,refs unverified
+Ir100,ethanol,beef_vdw,SPE,0.21,-0.672,updated,available
+Ir100,ethene,pbe,SPE,-1.403,-1.274,updated,available
+Ir100,ethene,pbe_d3,SPE,-1.86,-1.78,updated,available
+Ir100,ethene,r2scan,relaxed,-1.781,,withheld_unverified_or_incompatible,refs unverified
+Ir100,ethene,r2scan,SPE,-1.645,,withheld_unverified_or_incompatible,refs unverified
+Ir100,ethene,beef_vdw,SPE,-1.442,-1.124,updated,available
+Ir100,formaldehyde,pbe,SPE,,-1.209,newly_filled,available
+Ir100,formaldehyde,pbe_d3,SPE,,-1.539,newly_filled,available
+Ir100,formaldehyde,r2scan,relaxed,-1.585,,withheld_unverified_or_incompatible,refs unverified
+Ir100,formic_acid,r2scan,relaxed,-0.899,,withheld_unverified_or_incompatible,refs unverified
+Ir100,methanol,pbe,SPE,0.304,-0.466,updated,available
+Ir100,methanol,pbe_d3,SPE,-0.093,-0.836,updated,available
+Ir100,methanol,r2scan,relaxed,-0.785,,withheld_unverified_or_incompatible,refs unverified
+Ir100,methanol,r2scan,SPE,-0.729,,withheld_unverified_or_incompatible,refs unverified
+Ir100,methanol,beef_vdw,SPE,0.126,-0.595,updated,available
+Ir110,CO,r2scan,relaxed,-2.12,,withheld_unverified_or_incompatible,refs unverified
+Ir110,CO,r2scan,SPE,-1.941,-1.942,updated,available
+Ir110,DME,pbe,relaxed,,-0.555,newly_filled,available
+Ir110,DME,pbe,SPE,,-0.496,newly_filled,available
+Ir110,DME,pbe_d3,relaxed,,-1.124,newly_filled,available
+Ir110,DME,pbe_d3,SPE,,-1.01,newly_filled,available
+Ir110,DME,r2scan,SPE,0.842,-0.695,updated,available
+Ir110,DME,beef_vdw,SPE,0.614,-0.891,updated,available
+Ir110,H2S,pbe,SPE,,-2.629,newly_filled,available
+Ir110,H2S,pbe_d3,SPE,,-3.036,newly_filled,available
+Ir110,H2S,r2scan,SPE,,-2.618,newly_filled,available
+Ir110,H2S,beef_vdw,SPE,,-2.667,newly_filled,available
+Ir110,N2,pbe,SPE,,-1.022,newly_filled,available
+Ir110,N2,pbe_d3,SPE,,-1.224,newly_filled,available
+Ir110,N2,r2scan,SPE,,-0.978,newly_filled,available
+Ir110,N2,beef_vdw,SPE,,-1.035,newly_filled,available
+Ir110,NH3,pbe,SPE,,-1.153,newly_filled,available
+Ir110,NH3,pbe_d3,SPE,,-1.421,newly_filled,available
+Ir110,NH3,r2scan,SPE,,-1.195,newly_filled,available
+Ir110,NH3,beef_vdw,SPE,,-1.219,newly_filled,available
+Ir110,NO,pbe,SPE,,-3.178,newly_filled,available
+Ir110,NO,pbe_d3,SPE,,-3.365,newly_filled,available
+Ir110,NO,beef_vdw,SPE,,-9.725,newly_filled,available; energy review
+Ir110,SO2,pbe,SPE,,-2.275,newly_filled,available
+Ir110,SO2,pbe_d3,SPE,,-2.787,newly_filled,available
+Ir110,SO2,r2scan,SPE,,-2.502,newly_filled,available
+Ir110,SO2,beef_vdw,SPE,,-2.406,newly_filled,available
+Ir110,acetaldehyde,pbe,SPE,-0.528,-0.705,updated,available
+Ir110,acetaldehyde,pbe_d3,SPE,-1.057,-0.99,updated,available
+Ir110,acetaldehyde,r2scan,SPE,-0.661,-0.77,updated,available
+Ir110,acetaldehyde,beef_vdw,SPE,-0.669,-0.902,updated,available
+Ir110,acetic_acid,beef_vdw,SPE,0.809,-1.017,updated,available
+Ir110,ethane,pbe,SPE,0.679,-0.021,updated,available
+Ir110,ethane,pbe_d3,SPE,0.105,-0.373,updated,available
+Ir110,ethane,r2scan,SPE,0.657,-0.112,updated,available
+Ir110,ethane,beef_vdw,SPE,0.427,-0.367,updated,available
+Ir110,ethanol,pbe,SPE,0.927,-0.631,updated,available
+Ir110,ethanol,pbe_d3,SPE,0.326,-1.095,updated,available
+Ir110,ethanol,r2scan,SPE,0.894,-0.743,updated,available
+Ir110,ethanol,beef_vdw,SPE,0.657,-0.943,updated,available
+Ir110,ethene,pbe,SPE,-1.595,-1.601,updated,available
+Ir110,ethene,pbe_d3,SPE,-2.002,-2.008,updated,available
+Ir110,ethene,r2scan,SPE,-1.707,-1.706,updated,available
+Ir110,formaldehyde,r2scan,SPE,,-1.701,newly_filled,available
+Ir110,formaldehyde,beef_vdw,SPE,,-1.668,newly_filled,available
+Ir110,formic_acid,pbe,SPE,,-0.517,newly_filled,available
+Ir110,formic_acid,pbe_d3,SPE,,-0.872,newly_filled,available
+Ir110,formic_acid,r2scan,SPE,,-0.612,newly_filled,available
+Ir110,formic_acid,beef_vdw,SPE,,-0.647,newly_filled,available
+Ir110,methane,r2scan,SPE,,-0.015,newly_filled,available
+Ir111,CO,pbe,SPE,,-1.532,newly_filled,available
+Ir111,CO,pbe_d3,SPE,,-1.557,newly_filled,available
+Ir111,CO,r2scan,SPE,,-1.395,newly_filled,available
+Ir111,CO,beef_vdw,SPE,,-1.493,newly_filled,available
+Ir111,CO2,pbe,SPE,,0.047,newly_filled,available
+Ir111,CO2,r2scan,SPE,,0.146,newly_filled,available
+Ir111,CO2,beef_vdw,SPE,,-0.245,newly_filled,available
+Ir111,DME,pbe,relaxed,-4.81,-0.208,updated,available
+Ir111,DME,pbe,SPE,,-0.167,newly_filled,available
+Ir111,DME,pbe_d3,relaxed,,-0.769,newly_filled,available
+Ir111,DME,pbe_d3,SPE,,-0.535,newly_filled,available
+Ir111,DME,r2scan,relaxed,-0.49,,withheld_unverified_or_incompatible,refs unverified
+Ir111,H2O,pbe,SPE,,-0.258,newly_filled,available
+Ir111,H2O,pbe_d3,SPE,,-0.296,newly_filled,available
+Ir111,H2O,r2scan,SPE,,-0.253,newly_filled,available
+Ir111,H2O,beef_vdw,SPE,,-0.357,newly_filled,available
+Ir111,H2S,pbe,SPE,,-0.674,newly_filled,available
+Ir111,H2S,pbe_d3,SPE,,-0.905,newly_filled,available
+Ir111,H2S,r2scan,SPE,,-0.685,newly_filled,available
+Ir111,H2S,beef_vdw,SPE,,-0.842,newly_filled,available
+Ir111,N2,pbe,SPE,,-0.33,newly_filled,available
+Ir111,N2,pbe_d3,SPE,,-0.399,newly_filled,available
+Ir111,N2,r2scan,SPE,,-0.275,newly_filled,available
+Ir111,N2,beef_vdw,SPE,,-0.394,newly_filled,available
+Ir111,NH3,pbe,SPE,,-0.94,newly_filled,available
+Ir111,NH3,pbe_d3,SPE,,-1.059,newly_filled,available
+Ir111,NH3,r2scan,SPE,,-0.938,newly_filled,available
+Ir111,NH3,beef_vdw,SPE,,-1.035,newly_filled,available
+Ir111,NO,pbe,SPE,,-2.177,newly_filled,available
+Ir111,NO,pbe_d3,SPE,,-2.216,newly_filled,available
+Ir111,NO,beef_vdw,SPE,,-8.802,newly_filled,available; energy review
+Ir111,SO2,pbe,SPE,,-0.997,newly_filled,available
+Ir111,SO2,pbe_d3,SPE,,-1.34,newly_filled,available
+Ir111,SO2,r2scan,SPE,,-1.267,newly_filled,available
+Ir111,SO2,beef_vdw,SPE,,-1.217,newly_filled,available
+Ir111,acetic_acid,r2scan,relaxed,-0.65,,withheld_unverified_or_incompatible,refs unverified
+Ir111,formaldehyde,pbe,SPE,,-0.221,newly_filled,available
+Ir111,formaldehyde,pbe_d3,SPE,,-0.339,newly_filled,available
+Ir111,formaldehyde,r2scan,SPE,,-0.257,newly_filled,available
+Ir111,formaldehyde,beef_vdw,SPE,,-0.414,newly_filled,available
+Ir111,formic_acid,pbe,SPE,,-0.139,newly_filled,available
+Ir111,formic_acid,pbe_d3,SPE,,-0.35,newly_filled,available
+Ir111,formic_acid,r2scan,SPE,,-0.193,newly_filled,available
+Ir111,formic_acid,beef_vdw,SPE,,-0.311,newly_filled,available
+Ir111,methane,pbe,SPE,,0.096,newly_filled,available
+Ir111,methane,pbe_d3,SPE,,0.031,newly_filled,available
+Ir111,methane,r2scan,SPE,,0.183,newly_filled,available
+Ir111,methane,beef_vdw,SPE,,-0.15,newly_filled,available
+Ir111,methanol,r2scan,relaxed,-0.58,,withheld_unverified_or_incompatible,refs unverified
+Pd100,CH3,pbe,relaxed,-1.945,-1.777,updated,available
+Pd100,CH3,pbe,SPE,-1.92,-1.753,updated,available
+Pd100,CH3,pbe_d3,relaxed,-2.204,-2.014,updated,available
+Pd100,CH3,pbe_d3,SPE,-2.131,-1.941,updated,available
+Pd100,CH3,r2scan,relaxed,-1.995,-1.752,updated,available
+Pd100,CH3,r2scan,SPE,-1.949,-1.706,updated,available
+Pd100,CH3,beef_vdw,relaxed,-19.582,-1.832,updated,available
+Pd100,CH3,beef_vdw,SPE,-19.467,-1.717,updated,available
+Pd100,CO,pbe,relaxed,-2.084,-1.917,updated,available
+Pd100,CO,pbe,SPE,,-1.9,newly_filled,available
+Pd100,CO,pbe_d3,relaxed,-2.333,-2.143,updated,available
+Pd100,CO,pbe_d3,SPE,,-2.05,newly_filled,available
+Pd100,CO,r2scan,relaxed,-2.257,-2.014,updated,available
+Pd100,CO,r2scan,SPE,,-1.959,newly_filled,available
+Pd100,CO,beef_vdw,relaxed,-19.55,-1.801,updated,available
+Pd100,CO,beef_vdw,SPE,,-1.712,newly_filled,available
+Pd100,CO2,pbe,relaxed,-0.39,-0.022,updated,available
+Pd100,CO2,r2scan,relaxed,-0.64,,withheld_unverified_or_incompatible,refs unverified
+Pd100,CO2,beef_vdw,relaxed,-31.873,-0.266,updated,available
+Pd100,DME,pbe,relaxed,-4.98,-0.207,updated,available
+Pd100,DME,pbe,SPE,,-0.143,newly_filled,available
+Pd100,DME,pbe_d3,relaxed,,-0.687,newly_filled,available
+Pd100,DME,pbe_d3,SPE,,-0.574,newly_filled,available
+Pd100,DME,r2scan,relaxed,-0.688,-0.445,updated,available
+Pd100,DME,r2scan,SPE,-0.616,-0.373,updated,available
+Pd100,DME,beef_vdw,relaxed,-18.349,-0.599,updated,available
+Pd100,DME,beef_vdw,SPE,-18.197,-0.447,updated,available
+Pd100,H2O,pbe,relaxed,-0.436,-0.269,updated,available
+Pd100,H2O,pbe,SPE,,-0.251,newly_filled,available
+Pd100,H2O,pbe_d3,relaxed,-0.664,-0.474,updated,available
+Pd100,H2O,pbe_d3,SPE,,-0.373,newly_filled,available
+Pd100,H2O,r2scan,relaxed,-0.629,-0.386,updated,available
+Pd100,H2O,r2scan,SPE,,-0.316,newly_filled,available
+Pd100,H2O,beef_vdw,relaxed,-18.118,-0.369,updated,available
+Pd100,H2O,beef_vdw,SPE,,-0.251,newly_filled,available
+Pd100,H2S,pbe,relaxed,-0.932,-0.765,updated,available
+Pd100,H2S,pbe,SPE,,-0.741,newly_filled,available
+Pd100,H2S,pbe_d3,relaxed,-1.369,-1.179,updated,available
+Pd100,H2S,pbe_d3,SPE,,-1.074,newly_filled,available
+Pd100,H2S,r2scan,relaxed,-1.156,-0.913,updated,available
+Pd100,H2S,r2scan,SPE,,-0.844,newly_filled,available
+Pd100,H2S,beef_vdw,relaxed,-18.615,-0.866,updated,available
+Pd100,H2S,beef_vdw,SPE,,-0.62,newly_filled,available
+Pd100,N2,pbe,relaxed,-0.512,-0.345,updated,available
+Pd100,N2,pbe,SPE,,-0.327,newly_filled,available
+Pd100,N2,pbe_d3,relaxed,-0.758,-0.568,updated,available
+Pd100,N2,pbe_d3,SPE,,-0.486,newly_filled,available
+Pd100,N2,r2scan,relaxed,-0.66,-0.417,updated,available
+Pd100,N2,r2scan,SPE,,-0.359,newly_filled,available
+Pd100,N2,beef_vdw,SPE,,-0.281,newly_filled,available
+Pd100,NH3,pbe,relaxed,-0.956,-0.788,updated,available
+Pd100,NH3,pbe,SPE,,-0.764,newly_filled,available
+Pd100,NH3,pbe_d3,relaxed,-1.231,-1.041,updated,available
+Pd100,NH3,pbe_d3,SPE,,-0.947,newly_filled,available
+Pd100,NH3,r2scan,relaxed,-1.146,-0.903,updated,available
+Pd100,NH3,r2scan,SPE,,-0.836,newly_filled,available
+Pd100,NH3,beef_vdw,relaxed,-18.615,-0.865,updated,available
+Pd100,NH3,beef_vdw,SPE,,-0.757,newly_filled,available
+Pd100,NO,pbe,relaxed,-2.626,-2.459,updated,available
+Pd100,NO,pbe,SPE,,-2.443,newly_filled,available
+Pd100,NO,pbe_d3,relaxed,-2.877,-2.687,updated,available
+Pd100,NO,pbe_d3,SPE,,-2.586,newly_filled,available
+Pd100,NO,beef_vdw,relaxed,-26.728,-8.978,updated,available; energy review
+Pd100,NO,beef_vdw,SPE,,-8.894,newly_filled,available; energy review
+Pd100,SO2,pbe,relaxed,-1.522,-1.355,updated,available
+Pd100,SO2,pbe,SPE,,-1.325,newly_filled,available
+Pd100,SO2,pbe_d3,relaxed,-2.077,-1.887,updated,available
+Pd100,SO2,pbe_d3,SPE,,-1.789,newly_filled,available
+Pd100,SO2,r2scan,relaxed,-2.048,-1.805,updated,available
+Pd100,SO2,r2scan,SPE,,-1.742,newly_filled,available
+Pd100,SO2,beef_vdw,relaxed,-19.207,-1.457,updated,available
+Pd100,SO2,beef_vdw,SPE,,-1.31,newly_filled,available
+Pd100,acetaldehyde,pbe,relaxed,-0.434,-0.266,updated,available
+Pd100,acetaldehyde,pbe,SPE,-0.38,-0.212,updated,available
+Pd100,acetaldehyde,pbe_d3,relaxed,-0.834,-0.644,updated,available
+Pd100,acetaldehyde,pbe_d3,SPE,-0.743,-0.553,updated,available
+Pd100,acetaldehyde,r2scan,relaxed,-0.685,-0.442,updated,available
+Pd100,acetaldehyde,r2scan,SPE,-0.624,-0.381,updated,available
+Pd100,acetaldehyde,beef_vdw,relaxed,-18.287,-0.537,updated,available
+Pd100,acetaldehyde,beef_vdw,SPE,-18.13,-0.381,updated,available
+Pd100,acetic_acid,r2scan,relaxed,-0.87,-0.627,updated,available
+Pd100,acetic_acid,r2scan,SPE,-0.793,-0.55,updated,available
+Pd100,acetic_acid,beef_vdw,relaxed,-18.428,-0.679,updated,available
+Pd100,acetic_acid,beef_vdw,SPE,-18.355,-0.605,updated,available
+Pd100,ethane,pbe,relaxed,-0.42,-0.046,updated,available
+Pd100,ethane,pbe,SPE,0.286,0.077,updated,available
+Pd100,ethane,pbe_d3,relaxed,-0.78,-0.409,updated,available
+Pd100,ethane,pbe_d3,SPE,0.009,-0.212,updated,available
+Pd100,ethane,r2scan,relaxed,-0.69,-0.2,updated,available
+Pd100,ethane,r2scan,SPE,0.124,-0.063,updated,available
+Pd100,ethane,beef_vdw,relaxed,-31.931,-0.324,updated,available
+Pd100,ethane,beef_vdw,SPE,0.069,-0.092,updated,available
+Pd100,ethanol,pbe,relaxed,-0.65,-0.276,updated,available
+Pd100,ethanol,pbe,SPE,0.082,-0.231,updated,available
+Pd100,ethanol,pbe_d3,relaxed,-1.1,-0.729,updated,available
+Pd100,ethanol,pbe_d3,SPE,-0.269,-0.567,updated,available
+Pd100,ethanol,r2scan,relaxed,-1.03,,withheld_unverified_or_incompatible,refs unverified
+Pd100,ethanol,r2scan,SPE,-0.078,-0.419,updated,available
+Pd100,ethanol,beef_vdw,relaxed,-32.202,-0.595,updated,available
+Pd100,ethanol,beef_vdw,SPE,-0.151,-0.433,updated,available
+Pd100,ethene,pbe,relaxed,-1.053,-0.885,updated,available
+Pd100,ethene,pbe,SPE,-0.731,-0.837,updated,available
+Pd100,ethene,pbe_d3,relaxed,-1.478,-1.288,updated,available
+Pd100,ethene,pbe_d3,SPE,-1.014,-1.176,updated,available
+Pd100,ethene,r2scan,relaxed,-1.38,-1.137,updated,available
+Pd100,ethene,r2scan,SPE,-0.922,-1.059,updated,available
+Pd100,ethene,beef_vdw,relaxed,-18.795,-1.046,updated,available
+Pd100,ethene,beef_vdw,SPE,-0.775,-0.908,updated,available
+Pd100,formaldehyde,pbe,relaxed,-0.747,-0.579,updated,available
+Pd100,formaldehyde,pbe,SPE,,-0.543,newly_filled,available
+Pd100,formaldehyde,pbe_d3,relaxed,-1.11,-0.92,updated,available
+Pd100,formaldehyde,pbe_d3,SPE,,-0.793,newly_filled,available
+Pd100,formaldehyde,r2scan,relaxed,-1.126,-0.883,updated,available
+Pd100,formaldehyde,r2scan,SPE,,-0.786,newly_filled,available
+Pd100,formaldehyde,beef_vdw,relaxed,-18.456,-0.706,updated,available
+Pd100,formaldehyde,beef_vdw,SPE,,-0.382,newly_filled,available
+Pd100,formic_acid,pbe,relaxed,-0.59,-0.422,updated,available
+Pd100,formic_acid,pbe,SPE,,-0.412,newly_filled,available
+Pd100,formic_acid,pbe_d3,relaxed,-0.967,-0.777,updated,available
+Pd100,formic_acid,pbe_d3,SPE,,-0.674,newly_filled,available
+Pd100,formic_acid,r2scan,SPE,,-0.527,newly_filled,available
+Pd100,formic_acid,beef_vdw,relaxed,-18.367,-0.617,updated,available
+Pd100,formic_acid,beef_vdw,SPE,,-0.539,newly_filled,available
+Pd100,glycerol,pbe,relaxed,-0.81,,withheld_unverified_or_incompatible,refs unverified
+Pd100,glycerol,pbe_d3,relaxed,-1.6,,withheld_unverified_or_incompatible,refs unverified
+Pd100,glycerol,r2scan,relaxed,-1.34,,withheld_unverified_or_incompatible,refs unverified
+Pd100,glycerol,beef_vdw,SPE,-0.396,,withheld_unverified_or_incompatible,refs unverified
+Pd100,isopropanol,pbe,relaxed,-0.68,,withheld_unverified_or_incompatible,refs unverified
+Pd100,isopropanol,pbe_d3,relaxed,-1.27,,withheld_unverified_or_incompatible,refs unverified
+Pd100,isopropanol,r2scan,relaxed,-1.11,,withheld_unverified_or_incompatible,refs unverified
+Pd100,methane,pbe,relaxed,-0.183,-0.016,updated,available
+Pd100,methane,pbe,SPE,,0.037,newly_filled,available
+Pd100,methane,pbe_d3,relaxed,-0.423,-0.233,updated,available
+Pd100,methane,pbe_d3,SPE,-0.316,-0.126,updated,available
+Pd100,methane,r2scan,relaxed,-0.341,-0.098,updated,available
+Pd100,methane,r2scan,SPE,,-0.032,newly_filled,available
+Pd100,methane,beef_vdw,relaxed,-17.967,-0.218,updated,available
+Pd100,methane,beef_vdw,SPE,,-0.097,newly_filled,available
+Pd100,methanol,pbe,relaxed,-0.444,-0.276,updated,available
+Pd100,methanol,pbe,SPE,-0.408,-0.241,updated,available
+Pd100,methanol,pbe_d3,relaxed,-0.8,-0.61,updated,available
+Pd100,methanol,pbe_d3,SPE,-0.705,-0.516,updated,available
+Pd100,methanol,r2scan,relaxed,-0.693,-0.45,updated,available
+Pd100,methanol,r2scan,SPE,-0.632,-0.389,updated,available
+Pd100,methanol,beef_vdw,relaxed,-18.267,-0.517,updated,available
+Pd100,methanol,beef_vdw,SPE,-18.137,-0.388,updated,available
+Pd100,propane,pbe,relaxed,-0.43,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propane,pbe_d3,relaxed,-0.91,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propane,r2scan,relaxed,-0.78,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propanol,pbe,relaxed,-0.69,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propanol,pbe_d3,relaxed,-1.25,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propanol,r2scan,relaxed,-1.1,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propene,pbe,relaxed,-1.13,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propene,pbe_d3,relaxed,-1.72,,withheld_unverified_or_incompatible,refs unverified
+Pd100,propene,r2scan,relaxed,-1.64,,withheld_unverified_or_incompatible,refs unverified
+Pd110,CH3,pbe,relaxed,-2.024,-1.918,updated,available
+Pd110,CH3,pbe,SPE,-2.005,-1.9,updated,available
+Pd110,CH3,pbe_d3,relaxed,-2.268,-2.159,updated,available
+Pd110,CH3,pbe_d3,SPE,-2.226,-2.116,updated,available
+Pd110,CH3,r2scan,relaxed,-2.009,-1.877,updated,available
+Pd110,CH3,r2scan,SPE,-1.946,-1.814,updated,available
+Pd110,CH3,beef_vdw,relaxed,-13.744,-1.947,updated,available
+Pd110,CH3,beef_vdw,SPE,-13.705,-1.908,updated,available
+Pd110,CO,pbe,relaxed,-2.163,-2.057,updated,available
+Pd110,CO,pbe,SPE,,-2.028,newly_filled,available
+Pd110,CO,pbe_d3,relaxed,-2.372,-2.262,updated,available
+Pd110,CO,pbe_d3,SPE,,-2.234,newly_filled,available
+Pd110,CO,r2scan,relaxed,-2.23,-2.098,updated,available
+Pd110,CO,r2scan,SPE,,-2.049,newly_filled,available
+Pd110,CO,beef_vdw,relaxed,-13.708,-1.911,updated,available
+Pd110,CO,beef_vdw,SPE,,-1.857,newly_filled,available
+Pd110,CO2,pbe,relaxed,-0.143,-0.037,updated,available
+Pd110,CO2,pbe,SPE,-0.006,-0.024,updated,available
+Pd110,CO2,r2scan,relaxed,-0.278,-0.146,updated,available
+Pd110,CO2,r2scan,SPE,0.02,-0.081,updated,available
+Pd110,CO2,beef_vdw,relaxed,-12.089,-0.292,updated,available
+Pd110,CO2,beef_vdw,SPE,-0.133,-0.258,updated,available
+Pd110,DME,pbe,relaxed,-4.99,-0.281,updated,available
+Pd110,DME,pbe,SPE,,-0.227,newly_filled,available
+Pd110,DME,pbe_d3,relaxed,,-0.763,newly_filled,available
+Pd110,DME,pbe_d3,SPE,,-0.711,newly_filled,available
+Pd110,DME,r2scan,relaxed,-0.711,-0.579,updated,available
+Pd110,DME,r2scan,SPE,-0.639,-0.507,updated,available
+Pd110,DME,beef_vdw,relaxed,-12.455,-0.658,updated,available
+Pd110,DME,beef_vdw,SPE,-12.352,-0.555,updated,available
+Pd110,H2O,pbe,relaxed,-0.483,-0.377,updated,available
+Pd110,H2O,pbe,SPE,,-0.352,newly_filled,available
+Pd110,H2O,pbe_d3,relaxed,-0.71,-0.601,updated,available
+Pd110,H2O,pbe_d3,SPE,,-0.554,newly_filled,available
+Pd110,H2O,r2scan,relaxed,-0.681,-0.549,updated,available
+Pd110,H2O,r2scan,SPE,,-0.477,newly_filled,available
+Pd110,H2O,beef_vdw,SPE,,-0.389,newly_filled,available
+Pd110,H2S,pbe,relaxed,-1.051,-0.945,updated,available
+Pd110,H2S,pbe,SPE,,-0.907,newly_filled,available
+Pd110,H2S,pbe_d3,relaxed,-1.496,-1.387,updated,available
+Pd110,H2S,pbe_d3,SPE,,-1.324,newly_filled,available
+Pd110,H2S,r2scan,relaxed,-1.201,-1.069,updated,available
+Pd110,H2S,r2scan,SPE,,-0.985,newly_filled,available
+Pd110,H2S,beef_vdw,relaxed,-12.781,-0.984,updated,available
+Pd110,H2S,beef_vdw,SPE,,-0.919,newly_filled,available
+Pd110,N2,pbe,relaxed,-0.549,-0.443,updated,available
+Pd110,N2,pbe,SPE,,-0.423,newly_filled,available
+Pd110,N2,pbe_d3,relaxed,-0.775,-0.665,updated,available
+Pd110,N2,pbe_d3,SPE,,-0.617,newly_filled,available
+Pd110,N2,beef_vdw,SPE,,-0.398,newly_filled,available
+Pd110,NH3,pbe,relaxed,-0.928,-0.822,updated,available
+Pd110,NH3,pbe,SPE,,-0.8,newly_filled,available
+Pd110,NH3,pbe_d3,relaxed,-1.204,-1.095,updated,available
+Pd110,NH3,pbe_d3,SPE,,-1.04,newly_filled,available
+Pd110,NH3,r2scan,relaxed,-1.023,-0.891,updated,available
+Pd110,NH3,r2scan,SPE,,-0.813,newly_filled,available
+Pd110,NH3,beef_vdw,SPE,,-0.831,newly_filled,available
+Pd110,NO,pbe,relaxed,-2.795,-2.689,updated,available
+Pd110,NO,pbe,SPE,,-2.665,newly_filled,available
+Pd110,NO,pbe_d3,relaxed,-3.0,-2.891,updated,available
+Pd110,NO,pbe_d3,SPE,,-2.849,newly_filled,available
+Pd110,NO,beef_vdw,relaxed,-20.981,-9.184,updated,available; energy review
+Pd110,NO,beef_vdw,SPE,,-9.127,newly_filled,available; energy review
+Pd110,SO2,pbe,relaxed,-1.7,-1.594,updated,available
+Pd110,SO2,pbe,SPE,,-1.521,newly_filled,available
+Pd110,SO2,pbe_d3,relaxed,-2.248,-2.139,updated,available
+Pd110,SO2,pbe_d3,SPE,,-2.056,newly_filled,available
+Pd110,SO2,r2scan,relaxed,-2.142,-2.01,updated,available
+Pd110,SO2,r2scan,SPE,,-1.898,newly_filled,available
+Pd110,SO2,beef_vdw,relaxed,-13.526,-1.729,updated,available
+Pd110,SO2,beef_vdw,SPE,,-1.655,newly_filled,available
+Pd110,acetaldehyde,pbe,relaxed,-0.395,-0.289,updated,available
+Pd110,acetaldehyde,pbe,SPE,-0.367,-0.261,updated,available
+Pd110,acetaldehyde,pbe_d3,relaxed,-0.82,-0.711,updated,available
+Pd110,acetaldehyde,pbe_d3,SPE,-0.763,-0.654,updated,available
+Pd110,acetaldehyde,r2scan,relaxed,-0.664,-0.532,updated,available
+Pd110,acetaldehyde,r2scan,SPE,-0.584,-0.452,updated,available
+Pd110,acetaldehyde,beef_vdw,relaxed,-12.352,-0.555,updated,available
+Pd110,acetaldehyde,beef_vdw,SPE,-12.282,-0.485,updated,available
+Pd110,acetic_acid,r2scan,relaxed,-0.882,-0.75,updated,available
+Pd110,acetic_acid,r2scan,SPE,-0.789,-0.657,updated,available
+Pd110,acetic_acid,beef_vdw,relaxed,-12.536,-0.739,updated,available
+Pd110,acetic_acid,beef_vdw,SPE,-12.487,-0.69,updated,available
+Pd110,ethane,pbe,relaxed,-0.31,-0.043,updated,available
+Pd110,ethane,pbe,SPE,0.203,0.042,updated,available
+Pd110,ethane,pbe_d3,relaxed,-0.67,-0.402,updated,available
+Pd110,ethane,pbe_d3,SPE,-0.299,-0.316,updated,available
+Pd110,ethane,r2scan,relaxed,-0.59,,withheld_unverified_or_incompatible,refs unverified
+Pd110,ethane,r2scan,SPE,-0.099,-0.058,updated,available
+Pd110,ethane,beef_vdw,SPE,0.217,-0.101,updated,available
+Pd110,ethanol,pbe,relaxed,-0.69,-0.428,updated,available
+Pd110,ethanol,pbe,SPE,0.301,-0.406,updated,available
+Pd110,ethanol,pbe_d3,relaxed,-1.19,-0.918,updated,available
+Pd110,ethanol,pbe_d3,SPE,-0.252,-0.826,updated,available
+Pd110,ethanol,r2scan,relaxed,-1.1,,withheld_unverified_or_incompatible,refs unverified
+Pd110,ethanol,r2scan,SPE,-0.014,-0.542,updated,available
+Pd110,ethanol,beef_vdw,relaxed,-32.117,-0.701,updated,available
+Pd110,ethanol,beef_vdw,SPE,0.302,-0.563,updated,available
+Pd110,ethene,pbe,relaxed,-1.076,-0.97,updated,available
+Pd110,ethene,pbe,SPE,-1.182,-0.949,updated,available
+Pd110,ethene,pbe_d3,relaxed,-1.491,-1.382,updated,available
+Pd110,ethene,pbe_d3,SPE,-1.51,-1.337,updated,available
+Pd110,ethene,r2scan,relaxed,-1.307,-1.175,updated,available
+Pd110,ethene,r2scan,SPE,-1.26,-1.118,updated,available
+Pd110,ethene,beef_vdw,relaxed,-12.947,-1.15,updated,available
+Pd110,ethene,beef_vdw,SPE,-1.139,-1.094,updated,available
+Pd110,formaldehyde,pbe,relaxed,-0.926,-0.82,updated,available
+Pd110,formaldehyde,pbe,SPE,,-0.718,newly_filled,available
+Pd110,formaldehyde,pbe_d3,relaxed,-1.241,-1.132,updated,available
+Pd110,formaldehyde,pbe_d3,SPE,,-1.032,newly_filled,available
+Pd110,formaldehyde,r2scan,relaxed,-1.18,-1.048,updated,available
+Pd110,formaldehyde,r2scan,SPE,,-0.901,newly_filled,available
+Pd110,formaldehyde,beef_vdw,relaxed,-12.671,-0.874,updated,available
+Pd110,formaldehyde,beef_vdw,SPE,,-0.707,newly_filled,available
+Pd110,formic_acid,pbe,relaxed,-0.585,-0.479,updated,available
+Pd110,formic_acid,pbe,SPE,,-0.455,newly_filled,available
+Pd110,formic_acid,pbe_d3,relaxed,-0.978,-0.868,updated,available
+Pd110,formic_acid,pbe_d3,SPE,,-0.806,newly_filled,available
+Pd110,formic_acid,r2scan,relaxed,-0.849,-0.717,updated,available
+Pd110,formic_acid,r2scan,SPE,,-0.643,newly_filled,available
+Pd110,formic_acid,beef_vdw,relaxed,-12.457,-0.66,updated,available
+Pd110,formic_acid,beef_vdw,SPE,,-0.607,newly_filled,available
+Pd110,glycerol,pbe,relaxed,-1.01,,withheld_unverified_or_incompatible,refs unverified
+Pd110,glycerol,pbe_d3,relaxed,-1.82,,withheld_unverified_or_incompatible,refs unverified
+Pd110,glycerol,r2scan,relaxed,-1.63,,withheld_unverified_or_incompatible,refs unverified
+Pd110,glycerol,beef_vdw,SPE,-0.363,,withheld_unverified_or_incompatible,refs unverified
+Pd110,isopropanol,pbe,relaxed,-0.7,,withheld_unverified_or_incompatible,refs unverified
+Pd110,isopropanol,pbe_d3,relaxed,-1.3,,withheld_unverified_or_incompatible,refs unverified
+Pd110,isopropanol,r2scan,relaxed,-1.16,,withheld_unverified_or_incompatible,refs unverified
+Pd110,methane,pbe,relaxed,-0.103,0.002,updated,available
+Pd110,methane,pbe,SPE,,0.02,newly_filled,available
+Pd110,methane,pbe_d3,relaxed,-0.35,-0.241,updated,available
+Pd110,methane,pbe_d3,SPE,,-0.196,newly_filled,available
+Pd110,methane,r2scan,relaxed,-0.263,-0.131,updated,available
+Pd110,methane,r2scan,SPE,,-0.063,newly_filled,available
+Pd110,methane,beef_vdw,relaxed,-12.008,-0.211,updated,available
+Pd110,methane,beef_vdw,SPE,,-0.114,newly_filled,available
+Pd110,methanol,pbe,relaxed,-0.502,-0.397,updated,available
+Pd110,methanol,pbe,SPE,-0.474,-0.369,updated,available
+Pd110,methanol,pbe_d3,relaxed,-0.855,-0.746,updated,available
+Pd110,methanol,pbe_d3,SPE,-0.81,-0.7,updated,available
+Pd110,methanol,r2scan,relaxed,-0.764,-0.632,updated,available
+Pd110,methanol,r2scan,SPE,-0.698,-0.566,updated,available
+Pd110,methanol,beef_vdw,relaxed,-12.413,-0.616,updated,available
+Pd110,methanol,beef_vdw,SPE,-12.338,-0.541,updated,available
+Pd110,propane,pbe,relaxed,-0.38,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propane,pbe_d3,relaxed,-0.91,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propane,r2scan,relaxed,-0.79,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propanol,pbe,relaxed,-0.65,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propanol,pbe_d3,relaxed,-1.26,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propanol,r2scan,relaxed,-1.14,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propene,pbe,relaxed,-1.35,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propene,pbe_d3,relaxed,-1.9,,withheld_unverified_or_incompatible,refs unverified
+Pd110,propene,r2scan,relaxed,-1.77,,withheld_unverified_or_incompatible,refs unverified
+Pd111,CH3,pbe,relaxed,-1.94,-1.748,updated,available
+Pd111,CH3,pbe,SPE,-1.929,-1.734,updated,available
+Pd111,CH3,pbe_d3,relaxed,-2.21,-2.001,updated,available
+Pd111,CH3,pbe_d3,SPE,-2.133,-1.927,updated,available
+Pd111,CH3,beef_vdw,relaxed,-19.61,-1.813,updated,available
+Pd111,CH3,beef_vdw,SPE,-19.532,-1.735,updated,available
+Pd111,CO2,pbe,relaxed,-0.387,-0.035,updated,available
+Pd111,CO2,r2scan,relaxed,-0.66,,withheld_unverified_or_incompatible,refs unverified
+Pd111,CO2,beef_vdw,relaxed,-31.913,-0.272,updated,available
+Pd111,DME,pbe,relaxed,-4.96,-0.156,updated,available
+Pd111,DME,pbe,SPE,,-0.119,newly_filled,available
+Pd111,DME,pbe_d3,relaxed,,-0.666,newly_filled,available
+Pd111,DME,pbe_d3,SPE,,-0.561,newly_filled,available
+Pd111,DME,r2scan,relaxed,-0.7,,withheld_unverified_or_incompatible,refs unverified
+Pd111,DME,r2scan,SPE,-0.668,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,DME,beef_vdw,relaxed,-18.365,-0.568,updated,available
+Pd111,DME,beef_vdw,SPE,-18.256,-0.459,updated,available
+Pd111,H2O,pbe,relaxed,-0.43,-0.232,updated,available
+Pd111,H2O,pbe,SPE,,-0.216,newly_filled,available
+Pd111,H2O,pbe_d3,relaxed,-0.66,-0.449,updated,available
+Pd111,H2O,pbe_d3,SPE,,-0.356,newly_filled,available
+Pd111,H2O,beef_vdw,relaxed,-18.144,-0.347,updated,available
+Pd111,H2O,beef_vdw,SPE,,-0.249,newly_filled,available
+Pd111,H2S,pbe,relaxed,-0.79,-0.6,updated,available
+Pd111,H2S,pbe,SPE,,-0.582,newly_filled,available
+Pd111,H2S,pbe_d3,relaxed,-1.23,-1.027,updated,available
+Pd111,H2S,pbe_d3,SPE,,-0.922,newly_filled,available
+Pd111,H2S,beef_vdw,SPE,,-0.543,newly_filled,available
+Pd111,N2,pbe,relaxed,-0.37,-0.179,updated,available
+Pd111,N2,pbe,SPE,,-0.162,newly_filled,available
+Pd111,N2,pbe_d3,relaxed,-0.64,-0.432,updated,available
+Pd111,N2,pbe_d3,SPE,,-0.347,newly_filled,available
+Pd111,N2,beef_vdw,SPE,,-0.134,newly_filled,available
+Pd111,NH3,pbe,relaxed,-0.89,-0.696,updated,available
+Pd111,NH3,pbe,SPE,,-0.686,newly_filled,available
+Pd111,NH3,pbe_d3,relaxed,-1.19,-0.979,updated,available
+Pd111,NH3,pbe_d3,SPE,,-0.893,newly_filled,available
+Pd111,NH3,beef_vdw,relaxed,-18.572,-0.775,updated,available
+Pd111,NH3,beef_vdw,SPE,,-0.673,newly_filled,available
+Pd111,NO,pbe,relaxed,-2.78,-2.582,updated,available
+Pd111,NO,pbe,SPE,,-2.574,newly_filled,available
+Pd111,NO,pbe_d3,relaxed,-3.02,-2.817,updated,available
+Pd111,NO,pbe_d3,SPE,,-2.736,newly_filled,available
+Pd111,NO,beef_vdw,relaxed,-26.905,-9.108,updated,available; energy review
+Pd111,NO,beef_vdw,SPE,,-9.047,newly_filled,available; energy review
+Pd111,SO2,pbe,relaxed,-1.24,-1.049,updated,available
+Pd111,SO2,pbe,SPE,,-1.024,newly_filled,available
+Pd111,SO2,pbe_d3,relaxed,-1.83,-1.627,updated,available
+Pd111,SO2,pbe_d3,SPE,,-1.501,newly_filled,available
+Pd111,SO2,beef_vdw,relaxed,-19.01,-1.213,updated,available
+Pd111,SO2,beef_vdw,SPE,,-1.093,newly_filled,available
+Pd111,acetaldehyde,pbe,relaxed,-0.36,-0.163,updated,available
+Pd111,acetaldehyde,pbe,SPE,-0.306,-0.112,updated,available
+Pd111,acetaldehyde,pbe_d3,relaxed,-0.79,-0.581,updated,available
+Pd111,acetaldehyde,pbe_d3,SPE,-0.675,-0.468,updated,available
+Pd111,acetaldehyde,r2scan,relaxed,-0.67,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,acetaldehyde,r2scan,SPE,-0.601,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,acetaldehyde,beef_vdw,relaxed,-18.267,-0.469,updated,available
+Pd111,acetaldehyde,beef_vdw,SPE,-18.117,-0.32,updated,available
+Pd111,acetic_acid,r2scan,relaxed,-0.82,,withheld_unverified_or_incompatible,refs unverified
+Pd111,acetic_acid,r2scan,SPE,-0.774,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,acetic_acid,beef_vdw,relaxed,-18.382,-0.584,updated,available
+Pd111,acetic_acid,beef_vdw,SPE,-18.303,-0.506,updated,available
+Pd111,ethane,pbe,relaxed,-0.398,-0.046,updated,available
+Pd111,ethane,pbe,SPE,0.417,0.03,updated,available
+Pd111,ethane,pbe_d3,relaxed,-0.792,-0.413,updated,available
+Pd111,ethane,pbe_d3,SPE,0.297,-0.18,updated,available
+Pd111,ethane,r2scan,relaxed,-0.67,,withheld_unverified_or_incompatible,refs unverified
+Pd111,ethane,r2scan,SPE,0.372,-0.015,updated,available
+Pd111,ethane,beef_vdw,relaxed,-31.985,-0.343,updated,available
+Pd111,ethane,beef_vdw,SPE,0.116,-0.215,updated,available
+Pd111,ethanol,pbe,relaxed,-0.643,-0.291,updated,available
+Pd111,ethanol,pbe,SPE,0.2,-0.26,updated,available
+Pd111,ethanol,pbe_d3,relaxed,-1.142,-0.763,updated,available
+Pd111,ethanol,pbe_d3,SPE,0.017,-0.552,updated,available
+Pd111,ethanol,r2scan,relaxed,-1.087,-0.539,updated,available
+Pd111,ethanol,r2scan,SPE,0.163,-0.386,updated,available
+Pd111,ethanol,beef_vdw,relaxed,-32.263,-0.622,updated,available
+Pd111,ethanol,beef_vdw,SPE,-0.147,-0.521,updated,available
+Pd111,ethene,pbe,relaxed,-0.88,-0.684,updated,available
+Pd111,ethene,pbe,SPE,-0.706,-0.656,updated,available
+Pd111,ethene,pbe_d3,relaxed,-1.31,-1.104,updated,available
+Pd111,ethene,pbe_d3,SPE,-0.91,-1.016,updated,available
+Pd111,ethene,r2scan,relaxed,-1.18,,withheld_unverified_or_incompatible,refs unverified
+Pd111,ethene,r2scan,SPE,-0.841,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,ethene,beef_vdw,relaxed,-18.618,-0.821,updated,available
+Pd111,ethene,beef_vdw,SPE,-0.798,-0.707,updated,available
+Pd111,formaldehyde,pbe,relaxed,-0.35,-0.157,updated,available
+Pd111,formaldehyde,pbe,SPE,,-0.116,newly_filled,available
+Pd111,formaldehyde,pbe_d3,relaxed,-0.66,-0.452,updated,available
+Pd111,formaldehyde,pbe_d3,SPE,,-0.33,newly_filled,available
+Pd111,formaldehyde,beef_vdw,relaxed,-18.168,-0.371,updated,available
+Pd111,formaldehyde,beef_vdw,SPE,,-0.237,newly_filled,available
+Pd111,formic_acid,pbe,relaxed,-0.52,-0.326,updated,available
+Pd111,formic_acid,pbe,SPE,,-0.309,newly_filled,available
+Pd111,formic_acid,pbe_d3,relaxed,-0.91,-0.705,updated,available
+Pd111,formic_acid,pbe_d3,SPE,,-0.605,newly_filled,available
+Pd111,formic_acid,beef_vdw,relaxed,-18.332,-0.535,updated,available
+Pd111,formic_acid,beef_vdw,SPE,,-0.442,newly_filled,available
+Pd111,glycerol,pbe,relaxed,-0.85,,withheld_unverified_or_incompatible,refs unverified
+Pd111,glycerol,pbe_d3,relaxed,-1.63,,withheld_unverified_or_incompatible,refs unverified
+Pd111,glycerol,r2scan,relaxed,-1.45,,withheld_unverified_or_incompatible,refs unverified
+Pd111,glycerol,beef_vdw,SPE,-0.273,,withheld_unverified_or_incompatible,refs unverified
+Pd111,isopropanol,pbe,relaxed,-0.62,,withheld_unverified_or_incompatible,refs unverified
+Pd111,isopropanol,pbe_d3,relaxed,-1.26,,withheld_unverified_or_incompatible,refs unverified
+Pd111,isopropanol,r2scan,relaxed,-1.12,,withheld_unverified_or_incompatible,refs unverified
+Pd111,methane,pbe,relaxed,-0.21,-0.02,updated,available
+Pd111,methane,pbe,SPE,,0.072,newly_filled,available
+Pd111,methane,pbe_d3,relaxed,-0.44,-0.233,updated,available
+Pd111,methane,pbe_d3,SPE,,-0.118,newly_filled,available
+Pd111,methane,r2scan,relaxed,-0.369,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,methane,beef_vdw,relaxed,-18.021,-0.224,updated,available
+Pd111,methane,beef_vdw,SPE,,-0.079,newly_filled,available
+Pd111,methanol,pbe,relaxed,-0.42,-0.229,updated,available
+Pd111,methanol,pbe,SPE,-0.385,-0.19,updated,available
+Pd111,methanol,pbe_d3,relaxed,-0.8,-0.592,updated,available
+Pd111,methanol,pbe_d3,SPE,-0.703,-0.497,updated,available
+Pd111,methanol,r2scan,relaxed,-0.73,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,methanol,r2scan,SPE,-0.679,,withheld_unverified_or_incompatible,potential mismatch
+Pd111,methanol,beef_vdw,relaxed,-18.285,-0.488,updated,available
+Pd111,methanol,beef_vdw,SPE,-18.159,-0.362,updated,available
+Pd111,propane,pbe,relaxed,-0.41,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propane,pbe_d3,relaxed,-0.91,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propane,r2scan,relaxed,-0.78,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propanol,pbe,relaxed,-0.64,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propanol,pbe_d3,relaxed,-1.28,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propanol,r2scan,relaxed,-1.14,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propene,pbe,relaxed,-0.99,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propene,pbe_d3,relaxed,-1.57,,withheld_unverified_or_incompatible,refs unverified
+Pd111,propene,r2scan,relaxed,-1.52,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CH3,pbe,relaxed,-2.559,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CH3,pbe,SPE,-2.542,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,CH3,pbe_d3,relaxed,-2.912,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CH3,pbe_d3,SPE,-2.796,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,CH3,r2scan,relaxed,-2.819,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CH3,r2scan,SPE,-2.772,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,CH3,beef_vdw,relaxed,-36.044,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,CH3,beef_vdw,SPE,-35.908,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,CO,pbe,relaxed,-2.527,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CO,pbe_d3,relaxed,-2.845,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CO,r2scan,relaxed,-2.891,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CO,beef_vdw,relaxed,-35.788,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,CO2,pbe,relaxed,-0.8,-0.011,updated,available
+Pt100,CO2,pbe,SPE,0.007,0.008,updated,available
+Pt100,CO2,r2scan,relaxed,-1.32,,withheld_unverified_or_incompatible,refs unverified
+Pt100,CO2,r2scan,SPE,-0.022,-0.014,updated,available
+Pt100,CO2,beef_vdw,relaxed,-60.444,-0.262,updated,available
+Pt100,CO2,beef_vdw,SPE,-0.129,-0.115,updated,available
+Pt100,DME,r2scan,relaxed,-1.22,,withheld_unverified_or_incompatible,refs unverified
+Pt100,DME,r2scan,SPE,-1.16,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,DME,beef_vdw,relaxed,-34.487,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,DME,beef_vdw,SPE,-34.321,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,H2O,pbe,relaxed,-0.749,,withheld_unverified_or_incompatible,refs unverified
+Pt100,H2O,pbe_d3,relaxed,-1.031,,withheld_unverified_or_incompatible,refs unverified
+Pt100,H2O,r2scan,relaxed,-1.151,,withheld_unverified_or_incompatible,refs unverified
+Pt100,H2O,beef_vdw,relaxed,-34.239,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,H2S,pbe,relaxed,-1.393,,withheld_unverified_or_incompatible,refs unverified
+Pt100,H2S,pbe_d3,relaxed,-1.865,,withheld_unverified_or_incompatible,refs unverified
+Pt100,H2S,r2scan,relaxed,-1.834,,withheld_unverified_or_incompatible,refs unverified
+Pt100,H2S,beef_vdw,relaxed,-34.879,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,N2,pbe,relaxed,-0.835,,withheld_unverified_or_incompatible,refs unverified
+Pt100,N2,pbe_d3,relaxed,-1.103,,withheld_unverified_or_incompatible,refs unverified
+Pt100,N2,r2scan,relaxed,-1.177,,withheld_unverified_or_incompatible,refs unverified
+Pt100,N2,beef_vdw,relaxed,-34.199,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,NH3,pbe,relaxed,-1.464,,withheld_unverified_or_incompatible,refs unverified
+Pt100,NH3,pbe_d3,relaxed,-1.786,,withheld_unverified_or_incompatible,refs unverified
+Pt100,NH3,r2scan,relaxed,-1.881,,withheld_unverified_or_incompatible,refs unverified
+Pt100,NH3,beef_vdw,relaxed,-34.885,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,NO,pbe,relaxed,-3.012,,withheld_unverified_or_incompatible,refs unverified
+Pt100,NO,pbe_d3,relaxed,-3.286,,withheld_unverified_or_incompatible,refs unverified
+Pt100,NO,beef_vdw,relaxed,-42.911,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,SO2,pbe,relaxed,-1.744,,withheld_unverified_or_incompatible,refs unverified
+Pt100,SO2,pbe_d3,relaxed,-2.393,,withheld_unverified_or_incompatible,refs unverified
+Pt100,SO2,r2scan,relaxed,-2.403,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,SO2,beef_vdw,relaxed,-35.273,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,acetaldehyde,pbe,relaxed,-0.711,,withheld_unverified_or_incompatible,refs unverified
+Pt100,acetaldehyde,pbe,SPE,-0.635,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,acetaldehyde,pbe_d3,relaxed,-1.208,,withheld_unverified_or_incompatible,refs unverified
+Pt100,acetaldehyde,pbe_d3,SPE,-1.068,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,acetaldehyde,r2scan,relaxed,-1.08,,withheld_unverified_or_incompatible,refs unverified
+Pt100,acetaldehyde,r2scan,SPE,-1.005,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,acetaldehyde,beef_vdw,relaxed,-34.353,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,acetaldehyde,beef_vdw,SPE,-34.127,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,acetic_acid,r2scan,relaxed,-1.405,,withheld_unverified_or_incompatible,refs unverified
+Pt100,acetic_acid,r2scan,SPE,-1.344,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,acetic_acid,beef_vdw,relaxed,-34.528,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,acetic_acid,beef_vdw,SPE,-34.394,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,ethane,pbe,relaxed,-0.8,-0.009,updated,available
+Pt100,ethane,pbe,SPE,0.467,0.073,updated,available
+Pt100,ethane,pbe_d3,relaxed,-1.27,-0.446,updated,available
+Pt100,ethane,pbe_d3,SPE,0.176,-0.283,updated,available
+Pt100,ethane,r2scan,relaxed,-1.33,,withheld_unverified_or_incompatible,refs unverified
+Pt100,ethane,r2scan,SPE,0.385,-0.036,updated,available
+Pt100,ethane,beef_vdw,relaxed,-60.494,-0.312,updated,available
+Pt100,ethane,beef_vdw,SPE,0.175,-0.098,updated,available
+Pt100,ethanol,pbe,relaxed,-1.16,-0.363,updated,available
+Pt100,ethanol,pbe,SPE,0.396,-0.318,updated,available
+Pt100,ethanol,pbe_d3,relaxed,-1.72,-0.893,updated,available
+Pt100,ethanol,pbe_d3,SPE,-0.007,-0.772,updated,available
+Pt100,ethanol,r2scan,relaxed,-1.82,,withheld_unverified_or_incompatible,refs unverified
+Pt100,ethanol,r2scan,SPE,0.285,-0.513,updated,available
+Pt100,ethanol,beef_vdw,relaxed,-60.854,-0.671,updated,available
+Pt100,ethanol,beef_vdw,SPE,0.088,-0.464,updated,available
+Pt100,ethene,pbe,relaxed,-1.569,,withheld_unverified_or_incompatible,refs unverified
+Pt100,ethene,pbe,SPE,-1.123,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,ethene,pbe_d3,relaxed,-2.107,,withheld_unverified_or_incompatible,refs unverified
+Pt100,ethene,pbe_d3,SPE,-1.96,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,ethene,r2scan,relaxed,-2.118,,withheld_unverified_or_incompatible,refs unverified
+Pt100,ethene,r2scan,SPE,-1.384,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,ethene,beef_vdw,relaxed,-35.12,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,ethene,beef_vdw,SPE,-1.151,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,formaldehyde,pbe,relaxed,-1.197,,withheld_unverified_or_incompatible,refs unverified
+Pt100,formaldehyde,pbe_d3,relaxed,-1.592,,withheld_unverified_or_incompatible,refs unverified
+Pt100,formaldehyde,r2scan,relaxed,-1.687,,withheld_unverified_or_incompatible,refs unverified
+Pt100,formaldehyde,beef_vdw,relaxed,-34.608,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,formic_acid,pbe,relaxed,-0.91,,withheld_unverified_or_incompatible,refs unverified
+Pt100,formic_acid,pbe_d3,relaxed,-1.347,,withheld_unverified_or_incompatible,refs unverified
+Pt100,formic_acid,r2scan,relaxed,-1.366,,withheld_unverified_or_incompatible,refs unverified
+Pt100,formic_acid,beef_vdw,relaxed,-34.451,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,glycerol,pbe,relaxed,-1.35,,withheld_unverified_or_incompatible,refs unverified
+Pt100,glycerol,pbe,SPE,0.375,0.376,updated,available
+Pt100,glycerol,pbe_d3,relaxed,-2.29,,withheld_unverified_or_incompatible,refs unverified
+Pt100,glycerol,pbe_d3,SPE,-0.387,-0.384,updated,available
+Pt100,glycerol,r2scan,relaxed,-2.12,,withheld_unverified_or_incompatible,refs unverified
+Pt100,glycerol,r2scan,SPE,0.192,,withheld_unverified_or_incompatible,refs unverified
+Pt100,glycerol,beef_vdw,SPE,-0.127,,withheld_unverified_or_incompatible,refs unverified
+Pt100,isopropanol,pbe,relaxed,-1.16,,withheld_unverified_or_incompatible,refs unverified
+Pt100,isopropanol,pbe_d3,relaxed,-1.89,,withheld_unverified_or_incompatible,refs unverified
+Pt100,isopropanol,pbe_d3,SPE,-0.086,-0.082,updated,available
+Pt100,isopropanol,r2scan,relaxed,-1.87,,withheld_unverified_or_incompatible,refs unverified
+Pt100,isopropanol,r2scan,SPE,0.281,0.29,updated,available
+Pt100,isopropanol,beef_vdw,SPE,0.025,0.039,updated,available
+Pt100,methane,pbe,relaxed,-0.51,,withheld_unverified_or_incompatible,refs unverified
+Pt100,methane,pbe_d3,relaxed,-0.796,,withheld_unverified_or_incompatible,refs unverified
+Pt100,methane,r2scan,relaxed,-0.829,,withheld_unverified_or_incompatible,refs unverified
+Pt100,methane,beef_vdw,relaxed,-34.094,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,methanol,pbe,relaxed,-0.775,,withheld_unverified_or_incompatible,refs unverified
+Pt100,methanol,pbe,SPE,-0.736,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,methanol,pbe_d3,relaxed,-1.225,,withheld_unverified_or_incompatible,refs unverified
+Pt100,methanol,pbe_d3,SPE,-1.103,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,methanol,r2scan,relaxed,-1.247,,withheld_unverified_or_incompatible,refs unverified
+Pt100,methanol,r2scan,SPE,-1.193,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,methanol,beef_vdw,relaxed,-34.408,,withheld_unverified_or_incompatible,potential_mismatch
+Pt100,methanol,beef_vdw,SPE,-34.231,,withheld_unverified_or_incompatible,potential mismatch
+Pt100,propane,pbe,relaxed,-0.81,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propane,pbe,SPE,0.604,0.605,updated,available
+Pt100,propane,pbe_d3,relaxed,-1.4,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propane,pbe_d3,SPE,0.069,0.073,updated,available
+Pt100,propane,r2scan,relaxed,-1.38,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propane,r2scan,SPE,0.432,0.44,updated,available
+Pt100,propane,beef_vdw,SPE,0.213,0.227,updated,available
+Pt100,propanol,pbe,relaxed,-1.21,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propanol,pbe,SPE,0.431,0.432,updated,available
+Pt100,propanol,pbe_d3,relaxed,-1.9,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propanol,pbe_d3,SPE,-0.177,-0.173,updated,available
+Pt100,propanol,r2scan,relaxed,-1.84,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propanol,r2scan,SPE,0.25,0.258,updated,available
+Pt100,propanol,beef_vdw,SPE,0.029,0.043,updated,available
+Pt100,propene,pbe,relaxed,-2.03,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propene,pbe_d3,relaxed,-2.73,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propene,pbe_d3,SPE,-1.389,-1.385,updated,available
+Pt100,propene,r2scan,relaxed,-2.81,,withheld_unverified_or_incompatible,refs unverified
+Pt100,propene,r2scan,SPE,-1.162,-1.153,updated,available
+Pt100,propene,beef_vdw,SPE,-1.082,-1.068,updated,available
+Pt110,CH3,pbe,relaxed,-2.597,,withheld_unverified_or_incompatible,refs unverified
+Pt110,CH3,pbe,SPE,-2.547,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,CH3,pbe_d3,relaxed,-2.944,,withheld_unverified_or_incompatible,refs unverified
+Pt110,CH3,pbe_d3,SPE,-2.846,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,CH3,r2scan,relaxed,-2.732,,withheld_unverified_or_incompatible,refs unverified
+Pt110,CH3,r2scan,SPE,-2.548,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,CH3,beef_vdw,SPE,-24.894,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,CO,pbe,relaxed,-2.594,,withheld_unverified_or_incompatible,refs unverified
+Pt110,CO,pbe_d3,relaxed,-2.907,,withheld_unverified_or_incompatible,refs unverified
+Pt110,CO,beef_vdw,relaxed,-24.764,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,CO2,pbe,relaxed,-0.324,,withheld_unverified_or_incompatible,refs unverified
+Pt110,CO2,pbe,SPE,-0.014,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,CO2,r2scan,relaxed,-0.595,,withheld_unverified_or_incompatible,refs unverified
+Pt110,CO2,r2scan,SPE,0.041,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,CO2,beef_vdw,relaxed,-22.828,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,CO2,beef_vdw,SPE,-0.184,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,DME,r2scan,relaxed,-1.14,,withheld_unverified_or_incompatible,refs unverified
+Pt110,DME,r2scan,SPE,-0.98,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,DME,beef_vdw,relaxed,-23.327,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,DME,beef_vdw,SPE,-23.256,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,H2O,pbe,relaxed,-0.735,,withheld_unverified_or_incompatible,refs unverified
+Pt110,H2O,pbe_d3,relaxed,-1.041,,withheld_unverified_or_incompatible,refs unverified
+Pt110,H2O,r2scan,relaxed,-1.087,,withheld_unverified_or_incompatible,refs unverified
+Pt110,H2O,beef_vdw,relaxed,-23.06,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,H2S,pbe,relaxed,-2.52,,withheld_unverified_or_incompatible,refs unverified
+Pt110,H2S,pbe_d3,relaxed,-3.093,,withheld_unverified_or_incompatible,refs unverified
+Pt110,H2S,r2scan,relaxed,-2.995,,withheld_unverified_or_incompatible,refs unverified
+Pt110,H2S,beef_vdw,relaxed,-24.751,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,N2,pbe,relaxed,-0.876,,withheld_unverified_or_incompatible,refs unverified
+Pt110,N2,pbe_d3,relaxed,-1.187,,withheld_unverified_or_incompatible,refs unverified
+Pt110,N2,r2scan,relaxed,-1.164,,withheld_unverified_or_incompatible,refs unverified
+Pt110,N2,beef_vdw,relaxed,-23.094,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,NH3,pbe,relaxed,-1.395,,withheld_unverified_or_incompatible,refs unverified
+Pt110,NH3,pbe_d3,relaxed,-1.775,,withheld_unverified_or_incompatible,refs unverified
+Pt110,NH3,r2scan,relaxed,-1.698,,withheld_unverified_or_incompatible,refs unverified
+Pt110,NH3,beef_vdw,relaxed,-23.711,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,NO,pbe,relaxed,-2.69,,withheld_unverified_or_incompatible,refs unverified
+Pt110,NO,pbe_d3,relaxed,-2.964,,withheld_unverified_or_incompatible,refs unverified
+Pt110,NO,beef_vdw,relaxed,-31.553,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,SO2,pbe,relaxed,-1.889,,withheld_unverified_or_incompatible,refs unverified
+Pt110,SO2,pbe_d3,relaxed,-2.516,,withheld_unverified_or_incompatible,refs unverified
+Pt110,SO2,r2scan,relaxed,-2.486,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,SO2,beef_vdw,relaxed,-24.324,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,acetaldehyde,pbe,relaxed,-0.727,,withheld_unverified_or_incompatible,refs unverified
+Pt110,acetaldehyde,pbe,SPE,-0.622,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,acetaldehyde,pbe_d3,relaxed,-1.216,,withheld_unverified_or_incompatible,refs unverified
+Pt110,acetaldehyde,pbe_d3,SPE,-1.056,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,acetaldehyde,r2scan,relaxed,-1.121,,withheld_unverified_or_incompatible,refs unverified
+Pt110,acetaldehyde,r2scan,SPE,-0.937,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,acetaldehyde,beef_vdw,relaxed,-23.206,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,acetaldehyde,beef_vdw,SPE,-23.136,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,acetic_acid,r2scan,relaxed,-1.317,,withheld_unverified_or_incompatible,refs unverified
+Pt110,acetic_acid,r2scan,SPE,-1.117,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,acetic_acid,beef_vdw,relaxed,-23.401,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,acetic_acid,beef_vdw,SPE,-23.333,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,ethane,pbe,relaxed,-0.69,-0.047,updated,available
+Pt110,ethane,pbe,SPE,0.43,0.016,updated,available
+Pt110,ethane,pbe_d3,relaxed,-1.14,-0.471,updated,available
+Pt110,ethane,pbe_d3,SPE,-0.182,-0.387,updated,available
+Pt110,ethane,r2scan,relaxed,-1.29,,withheld_unverified_or_incompatible,refs unverified
+Pt110,ethane,r2scan,SPE,0.163,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,ethane,beef_vdw,SPE,0.395,-0.163,updated,available
+Pt110,ethanol,pbe,relaxed,-1.1,-0.458,updated,available
+Pt110,ethanol,pbe,SPE,0.631,-0.434,updated,available
+Pt110,ethanol,pbe_d3,relaxed,-1.72,-1.052,updated,available
+Pt110,ethanol,pbe_d3,SPE,-0.055,-0.96,updated,available
+Pt110,ethanol,r2scan,relaxed,-1.91,,withheld_unverified_or_incompatible,refs unverified
+Pt110,ethanol,r2scan,SPE,0.347,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,ethanol,beef_vdw,relaxed,-60.787,-0.738,updated,available
+Pt110,ethanol,beef_vdw,SPE,0.6,-0.594,updated,available
+Pt110,ethene,pbe,relaxed,-1.624,,withheld_unverified_or_incompatible,refs unverified
+Pt110,ethene,pbe,SPE,-1.088,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,ethene,pbe_d3,relaxed,-2.229,,withheld_unverified_or_incompatible,refs unverified
+Pt110,ethene,pbe_d3,SPE,-1.634,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,ethene,r2scan,relaxed,-2.084,,withheld_unverified_or_incompatible,refs unverified
+Pt110,ethene,r2scan,SPE,-1.424,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,ethene,beef_vdw,relaxed,-24.087,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,ethene,beef_vdw,SPE,-0.95,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,formaldehyde,pbe,relaxed,-1.425,,withheld_unverified_or_incompatible,refs unverified
+Pt110,formaldehyde,pbe_d3,relaxed,-1.883,,withheld_unverified_or_incompatible,refs unverified
+Pt110,formaldehyde,r2scan,relaxed,-1.812,,withheld_unverified_or_incompatible,refs unverified
+Pt110,formaldehyde,beef_vdw,relaxed,-23.735,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,formic_acid,pbe,relaxed,-0.887,,withheld_unverified_or_incompatible,refs unverified
+Pt110,formic_acid,pbe_d3,relaxed,-1.363,,withheld_unverified_or_incompatible,refs unverified
+Pt110,formic_acid,r2scan,relaxed,-1.263,,withheld_unverified_or_incompatible,refs unverified
+Pt110,formic_acid,beef_vdw,relaxed,-23.271,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,glycerol,pbe,relaxed,-1.25,,withheld_unverified_or_incompatible,refs unverified
+Pt110,glycerol,pbe,SPE,0.132,0.133,updated,available
+Pt110,glycerol,pbe_d3,relaxed,-2.2,,withheld_unverified_or_incompatible,refs unverified
+Pt110,glycerol,pbe_d3,SPE,-0.963,-0.958,updated,available
+Pt110,glycerol,r2scan,relaxed,-2.15,,withheld_unverified_or_incompatible,refs unverified
+Pt110,glycerol,r2scan,SPE,-0.355,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,glycerol,beef_vdw,SPE,-0.072,,withheld_unverified_or_incompatible,refs unverified
+Pt110,isopropanol,pbe,relaxed,-1.15,,withheld_unverified_or_incompatible,refs unverified
+Pt110,isopropanol,pbe,SPE,0.536,0.537,updated,available
+Pt110,isopropanol,pbe_d3,relaxed,-1.9,,withheld_unverified_or_incompatible,refs unverified
+Pt110,isopropanol,pbe_d3,SPE,-0.325,-0.321,updated,available
+Pt110,isopropanol,r2scan,relaxed,-2.0,,withheld_unverified_or_incompatible,refs unverified
+Pt110,isopropanol,r2scan,SPE,0.19,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,isopropanol,beef_vdw,SPE,0.379,0.38,updated,available
+Pt110,methane,pbe,relaxed,-0.282,,withheld_unverified_or_incompatible,refs unverified
+Pt110,methane,pbe_d3,relaxed,-0.615,,withheld_unverified_or_incompatible,refs unverified
+Pt110,methane,r2scan,relaxed,-0.594,,withheld_unverified_or_incompatible,refs unverified
+Pt110,methane,beef_vdw,relaxed,-22.785,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,methanol,pbe,relaxed,-0.788,,withheld_unverified_or_incompatible,refs unverified
+Pt110,methanol,pbe,SPE,-0.714,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,methanol,pbe_d3,relaxed,-1.272,,withheld_unverified_or_incompatible,refs unverified
+Pt110,methanol,pbe_d3,SPE,-1.155,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,methanol,r2scan,relaxed,-1.194,,withheld_unverified_or_incompatible,refs unverified
+Pt110,methanol,r2scan,SPE,-1.018,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,methanol,beef_vdw,relaxed,-23.254,,withheld_unverified_or_incompatible,potential_mismatch
+Pt110,methanol,beef_vdw,SPE,-23.182,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,propane,pbe,relaxed,-0.7,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propane,pbe,SPE,0.623,0.624,updated,available
+Pt110,propane,pbe_d3,relaxed,-1.2,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propane,pbe_d3,SPE,-0.119,-0.115,updated,available
+Pt110,propane,r2scan,relaxed,-1.37,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propane,r2scan,SPE,0.313,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,propane,beef_vdw,SPE,0.486,0.487,updated,available
+Pt110,propanol,pbe,relaxed,-1.14,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propanol,pbe,SPE,0.717,0.718,updated,available
+Pt110,propanol,pbe_d3,relaxed,-1.86,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propanol,pbe_d3,SPE,-0.12,-0.115,updated,available
+Pt110,propanol,r2scan,relaxed,-1.98,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propanol,r2scan,SPE,0.387,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,propanol,beef_vdw,SPE,0.587,0.588,updated,available
+Pt110,propene,pbe,relaxed,-1.87,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propene,pbe,SPE,-0.47,-0.469,updated,available
+Pt110,propene,pbe_d3,relaxed,-2.65,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propene,pbe_d3,SPE,-1.269,-1.264,updated,available
+Pt110,propene,r2scan,relaxed,-2.81,,withheld_unverified_or_incompatible,refs unverified
+Pt110,propene,r2scan,SPE,-0.884,,withheld_unverified_or_incompatible,potential mismatch
+Pt110,propene,beef_vdw,SPE,-0.452,-0.45,updated,available
+Pt111,CO2,pbe,relaxed,-0.875,,withheld_unverified_or_incompatible,refs unverified
+Pt111,CO2,pbe,SPE,0.031,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,CO2,r2scan,relaxed,-1.4,,withheld_unverified_or_incompatible,refs unverified
+Pt111,CO2,r2scan,SPE,0.14,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,CO2,beef_vdw,relaxed,-60.425,,withheld_unverified_or_incompatible,potential_mismatch
+Pt111,CO2,beef_vdw,SPE,-0.216,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,ethane,pbe,relaxed,-0.86,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethane,pbe,SPE,0.567,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethane,pbe_d3,relaxed,-1.4,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethane,pbe_d3,SPE,0.444,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethane,r2scan,relaxed,-1.42,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethane,r2scan,SPE,0.665,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethane,beef_vdw,SPE,0.196,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethanol,pbe,relaxed,-1.1,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethanol,pbe,SPE,0.373,-0.175,updated,available
+Pt111,ethanol,pbe_d3,relaxed,-1.78,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethanol,pbe_d3,SPE,0.146,-0.66,updated,available
+Pt111,ethanol,r2scan,relaxed,-1.81,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethanol,r2scan,SPE,0.441,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,ethanol,beef_vdw,SPE,-0.012,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,ethene,pbe,relaxed,-1.66,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethene,pbe,SPE,-0.892,-0.621,updated,available
+Pt111,ethene,pbe_d3,relaxed,-2.31,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethene,pbe_d3,SPE,-1.041,-1.058,updated,available
+Pt111,ethene,r2scan,relaxed,-2.36,,withheld_unverified_or_incompatible,refs unverified
+Pt111,ethene,r2scan,SPE,-0.915,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,ethene,beef_vdw,SPE,-1.05,,withheld_unverified_or_incompatible,refs unverified
+Pt111,formic_acid,pbe,relaxed,-0.71,-0.267,updated,available
+Pt111,formic_acid,pbe,SPE,,-0.191,newly_filled,available
+Pt111,formic_acid,pbe_d3,relaxed,-1.17,-0.705,updated,available
+Pt111,formic_acid,pbe_d3,SPE,,-0.543,newly_filled,available
+Pt111,formic_acid,beef_vdw,relaxed,-34.571,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,glycerol,pbe,relaxed,-1.3,,withheld_unverified_or_incompatible,refs unverified
+Pt111,glycerol,pbe,SPE,0.198,,withheld_unverified_or_incompatible,refs unverified
+Pt111,glycerol,pbe_d3,relaxed,-2.24,,withheld_unverified_or_incompatible,refs unverified
+Pt111,glycerol,pbe_d3,SPE,-0.364,,withheld_unverified_or_incompatible,refs unverified
+Pt111,glycerol,r2scan,relaxed,-2.07,,withheld_unverified_or_incompatible,refs unverified
+Pt111,glycerol,r2scan,SPE,0.193,,withheld_unverified_or_incompatible,refs unverified
+Pt111,glycerol,beef_vdw,SPE,-0.352,,withheld_unverified_or_incompatible,refs unverified
+Pt111,isopropanol,pbe,relaxed,-1.03,,withheld_unverified_or_incompatible,refs unverified
+Pt111,isopropanol,pbe,SPE,0.401,,withheld_unverified_or_incompatible,refs unverified
+Pt111,isopropanol,pbe_d3,relaxed,-1.85,,withheld_unverified_or_incompatible,refs unverified
+Pt111,isopropanol,pbe_d3,SPE,0.101,,withheld_unverified_or_incompatible,refs unverified
+Pt111,isopropanol,r2scan,relaxed,-1.69,,withheld_unverified_or_incompatible,refs unverified
+Pt111,isopropanol,r2scan,SPE,0.479,,withheld_unverified_or_incompatible,refs unverified
+Pt111,isopropanol,beef_vdw,SPE,-0.065,,withheld_unverified_or_incompatible,refs unverified
+Pt111,methanol,pbe,relaxed,-0.66,-0.214,updated,available
+Pt111,methanol,pbe,SPE,-0.613,-0.17,updated,available
+Pt111,methanol,pbe_d3,relaxed,-1.11,-0.646,updated,available
+Pt111,methanol,pbe_d3,SPE,-0.978,-0.512,updated,available
+Pt111,methanol,r2scan,relaxed,-1.12,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,methanol,r2scan,SPE,-1.061,,withheld_unverified_or_incompatible,potential mismatch
+Pt111,propane,pbe,relaxed,-0.88,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propane,pbe,SPE,0.58,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propane,pbe_d3,relaxed,-1.56,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propane,pbe_d3,SPE,0.236,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propane,r2scan,relaxed,-1.46,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propane,r2scan,SPE,0.598,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propane,beef_vdw,SPE,0.105,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propanol,pbe,relaxed,-1.12,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propanol,pbe,SPE,0.331,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propanol,pbe_d3,relaxed,-1.96,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propanol,pbe_d3,SPE,-0.115,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propanol,r2scan,relaxed,-1.87,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propanol,r2scan,SPE,0.314,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propanol,beef_vdw,SPE,-0.138,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propene,pbe,relaxed,-1.87,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propene,pbe,SPE,-0.944,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propene,pbe_d3,relaxed,-2.69,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propene,pbe_d3,SPE,-1.419,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propene,r2scan,relaxed,-2.65,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propene,r2scan,SPE,-1.141,,withheld_unverified_or_incompatible,refs unverified
+Pt111,propene,beef_vdw,SPE,-1.202,,withheld_unverified_or_incompatible,refs unverified
+Rh100,CH3,pbe,relaxed,-2.252,-1.902,updated,available
+Rh100,CH3,pbe_d3,relaxed,-2.526,-2.151,updated,available
+Rh100,CH3,r2scan,relaxed,-2.314,-1.854,updated,available
+Rh100,CH3,r2scan,SPE,-2.303,-1.843,updated,available
+Rh100,CH3,beef_vdw,relaxed,-28.388,-1.976,updated,available
+Rh100,CO,pbe,relaxed,-2.443,-2.093,updated,available
+Rh100,CO,pbe,SPE,,-2.02,newly_filled,available
+Rh100,CO,pbe_d3,relaxed,-2.686,-2.311,updated,available
+Rh100,CO,r2scan,relaxed,-2.615,-2.155,updated,available
+Rh100,CO,r2scan,SPE,,-2.132,newly_filled,available
+Rh100,CO,beef_vdw,relaxed,-28.43,-2.018,updated,available
+Rh100,CO2,pbe,relaxed,-0.365,-0.016,updated,available
+Rh100,CO2,pbe,SPE,,0.095,newly_filled,available
+Rh100,CO2,r2scan,relaxed,-0.557,-0.098,updated,available
+Rh100,CO2,r2scan,SPE,,-0.074,newly_filled,available
+Rh100,DME,pbe,relaxed,,-0.329,newly_filled,available
+Rh100,DME,pbe,SPE,,-0.251,newly_filled,available
+Rh100,DME,pbe_d3,relaxed,,-0.805,newly_filled,available
+Rh100,DME,pbe_d3,SPE,,-0.693,newly_filled,available
+Rh100,DME,r2scan,relaxed,-0.968,-0.508,updated,available
+Rh100,DME,r2scan,SPE,-0.933,-0.473,updated,available
+Rh100,DME,beef_vdw,relaxed,-27.08,-0.667,updated,available
+Rh100,H2O,pbe,relaxed,-0.744,-0.394,updated,available
+Rh100,H2O,pbe,SPE,,-0.335,newly_filled,available
+Rh100,H2O,pbe_d3,relaxed,-0.967,-0.592,updated,available
+Rh100,H2O,pbe_d3,SPE,,-0.489,newly_filled,available
+Rh100,H2O,r2scan,relaxed,-0.923,-0.463,updated,available
+Rh100,H2O,r2scan,SPE,,-0.434,newly_filled,available
+Rh100,H2O,beef_vdw,relaxed,-26.94,-0.527,updated,available
+Rh100,H2S,pbe,relaxed,-4.035,-3.685,updated,available
+Rh100,H2S,pbe,SPE,,-3.652,newly_filled,available
+Rh100,H2S,pbe_d3,relaxed,-4.525,-4.149,updated,available
+Rh100,H2S,pbe_d3,SPE,,-4.068,newly_filled,available
+Rh100,H2S,r2scan,relaxed,-4.482,-4.022,updated,available
+Rh100,H2S,r2scan,SPE,,-3.969,newly_filled,available
+Rh100,H2S,beef_vdw,relaxed,-29.902,-3.49,updated,available
+Rh100,H2S,beef_vdw,SPE,,-3.398,newly_filled,available
+Rh100,N2,pbe,relaxed,-1.038,-0.689,updated,available
+Rh100,N2,pbe_d3,relaxed,-1.277,-0.901,updated,available
+Rh100,N2,r2scan,relaxed,-1.225,-0.765,updated,available
+Rh100,N2,r2scan,SPE,,-0.743,newly_filled,available
+Rh100,N2,beef_vdw,relaxed,-27.131,-0.718,updated,available
+Rh100,NH3,pbe,relaxed,-1.347,-0.997,updated,available
+Rh100,NH3,pbe_d3,relaxed,-1.631,-1.255,updated,available
+Rh100,NH3,r2scan,relaxed,-1.518,-1.058,updated,available
+Rh100,NH3,r2scan,SPE,,-1.026,newly_filled,available
+Rh100,NH3,beef_vdw,relaxed,-27.53,-1.118,updated,available
+Rh100,NO,pbe,relaxed,-3.343,-2.994,updated,available
+Rh100,NO,pbe,SPE,,-2.951,newly_filled,available
+Rh100,NO,pbe_d3,relaxed,-3.576,-3.2,updated,available
+Rh100,NO,pbe_d3,SPE,,-3.117,newly_filled,available
+Rh100,NO,beef_vdw,relaxed,-35.97,-9.558,updated,available; energy review
+Rh100,NO,beef_vdw,SPE,,-9.448,newly_filled,available; energy review
+Rh100,SO2,pbe,relaxed,-2.477,-2.127,updated,available
+Rh100,SO2,pbe,SPE,,-2.045,newly_filled,available
+Rh100,SO2,pbe_d3,relaxed,-2.983,-2.607,updated,available
+Rh100,SO2,pbe_d3,SPE,,-2.504,newly_filled,available
+Rh100,SO2,r2scan,SPE,,-2.424,newly_filled,available
+Rh100,SO2,beef_vdw,relaxed,-28.608,-2.195,updated,available
+Rh100,SO2,beef_vdw,SPE,,-2.045,newly_filled,available
+Rh100,acetaldehyde,pbe,relaxed,-0.776,-0.426,updated,available
+Rh100,acetaldehyde,pbe,SPE,-0.701,-0.351,updated,available
+Rh100,acetaldehyde,pbe_d3,relaxed,-1.164,-0.788,updated,available
+Rh100,acetaldehyde,pbe_d3,SPE,-1.064,-0.689,updated,available
+Rh100,acetaldehyde,r2scan,relaxed,-1.02,-0.56,updated,available
+Rh100,acetaldehyde,r2scan,SPE,-0.984,-0.524,updated,available
+Rh100,acetaldehyde,beef_vdw,relaxed,-27.109,-0.697,updated,available
+Rh100,acetaldehyde,beef_vdw,SPE,-26.959,-0.546,updated,available
+Rh100,acetic_acid,r2scan,relaxed,-1.217,-0.757,updated,available
+Rh100,acetic_acid,r2scan,SPE,-1.187,-0.727,updated,available
+Rh100,acetic_acid,beef_vdw,relaxed,-27.281,-0.869,updated,available
+Rh100,ethane,pbe,relaxed,-0.373,-0.024,updated,available
+Rh100,ethane,pbe,SPE,-0.212,0.138,updated,available
+Rh100,ethane,pbe_d3,relaxed,-0.749,-0.373,updated,available
+Rh100,ethane,pbe_d3,SPE,-0.596,-0.221,updated,available
+Rh100,ethane,r2scan,relaxed,-0.634,-0.175,updated,available
+Rh100,ethane,r2scan,SPE,-0.597,-0.138,updated,available
+Rh100,ethane,beef_vdw,relaxed,-26.77,-0.357,updated,available
+Rh100,ethane,beef_vdw,SPE,-26.452,-0.039,updated,available
+Rh100,ethanol,pbe,relaxed,-0.776,-0.426,updated,available
+Rh100,ethanol,pbe,SPE,-0.694,-0.345,updated,available
+Rh100,ethanol,pbe_d3,relaxed,-1.254,-0.878,updated,available
+Rh100,ethanol,pbe_d3,SPE,-1.141,-0.765,updated,available
+Rh100,ethanol,r2scan,relaxed,-1.063,-0.603,updated,available
+Rh100,ethanol,r2scan,SPE,-1.038,-0.579,updated,available
+Rh100,ethanol,beef_vdw,relaxed,-27.156,-0.744,updated,available
+Rh100,ethanol,beef_vdw,SPE,-26.989,-0.576,updated,available
+Rh100,ethene,pbe,relaxed,-1.501,-1.152,updated,available
+Rh100,ethene,pbe,SPE,-1.4,-1.05,updated,available
+Rh100,ethene,pbe_d3,relaxed,-1.969,-1.593,updated,available
+Rh100,ethene,pbe_d3,SPE,-1.823,-1.447,updated,available
+Rh100,ethene,r2scan,relaxed,-1.794,-1.334,updated,available
+Rh100,ethene,r2scan,SPE,-1.653,-1.193,updated,available
+Rh100,ethene,beef_vdw,relaxed,-27.676,-1.263,updated,available
+Rh100,ethene,beef_vdw,SPE,-27.368,-0.956,updated,available
+Rh100,formaldehyde,pbe,relaxed,-1.4,-1.051,updated,available
+Rh100,formaldehyde,pbe,SPE,,-0.976,newly_filled,available
+Rh100,formaldehyde,pbe_d3,relaxed,-1.726,-1.351,updated,available
+Rh100,formaldehyde,pbe_d3,SPE,,-1.241,newly_filled,available
+Rh100,formaldehyde,r2scan,relaxed,-1.708,-1.248,updated,available
+Rh100,formaldehyde,r2scan,SPE,,-1.21,newly_filled,available
+Rh100,formaldehyde,beef_vdw,relaxed,-27.53,-1.117,updated,available
+Rh100,formaldehyde,beef_vdw,SPE,,-0.951,newly_filled,available
+Rh100,formic_acid,pbe,relaxed,-0.917,-0.568,updated,available
+Rh100,formic_acid,pbe,SPE,,-0.465,newly_filled,available
+Rh100,formic_acid,pbe_d3,relaxed,-1.271,-0.895,updated,available
+Rh100,formic_acid,pbe_d3,SPE,,-0.773,newly_filled,available
+Rh100,formic_acid,r2scan,relaxed,-1.168,-0.709,updated,available
+Rh100,formic_acid,r2scan,SPE,,-0.635,newly_filled,available
+Rh100,formic_acid,beef_vdw,relaxed,-27.17,-0.758,updated,available
+Rh100,formic_acid,beef_vdw,SPE,,-0.536,newly_filled,available
+Rh100,methane,pbe,relaxed,-0.404,-0.054,updated,available
+Rh100,methane,pbe,SPE,,0.204,newly_filled,available
+Rh100,methane,pbe_d3,relaxed,-0.574,-0.198,updated,available
+Rh100,methane,pbe_d3,SPE,,0.018,newly_filled,available
+Rh100,methane,r2scan,relaxed,-0.545,-0.086,updated,available
+Rh100,methane,r2scan,SPE,,-0.079,newly_filled,available
+Rh100,methane,beef_vdw,relaxed,-26.617,-0.204,updated,available
+Rh100,methanol,pbe,relaxed,-0.771,-0.421,updated,available
+Rh100,methanol,pbe_d3,relaxed,-1.122,-0.746,updated,available
+Rh100,methanol,r2scan,relaxed,-1.012,-0.552,updated,available
+Rh100,methanol,r2scan,SPE,-0.993,-0.533,updated,available
+Rh100,methanol,beef_vdw,relaxed,-27.064,-0.651,updated,available
+Rh100,methanol,beef_vdw,SPE,-26.978,-0.565,updated,available
+Rh110,CH3,pbe,relaxed,-2.25,-2.004,updated,available
+Rh110,CH3,pbe,SPE,-2.216,-1.97,updated,available
+Rh110,CH3,pbe_d3,relaxed,-2.572,-2.319,updated,available
+Rh110,CH3,pbe_d3,SPE,-2.456,-2.203,updated,available
+Rh110,CH3,r2scan,relaxed,-2.184,-1.874,updated,available
+Rh110,CH3,r2scan,SPE,-2.102,-1.792,updated,available
+Rh110,CH3,beef_vdw,relaxed,-19.715,-2.048,updated,available
+Rh110,CH3,beef_vdw,SPE,-19.663,-1.996,updated,available
+Rh110,CO,pbe,relaxed,-2.338,-2.092,updated,available
+Rh110,CO,pbe,SPE,,-1.966,newly_filled,available
+Rh110,CO,pbe_d3,relaxed,-2.58,-2.327,updated,available
+Rh110,CO,pbe_d3,SPE,,-2.194,newly_filled,available
+Rh110,CO,r2scan,relaxed,-2.173,-1.863,updated,available
+Rh110,CO,r2scan,SPE,,-1.771,newly_filled,available
+Rh110,CO,beef_vdw,relaxed,-19.541,-1.873,updated,available
+Rh110,CO,beef_vdw,SPE,,-1.813,newly_filled,available
+Rh110,CO2,pbe,relaxed,-0.368,-0.121,updated,available
+Rh110,CO2,pbe,SPE,,0.048,newly_filled,available
+Rh110,CO2,r2scan,relaxed,-0.446,-0.136,updated,available
+Rh110,CO2,r2scan,SPE,,0.018,newly_filled,available
+Rh110,CO2,beef_vdw,relaxed,-17.947,-0.28,updated,available
+Rh110,CO2,beef_vdw,SPE,,-0.15,newly_filled,available
+Rh110,DME,pbe,relaxed,,-0.508,newly_filled,available
+Rh110,DME,pbe,SPE,,-0.37,newly_filled,available
+Rh110,DME,pbe_d3,relaxed,,-1.054,newly_filled,available
+Rh110,DME,pbe_d3,SPE,,-0.882,newly_filled,available
+Rh110,DME,r2scan,relaxed,-0.87,-0.56,updated,available
+Rh110,DME,r2scan,SPE,-0.76,-0.45,updated,available
+Rh110,DME,beef_vdw,relaxed,-18.397,-0.729,updated,available
+Rh110,DME,beef_vdw,SPE,-18.332,-0.664,updated,available
+Rh110,H2O,pbe,relaxed,-0.826,-0.58,updated,available
+Rh110,H2O,pbe,SPE,,-0.455,newly_filled,available
+Rh110,H2O,pbe_d3,relaxed,-1.098,-0.845,updated,available
+Rh110,H2O,pbe_d3,SPE,,-0.67,newly_filled,available
+Rh110,H2O,r2scan,relaxed,-0.854,-0.545,updated,available
+Rh110,H2O,r2scan,SPE,,-0.393,newly_filled,available
+Rh110,H2O,beef_vdw,relaxed,-18.169,-0.502,updated,available
+Rh110,H2O,beef_vdw,SPE,,-0.44,newly_filled,available
+Rh110,H2S,pbe,relaxed,-2.207,-1.961,updated,available
+Rh110,H2S,pbe,SPE,,-1.873,newly_filled,available
+Rh110,H2S,pbe_d3,relaxed,-2.683,-2.43,updated,available
+Rh110,H2S,pbe_d3,SPE,,-2.284,newly_filled,available
+Rh110,H2S,r2scan,relaxed,-2.083,-1.773,updated,available
+Rh110,H2S,r2scan,SPE,,-1.665,newly_filled,available
+Rh110,H2S,beef_vdw,relaxed,-19.513,-1.845,updated,available
+Rh110,H2S,beef_vdw,SPE,,-1.82,newly_filled,available
+Rh110,N2,pbe,relaxed,-1.182,-0.935,updated,available
+Rh110,N2,pbe,SPE,,-0.792,newly_filled,available
+Rh110,N2,pbe_d3,relaxed,-1.457,-1.204,updated,available
+Rh110,N2,r2scan,relaxed,-1.04,-0.73,updated,available
+Rh110,N2,r2scan,SPE,,-0.64,newly_filled,available
+Rh110,N2,beef_vdw,relaxed,-18.414,-0.747,updated,available
+Rh110,N2,beef_vdw,SPE,,-0.729,newly_filled,available
+Rh110,NH3,pbe,relaxed,-1.271,-1.025,updated,available
+Rh110,NH3,pbe,SPE,,-0.921,newly_filled,available
+Rh110,NH3,pbe_d3,relaxed,-1.589,-1.335,updated,available
+Rh110,NH3,pbe_d3,SPE,,-1.19,newly_filled,available
+Rh110,NH3,r2scan,relaxed,-1.268,-0.958,updated,available
+Rh110,NH3,r2scan,SPE,,-0.842,newly_filled,available
+Rh110,NH3,beef_vdw,relaxed,-18.626,-0.959,updated,available
+Rh110,NH3,beef_vdw,SPE,,-0.917,newly_filled,available
+Rh110,NO,pbe,relaxed,-3.416,-3.169,updated,available
+Rh110,NO,pbe,SPE,,-3.089,newly_filled,available
+Rh110,NO,pbe_d3,relaxed,-3.665,-3.412,updated,available
+Rh110,NO,pbe_d3,SPE,,-3.3,newly_filled,available
+Rh110,NO,beef_vdw,relaxed,-27.236,-9.569,updated,available; energy review
+Rh110,NO,beef_vdw,SPE,,-9.519,newly_filled,available; energy review
+Rh110,SO2,pbe,relaxed,-2.38,-2.134,updated,available
+Rh110,SO2,pbe,SPE,,-2.056,newly_filled,available
+Rh110,SO2,pbe_d3,relaxed,-2.931,-2.678,updated,available
+Rh110,SO2,pbe_d3,SPE,,-2.568,newly_filled,available
+Rh110,SO2,r2scan,relaxed,-2.539,-2.229,updated,available
+Rh110,SO2,r2scan,SPE,,-2.118,newly_filled,available
+Rh110,SO2,beef_vdw,relaxed,-19.833,-2.165,updated,available
+Rh110,SO2,beef_vdw,SPE,,-2.106,newly_filled,available
+Rh110,acetaldehyde,pbe,relaxed,-1.284,-1.038,updated,available
+Rh110,acetaldehyde,pbe,SPE,-1.216,-0.97,updated,available
+Rh110,acetaldehyde,pbe_d3,relaxed,-1.747,-1.494,updated,available
+Rh110,acetaldehyde,pbe_d3,SPE,-1.687,-1.434,updated,available
+Rh110,acetaldehyde,r2scan,relaxed,-1.471,-1.161,updated,available
+Rh110,acetaldehyde,r2scan,SPE,-1.386,-1.076,updated,available
+Rh110,acetaldehyde,beef_vdw,relaxed,-18.884,-1.217,updated,available
+Rh110,acetaldehyde,beef_vdw,SPE,-18.795,-1.127,updated,available
+Rh110,acetic_acid,r2scan,relaxed,-1.129,-0.819,updated,available
+Rh110,acetic_acid,r2scan,SPE,-0.991,-0.681,updated,available
+Rh110,acetic_acid,beef_vdw,relaxed,-18.536,-0.869,updated,available
+Rh110,acetic_acid,beef_vdw,SPE,-18.495,-0.827,updated,available
+Rh110,ethane,pbe,relaxed,-0.282,-0.036,updated,available
+Rh110,ethane,pbe,SPE,-0.201,0.045,updated,available
+Rh110,ethane,pbe_d3,relaxed,-0.604,-0.351,updated,available
+Rh110,ethane,pbe_d3,SPE,-0.581,-0.328,updated,available
+Rh110,ethane,r2scan,relaxed,-0.443,-0.133,updated,available
+Rh110,ethane,r2scan,SPE,-0.365,-0.055,updated,available
+Rh110,ethane,beef_vdw,relaxed,-18.005,-0.337,updated,available
+Rh110,ethane,beef_vdw,SPE,-17.91,-0.243,updated,available
+Rh110,ethanol,pbe,relaxed,-0.885,-0.639,updated,available
+Rh110,ethanol,pbe,SPE,-0.758,-0.512,updated,available
+Rh110,ethanol,pbe_d3,relaxed,-1.414,-1.161,updated,available
+Rh110,ethanol,pbe_d3,SPE,-1.229,-0.976,updated,available
+Rh110,ethanol,r2scan,relaxed,-0.983,-0.673,updated,available
+Rh110,ethanol,r2scan,SPE,-0.86,-0.55,updated,available
+Rh110,ethanol,beef_vdw,relaxed,-18.479,-0.812,updated,available
+Rh110,ethanol,beef_vdw,SPE,-18.435,-0.768,updated,available
+Rh110,ethene,pbe,relaxed,-1.47,-1.224,updated,available
+Rh110,ethene,pbe,SPE,-1.412,-1.165,updated,available
+Rh110,ethene,pbe_d3,relaxed,-1.878,-1.625,updated,available
+Rh110,ethene,pbe_d3,SPE,-1.818,-1.565,updated,available
+Rh110,ethene,r2scan,relaxed,-1.603,-1.294,updated,available
+Rh110,ethene,r2scan,SPE,-1.502,-1.192,updated,available
+Rh110,ethene,beef_vdw,relaxed,-19.003,-1.336,updated,available
+Rh110,ethene,beef_vdw,SPE,-18.927,-1.259,updated,available
+Rh110,formaldehyde,pbe,relaxed,-1.896,-1.65,updated,available
+Rh110,formaldehyde,pbe,SPE,,-1.549,newly_filled,available
+Rh110,formaldehyde,pbe_d3,relaxed,-2.289,-2.036,updated,available
+Rh110,formaldehyde,pbe_d3,SPE,,-1.9,newly_filled,available
+Rh110,formaldehyde,r2scan,relaxed,-2.092,-1.782,updated,available
+Rh110,formaldehyde,r2scan,SPE,,-1.535,newly_filled,available
+Rh110,formaldehyde,beef_vdw,relaxed,-19.146,-1.479,updated,available
+Rh110,formaldehyde,beef_vdw,SPE,,-1.401,newly_filled,available
+Rh110,formic_acid,pbe,relaxed,-1.047,-0.801,updated,available
+Rh110,formic_acid,pbe,SPE,,-0.51,newly_filled,available
+Rh110,formic_acid,pbe_d3,relaxed,-1.462,-1.209,updated,available
+Rh110,formic_acid,pbe_d3,SPE,,-0.851,newly_filled,available
+Rh110,formic_acid,r2scan,SPE,,-0.487,newly_filled,available
+Rh110,formic_acid,beef_vdw,relaxed,-18.461,-0.794,updated,available
+Rh110,formic_acid,beef_vdw,SPE,,-0.592,newly_filled,available
+Rh110,methane,pbe,relaxed,-0.397,-0.151,updated,available
+Rh110,methane,pbe,SPE,,-0.006,newly_filled,available
+Rh110,methane,pbe_d3,relaxed,-0.708,-0.455,updated,available
+Rh110,methane,pbe_d3,SPE,,-0.263,newly_filled,available
+Rh110,methane,r2scan,relaxed,-0.425,-0.116,updated,available
+Rh110,methane,r2scan,SPE,,0.008,newly_filled,available
+Rh110,methane,beef_vdw,relaxed,-17.881,-0.213,updated,available
+Rh110,methane,beef_vdw,SPE,,-0.094,newly_filled,available
+Rh110,methanol,pbe,relaxed,-0.867,-0.621,updated,available
+Rh110,methanol,pbe,SPE,-0.739,-0.493,updated,available
+Rh110,methanol,pbe_d3,relaxed,-1.261,-1.008,updated,available
+Rh110,methanol,pbe_d3,SPE,-1.087,-0.834,updated,available
+Rh110,methanol,r2scan,relaxed,-0.92,-0.61,updated,available
+Rh110,methanol,r2scan,SPE,-0.799,-0.489,updated,available
+Rh110,methanol,beef_vdw,relaxed,-18.346,-0.679,updated,available
+Rh110,methanol,beef_vdw,SPE,-18.298,-0.63,updated,available
+Rh111,CH3,pbe,relaxed,-2.441,-1.754,updated,available
+Rh111,CH3,pbe,SPE,-2.347,-1.66,updated,available
+Rh111,CH3,pbe_d3,relaxed,-2.745,-2.011,updated,available
+Rh111,CH3,pbe_d3,SPE,-2.401,-1.667,updated,available
+Rh111,CH3,beef_vdw,relaxed,-48.817,-1.854,updated,available
+Rh111,CH3,beef_vdw,SPE,-48.762,-1.8,updated,available
+Rh111,CO,pbe,relaxed,-2.71,-2.024,updated,available
+Rh111,CO,pbe,SPE,,-1.884,newly_filled,available
+Rh111,CO,pbe_d3,relaxed,-2.98,-2.245,updated,available
+Rh111,CO,pbe_d3,SPE,,-1.835,newly_filled,available
+Rh111,CO,beef_vdw,relaxed,-48.892,-1.93,updated,available
+Rh111,CO,beef_vdw,SPE,,-1.847,newly_filled,available
+Rh111,CO2,pbe,relaxed,-0.71,-0.023,updated,available
+Rh111,CO2,pbe,SPE,,0.12,newly_filled,available
+Rh111,CO2,beef_vdw,relaxed,-47.228,-0.266,updated,available
+Rh111,CO2,beef_vdw,SPE,,-0.196,newly_filled,available
+Rh111,DME,pbe,relaxed,,-0.25,newly_filled,available
+Rh111,DME,pbe,SPE,,-0.146,newly_filled,available
+Rh111,DME,pbe_d3,relaxed,,-0.754,newly_filled,available
+Rh111,DME,pbe_d3,SPE,,-0.407,newly_filled,available
+Rh111,DME,r2scan,relaxed,-1.41,,withheld_unverified_or_incompatible,refs unverified
+Rh111,DME,r2scan,SPE,-1.123,,withheld_unverified_or_incompatible,potential mismatch
+Rh111,DME,beef_vdw,relaxed,-47.607,-0.645,updated,available
+Rh111,DME,beef_vdw,SPE,-47.546,-0.584,updated,available
+Rh111,H2O,pbe,relaxed,-1.031,-0.345,updated,available
+Rh111,H2O,pbe,SPE,,-0.233,newly_filled,available
+Rh111,H2O,pbe_d3,relaxed,-1.291,-0.556,updated,available
+Rh111,H2O,pbe_d3,SPE,,-0.196,newly_filled,available
+Rh111,H2O,beef_vdw,relaxed,-47.415,-0.453,updated,available
+Rh111,H2O,beef_vdw,SPE,,-0.363,newly_filled,available
+Rh111,H2S,pbe,relaxed,-1.472,-0.786,updated,available
+Rh111,H2S,pbe,SPE,,-0.654,newly_filled,available
+Rh111,H2S,pbe_d3,relaxed,-1.901,-1.166,updated,available
+Rh111,H2S,pbe_d3,SPE,,-0.782,newly_filled,available
+Rh111,H2S,beef_vdw,relaxed,-47.886,-0.924,updated,available
+Rh111,H2S,beef_vdw,SPE,,-0.835,newly_filled,available
+Rh111,N2,pbe,relaxed,-1.225,-0.539,updated,available
+Rh111,N2,pbe,SPE,,-0.411,newly_filled,available
+Rh111,N2,pbe_d3,relaxed,-1.512,-0.777,updated,available
+Rh111,N2,pbe_d3,SPE,,-0.396,newly_filled,available
+Rh111,N2,beef_vdw,relaxed,-47.533,-0.571,updated,available
+Rh111,N2,beef_vdw,SPE,,-0.502,newly_filled,available
+Rh111,NH3,pbe,relaxed,-1.602,-0.916,updated,available
+Rh111,NH3,pbe,SPE,,-0.805,newly_filled,available
+Rh111,NH3,pbe_d3,relaxed,-1.927,-1.192,updated,available
+Rh111,NH3,pbe_d3,SPE,,-0.825,newly_filled,available
+Rh111,NH3,beef_vdw,relaxed,-47.965,-1.003,updated,available
+Rh111,NH3,beef_vdw,SPE,,-0.932,newly_filled,available
+Rh111,NO,pbe,relaxed,-3.555,-2.868,updated,available
+Rh111,NO,pbe,SPE,,-2.728,newly_filled,available
+Rh111,NO,pbe_d3,relaxed,-3.836,-3.101,updated,available
+Rh111,NO,pbe_d3,SPE,,-2.688,newly_filled,available
+Rh111,NO,beef_vdw,relaxed,-56.402,-9.44,updated,available; energy review
+Rh111,NO,beef_vdw,SPE,,-9.355,newly_filled,available; energy review
+Rh111,SO2,pbe,relaxed,-2.195,-1.509,updated,available
+Rh111,SO2,pbe,SPE,,-1.394,newly_filled,available
+Rh111,SO2,pbe_d3,relaxed,-2.744,-2.01,updated,available
+Rh111,SO2,pbe_d3,SPE,,-1.635,newly_filled,available
+Rh111,SO2,beef_vdw,relaxed,-48.629,-1.667,updated,available
+Rh111,SO2,beef_vdw,SPE,,-1.598,newly_filled,available
+Rh111,acetaldehyde,pbe,relaxed,-1.004,-0.318,updated,available
+Rh111,acetaldehyde,pbe,SPE,-0.887,-0.201,updated,available
+Rh111,acetaldehyde,pbe_d3,relaxed,-1.447,-0.713,updated,available
+Rh111,acetaldehyde,pbe_d3,SPE,-1.073,-0.338,updated,available
+Rh111,acetaldehyde,r2scan,relaxed,-1.34,,withheld_unverified_or_incompatible,refs unverified
+Rh111,acetaldehyde,r2scan,SPE,-1.107,,withheld_unverified_or_incompatible,potential mismatch
+Rh111,acetaldehyde,beef_vdw,relaxed,-47.563,-0.601,updated,available
+Rh111,acetaldehyde,beef_vdw,SPE,-47.483,-0.521,updated,available
+Rh111,acetic_acid,r2scan,relaxed,-1.57,,withheld_unverified_or_incompatible,refs unverified
+Rh111,acetic_acid,r2scan,SPE,-1.283,,withheld_unverified_or_incompatible,potential mismatch
+Rh111,acetic_acid,beef_vdw,relaxed,-47.689,-0.727,updated,available
+Rh111,acetic_acid,beef_vdw,SPE,-47.62,-0.658,updated,available
+Rh111,ethane,pbe,relaxed,-0.702,-0.016,updated,available
+Rh111,ethane,pbe,SPE,-0.527,0.16,updated,available
+Rh111,ethane,pbe_d3,relaxed,-1.109,-0.374,updated,available
+Rh111,ethane,pbe_d3,SPE,-0.733,0.002,updated,available
+Rh111,ethane,r2scan,relaxed,-0.82,,withheld_unverified_or_incompatible,refs unverified
+Rh111,ethane,r2scan,SPE,-0.687,,withheld_unverified_or_incompatible,potential mismatch
+Rh111,ethane,beef_vdw,relaxed,-47.277,-0.315,updated,available
+Rh111,ethane,beef_vdw,SPE,-47.164,-0.202,updated,available
+Rh111,ethanol,pbe,relaxed,-1.047,-0.361,updated,available
+Rh111,ethanol,pbe,SPE,-0.929,-0.243,updated,available
+Rh111,ethanol,pbe_d3,relaxed,-1.58,-0.845,updated,available
+Rh111,ethanol,pbe_d3,SPE,-1.205,-0.47,updated,available
+Rh111,ethanol,r2scan,relaxed,-1.48,,withheld_unverified_or_incompatible,refs unverified
+Rh111,ethanol,r2scan,SPE,-1.172,,withheld_unverified_or_incompatible,potential mismatch
+Rh111,ethanol,beef_vdw,relaxed,-47.665,-0.703,updated,available
+Rh111,ethanol,beef_vdw,SPE,-47.575,-0.613,updated,available
+Rh111,ethene,pbe,relaxed,-1.603,-0.917,updated,available
+Rh111,ethene,pbe,SPE,-1.453,-0.767,updated,available
+Rh111,ethene,pbe_d3,relaxed,-2.062,-1.327,updated,available
+Rh111,ethene,pbe_d3,SPE,-1.651,-0.916,updated,available
+Rh111,ethene,r2scan,relaxed,-2.0,,withheld_unverified_or_incompatible,refs unverified
+Rh111,ethene,r2scan,SPE,-1.7,,withheld_unverified_or_incompatible,potential mismatch
+Rh111,ethene,beef_vdw,relaxed,-48.068,-1.106,updated,available
+Rh111,ethene,beef_vdw,SPE,-47.942,-0.98,updated,available
+Rh111,formaldehyde,pbe,relaxed,-1.554,-0.868,updated,available
+Rh111,formaldehyde,pbe,SPE,,-0.555,newly_filled,available
+Rh111,formaldehyde,pbe_d3,relaxed,-1.719,-0.985,updated,available
+Rh111,formaldehyde,pbe_d3,SPE,,-0.607,newly_filled,available
+Rh111,formaldehyde,beef_vdw,relaxed,-47.928,-0.966,updated,available
+Rh111,formaldehyde,beef_vdw,SPE,,-0.694,newly_filled,available
+Rh111,formic_acid,pbe,relaxed,-1.109,-0.423,updated,available
+Rh111,formic_acid,pbe,SPE,,-0.286,newly_filled,available
+Rh111,formic_acid,pbe_d3,relaxed,-1.515,-0.781,updated,available
+Rh111,formic_acid,pbe_d3,SPE,,-0.38,newly_filled,available
+Rh111,formic_acid,beef_vdw,relaxed,-47.597,-0.634,updated,available
+Rh111,formic_acid,beef_vdw,SPE,,-0.521,newly_filled,available
+Rh111,methane,pbe,relaxed,-0.655,0.031,updated,available
+Rh111,methane,pbe,SPE,,0.122,newly_filled,available
+Rh111,methane,pbe_d3,relaxed,-0.95,-0.216,updated,available
+Rh111,methane,pbe_d3,SPE,,0.121,newly_filled,available
+Rh111,methane,beef_vdw,relaxed,-47.166,-0.204,updated,available
+Rh111,methane,beef_vdw,SPE,,-0.136,newly_filled,available

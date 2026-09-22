@@ -64,6 +64,7 @@ def main():
                     history=subprocess.check_output(['sacct','-X','-j',job,'-n','-P','-o','State'],text=True,stderr=subprocess.DEVNULL).splitlines()
                     state=history[0].strip('|') if history else 'unknown'
                 except (OSError,subprocess.CalledProcessError):state='unknown'
+            state=', '.join(sorted(set(state.splitlines())))
             campaign=dict(job_id=job,state=state,manifest=str(manifest))
             export_file=manifest.parent/'export_submission.json'
             if export_file.exists():campaign['export']=json.loads(export_file.read_text())
@@ -94,16 +95,19 @@ def main():
             f=FUNCTIONALS[cells[0].get_text()];key=(s,m,f)
             er,em,es=[numeric(cells[i].get_text()) for i in [1,2,4]]
             candidates=spe.get(key,[])
-            spe_review='energy-review' in cells[4].get('class',[])
-            relaxed_review='energy-review' in cells[1].get('class',[])
+            spe_review=es is not None and 'energy-review' in cells[4].get('class',[])
+            relaxed_review=er is not None and 'energy-review' in cells[1].get('class',[])
             if es is not None:status='available; energy review' if spe_review else 'available'
+            elif cells[4].get_text() in ('potential mismatch','refs unverified'):status=cells[4].get_text()
             elif key in recovery:status=recovery[key]['status']
             elif any(r['complex_directory'] in queued for r in candidates):status='SPE '+next(queued[r['complex_directory']] for r in candidates if r['complex_directory'] in queued).lower()
             elif candidates:status='; '.join(sorted({r['status'] for r in candidates}))
             else:status='no matching Perlmutter calculation; check Kestrel sources'
             rr=relax.get(key,[])
+            relaxed_status=('available; energy review' if relaxed_review else 'available') if er is not None else '; '.join(sorted({r['status'] for r in rr})) or 'no matching Perlmutter calculation'
+            if er is None and cells[1].get_text() in ('potential mismatch','refs unverified'):relaxed_status=cells[1].get_text()
             report.append(dict(surface=s,molecule=m,functional=f,E_ads_ML=em,E_ads_relaxed=er,E_ads_SPE=es,
-                relaxed_status=('available; energy review' if relaxed_review else 'available') if er is not None else '; '.join(sorted({r['status'] for r in rr})) or 'no matching Perlmutter calculation',
+                relaxed_status=relaxed_status,
                 SPE_status=status,completion_job_directory=recovery.get(key,{}).get('directory',''),
                 relaxed_energy_review=relaxed_review,SPE_energy_review=spe_review,
                 dft_contact_available=bool(dft_match),required_CONTCAR=dft_sources.get(key2,'') if not dft_match else ''))
@@ -120,12 +124,13 @@ def main():
     (root/'dft_completion_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     page=re.sub(r'<!-- completion-coverage -->.*?<!-- /completion-coverage -->\n?', '',page,flags=re.S)
     jobs=', '.join(c['job_id']+' ('+c['state']+')' for c in campaigns) or 'none'
+    roles=Counter(j['role'] for j in completion)
     note=f'''<!-- completion-coverage -->
 <div class="note info"><b>Completion status ({summary['snapshot'][:10]}):</b>
 {summary['relaxed_energies']} / 1660 relaxed-energy entries and {summary['SPE_energies']} / 1660 SPE entries are available.
 These include {summary['relaxed_energy_review']} relaxed and {summary['SPE_energy_review']} SPE values marked for energy review; they are excluded from paired figure statistics.
 All 415 systems have images on both sides; 15 DFT contact measurements await their source CONTCARs.
-<br><b>Recovery work:</b> two clean-slab references and two electronic SPE retries target five missing entries. Job {html.escape(jobs)}.
+<br><b>Recovery work:</b> {roles['slab']} clean-slab references, {roles['spe']} electronic SPE retries and {roles['molecule']} gas-molecule reference retries. Campaign jobs: {html.escape(jobs)}.
 The existing SPE array continues separately. Pending results are not displayed as completed data.
 <br><a href="dft_completion_coverage.csv" download>Every energy gap and its status</a> &middot;
 <a href="dft_missing_geometry_sources.csv" download>15 required Kestrel CONTCAR paths</a> &middot;

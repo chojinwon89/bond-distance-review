@@ -1,0 +1,952 @@
+name,surface,molecule,n_metal,n_mol,old_energy,old_functional,new_energy,functional,mode,status,complex_snapshot_id
+Ag100_CO2,Ag100,CO2,64,3,0.13,r2scan,-0.02591616,pbe,relaxed,ok,2e1a11b466cd8264f9224eae86da6c00d521084c6155d41e7c70d7e0958b70cf
+Ag100_ethane,Ag100,ethane,64,8,0.136,r2scan,-0.26048106,pbe_d3,relaxed,ok,1f14bbbfdcc95e50371ec7f0569b8b17a612588bc02ab9335807d094b5109074
+Ag100_ethanol,Ag100,ethanol,64,9,-0.085,r2scan,-0.44751115,pbe_d3,relaxed,ok,95c325688d1108592237afa3b88e905ed16cfb644c9bdd3c52f7e2c6a76a6f22
+Ag100_ethene,Ag100,ethene,64,6,0.06,r2scan,,,,no validated size-matched selection,
+Ag100_glycerol,Ag100,glycerol,64,14,-0.188,r2scan,-0.19451722,r2scan,SPE,ok,2d8d5dae7467fd39bd6933f6deca51fdff9efb0a267670d354bc5f47cd7c31fb
+Ag110_citric_acid,Ag110,citric_acid,24,21,-1.906,pbe_d3,,,,no validated size-matched selection,
+Ag110_ethanol,Ag110,ethanol,64,9,-0.24,r2scan,-0.5772629,pbe_d3,relaxed,ok,2192280025604a86293faa6c682197b695280db84db77b2ee2d1e4d80a739c0d
+Ag110_ethene,Ag110,ethene,64,6,-0.179,r2scan,,,,no validated size-matched selection,
+Ag110_isopropanol,Ag110,isopropanol,64,12,-0.295,r2scan,-0.57813277,pbe_d3,SPE,ok,33283d0844f0f1f3accbee2d4ad7c0b200f0626cd81458b62f55624bfd574d44
+Ag110_propanol,Ag110,propanol,64,12,-0.255,r2scan,-0.53424114,pbe_d3,SPE,ok,4572b8e2cbac3aaf14abfcd1d0f06357026f41ede987b812353b2d81c805be4e
+Ag111_5-HMF,Ag111,5-HMF,36,15,-7.125,pbe_d3,,,,no validated size-matched selection,
+Ag111_CH3,Ag111,CH3,36,4,,,-1.01221119,pbe_d3,relaxed,ok,a10bf066fea188532f06eb22c4bac6e638d6307aa681249653970ac4e9515d5d
+Ag111_CH4,Ag111,CH4,36,5,,,-0.15131989,pbe_d3,relaxed,ok,16792a5ad86c64a4cfc6b96785acb6094a3e3b4c51a42b2e06adf86568aa0259
+Ag111_CO,Ag111,CO,36,2,,,-0.12003402,pbe_d3,relaxed,ok,c0a2cb9793c5bcbec1a4c5cde92b309e6398f5147185c364f877414e6d0154a0
+Ag111_CO2,Ag111,CO2,64,3,-0.008,r2scan,,,,no validated size-matched selection,
+Ag111_DME,Ag111,DME,36,9,,,-0.0972577,r2scan,relaxed,ok,facafbb9b87c934a64cf5d196d93168e02e18923c7591acefd3dd6e46b0d869d
+Ag111_H2,Ag111,H2,36,2,,,0.1837857,r2scan,SPE,ok,1d64eb628c97c4fac63e128302ebfb0a9ab22c1053fa24c123300313fbb68b4a
+Ag111_H2O,Ag111,H2O,36,3,,,-0.29937972,pbe_d3,relaxed,ok,4a0e2e50507aaed617ac99510bd08944da10f29381e71a5088b81ee8d0125f6b
+Ag111_H2S,Ag111,H2S,36,3,,,-0.4285085,pbe_d3,relaxed,ok,2a0fdb69902a286e2f651a946a852cfd1b19ee0e9acf109608b7c2c13772b888
+Ag111_N2,Ag111,N2,36,2,,,-0.07069564,pbe_d3,relaxed,ok,98a87a62ebced486ac2762a3604573034d37000164b24144077c87b6a6b86970
+Ag111_NH3,Ag111,NH3,36,4,,,-0.51866354,pbe_d3,relaxed,ok,2a8520af796c8e20d5c24dacc7182fde774df213cfeac182298b8f08c78c5ea1
+Ag111_NO,Ag111,NO,36,2,,,-0.74623498,pbe_d3,relaxed,ok,c42540ffa0ab0858a413bea5761fbe6e18f849c6fc97236edf40da7fe29d3a82
+Ag111_SO2,Ag111,SO2,36,3,,,-0.50515046,pbe_d3,relaxed,ok,45647f97a199bd45e2815f40adb93f80a45f0439f8878ede71401b14e6ded884
+Ag111_acetaldehyde,Ag111,acetaldehyde,36,7,,,-0.26733511,pbe_d3,relaxed,ok,136c9f012a782b835fad1e1e4758f50c1481bb452835de844704103839456174
+Ag111_acetic_acid,Ag111,acetic_acid,36,8,,,-0.41297165,beef_vdw,relaxed,ok,ba8766c0c623f2fb887a0b7b3ddb45317e4e6424fcb26cc4953819f076a9ebe8
+Ag111_ethane,Ag111,ethane,64,8,0.0,r2scan,,,,no validated size-matched selection,
+Ag111_ethanol,Ag111,ethanol,64,9,-0.157,r2scan,,,,no validated size-matched selection,
+Ag111_ethene,Ag111,ethene,64,6,-0.062,r2scan,,,,no validated size-matched selection,
+Ag111_ethylene,Ag111,ethylene,36,6,,,-0.37503613,pbe_d3,relaxed,ok,e847323b0307951a0bb473c0344248751531aa84cee259c9ce12cdac64d78f71
+Ag111_formaldehyde,Ag111,formaldehyde,36,4,,,-0.18825614,pbe_d3,relaxed,ok,03f82a64475bcda0d9c3d8d1e85c0bf4dedbdc35777abc836db5c3c9ba3fb76e
+Ag111_formate,Ag111,formate,36,4,,,-3.00088484,r2scan,SPE,ok,8538f53e2168eec68927d4d74257df0b6417c0c44bc0e07e111c9e29282a824c
+Ag111_formic_acid,Ag111,formic_acid,36,5,,,-0.42530315,pbe_d3,relaxed,ok,8a08fbf393a9a6532664b9022875f22f6274788347ad6f9f4f0a7d5db2e39ac8
+Ag111_glycerol,Ag111,glycerol,36,14,,,-0.21417826,r2scan,SPE,ok,318a4152d7b30fc899c9c216b0cba06f25eb363b39ca9572716bf14948ba7ce0
+Ag111_isopropanol,Ag111,isopropanol,36,12,,,-0.07201555,r2scan,SPE,ok,a8ed9e83aeebce7fffac8aafd4debfff6ea775c03bada530169cadddd0e1612b
+Ag111_methane,Ag111,methane,36,5,,,-0.15131989,pbe_d3,relaxed,ok,16792a5ad86c64a4cfc6b96785acb6094a3e3b4c51a42b2e06adf86568aa0259
+Ag111_methanol,Ag111,methanol,36,6,,,-0.37803573,pbe_d3,relaxed,ok,ab725c2f01a21ef5141f27633878bbeb7c9963d57f65fd36ba47ff4e62ba4109
+Ag111_propane,Ag111,propane,36,11,,,0.07828122,r2scan,SPE,ok,0dfa9bbcaab0d3a0a4813f655eabc19bec8187a6c18e21f1accd0c4d25e44dc0
+Ag111_propanol,Ag111,propanol,64,12,-0.212,r2scan,,,,no validated size-matched selection,
+Ag111_propene,Ag111,propene,36,9,,,0.04899132,r2scan,SPE,ok,1ac866acfdb6b3abb4aebeba005a7a888d2d77b57b757229d1e9dced3066e718
+"Au100_1,6-anhydroglucofuranose",Au100,"1,6-anhydroglucofuranose",64,17,0.514,r2scan,,,,no validated size-matched selection,
+Au100_1-butanol,Au100,1-butanol,64,15,0.283,r2scan,,,,no validated size-matched selection,
+Au100_1-butene,Au100,1-butene,64,12,0.573,r2scan,,,,no validated size-matched selection,
+Au100_1-pentene,Au100,1-pentene,64,15,0.585,r2scan,,,,no validated size-matched selection,
+Au100_2-butanol,Au100,2-butanol,64,15,0.387,r2scan,,,,no validated size-matched selection,
+Au100_2-butene,Au100,2-butene,64,12,0.681,r2scan,,,,no validated size-matched selection,
+Au100_2-ethylphenol,Au100,2-ethylphenol,64,19,0.452,r2scan,,,,no validated size-matched selection,
+Au100_2-furanone,Au100,2-furanone,64,10,0.578,r2scan,,,,no validated size-matched selection,
+Au100_2-heptanone,Au100,2-heptanone,64,22,0.565,r2scan,,,,no validated size-matched selection,
+Au100_2-hexanone,Au100,2-hexanone,64,19,0.592,r2scan,,,,no validated size-matched selection,
+Au100_2-pentanone,Au100,2-pentanone,64,16,0.537,r2scan,,,,no validated size-matched selection,
+Au100_3-MTHF,Au100,3-MTHF,64,16,0.532,r2scan,,,,no validated size-matched selection,
+Au100_3-hydroxypropionic_acid,Au100,3-hydroxypropionic_acid,64,12,0.641,r2scan,,,,no validated size-matched selection,
+Au100_4-methylguaiacol,Au100,4-methylguaiacol,64,20,0.605,r2scan,,,,no validated size-matched selection,
+Au100_5-HMF,Au100,5-HMF,64,15,-0.522,r2scan,,,,no validated size-matched selection,
+Au100_5-heptanone,Au100,5-heptanone,64,22,0.663,r2scan,,,,no validated size-matched selection,
+Au100_5-methylfurfural,Au100,5-methylfurfural,64,14,0.658,r2scan,,,,no validated size-matched selection,
+Au100_CH4,Au100,CH4,64,5,0.219,r2scan,,,,no validated size-matched selection,
+Au100_CO,Au100,CO,64,2,-0.405,r2scan,,,,no validated size-matched selection,
+Au100_CO2,Au100,CO2,64,3,0.194,r2scan,,,,no validated size-matched selection,
+Au100_D-fructofuranose,Au100,D-fructofuranose,64,20,0.627,r2scan,,,,no validated size-matched selection,
+Au100_D-xylopyranose,Au100,D-xylopyranose,64,20,0.404,r2scan,,,,no validated size-matched selection,
+Au100_DME,Au100,DME,64,9,0.593,r2scan,,,,no validated size-matched selection,
+Au100_DMSO,Au100,DMSO,64,10,0.295,r2scan,,,,no validated size-matched selection,
+Au100_H2,Au100,H2,64,2,0.287,r2scan,,,,no validated size-matched selection,
+Au100_H2O,Au100,H2O,64,3,0.146,r2scan,,,,no validated size-matched selection,
+Au100_H2S,Au100,H2S,64,3,0.071,r2scan,,,,no validated size-matched selection,
+Au100_N2,Au100,N2,64,2,0.257,r2scan,,,,no validated size-matched selection,
+Au100_NH3,Au100,NH3,64,4,-0.304,r2scan,,,,no validated size-matched selection,
+Au100_NO,Au100,NO,64,2,-0.816,r2scan,,,,no validated size-matched selection,
+Au100_NO2,Au100,NO2,64,3,-3.677,r2scan,,,,no validated size-matched selection,
+Au100_SO2,Au100,SO2,64,3,-0.063,r2scan,,,,no validated size-matched selection,
+Au100_THF,Au100,THF,64,13,0.456,r2scan,,,,no validated size-matched selection,
+Au100_acetal,Au100,acetal,64,22,0.886,r2scan,,,,no validated size-matched selection,
+Au100_acetaldehyde,Au100,acetaldehyde,64,7,0.56,r2scan,,,,no validated size-matched selection,
+Au100_acetic_acid,Au100,acetic_acid,64,8,-0.034,r2scan,,,,no validated size-matched selection,
+Au100_acetone,Au100,acetone,64,10,0.616,r2scan,,,,no validated size-matched selection,
+Au100_acetophenone,Au100,acetophenone,64,17,0.533,r2scan,,,,no validated size-matched selection,
+Au100_alpha-D-glucopyranose,Au100,alpha-D-glucopyranose,64,24,-0.666,r2scan,,,,no validated size-matched selection,
+Au100_angelica_lactone,Au100,angelica_lactone,64,13,0.491,r2scan,,,,no validated size-matched selection,
+Au100_aniline,Au100,aniline,64,14,0.45,r2scan,,,,no validated size-matched selection,
+Au100_benzaldehyde,Au100,benzaldehyde,64,14,0.485,r2scan,,,,no validated size-matched selection,
+Au100_benzene,Au100,benzene,64,12,0.462,r2scan,,,,no validated size-matched selection,
+Au100_butadiene,Au100,butadiene,64,10,0.349,r2scan,,,,no validated size-matched selection,
+Au100_butanal,Au100,butanal,64,13,0.459,r2scan,,,,no validated size-matched selection,
+Au100_butane,Au100,butane,64,14,0.456,r2scan,,,,no validated size-matched selection,
+Au100_butyric_acid,Au100,butyric_acid,64,14,0.687,r2scan,,,,no validated size-matched selection,
+Au100_caproic_acid,Au100,caproic_acid,64,20,0.443,r2scan,,,,no validated size-matched selection,
+Au100_cyclobutanone,Au100,cyclobutanone,64,11,0.614,r2scan,,,,no validated size-matched selection,
+Au100_cyclohexanone,Au100,cyclohexanone,64,17,0.468,r2scan,,,,no validated size-matched selection,
+Au100_cyclopentanone,Au100,cyclopentanone,64,14,0.669,r2scan,,,,no validated size-matched selection,
+Au100_diethyl_ether,Au100,diethyl_ether,64,15,0.507,r2scan,,,,no validated size-matched selection,
+Au100_dimethyl_succinate,Au100,dimethyl_succinate,64,17,0.86,r2scan,,,,no validated size-matched selection,
+Au100_ethane,Au100,ethane,64,8,0.628,r2scan,,,,no validated size-matched selection,
+Au100_ethanol,Au100,ethanol,64,9,0.446,r2scan,,,,no validated size-matched selection,
+Au100_ethene,Au100,ethene,64,6,0.45,r2scan,,,,no validated size-matched selection,
+Au100_ethyl_acetate,Au100,ethyl_acetate,64,14,0.455,r2scan,,,,no validated size-matched selection,
+Au100_ethylene,Au100,ethylene,64,6,0.45,r2scan,,,,no validated size-matched selection,
+Au100_ethylene_glycol,Au100,ethylene_glycol,64,10,0.374,r2scan,,,,no validated size-matched selection,
+Au100_eugenol,Au100,eugenol,64,24,0.722,r2scan,,,,no validated size-matched selection,
+Au100_formaldehyde,Au100,formaldehyde,64,4,0.488,r2scan,,,,no validated size-matched selection,
+Au100_formate,Au100,formate,64,4,-2.565,r2scan,,,,no validated size-matched selection,
+Au100_formic_acid,Au100,formic_acid,64,5,0.065,r2scan,,,,no validated size-matched selection,
+Au100_furan,Au100,furan,64,9,0.007,r2scan,,,,no validated size-matched selection,
+Au100_furfural,Au100,furfural,64,11,0.027,r2scan,,,,no validated size-matched selection,
+Au100_furfuryl_alcohol,Au100,furfuryl_alcohol,64,13,0.543,r2scan,,,,no validated size-matched selection,
+Au100_gamma_butyrolactone,Au100,gamma_butyrolactone,64,12,0.697,r2scan,,,,no validated size-matched selection,
+Au100_gamma_valerolactone,Au100,gamma_valerolactone,64,15,0.687,r2scan,,,,no validated size-matched selection,
+Au100_gluconic_acid,Au100,gluconic_acid,64,25,0.574,r2scan,,,,no validated size-matched selection,
+Au100_glutaric_acid,Au100,glutaric_acid,64,17,0.54,r2scan,,,,no validated size-matched selection,
+Au100_glycerol,Au100,glycerol,64,14,0.588,r2scan,,,,no validated size-matched selection,
+Au100_glycolic_acid,Au100,glycolic_acid,64,9,0.65,r2scan,,,,no validated size-matched selection,
+Au100_glyoxal,Au100,glyoxal,64,6,-2.527,beef_vdw,,,,no validated size-matched selection,
+Au100_guaiacol,Au100,guaiacol,64,17,0.355,r2scan,,,,no validated size-matched selection,
+Au100_heptane,Au100,heptane,64,23,0.283,r2scan,,,,no validated size-matched selection,
+Au100_hexanal,Au100,hexanal,64,19,0.51,r2scan,,,,no validated size-matched selection,
+Au100_hexane,Au100,hexane,64,20,0.271,r2scan,,,,no validated size-matched selection,
+Au100_hydroquinone,Au100,hydroquinone,64,14,-7.159,r2scan,,,,no validated size-matched selection,
+Au100_hydroxyacetaldehyde,Au100,hydroxyacetaldehyde,64,8,0.576,r2scan,,,,no validated size-matched selection,
+Au100_isobutane,Au100,isobutane,64,14,0.498,r2scan,,,,no validated size-matched selection,
+Au100_isobutene,Au100,isobutene,64,12,0.57,r2scan,,,,no validated size-matched selection,
+Au100_isoeugenol,Au100,isoeugenol,64,24,0.751,r2scan,,,,no validated size-matched selection,
+Au100_isopentane,Au100,isopentane,64,17,0.499,r2scan,,,,no validated size-matched selection,
+Au100_isoprene,Au100,isoprene,64,13,0.229,r2scan,,,,no validated size-matched selection,
+Au100_isopropanol,Au100,isopropanol,64,12,0.455,r2scan,,,,no validated size-matched selection,
+Au100_lactic_acid,Au100,lactic_acid,64,12,0.597,r2scan,,,,no validated size-matched selection,
+Au100_levoglucosan,Au100,levoglucosan,64,21,-4.103,r2scan,,,,no validated size-matched selection,
+Au100_levulinic_acid,Au100,levulinic_acid,64,16,0.033,pbe_d3,,,,no validated size-matched selection,
+Au100_malonic_acid,Au100,malonic_acid,64,11,-0.058,r2scan,,,,no validated size-matched selection,
+Au100_methane,Au100,methane,64,5,0.231,r2scan,,,,no validated size-matched selection,
+Au100_methanol,Au100,methanol,64,6,0.409,r2scan,,,,no validated size-matched selection,
+Au100_methyl_formate,Au100,methyl_formate,64,8,-3.921,beef_vdw,,,,no validated size-matched selection,
+Au100_methylcyclopentenolone,Au100,methylcyclopentenolone,64,16,0.51,r2scan,,,,no validated size-matched selection,
+Au100_methylethylketone,Au100,methylethylketone,64,13,0.604,r2scan,,,,no validated size-matched selection,
+Au100_methylmethacrylate,Au100,methylmethacrylate,64,15,-1.135,beef_vdw,,,,no validated size-matched selection,
+Au100_muconic_acid,Au100,muconic_acid,64,16,0.269,r2scan,,,,no validated size-matched selection,
+Au100_naphthalene,Au100,naphthalene,64,18,-0.27,beef_vdw,,,,no validated size-matched selection,
+Au100_octane,Au100,octane,64,26,0.359,r2scan,,,,no validated size-matched selection,
+Au100_oxalic_acid,Au100,oxalic_acid,64,8,-0.071,r2scan,,,,no validated size-matched selection,
+Au100_pentane,Au100,pentane,64,17,0.45,r2scan,,,,no validated size-matched selection,
+Au100_pentanol,Au100,pentanol,64,18,0.431,r2scan,,,,no validated size-matched selection,
+Au100_phenol,Au100,phenol,64,13,0.467,r2scan,,,,no validated size-matched selection,
+Au100_propanal,Au100,propanal,64,10,0.574,r2scan,,,,no validated size-matched selection,
+Au100_propane,Au100,propane,64,11,0.5,r2scan,,,,no validated size-matched selection,
+Au100_propanol,Au100,propanol,64,12,0.351,r2scan,,,,no validated size-matched selection,
+Au100_propene,Au100,propene,64,9,0.538,r2scan,,,,no validated size-matched selection,
+Au100_propionic_acid,Au100,propionic_acid,64,11,0.632,r2scan,,,,no validated size-matched selection,
+Au100_propyl_syringol,Au100,propyl_syringol,64,30,0.622,r2scan,,,,no validated size-matched selection,
+Au100_pyrrole,Au100,pyrrole,64,10,0.442,r2scan,,,,no validated size-matched selection,
+Au100_pyruvic_acid,Au100,pyruvic_acid,64,10,0.57,r2scan,,,,no validated size-matched selection,
+Au100_sorbitol,Au100,sorbitol,64,26,-6.666,r2scan,,,,no validated size-matched selection,
+Au100_styrene,Au100,styrene,64,16,0.534,r2scan,,,,no validated size-matched selection,
+Au100_succinic_acid,Au100,succinic_acid,64,14,-6.933,beef_vdw,,,,no validated size-matched selection,
+Au100_syringaldehyde,Au100,syringaldehyde,64,23,0.492,r2scan,,,,no validated size-matched selection,
+Au100_syringol,Au100,syringol,64,21,0.886,r2scan,,,,no validated size-matched selection,
+Au100_tartaric_acid,Au100,tartaric_acid,64,16,-0.004,r2scan,,,,no validated size-matched selection,
+Au100_thiophene,Au100,thiophene,64,9,-0.049,r2scan,,,,no validated size-matched selection,
+Au100_toluene,Au100,toluene,64,15,0.537,r2scan,,,,no validated size-matched selection,
+Au100_valeraldehyde,Au100,valeraldehyde,64,16,0.499,r2scan,,,,no validated size-matched selection,
+Au100_vanillin,Au100,vanillin,64,19,0.558,r2scan,,,,no validated size-matched selection,
+Au100_xylene,Au100,xylene,64,18,0.569,r2scan,,,,no validated size-matched selection,
+Au100_xylitol,Au100,xylitol,64,22,0.435,r2scan,,,,no validated size-matched selection,
+"Au110_1,6-anhydroglucofuranose",Au110,"1,6-anhydroglucofuranose",64,17,0.319,r2scan,,,,no validated size-matched selection,
+Au110_1-butanol,Au110,1-butanol,64,15,0.125,r2scan,,,,no validated size-matched selection,
+Au110_1-butene,Au110,1-butene,64,12,0.437,r2scan,,,,no validated size-matched selection,
+Au110_1-pentene,Au110,1-pentene,64,15,0.416,r2scan,,,,no validated size-matched selection,
+Au110_2-butanol,Au110,2-butanol,64,15,0.395,r2scan,,,,no validated size-matched selection,
+Au110_2-butene,Au110,2-butene,64,12,0.522,r2scan,,,,no validated size-matched selection,
+Au110_2-ethylphenol,Au110,2-ethylphenol,64,19,0.065,r2scan,,,,no validated size-matched selection,
+Au110_2-furanone,Au110,2-furanone,64,10,0.502,r2scan,,,,no validated size-matched selection,
+Au110_2-heptanone,Au110,2-heptanone,64,22,0.43,r2scan,,,,no validated size-matched selection,
+Au110_2-hexanone,Au110,2-hexanone,64,19,0.476,r2scan,,,,no validated size-matched selection,
+Au110_2-pentanone,Au110,2-pentanone,64,16,0.377,r2scan,,,,no validated size-matched selection,
+Au110_3-MTHF,Au110,3-MTHF,64,16,0.468,r2scan,,,,no validated size-matched selection,
+Au110_3-hydroxypropionic_acid,Au110,3-hydroxypropionic_acid,64,12,0.57,r2scan,,,,no validated size-matched selection,
+Au110_4-methylguaiacol,Au110,4-methylguaiacol,64,20,0.529,r2scan,,,,no validated size-matched selection,
+Au110_5-HMF,Au110,5-HMF,64,15,-0.393,r2scan,,,,no validated size-matched selection,
+Au110_5-heptanone,Au110,5-heptanone,64,22,0.412,r2scan,,,,no validated size-matched selection,
+Au110_5-methylfurfural,Au110,5-methylfurfural,64,14,0.454,r2scan,,,,no validated size-matched selection,
+Au110_CH4,Au110,CH4,64,5,0.518,r2scan,,,,no validated size-matched selection,
+Au110_CO,Au110,CO,64,2,-0.65,r2scan,,,,no validated size-matched selection,
+Au110_CO2,Au110,CO2,64,3,0.058,r2scan,,,,no validated size-matched selection,
+Au110_D-fructofuranose,Au110,D-fructofuranose,64,20,0.536,r2scan,,,,no validated size-matched selection,
+Au110_D-xylopyranose,Au110,D-xylopyranose,64,20,0.303,r2scan,,,,no validated size-matched selection,
+Au110_DME,Au110,DME,64,9,0.5,r2scan,,,,no validated size-matched selection,
+Au110_DMSO,Au110,DMSO,64,10,-0.122,r2scan,,,,no validated size-matched selection,
+Au110_H2,Au110,H2,64,2,0.534,r2scan,,,,no validated size-matched selection,
+Au110_H2O,Au110,H2O,64,3,-0.087,r2scan,,,,no validated size-matched selection,
+Au110_H2S,Au110,H2S,64,3,0.038,r2scan,,,,no validated size-matched selection,
+Au110_N2,Au110,N2,64,2,0.133,r2scan,,,,no validated size-matched selection,
+Au110_NH3,Au110,NH3,64,4,-0.547,r2scan,,,,no validated size-matched selection,
+Au110_NO,Au110,NO,64,2,-1.079,r2scan,,,,no validated size-matched selection,
+Au110_NO2,Au110,NO2,64,3,-3.943,r2scan,,,,no validated size-matched selection,
+Au110_SO2,Au110,SO2,64,3,-0.383,r2scan,,,,no validated size-matched selection,
+Au110_THF,Au110,THF,64,13,0.357,r2scan,,,,no validated size-matched selection,
+Au110_acetal,Au110,acetal,64,22,0.431,r2scan,,,,no validated size-matched selection,
+Au110_acetaldehyde,Au110,acetaldehyde,64,7,0.415,r2scan,,,,no validated size-matched selection,
+Au110_acetic_acid,Au110,acetic_acid,64,8,-0.258,r2scan,,,,no validated size-matched selection,
+Au110_acetone,Au110,acetone,64,10,0.476,r2scan,,,,no validated size-matched selection,
+Au110_acetophenone,Au110,acetophenone,64,17,0.412,r2scan,,,,no validated size-matched selection,
+Au110_alpha-D-glucopyranose,Au110,alpha-D-glucopyranose,64,24,-1.029,r2scan,,,,no validated size-matched selection,
+Au110_angelica_lactone,Au110,angelica_lactone,64,13,0.395,r2scan,,,,no validated size-matched selection,
+Au110_aniline,Au110,aniline,64,14,0.208,r2scan,,,,no validated size-matched selection,
+Au110_benzaldehyde,Au110,benzaldehyde,64,14,0.356,r2scan,,,,no validated size-matched selection,
+Au110_benzene,Au110,benzene,64,12,0.365,r2scan,,,,no validated size-matched selection,
+Au110_butadiene,Au110,butadiene,64,10,-0.614,r2scan,,,,no validated size-matched selection,
+Au110_butanal,Au110,butanal,64,13,0.283,r2scan,,,,no validated size-matched selection,
+Au110_butane,Au110,butane,64,14,0.305,r2scan,,,,no validated size-matched selection,
+Au110_butyric_acid,Au110,butyric_acid,64,14,0.501,r2scan,,,,no validated size-matched selection,
+Au110_caproic_acid,Au110,caproic_acid,64,20,0.358,r2scan,,,,no validated size-matched selection,
+Au110_cyclobutanone,Au110,cyclobutanone,64,11,0.431,r2scan,,,,no validated size-matched selection,
+Au110_cyclohexanone,Au110,cyclohexanone,64,17,0.347,r2scan,,,,no validated size-matched selection,
+Au110_cyclopentanone,Au110,cyclopentanone,64,14,0.372,r2scan,,,,no validated size-matched selection,
+Au110_diethyl_ether,Au110,diethyl_ether,64,15,0.398,r2scan,,,,no validated size-matched selection,
+Au110_dimethyl_succinate,Au110,dimethyl_succinate,64,17,0.593,r2scan,,,,no validated size-matched selection,
+Au110_ethane,Au110,ethane,64,8,0.461,r2scan,,,,no validated size-matched selection,
+Au110_ethanol,Au110,ethanol,64,9,0.347,r2scan,,,,no validated size-matched selection,
+Au110_ethene,Au110,ethene,64,6,0.116,r2scan,,,,no validated size-matched selection,
+Au110_ethyl_acetate,Au110,ethyl_acetate,64,14,0.334,r2scan,,,,no validated size-matched selection,
+Au110_ethylene,Au110,ethylene,64,6,0.122,r2scan,,,,no validated size-matched selection,
+Au110_ethylene_glycol,Au110,ethylene_glycol,64,10,0.063,r2scan,,,,no validated size-matched selection,
+Au110_eugenol,Au110,eugenol,64,24,0.252,r2scan,,,,no validated size-matched selection,
+Au110_formaldehyde,Au110,formaldehyde,64,4,0.308,r2scan,,,,no validated size-matched selection,
+Au110_formate,Au110,formate,64,4,-2.847,r2scan,,,,no validated size-matched selection,
+Au110_formic_acid,Au110,formic_acid,64,5,0.447,r2scan,,,,no validated size-matched selection,
+Au110_furan,Au110,furan,64,9,-0.266,r2scan,,,,no validated size-matched selection,
+Au110_furfural,Au110,furfural,64,11,-0.177,r2scan,,,,no validated size-matched selection,
+Au110_furfuryl_alcohol,Au110,furfuryl_alcohol,64,13,0.494,r2scan,,,,no validated size-matched selection,
+Au110_gamma_butyrolactone,Au110,gamma_butyrolactone,64,12,0.521,r2scan,,,,no validated size-matched selection,
+Au110_gamma_valerolactone,Au110,gamma_valerolactone,64,15,0.396,r2scan,,,,no validated size-matched selection,
+Au110_gluconic_acid,Au110,gluconic_acid,64,25,0.46,r2scan,,,,no validated size-matched selection,
+Au110_glutaric_acid,Au110,glutaric_acid,64,17,0.085,r2scan,,,,no validated size-matched selection,
+Au110_glycerol,Au110,glycerol,64,14,0.35,r2scan,,,,no validated size-matched selection,
+Au110_glycolic_acid,Au110,glycolic_acid,64,9,0.333,r2scan,,,,no validated size-matched selection,
+Au110_glyoxal,Au110,glyoxal,64,6,-2.474,beef_vdw,,,,no validated size-matched selection,
+Au110_guaiacol,Au110,guaiacol,64,17,0.237,r2scan,,,,no validated size-matched selection,
+Au110_heptane,Au110,heptane,64,23,0.311,r2scan,,,,no validated size-matched selection,
+Au110_hexanal,Au110,hexanal,64,19,0.318,r2scan,,,,no validated size-matched selection,
+Au110_hexane,Au110,hexane,64,20,0.114,r2scan,,,,no validated size-matched selection,
+Au110_hydroquinone,Au110,hydroquinone,64,14,-7.284,r2scan,,,,no validated size-matched selection,
+Au110_hydroxyacetaldehyde,Au110,hydroxyacetaldehyde,64,8,0.466,r2scan,,,,no validated size-matched selection,
+Au110_isobutane,Au110,isobutane,64,14,0.407,r2scan,,,,no validated size-matched selection,
+Au110_isobutene,Au110,isobutene,64,12,-0.079,r2scan,,,,no validated size-matched selection,
+Au110_isoeugenol,Au110,isoeugenol,64,24,0.528,r2scan,,,,no validated size-matched selection,
+Au110_isopentane,Au110,isopentane,64,17,0.304,r2scan,,,,no validated size-matched selection,
+Au110_isoprene,Au110,isoprene,64,13,-0.17,r2scan,,,,no validated size-matched selection,
+Au110_isopropanol,Au110,isopropanol,64,12,0.225,r2scan,,,,no validated size-matched selection,
+Au110_lactic_acid,Au110,lactic_acid,64,12,0.254,r2scan,,,,no validated size-matched selection,
+Au110_levoglucosan,Au110,levoglucosan,64,21,-4.345,r2scan,,,,no validated size-matched selection,
+Au110_levulinic_acid,Au110,levulinic_acid,64,16,-0.364,pbe_d3,,,,no validated size-matched selection,
+Au110_malonic_acid,Au110,malonic_acid,64,11,0.056,r2scan,,,,no validated size-matched selection,
+Au110_methane,Au110,methane,64,5,0.518,r2scan,,,,no validated size-matched selection,
+Au110_methanol,Au110,methanol,64,6,0.26,r2scan,,,,no validated size-matched selection,
+Au110_methyl_formate,Au110,methyl_formate,64,8,-3.877,beef_vdw,,,,no validated size-matched selection,
+Au110_methylcyclopentenolone,Au110,methylcyclopentenolone,64,16,0.478,r2scan,,,,no validated size-matched selection,
+Au110_methylethylketone,Au110,methylethylketone,64,13,0.489,r2scan,,,,no validated size-matched selection,
+Au110_methylmethacrylate,Au110,methylmethacrylate,64,15,-1.297,beef_vdw,,,,no validated size-matched selection,
+Au110_muconic_acid,Au110,muconic_acid,64,16,0.038,r2scan,,,,no validated size-matched selection,
+Au110_naphthalene,Au110,naphthalene,64,18,-8.253,pbe,,,,no validated size-matched selection,
+Au110_octane,Au110,octane,64,26,0.276,r2scan,,,,no validated size-matched selection,
+Au110_oxalic_acid,Au110,oxalic_acid,64,8,0.293,r2scan,,,,no validated size-matched selection,
+Au110_pentane,Au110,pentane,64,17,0.418,r2scan,,,,no validated size-matched selection,
+Au110_pentanol,Au110,pentanol,64,18,0.102,r2scan,,,,no validated size-matched selection,
+Au110_phenol,Au110,phenol,64,13,0.36,r2scan,,,,no validated size-matched selection,
+Au110_propanal,Au110,propanal,64,10,0.323,r2scan,,,,no validated size-matched selection,
+Au110_propane,Au110,propane,64,11,0.373,r2scan,,,,no validated size-matched selection,
+Au110_propanol,Au110,propanol,64,12,0.233,r2scan,,,,no validated size-matched selection,
+Au110_propene,Au110,propene,64,9,0.165,r2scan,,,,no validated size-matched selection,
+Au110_propionic_acid,Au110,propionic_acid,64,11,0.171,r2scan,,,,no validated size-matched selection,
+Au110_propyl_syringol,Au110,propyl_syringol,64,30,0.494,r2scan,,,,no validated size-matched selection,
+Au110_pyrrole,Au110,pyrrole,64,10,0.352,r2scan,,,,no validated size-matched selection,
+Au110_pyruvic_acid,Au110,pyruvic_acid,64,10,0.198,r2scan,,,,no validated size-matched selection,
+Au110_sorbitol,Au110,sorbitol,64,26,-6.85,r2scan,,,,no validated size-matched selection,
+Au110_succinic_acid,Au110,succinic_acid,64,14,-7.026,beef_vdw,,,,no validated size-matched selection,
+Au110_syringaldehyde,Au110,syringaldehyde,64,23,0.797,r2scan,,,,no validated size-matched selection,
+Au110_syringol,Au110,syringol,64,21,0.755,r2scan,,,,no validated size-matched selection,
+Au110_tartaric_acid,Au110,tartaric_acid,64,16,0.232,r2scan,,,,no validated size-matched selection,
+Au110_thiophene,Au110,thiophene,64,9,-0.438,r2scan,,,,no validated size-matched selection,
+Au110_toluene,Au110,toluene,64,15,0.387,r2scan,,,,no validated size-matched selection,
+Au110_valeraldehyde,Au110,valeraldehyde,64,16,0.298,r2scan,,,,no validated size-matched selection,
+Au110_vanillin,Au110,vanillin,64,19,0.16,r2scan,,,,no validated size-matched selection,
+Au110_xylene,Au110,xylene,64,18,0.346,r2scan,,,,no validated size-matched selection,
+Au110_xylitol,Au110,xylitol,64,22,0.265,r2scan,,,,no validated size-matched selection,
+"Au111_1,6-anhydroglucofuranose",Au111,"1,6-anhydroglucofuranose",36,17,-0.65,beef_vdw,,,,no validated size-matched selection,
+Au111_1-butanol,Au111,1-butanol,36,15,-0.798,beef_vdw,,,,no validated size-matched selection,
+Au111_1-butene,Au111,1-butene,36,12,-0.509,beef_vdw,,,,no validated size-matched selection,
+Au111_1-pentene,Au111,1-pentene,36,15,-0.652,beef_vdw,,,,no validated size-matched selection,
+Au111_2-butene,Au111,2-butene,36,12,-0.563,beef_vdw,,,,no validated size-matched selection,
+Au111_2-ethylphenol,Au111,2-ethylphenol,36,19,-0.691,beef_vdw,,,,no validated size-matched selection,
+Au111_2-furanone,Au111,2-furanone,36,10,-0.703,beef_vdw,,,,no validated size-matched selection,
+Au111_2-heptanone,Au111,2-heptanone,36,22,-1.099,beef_vdw,,,,no validated size-matched selection,
+Au111_2-hexanone,Au111,2-hexanone,36,19,-0.887,beef_vdw,,,,no validated size-matched selection,
+Au111_2-pentanone,Au111,2-pentanone,36,16,-0.889,beef_vdw,,,,no validated size-matched selection,
+Au111_3-MTHF,Au111,3-MTHF,36,16,-0.64,beef_vdw,,,,no validated size-matched selection,
+Au111_3-hydroxypropionic_acid,Au111,3-hydroxypropionic_acid,36,12,-0.953,beef_vdw,,,,no validated size-matched selection,
+Au111_4-methylguaiacol,Au111,4-methylguaiacol,36,20,-0.674,beef_vdw,,,,no validated size-matched selection,
+Au111_5-HMF,Au111,5-HMF,36,15,-1.307,beef_vdw,,,,no validated size-matched selection,
+Au111_5-heptanone,Au111,5-heptanone,36,22,-0.854,beef_vdw,,,,no validated size-matched selection,
+Au111_5-methylfurfural,Au111,5-methylfurfural,36,14,-0.926,beef_vdw,,,,no validated size-matched selection,
+Au111_CH3,Au111,CH3,36,4,,,-1.19604191,r2scan,relaxed,ok,d6c1a9cc33f29bf8d4ba01fa2f5d41c9a144fa629c2b02509c40fcd16226ba0d
+Au111_CH4,Au111,CH4,36,5,-0.486,beef_vdw,-0.21360544,beef_vdw,relaxed,ok,36e57c05eef9e874d53aa134004aa492ffdf6dc6e954e67a31e8e3c3cb0e3077
+Au111_CO,Au111,CO,36,2,-0.258,beef_vdw,-0.04158874,beef_vdw,relaxed,ok,b350bc77ec6ee23125e33b3031f520fcdeab99d533925e7fd0fa6d0d5657d653
+Au111_CO2,Au111,CO2,64,3,0.103,r2scan,,,,no validated size-matched selection,
+Au111_D-fructofuranose,Au111,D-fructofuranose,36,20,-0.816,beef_vdw,,,,no validated size-matched selection,
+Au111_D-xylopyranose,Au111,D-xylopyranose,36,20,-0.939,beef_vdw,,,,no validated size-matched selection,
+Au111_DME,Au111,DME,36,9,-0.438,beef_vdw,-0.38212091,beef_vdw,relaxed,ok,c6d73c3be357ba25ed72b2de181a3335f13864ed19f7252abc02d7d8fbbc8e53
+Au111_DMSO,Au111,DMSO,36,10,-0.978,beef_vdw,,,,no validated size-matched selection,
+Au111_H2,Au111,H2,36,2,-0.341,beef_vdw,-0.06181766,beef_vdw,SPE,ok,39bbbff10e2cf669b04082c0dc05cc45db622d782da1828f849bd88869038620
+Au111_H2O,Au111,H2O,36,3,-0.45,beef_vdw,-0.17530235,beef_vdw,relaxed,ok,bf78f7f09a387b7753d8ecd946f3a18409305eb4d4ff5add212c0cbd36477a53
+Au111_H2S,Au111,H2S,36,3,-0.549,beef_vdw,-0.33768034,beef_vdw,relaxed,ok,542d020e6787e2f8dc1b3d5818465c2d533aae0cf54e0eadc4d472da57a21f06
+Au111_N2,Au111,N2,36,2,-0.418,beef_vdw,-0.14503977,beef_vdw,relaxed,ok,012e12ea28542131022dfdab1c4a1c074caa49bc6646754e387dab7a623f31db
+Au111_NH3,Au111,NH3,36,4,-0.495,beef_vdw,-0.22314821,beef_vdw,relaxed,ok,cc48fb17e2013130d6ca2c788eb345ae3b723a19e79da6604ccfa79fc8fc71d2
+Au111_NO,Au111,NO,36,2,-7.662,beef_vdw,-7.43143395,beef_vdw,relaxed,energy_review,e7cc199a950b807448c4f7fdd9bb1856b6b341254959fa0b07ec48e62d8f1363
+Au111_SO2,Au111,SO2,36,3,-0.645,beef_vdw,-0.40072283,beef_vdw,relaxed,ok,f2d605418c7e7809a3c49ad49998bfb1713bd214f4cbec2245e386f250f98814
+Au111_THF,Au111,THF,36,13,-0.647,beef_vdw,,,,no validated size-matched selection,
+Au111_acetal,Au111,acetal,36,22,-1.027,beef_vdw,,,,no validated size-matched selection,
+Au111_acetaldehyde,Au111,acetaldehyde,36,7,-0.636,beef_vdw,-0.36605827,beef_vdw,relaxed,ok,b9dfa8160d2ed3a907caa6c18a1470bed6c1d223b7fbb3473c15aa277b9a3f73
+Au111_acetic_acid,Au111,acetic_acid,36,8,-0.687,beef_vdw,-0.41820219,beef_vdw,relaxed,ok,bcdc8f6694f1941b66b953954ecd7e59bcdbf41a11dd514fb7c7044affe71812
+Au111_acetone,Au111,acetone,36,10,-0.666,beef_vdw,,,,no validated size-matched selection,
+Au111_alpha-D-glucopyranose,Au111,alpha-D-glucopyranose,36,24,-2.542,beef_vdw,,,,no validated size-matched selection,
+Au111_angelica_lactone,Au111,angelica_lactone,36,13,-0.497,beef_vdw,,,,no validated size-matched selection,
+Au111_aniline,Au111,aniline,36,14,-0.55,beef_vdw,,,,no validated size-matched selection,
+Au111_benzaldehyde,Au111,benzaldehyde,36,14,-0.794,beef_vdw,,,,no validated size-matched selection,
+Au111_benzene,Au111,benzene,36,12,-0.814,beef_vdw,,,,no validated size-matched selection,
+Au111_butadiene,Au111,butadiene,36,10,-0.694,beef_vdw,,,,no validated size-matched selection,
+Au111_butanal,Au111,butanal,36,13,-0.681,beef_vdw,,,,no validated size-matched selection,
+Au111_butane,Au111,butane,36,14,-0.617,beef_vdw,,,,no validated size-matched selection,
+Au111_butyric_acid,Au111,butyric_acid,36,14,-0.698,beef_vdw,,,,no validated size-matched selection,
+Au111_caproic_acid,Au111,caproic_acid,36,20,-1.03,beef_vdw,,,,no validated size-matched selection,
+Au111_citric_acid,Au111,citric_acid,36,21,-8.098,pbe_d3,,,,no validated size-matched selection,
+Au111_cyclobutanone,Au111,cyclobutanone,36,11,-0.578,beef_vdw,,,,no validated size-matched selection,
+Au111_cyclopentanone,Au111,cyclopentanone,36,14,-0.498,beef_vdw,,,,no validated size-matched selection,
+Au111_diethyl_ether,Au111,diethyl_ether,36,15,-0.705,beef_vdw,,,,no validated size-matched selection,
+Au111_dimethyl_succinate,Au111,dimethyl_succinate,36,17,-0.844,beef_vdw,,,,no validated size-matched selection,
+Au111_ethane,Au111,ethane,36,8,-0.589,beef_vdw,-0.31622231,beef_vdw,relaxed,ok,24ec3a642035cccafe9548a52d9e6847dc3979e3d3181854ada14fee0b84a44e
+Au111_ethanol,Au111,ethanol,36,9,-0.414,beef_vdw,-0.39428894,beef_vdw,relaxed,ok,135ee7ab71f2a3b4ead1a528ec27c409ab412caf2f01a21dd102b7565549725a
+Au111_ethene,Au111,ethene,64,6,0.024,r2scan,,,,no validated size-matched selection,
+Au111_ethyl_acetate,Au111,ethyl_acetate,36,14,-0.696,beef_vdw,,,,no validated size-matched selection,
+Au111_ethylene,Au111,ethylene,36,6,-0.6,beef_vdw,-0.35484898,beef_vdw,relaxed,ok,b039c94ce7b0f861b034c7da8a35fc76328f5fb827533dfde581f87f974e9ccb
+Au111_ethylene_glycol,Au111,ethylene_glycol,36,10,-0.616,beef_vdw,,,,no validated size-matched selection,
+Au111_eugenol,Au111,eugenol,36,24,-0.876,beef_vdw,,,,no validated size-matched selection,
+Au111_formaldehyde,Au111,formaldehyde,36,4,-0.564,beef_vdw,-0.33939778,pbe_d3,relaxed,ok,36cede1e86e997e13e7f9e1159c5eec7e1a0ede91741d59b91ddcda5a864055a
+Au111_formate,Au111,formate,36,4,-2.846,beef_vdw,-2.56657682,beef_vdw,SPE,ok,f4ceb57a052e2ceb91d1e3da68151bde7085969305bcafe6d90c59255547b25c
+Au111_formic_acid,Au111,formic_acid,36,5,-0.625,beef_vdw,-0.38247958,beef_vdw,relaxed,ok,9bcb35674e8c96cb1d3f06427d6e5c928a9e02bdadd70a99d309b444899f73bc
+Au111_furan,Au111,furan,36,9,-0.774,beef_vdw,,,,no validated size-matched selection,
+Au111_furfuryl_alcohol,Au111,furfuryl_alcohol,36,13,-1.002,beef_vdw,,,,no validated size-matched selection,
+Au111_gamma_butyrolactone,Au111,gamma_butyrolactone,36,12,-0.434,beef_vdw,,,,no validated size-matched selection,
+Au111_gamma_valerolactone,Au111,gamma_valerolactone,36,15,-0.793,beef_vdw,,,,no validated size-matched selection,
+Au111_glutaric_acid,Au111,glutaric_acid,36,17,-1.229,beef_vdw,,,,no validated size-matched selection,
+Au111_glycerol,Au111,glycerol,64,14,0.263,r2scan,,,,no validated size-matched selection,
+Au111_glycolic_acid,Au111,glycolic_acid,36,9,-0.549,beef_vdw,,,,no validated size-matched selection,
+Au111_glyoxal,Au111,glyoxal,36,6,-3.055,beef_vdw,,,,no validated size-matched selection,
+Au111_guaiacol,Au111,guaiacol,36,17,-1.796,beef_vdw,,,,no validated size-matched selection,
+Au111_heptane,Au111,heptane,36,23,-1.245,beef_vdw,,,,no validated size-matched selection,
+Au111_hexanal,Au111,hexanal,36,19,-0.91,beef_vdw,,,,no validated size-matched selection,
+Au111_hexane,Au111,hexane,36,20,-1.139,beef_vdw,,,,no validated size-matched selection,
+Au111_isobutene,Au111,isobutene,36,12,-0.489,beef_vdw,,,,no validated size-matched selection,
+Au111_isoprene,Au111,isoprene,36,13,-0.369,beef_vdw,,,,no validated size-matched selection,
+Au111_isopropanol,Au111,isopropanol,36,12,0.263,r2scan,,,,no validated size-matched selection,
+Au111_lactic_acid,Au111,lactic_acid,36,12,-0.671,beef_vdw,,,,no validated size-matched selection,
+Au111_levoglucosan,Au111,levoglucosan,36,21,-2.792,beef_vdw,,,,no validated size-matched selection,
+Au111_malonic_acid,Au111,malonic_acid,36,11,-0.881,beef_vdw,,,,no validated size-matched selection,
+Au111_methane,Au111,methane,36,5,-0.486,beef_vdw,-0.21360544,beef_vdw,relaxed,ok,36e57c05eef9e874d53aa134004aa492ffdf6dc6e954e67a31e8e3c3cb0e3077
+Au111_methanol,Au111,methanol,36,6,-0.405,beef_vdw,-0.30591315,beef_vdw,relaxed,ok,97f27d9a1e8516fb457fef4e4daeff11ee6eaf8f48154a19e416a7e47f89d40a
+Au111_methyl_formate,Au111,methyl_formate,36,8,-4.448,beef_vdw,,,,no validated size-matched selection,
+Au111_methylethylketone,Au111,methylethylketone,36,13,-0.756,beef_vdw,,,,no validated size-matched selection,
+Au111_methylmethacrylate,Au111,methylmethacrylate,36,15,-1.968,beef_vdw,,,,no validated size-matched selection,
+Au111_muconic_acid,Au111,muconic_acid,36,16,-0.437,beef_vdw,,,,no validated size-matched selection,
+Au111_naphthalene,Au111,naphthalene,36,18,-0.944,beef_vdw,,,,no validated size-matched selection,
+Au111_octane,Au111,octane,36,26,-1.466,beef_vdw,,,,no validated size-matched selection,
+Au111_pentanol,Au111,pentanol,36,18,-0.994,beef_vdw,,,,no validated size-matched selection,
+Au111_phenol,Au111,phenol,36,13,-0.598,beef_vdw,,,,no validated size-matched selection,
+Au111_propanal,Au111,propanal,36,10,-0.462,beef_vdw,,,,no validated size-matched selection,
+Au111_propane,Au111,propane,36,11,0.315,r2scan,,,,no validated size-matched selection,
+Au111_propanol,Au111,propanol,36,12,-0.698,beef_vdw,-0.41816008,beef_vdw,SPE,ok,9a5be2f262e5687d99e64d20c40ee9487ceca9368ebdfc8ac1063bf9106c9d3a
+Au111_propene,Au111,propene,36,9,0.448,r2scan,,,,no validated size-matched selection,
+Au111_propionic_acid,Au111,propionic_acid,36,11,-0.51,beef_vdw,,,,no validated size-matched selection,
+Au111_propyl_syringol,Au111,propyl_syringol,36,30,-1.022,beef_vdw,,,,no validated size-matched selection,
+Au111_pyrrole,Au111,pyrrole,36,10,-0.73,beef_vdw,,,,no validated size-matched selection,
+Au111_pyruvic_acid,Au111,pyruvic_acid,36,10,-2.414,beef_vdw,,,,no validated size-matched selection,
+Au111_sorbitol,Au111,sorbitol,36,26,-8.66,beef_vdw,,,,no validated size-matched selection,
+Au111_styrene,Au111,styrene,36,16,-0.958,beef_vdw,,,,no validated size-matched selection,
+Au111_succinic_acid,Au111,succinic_acid,36,14,-7.539,beef_vdw,,,,no validated size-matched selection,
+Au111_syringol,Au111,syringol,36,21,-1.023,beef_vdw,,,,no validated size-matched selection,
+Au111_toluene,Au111,toluene,36,15,-0.612,beef_vdw,,,,no validated size-matched selection,
+Au111_vanillin,Au111,vanillin,36,19,-1.476,beef_vdw,,,,no validated size-matched selection,
+Au111_xylene,Au111,xylene,36,18,-0.647,beef_vdw,,,,no validated size-matched selection,
+"Co0001_1,6-anhydroglucofuranose",Co0001,"1,6-anhydroglucofuranose",64,17,0.921,r2scan,,,,no validated size-matched selection,
+Co0001_1-butanol,Co0001,1-butanol,64,15,0.907,r2scan,,,,no validated size-matched selection,
+Co0001_1-butene,Co0001,1-butene,64,12,0.293,r2scan,,,,no validated size-matched selection,
+Co0001_1-pentene,Co0001,1-pentene,64,15,0.668,r2scan,,,,no validated size-matched selection,
+Co0001_2-butanol,Co0001,2-butanol,64,15,0.909,r2scan,,,,no validated size-matched selection,
+Co0001_2-butene,Co0001,2-butene,64,12,1.077,r2scan,,,,no validated size-matched selection,
+Co0001_2-ethylphenol,Co0001,2-ethylphenol,64,19,1.055,r2scan,,,,no validated size-matched selection,
+Co0001_2-pentanone,Co0001,2-pentanone,64,16,1.035,r2scan,,,,no validated size-matched selection,
+Co0001_3-MTHF,Co0001,3-MTHF,64,16,1.003,r2scan,,,,no validated size-matched selection,
+Co0001_3-hydroxypropionic_acid,Co0001,3-hydroxypropionic_acid,64,12,0.909,r2scan,,,,no validated size-matched selection,
+Co0001_4-methylguaiacol,Co0001,4-methylguaiacol,64,20,0.92,r2scan,,,,no validated size-matched selection,
+Co0001_5-HMF,Co0001,5-HMF,64,15,0.799,r2scan,,,,no validated size-matched selection,
+Co0001_5-heptanone,Co0001,5-heptanone,64,22,0.971,r2scan,,,,no validated size-matched selection,
+Co0001_5-methylfurfural,Co0001,5-methylfurfural,64,14,0.856,r2scan,,,,no validated size-matched selection,
+Co0001_CH4,Co0001,CH4,64,5,-0.398,r2scan,,,,no validated size-matched selection,
+Co0001_CO,Co0001,CO,64,2,-0.471,r2scan,,,,no validated size-matched selection,
+Co0001_CO2,Co0001,CO2,64,3,1.171,r2scan,,,,no validated size-matched selection,
+Co0001_D-fructofuranose,Co0001,D-fructofuranose,64,20,0.98,r2scan,,,,no validated size-matched selection,
+Co0001_D-xylopyranose,Co0001,D-xylopyranose,64,20,0.777,r2scan,,,,no validated size-matched selection,
+Co0001_DME,Co0001,DME,64,9,0.903,r2scan,,,,no validated size-matched selection,
+Co0001_DMSO,Co0001,DMSO,64,10,1.08,r2scan,,,,no validated size-matched selection,
+Co0001_H2,Co0001,H2,64,2,1.202,r2scan,,,,no validated size-matched selection,
+Co0001_H2O,Co0001,H2O,64,3,0.966,r2scan,,,,no validated size-matched selection,
+Co0001_H2S,Co0001,H2S,64,3,-1.828,r2scan,,,,no validated size-matched selection,
+Co0001_N2,Co0001,N2,64,2,0.698,r2scan,,,,no validated size-matched selection,
+Co0001_NH3,Co0001,NH3,64,4,0.344,r2scan,,,,no validated size-matched selection,
+Co0001_NO,Co0001,NO,64,2,0.284,r2scan,,,,no validated size-matched selection,
+Co0001_NO2,Co0001,NO2,64,3,-1.955,r2scan,,,,no validated size-matched selection,
+Co0001_SO2,Co0001,SO2,64,3,0.983,r2scan,,,,no validated size-matched selection,
+Co0001_THF,Co0001,THF,64,13,1.117,r2scan,,,,no validated size-matched selection,
+Co0001_acetaldehyde,Co0001,acetaldehyde,64,7,1.108,r2scan,,,,no validated size-matched selection,
+Co0001_acetic_acid,Co0001,acetic_acid,64,8,1.143,r2scan,,,,no validated size-matched selection,
+Co0001_acetone,Co0001,acetone,64,10,1.092,r2scan,,,,no validated size-matched selection,
+Co0001_acetophenone,Co0001,acetophenone,64,17,0.878,r2scan,,,,no validated size-matched selection,
+Co0001_alpha-D-glucopyranose,Co0001,alpha-D-glucopyranose,64,24,-0.867,r2scan,,,,no validated size-matched selection,
+Co0001_angelica_lactone,Co0001,angelica_lactone,64,13,1.084,r2scan,,,,no validated size-matched selection,
+Co0001_aniline,Co0001,aniline,64,14,0.364,r2scan,,,,no validated size-matched selection,
+Co0001_benzaldehyde,Co0001,benzaldehyde,64,14,0.803,r2scan,,,,no validated size-matched selection,
+Co0001_benzene,Co0001,benzene,64,12,0.571,r2scan,,,,no validated size-matched selection,
+Co0001_butadiene,Co0001,butadiene,64,10,-0.326,r2scan,,,,no validated size-matched selection,
+Co0001_butanal,Co0001,butanal,64,13,0.865,r2scan,,,,no validated size-matched selection,
+Co0001_butane,Co0001,butane,64,14,1.042,r2scan,,,,no validated size-matched selection,
+Co0001_butyric_acid,Co0001,butyric_acid,64,14,1.081,r2scan,,,,no validated size-matched selection,
+Co0001_caproic_acid,Co0001,caproic_acid,64,20,0.962,r2scan,,,,no validated size-matched selection,
+Co0001_cyclopentanone,Co0001,cyclopentanone,64,14,1.026,r2scan,,,,no validated size-matched selection,
+Co0001_diethyl_ether,Co0001,diethyl_ether,64,15,0.858,r2scan,,,,no validated size-matched selection,
+Co0001_dimethyl_succinate,Co0001,dimethyl_succinate,64,17,0.943,r2scan,,,,no validated size-matched selection,
+Co0001_ethane,Co0001,ethane,64,8,1.498,r2scan,,,,no validated size-matched selection,
+Co0001_ethanol,Co0001,ethanol,64,9,1.194,r2scan,,,,no validated size-matched selection,
+Co0001_ethene,Co0001,ethene,64,6,0.414,r2scan,,,,no validated size-matched selection,
+Co0001_ethyl_acetate,Co0001,ethyl_acetate,64,14,1.143,r2scan,,,,no validated size-matched selection,
+Co0001_ethylene,Co0001,ethylene,64,6,0.23,r2scan,,,,no validated size-matched selection,
+Co0001_ethylene_glycol,Co0001,ethylene_glycol,64,10,1.039,r2scan,,,,no validated size-matched selection,
+Co0001_eugenol,Co0001,eugenol,64,24,0.605,r2scan,,,,no validated size-matched selection,
+Co0001_formaldehyde,Co0001,formaldehyde,64,4,0.898,r2scan,,,,no validated size-matched selection,
+Co0001_formate,Co0001,formate,64,4,0.241,r2scan,,,,no validated size-matched selection,
+Co0001_formic_acid,Co0001,formic_acid,64,5,1.215,r2scan,,,,no validated size-matched selection,
+Co0001_furan,Co0001,furan,64,9,1.128,r2scan,,,,no validated size-matched selection,
+Co0001_furfural,Co0001,furfural,64,11,0.407,r2scan,,,,no validated size-matched selection,
+Co0001_glycerol,Co0001,glycerol,64,14,0.962,r2scan,,,,no validated size-matched selection,
+Co0001_guaiacol,Co0001,guaiacol,64,17,0.814,r2scan,,,,no validated size-matched selection,
+Co0001_heptane,Co0001,heptane,64,23,0.908,r2scan,,,,no validated size-matched selection,
+Co0001_hexanal,Co0001,hexanal,64,19,0.91,r2scan,,,,no validated size-matched selection,
+Co0001_hexane,Co0001,hexane,64,20,0.859,r2scan,,,,no validated size-matched selection,
+Co0001_isobutene,Co0001,isobutene,64,12,0.822,r2scan,,,,no validated size-matched selection,
+Co0001_isoprene,Co0001,isoprene,64,13,0.555,r2scan,,,,no validated size-matched selection,
+Co0001_isopropanol,Co0001,isopropanol,64,12,1.069,r2scan,,,,no validated size-matched selection,
+Co0001_lactic_acid,Co0001,lactic_acid,64,12,1.084,r2scan,,,,no validated size-matched selection,
+Co0001_levulinic_acid,Co0001,levulinic_acid,64,16,-0.679,pbe_d3,,,,no validated size-matched selection,
+Co0001_malonic_acid,Co0001,malonic_acid,64,11,1.998,r2scan,,,,no validated size-matched selection,
+Co0001_methane,Co0001,methane,64,5,1.124,r2scan,,,,no validated size-matched selection,
+Co0001_methanol,Co0001,methanol,64,6,0.912,r2scan,,,,no validated size-matched selection,
+Co0001_methylcyclopentenolone,Co0001,methylcyclopentenolone,64,16,0.908,r2scan,,,,no validated size-matched selection,
+Co0001_methylethylketone,Co0001,methylethylketone,64,13,1.014,r2scan,,,,no validated size-matched selection,
+Co0001_methylmethacrylate,Co0001,methylmethacrylate,64,15,1.617,pbe,,,,no validated size-matched selection,
+Co0001_muconic_acid,Co0001,muconic_acid,64,16,1.098,r2scan,,,,no validated size-matched selection,
+Co0001_propane,Co0001,propane,64,11,2.909,r2scan,,,,no validated size-matched selection,
+Co0001_propanol,Co0001,propanol,64,12,1.076,r2scan,,,,no validated size-matched selection,
+Co0001_propene,Co0001,propene,64,9,0.465,r2scan,,,,no validated size-matched selection,
+Co0001_propionic_acid,Co0001,propionic_acid,64,11,1.051,r2scan,,,,no validated size-matched selection,
+Co0001_propyl_syringol,Co0001,propyl_syringol,64,30,0.932,r2scan,,,,no validated size-matched selection,
+Co0001_pyrrole,Co0001,pyrrole,64,10,0.813,r2scan,,,,no validated size-matched selection,
+Co0001_pyruvic_acid,Co0001,pyruvic_acid,64,10,0.928,r2scan,,,,no validated size-matched selection,
+Co0001_sorbitol,Co0001,sorbitol,64,26,-6.849,r2scan,,,,no validated size-matched selection,
+Co0001_styrene,Co0001,styrene,64,16,-0.336,r2scan,,,,no validated size-matched selection,
+Co0001_toluene,Co0001,toluene,64,15,0.828,r2scan,,,,no validated size-matched selection,
+Co0001_xylene,Co0001,xylene,64,18,0.695,r2scan,,,,no validated size-matched selection,
+Co0001_xylitol,Co0001,xylitol,64,22,0.827,r2scan,,,,no validated size-matched selection,
+Cr111_1-butene,Cr111,1-butene,64,12,3.305,pbe,,,,no validated size-matched selection,
+Cr111_2-pentanone,Cr111,2-pentanone,64,16,-4.732,pbe,,,,no validated size-matched selection,
+Cr111_3-MTHF,Cr111,3-MTHF,64,16,-6.067,pbe,,,,no validated size-matched selection,
+Cr111_5-heptanone,Cr111,5-heptanone,64,22,-7.419,pbe,,,,no validated size-matched selection,
+Cr111_CO,Cr111,CO,64,2,-1.191,pbe,,,,no validated size-matched selection,
+Cr111_CO2,Cr111,CO2,64,3,-2.958,pbe,,,,no validated size-matched selection,
+Cr111_H2O,Cr111,H2O,64,3,-0.137,pbe,,,,no validated size-matched selection,
+Cr111_acetaldehyde,Cr111,acetaldehyde,64,7,0.956,pbe,,,,no validated size-matched selection,
+Cr111_benzene,Cr111,benzene,64,12,-6.225,pbe,,,,no validated size-matched selection,
+Cr111_butadiene,Cr111,butadiene,64,10,-7.305,pbe,,,,no validated size-matched selection,
+Cr111_butyric_acid,Cr111,butyric_acid,64,14,-6.495,pbe,,,,no validated size-matched selection,
+Cr111_caproic_acid,Cr111,caproic_acid,64,20,-4.225,pbe,,,,no validated size-matched selection,
+Cr111_cyclopentanone,Cr111,cyclopentanone,64,14,-2.692,pbe,,,,no validated size-matched selection,
+Cr111_ethane,Cr111,ethane,64,8,-5.009,pbe,,,,no validated size-matched selection,
+Cr111_ethanol,Cr111,ethanol,64,9,-3.977,pbe,,,,no validated size-matched selection,
+Cr111_ethene,Cr111,ethene,64,6,-7.203,pbe,,,,no validated size-matched selection,
+Cr111_ethylene,Cr111,ethylene,64,6,-0.972,pbe,,,,no validated size-matched selection,
+Cr111_formic_acid,Cr111,formic_acid,64,5,-5.208,pbe,,,,no validated size-matched selection,
+Cr111_furfural,Cr111,furfural,64,11,-1.866,pbe,,,,no validated size-matched selection,
+Cr111_glycerol,Cr111,glycerol,64,14,-4.466,pbe,,,,no validated size-matched selection,
+Cr111_isobutene,Cr111,isobutene,64,12,-3.261,pbe,,,,no validated size-matched selection,
+Cr111_isoprene,Cr111,isoprene,64,13,-1.459,pbe,,,,no validated size-matched selection,
+Cr111_isopropanol,Cr111,isopropanol,64,12,-0.089,pbe,,,,no validated size-matched selection,
+Cr111_lactic_acid,Cr111,lactic_acid,64,12,-1.119,pbe,,,,no validated size-matched selection,
+Cr111_methanol,Cr111,methanol,64,6,-5.624,pbe,,,,no validated size-matched selection,
+Cr111_propane,Cr111,propane,64,11,-4.141,pbe,,,,no validated size-matched selection,
+Cr111_propanol,Cr111,propanol,64,12,4.315,pbe,,,,no validated size-matched selection,
+Cr111_propene,Cr111,propene,64,9,-4.401,pbe,,,,no validated size-matched selection,
+Cr111_pyruvic_acid,Cr111,pyruvic_acid,64,10,0.568,pbe,,,,no validated size-matched selection,
+Cr111_toluene,Cr111,toluene,64,15,-7.506,pbe,,,,no validated size-matched selection,
+Cu001_1-butene,Cu001,1-butene,64,12,0.146,pbe,,,,no validated size-matched selection,
+Cu001_1-pentene,Cu001,1-pentene,64,15,0.243,pbe,,,,no validated size-matched selection,
+Cu001_2-pentanone,Cu001,2-pentanone,64,16,-0.182,pbe,,,,no validated size-matched selection,
+Cu001_3-MTHF,Cu001,3-MTHF,64,16,-0.088,pbe,,,,no validated size-matched selection,
+Cu001_5-heptanone,Cu001,5-heptanone,64,22,0.301,pbe,,,,no validated size-matched selection,
+Cu001_CO,Cu001,CO,64,2,-0.778,pbe,,,,no validated size-matched selection,
+Cu001_CO2,Cu001,CO2,64,3,-0.026,pbe,,,,no validated size-matched selection,
+Cu001_DME,Cu001,DME,64,9,-4.707,pbe,,,,no validated size-matched selection,
+Cu001_H2O,Cu001,H2O,64,3,-0.23,pbe,,,,no validated size-matched selection,
+Cu001_acetaldehyde,Cu001,acetaldehyde,64,7,-0.185,pbe,,,,no validated size-matched selection,
+Cu001_benzene,Cu001,benzene,64,12,0.064,pbe,,,,no validated size-matched selection,
+Cu001_butadiene,Cu001,butadiene,64,10,-0.377,pbe,,,,no validated size-matched selection,
+Cu001_butyric_acid,Cu001,butyric_acid,64,14,-0.289,pbe,,,,no validated size-matched selection,
+Cu001_caproic_acid,Cu001,caproic_acid,64,20,0.116,pbe,,,,no validated size-matched selection,
+Cu001_cyclopentanone,Cu001,cyclopentanone,64,14,-0.03,pbe,,,,no validated size-matched selection,
+Cu001_ethane,Cu001,ethane,64,8,0.002,pbe,,,,no validated size-matched selection,
+Cu001_ethanol,Cu001,ethanol,64,9,-0.059,pbe,,,,no validated size-matched selection,
+Cu001_ethene,Cu001,ethene,64,6,0.155,pbe,,,,no validated size-matched selection,
+Cu001_ethylene,Cu001,ethylene,64,6,0.162,pbe,,,,no validated size-matched selection,
+Cu001_formic_acid,Cu001,formic_acid,64,5,-0.245,pbe,,,,no validated size-matched selection,
+Cu001_furfural,Cu001,furfural,64,11,-0.039,pbe,,,,no validated size-matched selection,
+Cu001_glycerol,Cu001,glycerol,64,14,-0.116,pbe,,,,no validated size-matched selection,
+Cu001_isobutene,Cu001,isobutene,64,12,0.066,pbe,,,,no validated size-matched selection,
+Cu001_isoprene,Cu001,isoprene,64,13,0.08,pbe,,,,no validated size-matched selection,
+Cu001_isopropanol,Cu001,isopropanol,64,12,-0.202,pbe,,,,no validated size-matched selection,
+Cu001_lactic_acid,Cu001,lactic_acid,64,12,0.013,pbe,,,,no validated size-matched selection,
+Cu001_methanol,Cu001,methanol,64,6,-0.225,pbe,,,,no validated size-matched selection,
+Cu001_propane,Cu001,propane,64,11,-0.013,pbe,,,,no validated size-matched selection,
+Cu001_propanol,Cu001,propanol,64,12,-0.219,pbe,,,,no validated size-matched selection,
+Cu001_propene,Cu001,propene,64,9,0.359,pbe,,,,no validated size-matched selection,
+Cu001_pyruvic_acid,Cu001,pyruvic_acid,64,10,-2.578,pbe,,,,no validated size-matched selection,
+Cu001_toluene,Cu001,toluene,64,15,-0.062,pbe,,,,no validated size-matched selection,
+Cu100_1-butene,Cu100,1-butene,64,12,-0.052,r2scan,,,,no validated size-matched selection,
+Cu100_1-pentene,Cu100,1-pentene,64,15,0.158,r2scan,,,,no validated size-matched selection,
+Cu100_2-pentanone,Cu100,2-pentanone,64,16,-0.246,r2scan,,,,no validated size-matched selection,
+Cu100_3-MTHF,Cu100,3-MTHF,64,16,-0.275,r2scan,,,,no validated size-matched selection,
+Cu100_3-hydroxypropionic_acid,Cu100,3-hydroxypropionic_acid,64,12,-0.379,r2scan,,,,no validated size-matched selection,
+Cu100_5-HMF,Cu100,5-HMF,64,15,-1.14,r2scan,,,,no validated size-matched selection,
+Cu100_5-heptanone,Cu100,5-heptanone,64,22,0.066,r2scan,,,,no validated size-matched selection,
+Cu100_CO,Cu100,CO,64,2,-0.643,r2scan,-1.02749534,pbe_d3,relaxed,ok,46b0393cbaa8c09f34d253386832dd87fb515e6a3a208d4794d54778ecfb7df7
+Cu100_CO2,Cu100,CO2,64,3,0.122,r2scan,-0.03216797,pbe,relaxed,ok,ae8e2bacafb0e306fc171c52cf72541305b9f75b2b0412bf5d35c0b001a72612
+Cu100_DME,Cu100,DME,64,9,-0.219,r2scan,-0.65125529,pbe_d3,relaxed,ok,afb51a4e0a21fbefc3d3dbd5fd1919700ba740966690660497778ae6c7a5e114
+Cu100_H2O,Cu100,H2O,64,3,-0.154,r2scan,-0.47618076,pbe_d3,relaxed,ok,c1ed211f359ed27f01a9cb9f4792323de6ca61a5d21c789e6fef68bbcc6fd2c7
+Cu100_acetaldehyde,Cu100,acetaldehyde,64,7,-0.154,r2scan,-0.4874912,pbe_d3,relaxed,ok,f50fa30ff19f9cf17c0a4b0dc704202ad4056f9110c5fac0ccf2863c4209b240
+Cu100_acetic_acid,Cu100,acetic_acid,64,8,-0.297,r2scan,-0.29733999,r2scan,SPE,ok,7e3ff057abeeb1fc0d25698e93f30be95d7f6d2f474ddf622bdede6df0ac80bf
+Cu100_benzene,Cu100,benzene,64,12,-0.23,r2scan,,,,no validated size-matched selection,
+Cu100_butadiene,Cu100,butadiene,64,10,-0.597,r2scan,,,,no validated size-matched selection,
+Cu100_butyric_acid,Cu100,butyric_acid,64,14,-0.278,r2scan,,,,no validated size-matched selection,
+Cu100_caproic_acid,Cu100,caproic_acid,64,20,-0.348,r2scan,,,,no validated size-matched selection,
+Cu100_cyclopentanone,Cu100,cyclopentanone,64,14,-0.217,r2scan,,,,no validated size-matched selection,
+Cu100_ethane,Cu100,ethane,64,8,0.131,r2scan,-0.36657454,pbe_d3,relaxed,ok,aabb25eed13046c3546d2952733ce75e6ed94f00ecdb8c00c5ab63af281b7aea
+Cu100_ethanol,Cu100,ethanol,64,9,-0.209,r2scan,-0.72768024,pbe_d3,relaxed,ok,2c41a4fc53235bd0c99cdfaf72d6e76efd63347f9101d022f3ef36a99d117544
+Cu100_ethene,Cu100,ethene,64,6,-0.001,r2scan,-0.73569194,pbe_d3,relaxed,ok,0a5103e131be410af556ccf0af9833b75c97fbce28a1e619609ef684a342eeb7
+Cu100_ethylene,Cu100,ethylene,64,6,0.018,r2scan,-0.73569194,pbe_d3,relaxed,ok,0a5103e131be410af556ccf0af9833b75c97fbce28a1e619609ef684a342eeb7
+Cu100_formic_acid,Cu100,formic_acid,64,5,-0.206,r2scan,-0.62281295,pbe_d3,relaxed,ok,185e7d01922db5c0ea55318f962241838d102d810cdc9a833412f99ad4b78ab9
+Cu100_furfural,Cu100,furfural,64,11,-0.386,r2scan,,,,no validated size-matched selection,
+Cu100_glycerol,Cu100,glycerol,64,14,-0.514,r2scan,,,,no validated size-matched selection,
+Cu100_isobutene,Cu100,isobutene,64,12,-0.135,r2scan,,,,no validated size-matched selection,
+Cu100_isoprene,Cu100,isoprene,64,13,-0.263,r2scan,,,,no validated size-matched selection,
+Cu100_isopropanol,Cu100,isopropanol,64,12,-0.208,r2scan,,,,no validated size-matched selection,
+Cu100_lactic_acid,Cu100,lactic_acid,64,12,-0.185,r2scan,,,,no validated size-matched selection,
+Cu100_methanol,Cu100,methanol,64,6,-0.191,r2scan,-0.59068061,pbe_d3,relaxed,ok,9290b5fa0817bf150125da519daea010508e0b3eb53f1080db324dd1702e77da
+Cu100_propane,Cu100,propane,64,11,0.122,r2scan,,,,no validated size-matched selection,
+Cu100_propanol,Cu100,propanol,64,12,-0.212,r2scan,,,,no validated size-matched selection,
+Cu100_propene,Cu100,propene,64,9,0.149,r2scan,,,,no validated size-matched selection,
+Cu100_propionic_acid,Cu100,propionic_acid,64,11,-0.271,r2scan,,,,no validated size-matched selection,
+Cu100_pyruvic_acid,Cu100,pyruvic_acid,64,10,-0.544,r2scan,,,,no validated size-matched selection,
+Cu100_toluene,Cu100,toluene,64,15,-0.083,r2scan,,,,no validated size-matched selection,
+Cu110_1-butene,Cu110,1-butene,24,12,-0.829,beef_vdw,,,,no validated size-matched selection,
+Cu110_1-pentene,Cu110,1-pentene,24,15,-0.874,beef_vdw,,,,no validated size-matched selection,
+Cu110_2-pentanone,Cu110,2-pentanone,24,16,-0.858,beef_vdw,,,,no validated size-matched selection,
+Cu110_3-MTHF,Cu110,3-MTHF,24,16,-0.781,beef_vdw,,,,no validated size-matched selection,
+Cu110_3-hydroxypropionic_acid,Cu110,3-hydroxypropionic_acid,24,12,-0.937,beef_vdw,,,,no validated size-matched selection,
+Cu110_5-HMF,Cu110,5-HMF,24,15,-0.977,beef_vdw,,,,no validated size-matched selection,
+Cu110_5-heptanone,Cu110,5-heptanone,24,22,-0.936,beef_vdw,,,,no validated size-matched selection,
+Cu110_CO,Cu110,CO,24,2,-1.332,beef_vdw,,,,no validated size-matched selection,
+Cu110_CO2,Cu110,CO2,24,3,-0.727,beef_vdw,,,,no validated size-matched selection,
+Cu110_DME,Cu110,DME,24,9,-0.747,beef_vdw,,,,no validated size-matched selection,
+Cu110_H2O,Cu110,H2O,24,3,-0.866,beef_vdw,,,,no validated size-matched selection,
+Cu110_acetaldehyde,Cu110,acetaldehyde,24,7,-0.918,beef_vdw,,,,no validated size-matched selection,
+Cu110_acetic_acid,Cu110,acetic_acid,24,8,-1.132,beef_vdw,,,,no validated size-matched selection,
+Cu110_benzene,Cu110,benzene,24,12,-0.961,beef_vdw,,,,no validated size-matched selection,
+Cu110_butadiene,Cu110,butadiene,24,10,-1.295,beef_vdw,,,,no validated size-matched selection,
+Cu110_butyric_acid,Cu110,butyric_acid,24,14,-1.21,beef_vdw,,,,no validated size-matched selection,
+Cu110_caproic_acid,Cu110,caproic_acid,24,20,-0.898,beef_vdw,,,,no validated size-matched selection,
+Cu110_cyclopentanone,Cu110,cyclopentanone,24,14,-0.848,beef_vdw,,,,no validated size-matched selection,
+Cu110_ethane,Cu110,ethane,24,8,-0.738,beef_vdw,,,,no validated size-matched selection,
+Cu110_ethanol,Cu110,ethanol,64,9,-1.005,beef_vdw,,,,no validated size-matched selection,
+Cu110_ethene,Cu110,ethene,24,6,-0.431,r2scan,,,,no validated size-matched selection,
+Cu110_ethylene,Cu110,ethylene,24,6,-0.708,beef_vdw,,,,no validated size-matched selection,
+Cu110_formic_acid,Cu110,formic_acid,24,5,-1.025,beef_vdw,,,,no validated size-matched selection,
+Cu110_glycerol,Cu110,glycerol,64,14,-1.245,beef_vdw,,,,no validated size-matched selection,
+Cu110_isobutene,Cu110,isobutene,24,12,-0.687,beef_vdw,,,,no validated size-matched selection,
+Cu110_isoprene,Cu110,isoprene,24,13,-1.192,beef_vdw,,,,no validated size-matched selection,
+Cu110_isopropanol,Cu110,isopropanol,64,12,-0.395,r2scan,,,,no validated size-matched selection,
+Cu110_lactic_acid,Cu110,lactic_acid,24,12,-1.062,beef_vdw,,,,no validated size-matched selection,
+Cu110_methanol,Cu110,methanol,24,6,-0.925,beef_vdw,,,,no validated size-matched selection,
+Cu110_methylmethacrylate,Cu110,methylmethacrylate,24,15,-2.352,beef_vdw,,,,no validated size-matched selection,
+Cu110_propane,Cu110,propane,24,11,0.04,r2scan,,,,no validated size-matched selection,
+Cu110_propanol,Cu110,propanol,24,12,-0.384,r2scan,,,,no validated size-matched selection,
+Cu110_propene,Cu110,propene,64,9,-0.443,r2scan,,,,no validated size-matched selection,
+Cu110_propionic_acid,Cu110,propionic_acid,24,11,-1.192,beef_vdw,,,,no validated size-matched selection,
+Cu110_pyruvic_acid,Cu110,pyruvic_acid,24,10,-2.779,beef_vdw,,,,no validated size-matched selection,
+Cu110_toluene,Cu110,toluene,24,15,-0.985,beef_vdw,,,,no validated size-matched selection,
+Cu111_1-butene,Cu111,1-butene,64,12,0.054,r2scan,,,,no validated size-matched selection,
+Cu111_1-pentene,Cu111,1-pentene,64,15,-0.035,r2scan,,,,no validated size-matched selection,
+Cu111_2-pentanone,Cu111,2-pentanone,64,16,-0.161,r2scan,,,,no validated size-matched selection,
+Cu111_3-MTHF,Cu111,3-MTHF,64,16,-0.077,r2scan,,,,no validated size-matched selection,
+Cu111_3-hydroxypropionic_acid,Cu111,3-hydroxypropionic_acid,64,12,-0.221,r2scan,,,,no validated size-matched selection,
+Cu111_5-HMF,Cu111,5-HMF,64,15,-1.322,r2scan,,,,no validated size-matched selection,
+Cu111_5-heptanone,Cu111,5-heptanone,64,22,0.066,r2scan,,,,no validated size-matched selection,
+Cu111_CO,Cu111,CO,64,2,-0.824,r2scan,-0.83265767,r2scan,SPE,ok,125842331da0153ceb910597d95c299303123fc19505626b4dcd3c79461a58f4
+Cu111_CO2,Cu111,CO2,64,3,0.168,r2scan,0.15463463,r2scan,SPE,ok,5850484c08f90434f9e30ac1736c822cf8fbba39f814b6d8634c8a21e5a3494f
+Cu111_DME,Cu111,DME,64,9,-0.134,r2scan,-0.64085923,pbe_d3,relaxed,ok,324ba3e23f8f6b1b355b23d01fd7f7e1ab2d99b488471584b8d73da7bb9d44b6
+Cu111_H2O,Cu111,H2O,64,3,0.094,r2scan,-0.4084764,pbe_d3,relaxed,ok,ecec840aa3252a4ae5ab60dd67fc32dd1dcf87e1141f76841430eb90cffaa781
+Cu111_acetaldehyde,Cu111,acetaldehyde,64,7,-0.112,r2scan,-0.4844706,pbe_d3,relaxed,ok,aea3b7bb25b268377b2197dcf7a489fc7a0e32ff10ca377e7c6e90ab60a8fb73
+Cu111_acetic_acid,Cu111,acetic_acid,64,8,-0.237,r2scan,-0.51651628,beef_vdw,relaxed,ok,d67613aaa41b6db1df1f3c5887fc3b827ed15f0686ad34f5cdf9481abdf2194a
+Cu111_benzene,Cu111,benzene,64,12,0.064,r2scan,,,,no validated size-matched selection,
+Cu111_butadiene,Cu111,butadiene,64,10,-0.045,r2scan,,,,no validated size-matched selection,
+Cu111_butyric_acid,Cu111,butyric_acid,64,14,-0.211,r2scan,,,,no validated size-matched selection,
+Cu111_caproic_acid,Cu111,caproic_acid,64,20,-0.326,r2scan,,,,no validated size-matched selection,
+Cu111_cyclopentanone,Cu111,cyclopentanone,64,14,-0.161,r2scan,,,,no validated size-matched selection,
+Cu111_ethane,Cu111,ethane,64,8,0.138,r2scan,-0.08854377,r2scan,relaxed,ok,2f5abb975e3e5f5899c8ab27acc77561fe4b3cc4dcc7768ccf63fe2d10d554cb
+Cu111_ethanol,Cu111,ethanol,64,9,-0.023,r2scan,-0.64252431,pbe_d3,relaxed,ok,14913669dfab5772937047d0e149878cd92e260e8039f4d73e2ffdba7b8bcd74
+Cu111_ethene,Cu111,ethene,64,6,0.105,r2scan,-0.78470588,pbe_d3,relaxed,ok,356bf25dff2b42859a2999f7f0f8fd683ec7dfa2441b271894627bdcd50f4286
+Cu111_ethylene,Cu111,ethylene,64,6,0.116,r2scan,-0.78470588,pbe_d3,relaxed,ok,356bf25dff2b42859a2999f7f0f8fd683ec7dfa2441b271894627bdcd50f4286
+Cu111_formic_acid,Cu111,formic_acid,64,5,0.011,r2scan,-0.01720029,r2scan,SPE,ok,57e77776918432407122b5c2145334cc00076fe50adf68148f37dbe1ca41da0d
+Cu111_furfural,Cu111,furfural,64,11,-0.026,r2scan,,,,no validated size-matched selection,
+Cu111_glycerol,Cu111,glycerol,64,14,-0.292,r2scan,,,,no validated size-matched selection,
+Cu111_isobutene,Cu111,isobutene,64,12,0.059,r2scan,,,,no validated size-matched selection,
+Cu111_isoprene,Cu111,isoprene,64,13,0.088,r2scan,,,,no validated size-matched selection,
+Cu111_isopropanol,Cu111,isopropanol,64,12,-0.087,r2scan,-0.09799658,r2scan,SPE,ok,18a93b98ef51ad76d56f037f72032b34ee8bbd65739963caa73a2363dc4dd53a
+Cu111_lactic_acid,Cu111,lactic_acid,64,12,-0.22,r2scan,,,,no validated size-matched selection,
+Cu111_methanol,Cu111,methanol,64,6,-0.093,r2scan,-0.11400296,r2scan,SPE,ok,50019f633015d25223b70a07b4fea5c28b45c86c760bff1e35e25b4932e5ef37
+Cu111_methylmethacrylate,Cu111,methylmethacrylate,64,15,-1.462,beef_vdw,,,,no validated size-matched selection,
+Cu111_propane,Cu111,propane,64,11,0.124,r2scan,0.1134875,r2scan,SPE,ok,4ca38d9a9ae46de38ba77ae8c0e3a76fe05b397623f335689da5f0660ea82fc4
+Cu111_propanol,Cu111,propanol,64,12,-0.135,r2scan,-0.14589438,r2scan,SPE,ok,9b4c706208434412365702b39ff388b1940d6e1438c088de3ac98d6b08800eaa
+Cu111_propene,Cu111,propene,64,9,0.1,r2scan,0.08880039,r2scan,SPE,ok,f5fa0bef0f5fe8446f9b685144cf6a20b0146e189bb418513b71811b033c42fe
+Cu111_propionic_acid,Cu111,propionic_acid,64,11,-0.254,r2scan,,,,no validated size-matched selection,
+Cu111_pyruvic_acid,Cu111,pyruvic_acid,64,10,-0.101,r2scan,,,,no validated size-matched selection,
+Cu111_toluene,Cu111,toluene,64,15,0.004,r2scan,,,,no validated size-matched selection,
+Fe111_1-butene,Fe111,1-butene,64,12,4.3,pbe_d3,,,,no validated size-matched selection,
+Fe111_1-pentene,Fe111,1-pentene,64,15,2.827,r2scan,,,,no validated size-matched selection,
+Fe111_2-pentanone,Fe111,2-pentanone,64,16,4.017,r2scan,,,,no validated size-matched selection,
+Fe111_3-MTHF,Fe111,3-MTHF,64,16,2.98,r2scan,,,,no validated size-matched selection,
+Fe111_3-hydroxypropionic_acid,Fe111,3-hydroxypropionic_acid,64,12,4.101,r2scan,,,,no validated size-matched selection,
+Fe111_5-HMF,Fe111,5-HMF,64,15,2.491,r2scan,,,,no validated size-matched selection,
+Fe111_5-heptanone,Fe111,5-heptanone,64,22,6.373,pbe_d3,,,,no validated size-matched selection,
+Fe111_CO,Fe111,CO,64,2,2.305,r2scan,,,,no validated size-matched selection,
+Fe111_DME,Fe111,DME,64,9,5.363,r2scan,,,,no validated size-matched selection,
+Fe111_H2O,Fe111,H2O,64,3,3.572,r2scan,,,,no validated size-matched selection,
+Fe111_acetaldehyde,Fe111,acetaldehyde,64,7,7.485,r2scan,,,,no validated size-matched selection,
+Fe111_acetic_acid,Fe111,acetic_acid,64,8,4.408,r2scan,,,,no validated size-matched selection,
+Fe111_benzene,Fe111,benzene,64,12,6.192,r2scan,,,,no validated size-matched selection,
+Fe111_butyric_acid,Fe111,butyric_acid,64,14,3.143,r2scan,,,,no validated size-matched selection,
+Fe111_caproic_acid,Fe111,caproic_acid,64,20,3.113,r2scan,,,,no validated size-matched selection,
+Fe111_cyclopentanone,Fe111,cyclopentanone,64,14,5.151,r2scan,,,,no validated size-matched selection,
+Fe111_ethane,Fe111,ethane,64,8,5.616,r2scan,,,,no validated size-matched selection,
+Fe111_ethanol,Fe111,ethanol,64,9,3.134,r2scan,,,,no validated size-matched selection,
+Fe111_formic_acid,Fe111,formic_acid,64,5,3.661,r2scan,,,,no validated size-matched selection,
+Fe111_furfural,Fe111,furfural,64,11,4.207,r2scan,,,,no validated size-matched selection,
+Fe111_glycerol,Fe111,glycerol,64,14,3.058,r2scan,,,,no validated size-matched selection,
+Fe111_isobutene,Fe111,isobutene,64,12,5.748,r2scan,,,,no validated size-matched selection,
+Fe111_isopropanol,Fe111,isopropanol,64,12,4.073,r2scan,,,,no validated size-matched selection,
+Fe111_lactic_acid,Fe111,lactic_acid,64,12,4.099,r2scan,,,,no validated size-matched selection,
+Fe111_methanol,Fe111,methanol,64,6,2.825,r2scan,,,,no validated size-matched selection,
+Fe111_propane,Fe111,propane,64,11,4.016,r2scan,,,,no validated size-matched selection,
+Fe111_propanol,Fe111,propanol,64,12,4.6,r2scan,,,,no validated size-matched selection,
+Fe111_propionic_acid,Fe111,propionic_acid,64,11,7.377,r2scan,,,,no validated size-matched selection,
+Fe111_pyruvic_acid,Fe111,pyruvic_acid,64,10,6.083,r2scan,,,,no validated size-matched selection,
+Fe111_toluene,Fe111,toluene,64,15,1.77,r2scan,,,,no validated size-matched selection,
+Ir100_CO,Ir100,CO,36,2,,,-2.48817362,pbe_d3,relaxed,ok,a72c2d09c41950e01370dc7ef0e3390bcc567c6ac180ccdb6948adb2824bdbcd
+Ir100_CO2,Ir100,CO2,36,3,,,-0.02382396,pbe,relaxed,ok,d80ce88e2f97b09e3f3f21dd72c88c2949beccd1b0a52d69107511d73b8b9167
+Ir100_DME,Ir100,DME,36,9,,,-0.91526038,pbe_d3,relaxed,ok,2c85f78949ddec14af0e45d91cd1ba32258183188f730fa4f0371c873e4f3bd0
+Ir100_H2O,Ir100,H2O,36,3,,,-0.70588171,pbe_d3,relaxed,ok,76554888fee2139832a18d532bbd7873333194434313e31f171aa2d1df83e761
+Ir100_acetaldehyde,Ir100,acetaldehyde,36,7,,,-0.94568496,pbe_d3,relaxed,ok,baa2ad06b36fdadf130e814909fa311e8256b805056a7e072ad39545701acd00
+Ir100_acetic_acid,Ir100,acetic_acid,36,8,,,-0.90200435,beef_vdw,relaxed,ok,7fbdcfd158aeef23e9d27282fa42a434ae0cdd5a466e1a44a8f73415787dfdb5
+Ir100_ethane,Ir100,ethane,36,8,,,-0.38333468,pbe_d3,relaxed,ok,29defda42be2eb7948266687ca6df38afa75a6fa55dd966a36deddee4329671c
+Ir100_ethanol,Ir100,ethanol,36,9,,,-1.03139287,pbe_d3,relaxed,ok,d7a3eda49ece6de8af2c8959078e50966c86f7e5f647e226ff7baa92a4030711
+Ir100_ethene,Ir100,ethene,36,6,,,-1.93658643,pbe_d3,relaxed,ok,8bbe3275bb9bbc26943021edffe6df376630b2ded558f558878f7c5b8fd92926
+Ir100_ethylene,Ir100,ethylene,36,6,,,-1.93658643,pbe_d3,relaxed,ok,8bbe3275bb9bbc26943021edffe6df376630b2ded558f558878f7c5b8fd92926
+Ir100_formic_acid,Ir100,formic_acid,36,5,,,-1.03237382,pbe_d3,relaxed,ok,7be2728e9bda49b2058cce593f5d4d70cdfded583cc8d472bed33de523ee9805
+Ir100_methanol,Ir100,methanol,36,6,,,-0.91161141,pbe_d3,relaxed,ok,d25674cb0d8ec59e658e4ce73ac081a7df96a083e24e8671f8e0dc392faa1ec5
+Ir110_CO,Ir110,CO,24,2,,,-2.53220228,pbe_d3,relaxed,ok,96c33636298820e5e84eb73e7bf0666f5dcee363e8ddf21bc2a68e7863de2abe
+Ir110_CO2,Ir110,CO2,24,3,,,-0.11961248,r2scan,relaxed,ok,144fee1023c8fb64cbc0c0210449fe1484d95daaf94c1724d548db9cc5e6760f
+Ir110_DME,Ir110,DME,24,9,,,-0.75130498,r2scan,relaxed,ok,1421cceda73374edf4532b9a58a77f77c417879f02bb41ab39c7f644009bd2a5
+Ir110_H2O,Ir110,H2O,24,3,,,-0.74355377,r2scan,relaxed,ok,019ca0889a649a7a6dfcc7f4ff8a694eb850d798a0e56f15ba3ef707ef4fc721
+Ir110_acetaldehyde,Ir110,acetaldehyde,24,7,,,-0.86796278,r2scan,relaxed,ok,4403ea863aaa71030d0c1f0712cd52ee9afabc53c3b345fc04f554b911b1d4a2
+Ir110_acetic_acid,Ir110,acetic_acid,24,8,,,-1.08924682,r2scan,relaxed,ok,6bea79fe4c58432d25537d3a54d9690c66939965b236a9c9aa4f70e11ed86943
+Ir110_ethane,Ir110,ethane,24,8,,,-0.18754834,r2scan,relaxed,ok,958a88839b86533479967a7b7cb99e31cb16e1ea8e9cbe528237be8b8d4fffb3
+Ir110_ethanol,Ir110,ethanol,24,9,,,-0.87864407,r2scan,relaxed,ok,dbea2bb911de888ad29908185c2fe15307f23634d9e7ba519de79a91c30c2ae4
+Ir110_ethene,Ir110,ethene,24,6,,,-1.8779823,r2scan,relaxed,ok,9b5de221183e741cca64c83aa7fbbe8f3d4d9eb8a8b07c147e3247565d0b72db
+Ir110_ethylene,Ir110,ethylene,24,6,,,-1.8779823,r2scan,relaxed,ok,9b5de221183e741cca64c83aa7fbbe8f3d4d9eb8a8b07c147e3247565d0b72db
+Ni100_CO2,Ni100,CO2,64,3,0.011,r2scan,,,,no validated size-matched selection,
+Ni100_ethane,Ni100,ethane,64,8,-0.037,r2scan,,,,no validated size-matched selection,
+Ni100_ethanol,Ni100,ethanol,64,9,-0.209,r2scan,,,,no validated size-matched selection,
+Ni100_ethene,Ni100,ethene,64,6,-1.036,r2scan,,,,no validated size-matched selection,
+Ni100_glycerol,Ni100,glycerol,64,14,-0.249,r2scan,,,,no validated size-matched selection,
+Ni100_isopropanol,Ni100,isopropanol,64,12,-1.754,r2scan,,,,no validated size-matched selection,
+Ni100_propane,Ni100,propane,64,11,0.081,r2scan,,,,no validated size-matched selection,
+Ni100_propanol,Ni100,propanol,64,12,-2.083,r2scan,,,,no validated size-matched selection,
+Ni100_propene,Ni100,propene,64,9,-0.931,r2scan,,,,no validated size-matched selection,
+Ni110_CO2,Ni110,CO2,64,3,0.633,r2scan,,,,no validated size-matched selection,
+Ni110_ethane,Ni110,ethane,64,8,-0.33,r2scan,,,,no validated size-matched selection,
+Ni110_ethanol,Ni110,ethanol,64,9,-0.284,r2scan,,,,no validated size-matched selection,
+Ni110_ethene,Ni110,ethene,64,6,-1.381,r2scan,,,,no validated size-matched selection,
+Ni110_glycerol,Ni110,glycerol,64,14,-0.287,r2scan,,,,no validated size-matched selection,
+Ni110_isopropanol,Ni110,isopropanol,64,12,-0.379,r2scan,,,,no validated size-matched selection,
+Ni110_propane,Ni110,propane,64,11,-0.414,r2scan,,,,no validated size-matched selection,
+Ni110_propanol,Ni110,propanol,64,12,-0.131,r2scan,,,,no validated size-matched selection,
+Ni110_propene,Ni110,propene,64,9,-1.337,r2scan,,,,no validated size-matched selection,
+Ni111_CO2,Ni111,CO2,64,3,0.168,r2scan,,,,no validated size-matched selection,
+Ni111_ethane,Ni111,ethane,64,8,0.023,r2scan,,,,no validated size-matched selection,
+Ni111_ethanol,Ni111,ethanol,64,9,0.019,r2scan,,,,no validated size-matched selection,
+Ni111_ethene,Ni111,ethene,64,6,-0.784,r2scan,,,,no validated size-matched selection,
+Ni111_glycerol,Ni111,glycerol,64,14,-0.195,r2scan,,,,no validated size-matched selection,
+Ni111_isopropanol,Ni111,isopropanol,64,12,0.002,r2scan,,,,no validated size-matched selection,
+Ni111_propane,Ni111,propane,64,11,-0.056,r2scan,,,,no validated size-matched selection,
+Ni111_propanol,Ni111,propanol,64,12,-0.039,r2scan,,,,no validated size-matched selection,
+Ni111_propene,Ni111,propene,64,9,-0.559,r2scan,,,,no validated size-matched selection,
+Pd100_CO2,Pd100,CO2,64,3,-0.012,r2scan,-0.02217815,pbe,relaxed,ok,747a3c9984df10e467acc3290cb9746fb0d97b81981861dda24e2f0f12403aad
+Pd100_ethane,Pd100,ethane,64,8,0.124,r2scan,-0.20029212,r2scan,relaxed,ok,1cde8effe041579d85c80e3b679a70a15608c6f66fc5d95afc73f77e493740d5
+Pd100_ethanol,Pd100,ethanol,64,9,-0.078,r2scan,-0.72920409,pbe_d3,relaxed,ok,2bb2bb16dc602f750c72f3c431dc1caacf5a24e28e65c7bed1db7210f5f1f10e
+Pd100_ethene,Pd100,ethene,64,6,-0.922,r2scan,,,,no validated size-matched selection,
+Pd100_glycerol,Pd100,glycerol,64,14,-0.172,r2scan,-0.17153495,r2scan,SPE,ok,0d51ad729b58edfee64c2341d6d85641b3dd300db3be80e7f9ca303b1e76040c
+Pd100_isopropanol,Pd100,isopropanol,64,12,-0.022,r2scan,-0.02203308,r2scan,SPE,ok,0df10bf2e77cb089e216fb1ffc22e7dd74fe6e1e57e82718416c0cc10b36d962
+Pd100_propane,Pd100,propane,64,11,0.091,r2scan,0.09139252,r2scan,SPE,ok,921efa45d81a8cfaacbe5a99dc228edac5b775ab59777cbf608ea0b88c2de400
+Pd100_propanol,Pd100,propanol,64,12,-0.012,r2scan,-0.01247447,r2scan,SPE,ok,3151f59db229a1a95ab5b2bdc88689c4d51003110077eaf8a48f44917ff5c349
+Pd100_propene,Pd100,propene,64,9,-1.013,r2scan,-1.013176,r2scan,SPE,ok,685c54c4b444cb55c743c8ca1476be3553a1042d78662160b295cffe9d297109
+Pd110_CO2,Pd110,CO2,64,3,0.02,r2scan,,,,no validated size-matched selection,
+Pd110_ethane,Pd110,ethane,64,8,-0.099,r2scan,-0.40176247,pbe_d3,relaxed,ok,d11303a8809c6f1b6008e10e7e4335f97bdf870f14622f3740feeba9bec6df62
+Pd110_ethanol,Pd110,ethanol,64,9,-0.014,r2scan,-0.91827131,pbe_d3,relaxed,ok,2ade2022a8849be027139d8ad95fdfe810e701e5e06757ab22ade6fd97a2ab57
+Pd110_ethene,Pd110,ethene,64,6,-1.26,r2scan,,,,no validated size-matched selection,
+Pd110_glycerol,Pd110,glycerol,64,14,-0.626,r2scan,-0.62574424,r2scan,SPE,ok,d218022353f91d350a7331c12e254f825aca5a8cec07a87ded66238ebda97bdf
+Pd110_isopropanol,Pd110,isopropanol,64,12,-0.161,r2scan,-0.16056572,r2scan,SPE,ok,5dc69fdcaa7b5e954e40269b1a327694316e5baaa2490d2a877f669ac5296bde
+Pd110_propane,Pd110,propane,64,11,-0.155,r2scan,-0.15492014,r2scan,SPE,ok,516fb48c5e86051224583990ee3d49190fb6f94764bd7ce2cdd44a31ca17dcbb
+Pd110_propanol,Pd110,propanol,64,12,-0.168,r2scan,-0.1679516,r2scan,SPE,ok,a7ffc9969bf3b8fd197d9919faef1598979995ea42aa19f8613607161f1a587e
+Pd110_propene,Pd110,propene,64,9,-1.17,r2scan,-1.17019114,r2scan,SPE,ok,9a0af1ae88557b3ee7b496b0f6a2b3976faf1439917312445ba8286cf772d9f2
+Pd111_CO2,Pd111,CO2,64,3,0.047,r2scan,-0.03474686,pbe,relaxed,ok,d0a633cf92e5b3b1a4a2f0c1681cfc854a63d4aa630761d80e8fbcd6ed84055c
+Pd111_ethane,Pd111,ethane,64,8,0.372,r2scan,-0.4128935,pbe_d3,relaxed,ok,e2b9fb2571608219551928874463a2870d795d379a787d2c964c70b708cb1b33
+Pd111_ethanol,Pd111,ethanol,64,9,0.163,r2scan,-0.53863131,r2scan,relaxed,ok,dabbee67e4387dfbd936de9c3471159255702ded31fff783b777a85bddd4a8f6
+Pd111_ethene,Pd111,ethene,64,6,-0.841,r2scan,,,,no validated size-matched selection,
+Pd111_glycerol,Pd111,glycerol,64,14,0.092,r2scan,0.09168294,r2scan,SPE,ok,b9a24e3563b0b75efd4cfe1e5b8d0b12064f539d92be082434de5ce940ae06b2
+Pd111_isopropanol,Pd111,isopropanol,64,12,0.144,r2scan,0.14418457,r2scan,SPE,ok,b5a1aaf06dac486ca74e96ca82a19037fd4b34c91aa1b1463d56719613170eb3
+Pd111_propane,Pd111,propane,64,11,0.218,r2scan,0.21786268,r2scan,SPE,ok,52a59da9e877e03937462d18038318a3a0a56cf2c0a082c6280145a8c315a5f7
+Pd111_propanol,Pd111,propanol,64,12,0.054,r2scan,0.05429217,r2scan,SPE,ok,261486132289e8cf76e1d0031e63d380b6ad79dbf8ec02bb12caf0f34856b8b3
+Pd111_propene,Pd111,propene,64,9,-0.632,r2scan,-0.63171722,r2scan,SPE,ok,5c923795ddba1635c9345ca605cda3bd38b543224ba1ce2b032c2274f4d08b21
+Pt100_CO2,Pt100,CO2,64,3,-0.022,r2scan,-0.010549,pbe,relaxed,ok,d067cfb38a8cbbc85d5c5bd3af4773ff4e640d3beec9a1d7e6f6008159a76029
+Pt100_ethane,Pt100,ethane,64,8,0.385,r2scan,-0.44559181,pbe_d3,relaxed,ok,d58ecb61f08589e06b95de7b33edf62aecf3d39b124bbe203a3c1f1db66d2b13
+Pt100_ethanol,Pt100,ethanol,64,9,0.285,r2scan,-0.89303173,pbe_d3,relaxed,ok,6ba6e5eca5a6676df35490d6a6fabd1e38931863256b88d5ce1e1bc94a9028d5
+Pt100_ethene,Pt100,ethene,64,6,-1.384,r2scan,,,,no validated size-matched selection,
+Pt100_glycerol,Pt100,glycerol,64,14,0.192,r2scan,-0.38350287,pbe_d3,SPE,ok,71aba9c193339871b0f928d57714c53868e9418be4b339ba0fe1cfc09a41082d
+Pt100_isopropanol,Pt100,isopropanol,64,12,0.281,r2scan,0.29000546,r2scan,SPE,ok,78660da7b8899d1b45f01409280084f894841fe49487104944497d663e671ae7
+Pt100_propane,Pt100,propane,64,11,0.432,r2scan,0.4404354,r2scan,SPE,ok,fcee26bf7738e7861679ccb962c74c155821ce1dac9b7f5b363870f81e5f5da5
+Pt100_propanol,Pt100,propanol,64,12,0.25,r2scan,0.25840991,r2scan,SPE,ok,3f6fc963f2de26fb312f4fbd900da1890244f680d5614f6e103fa32f06525b0a
+Pt100_propene,Pt100,propene,64,9,-1.162,r2scan,-1.15332671,r2scan,SPE,ok,7708971bc5e82df0303e6876fd23336cd1ae83883e8ea91a4a3f77f79e98c561
+Pt110_CO2,Pt110,CO2,64,3,0.041,r2scan,,,,no validated size-matched selection,
+Pt110_ethane,Pt110,ethane,64,8,0.163,r2scan,-0.47113411,pbe_d3,relaxed,ok,8b89f401a383d0cf57cd7f9f88c3212c56f425e03a5cf754cc627dee9eb55497
+Pt110_ethanol,Pt110,ethanol,64,9,0.347,r2scan,-1.05190229,pbe_d3,relaxed,ok,42ad60addb2d7c3bec2e2472b24a74a5b24151f5c55e46d6e7033064d480c987
+Pt110_ethene,Pt110,ethene,64,6,-1.424,r2scan,,,,no validated size-matched selection,
+Pt110_glycerol,Pt110,glycerol,64,14,-0.355,r2scan,-0.95826607,pbe_d3,SPE,ok,e4bde0d9227beddd530a21bceb17d53c650c64b74554aedd404449c150d23b16
+Pt110_isopropanol,Pt110,isopropanol,64,12,0.19,r2scan,-0.32085954,pbe_d3,SPE,ok,355f6bff9484f2bbf5e8fb263e5800f4a8137355ca6ee62af7789a0e4100ea8b
+Pt110_propane,Pt110,propane,64,11,0.313,r2scan,-0.11502459,pbe_d3,SPE,ok,ad082d54ffaa739ca7b9e1c3714166ebe6654a65125ffa945d34b19d3c359c31
+Pt110_propanol,Pt110,propanol,64,12,0.387,r2scan,-0.11549942,pbe_d3,SPE,ok,ca0ae3ec849576329e7671a84a3ad147d8b9a5a916b0983cf895eaf51a9a8cbe
+Pt110_propene,Pt110,propene,64,9,-0.884,r2scan,-1.26436958,pbe_d3,SPE,ok,d1c3ca126f39eb74c819580094093fb3b734ea4381bc9df6f3958473873f645a
+Pt111_CO2,Pt111,CO2,64,3,0.14,r2scan,,,,no validated size-matched selection,
+Pt111_ethane,Pt111,ethane,64,8,0.665,r2scan,,,,no validated size-matched selection,
+Pt111_ethanol,Pt111,ethanol,64,9,0.441,r2scan,,,,no validated size-matched selection,
+Pt111_ethene,Pt111,ethene,64,6,-0.915,r2scan,,,,no validated size-matched selection,
+Pt111_glycerol,Pt111,glycerol,64,14,0.193,r2scan,,,,no validated size-matched selection,
+Pt111_isopropanol,Pt111,isopropanol,64,12,0.479,r2scan,,,,no validated size-matched selection,
+Pt111_propane,Pt111,propane,64,11,0.598,r2scan,,,,no validated size-matched selection,
+Pt111_propanol,Pt111,propanol,64,12,0.314,r2scan,,,,no validated size-matched selection,
+Pt111_propene,Pt111,propene,64,9,-1.141,r2scan,,,,no validated size-matched selection,
+Cu100_CH3_sevennet_omni,Cu100,CH3,64,4,,,-1.64637519,pbe_d3,relaxed,ok,2982aabc1319ab9422ecc9c73f3937e0bccfed12af15968f5e6f6054f18851a7
+Cu100_CH4_sevennet_omni,Cu100,CH4,64,5,,,-0.03331797,r2scan,relaxed,ok,e71b8bff540efb2dbc587287aa0a0832c72e52db2aed9e3439aa4bfbdf13ad12
+Cu100_H2S_sevennet_omni,Cu100,H2S,64,3,,,-0.71896839,pbe_d3,relaxed,ok,e291c93d071d1b345676415fc95b58256ad07d704e4d34a77c4685db8125e4a7
+Cu100_N2_sevennet_omni,Cu100,N2,64,2,,,-0.09943129,pbe_d3,relaxed,ok,fd9482576f580f82e730ec34ff682c5531e7bde91a7527699f1b8bd1c3826617
+Cu100_NH3_sevennet_omni,Cu100,NH3,64,4,,,-0.90342372,pbe_d3,relaxed,ok,bdda9d12919da22f85e0a50fde8e24b2334687170ea059ae7091890b40ddad26
+Cu100_NO_sevennet_omni,Cu100,NO,64,2,,,-1.98817154,pbe_d3,relaxed,ok,ef85555fc5ec834e91270a926f2f160429c2c58eea15a1dde49a39d5c9b3756f
+Cu100_SO2_sevennet_omni,Cu100,SO2,64,3,,,-1.32945296,pbe_d3,relaxed,ok,755fe487b0605504106621368da34f2fc71ec25461053a3e70890ce33d3e22fb
+Cu100_formaldehyde_sevennet_omni,Cu100,formaldehyde,64,4,,,-0.43385275,pbe_d3,relaxed,ok,c4b140b5946c6703e3cb97ab2ed6d3eece83fc7663f86d26d12abc0c16e8f94d
+Cu100_methane_sevennet_omni,Cu100,methane,64,5,,,-0.03331797,r2scan,relaxed,ok,e71b8bff540efb2dbc587287aa0a0832c72e52db2aed9e3439aa4bfbdf13ad12
+Cu111_CH3_sevennet_omni,Cu111,CH3,64,4,,,-1.64608586,pbe_d3,relaxed,ok,3730cae65f554a7e273e8b353f897b9cfe0d3e3b4f2831715f966a293fcfb01a
+Cu111_CH4_sevennet_omni,Cu111,CH4,64,5,,,-0.0598781,r2scan,relaxed,ok,651f149b73e9bd62997ff2fe8cebd621e47ae047a4ffb47a68bc3971cbe1252b
+Cu111_H2S_sevennet_omni,Cu111,H2S,64,3,,,-0.73943502,pbe_d3,relaxed,ok,321211485c70e7757800541797597a4b0427db14fb8e0f910a572e5854def66c
+Cu111_N2_sevennet_omni,Cu111,N2,64,2,,,-0.08844816,pbe_d3,relaxed,ok,651c2133809dbecc71224911705db5f9af1974f4b6be0d68662b0e94cdc8726c
+Cu111_NH3_sevennet_omni,Cu111,NH3,64,4,,,-0.65848129,r2scan,relaxed,ok,8a3e6ff5d7919e1451685c525849dd50ddd22fc3996da9acf7495202d6946cde
+Cu111_NO_sevennet_omni,Cu111,NO,64,2,,,-1.78322646,pbe_d3,relaxed,ok,3192623ba06e9d347464e51948e03b847f8aa86dcb21d600cf8014e3588339c4
+Cu111_SO2_sevennet_omni,Cu111,SO2,64,3,,,-1.04309852,pbe_d3,relaxed,ok,68d321f4adcddcdc74b628562dcf834d188641007f67d99a043ee8954cc436b3
+Cu111_formaldehyde_sevennet_omni,Cu111,formaldehyde,64,4,,,-0.40605956,pbe_d3,relaxed,ok,74a450e2cff2da1cd8187b4a6c2423f2d3e73a68549dd764f5af099960710d1b
+Cu111_methane_sevennet_omni,Cu111,methane,64,5,,,-0.0598781,r2scan,relaxed,ok,651f149b73e9bd62997ff2fe8cebd621e47ae047a4ffb47a68bc3971cbe1252b
+Ir100_CH3_sevennet_omni,Ir100,CH3,36,4,,,-2.45620274,pbe_d3,relaxed,ok,9d1ca6fd4abc4d305eaf77114290c1100e5fc32cc089e303cdb3c54e71be65ea
+Ir100_CH4_sevennet_omni,Ir100,CH4,36,5,,,-0.19983274,pbe_d3,relaxed,ok,63bdbc42954d1896a3bdc9173e8b3f3ad1047eb28a66826530cfdfcdc1898948
+Ir100_H2S_sevennet_omni,Ir100,H2S,36,3,,,-3.08554231,pbe_d3,relaxed,ok,c1c29a8ffede765eb3af94ba39a23990782602ca0b746e8bc242918cad24257f
+Ir100_N2_sevennet_omni,Ir100,N2,36,2,,,-1.05703991,pbe_d3,relaxed,ok,e609a9ae8b9846324daa6a97cd6c903dd8b6eacaeac5ea459c61ddce9d25fb0a
+Ir100_NH3_sevennet_omni,Ir100,NH3,36,4,,,-1.58490797,pbe_d3,relaxed,ok,0d242b28174050ee016764bb753d2644f3ed53b546f9ab63318dfa5df229ea48
+Ir100_NO_sevennet_omni,Ir100,NO,36,2,,,-3.30923333,pbe_d3,relaxed,ok,141de8cac0adea07a1a469446c988ceb6d32b65116c75255810705fe85286baf
+Ir100_SO2_sevennet_omni,Ir100,SO2,36,3,,,-2.78309531,pbe_d3,relaxed,ok,6d019ffcf0d878c832ffcec7abca19f4a423907afc4f811822987a4cb5be9c6d
+Ir100_formaldehyde_sevennet_omni,Ir100,formaldehyde,36,4,,,-1.65652006,pbe_d3,relaxed,ok,1762a50586dc5765fe2bfa7aff190a5a47916f08739c0532a9476604cb1f613d
+Ir100_methane_sevennet_omni,Ir100,methane,36,5,,,-0.19983274,pbe_d3,relaxed,ok,63bdbc42954d1896a3bdc9173e8b3f3ad1047eb28a66826530cfdfcdc1898948
+Ir110_CH3_sevennet_omni,Ir110,CH3,24,4,,,-2.27414808,r2scan,relaxed,ok,a8891eff4731704b3186966d8381ee13927c830b2588f2d064b2a9f6f609192c
+Ir110_CH4_sevennet_omni,Ir110,CH4,24,5,,,-0.09463483,r2scan,relaxed,ok,64b64795d0938ea751bdaef53424ea431f858b3e889d6231d87faa560b80c732
+Ir110_H2S_sevennet_omni,Ir110,H2S,24,3,,,-2.86837662,r2scan,relaxed,ok,3d136e59e9f4f57bca4db267d44fb7ead52a6194db67799a1ca2bdd671f8d126
+Ir110_N2_sevennet_omni,Ir110,N2,24,2,,,-1.3396584,pbe_d3,relaxed,ok,2b1246495937e03c9193ce7024459d67e4777d19565a29673e9e279828860e60
+Ir110_NH3_sevennet_omni,Ir110,NH3,24,4,,,-1.3207668,r2scan,relaxed,ok,c9a2b3e92e8b295a0439b6baf1287edc023a5471eb3d2911e38156712867e9f3
+Ir110_NO_sevennet_omni,Ir110,NO,24,2,,,-3.46347599,pbe_d3,relaxed,ok,7c2b9ddeedf041497cb038d2e6572fa0de82b5ed0e92bb8df2eb234075e174af
+Ir110_SO2_sevennet_omni,Ir110,SO2,24,3,,,-2.69553447,r2scan,relaxed,ok,b29f0eddf619f6609add21e2619c1f110386d538cc29e448d02de1f04eb61835
+Ir110_formaldehyde_sevennet_omni,Ir110,formaldehyde,24,4,,,-1.88532431,r2scan,relaxed,ok,11e16012f64387d4c2c2ff0b442191c3197b75d00e9ca2984315c7b5a8924873
+Ir110_formic_acid_sevennet_omni,Ir110,formic_acid,24,5,,,-1.26616288,pbe_d3,relaxed,ok,f5ee13b25e6fc9075a8930595daa82ffde84b9897af6002db0d3240fef78ccbf
+Ir110_methane_sevennet_omni,Ir110,methane,24,5,,,-0.09463483,r2scan,relaxed,ok,64b64795d0938ea751bdaef53424ea431f858b3e889d6231d87faa560b80c732
+Ir110_methanol_sevennet_omni,Ir110,methanol,24,6,,,-0.82805566,r2scan,relaxed,ok,122efd0ec1b70d6da6f63e0637f7c61e840aa78502689855e824e1e5cdd2a710
+Ir111_CH3_sevennet_omni,Ir111,CH3,64,4,,,-1.80684166,r2scan,relaxed,ok,e170fb218cb253e140c8ff331799221d05babe3a34e82b965faefdd747deab3f
+Ir111_CH4_sevennet_omni,Ir111,CH4,64,5,,,-0.04271438,r2scan,relaxed,ok,e78c7f2ccd93ab4fbedb9ed8cb67d41c61057fa81ff710a5be3b435b219b2684
+Ir111_CO2_sevennet_omni,Ir111,CO2,64,3,,,-0.08051655,r2scan,relaxed,ok,8b525b900653fa0c79946ff628950a58aece83632c87cacf535be58692e5d380
+Ir111_CO_sevennet_omni,Ir111,CO,64,2,,,-1.85876039,pbe_d3,relaxed,ok,32e04ff1f7d4f5b0389ec9ed518d91ee3eb98b0abb638f630e5d1dad988f7af5
+Ir111_DME_sevennet_omni,Ir111,DME,64,9,,,-0.76850734,pbe_d3,relaxed,ok,7bf25756603bf7876d5b9b437fac1897903123aa9d1a1e1140f3af9d2131dc3c
+Ir111_H2O_sevennet_omni,Ir111,H2O,64,3,,,-0.4881047,r2scan,relaxed,ok,41b270ea4b79eed59b55d9bcb48af112d9ea949aedc9b11def39e29798e25e22
+Ir111_H2S_sevennet_omni,Ir111,H2S,64,3,,,-0.93252841,r2scan,relaxed,ok,67d9599f11be2e4db8249f68d87c78ed4063d1534ea35889dca11a6d38fda399
+Ir111_N2_sevennet_omni,Ir111,N2,64,2,,,-0.67460683,pbe_d3,relaxed,ok,6472feacf6647005ec602c79b6899f6fd610cb93cf60e98d6330527d84e7aa8f
+Ir111_NH3_sevennet_omni,Ir111,NH3,64,4,,,-1.177863,r2scan,relaxed,ok,bd604c0530259b64959ee3b869fd61dc833399db92766960f98d85e0f32c0e0f
+Ir111_NO_sevennet_omni,Ir111,NO,64,2,,,-2.50791685,pbe_d3,relaxed,ok,f3d5dd5188eed062e0c10501aa25fdc194f14777215599dd60f6e548725eb73a
+Ir111_SO2_sevennet_omni,Ir111,SO2,64,3,,,-1.51066684,r2scan,relaxed,ok,ae63b20702cf1432063ce95fea3c5f33f64453c71a2931539819261106fe0174
+Ir111_acetaldehyde_sevennet_omni,Ir111,acetaldehyde,64,7,,,-0.58317754,r2scan,relaxed,ok,a7e156a111ae6ef81020689220312886dd968c4a614cb4d3f874b9a8218b7ec2
+Ir111_acetic_acid_sevennet_omni,Ir111,acetic_acid,64,8,,,-0.66624977,beef_vdw,relaxed,ok,98e658beb55488a96a009ff6360ad33e8eafd4367df5681a04c6578aa61e547f
+Ir111_ethane_sevennet_omni,Ir111,ethane,64,8,,,-0.07282106,r2scan,relaxed,ok,8df3ad55e58bccfc2c79bac993500083b937b9a67e266b483dd5406b83d1f6a7
+Ir111_ethanol_sevennet_omni,Ir111,ethanol,64,9,,,-0.59981969,r2scan,relaxed,ok,83593b7db5150856dcb5df6383d58ea549f5755b2e43b80ea70d38d834175cc8
+Ir111_ethene_sevennet_omni,Ir111,ethene,64,6,,,-1.06061898,r2scan,relaxed,ok,ca7907015001899f3b304c91397550aca9661b6153276558d141f236c06ebd13
+Ir111_ethylene_sevennet_omni,Ir111,ethylene,64,6,,,-1.06061898,r2scan,relaxed,ok,ca7907015001899f3b304c91397550aca9661b6153276558d141f236c06ebd13
+Ir111_formaldehyde_sevennet_omni,Ir111,formaldehyde,64,4,,,-0.59449679,pbe_d3,relaxed,ok,a67ac378accc45d39dd7acb92f3180284f9964d70f2caff34c7794c07c43e0a1
+Ir111_formic_acid_sevennet_omni,Ir111,formic_acid,64,5,,,-0.75094215,pbe_d3,relaxed,ok,b090e48693b1c892900bfcd867ab9a6b5cb13cb5b8301000e3eaee3f8b755dcb
+Ir111_methane_sevennet_omni,Ir111,methane,64,5,,,-0.04271438,r2scan,relaxed,ok,e78c7f2ccd93ab4fbedb9ed8cb67d41c61057fa81ff710a5be3b435b219b2684
+Ir111_methanol_sevennet_omni,Ir111,methanol,64,6,,,-0.75377346,pbe_d3,relaxed,ok,55a6df34cd130358048e8b8e2a501631997a76ecf7a584c9cf46bd782bd82c02
+Pd100_CH3_sevennet_omni,Pd100,CH3,36,4,,,-1.75184981,r2scan,relaxed,ok,39b89ca1cc318252a630cf9e8493227e4f7daf3f6968822a58c646f16366ce57
+Pd100_CH4_sevennet_omni,Pd100,CH4,36,5,,,-0.0976739,r2scan,relaxed,ok,32966f9cfd0277c92ac233b8013a3aa1f1d7c45f614adaa08c4e9f3a807b7439
+Pd100_CO_sevennet_omni,Pd100,CO,36,2,,,-2.01380798,r2scan,relaxed,ok,2f848552bb744250687028eeaa368fc74542b1ff04930ecb00a69467b3993d5c
+Pd100_DME_sevennet_omni,Pd100,DME,36,9,,,-0.44526975,r2scan,relaxed,ok,8b8085e52b17b9219db20947683c0948c7afe5ab2b0e822be5b48081dc89eb4e
+Pd100_H2O_sevennet_omni,Pd100,H2O,36,3,,,-0.38556797,r2scan,relaxed,ok,cc1a67fad49d7972ea00f9991a19dc04ad890a84f5941bfe44106df81f07dce6
+Pd100_H2S_sevennet_omni,Pd100,H2S,36,3,,,-0.91285013,r2scan,relaxed,ok,9157f94fb6e8eeee41f7ee135ac950f84931b298ed8ae4803451f42258fc029d
+Pd100_N2_sevennet_omni,Pd100,N2,36,2,,,-0.41705821,r2scan,relaxed,ok,7f4024b9bc752321343e9812f0c4d75854ab3bee3485c8aefa9cd4d5b03c9c45
+Pd100_NH3_sevennet_omni,Pd100,NH3,36,4,,,-0.90255389,r2scan,relaxed,ok,3dc892772d6986bd6bb6e84bbc5cbaa03a05b3fe37185912a967065ca0702677
+Pd100_NO_sevennet_omni,Pd100,NO,36,2,,,-2.68702743,pbe_d3,relaxed,ok,0bc970fd087208a622c4b186666065cc618ca752832a488b11190872ccdba00e
+Pd100_SO2_sevennet_omni,Pd100,SO2,36,3,,,-1.8046541,r2scan,relaxed,ok,5ba8840e1410657bf13250e086c611776378f26919ae943b4195c10a37c07a9a
+Pd100_acetaldehyde_sevennet_omni,Pd100,acetaldehyde,36,7,,,-0.44224369,r2scan,relaxed,ok,936aa82f1eb35dc495474756ca4858350c4b1957b512d55381deac9f571e161a
+Pd100_acetic_acid_sevennet_omni,Pd100,acetic_acid,36,8,,,-0.62742615,r2scan,relaxed,ok,6225f3f682848edf71acc8aa343169f605d8717b46acabb7c78c51f843f484e4
+Pd100_ethylene_sevennet_omni,Pd100,ethylene,36,6,,,-1.13670405,r2scan,relaxed,ok,48d73cf0f0c0310708119edc8f1c3420f36f6e68734ac962f63cd305c9479605
+Pd100_formaldehyde_sevennet_omni,Pd100,formaldehyde,36,4,,,-0.88265727,r2scan,relaxed,ok,d764db128df4ff16dc33fad60bf8756f9a5ee0f3c1e5d01a893db4bd2517da12
+Pd100_formic_acid_sevennet_omni,Pd100,formic_acid,36,5,,,-0.77672127,pbe_d3,relaxed,ok,b9b26bada2b37218afb70a5ad5365691906cf685461ec36b01ec20ac61ebf883
+Pd100_methane_sevennet_omni,Pd100,methane,36,5,,,-0.0976739,r2scan,relaxed,ok,32966f9cfd0277c92ac233b8013a3aa1f1d7c45f614adaa08c4e9f3a807b7439
+Pd100_methanol_sevennet_omni,Pd100,methanol,36,6,,,-0.45032415,r2scan,relaxed,ok,cbcbd4748e4bad84739f0719962d9285e0c45f0c2a6dfde10c10f5bdb1ae2a1c
+Pd110_CH3_sevennet_omni,Pd110,CH3,24,4,,,-1.87671931,r2scan,relaxed,ok,66e7743c96bed42c65ceb90d2ced85cf5b6a5310054201da883c9138fbc9d967
+Pd110_CH4_sevennet_omni,Pd110,CH4,24,5,,,-0.13112819,r2scan,relaxed,ok,a4adb14934b4a3ca63b7ea192a1dc8294b1c83dd68879bf7d9b613989c8c7208
+Pd110_CO_sevennet_omni,Pd110,CO,24,2,,,-2.09821726,r2scan,relaxed,ok,398cc4d4ef3f2b3a6f0bc80ca4d46b0e3e62f9e72989fcf9ce4768ab0f366be0
+Pd110_DME_sevennet_omni,Pd110,DME,24,9,,,-0.57878973,r2scan,relaxed,ok,380ea1b43e5e048d480a5b3ddb00d9fc4eeb330fb3880139da106c6492310a51
+Pd110_H2O_sevennet_omni,Pd110,H2O,24,3,,,-0.54938727,r2scan,relaxed,ok,2bb055b2a9b4086fcd6d59f20fb56f342e3b84922b82107aab77441023486c0e
+Pd110_H2S_sevennet_omni,Pd110,H2S,24,3,,,-1.06912639,r2scan,relaxed,ok,f9434549f57f83b97a1d978201d553a4dfa11280f403bac8e738566b4de28e5d
+Pd110_N2_sevennet_omni,Pd110,N2,24,2,,,-0.66526841,pbe_d3,relaxed,ok,2dc140392540c0526501f2e803f7fdbc73b4765d812c2ccd079cde1b25c1e51f
+Pd110_NH3_sevennet_omni,Pd110,NH3,24,4,,,-0.89108539,r2scan,relaxed,ok,bc36f03036a785e4c346e6246860116a5a49900d92f1ec8f17fa788eb9f52ab6
+Pd110_NO_sevennet_omni,Pd110,NO,24,2,,,-2.89118315,pbe_d3,relaxed,ok,5476a77b7ac8d683f9869e08f00225d6d796262a33084052477000c5946bd6ef
+Pd110_SO2_sevennet_omni,Pd110,SO2,24,3,,,-2.01042549,r2scan,relaxed,ok,52cae60a0d4d4a1379fbed2b71785d76cdf504db6d2839db198cbfeb3ee0d828
+Pd110_acetaldehyde_sevennet_omni,Pd110,acetaldehyde,24,7,,,-0.53198949,r2scan,relaxed,ok,cc3dccc32813f6cb176dc94668025eb44b093861856d5fa6693a1cb7d5431644
+Pd110_acetic_acid_sevennet_omni,Pd110,acetic_acid,24,8,,,-0.74980262,r2scan,relaxed,ok,3d86e3c1e977e6e2c24d2408fb5902d489addd921cc5241b9482f69477d795d5
+Pd110_ethylene_sevennet_omni,Pd110,ethylene,24,6,,,-1.17496072,r2scan,relaxed,ok,fbf9943db283326d911a60be9e047c7d0f5e81ea7964ab7ffe9008da983b280c
+Pd110_formaldehyde_sevennet_omni,Pd110,formaldehyde,24,4,,,-1.04846253,r2scan,relaxed,ok,06e9fe2f39176d128dd700d2396d268e4c8b1ca42b46cd12c075d79e8a64678a
+Pd110_formic_acid_sevennet_omni,Pd110,formic_acid,24,5,,,-0.71681681,r2scan,relaxed,ok,f4df43821cac723547952758ee6fdfcada4896a34594b2acbb172097fbe2e3a5
+Pd110_methane_sevennet_omni,Pd110,methane,24,5,,,-0.13112819,r2scan,relaxed,ok,a4adb14934b4a3ca63b7ea192a1dc8294b1c83dd68879bf7d9b613989c8c7208
+Pd110_methanol_sevennet_omni,Pd110,methanol,24,6,,,-0.6322878,r2scan,relaxed,ok,e2ffd07fb0cf9ea44cb52876d1280ceb71d392c0a17dbba0e280eaf1aacd87ab
+Pd111_CH3_sevennet_omni,Pd111,CH3,36,4,,,-2.00138309,pbe_d3,relaxed,ok,9eab370527b757f7e4be9da0ef0736ffb1c456d93e247ab02976889c5db16612
+Pd111_CH4_sevennet_omni,Pd111,CH4,36,5,,,-0.232519,pbe_d3,relaxed,ok,c7728f4b27024b98a5bed4b37e9c5def891253c8bc8089156c4c46916787f175
+Pd111_DME_sevennet_omni,Pd111,DME,36,9,,,-0.66585974,pbe_d3,relaxed,ok,a39eb5dc876b56eae0563f10e89310d74ad342e04e65094cc12b815cd6e815d6
+Pd111_H2O_sevennet_omni,Pd111,H2O,36,3,,,-0.44908851,pbe_d3,relaxed,ok,ced8e51445a76a7c061a9207a70955ee856ba5ef552c8b3e2e5f52d388836fec
+Pd111_H2S_sevennet_omni,Pd111,H2S,36,3,,,-1.02715148,pbe_d3,relaxed,ok,9e27e011c88478feca2bcfe10c4bdafbf1276227bc24a2025e668cb6dc3befa8
+Pd111_N2_sevennet_omni,Pd111,N2,36,2,,,-0.43203467,pbe_d3,relaxed,ok,e56dabee4de27202c462d1e66d8033b43a26e1fd8f6f6d35ce9b8dbf790682ba
+Pd111_NH3_sevennet_omni,Pd111,NH3,36,4,,,-0.97908446,pbe_d3,relaxed,ok,13b2755371502b3e5f873846d767cd8b385c5f12f2ae87ad3f66917cb2c27b73
+Pd111_NO_sevennet_omni,Pd111,NO,36,2,,,-2.81708526,pbe_d3,relaxed,ok,805e4b988f9e8d3e92d5654562297b706b613c7cc2abf558648cb5f6fcc02851
+Pd111_SO2_sevennet_omni,Pd111,SO2,36,3,,,-1.62669381,pbe_d3,relaxed,ok,e098f6bc553b1bc4a590dd967810a39c8ba547d114215dc54cf43685a668006a
+Pd111_acetaldehyde_sevennet_omni,Pd111,acetaldehyde,36,7,,,-0.58091791,pbe_d3,relaxed,ok,7e80e1b918397cfe04a3df4284c323f926553069d332a6cd668d005bbde1fbed
+Pd111_acetic_acid_sevennet_omni,Pd111,acetic_acid,36,8,,,-0.58446947,beef_vdw,relaxed,ok,a314a5d5fd58d8d5a761125a1a4bc3af6d52947f6e307864fd725cb749b46f5e
+Pd111_ethylene_sevennet_omni,Pd111,ethylene,36,6,,,-1.10372316,pbe_d3,relaxed,ok,d6cf6a9aefacc46a3d6f1db7a9a61e437477e2c84b182bb5bd38c90bec113753
+Pd111_formaldehyde_sevennet_omni,Pd111,formaldehyde,36,4,,,-0.45185687,pbe_d3,relaxed,ok,0f4c0c379740e321d4f8c5b6e0972d055657e39d789c353f3b7626dfa26837c1
+Pd111_formic_acid_sevennet_omni,Pd111,formic_acid,36,5,,,-0.70476046,pbe_d3,relaxed,ok,e34036c53c99d58f030ab0d80f6b32d25ff3a2db98f2f82cc14d48fdfbe24818
+Pd111_methane_sevennet_omni,Pd111,methane,36,5,,,-0.232519,pbe_d3,relaxed,ok,c7728f4b27024b98a5bed4b37e9c5def891253c8bc8089156c4c46916787f175
+Pd111_methanol_sevennet_omni,Pd111,methanol,36,6,,,-0.59181286,pbe_d3,relaxed,ok,891620df9e7cbd0cd5e244ae615c48937c92fcf1e4f1e905fc8f3d3187306938
+Pt111_ethylene_sevennet_omni,Pt111,ethylene,36,6,,,-1.05834618,pbe_d3,SPE,ok,5dcac7934faf6b89a9274925b69f0ee7d368c3e9f0efa9d2f8dd768b57bba72d
+Pt111_formic_acid_sevennet_omni,Pt111,formic_acid,36,5,,,-0.70502391,pbe_d3,relaxed,ok,e5d9f6cc3f42aac2fcd6192fe64e7c19eda5b5cdffab5844751f4be5034f022d
+Pt111_methanol_sevennet_omni,Pt111,methanol,36,6,,,-0.64595168,pbe_d3,relaxed,ok,c333e1a8a255f2cc89222c54384102c3fd9f4e1f219d27365e555fb726eebc62
+Rh100_CH3_sevennet_omni,Rh100,CH3,36,4,,,-1.85386928,r2scan,relaxed,ok,2fc255257b51d4ef058c4557ccf2f1d766382617c38bf8a84974e28ee184dd17
+Rh100_CH4_sevennet_omni,Rh100,CH4,36,5,,,-0.08567006,r2scan,relaxed,ok,5fc0d54d7aaef9bd2361f426c2f7df270605966ce164e4a176deba0539b0a0b2
+Rh100_CO2_sevennet_omni,Rh100,CO2,36,3,,,-0.0977813,r2scan,relaxed,ok,1baf4a421dcd33dcfaa78feb545a5e3ca511f71d962adff0b352a0519e04aa7c
+Rh100_CO_sevennet_omni,Rh100,CO,36,2,,,-2.15508736,r2scan,relaxed,ok,4ccbb8a6e71d6c3e900c410d8727dbf61317858af949b85ff04c6c0daf447acd
+Rh100_DME_sevennet_omni,Rh100,DME,36,9,,,-0.5081446,r2scan,relaxed,ok,535d62ed2c6a84f6fd74c19688eaa3d1066cfd297785b28d715926e7cc6f7a89
+Rh100_H2O_sevennet_omni,Rh100,H2O,36,3,,,-0.463396,r2scan,relaxed,ok,ed5c79b99ee51bb6e9850962c74dd1986318ee757322d896112ef14013c96193
+Rh100_H2S_sevennet_omni,Rh100,H2S,36,3,,,-4.02196392,r2scan,relaxed,ok,94e1aa4ebb29054ec8f64f98c225e9fbcf741a6ddd8cfe297758669c5414981b
+Rh100_N2_sevennet_omni,Rh100,N2,36,2,,,-0.7652647,r2scan,relaxed,ok,f0fcea58ba4c347e234fd9244a836bc9b5fb89818db319fce4e19ec1d0aff576
+Rh100_NH3_sevennet_omni,Rh100,NH3,36,4,,,-1.05793756,r2scan,relaxed,ok,b34b5940c9bbe19088f5b85bffaf9446448487ed87a78afb6747a22c63468a3e
+Rh100_NO_sevennet_omni,Rh100,NO,36,2,,,-3.20024296,pbe_d3,relaxed,ok,2fbd7319e37debc3c20fb9b89c90c3812970ece488b495db7cb427da9ee9ed82
+Rh100_SO2_sevennet_omni,Rh100,SO2,36,3,,,-2.60746251,pbe_d3,relaxed,ok,d6cc55b34a5ea5248186a7dc159decc55e058f4527e9196e376e8646d68eee16
+Rh100_acetaldehyde_sevennet_omni,Rh100,acetaldehyde,36,7,,,-0.56005455,r2scan,relaxed,ok,2598aff8cc3b938e291bb1298cff91fd41274608482c2d897879c98167378cb8
+Rh100_acetic_acid_sevennet_omni,Rh100,acetic_acid,36,8,,,-0.7568887,r2scan,relaxed,ok,2b5ac4106ab319377baf4c4ecb74ab650252693c357e3eac268066899e362914
+Rh100_ethane_sevennet_omni,Rh100,ethane,36,8,,,-0.17464537,r2scan,relaxed,ok,128c9b6602e255770cb23eef6b216d85c92eb8ddca0580a5ca44dc8ebabe6e28
+Rh100_ethanol_sevennet_omni,Rh100,ethanol,36,9,,,-0.60298379,r2scan,relaxed,ok,f86827b8cc68c36143cdb562e3104c31de6ab1f20af1fe9ed4ecb6c03ff9437e
+Rh100_ethene_sevennet_omni,Rh100,ethene,36,6,,,-1.33386415,r2scan,relaxed,ok,fe8e8f3e3cdb2ba841a96019cff037f0f41fd1bc20cf3d46855d8737572ad951
+Rh100_ethylene_sevennet_omni,Rh100,ethylene,36,6,,,-1.33386415,r2scan,relaxed,ok,fe8e8f3e3cdb2ba841a96019cff037f0f41fd1bc20cf3d46855d8737572ad951
+Rh100_formaldehyde_sevennet_omni,Rh100,formaldehyde,36,4,,,-1.24807647,r2scan,relaxed,ok,058be8a0f4cc95dfcd1da57fdb6185446eebc80e5d62e6d874979cae57069d06
+Rh100_formic_acid_sevennet_omni,Rh100,formic_acid,36,5,,,-0.70870955,r2scan,relaxed,ok,4d4acc0844a6ca6e2a7c16e6b3ba16b0b09908f248799882fe66fd7f63e9f492
+Rh100_methane_sevennet_omni,Rh100,methane,36,5,,,-0.08567006,r2scan,relaxed,ok,5fc0d54d7aaef9bd2361f426c2f7df270605966ce164e4a176deba0539b0a0b2
+Rh100_methanol_sevennet_omni,Rh100,methanol,36,6,,,-0.55228427,r2scan,relaxed,ok,7182ecb06447bab541828763d00ab87f749d6d3462ff5fac1acc9c362cf5dd1e
+Rh110_CH3_sevennet_omni,Rh110,CH3,24,4,,,-1.87444021,r2scan,relaxed,ok,97e4f848392f00722346eca2c2fc130b8f6e1d38f2fb72bd6d2244f5f780bdf3
+Rh110_CH4_sevennet_omni,Rh110,CH4,24,5,,,-0.11553795,r2scan,relaxed,ok,c7b97e19064a36cccbef6e1aea920ab4a04f6e447c6cddcccadda42cc02475d2
+Rh110_CO2_sevennet_omni,Rh110,CO2,24,3,,,-0.13644319,r2scan,relaxed,ok,f890a40d673b8a1d74169e77a806f5a00fe3b934f65536daac67a30fc610356a
+Rh110_CO_sevennet_omni,Rh110,CO,24,2,,,-1.86278163,r2scan,relaxed,ok,ec6e944715556a9fabf4b84cadd462ec199ebcdb52dff665c36141ed3a332b64
+Rh110_DME_sevennet_omni,Rh110,DME,24,9,,,-0.56005527,r2scan,relaxed,ok,f8a57ce3d4b5928f001014861c7adc8df364f9a8ca557b8db4c3ff799ccbddd2
+Rh110_H2O_sevennet_omni,Rh110,H2O,24,3,,,-0.54456627,r2scan,relaxed,ok,1e8e63300679269a1c00690f4a5c64942e6e3184864284eb62b7c491da6de3d6
+Rh110_H2S_sevennet_omni,Rh110,H2S,24,3,,,-1.77288029,r2scan,relaxed,ok,219d9d2ed5e67c658f8fe5b06b9dd1bd1266ebba7c64e3c64c128212f0e9df71
+Rh110_N2_sevennet_omni,Rh110,N2,24,2,,,-0.72990205,r2scan,relaxed,ok,e7f584ee9aadd2c21855a5283890504afcae5a88e258a050221c0b51503eb9a3
+Rh110_NH3_sevennet_omni,Rh110,NH3,24,4,,,-0.95838415,r2scan,relaxed,ok,93ffcb12fb37b8a43ba60c335766df6cc5f715d2e25c8d48b8a8512a2ae42fca
+Rh110_NO_sevennet_omni,Rh110,NO,24,2,,,-3.41219507,pbe_d3,relaxed,ok,109fc76656da7f2897d7fbd5a0424af844a27d3e41e18f9088a53d9d3bd83928
+Rh110_SO2_sevennet_omni,Rh110,SO2,24,3,,,-2.22938126,r2scan,relaxed,ok,8436b85a8d2f915cc9dbd41b942a2e98b63881aab46f00a0f25030336b732373
+Rh110_acetaldehyde_sevennet_omni,Rh110,acetaldehyde,24,7,,,-1.16098667,r2scan,relaxed,ok,bc213d845b2d5839089837b3fd5ad339eccb941c52d80dc6a96bb9224330ea9b
+Rh110_acetic_acid_sevennet_omni,Rh110,acetic_acid,24,8,,,-0.81878785,r2scan,relaxed,ok,832500e34adfc94ca82b69b991bf3cb67af32ff7385562d96091f3d63cc3e134
+Rh110_ethane_sevennet_omni,Rh110,ethane,24,8,,,-0.13332348,r2scan,relaxed,ok,2aead02edc6f139a5ecd8c3c0be23b47fdb9709a7f8f6c4ed431684b71006706
+Rh110_ethanol_sevennet_omni,Rh110,ethanol,24,9,,,-0.67330155,r2scan,relaxed,ok,4cac626c0acfb417de5ff4c93def7415b6e4c5a7fda06456dbc4814d0aaf28b7
+Rh110_ethene_sevennet_omni,Rh110,ethene,24,6,,,-1.29350989,r2scan,relaxed,ok,23b21671eb99ebbe1cb501c652c5cbc0cf20bd74a1fecf8c56309733c69ac234
+Rh110_ethylene_sevennet_omni,Rh110,ethylene,24,6,,,-1.29350989,r2scan,relaxed,ok,23b21671eb99ebbe1cb501c652c5cbc0cf20bd74a1fecf8c56309733c69ac234
+Rh110_formaldehyde_sevennet_omni,Rh110,formaldehyde,24,4,,,-1.7821497,r2scan,relaxed,ok,9fca45bd2b0c2d0dbbcbec150d9232b3a296c51ec6b34d54dd8f0546d9b0670a
+Rh110_formic_acid_sevennet_omni,Rh110,formic_acid,24,5,,,-1.20917777,pbe_d3,relaxed,ok,7a2832560a5e55652aa7968c19b236cf400f34a68a1e1415ebe5c47c7e11a029
+Rh110_methane_sevennet_omni,Rh110,methane,24,5,,,-0.11553795,r2scan,relaxed,ok,c7b97e19064a36cccbef6e1aea920ab4a04f6e447c6cddcccadda42cc02475d2
+Rh110_methanol_sevennet_omni,Rh110,methanol,24,6,,,-0.61035877,r2scan,relaxed,ok,f79f6f6fb365e6c25e0e1c5663357f429a077c147af63b403a6fad8b4ccf1bb9
+Rh111_CH3_sevennet_omni,Rh111,CH3,64,4,,,-2.01068019,pbe_d3,relaxed,ok,0edbd5616903f8c0efda60908501a0697b2468cc0b758662e0dd335577f7c33f
+Rh111_CH4_sevennet_omni,Rh111,CH4,64,5,,,-0.21559055,pbe_d3,relaxed,ok,e8a5fd89eb7a018d1744335ddea505841786415222562b3707b926a52bb405bb
+Rh111_CO2_sevennet_omni,Rh111,CO2,64,3,,,-0.023411,pbe,relaxed,ok,076e0ef0f9583eb246ab45e8d857bcdbef5f3d6954697add29f4c3eddb32747a
+Rh111_CO_sevennet_omni,Rh111,CO,64,2,,,-2.24512796,pbe_d3,relaxed,ok,c35061e8c0c4e53813ead04e3545b11e626b9e945e90c9263541ead3252df56e
+Rh111_DME_sevennet_omni,Rh111,DME,64,9,,,-0.75356918,pbe_d3,relaxed,ok,8324ed27ea38dbc300a326751cbedce3fc9ac2ec40f84a8de0138530cd6c2305
+Rh111_H2O_sevennet_omni,Rh111,H2O,64,3,,,-0.55589578,pbe_d3,relaxed,ok,ef66b1c17c69ab79eb15f8ee50bd0b26f5bb72ba8f7a86e650d20e97591d28ba
+Rh111_H2S_sevennet_omni,Rh111,H2S,64,3,,,-1.16631544,pbe_d3,relaxed,ok,027ab5c0cee6f02b96fd8f26f439de82a510c1e51893df98db1d748a71013f96
+Rh111_N2_sevennet_omni,Rh111,N2,64,2,,,-0.77718215,pbe_d3,relaxed,ok,5094bc56e27d0b267bd824e62b582edb938ce7ac05d434001c15fd635df2d486
+Rh111_NH3_sevennet_omni,Rh111,NH3,64,4,,,-1.19238978,pbe_d3,relaxed,ok,a0429d202bafc506975e861ccfd4fb0c35bb6aa45b9697c5ed52d35bef3042c3
+Rh111_NO_sevennet_omni,Rh111,NO,64,2,,,-3.10099138,pbe_d3,relaxed,ok,5ffc33236eeae7dd3e140b873310a490c1af22ec3e0df6017a6e26a452309721
+Rh111_SO2_sevennet_omni,Rh111,SO2,64,3,,,-2.00968773,pbe_d3,relaxed,ok,474b53660502164aa0e1963f3371ec6a7eced4cf2704ec97a836c191dec02516
+Rh111_acetaldehyde_sevennet_omni,Rh111,acetaldehyde,64,7,,,-0.71268874,pbe_d3,relaxed,ok,b92355da92d2434768b1427a28da5daefbcdc4433dd166edcd25eb1eba36eb73
+Rh111_acetic_acid_sevennet_omni,Rh111,acetic_acid,64,8,,,-0.72722382,beef_vdw,relaxed,ok,58e57ba9543f4915ebf29122a6c8160bfd52869162def11b63bc3794c0246859
+Rh111_ethane_sevennet_omni,Rh111,ethane,64,8,,,-0.37436431,pbe_d3,relaxed,ok,94c5fa8d517f38cc3d27430c1101ae80cc2318049ef8541030a8c3db87e39c47
+Rh111_ethanol_sevennet_omni,Rh111,ethanol,64,9,,,-0.84490766,pbe_d3,relaxed,ok,90a3643d952fb28a32efd222a2577f3932838a04db04900f79c6db2ba9b5e091
+Rh111_ethene_sevennet_omni,Rh111,ethene,64,6,,,-1.32682897,pbe_d3,relaxed,ok,ae63730cd98f37730d95550619d978d6af969ef5624100460bffd6ec401ce38b
+Rh111_ethylene_sevennet_omni,Rh111,ethylene,64,6,,,-1.32682897,pbe_d3,relaxed,ok,ae63730cd98f37730d95550619d978d6af969ef5624100460bffd6ec401ce38b
+Rh111_formaldehyde_sevennet_omni,Rh111,formaldehyde,64,4,,,-0.98453219,pbe_d3,relaxed,ok,8dbf34f435859fbde582ad982c28d10ef709ff40c2bc46bb8f83d8deb4e0e24a
+Rh111_formic_acid_sevennet_omni,Rh111,formic_acid,64,5,,,-0.78074602,pbe_d3,relaxed,ok,e77d965f61c1aa3e5da98378624076ee0c549da097701561fa5aa5277469c5ee

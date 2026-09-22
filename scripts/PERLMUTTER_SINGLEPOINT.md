@@ -1,3 +1,5 @@
+> Current policy (22 September 2026): matching PAW identities are required. The counts and permissive-potential rules below describe an older snapshot and are superseded by [the current refresh](REFRESH_20260922.md) and [potential policy](POTENTIAL_POLICY.md).
+
 # Perlmutter SPE refresh — 2026-09-14
 
 The Perlmutter batch `58164924` evaluates the original ML POSCAR with NSW=0,

@@ -2,7 +2,7 @@
 """Audit Perlmutter SPE on original ML POSCARs using relaxed references.
 
 Reuses the existing Kestrel completion, settings, composition and energy-screen
-rules. Calculation files are read only; POTCAR variants are recorded, not excluded.
+rules. Calculation files are read only; matching PAW potential identities are required.
 """
 import argparse
 from collections import Counter, defaultdict
@@ -63,13 +63,18 @@ def main():
                     references[(role, label, result['functional'])].append(result)
     completion = completion_jobs(project)
     for job in completion:
+        if job['role']=='molecule':
+            directory=Path(job['directory']);result=component(directory)
+            result['completion_job']=job;components[str(directory)]=result
+            if is_relaxed(result,job['functional']):references[('molecule',canonical(job['molecule']),job['functional'])].append(result)
+            continue
         if job['role'] != 'slab':
             continue
         directory = Path(job['directory'])
         result = component(directory)
         result['completion_job'] = job
         components[str(directory)] = result
-        expected = FUNC_DIRS[job['functional']]
+        expected = FUNC_DIRS.get(job['functional'],job['functional'])
         if result.get('settings', {}).get('SYSTEM') == job['surface'] and is_relaxed(result, expected):
             references[('slab', job['surface'], expected)].append(result)
     print('Audited references:', len(components), flush=True)
@@ -138,7 +143,7 @@ def main():
     write_csv(output/'dft_perlmutter_singlepoint.csv', [selected[k] for k in sorted(selected)], list(rows[0]))
     metadata = dict(extracted_at=datetime.now(timezone.utc).isoformat(), project_root=str(project),
         formula='E_ads_SPE = E_complex_NSW0 - E_slab_relaxed - E_molecule_relaxed',
-        policy='Preserve all published SPE values; fill gaps only. Reuse Kestrel completion, electronic convergence, relaxed reference, functional/composition and |E_ads| <= 5 eV screening. POTCAR variants do not exclude results. No scaling or offsets.',
+        policy='Require matching PAW potential identities as well as completion, electronic convergence, relaxed reference and functional/composition checks. Mismatched energies are diagnostic only. The final cluster policy revalidates published values. No scaling or offsets.',
         geometry='POSCAR hash must match both source and staged POSCAR hashes from spe_inputs.json. Check staged INCAR and KPOINTS hashes.',
         selection='Complex: prefer original over completion retry, then no site suffix, then lexical path; never by energy. References: matching functional and composition, prefer matching slab in-plane cell and original molecule spelling, then functional directory and lexical path.',
         counts=dict(Counter(row['status'] for row in rows)), screened_results=len(selected), components=components)

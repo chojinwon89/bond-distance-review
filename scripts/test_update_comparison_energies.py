@@ -56,8 +56,12 @@ class PublishedEnergyTests(unittest.TestCase):
         for row in published:
             key = (row['surface'], row['molecule'], row['functional'])
             self.assertTrue(math.isfinite(float(values[key][0])))
-            if key not in refreshed:
+            # This tests the legacy restoration stage alone. The production
+            # potential-policy pass can withhold numbers afterwards.
+            if key not in refreshed and before[key][0] not in ('potential mismatch','refs unverified'):
                 self.assertEqual(values[key], before[key])
+            elif key not in refreshed:
+                self.assertEqual(float(values[key][0]),float(row['E_ads_DFT']))
         self.assertEqual(len(published), 1087)
         self.assertNotIn('class="audit-status"', page)
         self.assertIn('Previously published energy retained; current audit:', page)
@@ -83,6 +87,20 @@ class PublishedEnergyTests(unittest.TestCase):
 
     def test_review_result_fills_blank_with_flag_but_not_screened_export(self):
         from bs4 import BeautifulSoup
+        # Fix the input scenario explicitly: live recovery jobs may legitimately
+        # turn the former Rh/CH3 outlier into a normal matched-potential result.
+        audit_path = self.root/'dft_perlmutter_energy_audit.csv'
+        with audit_path.open() as f:
+            audit_rows = list(csv.DictReader(f))
+        found = False
+        for entry in audit_rows:
+            if entry['surface']=='Rh100' and entry['molecule']=='CH3' and entry['functional']=='beef_vdw':
+                entry.update(status='energy_review', publishable='false', E_ads_raw='-28.388',
+                             note='Synthetic magnitude-review regression scenario')
+                found = True
+        self.assertTrue(found)
+        with audit_path.open('w', newline='') as f:
+            writer=csv.DictWriter(f,fieldnames=list(audit_rows[0]));writer.writeheader();writer.writerows(audit_rows)
         path=self.root/'dft_comparison.html'
         page=path.read_text()
         pattern=r'(<div class="g" data-surf="Rh100" data-mol="CH3">)(.*?)(?=<div class="g" data-surf=|<script>)'

@@ -1,0 +1,98 @@
+{
+  "snapshot": "2026-09-22T22:28:15.019651+00:00",
+  "jobs": [
+    {
+      "functional": "pbe",
+      "molecule": "DME",
+      "job_id": "58376018_0",
+      "scheduler_state": "COMPLETED",
+      "calculation_status": "converged",
+      "energy_TOTEN_eV": -46.37768189,
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/dme_references_davidson_20260915/molecule/DME/PBE",
+      "input_changes": {
+        "IBRION": "1",
+        "POTIM": "0.2",
+        "NSW": "500",
+        "NELM": "200",
+        "EDIFF": "1E-06",
+        "ISTART": "0",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE.",
+        "IALGO": "38"
+      },
+      "geometry_source": "/pscratch/sd/j/jcho5/VASP/vasp_mol/CH3OCH3/beef_vdw/CONTCAR",
+      "target_systems": [
+        "CH3OCH3_Ag100",
+        "CH3OCH3_Ag110",
+        "CH3OCH3_Ag111",
+        "CH3OCH3_Au100",
+        "CH3OCH3_Au110",
+        "CH3OCH3_Au111",
+        "CH3OCH3_Cu100",
+        "CH3OCH3_Cu110",
+        "CH3OCH3_Cu111",
+        "CH3OCH3_Ir100",
+        "CH3OCH3_Ir110",
+        "CH3OCH3_Ir111",
+        "CH3OCH3_Pd100",
+        "CH3OCH3_Pd110",
+        "CH3OCH3_Pd111",
+        "CH3OCH3_Pt100",
+        "CH3OCH3_Pt110",
+        "CH3OCH3_Rh100",
+        "CH3OCH3_Rh110",
+        "CH3OCH3_Rh111"
+      ]
+    },
+    {
+      "functional": "pbe_d3",
+      "molecule": "DME",
+      "job_id": "58376018_1",
+      "scheduler_state": "COMPLETED",
+      "calculation_status": "converged",
+      "energy_TOTEN_eV": -46.42351862,
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/dme_references_davidson_20260915/molecule/DME/PBE_D3",
+      "input_changes": {
+        "IBRION": "1",
+        "POTIM": "0.2",
+        "NSW": "500",
+        "NELM": "200",
+        "EDIFF": "1E-06",
+        "ISTART": "0",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE.",
+        "IALGO": "38"
+      },
+      "geometry_source": "/pscratch/sd/j/jcho5/VASP/vasp_mol/CH3OCH3/beef_vdw/CONTCAR",
+      "target_systems": [
+        "CH3OCH3_Ag100",
+        "CH3OCH3_Ag110",
+        "CH3OCH3_Ag111",
+        "CH3OCH3_Au100",
+        "CH3OCH3_Au110",
+        "CH3OCH3_Au111",
+        "CH3OCH3_Cu100",
+        "CH3OCH3_Cu110",
+        "CH3OCH3_Cu111",
+        "CH3OCH3_Ir100",
+        "CH3OCH3_Ir110",
+        "CH3OCH3_Ir111",
+        "CH3OCH3_Pd100",
+        "CH3OCH3_Pd110",
+        "CH3OCH3_Pd111",
+        "CH3OCH3_Pt100",
+        "CH3OCH3_Pt110",
+        "CH3OCH3_Rh100",
+        "CH3OCH3_Rh110",
+        "CH3OCH3_Rh111"
+      ]
+    }
+  ],
+  "previous_attempt": {
+    "at": "2026-09-15T19:07:19.962429+00:00",
+    "job_id": "58374583",
+    "reason": "Both first ionic steps exhausted NELM=200 with electronic IALGO=48. Cancelled own retry array; retained outputs. Retry fresh starting geometry with electronic IALGO=38.",
+    "replacement_campaign": "/pscratch/sd/j/jcho5/VASP/completion_runs/dme_references_davidson_20260915"
+  },
+  "policy": "Gas-only PBE/PBE+D3 retries. Original functional and potentials retained. A queued job is not an energy; completed outputs must pass electronic and ionic convergence checks."
+}

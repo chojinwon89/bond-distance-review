@@ -1,0 +1,2985 @@
+{
+  "created_at": "2026-09-16T04:25:51.344680+00:00",
+  "project_root": "/pscratch/sd/j/jcho5/VASP",
+  "jobs": [
+    {
+      "role": "slab",
+      "system": "Cu111_11f50e50d8",
+      "surface": "Cu111",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Cu111_11f50e50d8/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Cu111",
+        "CH3_Cu111",
+        "H2O_Cu111",
+        "H2S_Cu111",
+        "N2_Cu111",
+        "NH3_Cu111",
+        "NO_Cu111",
+        "SO2_Cu111",
+        "acetaldehyde_Cu111",
+        "acetic_acid_Cu111",
+        "ethane_Cu111",
+        "ethanol_Cu111",
+        "ethene_Cu111",
+        "formaldehyde_Cu111",
+        "methane_Cu111",
+        "methanol_Cu111"
+      ],
+      "changes": {
+        "SYSTEM": "Cu111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.210621920333747,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.842657971447272,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.25270341532365
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Cu 22Jun2005",
+      "staged_sha256": {
+        "POSCAR": "df42eba6a27ac779dcf84e1c329c91636c98987f58ef9295bc5b4621aa773c53",
+        "INCAR": "65a77074ce851b14ea89defd5cd03910afadc842dc3d715fe21c25fd62a9bea2",
+        "POTCAR": "b64dae53834dc113c0e23e6a6d919c9f23446fffbe5b6a1a7c48410998f6f67d",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Cu111_28f90def6e",
+      "surface": "Cu111",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Cu111_28f90def6e/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/PBE",
+      "target_systems": [
+        "CH3OCH3_Cu111",
+        "CH3_Cu111",
+        "H2O_Cu111",
+        "H2S_Cu111",
+        "N2_Cu111",
+        "NH3_Cu111",
+        "NO_Cu111",
+        "SO2_Cu111",
+        "acetaldehyde_Cu111",
+        "ethane_Cu111",
+        "ethanol_Cu111",
+        "ethene_Cu111",
+        "formaldehyde_Cu111",
+        "methane_Cu111",
+        "methanol_Cu111"
+      ],
+      "changes": {
+        "SYSTEM": "Cu111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.210621920333747,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.842657971447272,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.25270341532365
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Cu 22Jun2005",
+      "staged_sha256": {
+        "POSCAR": "df42eba6a27ac779dcf84e1c329c91636c98987f58ef9295bc5b4621aa773c53",
+        "INCAR": "3cda2a2159d914a822e7bbacafe0ae8f0b3cc8381bf7610b20f656f106a48e48",
+        "POTCAR": "b64dae53834dc113c0e23e6a6d919c9f23446fffbe5b6a1a7c48410998f6f67d",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Cu111_6058af94f0",
+      "surface": "Cu111",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Cu111_6058af94f0/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/PBE_D3",
+      "target_systems": [
+        "CH3_Cu111",
+        "H2O_Cu111",
+        "H2S_Cu111",
+        "N2_Cu111",
+        "NH3_Cu111",
+        "NO_Cu111",
+        "SO2_Cu111",
+        "acetaldehyde_Cu111",
+        "ethane_Cu111",
+        "ethanol_Cu111",
+        "ethene_Cu111",
+        "formaldehyde_Cu111",
+        "methane_Cu111",
+        "methanol_Cu111"
+      ],
+      "changes": {
+        "SYSTEM": "Cu111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.210621920333747,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.842657971447272,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.25270341532365
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Cu 22Jun2005",
+      "staged_sha256": {
+        "POSCAR": "df42eba6a27ac779dcf84e1c329c91636c98987f58ef9295bc5b4621aa773c53",
+        "INCAR": "687634046ccfdf330631285d5d1826f8cb03c7e6229d85d0753343caad0eade4",
+        "POTCAR": "b64dae53834dc113c0e23e6a6d919c9f23446fffbe5b6a1a7c48410998f6f67d",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Cu111_96724abedd",
+      "surface": "Cu111",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Cu111_96724abedd/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/singlepoint/r2scan",
+      "target_systems": [
+        "CH3OCH3_Cu111",
+        "CH3_Cu111",
+        "NH3_Cu111",
+        "acetaldehyde_Cu111",
+        "acetic_acid_Cu111",
+        "ethane_Cu111",
+        "ethanol_Cu111",
+        "ethene_Cu111",
+        "methane_Cu111",
+        "methanol_Cu111"
+      ],
+      "changes": {
+        "SYSTEM": "Cu111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.210621920333747,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.842657971447272,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.25270341532365
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Cu 22Jun2005",
+      "staged_sha256": {
+        "POSCAR": "df42eba6a27ac779dcf84e1c329c91636c98987f58ef9295bc5b4621aa773c53",
+        "INCAR": "3be579b29062e192218e4b6fecfb9b51056992683c034bc07962e89e92a8ca5a",
+        "POTCAR": "b64dae53834dc113c0e23e6a6d919c9f23446fffbe5b6a1a7c48410998f6f67d",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh111_f89b45c425",
+      "surface": "Rh111",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh111_f89b45c425/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Rh111",
+        "CH3_Rh111",
+        "CO2_Rh111",
+        "CO_Rh111",
+        "H2O_Rh111",
+        "H2S_Rh111",
+        "N2_Rh111",
+        "NH3_Rh111",
+        "NO_Rh111",
+        "SO2_Rh111",
+        "acetaldehyde_Rh111",
+        "acetic_acid_Rh111",
+        "ethane_Rh111",
+        "ethanol_Rh111",
+        "ethene_Rh111",
+        "formaldehyde_Rh111",
+        "formic_acid_Rh111",
+        "methane_Rh111"
+      ],
+      "changes": {
+        "SYSTEM": "Rh111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.756508355409762,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          9.315409491804425,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.58698922118444
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "7a4992fd75e7673b11c825ebf36a664415414b1ecaaf3885d31f7d6ead1ecc37",
+        "INCAR": "b5dc8709349e17a87dec1f2cfc04b676a35e800e48762eaceebaeb6c966026d1",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh111_1b3afe61af",
+      "surface": "Rh111",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh111_1b3afe61af/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/PBE",
+      "target_systems": [
+        "CH3OCH3_Rh111",
+        "CH3_Rh111",
+        "CO2_Rh111",
+        "CO_Rh111",
+        "H2O_Rh111",
+        "H2S_Rh111",
+        "N2_Rh111",
+        "NH3_Rh111",
+        "NO_Rh111",
+        "SO2_Rh111",
+        "acetaldehyde_Rh111",
+        "ethane_Rh111",
+        "ethanol_Rh111",
+        "ethene_Rh111",
+        "formaldehyde_Rh111",
+        "formic_acid_Rh111",
+        "methane_Rh111"
+      ],
+      "changes": {
+        "SYSTEM": "Rh111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.756508355409762,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          9.315409491804425,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.58698922118444
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "7a4992fd75e7673b11c825ebf36a664415414b1ecaaf3885d31f7d6ead1ecc37",
+        "INCAR": "0a2a9eeab34bf2dcb37dfbe1db68dd78362e00b1b193a43bd628cc308e2e214a",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh111_c0cecc3821",
+      "surface": "Rh111",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh111_c0cecc3821/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/PBE_D3",
+      "target_systems": [
+        "CH3_Rh111",
+        "CO_Rh111",
+        "H2O_Rh111",
+        "H2S_Rh111",
+        "N2_Rh111",
+        "NH3_Rh111",
+        "NO_Rh111",
+        "SO2_Rh111",
+        "acetaldehyde_Rh111",
+        "ethane_Rh111",
+        "ethanol_Rh111",
+        "ethene_Rh111",
+        "formaldehyde_Rh111",
+        "formic_acid_Rh111",
+        "methane_Rh111"
+      ],
+      "changes": {
+        "SYSTEM": "Rh111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.756508355409762,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          9.315409491804425,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.58698922118444
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "7a4992fd75e7673b11c825ebf36a664415414b1ecaaf3885d31f7d6ead1ecc37",
+        "INCAR": "53036860841a29a331c7fa4b21ef7cf8864a859d98d7563a79d644f98e27a4a0",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh111_c2d1f56f12",
+      "surface": "Rh111",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh111_c2d1f56f12/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/singlepoint/r2scan",
+      "target_systems": [
+        "CH3OCH3_Rh111",
+        "CH3_Rh111",
+        "acetaldehyde_Rh111",
+        "acetic_acid_Rh111",
+        "ethane_Rh111",
+        "ethanol_Rh111",
+        "ethene_Rh111"
+      ],
+      "changes": {
+        "SYSTEM": "Rh111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          10.756508355409762,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          9.315409491804425,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.58698922118444
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "7a4992fd75e7673b11c825ebf36a664415414b1ecaaf3885d31f7d6ead1ecc37",
+        "INCAR": "8f01912841344ce8ee121965b97586463faaf46083651614c8a40d94d0db11a2",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt100_529df1e123",
+      "surface": "Pt100",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt100_529df1e123/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt100/beef_vdw",
+      "target_systems": [
+        "CO2_Pt100",
+        "ethane_Pt100",
+        "ethanol_Pt100"
+      ],
+      "changes": {
+        "SYSTEM": "Pt100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.087434329005065,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.88
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6286593c8cb20df9e7ee3a43c9fa422024b5d25e3a739bf8c03b05c94ae3f791",
+        "INCAR": "3399622224f75cebc15d3ab7fe37c6fa13eb43081d37ce13fcb198e0901f81c9",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt100_a49f22e12a",
+      "surface": "Pt100",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt100_a49f22e12a/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt100/PBE",
+      "target_systems": [
+        "CO2_Pt100",
+        "ethane_Pt100",
+        "ethanol_Pt100"
+      ],
+      "changes": {
+        "SYSTEM": "Pt100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.087434329005065,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.88
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6286593c8cb20df9e7ee3a43c9fa422024b5d25e3a739bf8c03b05c94ae3f791",
+        "INCAR": "ae543ce236599d6b014b35196b428cca6522dead35164687037f30be16e3f53b",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt100_3c53559c7d",
+      "surface": "Pt100",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt100_3c53559c7d/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt100/PBE_D3",
+      "target_systems": [
+        "ethane_Pt100",
+        "ethanol_Pt100"
+      ],
+      "changes": {
+        "SYSTEM": "Pt100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.087434329005065,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.88
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6286593c8cb20df9e7ee3a43c9fa422024b5d25e3a739bf8c03b05c94ae3f791",
+        "INCAR": "ca066ef56e63e04446ac2074b7b3fa9350b33ceee5d665f562fb70a3d00b9f57",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt100_d508ddc3d6",
+      "surface": "Pt100",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt100_d508ddc3d6/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt100/singlepoint/r2scan",
+      "target_systems": [
+        "ethane_Pt100",
+        "ethanol_Pt100"
+      ],
+      "changes": {
+        "SYSTEM": "Pt100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.087434329005065,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.88
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6286593c8cb20df9e7ee3a43c9fa422024b5d25e3a739bf8c03b05c94ae3f791",
+        "INCAR": "edbbabd04c71eee2501a9f6cca7cb7726e936e07e9076764553137f60280b5e8",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh110_a6be9fa2b9",
+      "surface": "Rh110",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh110_a6be9fa2b9/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh110/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Rh110",
+        "CH3_Rh110",
+        "CO2_Rh110",
+        "CO_Rh110",
+        "H2O_Rh110",
+        "H2S_Rh110",
+        "N2_Rh110",
+        "NH3_Rh110",
+        "NO_Rh110",
+        "SO2_Rh110",
+        "acetaldehyde_Rh110",
+        "acetic_acid_Rh110",
+        "ethane_Rh110",
+        "ethanol_Rh110",
+        "ethene_Rh110",
+        "formaldehyde_Rh110",
+        "formic_acid_Rh110",
+        "methane_Rh110",
+        "methanol_Rh110"
+      ],
+      "changes": {
+        "SYSTEM": "Rh110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.408999999999999,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.378254177704881,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.03369063327866
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "239a231604abc87e4bf98a0dbdc49c3524ca7e0f89dba1dd8a15d08470b43b8e",
+        "INCAR": "6c8ab68c2c7f613106e42ac143f6f3dbfbb4198a97038d11da164fc5bdbd656f",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh110_1848e5f440",
+      "surface": "Rh110",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh110_1848e5f440/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh110/PBE",
+      "target_systems": [
+        "CH3OCH3_Rh110",
+        "CH3_Rh110",
+        "CO2_Rh110",
+        "CO_Rh110",
+        "H2O_Rh110",
+        "H2S_Rh110",
+        "N2_Rh110",
+        "NH3_Rh110",
+        "NO_Rh110",
+        "SO2_Rh110",
+        "acetaldehyde_Rh110",
+        "ethane_Rh110",
+        "ethanol_Rh110",
+        "ethene_Rh110",
+        "formaldehyde_Rh110",
+        "formic_acid_Rh110",
+        "methane_Rh110",
+        "methanol_Rh110"
+      ],
+      "changes": {
+        "SYSTEM": "Rh110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.408999999999999,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.378254177704881,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.03369063327866
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "239a231604abc87e4bf98a0dbdc49c3524ca7e0f89dba1dd8a15d08470b43b8e",
+        "INCAR": "1aa2bb133d543ed26ce9e2938e899671a001a0f2587dc0a289211779d3334c3d",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh110_3701de68d2",
+      "surface": "Rh110",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh110_3701de68d2/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh110/PBE_D3",
+      "target_systems": [
+        "CH3_Rh110",
+        "CO_Rh110",
+        "H2O_Rh110",
+        "H2S_Rh110",
+        "N2_Rh110",
+        "NH3_Rh110",
+        "NO_Rh110",
+        "SO2_Rh110",
+        "acetaldehyde_Rh110",
+        "ethane_Rh110",
+        "ethanol_Rh110",
+        "ethene_Rh110",
+        "formaldehyde_Rh110",
+        "formic_acid_Rh110",
+        "methane_Rh110",
+        "methanol_Rh110"
+      ],
+      "changes": {
+        "SYSTEM": "Rh110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.408999999999999,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.378254177704881,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.03369063327866
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "239a231604abc87e4bf98a0dbdc49c3524ca7e0f89dba1dd8a15d08470b43b8e",
+        "INCAR": "5a5c773d248d04e4b704d2d1deaf8943e4e478e5853e0e94e53a8f5d36a23e7c",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh110_43367cbc6c",
+      "surface": "Rh110",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh110_43367cbc6c/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh110/r2scan",
+      "target_systems": [
+        "CH3OCH3_Rh110",
+        "CH3_Rh110",
+        "CO2_Rh110",
+        "CO_Rh110",
+        "H2O_Rh110",
+        "H2S_Rh110",
+        "N2_Rh110",
+        "NH3_Rh110",
+        "SO2_Rh110",
+        "acetaldehyde_Rh110",
+        "acetic_acid_Rh110",
+        "ethane_Rh110",
+        "ethanol_Rh110",
+        "ethene_Rh110",
+        "formaldehyde_Rh110",
+        "methane_Rh110",
+        "methanol_Rh110"
+      ],
+      "changes": {
+        "SYSTEM": "Rh110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.408999999999999,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.378254177704881,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.03369063327866
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "239a231604abc87e4bf98a0dbdc49c3524ca7e0f89dba1dd8a15d08470b43b8e",
+        "INCAR": "2a048753b11705112448b719c6df107fda8564ca3d07ac794f37824c86599cd4",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag100_bdf57ab72d",
+      "surface": "Ag100",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag100_bdf57ab72d/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ag100/beef_vdw",
+      "target_systems": [
+        "CO2_Ag100",
+        "ethane_Ag100",
+        "ethanol_Ag100"
+      ],
+      "changes": {
+        "SYSTEM": "Ag100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.568266940211918,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.568266940211918,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.135
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "40e061dc1f6a6fea9eaf9a71c708141539913e6c2a74d293dcf6c9605b833d2c",
+        "INCAR": "19d04433625f3042a664545281e5ec3c6e3c974186411334d47050306ba507a8",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag100_03d62237d7",
+      "surface": "Ag100",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag100_03d62237d7/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ag100/PBE",
+      "target_systems": [
+        "CO2_Ag100",
+        "ethane_Ag100",
+        "ethanol_Ag100"
+      ],
+      "changes": {
+        "SYSTEM": "Ag100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.568266940211918,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.568266940211918,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.135
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "40e061dc1f6a6fea9eaf9a71c708141539913e6c2a74d293dcf6c9605b833d2c",
+        "INCAR": "c840de2bbef6e4f689e3ae896550573bd300d239df7b3f98aaa683570dbc4dff",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag100_ea6fd71f0d",
+      "surface": "Ag100",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag100_ea6fd71f0d/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ag100/PBE_D3",
+      "target_systems": [
+        "ethane_Ag100",
+        "ethanol_Ag100"
+      ],
+      "changes": {
+        "SYSTEM": "Ag100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.568266940211918,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.568266940211918,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.135
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "40e061dc1f6a6fea9eaf9a71c708141539913e6c2a74d293dcf6c9605b833d2c",
+        "INCAR": "bb2559cde348ac93e45c3a61ede7a6f3a4ee6816fd2f95b053356624e92812a7",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag100_40d6d8753e",
+      "surface": "Ag100",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag100_40d6d8753e/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ag100/singlepoint/r2scan",
+      "target_systems": [
+        "ethane_Ag100",
+        "ethanol_Ag100"
+      ],
+      "changes": {
+        "SYSTEM": "Ag100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          11.568266940211918,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.568266940211918,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.135
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "40e061dc1f6a6fea9eaf9a71c708141539913e6c2a74d293dcf6c9605b833d2c",
+        "INCAR": "6d429baccf56583d26acc7d2e24c23cb876938a7fedcf3d1a5803c02e4c9b5f7",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd110_7655ac7da9",
+      "surface": "Pd110",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd110_7655ac7da9/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd110/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Pd110",
+        "CH3_Pd110",
+        "CO2_Pd110",
+        "CO_Pd110",
+        "H2S_Pd110",
+        "NO_Pd110",
+        "SO2_Pd110",
+        "acetaldehyde_Pd110",
+        "acetic_acid_Pd110",
+        "ethene_Pd110",
+        "formaldehyde_Pd110",
+        "formic_acid_Pd110",
+        "methane_Pd110",
+        "methanol_Pd110"
+      ],
+      "changes": {
+        "SYSTEM": "Pd110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.67,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.50129075763134,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.12596806822351
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "f5353dcca756debeca96ff52b67f8357ea2b281fdc9033efc3e98e6033f7982d",
+        "INCAR": "605e7ea32162a9ec3bb3933ec352d23035069d10d7cf7dc8d88845f9d24fcc31",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd110_b8e0988b71",
+      "surface": "Pd110",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd110_b8e0988b71/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd110/PBE",
+      "target_systems": [
+        "CH3OCH3_Pd110",
+        "CH3_Pd110",
+        "CO2_Pd110",
+        "CO_Pd110",
+        "H2O_Pd110",
+        "H2S_Pd110",
+        "N2_Pd110",
+        "NH3_Pd110",
+        "NO_Pd110",
+        "SO2_Pd110",
+        "acetaldehyde_Pd110",
+        "ethene_Pd110",
+        "formaldehyde_Pd110",
+        "formic_acid_Pd110",
+        "methane_Pd110",
+        "methanol_Pd110"
+      ],
+      "changes": {
+        "SYSTEM": "Pd110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.67,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.50129075763134,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.12596806822351
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "f5353dcca756debeca96ff52b67f8357ea2b281fdc9033efc3e98e6033f7982d",
+        "INCAR": "116192fef5c94aa348a7d3d42cbc167f98f5853ba7cd1ded6d5f781bb9d2c93f",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd110_ff78040989",
+      "surface": "Pd110",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd110_ff78040989/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd110/PBE_D3",
+      "target_systems": [
+        "CH3_Pd110",
+        "CO_Pd110",
+        "H2O_Pd110",
+        "H2S_Pd110",
+        "N2_Pd110",
+        "NH3_Pd110",
+        "NO_Pd110",
+        "SO2_Pd110",
+        "acetaldehyde_Pd110",
+        "ethene_Pd110",
+        "formaldehyde_Pd110",
+        "formic_acid_Pd110",
+        "methane_Pd110",
+        "methanol_Pd110"
+      ],
+      "changes": {
+        "SYSTEM": "Pd110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.67,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.50129075763134,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.12596806822351
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "f5353dcca756debeca96ff52b67f8357ea2b281fdc9033efc3e98e6033f7982d",
+        "INCAR": "e6f34efcd84ed1ac9a369d9d471f57122038b9e3b7dfdc16d013215a7c3204e1",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd110_2eb6224610",
+      "surface": "Pd110",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd110_2eb6224610/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd110/r2scan",
+      "target_systems": [
+        "CH3OCH3_Pd110",
+        "CH3_Pd110",
+        "CO2_Pd110",
+        "CO_Pd110",
+        "H2O_Pd110",
+        "H2S_Pd110",
+        "NH3_Pd110",
+        "SO2_Pd110",
+        "acetaldehyde_Pd110",
+        "acetic_acid_Pd110",
+        "ethene_Pd110",
+        "formaldehyde_Pd110",
+        "formic_acid_Pd110",
+        "methane_Pd110",
+        "methanol_Pd110"
+      ],
+      "changes": {
+        "SYSTEM": "Pd110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 24,
+      "cell": [
+        [
+          11.67,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.50129075763134,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.12596806822351
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "f5353dcca756debeca96ff52b67f8357ea2b281fdc9033efc3e98e6033f7982d",
+        "INCAR": "92296fe098b29a7eb55c1d98f37320d17337e4116b9f184170be8de7a617067e",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt110_b114012bf7",
+      "surface": "Pt110",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt110_b114012bf7/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt110/singlepoint/beef_vdw",
+      "target_systems": [
+        "ethane_Pt110",
+        "ethanol_Pt110"
+      ],
+      "changes": {
+        "SYSTEM": "Pt110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          15.68,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.1577878733769
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6c6c01a465ead42d078eeab6ce64ab68f6b47e9ca2486c88e1beeb2e627964a2",
+        "INCAR": "58c0e56048b4680fa8bed0d278906c4149d7dd7fc21ac389050a3b67a91c8c48",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt110_9df8ef40c0",
+      "surface": "Pt110",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt110_9df8ef40c0/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt110/PBE",
+      "target_systems": [
+        "ethane_Pt110",
+        "ethanol_Pt110"
+      ],
+      "changes": {
+        "SYSTEM": "Pt110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          15.68,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.1577878733769
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6c6c01a465ead42d078eeab6ce64ab68f6b47e9ca2486c88e1beeb2e627964a2",
+        "INCAR": "32bd3b7ea86c74ccb32dd5cba098d6e38caae2132f075ebe480a33428afcf802",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt110_b45ee2f606",
+      "surface": "Pt110",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt110_b45ee2f606/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt110/PBE_D3",
+      "target_systems": [
+        "ethane_Pt110",
+        "ethanol_Pt110"
+      ],
+      "changes": {
+        "SYSTEM": "Pt110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          15.68,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.1577878733769
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6c6c01a465ead42d078eeab6ce64ab68f6b47e9ca2486c88e1beeb2e627964a2",
+        "INCAR": "83fbdfb63c32e892f948c2bdf1e73e8681e5fa040aeedadda7f0b2f6632f3f51",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt110_dc8c419e9d",
+      "surface": "Pt110",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt110_dc8c419e9d/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt110/singlepoint/r2scan",
+      "target_systems": [
+        "ethane_Pt110",
+        "ethanol_Pt110"
+      ],
+      "changes": {
+        "SYSTEM": "Pt110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          15.68,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.087434329005065,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.1577878733769
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "6c6c01a465ead42d078eeab6ce64ab68f6b47e9ca2486c88e1beeb2e627964a2",
+        "INCAR": "e60a73d3e0e5cb40c7a6d284a24c690fe4015f2452ad14629d6e04cdba97b362",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag110_9a26dc65ff",
+      "surface": "Ag110",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag110_9a26dc65ff/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Ag110/beef_vdw",
+      "target_systems": [
+        "ethanol_Ag110"
+      ],
+      "changes": {
+        "SYSTEM": "Ag110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          16.36,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.568266940211918,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.33810010257947
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "ff87475055fad32e683b93cbd5b754da9451064a1fe8576d39afc757d1b09806",
+        "INCAR": "2f40155d6b82e535e68e18a62efc0a9bad44c5135890e804ddd3da654e971f5b",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag110_ae1f44758e",
+      "surface": "Ag110",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag110_ae1f44758e/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Ag110/PBE",
+      "target_systems": [
+        "ethanol_Ag110"
+      ],
+      "changes": {
+        "SYSTEM": "Ag110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          16.36,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.568266940211918,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.33810010257947
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "ff87475055fad32e683b93cbd5b754da9451064a1fe8576d39afc757d1b09806",
+        "INCAR": "7442e4e221c4b11f582cfbd8aed05084ee85aa51dbcbb0c93157e47d49c05342",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag110_9d6c0fe500",
+      "surface": "Ag110",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag110_9d6c0fe500/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Ag110/PBE_D3",
+      "target_systems": [
+        "ethanol_Ag110"
+      ],
+      "changes": {
+        "SYSTEM": "Ag110",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 64,
+      "cell": [
+        [
+          16.36,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          11.568266940211918,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          34.33810010257947
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "ff87475055fad32e683b93cbd5b754da9451064a1fe8576d39afc757d1b09806",
+        "INCAR": "82a9a7fdb6a9f1812a317991c3e4e30a38ac4779d7ae297e5b0e4cda40ddd62f",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh100_b2891dc541",
+      "surface": "Rh100",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh100_b2891dc541/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh100/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Rh100",
+        "CH3_Rh100",
+        "CO_Rh100",
+        "H2O_Rh100",
+        "H2S_Rh100",
+        "N2_Rh100",
+        "NH3_Rh100",
+        "NO_Rh100",
+        "SO2_Rh100",
+        "acetaldehyde_Rh100",
+        "acetic_acid_Rh100",
+        "ethane_Rh100",
+        "ethanol_Rh100",
+        "ethene_Rh100",
+        "formaldehyde_Rh100",
+        "formic_acid_Rh100",
+        "methane_Rh100",
+        "methanol_Rh100"
+      ],
+      "changes": {
+        "SYSTEM": "Rh100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.067381266557321,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.067381266557321,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.704499999999996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "9f7e53c20ac6e7e137082bf81799b216e34040327441fc008ea79f33abce9467",
+        "INCAR": "21b2feed70a0bf9301155631802b7e247ce4312a34581a2e25741e6c1869e563",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh100_3b80ca62d8",
+      "surface": "Rh100",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh100_3b80ca62d8/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh100/PBE",
+      "target_systems": [
+        "CH3OCH3_Rh100",
+        "CH3_Rh100",
+        "CO2_Rh100",
+        "CO_Rh100",
+        "H2O_Rh100",
+        "H2S_Rh100",
+        "N2_Rh100",
+        "NH3_Rh100",
+        "NO_Rh100",
+        "SO2_Rh100",
+        "acetaldehyde_Rh100",
+        "ethane_Rh100",
+        "ethanol_Rh100",
+        "ethene_Rh100",
+        "formaldehyde_Rh100",
+        "formic_acid_Rh100",
+        "methane_Rh100",
+        "methanol_Rh100"
+      ],
+      "changes": {
+        "SYSTEM": "Rh100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.067381266557321,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.067381266557321,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.704499999999996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "9f7e53c20ac6e7e137082bf81799b216e34040327441fc008ea79f33abce9467",
+        "INCAR": "92a5150cf045e926cd15a3a6e0e505a97e9d16a717e791b2b893b28e6f25a5cb",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh100_012f04b189",
+      "surface": "Rh100",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh100_012f04b189/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh100/PBE_D3",
+      "target_systems": [
+        "CH3_Rh100",
+        "CO_Rh100",
+        "H2O_Rh100",
+        "H2S_Rh100",
+        "N2_Rh100",
+        "NH3_Rh100",
+        "NO_Rh100",
+        "SO2_Rh100",
+        "acetaldehyde_Rh100",
+        "ethane_Rh100",
+        "ethanol_Rh100",
+        "ethene_Rh100",
+        "formaldehyde_Rh100",
+        "formic_acid_Rh100",
+        "methane_Rh100",
+        "methanol_Rh100"
+      ],
+      "changes": {
+        "SYSTEM": "Rh100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.067381266557321,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.067381266557321,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.704499999999996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "9f7e53c20ac6e7e137082bf81799b216e34040327441fc008ea79f33abce9467",
+        "INCAR": "383333d57dbb0e36e669dffdbda4108225ad7229e190a0d886468922dc44a989",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Rh100_84c2195556",
+      "surface": "Rh100",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Rh100_84c2195556/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh100/r2scan",
+      "target_systems": [
+        "CH3OCH3_Rh100",
+        "CH3_Rh100",
+        "CO2_Rh100",
+        "CO_Rh100",
+        "H2O_Rh100",
+        "H2S_Rh100",
+        "N2_Rh100",
+        "NH3_Rh100",
+        "acetaldehyde_Rh100",
+        "acetic_acid_Rh100",
+        "ethane_Rh100",
+        "ethanol_Rh100",
+        "ethene_Rh100",
+        "formaldehyde_Rh100",
+        "formic_acid_Rh100",
+        "methane_Rh100",
+        "methanol_Rh100"
+      ],
+      "changes": {
+        "SYSTEM": "Rh100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.067381266557321,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.067381266557321,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.704499999999996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Rh 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "9f7e53c20ac6e7e137082bf81799b216e34040327441fc008ea79f33abce9467",
+        "INCAR": "d975de14edae392b8fd106a86303bc8948d9580881bd1925d95b10bf91fa18ee",
+        "POTCAR": "7e26a6c5f4bbb11f6d546708200d6aa3efbce224d7a794489bde4440a0d6e9c2",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd100_b7d9b89afa",
+      "surface": "Pd100",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd100_b7d9b89afa/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd100/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Pd100",
+        "CH3_Pd100",
+        "CO_Pd100",
+        "H2O_Pd100",
+        "H2S_Pd100",
+        "NH3_Pd100",
+        "NO_Pd100",
+        "SO2_Pd100",
+        "acetaldehyde_Pd100",
+        "acetic_acid_Pd100",
+        "ethene_Pd100",
+        "formaldehyde_Pd100",
+        "formic_acid_Pd100",
+        "methane_Pd100",
+        "methanol_Pd100"
+      ],
+      "changes": {
+        "SYSTEM": "Pd100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.25193613644701,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.835
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "de81f691f86a6c25683fc0968e25b1669c74c1e1233b7cf83dc48d90fa95216a",
+        "INCAR": "162a39711338faff48cc3bcf18bcae6b4b2bbf1733000b2dfee66a8d676d39dd",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd100_c08ae883ca",
+      "surface": "Pd100",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd100_c08ae883ca/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd100/PBE",
+      "target_systems": [
+        "CH3OCH3_Pd100",
+        "CH3_Pd100",
+        "CO_Pd100",
+        "H2O_Pd100",
+        "H2S_Pd100",
+        "N2_Pd100",
+        "NH3_Pd100",
+        "NO_Pd100",
+        "SO2_Pd100",
+        "acetaldehyde_Pd100",
+        "ethene_Pd100",
+        "formaldehyde_Pd100",
+        "formic_acid_Pd100",
+        "methane_Pd100",
+        "methanol_Pd100"
+      ],
+      "changes": {
+        "SYSTEM": "Pd100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.25193613644701,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.835
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "de81f691f86a6c25683fc0968e25b1669c74c1e1233b7cf83dc48d90fa95216a",
+        "INCAR": "5de5fe4224001263dae7bc7146c3dc9246f2c6ae9b858b4aa3b3086c1f42309a",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd100_156b5750ad",
+      "surface": "Pd100",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd100_156b5750ad/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd100/PBE_D3",
+      "target_systems": [
+        "CH3_Pd100",
+        "CO_Pd100",
+        "H2O_Pd100",
+        "H2S_Pd100",
+        "N2_Pd100",
+        "NH3_Pd100",
+        "NO_Pd100",
+        "SO2_Pd100",
+        "acetaldehyde_Pd100",
+        "ethene_Pd100",
+        "formaldehyde_Pd100",
+        "formic_acid_Pd100",
+        "methane_Pd100",
+        "methanol_Pd100"
+      ],
+      "changes": {
+        "SYSTEM": "Pd100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.25193613644701,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.835
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "de81f691f86a6c25683fc0968e25b1669c74c1e1233b7cf83dc48d90fa95216a",
+        "INCAR": "fb7f9099ab36e240e1d3f2c3901c01748f6cf4b6f73cbaede8dcf3b5288a9872",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd100_25986b23a9",
+      "surface": "Pd100",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd100_25986b23a9/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd100/r2scan",
+      "target_systems": [
+        "CH3OCH3_Pd100",
+        "CH3_Pd100",
+        "CO_Pd100",
+        "H2O_Pd100",
+        "H2S_Pd100",
+        "N2_Pd100",
+        "NH3_Pd100",
+        "SO2_Pd100",
+        "acetaldehyde_Pd100",
+        "acetic_acid_Pd100",
+        "ethene_Pd100",
+        "formaldehyde_Pd100",
+        "methane_Pd100",
+        "methanol_Pd100"
+      ],
+      "changes": {
+        "SYSTEM": "Pd100",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.25193613644701,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          35.835
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "de81f691f86a6c25683fc0968e25b1669c74c1e1233b7cf83dc48d90fa95216a",
+        "INCAR": "40ea31f1b101bd925442a9909046e7e78e4fea6fe5298aae82de7b73e2eee619",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd111_f1f527eac1",
+      "surface": "Pd111",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd111_f1f527eac1/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd111/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Pd111",
+        "CH3_Pd111",
+        "H2O_Pd111",
+        "NH3_Pd111",
+        "NO_Pd111",
+        "SO2_Pd111",
+        "acetaldehyde_Pd111",
+        "acetic_acid_Pd111",
+        "ethene_Pd111",
+        "formaldehyde_Pd111",
+        "formic_acid_Pd111",
+        "methane_Pd111",
+        "methanol_Pd111"
+      ],
+      "changes": {
+        "SYSTEM": "Pd111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          4.125968068223505,
+          7.146386324569921,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.737677641442936
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "db3d1b8b480b5fe2c796c62a23a16f85c61f94cd0ccff149dc4b144d67a49b4c",
+        "INCAR": "9d1e6b5347c910ec05e9cb2edec4e149cef961905a6ace925ed525bc1eb400cc",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd111_ffc3f47166",
+      "surface": "Pd111",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd111_ffc3f47166/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd111/PBE",
+      "target_systems": [
+        "CH3OCH3_Pd111",
+        "CH3_Pd111",
+        "H2O_Pd111",
+        "H2S_Pd111",
+        "N2_Pd111",
+        "NH3_Pd111",
+        "NO_Pd111",
+        "SO2_Pd111",
+        "acetaldehyde_Pd111",
+        "ethene_Pd111",
+        "formaldehyde_Pd111",
+        "formic_acid_Pd111",
+        "methane_Pd111",
+        "methanol_Pd111"
+      ],
+      "changes": {
+        "SYSTEM": "Pd111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          4.125968068223505,
+          7.146386324569921,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.737677641442936
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "db3d1b8b480b5fe2c796c62a23a16f85c61f94cd0ccff149dc4b144d67a49b4c",
+        "INCAR": "8790b70e7ff16c254f99ea52245ebc484fa2e5c78de9d273b2bb3e4777aa6234",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd111_0333765c8d",
+      "surface": "Pd111",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd111_0333765c8d/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd111/PBE_D3",
+      "target_systems": [
+        "CH3_Pd111",
+        "H2O_Pd111",
+        "H2S_Pd111",
+        "N2_Pd111",
+        "NH3_Pd111",
+        "NO_Pd111",
+        "SO2_Pd111",
+        "acetaldehyde_Pd111",
+        "ethene_Pd111",
+        "formaldehyde_Pd111",
+        "formic_acid_Pd111",
+        "methane_Pd111",
+        "methanol_Pd111"
+      ],
+      "changes": {
+        "SYSTEM": "Pd111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          4.125968068223505,
+          7.146386324569921,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.737677641442936
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "db3d1b8b480b5fe2c796c62a23a16f85c61f94cd0ccff149dc4b144d67a49b4c",
+        "INCAR": "73c031a7b2ba8bbb9fe0dba45fc54209ac187ec6b1fc129c9a951f6f35066a0d",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pd111_5174c1fcdf",
+      "surface": "Pd111",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pd111_5174c1fcdf/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd111/singlepoint/r2scan",
+      "target_systems": [
+        "CH3OCH3_Pd111",
+        "CH3_Pd111",
+        "acetaldehyde_Pd111",
+        "acetic_acid_Pd111",
+        "ethene_Pd111",
+        "methane_Pd111",
+        "methanol_Pd111"
+      ],
+      "changes": {
+        "SYSTEM": "Pd111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.25193613644701,
+          0.0,
+          0.0
+        ],
+        [
+          4.125968068223505,
+          7.146386324569921,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.737677641442936
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pd 04Jan2005",
+      "staged_sha256": {
+        "POSCAR": "db3d1b8b480b5fe2c796c62a23a16f85c61f94cd0ccff149dc4b144d67a49b4c",
+        "INCAR": "1a2e30f8432561c994966d8549a3e20009ca4dbb12d4229f405430ef19a95e39",
+        "POTCAR": "511b1d219e8296389751f0b51dbb97c1dafa933aa13acda49a4f60f5357a04ff",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt111_b3d4634709",
+      "surface": "Pt111",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt111_b3d4634709/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H5OH_Pt111_top/singlepoint/beef_vdw",
+      "target_systems": [
+        "ethanol_Pt111",
+        "formic_acid_Pt111"
+      ],
+      "changes": {
+        "SYSTEM": "Pt111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.3155757467538,
+          0.0,
+          0.0
+        ],
+        [
+          4.157787873376899,
+          7.201499843782544,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.789639165669996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "b84d8b081f5a1626e07b4b513f03ccf90c0d1e1128171416d318684158386d20",
+        "INCAR": "7306aaccbe5e052882f1d6f514b688e5493b3efd83e3baca489c93b5e742f1dc",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt111_ac28ddddd3",
+      "surface": "Pt111",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt111_ac28ddddd3/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pt111_bri/singlepoint/PBE",
+      "target_systems": [
+        "ethanol_Pt111",
+        "ethene_Pt111",
+        "formic_acid_Pt111",
+        "methanol_Pt111"
+      ],
+      "changes": {
+        "SYSTEM": "Pt111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.3155757467538,
+          0.0,
+          0.0
+        ],
+        [
+          4.157787873376899,
+          7.201499843782544,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.789639165669996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "1c550aaee3ae1bee024af738451d54d1b34b9ac49a6036c122fc39f5fcd53cef",
+        "INCAR": "b733c4b735cdf8322d0aa1df89ad43ce6b9935cd5728db70e1360c60aa0ae6b9",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt111_c3286ec1f4",
+      "surface": "Pt111",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt111_c3286ec1f4/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pt111_bri/singlepoint/PBE_D3",
+      "target_systems": [
+        "ethanol_Pt111",
+        "ethene_Pt111",
+        "formic_acid_Pt111",
+        "methanol_Pt111"
+      ],
+      "changes": {
+        "SYSTEM": "Pt111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.3155757467538,
+          0.0,
+          0.0
+        ],
+        [
+          4.157787873376899,
+          7.201499843782544,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.789639165669996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "1c550aaee3ae1bee024af738451d54d1b34b9ac49a6036c122fc39f5fcd53cef",
+        "INCAR": "2ed13ce88a15e45348978cac122ecd4edd23b4af5b2b67fea1102452d78621d6",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Pt111_f47184e1d6",
+      "surface": "Pt111",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Pt111_f47184e1d6/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pt111_bri/singlepoint/r2scan",
+      "target_systems": [
+        "ethanol_Pt111",
+        "ethene_Pt111",
+        "methanol_Pt111"
+      ],
+      "changes": {
+        "SYSTEM": "Pt111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.3155757467538,
+          0.0,
+          0.0
+        ],
+        [
+          4.157787873376899,
+          7.201499843782544,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          36.789639165669996
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Pt 04Feb2005",
+      "staged_sha256": {
+        "POSCAR": "1c550aaee3ae1bee024af738451d54d1b34b9ac49a6036c122fc39f5fcd53cef",
+        "INCAR": "1c7b36129f4ecb2291fd0b8826f3df787837243b2d9b690f7c22cdec9b9608c3",
+        "POTCAR": "5107ae6ecfb7f3f49d57bb32293bfd41b371cf552993149a4f048670dd5c1cbf",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag111_35207ad13f",
+      "surface": "Ag111",
+      "functional": "beef_vdw",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag111_35207ad13f/beef_vdw",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ag111/beef_vdw",
+      "target_systems": [
+        "CH3OCH3_Ag111",
+        "CH3_Ag111",
+        "CO_Ag111",
+        "H2O_Ag111",
+        "H2S_Ag111",
+        "N2_Ag111",
+        "NH3_Ag111",
+        "NO_Ag111",
+        "SO2_Ag111",
+        "acetaldehyde_Ag111",
+        "acetic_acid_Ag111",
+        "ethene_Ag111",
+        "formaldehyde_Ag111",
+        "formic_acid_Ag111",
+        "methane_Ag111",
+        "methanol_Ag111"
+      ],
+      "changes": {
+        "SYSTEM": "Ag111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.676200205158938,
+          0.0,
+          0.0
+        ],
+        [
+          4.338100102579471,
+          7.513809785987396,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          37.08408780295671
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "267a320af0d061718f86a357bb26f4a10ffbb5bf5d6b535d50e337dc26c31c2a",
+        "INCAR": "724ff52625d5d1919c5ad8e104ad81e611e1a0a1b5db49fa3ddcd610c0d23e9e",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag111_61964c781c",
+      "surface": "Ag111",
+      "functional": "pbe",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag111_61964c781c/pbe",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ag111/PBE",
+      "target_systems": [
+        "CH3OCH3_Ag111",
+        "CH3_Ag111",
+        "CO_Ag111",
+        "H2O_Ag111",
+        "H2S_Ag111",
+        "N2_Ag111",
+        "NH3_Ag111",
+        "NO_Ag111",
+        "SO2_Ag111",
+        "acetaldehyde_Ag111",
+        "ethene_Ag111",
+        "formaldehyde_Ag111",
+        "formic_acid_Ag111",
+        "methane_Ag111",
+        "methanol_Ag111"
+      ],
+      "changes": {
+        "SYSTEM": "Ag111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.676200205158938,
+          0.0,
+          0.0
+        ],
+        [
+          4.338100102579471,
+          7.513809785987396,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          37.08408780295671
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "267a320af0d061718f86a357bb26f4a10ffbb5bf5d6b535d50e337dc26c31c2a",
+        "INCAR": "2e0c873731617ff762210cf56474e4e757178e2737313b0986a29cd847a67ff9",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag111_71d4cd48c4",
+      "surface": "Ag111",
+      "functional": "pbe_d3",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag111_71d4cd48c4/pbe_d3",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ag111/PBE_D3",
+      "target_systems": [
+        "CH3_Ag111",
+        "CO_Ag111",
+        "H2O_Ag111",
+        "H2S_Ag111",
+        "N2_Ag111",
+        "NH3_Ag111",
+        "NO_Ag111",
+        "SO2_Ag111",
+        "acetaldehyde_Ag111",
+        "ethene_Ag111",
+        "formaldehyde_Ag111",
+        "formic_acid_Ag111",
+        "methane_Ag111",
+        "methanol_Ag111"
+      ],
+      "changes": {
+        "SYSTEM": "Ag111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.676200205158938,
+          0.0,
+          0.0
+        ],
+        [
+          4.338100102579471,
+          7.513809785987396,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          37.08408780295671
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "267a320af0d061718f86a357bb26f4a10ffbb5bf5d6b535d50e337dc26c31c2a",
+        "INCAR": "281a21a5e250f681d145c832d7a0233c1f67c078b7bc91038c0c2e2d7be424f9",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    },
+    {
+      "role": "slab",
+      "system": "Ag111_f9365ca685",
+      "surface": "Ag111",
+      "functional": "r2scan",
+      "directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/slab/Ag111_f9365ca685/r2scan",
+      "source_directory": "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ag111/singlepoint/r2scan",
+      "target_systems": [
+        "CH3OCH3_Ag111",
+        "CH3_Ag111",
+        "acetaldehyde_Ag111",
+        "acetic_acid_Ag111",
+        "ethene_Ag111",
+        "methane_Ag111",
+        "methanol_Ag111"
+      ],
+      "changes": {
+        "SYSTEM": "Ag111",
+        "ISTART": "0",
+        "NSW": "500",
+        "IBRION": "2",
+        "POTIM": "0.3",
+        "EDIFFG": "-0.05",
+        "NELM": "200",
+        "IALGO": "38",
+        "LWAVE": ".FALSE.",
+        "LCHARG": ".FALSE."
+      },
+      "natoms": 36,
+      "cell": [
+        [
+          8.676200205158938,
+          0.0,
+          0.0
+        ],
+        [
+          4.338100102579471,
+          7.513809785987396,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          37.08408780295671
+        ]
+      ],
+      "status": "prepared",
+      "metal_potential": "PAW_PBE Ag 02Apr2005",
+      "staged_sha256": {
+        "POSCAR": "267a320af0d061718f86a357bb26f4a10ffbb5bf5d6b535d50e337dc26c31c2a",
+        "INCAR": "c13d62b8a86880f31a4003e964700f3be4db1e7345b0de91c85b2037b0d53091",
+        "POTCAR": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+        "KPOINTS": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8"
+      }
+    }
+  ],
+  "policy": "Metal-only subset of original complex POSCAR; constraints and cell preserved. Exact metal POTCAR block and k mesh copied from complex. Deduplicate by surface, cell, atom count, constraints, potential hash, functional and electronic settings. No vdW parameter changes; consistent with existing complex calculations. Electronic Davidson solver, same original EDIFF. Originals untouched.",
+  "archived_only_candidates_without_local_inputs": 258,
+  "submission": {
+    "job_id": "58411454",
+    "submitted_at": "2026-09-16T04:27:16.879013+00:00",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "-N",
+      "1",
+      "--array=0-50%4",
+      "--mem=120G",
+      "-t",
+      "02:00:00",
+      "--output=/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/logs/slab_%A_%a.out",
+      "--error=/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/logs/slab_%A_%a.err",
+      "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/worker.slurm",
+      "/pscratch/sd/j/jcho5/VASP/completion_runs/matched_potential_slabs_20260915/joblist.txt"
+    ]
+  }
+}
