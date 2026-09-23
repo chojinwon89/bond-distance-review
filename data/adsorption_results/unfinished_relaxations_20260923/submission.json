@@ -1,0 +1,37 @@
+{
+  "submitted_at": "2026-09-23T06:18:28.511753+00:00",
+  "job_id": "58782557",
+  "array": "0-168%4",
+  "jobs": 169,
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=m5281",
+    "--constraint=cpu",
+    "--qos=shared",
+    "--nodes=1",
+    "--ntasks=32",
+    "--cpus-per-task=2",
+    "--mem=120G",
+    "--time=12:00:00",
+    "--no-requeue",
+    "--array=0-168%4",
+    "--job-name=dft_relax_restart",
+    "--chdir=/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923",
+    "--output=/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/logs/relax_%A_%a.out",
+    "--error=/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/logs/relax_%A_%a.err",
+    "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/run_array.slurm",
+    "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/joblist.txt"
+  ],
+  "sbatch_stdout": "58782557\n",
+  "sbatch_stderr": "",
+  "resources": {
+    "account": "m5281",
+    "qos": "shared",
+    "walltime": "12:00:00",
+    "mpi_ranks": 32,
+    "cpus_per_task": 2,
+    "memory": "120G",
+    "max_concurrent_jobs": 4
+  }
+}

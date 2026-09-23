@@ -34,7 +34,7 @@ def identity(directory):
         index=parts.index('completion_runs')
         if len(parts)>index+3 and parts[index+2]=='molecule':
             return dict(role='molecule',surface='',molecule=canonical(parts[index+3]),source_name=parts[index+3])
-        if len(parts)>index+3 and parts[index+2]=='spe':
+        if len(parts)>index+3 and parts[index+2] in ('spe','relaxed'):
             label=parts[index+3]
             match=re.fullmatch(r'(.+)_([A-Z][a-z]?\d+)(?:_.+)?',label)
             if match:
@@ -143,7 +143,7 @@ def collect(cluster, project):
     from completion_support import completion_jobs
     for job in completion_jobs(project):
         directory=Path(job['directory'])
-        if job['role'] in ('molecule','slab','spe'):
+        if job['role'] in ('molecule','slab','spe','relaxed'):
             records.append(record(cluster,component(directory),dict(kind='live-files',observed_at=observed,project_root=str(project),completion_manifest=str(directory/'completion_inputs.json'))))
     if not records:
         raise ValueError('No calculations found; store preserved')

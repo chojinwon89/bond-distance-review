@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-23T06:20:27.989801+00:00",
+  "live_verified": false,
+  "reason": "Noninteractive SSH to jcho5@kestrel.nlr.gov returned Permission denied; no active Kestrel session available.",
+  "archive_completed_matches": 0,
+  "matched_directories": [],
+  "sources": [
+    {
+      "path": "dft_component_store.jsonl.gz",
+      "sha256": "5d95d147a446a615e498ccb49c27a426590540792be72734a215868349e004e8"
+    },
+    {
+      "path": "dft_structure_sources.json",
+      "sha256": "670908eecef7ec6349a5045a150cf4229ba1b29a1c3a5f2dd0dd84111de97f40"
+    }
+  ],
+  "kestrel_complex_records": 2225,
+  "archived_relaxation_candidates": 120,
+  "archived_accepted_relaxations": 55,
+  "scope": "Merged component archive plus previously audited Kestrel relaxation candidates. Canonical molecule, surface and functional compared first; no completed same-system relaxation for these 169 cases, so no candidates for coordinate fingerprint matching. This does not establish absence on live Kestrel."
+}

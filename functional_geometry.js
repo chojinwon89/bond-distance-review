@@ -6,7 +6,7 @@
  const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
  const num=(n,d=3)=>Number.isFinite(n)?n.toFixed(d):'—';
  function table(caption,headers,rows){const wrap=el('div','geometry-scroll'),t=el('table','geometry-table');t.append(el('caption','',caption));const h=el('tr');headers.forEach(v=>h.append(el('th','',v)));t.append(h);rows.forEach(values=>{const tr=el('tr');values.forEach(v=>tr.append(el('td','',String(v))));t.append(tr);});wrap.append(t);return wrap;}
- function populate(card,system,figures){if(card.classList.contains('geometry-ready'))return;card.classList.add('geometry-ready');const gallery=el('div','functional-gallery');
+ function populate(card,system,figures,restarts){if(card.classList.contains('geometry-ready'))return;card.classList.add('geometry-ready');const gallery=el('div','functional-gallery');
    methods.forEach(method=>{const s=system.structures[method],fig=el('figure'),cap=el('figcaption','',names[method]);
      const saved=figures[method];const oldML=card.querySelector('.pair > div:first-child img');
      if(method==='mlip'&&oldML){const image=oldML.cloneNode(true);image.className='original-mlip-figure';image.loading='lazy';fig.append(image);}
@@ -18,6 +18,14 @@
        frame.append(image);fig.append(frame);
      }else fig.append(el('div','missing-geometry',s?'Figure awaiting regeneration for '+names[method]+'.':'No readable final coordinates available for '+names[method]+'.'));
      if(s){cap.append(el('div',s.status==='converged'||method==='mlip'?'geometry-note':'geometry-status',method==='mlip'?s.model:(s.cluster+' · '+(s.status==='converged'?'relaxed; converged':'last saved geometry; '+s.status))));
+       const restart=restarts.jobs&&restarts.jobs[s.source_path];
+       if(method!=='mlip'&&s.status!=='converged'&&restart&&restart.source_sha256===s.source_sha256){
+         cap.append(el('div','geometry-note','Previous run: '+restart.previous_cause+'.'));
+         const note=el('div','geometry-note','Restart '+restart.restart_status+' · '+restart.job_id);
+         note.append(el('div','', 'Checked '+restarts.checked_at.slice(0,16).replace('T',' ')+' UTC'));
+         note.title=restart.restart_directory;cap.append(note);
+         if(restart.restart_status==='converged')cap.append(el('div','geometry-note','New result verified; this image still shows the previous run until the next geometry refresh.'));
+       }
        if(method!=='mlip'&&!s.matches_energy_complex)cap.append(el('div','geometry-note','Geometry source differs from the selected energy source.'));
        cap.title=s.source_path;
      }
@@ -44,9 +52,11 @@
  }
  const intro=el('div','geometry-preamble','Original structure figure style, with separate images for all four DFT functionals. Bond distances, angles and torsions are reported in the comparison tables below.');
  const heading=Array.from(document.querySelectorAll('h2')).find(n=>n.textContent.startsWith('Per-system structure'));if(heading)heading.after(intro);
- Promise.all(['functional_geometry.json','functional_figures.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error('Geometry data unavailable');return r.json();}))).then(([data,figures])=>{
+ const restartData=fetch('relaxation_restart_status.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Restart audit unavailable');return r.json();}).catch(()=>({jobs:{}}));
+ Promise.all([...['functional_geometry.json','functional_figures.json'].map(url=>fetch(url).then(r=>{if(!r.ok)throw Error('Geometry data unavailable');return r.json();})),restartData]).then(([data,figures,restarts])=>{
    intro.append(document.createTextNode(' '));[['Geometry audit','functional_geometry_audit.json'],['Contact distances CSV','functional_geometry_contacts.csv']].forEach(([label,url])=>{const a=el('a','',label);a.href=url;intro.append(a,document.createTextNode(' · '));});
-   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const card=entry.target,key=card.dataset.surf+'|'+card.dataset.mol;const system=data.systems[key];if(system)populate(card,system,figures.systems[key]||{});observer.unobserve(card);}),{rootMargin:'500px'});
+   if(restarts.summary){const a=el('a','','Restart audit ('+restarts.summary.total+' jobs)');a.href='relaxation_restart_status.json';intro.append(a);intro.append(el('div','geometry-note','Restart status is a saved snapshot from '+restarts.checked_at.slice(0,16).replace('T',' ')+' UTC. Kestrel comparison covers archived results; live verification is pending SSH access.'));}
+   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const card=entry.target,key=card.dataset.surf+'|'+card.dataset.mol;const system=data.systems[key];if(system)populate(card,system,figures.systems[key]||{},restarts);observer.unobserve(card);}),{rootMargin:'500px'});
    document.querySelectorAll('.g').forEach(card=>observer.observe(card));
  }).catch(error=>{intro.textContent='Functional geometry could not load: '+error.message+'. The saved energy table remains available.';});
 })();

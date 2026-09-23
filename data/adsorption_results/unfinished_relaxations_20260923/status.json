@@ -1,0 +1,5463 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-23T06:21:58.240880+00:00",
+  "campaign": "unfinished_relaxations_20260923",
+  "array_job_id": "58782557",
+  "submitted_at": "2026-09-23T06:18:28.511753+00:00",
+  "summary": {
+    "total": 169,
+    "causes": {
+      "ZBRENT line-search failure": 22,
+      "Slurm time limit": 146,
+      "Interrupted output; cause not yet identified": 1
+    },
+    "statuses": {
+      "queued": 169
+    },
+    "scf_warning_jobs": 8
+  },
+  "kestrel": {
+    "checked_at": "2026-09-23T06:20:27.989801+00:00",
+    "live_verified": false,
+    "reason": "Noninteractive SSH to jcho5@kestrel.nlr.gov returned Permission denied; no active Kestrel session available.",
+    "archive_completed_matches": 0,
+    "matched_directories": [],
+    "sources": [
+      {
+        "path": "dft_component_store.jsonl.gz",
+        "sha256": "5d95d147a446a615e498ccb49c27a426590540792be72734a215868349e004e8"
+      },
+      {
+        "path": "dft_structure_sources.json",
+        "sha256": "670908eecef7ec6349a5045a150cf4229ba1b29a1c3a5f2dd0dd84111de97f40"
+      }
+    ],
+    "kestrel_complex_records": 2225,
+    "archived_relaxation_candidates": 120,
+    "archived_accepted_relaxations": 55,
+    "scope": "Merged component archive plus previously audited Kestrel relaxation candidates. Canonical molecule, surface and functional compared first; no completed same-system relaxation for these 169 cases, so no candidates for coordinate fingerprint matching. This does not establish absence on live Kestrel."
+  },
+  "audit_directory": "data/adsorption_results/unfinished_relaxations_20260923",
+  "jobs": {
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ag110/r2scan/CONTCAR": {
+      "source_sha256": "bd9ba32cb8e36bf0f38530d6ec7dc712eab2d76048a44c57c6abdf9ab0bdb6c6",
+      "surface": "Ag110",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Ag110/r2scan",
+      "job_id": "58782557_0",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_0",
+        "state": "PENDING"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Cu100/beef_vdw/CONTCAR": {
+      "source_sha256": "71ca6ef462fec898c1c4840a12486492084153144f134e35eb5f9ebbc96f0248",
+      "surface": "Cu100",
+      "molecule": "acetaldehyde",
+      "functional": "beef_vdw",
+      "previous_cause": "Interrupted output; cause not yet identified",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Cu100/beef_vdw",
+      "job_id": "58782557_1",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_1",
+        "state": "PENDING"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ag110/r2scan/CONTCAR": {
+      "source_sha256": "450ee2749a30c990dd87b90416c92cb0d90d4e72e61165d6dc1e2a1b3bd3f11a",
+      "surface": "Ag110",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Ag110/r2scan",
+      "job_id": "58782557_2",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_2",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "dad0a787800cc00b126b13ed51badc352773ca0b053c2bb23323359702daa178",
+      "surface": "Ag100",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Ag100/r2scan",
+      "job_id": "58782557_3",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_3",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3_Pt110/beef_vdw/CONTCAR": {
+      "source_sha256": "e89ad65e4bf506d54827e24b89d68db71e2983028d5b20e86b87bdc4fe165261",
+      "surface": "Pt110",
+      "molecule": "CH3",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3_Pt110/beef_vdw",
+      "job_id": "58782557_4",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_4",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Au111/beef_vdw/CONTCAR": {
+      "source_sha256": "d6d3b9f6096f359d439dfe7858dc3da8aca3bec467f6b6b01da8d8ac1d5ec51a",
+      "surface": "Au111",
+      "molecule": "CO2",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Au111/beef_vdw",
+      "job_id": "58782557_5",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_5",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Ag100/beef_vdw/CONTCAR": {
+      "source_sha256": "958824629d92fcdc5c80053043541d9eef94d312532f10a450bd8dbcbe2f2212",
+      "surface": "Ag100",
+      "molecule": "CO",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Ag100/beef_vdw",
+      "job_id": "58782557_6",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_6",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Cu110/beef_vdw/CONTCAR": {
+      "source_sha256": "7bc98bc7ffed693e4390c105607fbc49793ba1ac7b60a1e01b95fe1ace926705",
+      "surface": "Cu110",
+      "molecule": "CO",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Cu110/beef_vdw",
+      "job_id": "58782557_7",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_7",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Au111/beef_vdw/CONTCAR": {
+      "source_sha256": "8fdc44a365bd8e76048a29387f18580a4e92d89a46072a5ae281e78a21aa6cf8",
+      "surface": "Au111",
+      "molecule": "formaldehyde",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Au111/beef_vdw",
+      "job_id": "58782557_8",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_8",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Ag100/beef_vdw/CONTCAR": {
+      "source_sha256": "5a40a8a08291f95cf5bf984762c382749afd9935df16e249fc4339d9720b41d7",
+      "surface": "Ag100",
+      "molecule": "H2O",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Ag100/beef_vdw",
+      "job_id": "58782557_9",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_9",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Ag110/beef_vdw/CONTCAR": {
+      "source_sha256": "43e59f069cceba09f82255f47461b6a77a9b792c93a118964267fbf202291c4c",
+      "surface": "Ag110",
+      "molecule": "H2O",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Ag110/beef_vdw",
+      "job_id": "58782557_10",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_10",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Cu110/beef_vdw/CONTCAR": {
+      "source_sha256": "49467a5b808df4319a6c37810941bdffe894feada65054013d072a61625d514a",
+      "surface": "Cu110",
+      "molecule": "H2O",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Cu110/beef_vdw",
+      "job_id": "58782557_11",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_11",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Pd110/beef_vdw/CONTCAR": {
+      "source_sha256": "31c7ca52ecd031b686d503f49637f133a2be37a9b1ef580690c9acd3975fc5f0",
+      "surface": "Pd110",
+      "molecule": "H2O",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Pd110/beef_vdw",
+      "job_id": "58782557_12",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_12",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Ag100/PBE/CONTCAR": {
+      "source_sha256": "15d42cd281599fd35604aad7496cc1492f2bb6e3879fa57c734476d7db8dc350",
+      "surface": "Ag100",
+      "molecule": "N2",
+      "functional": "pbe",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ag100/PBE",
+      "job_id": "58782557_13",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_13",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Ag100/PBE_D3/CONTCAR": {
+      "source_sha256": "fecb8f21efb95ab5f5c5531c1d121b18f9f71b776fd16ad1830aecaf8997b927",
+      "surface": "Ag100",
+      "molecule": "N2",
+      "functional": "pbe_d3",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ag100/PBE_D3",
+      "job_id": "58782557_14",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_14",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Ag100/beef_vdw/CONTCAR": {
+      "source_sha256": "84a1a5bd529ae57ea44336f3c4ef302e98c136ed584f854a5e80634bf40d9277",
+      "surface": "Ag100",
+      "molecule": "N2",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ag100/beef_vdw",
+      "job_id": "58782557_15",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_15",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Ir110/r2scan/CONTCAR": {
+      "source_sha256": "ec7ad963720dd49b604b7be5197620987856b402f3a09864ab094bae0399e4f3",
+      "surface": "Ir110",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ir110/r2scan",
+      "job_id": "58782557_16",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_16",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Pd100/beef_vdw/CONTCAR": {
+      "source_sha256": "1f18a1e6a7de75a56e4c2edd4d5c7d8c0f2fba69a4b22c8a88948fb31a7d4aa5",
+      "surface": "Pd100",
+      "molecule": "N2",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd100/beef_vdw",
+      "job_id": "58782557_17",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_17",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Pd110/beef_vdw/CONTCAR": {
+      "source_sha256": "e8d45ea9166ef4effe7baa486528ca21bb7a97d154429eb4a2dde320eb8558a3",
+      "surface": "Pd110",
+      "molecule": "N2",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd110/beef_vdw",
+      "job_id": "58782557_18",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_18",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Pd110/r2scan/CONTCAR": {
+      "source_sha256": "43bbc98626322f6532acd63ff7d752cefcaf07c237ffc12942027a99af46a551",
+      "surface": "Pd110",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd110/r2scan",
+      "job_id": "58782557_19",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_19",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Pd111/beef_vdw/CONTCAR": {
+      "source_sha256": "81e6e904ddd9cd21435e92a2449449408e8ad25a0433f8db8e9028e8a52f3229",
+      "surface": "Pd111",
+      "molecule": "N2",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd111/beef_vdw",
+      "job_id": "58782557_20",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_20",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Ag100/PBE/CONTCAR": {
+      "source_sha256": "e90ed56fa27a893a0a712de264faa235bc1fa5837adb97f9e2b7dc393f4aaf1f",
+      "surface": "Ag100",
+      "molecule": "NH3",
+      "functional": "pbe",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Ag100/PBE",
+      "job_id": "58782557_21",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_21",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Pd110/beef_vdw/CONTCAR": {
+      "source_sha256": "6424a96945b16624c119e55de3a1eec80c4d02da90ad22931fbdc2542fe5a4b4",
+      "surface": "Pd110",
+      "molecule": "NH3",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Pd110/beef_vdw",
+      "job_id": "58782557_22",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_22",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Ag100/PBE/CONTCAR": {
+      "source_sha256": "8124d8cf0f3a9469842fd9fe4637cd2eddcd402c5d80d135d59ba2c49f0d44d4",
+      "surface": "Ag100",
+      "molecule": "NO",
+      "functional": "pbe",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Ag100/PBE",
+      "job_id": "58782557_23",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_23",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Ag110/beef_vdw/CONTCAR": {
+      "source_sha256": "a0990e790d0d99104d4916aea8ee3b1667a0b4f1815c6d018b148252c7f52671",
+      "surface": "Ag110",
+      "molecule": "NO",
+      "functional": "beef_vdw",
+      "previous_cause": "ZBRENT line-search failure",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Ag110/beef_vdw",
+      "job_id": "58782557_24",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_24",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "EDIFF": {
+          "before": "1E-05",
+          "after": "1e-06"
+        },
+        "IBRION": {
+          "before": "2",
+          "after": "1"
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "POTIM": {
+          "before": null,
+          "after": "0.2"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Pt111/beef_vdw/CONTCAR": {
+      "source_sha256": "571ee9878408955dcf308d1854029bf7e11c526b68ff1dd40c88d6101b211090",
+      "surface": "Pt111",
+      "molecule": "methanol",
+      "functional": "beef_vdw",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OH_Pt111/beef_vdw",
+      "job_id": "58782557_25",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_25",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Ir100/r2scan/CONTCAR": {
+      "source_sha256": "e50c37bcc0396e1d5702340127c29bab4d5b73868acc6bc162c93f8f1e4316d2",
+      "surface": "Ir100",
+      "molecule": "methane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH4_Ir100/r2scan",
+      "job_id": "58782557_26",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_26",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Rh100/beef_vdw/CONTCAR": {
+      "source_sha256": "d2a481412528e0816077948f71878c4819fa6d8bbd36884632742c8c6de43b31",
+      "surface": "Rh100",
+      "molecule": "CO2",
+      "functional": "beef_vdw",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Rh100/beef_vdw",
+      "job_id": "58782557_27",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_27",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "a3e0cc82e98fb32ea701f1a09ebba678a9a164782bf7407aac074874f083d78d",
+      "surface": "Rh111",
+      "molecule": "CO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Rh111/r2scan",
+      "job_id": "58782557_28",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_28",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Cu100/beef_vdw/CONTCAR": {
+      "source_sha256": "46d12f741c68c9dad6c0afa94e97413b5cee7829c1a0310343fada5231696609",
+      "surface": "Cu100",
+      "molecule": "NH3",
+      "functional": "beef_vdw",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Cu100/beef_vdw",
+      "job_id": "58782557_29",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_29",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Pt100/r2scan/CONTCAR": {
+      "source_sha256": "45178d16ad844317f568cfe9e3fd1cc85972581e88d3e2dc4fbcfcba5c6e56c2",
+      "surface": "Pt100",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Pt100/r2scan",
+      "job_id": "58782557_30",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_30",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ALGO": {
+          "before": null,
+          "after": "Normal"
+        },
+        "IALGO": {
+          "before": "48",
+          "after": null
+        },
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        },
+        "NELM": {
+          "before": "150",
+          "after": "300"
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "8a905ae2ac2fa0e59f56a5c235177a5627d9f8609e86e7a0906d0ecc37771d34",
+      "surface": "Ag111",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Ag111/r2scan",
+      "job_id": "58782557_31",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_31",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Au111/r2scan/CONTCAR": {
+      "source_sha256": "5f09ab053e635c23c5b7c3f871c57779024f20aaf504ae0b26290a87dfc4194a",
+      "surface": "Au111",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Au111/r2scan",
+      "job_id": "58782557_32",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_32",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "4f2d9da4a15501a412bc53d5cc1c860c722e42f4274004977ac3948f45bcc28f",
+      "surface": "Cu100",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Cu100/r2scan",
+      "job_id": "58782557_33",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_33",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "e757647a4ca34fe465bea5a44d3d0f32a93858ea1cb6f3fcbd8c60bff9016460",
+      "surface": "Cu111",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Cu111/r2scan",
+      "job_id": "58782557_34",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_34",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "4f2eb4ac77adc60c48600279deb353383929e67fe0f6383b7dbffd30228a3d87",
+      "surface": "Pd111",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Pd111/r2scan",
+      "job_id": "58782557_35",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_35",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "99feccaae5e868f9ddd67164dcbd1303ba52753e215257731955e077fcaaf9e8",
+      "surface": "Rh111",
+      "molecule": "ethene",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Rh111/r2scan",
+      "job_id": "58782557_36",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_36",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "da8938e22fdb43e5ec1cedf47ca6de5efb30f5065d2c6a0f372bb81e5bde9dd6",
+      "surface": "Ag100",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Ag100/r2scan",
+      "job_id": "58782557_37",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_37",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Au111/r2scan/CONTCAR": {
+      "source_sha256": "7fe7a2e1bd848affb682407bca618d764c221a80176180c96ce0ac6c4ba13aaa",
+      "surface": "Au111",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Au111/r2scan",
+      "job_id": "58782557_38",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_38",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "e00c500a797313fdc0e610d51d9d5d6a595d5de8c2faf432297bc9c2fcbc475e",
+      "surface": "Cu100",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Cu100/r2scan",
+      "job_id": "58782557_39",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_39",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pd110/beef_vdw/CONTCAR": {
+      "source_sha256": "c8f4ab9c5a4159ebc41d43f85f6118424a0cdb46ab94effe4e1ea67096f29672",
+      "surface": "Pd110",
+      "molecule": "ethane",
+      "functional": "beef_vdw",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Pd110/beef_vdw",
+      "job_id": "58782557_40",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_40",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pd110/r2scan/CONTCAR": {
+      "source_sha256": "09c742fc9657e692e986815e308a010f3071a80dcc582d836960d49c582cd512",
+      "surface": "Pd110",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Pd110/r2scan",
+      "job_id": "58782557_41",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_41",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "48bfdfadabba1a8849c328e1ed81b8b1ec5a154ae4f5ea024e8e9bb5a11aabb8",
+      "surface": "Pd111",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Pd111/r2scan",
+      "job_id": "58782557_42",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_42",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt100/r2scan/CONTCAR": {
+      "source_sha256": "f85f02f89c07b88c8c924864cfdfe31e6b084006c3aca864a0654a0cc36e8a28",
+      "surface": "Pt100",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Pt100/r2scan",
+      "job_id": "58782557_43",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_43",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt110/beef_vdw/CONTCAR": {
+      "source_sha256": "4ef6ac1c4229b32e1b92e4c063fb02eaf0e586918621100532ebca13ca60ee91",
+      "surface": "Pt110",
+      "molecule": "ethane",
+      "functional": "beef_vdw",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Pt110/beef_vdw",
+      "job_id": "58782557_44",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_44",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Pt110/r2scan/CONTCAR": {
+      "source_sha256": "80fee7d3de920ece3f725646b4ce314e00bd54278ef3333dea29b276ef7cef90",
+      "surface": "Pt110",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Pt110/r2scan",
+      "job_id": "58782557_45",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_45",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "6127bc665a8b2ce4b3b9fd1ba9008579c3033d2c3738e314f210ec0ac761d4a7",
+      "surface": "Rh111",
+      "molecule": "ethane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Rh111/r2scan",
+      "job_id": "58782557_46",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_46",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "03c131c4338a661f604aac007d4d5b6adce9e98476ef0c6b0b806455d6b669cf",
+      "surface": "Ag100",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Ag100/r2scan",
+      "job_id": "58782557_47",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_47",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Ag110/r2scan/CONTCAR": {
+      "source_sha256": "987f7654f8e80206ed292a1dcdaa3be375f9476bbed4fd6f67b69c99404045af",
+      "surface": "Ag110",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Ag110/r2scan",
+      "job_id": "58782557_48",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_48",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "e52c6ec915a82f2a0a571414d7aaed3fc7c484d0ca700a91c41846728b469f7f",
+      "surface": "Ag111",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Ag111/r2scan",
+      "job_id": "58782557_49",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_49",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "12134d78ff9ca596e21fcdcd7e963c8a3f1a3c4e421a76570e94df1bdd5f75fa",
+      "surface": "Cu100",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Cu100/r2scan",
+      "job_id": "58782557_50",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_50",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "bbb4e84bc829faf53cc34c2d21eb01787883313769bfb8978b66755d7584d07d",
+      "surface": "Cu111",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Cu111/r2scan",
+      "job_id": "58782557_51",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_51",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Pd100/r2scan/CONTCAR": {
+      "source_sha256": "d582547da8f9f5f164c5624691dc66c8f10eceb658eadbe135e4f1daddd2fd10",
+      "surface": "Pd100",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Pd100/r2scan",
+      "job_id": "58782557_52",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_52",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Pd110/r2scan/CONTCAR": {
+      "source_sha256": "32c37827cf66fe2d7db4f9ca56e3b6aee97e6cf3d2b5bd9c917f5f4a2ee846cc",
+      "surface": "Pd110",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Pd110/r2scan",
+      "job_id": "58782557_53",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_53",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Pt100/r2scan/CONTCAR": {
+      "source_sha256": "83cda76ed0868f022e3a515ce3d07af3260cac76789f858b99a178cacfb59fad",
+      "surface": "Pt100",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Pt100/r2scan",
+      "job_id": "58782557_54",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_54",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Pt110/r2scan/CONTCAR": {
+      "source_sha256": "501ef1b65e16464368a5bba7db8e728a1d679ed68f6d244aa14df5ad7ab85526",
+      "surface": "Pt110",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Pt110/r2scan",
+      "job_id": "58782557_55",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_55",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "02f454340417b5ef39e67ca51beb47b21fe13e9f160197166d4da96d6378db80",
+      "surface": "Rh111",
+      "molecule": "ethanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CH2OH_Rh111/r2scan",
+      "job_id": "58782557_56",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_56",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "b5881ce1886f3243a94ca96e64e849ca2cc48444e1a0c4b181ccbe84a848822a",
+      "surface": "Ag100",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Ag100/r2scan",
+      "job_id": "58782557_57",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_57",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "5da70ca0162d38c0798adce435258998a493c54ee45adb5b61a86d7e5f5d93df",
+      "surface": "Ag111",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Ag111/r2scan",
+      "job_id": "58782557_58",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_58",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Au111/r2scan/CONTCAR": {
+      "source_sha256": "6aa80e2fbce84081bfbef5c3485dd55158deec6263e6bfa3d547bacb9db1f5cb",
+      "surface": "Au111",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Au111/r2scan",
+      "job_id": "58782557_59",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_59",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "621a7f57f65caeba75d1a4126a822da8c30c67059b63c4ad1d67af0d01652652",
+      "surface": "Cu100",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Cu100/r2scan",
+      "job_id": "58782557_60",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_60",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "bd36da8be9f40625fa9887bc2952fb976fa7ec6f8abc61ac008301839e96d8dc",
+      "surface": "Cu111",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Cu111/r2scan",
+      "job_id": "58782557_61",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_61",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Pt100/r2scan/CONTCAR": {
+      "source_sha256": "9d19abe42a4899ff16a2817a4ee44c0836914b645f57c019a6edc38cb19ae7b1",
+      "surface": "Pt100",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Pt100/r2scan",
+      "job_id": "58782557_62",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_62",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "fae88cdb6e4450806e748419e7e8b4452318ce21f937947187f6d9d52803497b",
+      "surface": "Rh111",
+      "molecule": "acetaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Rh111/r2scan",
+      "job_id": "58782557_63",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_63",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "dada631a51c147634a12f0a916b43dc47cd6fec94d0c05798077a2f7eb664ab6",
+      "surface": "Ag111",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3COOH_Ag111/r2scan",
+      "job_id": "58782557_64",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_64",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Au111/r2scan/CONTCAR": {
+      "source_sha256": "b1ee8d5ac53672297919ff105fe8d9a4b8d008726e2233c35a84f4c3f4e5d050",
+      "surface": "Au111",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3COOH_Au111/r2scan",
+      "job_id": "58782557_65",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_65",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "bdc10291be8cacbb4775bcac9a39ecc3d8cc1a3ca8021fd8266ac7d43fd9c92b",
+      "surface": "Cu100",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3COOH_Cu100/r2scan",
+      "job_id": "58782557_66",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_66",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "ca6539fa67a56f36ab51a2b8482da4ee6136154b4094ac991f41bd31f1ed4fb3",
+      "surface": "Cu111",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3COOH_Cu111/r2scan",
+      "job_id": "58782557_67",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_67",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "4fc525f839d69e6c4f668b2274b5d381b20d224df93c5640986c1d2b87042901",
+      "surface": "Ir111",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3COOH_Ir111/r2scan",
+      "job_id": "58782557_68",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_68",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "ba96f01354a4393dc539007372d603e46758f552f3db02b622e8c81aa180f3ca",
+      "surface": "Pd111",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3COOH_Pd111/r2scan",
+      "job_id": "58782557_69",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_69",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "7ab860699f3fb76dce424036d72bb4b3d8072e3ce514e71a6201d2b9a2077dea",
+      "surface": "Rh111",
+      "molecule": "acetic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3COOH_Rh111/r2scan",
+      "job_id": "58782557_70",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_70",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "bc745e5b5c199a74a7611fb3c77c3461f5e556471d2a69b837c40bac8327950b",
+      "surface": "Ag100",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Ag100/r2scan",
+      "job_id": "58782557_71",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_71",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Au111/r2scan/CONTCAR": {
+      "source_sha256": "4c637419285d8ba8546fb07e8fd07b1d0bb1464d7673ddef3758bb4484767414",
+      "surface": "Au111",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Au111/r2scan",
+      "job_id": "58782557_72",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_72",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "33a360708ae9450f1c292a0a75fb94552861a33ba5e41a517d6df023e137aea1",
+      "surface": "Cu100",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Cu100/r2scan",
+      "job_id": "58782557_73",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_73",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "4dca9494fd581584d5142ef9a250db21031a2a1c95992e1fa8dbc04284023b9d",
+      "surface": "Cu111",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Cu111/r2scan",
+      "job_id": "58782557_74",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_74",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "a075c58191bcc8b2eda70c1b00e7f96c73f8744ca763d33601f91e3520bb8276",
+      "surface": "Ir111",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Ir111/r2scan",
+      "job_id": "58782557_75",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_75",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "7eaacaba5aee4a4fd7dec5af7e5b1c6571e9f23a21c823f2bf6b7ab605b1a03c",
+      "surface": "Pd111",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Pd111/r2scan",
+      "job_id": "58782557_76",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_76",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Pt110/r2scan/CONTCAR": {
+      "source_sha256": "b5592d74a2de9237fd2b970ebd923069e35da9132f289c7c5c241525215752ec",
+      "surface": "Pt110",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Pt110/r2scan",
+      "job_id": "58782557_77",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_77",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "e38f1e8f329e535e85cbe7711e34bcf2446f1cb90163091ba761fff0fbc87f3c",
+      "surface": "Rh111",
+      "molecule": "DME",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OCH3_Rh111/r2scan",
+      "job_id": "58782557_78",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_78",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "d2e108a7aca4c3eac35afce0ef1231f0d1ff9b2fb1bb36b5fef3e3b07264f721",
+      "surface": "Ag100",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OH_Ag100/r2scan",
+      "job_id": "58782557_79",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_79",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "a182020032d051d857de1b6e9c83ca70fad271b2b387b60e6cd0fc878ea5fb57",
+      "surface": "Ag111",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OH_Ag111/r2scan",
+      "job_id": "58782557_80",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_80",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Au111/r2scan/CONTCAR": {
+      "source_sha256": "8334d3724d6c97212e446700facd942cf66c954000953f1d800585fb2dc42a45",
+      "surface": "Au111",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OH_Au111/r2scan",
+      "job_id": "58782557_81",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_81",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "51edb9982cc7ff39081eec45dba30458bb5513f2d2b45eb1c681b7dbbb5d5a2d",
+      "surface": "Cu100",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OH_Cu100/r2scan",
+      "job_id": "58782557_82",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_82",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu110/r2scan/CONTCAR": {
+      "source_sha256": "dd74ad034b449fffe8d48615b0e542e9a4f95b60a94ce5fcae828f50a60d43a8",
+      "surface": "Cu110",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OH_Cu110/r2scan",
+      "job_id": "58782557_83",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_83",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "5fd99230ae6352b7b0db886703bd2e8280b6395d97109899b4ffd8bbd6232a8a",
+      "surface": "Ir111",
+      "molecule": "methanol",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3OH_Ir111/r2scan",
+      "job_id": "58782557_84",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_84",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "430d8f5bdaaa0947791338acd86f881b78956ccf97da8f15bd9be3ab6062dc42",
+      "surface": "Ag111",
+      "molecule": "CH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3_Ag111/r2scan",
+      "job_id": "58782557_85",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_85",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "7e7961b19fee28e6b0e0a973c7c6c7f1c5875e23209350336bb4ef44da3b5b12",
+      "surface": "Cu100",
+      "molecule": "CH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3_Cu100/r2scan",
+      "job_id": "58782557_86",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_86",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "49abbd6cfafa22235b3a6307f62a2d69462be2b289cf0acc35f383c12e3815f0",
+      "surface": "Cu111",
+      "molecule": "CH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3_Cu111/r2scan",
+      "job_id": "58782557_87",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_87",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "ae639622d97c7fff87acebdcc5c3c48ece905570dbf244cabdefb6d7b8f71826",
+      "surface": "Pd111",
+      "molecule": "CH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3_Pd111/r2scan",
+      "job_id": "58782557_88",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_88",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "e553b3cad30436db52fef140f99651cc69714e9f381a16bc3ae2ea4c755eb9aa",
+      "surface": "Rh111",
+      "molecule": "CH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3_Rh111/r2scan",
+      "job_id": "58782557_89",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_89",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "194765d120e0acf58347a73b4b706ce9fc9169dfc671e9bf34238a7eae06b8fe",
+      "surface": "Ag111",
+      "molecule": "methane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH4_Ag111/r2scan",
+      "job_id": "58782557_90",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_90",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Au111/r2scan/CONTCAR": {
+      "source_sha256": "a2c8ed8ff6e8033aa6d7642330765a1d6c19756600d0ecd7ef260295c597d719",
+      "surface": "Au111",
+      "molecule": "methane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH4_Au111/r2scan",
+      "job_id": "58782557_91",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_91",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "87122d3728e4884c1c20073e808145b5f7d9a4466ddb0e5a972da0f0366e7d2d",
+      "surface": "Rh111",
+      "molecule": "methane",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH4_Rh111/r2scan",
+      "job_id": "58782557_92",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_92",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "9ae690c21ffd7df9ebd40216ac09a2c9a1baa6189f0c91049486b4c4945adb14",
+      "surface": "Ag100",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Ag100/r2scan",
+      "job_id": "58782557_93",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_93",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "78789f4f36048092c5e82bb99615b149bef089e25447f89cf24eb107bd8c214b",
+      "surface": "Ag111",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Ag111/r2scan",
+      "job_id": "58782557_94",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_94",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Au111/r2scan/CONTCAR": {
+      "source_sha256": "7d3e31648bfd38c2da0c80ad7fb888e088c8743ea0e1bfee27d76cfd48f5440a",
+      "surface": "Au111",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Au111/r2scan",
+      "job_id": "58782557_95",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_95",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "cd53634df23ee36628271db4e20fe9ad8c40f3d47f3b35bf91efbe76976d9b46",
+      "surface": "Cu100",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Cu100/r2scan",
+      "job_id": "58782557_96",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_96",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Cu110/r2scan/CONTCAR": {
+      "source_sha256": "2533c2fdb358925d6f709bff0387069d4d278322ba56973efa8dab24b77a77c4",
+      "surface": "Cu110",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Cu110/r2scan",
+      "job_id": "58782557_97",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_97",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Pd100/r2scan/CONTCAR": {
+      "source_sha256": "0b22235d9a6a84186d0799a604d39caaa381b38f5bb4ed548cb8841b5bf984a1",
+      "surface": "Pd100",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Pd100/r2scan",
+      "job_id": "58782557_98",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_98",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "7d37488b2b795a85937a1d2467b2be12ee7e03d27766b84e4bd7d55fde46880a",
+      "surface": "Pd111",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Pd111/r2scan",
+      "job_id": "58782557_99",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_99",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Pt100/r2scan/CONTCAR": {
+      "source_sha256": "2ff7f417166e3945cdfecb0b4a5d3d23d642e64f6a3ddf62a277eae2d7c30343",
+      "surface": "Pt100",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Pt100/r2scan",
+      "job_id": "58782557_100",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_100",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Pt111/r2scan/CONTCAR": {
+      "source_sha256": "e98962a33dbb5940e05dee060e1a3d0820eddbd3c012a3076835939b0ddc9da6",
+      "surface": "Pt111",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Pt111/r2scan",
+      "job_id": "58782557_101",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_101",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "aa38251858cab1f19968ab28e8e9f74877be9bfc41b5eb66967b5e46aaad607a",
+      "surface": "Rh111",
+      "molecule": "CO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Rh111/r2scan",
+      "job_id": "58782557_102",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_102",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "888f27e465cdec73fea79083586b450aa540305cb1eba654bb8dd6459f66c31b",
+      "surface": "Ag111",
+      "molecule": "CO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Ag111/r2scan",
+      "job_id": "58782557_103",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_103",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Au111/r2scan/CONTCAR": {
+      "source_sha256": "92a760648779b3007695c141d38707bb120ccd62ee014850fc16be448ac723f0",
+      "surface": "Au111",
+      "molecule": "CO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Au111/r2scan",
+      "job_id": "58782557_104",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_104",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "fad22869dd2dd846bef646b4cc41d3c2bf7c9ba092cc19c58768cc6befbcceb4",
+      "surface": "Cu100",
+      "molecule": "CO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Cu100/r2scan",
+      "job_id": "58782557_105",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_105",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Ir110/r2scan/CONTCAR": {
+      "source_sha256": "851b29cf63a673527dfb48fa25f0e4220a1be981a97fc80a87ed17036ec78a18",
+      "surface": "Ir110",
+      "molecule": "CO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Ir110/r2scan",
+      "job_id": "58782557_106",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_106",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "7ac3f7ef44367ebc067633ded149cf01da3ed3ce6c1577559bb7557ece9b9f4d",
+      "surface": "Ir111",
+      "molecule": "CO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Ir111/r2scan",
+      "job_id": "58782557_107",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_107",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Pt110/r2scan/CONTCAR": {
+      "source_sha256": "6d0d9ee61c6a58e717ff328cc86a797c33bbbfa27a05ec85c12c551c17954b04",
+      "surface": "Pt110",
+      "molecule": "CO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Pt110/r2scan",
+      "job_id": "58782557_108",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_108",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "c0ec8a01788dcbc5f22cfebd31e2c9ad8c4abb10b2c64794ac035f14641e1b4e",
+      "surface": "Ag100",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Ag100/r2scan",
+      "job_id": "58782557_109",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_109",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "160238ec9bca9c582701a522d326af29ccab6cee7c9030dd2d893814c1c91e2e",
+      "surface": "Ag111",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Ag111/r2scan",
+      "job_id": "58782557_110",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_110",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Au111/r2scan/CONTCAR": {
+      "source_sha256": "b908d225be12b7dfb8782b320bce89946603f16807c6998629cf801ceff9d30a",
+      "surface": "Au111",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Au111/r2scan",
+      "job_id": "58782557_111",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_111",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "e3febf0ce1cb4405e1d7c38bb2b2770f144c9f5c4eefa711f497d69dc5839a6c",
+      "surface": "Cu100",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Cu100/r2scan",
+      "job_id": "58782557_112",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_112",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "5277ef0636135d63fd84336c0172a80fa3d1e78410f19669e5ec0e08c3080033",
+      "surface": "Cu111",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Cu111/r2scan",
+      "job_id": "58782557_113",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_113",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "41819a78e39c9da925e1cb78ce1013028d17ea89fa04a7f4eec503c7e332b8b6",
+      "surface": "Ir111",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Ir111/r2scan",
+      "job_id": "58782557_114",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_114",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "d43753364e572b69f948c9afeea547412829d481487bc4cd3250c0b3647ef572",
+      "surface": "Pd111",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Pd111/r2scan",
+      "job_id": "58782557_115",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_115",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "faed17e7a72016fd913740dd203e3a2912ebd5f2260cb5f67a1ed08c4e70acda",
+      "surface": "Rh111",
+      "molecule": "formaldehyde",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Rh111/r2scan",
+      "job_id": "58782557_116",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_116",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "5600e6fabd126076a4bae9516b290c6725433213777e88b5b3b72984a56c79ce",
+      "surface": "Ag111",
+      "molecule": "H2O",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Ag111/r2scan",
+      "job_id": "58782557_117",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_117",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Au111/r2scan/CONTCAR": {
+      "source_sha256": "5cc1756347af02be528509101af9acd8966aced34b335d44bf5ddc092fa7d1e9",
+      "surface": "Au111",
+      "molecule": "H2O",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Au111/r2scan",
+      "job_id": "58782557_118",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_118",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "bdb3bb58974f86e38b7b8d2f71b0be35468159fca11bbf9b982a1544febe2650",
+      "surface": "Cu100",
+      "molecule": "H2O",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Cu100/r2scan",
+      "job_id": "58782557_119",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_119",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "ffdebf15ac06caf4f5ba441d083993d65e0f5106122829b90dbfea459d9d69bf",
+      "surface": "Cu111",
+      "molecule": "H2O",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Cu111/r2scan",
+      "job_id": "58782557_120",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_120",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "b5397d87f856a04bb681836f076a10c975ce2a03f990733ceda859cb15168222",
+      "surface": "Pd111",
+      "molecule": "H2O",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Pd111/r2scan",
+      "job_id": "58782557_121",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_121",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "e4e5b8017e30c8a67762e421201cc4d37ebe846ab6a2ee9347aecda2b944b4dc",
+      "surface": "Rh111",
+      "molecule": "H2O",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Rh111/r2scan",
+      "job_id": "58782557_122",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_122",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "c3d1e10907782dcca05b988e0e3dd701e71c947e783befc4c34e56e17e39b12a",
+      "surface": "Ag100",
+      "molecule": "H2S",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Ag100/r2scan",
+      "job_id": "58782557_123",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_123",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "dd141b4b0af4a0c97a438ec3e4be3d37d9ec9eec0e68bf8906c56bf3dfb2caff",
+      "surface": "Ag111",
+      "molecule": "H2S",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Ag111/r2scan",
+      "job_id": "58782557_124",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_124",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Au111/r2scan/CONTCAR": {
+      "source_sha256": "c8f84a688f2d290895207b70658bcc2c0e09375955e9a40e81642a065e1af968",
+      "surface": "Au111",
+      "molecule": "H2S",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Au111/r2scan",
+      "job_id": "58782557_125",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_125",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "c72b211f288811bbabc76b0fcef7449f93efbd4daf6563e754582c26b3526fb5",
+      "surface": "Cu100",
+      "molecule": "H2S",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Cu100/r2scan",
+      "job_id": "58782557_126",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_126",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "0afe37db30e603b20e6391324d99a5c605c5e34655ceb4ef7c94d598965571d3",
+      "surface": "Cu111",
+      "molecule": "H2S",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Cu111/r2scan",
+      "job_id": "58782557_127",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_127",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Pd111/beef_vdw/CONTCAR": {
+      "source_sha256": "020e459f52f002ade3906c1034d417440280913b7f88b2650a6dd572aa70c084",
+      "surface": "Pd111",
+      "molecule": "H2S",
+      "functional": "beef_vdw",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Pd111/beef_vdw",
+      "job_id": "58782557_128",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_128",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "910adaf3d15801a9c9625bcd5ff55d63632a39831788db6e240f639738f79353",
+      "surface": "Pd111",
+      "molecule": "H2S",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Pd111/r2scan",
+      "job_id": "58782557_129",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_129",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "5eb3afc35b037b028a5c83d7ee48fa629d8a1ce2050260f8e22a3401da1aabe9",
+      "surface": "Rh111",
+      "molecule": "H2S",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2S_Rh111/r2scan",
+      "job_id": "58782557_130",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_130",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Ag100/r2scan/CONTCAR": {
+      "source_sha256": "f7fa878dd1a37a99eeaf3126099fd5baa5ddf937270fd8ff2d2e6951acd2d067",
+      "surface": "Ag100",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Ag100/r2scan",
+      "job_id": "58782557_131",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_131",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "75ef66a9cd227ac8f845609546f95f98024b155086ef6e0188e99b6493e5dc10",
+      "surface": "Ag111",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Ag111/r2scan",
+      "job_id": "58782557_132",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_132",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Au111/r2scan/CONTCAR": {
+      "source_sha256": "ad2ebd85fb623dae36286020aac6f7b34f7ed52a76039f039690321abe621da3",
+      "surface": "Au111",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Au111/r2scan",
+      "job_id": "58782557_133",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_133",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "3bb33417b375a00cf0df7613bae564411324259c733a0787964e95e30347f8a9",
+      "surface": "Cu100",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Cu100/r2scan",
+      "job_id": "58782557_134",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_134",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Ir110/r2scan/CONTCAR": {
+      "source_sha256": "3d37446fa47e8908103feb66854f7b43cb83d44b3e2c938bf83bb2cf20756b63",
+      "surface": "Ir110",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Ir110/r2scan",
+      "job_id": "58782557_135",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_135",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "98aa6f500bc1360bf5f54e47b6cea015f5fe162680c3a553af4b7132a6d8fb23",
+      "surface": "Ir111",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Ir111/r2scan",
+      "job_id": "58782557_136",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_136",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Pd100/r2scan/CONTCAR": {
+      "source_sha256": "934a9b421b149a8aff64b39dd81f910849c9628f131a229e2e1f32936c66cd08",
+      "surface": "Pd100",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Pd100/r2scan",
+      "job_id": "58782557_137",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_137",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "324770b59ab4e7b30ce5ecc414812b191b66142d097e2eb665214ca8e843eb10",
+      "surface": "Pd111",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Pd111/r2scan",
+      "job_id": "58782557_138",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_138",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Pt111/r2scan/CONTCAR": {
+      "source_sha256": "6c4d74c267ad1c671eefbb052ccff95d4ebd23d9876309e54807a85d7f9693c8",
+      "surface": "Pt111",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Pt111/r2scan",
+      "job_id": "58782557_139",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_139",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Rh110/r2scan/CONTCAR": {
+      "source_sha256": "54b61328172ee81bd00e64791f4210ca428d93863e5073ca6caea205ed40d406",
+      "surface": "Rh110",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Rh110/r2scan",
+      "job_id": "58782557_140",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_140",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "92d644650b8c0de9ca943ce9b0a2c1db5e5668259327f4fa96b8a44cb568f5d6",
+      "surface": "Rh111",
+      "molecule": "formic_acid",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/HCOOH_Rh111/r2scan",
+      "job_id": "58782557_141",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_141",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "b658d4e0a96e3230b2f332046ccdd1981af8f1ffcdad6dc4c1e926a8dd651c1f",
+      "surface": "Ag111",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ag111/r2scan",
+      "job_id": "58782557_142",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_142",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Au111/r2scan/CONTCAR": {
+      "source_sha256": "f08975b1d69fa003629f21616e77c763b3f2db072a66d39c971074d667ff12ba",
+      "surface": "Au111",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Au111/r2scan",
+      "job_id": "58782557_143",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_143",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "c6a424c167b16c70ac322fbe98be0af3b9e0159eb15a434991fac7384a677aa0",
+      "surface": "Cu100",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Cu100/r2scan",
+      "job_id": "58782557_144",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_144",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "75ca33bdb56e1dbca5e4a88215108bdf94bed580f0ae48c7b9528240c8ea6e35",
+      "surface": "Cu111",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Cu111/r2scan",
+      "job_id": "58782557_145",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_145",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "85bfbcdb97db3adbf91713def997db2eb2968ced4e0e068f396d0ee0e33bf77a",
+      "surface": "Ir111",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ir111/r2scan",
+      "job_id": "58782557_146",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_146",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "bcbf6b81393403f80167cdc5708b15ebe68a21f833cd68c5e4bbe05b24efc2ec",
+      "surface": "Pd111",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd111/r2scan",
+      "job_id": "58782557_147",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_147",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "da09c68e121c35feecb4d96b964c1da6bc60e18931f2bfc805157b348a5ecc28",
+      "surface": "Rh111",
+      "molecule": "N2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Rh111/r2scan",
+      "job_id": "58782557_148",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_148",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "8fb1bafbd580e99ecc8216733a253c9e24de7536f03c2c55ed6b8153e8c1ce81",
+      "surface": "Ag111",
+      "molecule": "NH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Ag111/r2scan",
+      "job_id": "58782557_149",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_149",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Au111/r2scan/CONTCAR": {
+      "source_sha256": "85072ec42618980a80ac4a7bfc10e0ab5b4b93a86f0c8bed20304fe7fc39fc10",
+      "surface": "Au111",
+      "molecule": "NH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Au111/r2scan",
+      "job_id": "58782557_150",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_150",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "abac01b1e1e4afc7e5b546909090cdc9db753e80da30f8c6cb33912a7365070e",
+      "surface": "Cu100",
+      "molecule": "NH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Cu100/r2scan",
+      "job_id": "58782557_151",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_151",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "79f51abae7dae5abb5f352147c0270fb2e5934d61ddf2acce833db07f5b642c3",
+      "surface": "Pd111",
+      "molecule": "NH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Pd111/r2scan",
+      "job_id": "58782557_152",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_152",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "be07b9fcce3dd74e20664594f037e900dfae95f233ae6530c39c2b66d8e7ee13",
+      "surface": "Rh111",
+      "molecule": "NH3",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Rh111/r2scan",
+      "job_id": "58782557_153",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_153",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "fce250532356796907c7c80bd0d84ab9726853cb323043b1ecac87138159b4eb",
+      "surface": "Ag111",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Ag111/r2scan",
+      "job_id": "58782557_154",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_154",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Au111/r2scan/CONTCAR": {
+      "source_sha256": "d170cc4294cd2bf3ea6980203c1f64b604df34db49d208647ac3ae87a79f9cc6",
+      "surface": "Au111",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Au111/r2scan",
+      "job_id": "58782557_155",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_155",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "29c52b7db4c5f781945e060561fac6831fecfd53878f1a4c4893de725f633ced",
+      "surface": "Cu100",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Cu100/r2scan",
+      "job_id": "58782557_156",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_156",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "2c1b17c821c53e259dcae0a7750e9c966559022a9cddca7844716210115c6f66",
+      "surface": "Cu111",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Cu111/r2scan",
+      "job_id": "58782557_157",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_157",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Ir110/r2scan/CONTCAR": {
+      "source_sha256": "bb2396928f4df5cc36388197e49b53d07b8a789ae1c448fcbb921778e85c3c17",
+      "surface": "Ir110",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Ir110/r2scan",
+      "job_id": "58782557_158",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_158",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Ir111/r2scan/CONTCAR": {
+      "source_sha256": "ce068f5d2e181ecf5ed9e929114aed2259fcc7440d12544684be0dcc87ca9093",
+      "surface": "Ir111",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Ir111/r2scan",
+      "job_id": "58782557_159",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_159",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "e97a7b56d2b40da37f315163fce975477df48914c3eac1840a9f168480be85b6",
+      "surface": "Pd111",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Pd111/r2scan",
+      "job_id": "58782557_160",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_160",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/NO_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "9509bb39bc00e0f24efc1adf759e53e8ec688ef61dfacbab247a684aaa83d052",
+      "surface": "Rh111",
+      "molecule": "NO",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Rh111/r2scan",
+      "job_id": "58782557_161",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_161",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Ag111/r2scan/CONTCAR": {
+      "source_sha256": "93c625226e532808287375ab9bc4dc9929ef9b5ac7822dca634cc36fbcb974da",
+      "surface": "Ag111",
+      "molecule": "SO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/SO2_Ag111/r2scan",
+      "job_id": "58782557_162",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_162",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Au111/r2scan/CONTCAR": {
+      "source_sha256": "726bb2e21ab1aecb359ab047277c7fa1345b12479b84023cfa28e083ae073fa9",
+      "surface": "Au111",
+      "molecule": "SO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/SO2_Au111/r2scan",
+      "job_id": "58782557_163",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_163",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Cu100/r2scan/CONTCAR": {
+      "source_sha256": "c2bcd21498401b2440584a3ae0d96888ad60c17736ed21a12e842f34bd1e12c6",
+      "surface": "Cu100",
+      "molecule": "SO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/SO2_Cu100/r2scan",
+      "job_id": "58782557_164",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_164",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Cu111/r2scan/CONTCAR": {
+      "source_sha256": "eb22c5c69d45d221187db6dc4346e25b4220f209c467545738a069fe448d7d3c",
+      "surface": "Cu111",
+      "molecule": "SO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/SO2_Cu111/r2scan",
+      "job_id": "58782557_165",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_165",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Pd111/r2scan/CONTCAR": {
+      "source_sha256": "9f24e5fa978014002c20abc2555ff41baa0a0759455585d935e500519d55fc63",
+      "surface": "Pd111",
+      "molecule": "SO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/SO2_Pd111/r2scan",
+      "job_id": "58782557_166",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_166",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Rh100/r2scan/CONTCAR": {
+      "source_sha256": "e870492282097f9949928c2494205055564d37ca7e826588b7834aeb781b39a3",
+      "surface": "Rh100",
+      "molecule": "SO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/SO2_Rh100/r2scan",
+      "job_id": "58782557_167",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_167",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    },
+    "/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Rh111/r2scan/CONTCAR": {
+      "source_sha256": "5d523b289643745db9e9cbae10685cccd4b256b527e87946ab3b01a4f8c1a0ef",
+      "surface": "Rh111",
+      "molecule": "SO2",
+      "functional": "r2scan",
+      "previous_cause": "Slurm time limit",
+      "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/SO2_Rh111/r2scan",
+      "job_id": "58782557_168",
+      "restart_status": "queued",
+      "calculation_status": "invalid",
+      "scheduler": {
+        "job_id": "58782557_168",
+        "state": "PENDING",
+        "exit_code": "0:0",
+        "elapsed": "00:00:00",
+        "time_limit": "12:00:00",
+        "start": "Unknown",
+        "end": "Unknown"
+      },
+      "changes": {
+        "ICHARG": {
+          "before": null,
+          "after": "2"
+        },
+        "LCHARG": {
+          "before": null,
+          "after": ".FALSE."
+        }
+      }
+    }
+  }
+}
