@@ -211,8 +211,8 @@ def build(root=ROOT):
         w=csv.DictWriter(out,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
     # External enhancement leaves the seven energy cells stable for the data pipeline.
     if 'functional_geometry.js' not in page:
-        page=page.replace('</head>','<link rel="stylesheet" href="functional_geometry.css">\n</head>')
-        page=page.replace('</body>','<script src="functional_geometry.js" defer></script>\n</body>')
+        page=page.replace('</head>','<link rel="stylesheet" href="functional_geometry.css?v=static-ase">\n</head>')
+        page=page.replace('</body>','<script src="functional_geometry.js?v=static-ase" defer></script>\n</body>')
     page=re.sub(r'<img(?![^>]*\bloading=)', '<img loading="lazy"',page)
     (root/'dft_comparison.html').write_text(page)
     print(json.dumps(dict(counts),indent=2),flush=True)

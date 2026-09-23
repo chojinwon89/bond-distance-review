@@ -6,7 +6,7 @@ The user requested that potential mismatches and unverified references no longer
 
 `functional_geometry.py` reads actual final CONTCAR coordinates for each of the four functionals, preferring converged Perlmutter structures and the selected energy's complex where possible. An available last geometry from an unfinished run is explicitly labeled. A different geometry source from the energy source is also labeled. It never uses one functional's image as another functional's structure.
 
-MLIP coordinates come from the published SevenNet-OMNI or GOAD five-model CIF chosen by the existing card's model description. Formula/common-name aliases are resolved. Five interactive panels show MLIP, PBE, PBE+D3, r²SCAN and BEEF-vdW; top/side controls and dragging rotate actual coordinates. Download buttons export the archived cell and Cartesian coordinates; these downloads omit selective-dynamics constraints and are geometry exports, not ready-to-run VASP inputs. Original published DFT images remain accessible in an expandable section.
+MLIP coordinates come from the published SevenNet-OMNI or GOAD five-model CIF chosen by the existing card's model description. Formula/common-name aliases are resolved. Five static panels show the original MLIP image and separate PBE, PBE+D3, r²SCAN and BEEF-vdW images. `render_functional_figures.py` uses the original ASE renderer (rotation -70x,20y,10z; unit-cell outline; white background) on unmodified archived coordinates. Images are packed into one PNG atlas per surface for loading efficiency; `functional_figures.json` maps each panel to its exact image. Bond distances, angles and torsions remain in the tables. The archived JSON retains the cell and Cartesian coordinates for download; it is a geometry record, not a ready-to-run VASP input. Original published DFT images remain accessible in an expandable section.
 
 Distances use ASE minimum-image periodic boundaries. Each molecular atom's nearest surface atom is reported, with both atom labels; nearest overall and nearest heavy-atom contacts are summarized. A geometric contact candidate uses 1.25 times the sum of covalent radii. This does not establish chemical bond order. All distances remain available, including atoms outside that cutoff.
 
@@ -36,6 +36,7 @@ python scripts/cluster_result_bundle.py import --input /path/to/kestrel-results.
 python scripts/cluster_selection.py
 python -c 'import sys; sys.path.insert(0,"scripts"); import cluster_selection; cluster_selection.apply()'
 python scripts/functional_geometry.py
+python scripts/render_functional_figures.py
 python scripts/plot_energy_decomposition.py
 python scripts/build_completion_report.py --project-root /pscratch/sd/j/jcho5/VASP
 python scripts/report_result_preservation.py
