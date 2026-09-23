@@ -1,0 +1,12 @@
+{
+  "jobs": 354,
+  "source_files_verified": 512,
+  "no_overlap_with_existing_restart_array": true,
+  "roles": {
+    "molecule": 9,
+    "slab": 2,
+    "spe": 34,
+    "relaxed": 309
+  },
+  "queue": "58782557_[24-168]|PENDING|dft_relax_restart|/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923\n58782557_16|RUNNING|dft_relax_restart|/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923\n58782557_23|RUNNING|dft_relax_restart|/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923\n"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-09-23T06:21:58.240880+00:00",
+  "checked_at": "2026-09-23T19:26:05.375581+00:00",
   "campaign": "unfinished_relaxations_20260923",
   "array_job_id": "58782557",
   "submitted_at": "2026-09-23T06:18:28.511753+00:00",
@@ -12,7 +12,9 @@
       "Interrupted output; cause not yet identified": 1
     },
     "statuses": {
-      "queued": 169
+      "converged": 22,
+      "running": 2,
+      "queued": 145
     },
     "scf_warning_jobs": 8
   },
@@ -47,11 +49,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H6_Ag110/r2scan",
       "job_id": "58782557_0",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_0",
-        "state": "PENDING"
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed": "00:15:27",
+        "time_limit": "12:00:00",
+        "start": "2026-09-23T01:13:01",
+        "end": "2026-09-23T01:28:28"
       },
       "changes": {
         "EDIFF": {
@@ -84,11 +91,16 @@
       "previous_cause": "Interrupted output; cause not yet identified",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3CHO_Cu100/beef_vdw",
       "job_id": "58782557_1",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_1",
-        "state": "PENDING"
+        "state": "COMPLETED",
+        "exit_code": "0:0",
+        "elapsed": "03:27:11",
+        "time_limit": "12:00:00",
+        "start": "2026-09-23T01:29:35",
+        "end": "2026-09-23T04:56:46"
       },
       "changes": {
         "ALGO": {
@@ -121,16 +133,16 @@
       "previous_cause": "Slurm time limit",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Ag110/r2scan",
       "job_id": "58782557_2",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_2",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:31:36",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T04:58:15",
+        "end": "2026-09-23T05:29:51"
       },
       "changes": {
         "ALGO": {
@@ -163,16 +175,16 @@
       "previous_cause": "Slurm time limit",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/C2H4_Ag100/r2scan",
       "job_id": "58782557_3",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_3",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "04:06:26",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T05:32:22",
+        "end": "2026-09-23T09:38:48"
       },
       "changes": {
         "ICHARG": {
@@ -193,16 +205,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CH3_Pt110/beef_vdw",
       "job_id": "58782557_4",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_4",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:04:39",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T05:47:05",
+        "end": "2026-09-23T05:51:44"
       },
       "changes": {
         "EDIFF": {
@@ -235,16 +247,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO2_Au111/beef_vdw",
       "job_id": "58782557_5",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_5",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:18:27",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T05:57:05",
+        "end": "2026-09-23T06:15:32"
       },
       "changes": {
         "EDIFF": {
@@ -277,16 +289,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Ag100/beef_vdw",
       "job_id": "58782557_6",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_6",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:09:27",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T05:59:10",
+        "end": "2026-09-23T06:08:37"
       },
       "changes": {
         "EDIFF": {
@@ -319,16 +331,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/CO_Cu110/beef_vdw",
       "job_id": "58782557_7",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_7",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:04:55",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T06:18:40",
+        "end": "2026-09-23T06:23:35"
       },
       "changes": {
         "EDIFF": {
@@ -361,16 +373,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2CO_Au111/beef_vdw",
       "job_id": "58782557_8",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_8",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:11:17",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T07:14:48",
+        "end": "2026-09-23T07:26:05"
       },
       "changes": {
         "EDIFF": {
@@ -403,16 +415,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Ag100/beef_vdw",
       "job_id": "58782557_9",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_9",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:05:31",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T07:28:15",
+        "end": "2026-09-23T07:33:46"
       },
       "changes": {
         "EDIFF": {
@@ -445,16 +457,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Ag110/beef_vdw",
       "job_id": "58782557_10",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_10",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:04:08",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T07:54:54",
+        "end": "2026-09-23T07:59:02"
       },
       "changes": {
         "EDIFF": {
@@ -487,16 +499,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Cu110/beef_vdw",
       "job_id": "58782557_11",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_11",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:04:01",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T08:16:18",
+        "end": "2026-09-23T08:20:19"
       },
       "changes": {
         "EDIFF": {
@@ -529,16 +541,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/H2O_Pd110/beef_vdw",
       "job_id": "58782557_12",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_12",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:09:31",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T08:25:13",
+        "end": "2026-09-23T08:34:44"
       },
       "changes": {
         "EDIFF": {
@@ -571,16 +583,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ag100/PBE",
       "job_id": "58782557_13",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_13",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:04:12",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T08:44:48",
+        "end": "2026-09-23T08:49:00"
       },
       "changes": {
         "EDIFF": {
@@ -613,16 +625,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ag100/PBE_D3",
       "job_id": "58782557_14",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_14",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:05:21",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T08:59:48",
+        "end": "2026-09-23T09:05:09"
       },
       "changes": {
         "EDIFF": {
@@ -655,16 +667,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ag100/beef_vdw",
       "job_id": "58782557_15",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_15",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:15:13",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T09:42:44",
+        "end": "2026-09-23T09:57:57"
       },
       "changes": {
         "EDIFF": {
@@ -697,15 +709,15 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Ir110/r2scan",
       "job_id": "58782557_16",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "running",
+      "calculation_status": "unfinished",
       "scheduler": {
         "job_id": "58782557_16",
-        "state": "PENDING",
+        "state": "RUNNING",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "02:32:18",
         "time_limit": "12:00:00",
-        "start": "Unknown",
+        "start": "2026-09-23T09:53:47",
         "end": "Unknown"
       },
       "changes": {
@@ -739,16 +751,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd100/beef_vdw",
       "job_id": "58782557_17",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_17",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:10:40",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T10:09:25",
+        "end": "2026-09-23T10:20:05"
       },
       "changes": {
         "EDIFF": {
@@ -781,16 +793,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd110/beef_vdw",
       "job_id": "58782557_18",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_18",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:09:03",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T10:17:19",
+        "end": "2026-09-23T10:26:22"
       },
       "changes": {
         "EDIFF": {
@@ -823,16 +835,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd110/r2scan",
       "job_id": "58782557_19",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_19",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:35:44",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T10:24:14",
+        "end": "2026-09-23T10:59:58"
       },
       "changes": {
         "EDIFF": {
@@ -865,16 +877,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/N2_Pd111/beef_vdw",
       "job_id": "58782557_20",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_20",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:47:33",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T10:30:59",
+        "end": "2026-09-23T11:18:32"
       },
       "changes": {
         "EDIFF": {
@@ -907,16 +919,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Ag100/PBE",
       "job_id": "58782557_21",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_21",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:05:35",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T11:35:19",
+        "end": "2026-09-23T11:40:54"
       },
       "changes": {
         "EDIFF": {
@@ -949,16 +961,16 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NH3_Pd110/beef_vdw",
       "job_id": "58782557_22",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "converged",
+      "calculation_status": "converged",
       "scheduler": {
         "job_id": "58782557_22",
-        "state": "PENDING",
+        "state": "COMPLETED",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:07:10",
         "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "start": "2026-09-23T11:54:24",
+        "end": "2026-09-23T12:01:34"
       },
       "changes": {
         "EDIFF": {
@@ -991,15 +1003,15 @@
       "previous_cause": "ZBRENT line-search failure",
       "restart_directory": "/pscratch/sd/j/jcho5/VASP/completion_runs/unfinished_relaxations_20260923/relaxed/NO_Ag100/PBE",
       "job_id": "58782557_23",
-      "restart_status": "queued",
-      "calculation_status": "invalid",
+      "restart_status": "running",
+      "calculation_status": "unfinished",
       "scheduler": {
         "job_id": "58782557_23",
-        "state": "PENDING",
+        "state": "RUNNING",
         "exit_code": "0:0",
-        "elapsed": "00:00:00",
+        "elapsed": "00:17:50",
         "time_limit": "12:00:00",
-        "start": "Unknown",
+        "start": "2026-09-23T12:08:15",
         "end": "Unknown"
       },
       "changes": {
@@ -1037,12 +1049,7 @@
       "calculation_status": "invalid",
       "scheduler": {
         "job_id": "58782557_24",
-        "state": "PENDING",
-        "exit_code": "0:0",
-        "elapsed": "00:00:00",
-        "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "state": "PENDING"
       },
       "changes": {
         "EDIFF": {
@@ -1079,12 +1086,7 @@
       "calculation_status": "invalid",
       "scheduler": {
         "job_id": "58782557_25",
-        "state": "PENDING",
-        "exit_code": "0:0",
-        "elapsed": "00:00:00",
-        "time_limit": "12:00:00",
-        "start": "Unknown",
-        "end": "Unknown"
+        "state": "PENDING"
       },
       "changes": {
         "ALGO": {
