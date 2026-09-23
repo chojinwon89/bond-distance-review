@@ -1,9 +1,9 @@
 {
   "source": "dft_comparison_singlepoint.csv",
-  "sha256": "61803cb3208d984518d5fbb35b717a1fe96ff9cdf88fe40f4f15b3aea5e17eec",
-  "displayed_SPE_rows": 1010,
-  "energy_review_rows_excluded": 172,
-  "paired_rows": 701,
+  "sha256": "1711776b3208bf171ffe7002364ea3ada6427c5f69d5ddd8436d1c7dd927ab9b",
+  "displayed_SPE_rows": 1524,
+  "energy_review_rows_excluded": 685,
+  "paired_rows": 702,
   "systems": 235,
   "common_four_functional_systems": 165,
   "summary": [
@@ -36,11 +36,11 @@
     },
     {
       "functional": "BEEF-vdW",
-      "n": 183,
-      "mean_residual": -0.3112213518032787,
-      "mae_residual": 0.33601427803278683,
-      "mean_gap": 0.09639075071038251,
-      "mae_total": 0.256207650273224,
+      "n": 184,
+      "mean_residual": -0.3106122966847826,
+      "mae_residual": 0.33527047875,
+      "mean_gap": 0.09638947059782609,
+      "mae_total": 0.255375,
       "negative_gap_count": 0
     }
   ],

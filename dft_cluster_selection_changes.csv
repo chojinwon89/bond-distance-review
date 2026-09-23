@@ -582,3 +582,258 @@ Rh111,SO2,pbe,SPE,,-1.39406726,Perlmutter first
 Rh111,SO2,pbe_d3,SPE,,-1.63535820,Perlmutter first
 Rh111,formic_acid,pbe,SPE,,-0.28644599,Perlmutter first
 Rh111,formic_acid,pbe_d3,SPE,,-0.37988680,Perlmutter first
+Ag100,CH3,r2scan,SPE,-2.145,-2.23863537,Perlmutter first
+Ag100,CO,pbe,SPE,-0.961,-0.95876764,Perlmutter first
+Ag100,CO,pbe_d3,SPE,-1.090,-1.08702564,Perlmutter first
+Ag100,CO,r2scan,SPE,-1.400,-1.39949615,Perlmutter first
+Ag100,CO,beef_vdw,SPE,,-25.04349134,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,DME,pbe,relaxed,,-0.73757110,Perlmutter first
+Ag100,DME,pbe,SPE,,-0.72949841,Perlmutter first
+Ag100,DME,pbe_d3,relaxed,,-1.11847341,Perlmutter first
+Ag100,DME,pbe_d3,SPE,,-0.95664831,Perlmutter first
+Ag100,H2,beef_vdw,SPE,,-24.77077332,Kestrel: no usable Perlmutter binding-energy candidate
+Ag100,H2O,beef_vdw,SPE,,-25.04150540,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,H2S,beef_vdw,SPE,,-25.10295488,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,N2,beef_vdw,SPE,,-24.88135877,Kestrel: no usable Perlmutter binding-energy candidate
+Ag100,NH3,beef_vdw,SPE,,-25.29333196,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,NO,beef_vdw,SPE,,-32.39137281,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,SO2,pbe,SPE,-1.281,-1.28013458,Perlmutter first
+Ag100,SO2,beef_vdw,SPE,,-25.64173573,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,ethene,pbe,SPE,-0.021,-0.66870781,Perlmutter first
+Ag100,ethene,pbe_d3,SPE,-0.103,-0.89184729,Perlmutter first
+Ag100,ethene,r2scan,SPE,0.060,-1.15969924,Perlmutter first
+Ag100,ethene,beef_vdw,SPE,-0.182,-25.05937440,Perlmutter energy review retained; Kestrel structure equivalence unverified
+Ag100,formaldehyde,beef_vdw,SPE,,-25.03843649,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,formate,beef_vdw,SPE,,-28.07714333,Kestrel: no usable Perlmutter binding-energy candidate
+Ag100,formic_acid,pbe_d3,SPE,-1.026,-1.02526841,Perlmutter first
+Ag100,formic_acid,beef_vdw,SPE,,-25.16298745,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag100,isopropanol,beef_vdw,SPE,,-25.28463149,Kestrel: no usable Perlmutter binding-energy candidate
+Ag100,propane,beef_vdw,SPE,,-25.12577206,Kestrel: no usable Perlmutter binding-energy candidate
+Ag100,propanol,beef_vdw,SPE,,-25.32220308,Kestrel: no usable Perlmutter binding-energy candidate
+Ag100,propene,beef_vdw,SPE,,-25.15624463,Kestrel: no usable Perlmutter binding-energy candidate
+Ag110,CO,r2scan,SPE,-1.072,-1.03939748,Perlmutter first
+Ag110,CO,beef_vdw,SPE,,-16.72114183,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,CO2,beef_vdw,SPE,,-16.69013584,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,DME,pbe,relaxed,,-0.55393021,Perlmutter first
+Ag110,DME,pbe,SPE,,-0.54294323,Perlmutter first
+Ag110,DME,pbe_d3,relaxed,,-0.88493337,Perlmutter first
+Ag110,DME,pbe_d3,SPE,,-0.83724539,Perlmutter first
+Ag110,DME,r2scan,SPE,-0.837,-0.94755321,Perlmutter first
+Ag110,H2,beef_vdw,SPE,,-16.41982528,Kestrel: no usable Perlmutter binding-energy candidate
+Ag110,H2O,beef_vdw,SPE,,-16.76922237,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,H2S,beef_vdw,SPE,,-16.79254942,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,N2,beef_vdw,SPE,,-16.52603686,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,NH3,beef_vdw,SPE,,-16.94875274,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,NO,pbe_d3,SPE,-1.446,-1.44545597,Perlmutter first
+Ag110,NO,beef_vdw,SPE,,-23.97313430,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,SO2,beef_vdw,SPE,,-17.16170797,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,acetaldehyde,pbe_d3,SPE,-0.742,-0.74148058,Perlmutter first
+Ag110,ethane,pbe,SPE,-0.411,-0.41155302,Perlmutter first
+Ag110,ethanol,r2scan,SPE,-0.240,-0.23548651,Perlmutter first
+Ag110,ethene,pbe,SPE,-0.142,-0.53215774,Perlmutter first
+Ag110,ethene,pbe_d3,SPE,-0.411,-0.82622978,Perlmutter first
+Ag110,ethene,r2scan,SPE,-0.179,-0.94322024,Perlmutter first
+Ag110,ethene,beef_vdw,SPE,-0.156,-16.70998148,Perlmutter energy review retained; Kestrel structure equivalence unverified
+Ag110,formaldehyde,r2scan,SPE,-0.923,-0.92350837,Perlmutter first
+Ag110,formaldehyde,beef_vdw,SPE,,-16.72114906,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,formate,beef_vdw,SPE,,-19.63572018,Kestrel: no usable Perlmutter binding-energy candidate
+Ag110,formic_acid,beef_vdw,SPE,,-16.86777236,Perlmutter energy review retained; no unflagged Kestrel alternative
+Ag110,propane,beef_vdw,SPE,,-16.73337042,Kestrel: no usable Perlmutter binding-energy candidate
+Ag110,propene,beef_vdw,SPE,,-16.83983272,Kestrel: no usable Perlmutter binding-energy candidate
+Ag111,CO2,pbe,relaxed,-1.235,-0.02110863,Perlmutter first
+Ag111,CO2,r2scan,SPE,-0.008,-0.00911469,Perlmutter first
+Ag111,CO2,beef_vdw,relaxed,-44.479,-0.23810702,Perlmutter first
+Ag111,ethane,pbe,relaxed,-1.221,-0.00704433,Perlmutter first
+Ag111,ethane,pbe_d3,relaxed,-1.478,-0.26285291,Perlmutter first
+Ag111,ethane,r2scan,relaxed,-2.168,-0.09206298,Perlmutter first
+Ag111,ethane,beef_vdw,relaxed,-44.523,-0.28149866,Perlmutter first
+Ag111,ethanol,pbe,relaxed,-1.317,-0.10299803,Perlmutter first
+Ag111,ethanol,pbe_d3,relaxed,-1.654,-0.43884549,Perlmutter first
+Ag111,ethanol,pbe_d3,SPE,-0.271,-0.27312484,Perlmutter first
+Ag111,ethanol,r2scan,SPE,-0.157,-0.15284055,Perlmutter first
+Ag111,ethanol,beef_vdw,relaxed,-44.647,-0.40564449,Perlmutter first
+Ag111,ethanol,beef_vdw,SPE,-0.310,-0.30548895,Perlmutter first
+Au111,CO2,pbe,SPE,0.012,0.00379225,Perlmutter first
+Au111,CO2,r2scan,SPE,0.103,0.12382745,Perlmutter first
+Au111,CO2,beef_vdw,SPE,-0.157,-0.18607244,Perlmutter first
+Au111,glycerol,pbe,SPE,0.252,0.24347459,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,glycerol,pbe_d3,SPE,-0.072,-0.02830199,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,glycerol,r2scan,SPE,0.263,0.28369208,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,isopropanol,pbe,SPE,0.202,0.19367286,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,isopropanol,pbe_d3,SPE,0.019,0.06218061,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,isopropanol,r2scan,SPE,0.263,0.28438191,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,isopropanol,beef_vdw,SPE,-0.300,-0.32878585,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propane,pbe,SPE,0.200,0.19192616,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propane,pbe_d3,SPE,0.159,0.20172020,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propane,r2scan,SPE,0.315,0.33564193,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propane,beef_vdw,SPE,-0.234,-0.26236809,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propene,pbe,SPE,0.311,0.30258699,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propene,pbe_d3,SPE,0.300,0.34301752,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propene,r2scan,SPE,0.448,0.46849797,Kestrel: no usable Perlmutter binding-energy candidate
+Au111,propene,beef_vdw,SPE,-0.096,-0.12434499,Kestrel: no usable Perlmutter binding-energy candidate
+Cu110,CO,beef_vdw,SPE,-1.332,-31.51480864,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,CO2,beef_vdw,SPE,-0.727,-30.90981024,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,DME,pbe,relaxed,-4.34,0.26888765,Perlmutter first
+Cu110,DME,pbe,SPE,,0.28311427,Perlmutter first
+Cu110,DME,pbe_d3,relaxed,,-0.25314227,Perlmutter first
+Cu110,DME,pbe_d3,SPE,,-0.17472440,Perlmutter first
+Cu110,DME,r2scan,SPE,0.193,0.09617060,Perlmutter first
+Cu110,DME,beef_vdw,SPE,-0.747,-31.24475886,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,H2O,beef_vdw,SPE,-0.866,-31.04838870,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,H2S,pbe,SPE,,0.12580437,Perlmutter first
+Cu110,H2S,pbe_d3,SPE,,-0.33367297,Perlmutter first
+Cu110,H2S,r2scan,SPE,,-0.03055169,Perlmutter first
+Cu110,H2S,beef_vdw,SPE,,-31.14608150,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,N2,pbe,SPE,,0.37293348,Perlmutter first
+Cu110,N2,pbe_d3,SPE,,0.12555251,Perlmutter first
+Cu110,N2,r2scan,SPE,,0.32989938,Perlmutter first
+Cu110,N2,beef_vdw,SPE,,-30.79823865,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,NH3,pbe,SPE,,-0.13737729,Perlmutter first
+Cu110,NH3,pbe_d3,SPE,,-0.46192300,Perlmutter first
+Cu110,NH3,r2scan,SPE,,-0.29855803,Perlmutter first
+Cu110,NH3,beef_vdw,SPE,,-31.36756507,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,NO,pbe,SPE,,-1.02185164,Perlmutter first
+Cu110,NO,pbe_d3,SPE,,-1.24980491,Perlmutter first
+Cu110,NO,beef_vdw,SPE,,-38.70957850,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,SO2,pbe,SPE,,-0.64610518,Perlmutter first
+Cu110,SO2,pbe_d3,SPE,,-1.15587784,Perlmutter first
+Cu110,SO2,r2scan,SPE,,-1.19932558,Perlmutter first
+Cu110,SO2,beef_vdw,SPE,,-31.96032453,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,acetaldehyde,beef_vdw,SPE,-0.918,-31.10097592,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,acetic_acid,beef_vdw,SPE,-1.132,-31.31443300,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,ethane,beef_vdw,SPE,-0.738,-30.92073809,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,ethene,pbe,SPE,-0.187,0.08474009,Perlmutter first
+Cu110,ethene,pbe_d3,SPE,-0.718,-0.45603730,Perlmutter first
+Cu110,ethene,r2scan,SPE,-0.431,-0.19512683,Perlmutter first
+Cu110,ethene,beef_vdw,SPE,-0.129,-31.19717159,Perlmutter energy review retained; Kestrel structure equivalence unverified
+Cu110,formaldehyde,pbe,SPE,,0.29352166,Perlmutter first
+Cu110,formaldehyde,pbe_d3,SPE,,-0.00144608,Perlmutter first
+Cu110,formaldehyde,r2scan,SPE,,0.09443349,Perlmutter first
+Cu110,formaldehyde,beef_vdw,SPE,,-30.99906694,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,formic_acid,pbe,SPE,0.112,0.11265040,Perlmutter first
+Cu110,formic_acid,beef_vdw,SPE,-1.025,-31.20762999,Perlmutter energy review retained; no unflagged Kestrel alternative
+Cu110,methanol,pbe,SPE,0.213,0.15285484,Perlmutter first
+Cu110,methanol,pbe_d3,SPE,-0.231,-0.18556714,Perlmutter first
+Cu110,methanol,r2scan,SPE,-0.056,-0.04523510,Perlmutter first
+Cu110,methanol,beef_vdw,SPE,-0.925,-31.20058549,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pd111,H2O,r2scan,SPE,,-0.61652122,Perlmutter first
+Pd111,H2S,r2scan,SPE,,-0.90608536,Perlmutter first
+Pd111,N2,r2scan,SPE,,-0.50253035,Perlmutter first
+Pd111,NH3,r2scan,SPE,,-1.04339219,Perlmutter first
+Pd111,SO2,r2scan,SPE,,-1.61890214,Perlmutter first
+Pd111,formaldehyde,r2scan,SPE,,-0.56751721,Perlmutter first
+Pd111,formic_acid,r2scan,SPE,,-0.76544088,Perlmutter first
+Pd111,methane,r2scan,SPE,,-0.30716851,Perlmutter first
+Pt100,CO,pbe,SPE,,-2.48207699,Perlmutter first
+Pt100,CO,pbe_d3,SPE,,-2.71835447,Perlmutter first
+Pt100,CO,r2scan,SPE,,-2.81583493,Perlmutter first
+Pt100,CO,beef_vdw,SPE,,-35.67465483,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,DME,pbe,relaxed,,-0.68173164,Perlmutter first
+Pt100,DME,pbe,SPE,,-0.63513000,Perlmutter first
+Pt100,DME,pbe_d3,relaxed,,-1.30921857,Perlmutter first
+Pt100,DME,pbe_d3,SPE,,-1.18584605,Perlmutter first
+Pt100,H2O,pbe,SPE,,-0.72242799,Perlmutter first
+Pt100,H2O,pbe_d3,SPE,,-0.90085361,Perlmutter first
+Pt100,H2O,r2scan,SPE,,-1.09037545,Perlmutter first
+Pt100,H2O,beef_vdw,SPE,,-34.06321182,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,H2S,pbe,SPE,,-1.35253170,Perlmutter first
+Pt100,H2S,pbe_d3,SPE,,-1.73183736,Perlmutter first
+Pt100,H2S,r2scan,SPE,,-1.75369235,Perlmutter first
+Pt100,H2S,beef_vdw,SPE,,-34.74531558,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,N2,pbe,SPE,,-0.78910169,Perlmutter first
+Pt100,N2,pbe_d3,SPE,,-0.98622313,Perlmutter first
+Pt100,N2,r2scan,SPE,,-1.10884729,Perlmutter first
+Pt100,N2,beef_vdw,SPE,,-34.07535112,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,NH3,pbe,SPE,,-1.41597909,Perlmutter first
+Pt100,NH3,pbe_d3,SPE,,-1.66595207,Perlmutter first
+Pt100,NH3,r2scan,SPE,,-1.80908329,Perlmutter first
+Pt100,NH3,beef_vdw,SPE,,-34.74005392,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,NO,pbe,SPE,,-2.97213064,Perlmutter first
+Pt100,NO,pbe_d3,SPE,,-3.14818814,Perlmutter first
+Pt100,NO,beef_vdw,SPE,,-42.80009214,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,SO2,pbe,SPE,,-1.69410608,Perlmutter first
+Pt100,SO2,pbe_d3,SPE,,-2.25041448,Perlmutter first
+Pt100,SO2,r2scan,SPE,,-2.30279326,Perlmutter first
+Pt100,SO2,beef_vdw,SPE,,-35.15254883,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,ethene,pbe,SPE,-1.123,-1.49457966,Perlmutter first
+Pt100,ethene,r2scan,SPE,-1.384,-2.02515271,Perlmutter first
+Pt100,ethene,beef_vdw,SPE,-1.151,-34.94925632,Perlmutter energy review retained; Kestrel structure equivalence unverified
+Pt100,formaldehyde,pbe,SPE,,-1.14713608,Perlmutter first
+Pt100,formaldehyde,pbe_d3,SPE,,-1.46725736,Perlmutter first
+Pt100,formaldehyde,r2scan,SPE,,-1.61904984,Perlmutter first
+Pt100,formaldehyde,beef_vdw,SPE,,-34.46759673,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,formic_acid,pbe,SPE,,-0.85037042,Perlmutter first
+Pt100,formic_acid,pbe_d3,SPE,,-1.19589368,Perlmutter first
+Pt100,formic_acid,r2scan,SPE,,-1.27008707,Perlmutter first
+Pt100,formic_acid,beef_vdw,SPE,,-34.27300193,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt100,methane,pbe,SPE,,-0.41274416,Perlmutter first
+Pt100,methane,pbe_d3,SPE,,-0.65366102,Perlmutter first
+Pt100,methane,r2scan,SPE,,-0.75728652,Perlmutter first
+Pt100,methane,beef_vdw,SPE,,-33.92151909,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,CO,pbe,SPE,,-2.50730614,Perlmutter first
+Pt110,CO,pbe_d3,SPE,,-2.80065390,Perlmutter first
+Pt110,CO,r2scan,SPE,,-2.66988483,Perlmutter first
+Pt110,CO,beef_vdw,SPE,,-24.67733296,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,CO2,pbe,SPE,-0.014,-0.27804201,Perlmutter first
+Pt110,CO2,r2scan,SPE,0.041,-0.41238217,Perlmutter first
+Pt110,CO2,beef_vdw,SPE,-0.184,-22.81922048,Perlmutter energy review retained; Kestrel structure equivalence unverified
+Pt110,DME,pbe,relaxed,,-0.68049075,Perlmutter first
+Pt110,DME,pbe,SPE,,-0.60267227,Perlmutter first
+Pt110,DME,pbe_d3,relaxed,,-1.36698084,Perlmutter first
+Pt110,DME,pbe_d3,SPE,,-1.23148258,Perlmutter first
+Pt110,H2O,pbe,SPE,,-0.66555829,Perlmutter first
+Pt110,H2O,pbe_d3,SPE,,-0.94455410,Perlmutter first
+Pt110,H2O,r2scan,SPE,,-0.90018904,Perlmutter first
+Pt110,H2O,beef_vdw,SPE,,-22.97668071,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,H2S,pbe,SPE,,-2.40813882,Perlmutter first
+Pt110,H2S,pbe_d3,SPE,,-2.91062705,Perlmutter first
+Pt110,H2S,r2scan,SPE,,-2.76453427,Perlmutter first
+Pt110,H2S,beef_vdw,SPE,,-24.67407552,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,N2,pbe,SPE,,-0.79710652,Perlmutter first
+Pt110,N2,pbe_d3,SPE,,-1.05676243,Perlmutter first
+Pt110,N2,r2scan,SPE,,-0.97300069,Perlmutter first
+Pt110,N2,beef_vdw,SPE,,-22.99122139,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,NH3,pbe,SPE,,-1.32721305,Perlmutter first
+Pt110,NH3,pbe_d3,SPE,,-1.66542381,Perlmutter first
+Pt110,NH3,r2scan,SPE,,-1.52212158,Perlmutter first
+Pt110,NH3,beef_vdw,SPE,,-23.64696726,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,NO,pbe,SPE,,-2.61324368,Perlmutter first
+Pt110,NO,pbe_d3,SPE,,-2.86133488,Perlmutter first
+Pt110,NO,beef_vdw,SPE,,-31.48933696,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,SO2,pbe,SPE,,-1.76593046,Perlmutter first
+Pt110,SO2,pbe_d3,SPE,,-2.36768368,Perlmutter first
+Pt110,SO2,r2scan,SPE,,-2.23367164,Perlmutter first
+Pt110,ethane,r2scan,SPE,0.163,-0.01807217,Perlmutter first
+Pt110,ethanol,r2scan,SPE,0.347,-0.58388767,Perlmutter first
+Pt110,ethene,pbe,SPE,-1.088,-1.56920746,Perlmutter first
+Pt110,ethene,pbe_d3,SPE,-1.634,-2.10321470,Perlmutter first
+Pt110,ethene,r2scan,SPE,-1.424,-1.90765048,Perlmutter first
+Pt110,ethene,beef_vdw,SPE,-0.950,-24.04229981,Perlmutter energy review retained; Kestrel structure equivalence unverified
+Pt110,formaldehyde,pbe,SPE,,-1.34930273,Perlmutter first
+Pt110,formaldehyde,pbe_d3,SPE,,-1.78566544,Perlmutter first
+Pt110,formaldehyde,r2scan,SPE,,-1.65250096,Perlmutter first
+Pt110,formaldehyde,beef_vdw,SPE,,-23.63772167,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,formic_acid,pbe,SPE,,-0.74812993,Perlmutter first
+Pt110,formic_acid,pbe_d3,SPE,,-1.20759693,Perlmutter first
+Pt110,formic_acid,r2scan,SPE,,-1.05679338,Perlmutter first
+Pt110,formic_acid,beef_vdw,SPE,,-23.17542630,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt110,methane,pbe,SPE,,-0.21736207,Perlmutter first
+Pt110,methane,pbe_d3,SPE,,-0.51433293,Perlmutter first
+Pt110,methane,r2scan,SPE,,-0.40036656,Perlmutter first
+Pt110,methane,beef_vdw,SPE,,-22.71278038,Perlmutter energy review retained; no unflagged Kestrel alternative
+Pt111,CO2,pbe,relaxed,-0.875,-0.03257320,Perlmutter first
+Pt111,CO2,beef_vdw,relaxed,-60.425,-0.29372964,Perlmutter first
+Pt111,CO2,beef_vdw,SPE,-0.216,-0.21518344,Perlmutter first
+Pt111,ethanol,beef_vdw,SPE,-0.012,-34.32090427,Perlmutter energy review retained; Kestrel structure equivalence unverified
+Pt111,formic_acid,r2scan,SPE,,-1.09668810,Perlmutter first
+Rh111,CH3,r2scan,SPE,,-2.30103040,Perlmutter first
+Rh111,CO,r2scan,SPE,,-2.64239190,Perlmutter first
+Rh111,CO2,r2scan,SPE,,-0.67753122,Perlmutter first
+Rh111,H2O,r2scan,SPE,,-1.07229594,Perlmutter first
+Rh111,H2S,r2scan,SPE,,-1.47591523,Perlmutter first
+Rh111,N2,r2scan,SPE,,-1.19951448,Perlmutter first
+Rh111,NH3,r2scan,SPE,,-1.62707791,Perlmutter first
+Rh111,SO2,r2scan,SPE,,-2.51944542,Perlmutter first
+Rh111,formaldehyde,r2scan,SPE,,-1.49492051,Perlmutter first
+Rh111,formic_acid,r2scan,SPE,,-1.16866280,Perlmutter first
+Rh111,methane,r2scan,SPE,,-0.65876229,Perlmutter first

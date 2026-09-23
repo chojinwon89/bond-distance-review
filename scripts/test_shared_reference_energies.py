@@ -38,6 +38,17 @@ class SharedReferenceTests(unittest.TestCase):
             with self.subTest(kind=kind),self.assertRaises(ValueError):
                 derive(c,s,g,'SPE' if kind=='mode' else 'relaxed')
 
+    def test_permissive_reference_policy_keeps_values_and_diagnostics(self):
+        c,s,g=copy.deepcopy(components())
+        s['calculation']['potentials']={}
+        s['calculation']['cell'][0][0]=9.
+        result=derive(c,s,g,'relaxed',allow_unverified=True)
+        self.assertEqual(result['reference_status'],'unverified')
+        self.assertIn('slab cell',result['validation_notes'])
+        self.assertEqual(Decimal(result['E_ads']),Decimal('-25.22664810'))
+        s['calculation']['composition']={'Ag':64}
+        with self.assertRaises(ValueError):derive(c,s,g,'relaxed',allow_unverified=True)
+
     def test_page_fill_marks_review_preserves_existing_and_is_idempotent(self):
         data=derive(*components(),'relaxed')
         page='<div class="g" data-surf="Ag111" data-mol="DME"><table><tr><td class="l">BEEF-vdW</td><td>—</td><td>-0.20</td><td>—</td></tr></table></div><script></script>'

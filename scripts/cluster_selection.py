@@ -39,6 +39,8 @@ def read_csv(path):
 
 
 def build(root=ROOT):
+    policy_path=root/'data/adsorption_results/display_policy.json'
+    permissive=policy_path.exists() and json.loads(policy_path.read_text()).get('allow_unverified_references',False)
     records=latest(read_store(root/'dft_component_store.jsonl.gz'))
     byid={r['snapshot_id']:r for r in records}; grouped=defaultdict(list);observed=defaultdict(list)
     coverage=read_csv(root/'dft_completion_coverage.csv')
@@ -53,15 +55,17 @@ def build(root=ROOT):
         mode='SPE' if c.get('nsw')==0 else 'relaxed' if (c.get('nsw') or 0)>0 else 'unknown'
         observed[key+(mode,)].append(comp)
         if c['status']!='converged' or mode=='unknown':continue
-        if mode=='SPE' and c['directory'] not in spe_allowed:continue
-        refs=reference_candidates(comp,records)['candidate_reference_ids']
+        if not permissive and mode=='SPE' and c['directory'] not in spe_allowed:continue
+        refs=reference_candidates(comp,records,allow_unverified=permissive)['candidate_reference_ids']
         def rank(sid):
             r=byid[sid]
-            return (r['cluster']!=comp['cluster'],r['provenance'].get('kind')!='live-files',r['calculation']['directory'])
+            from potential_matching import potential_match
+            from component_store import cell_matches
+            return (not potential_match(c,r['calculation']),r['role']=='slab' and not cell_matches(c.get('cell'),r['calculation'].get('cell')),r['cluster']!=comp['cluster'],r['provenance'].get('kind')!='live-files',r['calculation']['directory'])
         candidate=None
         for sid in sorted(refs['slab'],key=rank):
             for gid in sorted(refs['molecule'],key=rank):
-                try:candidate=derive(comp,byid[sid],byid[gid],mode)
+                try:candidate=derive(comp,byid[sid],byid[gid],mode,allow_unverified=permissive)
                 except ValueError:continue
                 candidate['_complex']=comp;break
             if candidate:break
@@ -86,7 +90,7 @@ def build(root=ROOT):
                     complex_total_difference_eV=str(Decimal(str(primary['E_complex']))-Decimal(str(backup['E_complex']))),
                     perlmutter_directory=primary['complex_directory'],kestrel_directory=backup['complex_directory'],
                     same_structure=str(same).lower(),geometry_evidence=proof,selection_reason=reason))
-            if selected and not primary:
+            if selected and not primary and not permissive:
                 local=[r for r in observed.get(key,[]) if r['cluster']=='perlmutter']
                 if local and not any(same_structure(r,selected['_complex'],mode)[0] for r in local):
                     selected=None;reason='Kestrel candidate held: matching Perlmutter structure not verified'
@@ -107,6 +111,7 @@ def build(root=ROOT):
         normal_existing_to_review=sum(bool(r['previous_E_ads']) and abs(Decimal(r['previous_E_ads']))<=5 and r['status']=='energy_review' for r in selections),
         kestrel_record_provenance=dict(Counter(r['provenance']['kind'] for r in records if r['cluster']=='kestrel')),
         access_note='This build reads the local component store. Archived exports do not constitute a fresh Kestrel filesystem search.')
+    if permissive:summary['policy']='User-requested permissive display: reference potential, full-cell and core-setting differences do not suppress energy values. Prefer matching available references and Perlmutter complexes; retain same functional and component atom counts and record all flags. Kestrel data use archived provenance unless refreshed by authenticated export.'
     (root/'dft_cluster_selection_summary.json').write_text(json.dumps(summary,indent=2)+'\n');print(json.dumps(summary,indent=2))
 
 
@@ -114,6 +119,8 @@ def apply(root=ROOT):
     from update_kestrel_singlepoint import CARD,FUNCTIONALS,number,combined
     selection_path=root/'dft_cluster_selection.csv'
     if not selection_path.exists():return
+    policy_path=root/'data/adsorption_results/display_policy.json'
+    permissive=policy_path.exists() and json.loads(policy_path.read_text()).get('allow_unverified_references',False)
     selection_rows=read_csv(selection_path)
     selection={(r['surface'],r['molecule'],r['functional'],r['mode']):r for r in selection_rows}
     potential_audit=root/'dft_potential_mismatches.csv'
@@ -191,7 +198,7 @@ def apply(root=ROOT):
                         cls=' class="sp-energy"' if mode=='SPE' else ''
                         cells[index]=f'<td{cls} title="Gas retry status changed; inspect the component audit for remaining blockers">see audit</td>'
                     continue
-                value=Decimal(selected['E_ads']);old=number(cells[index]);review=selected['status']=='energy_review'
+                value=Decimal(selected['E_ads']);old=number(cells[index]);review=selected['status']=='energy_review' or selected.get('reference_status')=='unverified'
                 if not potential_audit.exists() and old is not None and selected['complex_cluster']=='kestrel' and selected['kestrel_fallback']!='true':
                     selected['application_status']='existing value retained; no verified replacement required'
                     continue
@@ -203,7 +210,7 @@ def apply(root=ROOT):
                 selected['applied_E_ads']=str(value);selected['application_status']='selected candidate applied'
                 cls=('sp-energy ' if mode=='SPE' else '')+('energy-review' if review else '')
                 attr=f' class="{cls.strip()}"' if cls.strip() else ''
-                title=html.escape(selected['selection_reason']+'; '+selected['complex_directory']+'; slab '+selected['slab_directory']+'; molecule '+selected['molecule_directory'],quote=True)
+                title=html.escape(selected['selection_reason']+'; '+selected.get('validation_notes','')+'; '+selected['complex_directory']+'; slab '+selected['slab_directory']+'; molecule '+selected['molecule_directory'],quote=True)
                 cells[index]=f'<td{attr} title="{title}">{value:.3f}</td>'
                 cells[delta_index]=f'<td{attr} title="Displayed ML minus {mode} DFT">{ml-value:+.3f}</td>' if ml is not None else ('<td class="sp-energy">&mdash;</td>' if mode=='SPE' else '<td>&mdash;</td>')
                 if old is None or abs(value-old)>Decimal('0.0005'):
@@ -226,6 +233,9 @@ def apply(root=ROOT):
             return '<tr>'+''.join(cells)+'</tr>'
         return prefix+re.sub(r'<tr>(.*?)</tr>',row,body,flags=re.S)
     page=CARD.sub(card,page)
+    if permissive:
+        page=re.sub(r' data-audit-status="[^"]+"','',page)
+        page=re.sub(r'(<td\b[^>]*>)(?:potential mismatch|refs unverified)(</td>)',r'\1&mdash;\2',page)
     if '/* historical-energy */' not in page:
         page=page.replace('</style>', '/* historical-energy */ .historical-energy[data-audit-status]::after {content: "historical: " attr(data-audit-status); display:block; font-size:9px; color:#9a5700;}</style>',1)
     summary_text=f'<b>Single-point adsorption energies:</b> {len(sp)} functional results across {len({(k[0],k[1]) for k in sp})} of the 415 systems below; source choices follow the Perlmutter-first policy and retain explicit provenance.'
@@ -247,9 +257,11 @@ Archived Kestrel sources remain labeled; no fresh Kestrel login is claimed.
 <a href="dft_cluster_selection_summary.json">Selection policy and counts</a>.</div>
 <!-- /cluster-policy -->
 '''
+    if permissive:
+        note='<!-- cluster-policy --><div class="note info"><b>Display policy:</b> Show available adsorption energies, including historical values and calculations with unverified or different reference potentials/settings. Perlmutter is preferred; archived Kestrel fills gaps. Audit flags do not suppress numeric values. Matching potentials are preferred when available. A total is never invented when a component energy is absent; atom counts and functional identity are retained. Amber values are excluded from the validated energy plots. <a href="dft_cluster_selection.csv">Component totals and source paths</a> · <a href="data/adsorption_results/README.md">Permanent archive</a>.</div><!-- /cluster-policy -->\n'
     page=page.replace('<h2>Per-system structure',note+'<h2>Per-system structure');path.write_text(page)
     write_csv(sp_path,[sp[k] for k in sorted(sp)],sp_fields)
-    capture(root,page,'validated-selection',list(sp.values()))
+    capture(root,page,'selected-display' if permissive else 'validated-selection',list(sp.values()))
     selection_fields=[k for k in selection_rows[0] if k not in ('applied_E_ads','application_status')]+['applied_E_ads','application_status']
     for r in selection_rows:
         r.setdefault('applied_E_ads','');r.setdefault('application_status','not on page')

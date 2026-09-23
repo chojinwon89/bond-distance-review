@@ -1,30 +1,28 @@
 {
-  "policy": "Require matching PAW TITEL identities for all component species. Preserve historical numbers with explicit audit labels when validated references are unavailable; exclude them from validated statistics. Perlmutter first. If |E_ads| > 5 eV, prefer an unflagged Kestrel result only with verified matching structure. Directory names, composition, similar energies and matching cells alone do not prove equal coordinates. Preserve nonselected history; do not substitute gas energies across functionals.",
+  "policy": "User-requested permissive display: reference potential, full-cell and core-setting differences do not suppress energy values. Prefer matching available references and Perlmutter complexes; retain same functional and component atom counts and record all flags. Kestrel data use archived provenance unless refreshed by authenticated export.",
   "selections": {
-    "No complete matched component set": 1521,
-    "Perlmutter first": 1609,
-    "Kestrel candidate held: matching Perlmutter structure not verified": 17,
-    "Kestrel: no usable Perlmutter binding-energy candidate": 149,
-    "Perlmutter energy review retained; no unflagged Kestrel alternative": 24
+    "Perlmutter first": 2136,
+    "Perlmutter energy review retained; no unflagged Kestrel alternative": 179,
+    "No complete matched component set": 739,
+    "Kestrel: no usable Perlmutter binding-energy candidate": 259,
+    "Perlmutter energy review retained; Kestrel structure equivalence unverified": 7
   },
-  "candidate_results": 2156,
-  "duplicate_pairs": 336,
+  "candidate_results": 3169,
+  "duplicate_pairs": 539,
   "geometry_verified_pairs": 0,
-  "normal_existing_to_review": 0,
+  "normal_existing_to_review": 16,
   "kestrel_record_provenance": {
     "archived-source-export": 2618
   },
   "access_note": "This build reads the local component store. Archived exports do not constitute a fresh Kestrel filesystem search.",
   "application_status": {
-    "historical retained: refs unverified": 726,
-    "historical retained: potential mismatch": 245,
-    "missing": 427,
-    "missing: potential mismatch": 140,
-    "selected candidate applied": 1782
+    "selected candidate applied": 2581,
+    "missing": 398,
+    "historical retained: refs unverified": 341
   },
   "applied_candidate_cluster": {
-    "perlmutter": 1633,
-    "kestrel": 149
+    "perlmutter": 2322,
+    "kestrel": 259
   },
-  "numeric_changes_recorded": 583
+  "numeric_changes_recorded": 838
 }

@@ -13,7 +13,7 @@ from molecule_names import canonical
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = ['surface','molecule','functional','mode','status','E_ads','E_complex','E_slab','E_molecule',
           'complex_cluster','slab_cluster','molecule_cluster','complex_directory','slab_directory','molecule_directory',
-          'complex_snapshot_id','slab_snapshot_id','molecule_snapshot_id','provenance']
+          'complex_snapshot_id','slab_snapshot_id','molecule_snapshot_id','provenance','reference_status','validation_notes']
 
 
 def read_rows(root=ROOT):
@@ -35,13 +35,14 @@ def compatible_settings(comp, slab, gas):
     return True
 
 
-def derive(comp, slab, gas, mode):
+def derive(comp, slab, gas, mode, allow_unverified=False):
     c,s,g=[r['calculation'] for r in [comp,slab,gas]]
     if c['status']!='converged' or (c.get('nsw')!=0 if mode=='SPE' else not relaxed(c)):
         raise ValueError('Complex does not pass the requested calculation mode and completion checks')
-    if not compatible_settings(c.get('settings',{}),s.get('settings',{}),g.get('settings',{})):
+    settings_ok=compatible_settings(c.get('settings',{}),s.get('settings',{}),g.get('settings',{}))
+    if not allow_unverified and not settings_ok:
         raise ValueError('Stored cutoff, slab spin/smearing or LASPH settings differ')
-    refs=reference_candidates(comp,[slab,gas])['candidate_reference_ids']
+    refs=reference_candidates(comp,[slab,gas],allow_unverified=allow_unverified)['candidate_reference_ids']
     if slab['snapshot_id'] not in refs['slab'] or gas['snapshot_id'] not in refs['molecule']:
         raise ValueError('References fail convergence, functional, identity, atom-count or full-cell matching')
     energy=Decimal(str(c['energy']))-Decimal(str(s['energy']))-Decimal(str(g['energy']))
@@ -49,6 +50,15 @@ def derive(comp, slab, gas, mode):
         status='energy_review' if abs(energy)>5 else 'ok',E_ads=str(energy),
         E_complex=c['energy'],E_slab=s['energy'],E_molecule=g['energy'],
         provenance='Converged components; matching PAW TITEL identities, functional, composition, full slab cell and stored core settings. Archived Kestrel provenance retained. No energy scaling or offsets.')
+    from potential_matching import potential_match
+    from component_store import cell_matches
+    notes=[]
+    if not cell_matches(c.get('cell'),s.get('cell')):notes.append('slab cell differs or is unverified')
+    if not potential_match(c,s) or not potential_match(c,g):notes.append('potential identities differ or are unverified')
+    if not settings_ok:notes.append('core settings differ or are unverified')
+    result['reference_status']='unverified' if notes else 'matched'
+    result['validation_notes']='; '.join(notes)
+    if notes:result['provenance']='Converged components; same functional and composition. Displayed under user-requested permissive reference policy. '+result['validation_notes']
     for role,row in [('complex',comp),('slab',slab),('molecule',gas)]:
         result[role+'_cluster']=row['cluster'];result[role+'_directory']=row['calculation']['directory']
         result[role+'_snapshot_id']=row['snapshot_id']

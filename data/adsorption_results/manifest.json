@@ -6,39 +6,61 @@
   "files": [
     {
       "path": "data/adsorption_results/publications.jsonl",
-      "sha256": "f12f29d672d5f4f8f7359e13128ca046f39e3dc984f4612e0cbafe68efbb9323",
-      "bytes": 8378667
+      "sha256": "8743c5bf9729b6942f83e67922e9a154c53a78374e3fda3bcdb149af9ea4c8a6",
+      "bytes": 14538399
     },
     {
       "path": "dft_component_store.jsonl.gz",
       "sha256": "5d95d147a446a615e498ccb49c27a426590540792be72734a215868349e004e8",
       "bytes": 4381081
+    },
+    {
+      "path": "functional_geometry.json",
+      "sha256": "93afe39407e919c6aa245585471336f0f9176bd573a1a694d5a774c7d3dc80ce",
+      "bytes": 10703865
+    },
+    {
+      "path": "data/adsorption_results/geometry_snapshots/93afe39407e919c6aa245585471336f0f9176bd573a1a694d5a774c7d3dc80ce.json.gz",
+      "sha256": "7bc2c20c6733b527d764974b2b760ca47489ce6c8ab1c2cac431220befb79688",
+      "bytes": 2169333
     }
   ],
-  "publication_observations": 7880,
+  "publication_observations": 13042,
   "component_snapshots": 18686,
   "current_component_records_by_cluster": {
     "kestrel": 2618,
     "perlmutter": 4974
   },
   "historical_cells_by_mode": {
-    "relaxed": 617,
-    "SPE": 354
+    "relaxed": 313,
+    "SPE": 28
   },
   "historical_cells_by_current_audit": {
-    "refs unverified": 726,
-    "potential mismatch": 245
+    "refs unverified": 341
   },
-  "selected_component_matched_cells_by_mode": {
-    "relaxed": 772,
-    "SPE": 1010
+  "selected_component_derived_cells_by_mode": {
+    "relaxed": 1085,
+    "SPE": 1496
   },
-  "selected_energy_review_cells": 24,
-  "validated_paired_plot_points": 701,
+  "selected_reference_status": {
+    "unverified": 798,
+    "matched": 1783
+  },
+  "selected_energy_review_cells": 197,
+  "validated_paired_plot_points": 702,
   "caveats": [
     "Current audit labels describe selection blockers, not proof of the exact references used in every old publication.",
     "Historical values are excluded from validated figures.",
     "Kestrel records are archived imports; this recovery did not log in to Kestrel.",
     "The ledger contains extracted results and provenance, not complete raw VASP output files."
-  ]
+  ],
+  "geometry": {
+    "structures": {
+      "DFT converged": 1182,
+      "MLIP available": 415,
+      "DFT unfinished": 169,
+      "DFT missing coordinates": 309
+    },
+    "coordinate_snapshot": "data/adsorption_results/geometry_snapshots/93afe39407e919c6aa245585471336f0f9176bd573a1a694d5a774c7d3dc80ce.json.gz"
+  }
 }

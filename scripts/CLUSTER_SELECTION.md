@@ -1,3 +1,5 @@
+> **Current user-requested display policy:** Potential and reference verification flags no longer suppress numeric values. Atom-resolved geometry and four functional panels are now available. See [current workflow](FUNCTIONAL_GEOMETRY.md).
+
 > **Publication preservation update (2026-09-22):** Previously published numbers now remain visible with historical audit labels when no validated replacement exists. They stay excluded from validated plots. This supersedes earlier display-withholding wording below; scientific compatibility checks are unchanged. See [local result archive](../data/adsorption_results/README.md).
 
 # Perlmutter-first source selection

@@ -157,6 +157,7 @@ Ir100,CH3,pbe_d3,-2.89,-2.36483493,-2.456,-0.5251650700000003,0.0911650700000001
 Ir100,CO,beef_vdw,-2.7,-2.00209591,-2.131,-0.6979040900000002,0.1289040899999998,-0.5690000000000004,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Ir100/singlepoint/beef_vdw
 Ir100,CO,pbe,-2.7,-2.15746482,-2.232,-0.5425351800000002,0.07453518000000026,-0.46799999999999997,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Ir100/singlepoint/PBE
 Ir100,CO,pbe_d3,-2.7,-2.39443964,-2.488,-0.3055603600000003,0.09356036000000012,-0.2120000000000002,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CO_Ir100/singlepoint/PBE_D3
+Ir100,CO2,beef_vdw,-0.37,-0.17084479,-0.267,-0.19915521,0.09615521000000002,-0.10299999999999998,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C1/Ir100_CO2/singlepoint/beef_vdw
 Ir100,CO2,pbe,-0.37,0.03559969,-0.024,-0.40559969,0.059599690000000004,-0.346,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Ir100/singlepoint/PBE
 Ir100,DME,beef_vdw,-0.48,-0.61456426,-0.736,0.13456426,0.12143574000000001,0.256,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Ir100/singlepoint/beef_vdw
 Ir100,DME,pbe,-0.48,-0.30723141,-0.359,-0.17276859,0.05176859,-0.121,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OCH3_Ir100/singlepoint/PBE

@@ -169,7 +169,7 @@ def relaxed(c):
     return c['status'] == 'converged' and (c.get('nsw') or 0) > 0 and c.get('settings', {}).get('IBRION') in ('1', '2', '3')
 
 
-def reference_candidates(complex_row, components):
+def reference_candidates(complex_row, components, allow_unverified=False):
     from potential_matching import potential_match
     c = complex_row['calculation']; metal = re.match(r'[A-Z][a-z]?', complex_row['surface']).group()
     slab_composition = {metal: c['composition'].get(metal, 0)}
@@ -180,10 +180,10 @@ def reference_candidates(complex_row, components):
         if role not in candidates or r['functional'] != c['functional'] or not relaxed(r):
             continue
         if role == 'slab':
-            matches = row['surface'] == complex_row['surface'] and r['composition'] == slab_composition and cell_matches(c.get('cell'), r.get('cell'))
+            matches = row['surface'] == complex_row['surface'] and r['composition'] == slab_composition and (allow_unverified or cell_matches(c.get('cell'), r.get('cell')))
         else:
             matches = row['molecule'] == complex_row['molecule'] and r['composition'] == molecule_composition
-        if matches and potential_match(c,r):
+        if matches and (allow_unverified or potential_match(c,r)):
             candidates[role].append(row['snapshot_id'])
     return dict(complex_snapshot_id=complex_row['snapshot_id'], required_slab_composition=slab_composition,
                 required_molecule_composition=molecule_composition, required_cell_A=c.get('cell'),

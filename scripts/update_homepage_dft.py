@@ -47,7 +47,7 @@ def main(root=ROOT):
         r['eads_dft'] = float(selected['E_ads']) if selected else None
         r['eads_dft_func'] = selected['functional'] if selected else ''
         r['eads_dft_mode'] = selected['mode'] if selected else ''
-        r['eads_dft_review'] = bool(selected and selected['status'] == 'energy_review')
+        r['eads_dft_review'] = bool(selected and (selected['status'] == 'energy_review' or selected.get('reference_status') == 'unverified'))
         r['eads_dft_source'] = selected['complex_cluster'] if selected else ''
         if selected or old is not None:
             audit.append(dict(name=r['name'],surface=r['surface'],molecule=r['molecule'],

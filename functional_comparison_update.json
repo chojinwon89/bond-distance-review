@@ -1,0 +1,34 @@
+{
+  "numeric_cells_by_mode": {
+    "relaxed": 1398,
+    "SPE": 1524
+  },
+  "newly_filled_cells": 169,
+  "component_derived_by_cluster": {
+    "perlmutter": 2322,
+    "kestrel": 259
+  },
+  "historical_values_retained": 341,
+  "geometry": {
+    "structures": {
+      "DFT converged": 1182,
+      "MLIP available": 415,
+      "DFT unfinished": 169,
+      "DFT missing coordinates": 309
+    },
+    "coordinate_snapshot": "data/adsorption_results/geometry_snapshots/93afe39407e919c6aa245585471336f0f9176bd573a1a694d5a774c7d3dc80ce.json.gz"
+  },
+  "systems_with_all_four_DFT_geometries": 337,
+  "comparisons": {
+    "contacts": 2913,
+    "surface_angles": 3124,
+    "angles": 5940,
+    "torsions": 918
+  },
+  "tests_passed": 75,
+  "browser_validation": "Desktop 1400px and mobile 390px; five panels, rotation controls and angle tables checked; no JavaScript errors or page overflow.",
+  "access": {
+    "perlmutter": "Fresh read-only scan of vasp_mol, vasp_slab, vasp_slab_kestrel, dft_jobs and recovery manifests. No new snapshots since previous refresh.",
+    "kestrel": "Live external endpoint reachable; noninteractive authentication denied. Retained exports used; fresh filesystem scan remains pending authenticated access."
+  }
+}

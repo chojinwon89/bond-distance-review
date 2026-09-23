@@ -24,3 +24,9 @@ python scripts/publication_store.py --commit <full-git-commit>
 The import is idempotent and refuses a ledger with a checksum error. Back up the repository with Git and a separate copy; a directory on the same HPC alone is not an independent backup. Full OUTCAR/CONTCAR files remain on their source clusters; this archive stores extracted results and available provenance, not every raw VASP file.
 
 After rendering a future refresh, run `python scripts/report_result_preservation.py` to regenerate the manifest and current counts. The manifest records the archive state when it was generated; individual ledger records are always independently checksum-verified by the reader.
+
+## Current permissive display and geometry archive
+
+The user's subsequent instruction enables `display_policy.json`: potential/reference verification flags no longer suppress numeric results. Matching available references remain preferred. Component totals, molecule identity, functional and atom counts are still required to derive a new value. See [functional geometry and acquisition workflow](../../scripts/FUNCTIONAL_GEOMETRY.md).
+
+`geometry_snapshots/` saves immutable, compressed, content-addressed copies of the actual structure coordinates, atom mappings and measured geometry. The current projection is `functional_geometry.json` at the repository root. Future authenticated Kestrel bundles merge both component totals and coordinates through `cluster_result_bundle.py`; archived Kestrel metadata alone cannot supply missing atomic positions.

@@ -19,6 +19,9 @@ def main(root=ROOT):
     selected=[r for r in selection if r['application_status']=='selected candidate applied']
     components=json.loads((root/'dft_component_store_summary.json').read_text())
     files=[REL,Path('dft_component_store.jsonl.gz')]
+    geometry_path=root/'functional_geometry_audit.json'
+    geometry=json.loads(geometry_path.read_text()) if geometry_path.exists() else None
+    if geometry:files.extend([Path('functional_geometry.json'),Path(geometry['coordinate_snapshot'])])
     manifest=dict(schema_version=1,description='Local immutable observations; active validation remains separate',
         historical_baseline_commit='23048650b883c5118871d1829a317187a65f0989',
         refreshed_baseline_commit='9d88d3812666d5d0822f160999b9bdf4f0925a02',
@@ -27,16 +30,18 @@ def main(root=ROOT):
         current_component_records_by_cluster=components['by_cluster'],
         historical_cells_by_mode=dict(Counter(r['mode'] for r in historic)),
         historical_cells_by_current_audit=dict(Counter(r['application_status'].split(': ',1)[1] for r in historic)),
-        selected_component_matched_cells_by_mode=dict(Counter(r['mode'] for r in selected)),
+        selected_component_derived_cells_by_mode=dict(Counter(r['mode'] for r in selected)),
+        selected_reference_status=dict(Counter(r.get('reference_status','matched') for r in selected)),
         selected_energy_review_cells=sum(r['status']=='energy_review' for r in selected),
         validated_paired_plot_points=len(load_rows(root/'dft_comparison_singlepoint.csv')),
         caveats=['Current audit labels describe selection blockers, not proof of the exact references used in every old publication.',
                  'Historical values are excluded from validated figures.', 'Kestrel records are archived imports; this recovery did not log in to Kestrel.',
                  'The ledger contains extracted results and provenance, not complete raw VASP output files.'])
+    if geometry:manifest['geometry']=dict(structures=geometry['structures'],coordinate_snapshot=geometry['coordinate_snapshot'])
     (root/'data/adsorption_results/manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     n=len(historic)
     note=f'''<!-- result-preservation -->
-<div class="note info"><b>Results preserved · 22 September 2026:</b> {len(selected)} component-matched values remain selected (magnitude-review flags still apply). Restored {n} previously published values with visible <b>historical</b> audit labels: {sum(r['mode']=='relaxed' for r in historic)} relaxed and {sum(r['mode']=='SPE' for r in historic)} SPE. Historical values are excluded from validated plots; the paired analysis still contains {manifest['validated_paired_plot_points']} points.
+<div class="note info"><b>Results preserved · 22 September 2026:</b> {len(selected)} component-derived values are displayed under the current reference policy. Another {n} previously published values are retained: {sum(r['mode']=='relaxed' for r in historic)} relaxed and {sum(r['mode']=='SPE' for r in historic)} SPE. Unverified references and historical values are excluded from the validated plots; the current paired analysis contains {manifest['validated_paired_plot_points']} points.
 <br>“Refs unverified” means this audit cannot verify a compatible component set; “potential mismatch” identifies incompatible potential candidates in the current audit. Neither label deletes the stored observation. <a href="data/adsorption_results/README.md">Archive and explanation</a> · <a href="data/adsorption_results/manifest.json">Recovery counts and file checksums</a>.</div>
 <!-- /result-preservation -->
 '''
