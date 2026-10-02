@@ -1,0 +1,1427 @@
+{
+  "created_utc": "2026-10-02T15:34:57.054125+00:00",
+  "jobs": [
+    {
+      "case": "DME",
+      "method": "reference",
+      "variant": "molecule_DME",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_DME",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_DME_0",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_DME"
+      ],
+      "status": "submitted",
+      "stdout": "59208343\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208343"
+    },
+    {
+      "case": "acetaldehyde",
+      "method": "reference",
+      "variant": "molecule_acetaldehyde",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_acetaldehyde",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_acetaldehyde_1",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_acetaldehyde"
+      ],
+      "status": "submitted",
+      "stdout": "59208344\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208344"
+    },
+    {
+      "case": "ethanol",
+      "method": "reference",
+      "variant": "molecule_ethanol",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_ethanol",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_ethanol_2",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_ethanol"
+      ],
+      "status": "submitted",
+      "stdout": "59208345\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208345"
+    },
+    {
+      "case": "glycerol",
+      "method": "reference",
+      "variant": "molecule_glycerol",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_glycerol",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_glycerol_3",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/molecule_glycerol"
+      ],
+      "status": "submitted",
+      "stdout": "59208346\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208346"
+    },
+    {
+      "case": "Ag111",
+      "method": "reference",
+      "variant": "slab_Ag111",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/slab_Ag111",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_4",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/slab_Ag111"
+      ],
+      "status": "submitted",
+      "stdout": "59208347\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208347"
+    },
+    {
+      "case": "Cu111",
+      "method": "reference",
+      "variant": "slab_Cu111",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/slab_Cu111",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_5",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/references/slab_Cu111"
+      ],
+      "status": "submitted",
+      "stdout": "59208348\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208348"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "goad",
+      "variant": "goad_endpoint",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/goad_endpoint",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_6",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/goad_endpoint"
+      ],
+      "status": "submitted",
+      "stdout": "59208349\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208349"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "goad",
+      "variant": "goad_endpoint",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/goad_endpoint",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_7",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/goad_endpoint"
+      ],
+      "status": "submitted",
+      "stdout": "59208350\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208350"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "goad",
+      "variant": "goad_endpoint",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/goad_endpoint",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_8",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/goad_endpoint"
+      ],
+      "status": "submitted",
+      "stdout": "59208351\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208351"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "goad",
+      "variant": "goad_endpoint",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/goad_endpoint",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_9",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/goad_endpoint"
+      ],
+      "status": "submitted",
+      "stdout": "59208352\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208352"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "goad",
+      "variant": "goad_endpoint",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/goad_endpoint",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_10",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/goad_endpoint"
+      ],
+      "status": "submitted",
+      "stdout": "59208353\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208353"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "bridge1_O0_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O0_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_11",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O0_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208354\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208354"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "bridge1_O0_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O0_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_12",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O0_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208355\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208355"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "bridge1_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/bridge1_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_13",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/bridge1_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208356\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208356"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "bridge1_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge1_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_14",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge1_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208357\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208357"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "bridge1_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/bridge1_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_15",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/bridge1_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208358\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208358"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "bridge1_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge1_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_16",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge1_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208359\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208359"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "bridge1_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/bridge1_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_17",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/bridge1_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208360\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208360"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "bridge1_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge1_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_18",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge1_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208361\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208361"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "bridge1_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/bridge1_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_19",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/bridge1_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208362\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208362"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "bridge1_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge1_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_20",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge1_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208363\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208363"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "bridge1_O3_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O3_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_21",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O3_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208364\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208364"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "bridge1_O3_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O3_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_22",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O3_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208365\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208365"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "bridge1_O5_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O5_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_23",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O5_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208366\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208366"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "bridge1_O5_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O5_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_24",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/bridge1_O5_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208367\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208367"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "bridge2_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge2_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_25",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge2_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208369\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208369"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "bridge2_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge2_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_26",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/bridge2_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208371\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208371"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "bridge2_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge2_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_27",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge2_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208372\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208372"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "bridge2_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge2_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_28",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/bridge2_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208374\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208374"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow1_O0_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O0_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_29",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O0_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208375\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208375"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow1_O0_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O0_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_30",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O0_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208377\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208377"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "hollow1_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow1_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_31",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow1_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208379\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208379"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "hollow1_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow1_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_32",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow1_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208380\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208380"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "hollow1_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow1_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_33",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow1_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208382\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208382"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "hollow1_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow1_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_34",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow1_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208383\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208383"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "hollow1_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow1_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_35",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow1_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208384\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208384"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "hollow1_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow1_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_36",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow1_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208385\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208385"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "hollow1_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow1_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_37",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow1_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208386\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208386"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "hollow1_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow1_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_38",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow1_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208387\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208387"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow1_O3_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O3_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_39",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O3_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208388\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208388"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow1_O3_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O3_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_40",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O3_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208390\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208390"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow1_O5_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O5_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_41",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O5_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208391\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208391"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow1_O5_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O5_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_42",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow1_O5_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208392\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208392"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow2_O0_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O0_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_43",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O0_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208393\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208393"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow2_O0_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O0_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_44",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O0_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208394\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208394"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "hollow2_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow2_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_45",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow2_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208395\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208395"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "hollow2_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow2_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_46",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow2_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208396\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208396"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "hollow2_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow2_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_47",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/hollow2_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208397\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208397"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "hollow2_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow2_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_48",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/hollow2_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208400\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208400"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "hollow2_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow2_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_49",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow2_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208401\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208401"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "hollow2_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow2_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_50",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow2_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208402\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208402"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "hollow2_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow2_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_51",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/hollow2_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208403\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208403"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "hollow2_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow2_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_52",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/hollow2_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208404\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208404"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow2_O3_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O3_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_53",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O3_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208405\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208405"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow2_O3_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O3_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_54",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O3_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208407\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208407"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow2_O5_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O5_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_55",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O5_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208408\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208408"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "hollow2_O5_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O5_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_56",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/hollow2_O5_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208409\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208409"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "ontop1_O0_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O0_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_57",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O0_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208410\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208410"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "ontop1_O0_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O0_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_58",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O0_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208411\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208411"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "ontop1_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/ontop1_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_59",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/ontop1_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208412\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208412"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "ontop1_O1_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/ontop1_O1_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_60",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/ontop1_O1_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208414\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208414"
+    },
+    {
+      "case": "Ag111_DME",
+      "method": "pymatgen",
+      "variant": "ontop1_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/ontop1_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_DME_61",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_DME/ontop1_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208416\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208416"
+    },
+    {
+      "case": "Cu111_DME",
+      "method": "pymatgen",
+      "variant": "ontop1_O1_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/ontop1_O1_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_DME_62",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_DME/ontop1_O1_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208418\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208418"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "ontop1_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/ontop1_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_63",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/ontop1_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208447\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208447"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "ontop1_O2_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/ontop1_O2_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_64",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/ontop1_O2_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208463\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208463"
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "method": "pymatgen",
+      "variant": "ontop1_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/ontop1_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_acetaldehyde_65",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_acetaldehyde/ontop1_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208464\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208464"
+    },
+    {
+      "case": "Cu111_ethanol",
+      "method": "pymatgen",
+      "variant": "ontop1_O2_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/ontop1_O2_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Cu111_ethanol_66",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Cu111_ethanol/ontop1_O2_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208465\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208465"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "ontop1_O3_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O3_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_67",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O3_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208466\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208466"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "ontop1_O3_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O3_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_68",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O3_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208467\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208467"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "ontop1_O5_tilt0",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O5_tilt0",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_69",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O5_tilt0"
+      ],
+      "status": "submitted",
+      "stdout": "59208468\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208468"
+    },
+    {
+      "case": "Ag111_glycerol",
+      "method": "pymatgen",
+      "variant": "ontop1_O5_tilt60",
+      "directory": "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O5_tilt60",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--job-name=BF_Ag111_glycerol_70",
+        "--output=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.out",
+        "--error=/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/logs/job-%j.err",
+        "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/beef_segment.slurm",
+        "/pscratch/sd/j/jcho5/VASP/pymatgen_direct_validation/beef_20261002/jobs/Ag111_glycerol/ontop1_O5_tilt60"
+      ],
+      "status": "submitted",
+      "stdout": "59208469\n",
+      "stderr": "",
+      "returncode": 0,
+      "job_id": "59208469"
+    }
+  ],
+  "script_sha256": "5921374be47426197de88d983f24b7a96478303777058b391463f47491f04d1a",
+  "complete": true
+}

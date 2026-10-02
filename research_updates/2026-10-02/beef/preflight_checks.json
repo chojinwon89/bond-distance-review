@@ -1,0 +1,432 @@
+{
+  "jobs": 71,
+  "checks": [
+    {
+      "case": "DME",
+      "variant": "molecule_DME",
+      "inputs_valid": true,
+      "reference_match_checked": false
+    },
+    {
+      "case": "acetaldehyde",
+      "variant": "molecule_acetaldehyde",
+      "inputs_valid": true,
+      "reference_match_checked": false
+    },
+    {
+      "case": "ethanol",
+      "variant": "molecule_ethanol",
+      "inputs_valid": true,
+      "reference_match_checked": false
+    },
+    {
+      "case": "glycerol",
+      "variant": "molecule_glycerol",
+      "inputs_valid": true,
+      "reference_match_checked": false
+    },
+    {
+      "case": "Ag111",
+      "variant": "slab_Ag111",
+      "inputs_valid": true,
+      "reference_match_checked": false
+    },
+    {
+      "case": "Cu111",
+      "variant": "slab_Cu111",
+      "inputs_valid": true,
+      "reference_match_checked": false
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "goad_endpoint",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "goad_endpoint",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "goad_endpoint",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "goad_endpoint",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "goad_endpoint",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "bridge1_O0_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "bridge1_O0_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "bridge1_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "bridge1_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "bridge1_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "bridge1_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "bridge1_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "bridge1_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "bridge1_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "bridge1_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "bridge1_O3_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "bridge1_O3_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "bridge1_O5_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "bridge1_O5_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "bridge2_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "bridge2_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "bridge2_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "bridge2_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow1_O0_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow1_O0_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "hollow1_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "hollow1_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "hollow1_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "hollow1_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "hollow1_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "hollow1_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "hollow1_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "hollow1_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow1_O3_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow1_O3_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow1_O5_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow1_O5_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow2_O0_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow2_O0_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "hollow2_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "hollow2_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "hollow2_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "hollow2_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "hollow2_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "hollow2_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "hollow2_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "hollow2_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow2_O3_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow2_O3_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow2_O5_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "hollow2_O5_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "ontop1_O0_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "ontop1_O0_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "ontop1_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "ontop1_O1_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_DME",
+      "variant": "ontop1_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_DME",
+      "variant": "ontop1_O1_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "ontop1_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "ontop1_O2_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "variant": "ontop1_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Cu111_ethanol",
+      "variant": "ontop1_O2_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "ontop1_O3_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "ontop1_O3_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "ontop1_O5_tilt0",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    },
+    {
+      "case": "Ag111_glycerol",
+      "variant": "ontop1_O5_tilt60",
+      "inputs_valid": true,
+      "reference_match_checked": true
+    }
+  ],
+  "checkpoint_integration_test": "passed; simulated scheduler and VASP outputs, no physical VASP execution"
+}

@@ -1,0 +1,36 @@
+{
+  "mode": "contact25",
+  "seed": 101,
+  "device": "cpu",
+  "search_evaluations": 1500,
+  "search_E_ads_eV": -0.3663482666015625,
+  "search_termination": "evaluation_budget",
+  "final_E_ads_eV": -0.4909820556640625,
+  "valid": true,
+  "elapsed_seconds": 3375.9231550850673,
+  "initial_population_sha256": "66747073c1284436919def5e97232431e912c796565e2939294cac46fa7e3b63",
+  "oxygen_indices": [
+    0,
+    3,
+    5
+  ],
+  "O_Ag_distances_A": [
+    3.5060146892657924,
+    3.2037472676146184,
+    3.6974672240001056
+  ],
+  "nearest_O_Ag_A": 3.2037472676146184,
+  "closest_oxygen_index": 3,
+  "energy_eV": -168.75146484375,
+  "converged": true,
+  "fmax_eV_A": 0.0436259120618148,
+  "budget_exhausted": false,
+  "evaluations": 31,
+  "wall_seconds": 69.60055130010005,
+  "intact": true,
+  "admissible": true,
+  "min_contact_A": 3.1328708936799936,
+  "min_heavy_contact_A": 3.2037472676146184,
+  "relaxed_top_layer_spread_A": 0.019144991564612468,
+  "relaxed_surface_planarity_required": false
+}

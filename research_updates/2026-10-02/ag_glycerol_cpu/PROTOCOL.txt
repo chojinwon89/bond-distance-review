@@ -1,0 +1,51 @@
+Ag(111)-glycerol: matched GOAD initialization comparison on CPU
+
+Allocation: Perlmutter CPU interactive, account m5281, one node, up to 4 hours.
+Job: 59224069. Node at launch: nid200253.
+
+20 searches: seeds 101,202,303,404,505,606,707,808,909,1010 for each of
+(1) baseline: original GOAD initialization;
+(2) contact25: translate the molecule vertically in each original initial
+    candidate until the minimum distance over all O-Ag pairs is 2.5 Angstrom.
+
+This is GOAD without charge guidance. Original initialization places the
+lowest O 2.3 Angstrom vertically above the uppermost slab atom; lateral offset
+means that vertical height is not the nearest O-Ag interatomic distance.
+The new initialization preserves x/y positions, orientation, torsions and
+internal geometry. All three molecular oxygen atoms (indices 0,3,5, zero-based)
+are eligible to be the closest contact. These are not three separately forced
+anchor campaigns. Counts for every seed are in initialization_checks.json.
+No O-Ag constraint or projection is applied after population initialization.
+The original GOAD mutation bounds remain unchanged in both groups.
+
+Model: SevenNet-MF, 7net-mf-ompa / omat24, device=cpu, four Torch threads.
+Model parameter hash is checked against the historical GPU campaign.
+Slab/molecule geometries are copied from the same independent relaxed
+references used before. Their energies are recalculated on CPU for both arms.
+The old seed202 endpoint is also checked against its saved GPU energy before
+the search begins. This is not a new DFT calculation.
+
+GOAD settings: population 60, generations upper limit 200, mutation .3,
+crossover .7, elite 5, one worker per search, hard cap 1500 model evaluations.
+GOAD may also stop under its existing generation/stagnation criteria.
+The best evaluated search candidate receives final BFGS relaxation with a
+200-evaluation cap and force threshold 0.05 eV/Angstrom. Bottom two slab layers
+remain fixed. No distance constraint is applied to the molecule.
+
+Initialization tests check: unmodified baseline geometries; identical random
+number states after setup; contact25 differs only by rigid vertical translation;
+all 60 nearest O-Ag distances are 2.5 Angstrom; all three O anchors occur per seed.
+Each worker saves all initial structures, contact indices/distances, search
+trace, pre-relaxation best geometry, final geometry, final forces/convergence,
+connectivity/admissibility audit, model/source provenance and completion marker.
+
+Twenty srun tasks share the allocation; this is not a Slurm array. Each task
+has 12 logical CPUs (6 physical cores), with four computational threads.
+The launcher generates all_results.csv, paired_comparison.csv, comparison.png,
+comparison.pdf, best_endpoints.json, status.json and worker_exit_code.txt once
+the workers finish, then the interactive shell releases the allocation.
+
+Interpretation: compare only valid relaxed endpoints, report all failures,
+and retain seed-level differences. More favorable MLIP energy alone does not
+establish a better DFT structure. Distinct promising endpoints can subsequently
+be validated using the same DFT settings and matched component references.

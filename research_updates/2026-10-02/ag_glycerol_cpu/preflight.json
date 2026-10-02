@@ -1,0 +1,9 @@
+{
+  "job_id": "59224069",
+  "hostname": "nid200253",
+  "device": "cpu",
+  "old_endpoint_E_ads_CPU_eV": -0.5025482177734375,
+  "old_endpoint_E_ads_GPU_eV": -0.5025558471679688,
+  "single_evaluation_seconds": 1.4962368140695617,
+  "model_state_verified": true
+}

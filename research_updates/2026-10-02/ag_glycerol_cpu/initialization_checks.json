@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "seeds": [
+    {
+      "seed": 101,
+      "initial_closest_oxygen_counts": {
+        "0": 26,
+        "3": 17,
+        "5": 17
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 202,
+      "initial_closest_oxygen_counts": {
+        "0": 17,
+        "3": 20,
+        "5": 23
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 303,
+      "initial_closest_oxygen_counts": {
+        "0": 27,
+        "3": 16,
+        "5": 17
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 404,
+      "initial_closest_oxygen_counts": {
+        "0": 20,
+        "3": 21,
+        "5": 19
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 505,
+      "initial_closest_oxygen_counts": {
+        "0": 18,
+        "3": 13,
+        "5": 29
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 606,
+      "initial_closest_oxygen_counts": {
+        "0": 20,
+        "3": 21,
+        "5": 19
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 707,
+      "initial_closest_oxygen_counts": {
+        "0": 26,
+        "3": 16,
+        "5": 18
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 808,
+      "initial_closest_oxygen_counts": {
+        "0": 23,
+        "3": 18,
+        "5": 19
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 909,
+      "initial_closest_oxygen_counts": {
+        "0": 22,
+        "3": 18,
+        "5": 20
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    },
+    {
+      "seed": 1010,
+      "initial_closest_oxygen_counts": {
+        "0": 19,
+        "3": 19,
+        "5": 22
+      },
+      "baseline_unchanged": true,
+      "random_state_unchanged": true
+    }
+  ]
+}

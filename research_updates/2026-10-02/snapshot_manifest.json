@@ -1,0 +1,548 @@
+{
+  "published_utc": "2026-10-02T23:44:26.782426+00:00",
+  "cpu_status": {
+    "updated_utc": "2026-10-02T23:44:15.898344+00:00",
+    "completed": 20,
+    "planned": 20,
+    "valid": 20,
+    "finished": true
+  },
+  "beef_queue_checked_utc": "2026-10-02T23:37:38.676304+00:00",
+  "kestrel_status": "prepared; no submission confirmed by this session",
+  "artifacts": [
+    {
+      "path": "spe/mlip_vs_dft_spe_zoom.png",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/mlip_vs_dft_spe_zoom.png",
+      "bytes": 895143,
+      "sha256": "808be3ba641741c4646ad6609837f46b89eba420243b24fa9d60cfd9a3493419"
+    },
+    {
+      "path": "spe/mlip_vs_dft_spe_zoom.pdf",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/mlip_vs_dft_spe_zoom.pdf",
+      "bytes": 72733,
+      "sha256": "05f3606c794111c6510168e985d7d6f8d85f38fad922e3d70c14ab1ef7e7b2c8"
+    },
+    {
+      "path": "spe/mlip_vs_dft_spe_full_range.png",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/mlip_vs_dft_spe_full_range.png",
+      "bytes": 892542,
+      "sha256": "608ac95da99ea64552d8c272c30d3b4aca0309f24f07ec6edf163c82f02945cd"
+    },
+    {
+      "path": "spe/mlip_vs_dft_spe_full_range.pdf",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/mlip_vs_dft_spe_full_range.pdf",
+      "bytes": 74129,
+      "sha256": "fe605585e117603ff04fa8b273e2880281ebbe5386496d0c8bcd97b9ba1f9592"
+    },
+    {
+      "path": "spe/mlip_vs_dft_spe_interactive.html",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/mlip_vs_dft_spe_interactive.html",
+      "bytes": 5192385,
+      "sha256": "84586edacf3d85fe849165e58c847343c87b1dc079cacea1ab17089e3d7d6e89"
+    },
+    {
+      "path": "spe/plotted_pairs.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/plotted_pairs.csv",
+      "bytes": 336250,
+      "sha256": "24a555537110c4dfbdaa5e4436b73f2e4f031fc77df695f16ec8b285f0215439"
+    },
+    {
+      "path": "spe/missing_ml_pairs.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/missing_ml_pairs.csv",
+      "bytes": 13010,
+      "sha256": "a023810c43ac4821d07e82fea825c9ce39ccfa4aace52d0cf810dd759eedc8d6"
+    },
+    {
+      "path": "spe/validation.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/validation.json",
+      "bytes": 906,
+      "sha256": "199ccb0183fe178ecbb1a95cd6c0a701a75b207a2a181a058c44801040f50038"
+    },
+    {
+      "path": "spe/README.txt",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/README.txt",
+      "bytes": 2725,
+      "sha256": "43ac4ad184d354fea0ff36bc31020e37c83da7d46d0d6115a1a24bf02c952405"
+    },
+    {
+      "path": "spe/plot_spe_comparison.py",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/plot_spe_comparison.py",
+      "bytes": 9693,
+      "sha256": "9b96de80f5fe394a9a69433daf48c12421cd7e4abce5070ecbd833d0df787972"
+    },
+    {
+      "path": "spe/sources/dft_comparison.html",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/sources/dft_comparison.html",
+      "bytes": 1908040,
+      "sha256": "17f5a4c31c4ae810b0927db1abf2e29289ea1d101741a06631456687bd227b42"
+    },
+    {
+      "path": "spe/sources/dft_comparison_singlepoint.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/sources/dft_comparison_singlepoint.csv",
+      "bytes": 308319,
+      "sha256": "1711776b3208bf171ffe7002364ea3ada6427c5f69d5ddd8436d1c7dd927ab9b"
+    },
+    {
+      "path": "spe/sources/dft_singlepoint_vs_sevennet.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/sources/dft_singlepoint_vs_sevennet.csv",
+      "bytes": 127213,
+      "sha256": "eaef248a5467739450f495cd3aa40ded0e38316e8b9682b3ae55e226c77d2f98"
+    },
+    {
+      "path": "spe/sources/download_manifest.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/figures/website_spe_parity_20261002/sources/download_manifest.json",
+      "bytes": 977,
+      "sha256": "90534780c612ab95f7f8f24e69c3531694093e5ee2d1e961c10b566ed35ed9aa"
+    },
+    {
+      "path": "pymatgen/best_structures.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/best_structures.csv",
+      "bytes": 3123,
+      "sha256": "7430de456eac53aa4a872c15050b5f0f20b08cd9b8645459af183dcbb82ca4cb"
+    },
+    {
+      "path": "pymatgen/all_candidates.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/all_candidates.csv",
+      "bytes": 20573,
+      "sha256": "2b25f03d449864b16190e11d0a594a71214032f58cfe41919011e8138b5bf3e0"
+    },
+    {
+      "path": "pymatgen/selection.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/selection.json",
+      "bytes": 5929,
+      "sha256": "5c4268ca7b566b25d7344181f12d12a34cbbc00cb4bd89ffe00539c27692b7ec"
+    },
+    {
+      "path": "pymatgen/Ag111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.cif",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Ag111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.cif",
+      "bytes": 4527,
+      "sha256": "29d0a8848cb3fc72d0497b9756088065f2dde55b5d5a2d6d98963a802ce746dc"
+    },
+    {
+      "path": "pymatgen/Ag111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.vasp",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Ag111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.vasp",
+      "bytes": 5836,
+      "sha256": "4d59f1eac181ace6ececd08b321effbca9e22cd120712b423d2eb5ddfde98116"
+    },
+    {
+      "path": "pymatgen/Ag111_acetaldehyde__PBE_D3__lowest_converged__ontop1_O2_tilt60.cif",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Ag111_acetaldehyde__PBE_D3__lowest_converged__ontop1_O2_tilt60.cif",
+      "bytes": 4358,
+      "sha256": "2fd1d24b311f410cf212b570846078d5df68af43a9e6357d9c7080b352f40e70"
+    },
+    {
+      "path": "pymatgen/Ag111_acetaldehyde__PBE_D3__lowest_converged__ontop1_O2_tilt60.vasp",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Ag111_acetaldehyde__PBE_D3__lowest_converged__ontop1_O2_tilt60.vasp",
+      "bytes": 5592,
+      "sha256": "f732a0f950f2a3635043f79ce1b97914624505dff17157048eba52e30cd93844"
+    },
+    {
+      "path": "pymatgen/Ag111_glycerol__PBE_D3__lowest_converged__ontop1_O5_tilt60.cif",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Ag111_glycerol__PBE_D3__lowest_converged__ontop1_O5_tilt60.cif",
+      "bytes": 4965,
+      "sha256": "b5e1f9b18d2b514db67746c21f501b762a13c9e9b40a912caae382115ffd861a"
+    },
+    {
+      "path": "pymatgen/Ag111_glycerol__PBE_D3__lowest_converged__ontop1_O5_tilt60.vasp",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Ag111_glycerol__PBE_D3__lowest_converged__ontop1_O5_tilt60.vasp",
+      "bytes": 6446,
+      "sha256": "a0e48b411b8d6087e9deaf0145ae9cc74be14584a293c52789a6aa4af0b20ffb"
+    },
+    {
+      "path": "pymatgen/Cu111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.cif",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Cu111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.cif",
+      "bytes": 6837,
+      "sha256": "c73131c166efe2ba1de46e7913af46b400447039388f19ac59d91f1ec09e012e"
+    },
+    {
+      "path": "pymatgen/Cu111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.vasp",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Cu111_DME__PBE_D3__lowest_converged__ontop1_O1_tilt0.vasp",
+      "bytes": 9252,
+      "sha256": "1c45fd7782141ef3dfd6cd2e19d3670c155c5b15a99d5c968c0438edb9896509"
+    },
+    {
+      "path": "pymatgen/Cu111_ethanol__PBE_D3__lowest_converged__bridge2_O2_tilt60.cif",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Cu111_ethanol__PBE_D3__lowest_converged__bridge2_O2_tilt60.cif",
+      "bytes": 6915,
+      "sha256": "6d0ac836812936522662b438421ad972640b676b0fd72526aed0169962632f0e"
+    },
+    {
+      "path": "pymatgen/Cu111_ethanol__PBE_D3__lowest_converged__bridge2_O2_tilt60.vasp",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_best_20261002/Cu111_ethanol__PBE_D3__lowest_converged__bridge2_O2_tilt60.vasp",
+      "bytes": 9252,
+      "sha256": "cacd19f7769b207351d31469deeaffbeb697460c4aa4a7ca2a0caafacf8d1a46"
+    },
+    {
+      "path": "ag_glycerol_cpu/status.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/status.json",
+      "bytes": 126,
+      "sha256": "a2cb2bbb29681b1f9c8a8bac24d815d0e7d360ef847863f833018b5b0e976bdd"
+    },
+    {
+      "path": "ag_glycerol_cpu/all_results.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/all_results.csv",
+      "bytes": 8540,
+      "sha256": "d023ffa2c6d7b681b8ed6de694b13d71e5c8b1ae6da985950f2828123bb2df48"
+    },
+    {
+      "path": "ag_glycerol_cpu/paired_comparison.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/paired_comparison.csv",
+      "bytes": 1165,
+      "sha256": "d37c6766eb99df22f56a8a1877e446d108551f477985ecba34df066ec81f0aa9"
+    },
+    {
+      "path": "ag_glycerol_cpu/comparison.png",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/comparison.png",
+      "bytes": 246935,
+      "sha256": "765b2eba5543ea90360a34feb4fd6153479a4740dd8520db2061878e17602b31"
+    },
+    {
+      "path": "ag_glycerol_cpu/comparison.pdf",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/comparison.pdf",
+      "bytes": 39774,
+      "sha256": "10fbc2a526f2ccea56f5359354e981ebfc260f12a6882a91635bcdfde61f5719"
+    },
+    {
+      "path": "ag_glycerol_cpu/PROTOCOL.txt",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/PROTOCOL.txt",
+      "bytes": 3166,
+      "sha256": "e382f789d65103abe3b2697edac4cc84eac2c0ff8ed22bb462603818936e2192"
+    },
+    {
+      "path": "ag_glycerol_cpu/cpu_references.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/cpu_references.json",
+      "bytes": 336,
+      "sha256": "f94b8fcd877bfacbe620edff4514bb9de41e03c2fe83d95278ca0e611f0080fd"
+    },
+    {
+      "path": "ag_glycerol_cpu/initialization_checks.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/initialization_checks.json",
+      "bytes": 2069,
+      "sha256": "327465e9ad1044c8b8eff1d2dcadb7ea03e1cd0462e58bdf804e0586a66b13ee"
+    },
+    {
+      "path": "ag_glycerol_cpu/preflight.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/preflight.json",
+      "bytes": 260,
+      "sha256": "fff5a6069d8651366275885412168df13f51a2e0163d2d4c079ff6a327d4a90d"
+    },
+    {
+      "path": "ag_glycerol_cpu/best_endpoints.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/best_endpoints.json",
+      "bytes": 2152,
+      "sha256": "3a65ecda4e8058e35c1feb3e0d4cd26b2e4ce186c21ac7e1cdbe3b89299f2175"
+    },
+    {
+      "path": "ag_glycerol_cpu/source/run_ag_glycerol_cpu_contact.py",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/run_ag_glycerol_cpu_contact.py",
+      "bytes": 8105,
+      "sha256": "718b34f714e03a5ece589fa68a39cdd2aad1fbce18f63f795d36cbf7fcdedc7a"
+    },
+    {
+      "path": "ag_glycerol_cpu/source/report_ag_glycerol_cpu_contact.py",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/report_ag_glycerol_cpu_contact.py",
+      "bytes": 3511,
+      "sha256": "9a2da27e57c14d688a1b9b1ef5fae4979e993febf4cbf3198a4630cab24764c8"
+    },
+    {
+      "path": "ag_glycerol_cpu/source/check_ag_glycerol_initialization.py",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/check_ag_glycerol_initialization.py",
+      "bytes": 2149,
+      "sha256": "70b288637157ca34523d4281d16a42abaa34cd54023d24c51296514ec82884ad"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed101/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed101/summary.json",
+      "bytes": 993,
+      "sha256": "aa8f3d49cc85b4143f78eeb392b332cbe70b5d76fe751cecd2432c1c86d91d82"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed101/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed101/final.extxyz",
+      "bytes": 4360,
+      "sha256": "c7b7d29a5ac84df85ce8789905020fcaee25d5430f6879997481ed61d737c0ad"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed1010/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed1010/summary.json",
+      "bytes": 989,
+      "sha256": "7a835c9b61138922f4b4cc4fe489940c40e6ce5c76e1e9bdc6aa45ea5eb16ef3"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed1010/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed1010/final.extxyz",
+      "bytes": 4360,
+      "sha256": "9f461f3dd1fee7b686d0f7721686fe34583e0d1b1728bcabaf41ef194d5ab7b4"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed202/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed202/summary.json",
+      "bytes": 983,
+      "sha256": "957352e91d9dfbdf3fe93b2d9aa6224d7a51f6d2f6af2e7fefae6bcc9a4bd4ed"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed202/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed202/final.extxyz",
+      "bytes": 4360,
+      "sha256": "93ab0df75d15d67fdeec32dba6d97fb53a0ca37cefb5846f773d9c9d86d3ce9b"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed303/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed303/summary.json",
+      "bytes": 989,
+      "sha256": "2f5c2b1cef89599337b82265509d801bb5f1f2061cc528650d1de2107e88627f"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed303/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed303/final.extxyz",
+      "bytes": 4360,
+      "sha256": "3a321a19cc623e7c0e1e9d659aa0306987ee752d48d0239717a3f36d9ba48fa0"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed404/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed404/summary.json",
+      "bytes": 990,
+      "sha256": "daba47019524c82d049f1e7b54e5eb6e0a987575ddbfea03e8449707031601ba"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed404/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed404/final.extxyz",
+      "bytes": 4360,
+      "sha256": "4f17dad826061d96e1a724766c7417459f7825873127ef50a3cf6af558da7ff5"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed505/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed505/summary.json",
+      "bytes": 990,
+      "sha256": "a9bafd7cf9b7393aeeebd858a89dd195c8ec9ca7651b66a13fc465b9f089daf4"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed505/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed505/final.extxyz",
+      "bytes": 4360,
+      "sha256": "31a93109aa2f2d13d7f58aa370457f3b41cc364d28d0099e2ccf59c22cd2bc2e"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed606/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed606/summary.json",
+      "bytes": 985,
+      "sha256": "046e482c3e408d3e0e52bf6cd846fc8bbe7407c74d38682b4b4c5997160da226"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed606/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed606/final.extxyz",
+      "bytes": 4360,
+      "sha256": "a31685118131c2a214fb295d4aa5735a8d1f28e9957200ba951aead8971a9808"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed707/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed707/summary.json",
+      "bytes": 990,
+      "sha256": "6c047eb4f4220110d46117d7ce037937ba446b8f0b4b72e1a6d4fe1cbbc708e6"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed707/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed707/final.extxyz",
+      "bytes": 4360,
+      "sha256": "e73cec46eb6da0735ead4b20a0bb0477c62cf59474c682fc8d904cd1dc52ef40"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed808/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed808/summary.json",
+      "bytes": 989,
+      "sha256": "9b45ddf386bafca0054a9182be967f5a2ee35065f0ececba8a6520c4596d21bb"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed808/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed808/final.extxyz",
+      "bytes": 4360,
+      "sha256": "b5c4dd73c3f59a46450bc550392c78735ceb0db6f5571df076ccba7fd6ec1bea"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed909/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed909/summary.json",
+      "bytes": 991,
+      "sha256": "ba9ba5762c4215c5c1ccbdc59c21bddea3acb39039f6f5e5d14daf5772a5ca48"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/baseline_seed909/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/baseline_seed909/final.extxyz",
+      "bytes": 4360,
+      "sha256": "152cbb5932da7ebfff43f598034f87ea593114d2fcdaf362b1b977c02843112b"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed101/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed101/summary.json",
+      "bytes": 992,
+      "sha256": "0c7f2e8c7d696dbb149ca4ea6a4a0270374d52ece1fc19d5b5c6858a3f79411c"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed101/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed101/final.extxyz",
+      "bytes": 4360,
+      "sha256": "44c44ef6ce9fa0643ae4740704a3a876abb6205b151d66a4dc71c3700eb76880"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed1010/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed1010/summary.json",
+      "bytes": 988,
+      "sha256": "3b899baea1ece23aeed233b240be501a738fa35d8f484742dc469cb5387a4176"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed1010/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed1010/final.extxyz",
+      "bytes": 4360,
+      "sha256": "7371fa24785de15394eec59f6ffee401f454cf619a6f0c480455ab7c284e39ab"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed202/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed202/summary.json",
+      "bytes": 989,
+      "sha256": "29aa8b009abc473e0f7749eb141fbb8263af4abb55457c31d501887ec3f2b390"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed202/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed202/final.extxyz",
+      "bytes": 4360,
+      "sha256": "ae68eaa8caf3a7a0c98a4621dcb1d7e931249a31bfdd816aedb9d44ad2d90d0a"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed303/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed303/summary.json",
+      "bytes": 992,
+      "sha256": "7226048c00f93d164aeb115d3805996f69d402d82093c81fb85f4a3e87b4ba64"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed303/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed303/final.extxyz",
+      "bytes": 4360,
+      "sha256": "0c239dde52c979f594a1756e62e937f977428e080fd6441a09472af949563095"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed404/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed404/summary.json",
+      "bytes": 988,
+      "sha256": "97226a8592bf589aa14c8898f335855bd8b6dfa14a87eb18ecff2741e4f99ee6"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed404/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed404/final.extxyz",
+      "bytes": 4360,
+      "sha256": "6bf7ead4ee58de4194693b0aee27c832202f6baef174bedca6a9df915fbb34b5"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed505/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed505/summary.json",
+      "bytes": 990,
+      "sha256": "9d5d99f315ac20229d996f088a65bf60dc301289b2cef384ed5c78389d42cb91"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed505/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed505/final.extxyz",
+      "bytes": 4360,
+      "sha256": "6e1e8102f4c1f71d11aa05a48e7faf98eb7e2b62125e9021d79e63ee82270d55"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed606/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed606/summary.json",
+      "bytes": 992,
+      "sha256": "e683663a70123dd1bc610cde9a0d2bef0117453673ea3378dac77917a041ff33"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed606/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed606/final.extxyz",
+      "bytes": 4360,
+      "sha256": "dc7b5afd21d029506aef49ee55e005657238cc77e8b80e5314232f1855970c6d"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed707/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed707/summary.json",
+      "bytes": 992,
+      "sha256": "07231c19290349ed78e0e0fd6fc4bfbaa874315ad8ab49bc941bde141be7b06f"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed707/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed707/final.extxyz",
+      "bytes": 4360,
+      "sha256": "e6c352f107f4731e8cc445276774b87f28af14bf1a25e0861e629e6f628d6e9e"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed808/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed808/summary.json",
+      "bytes": 990,
+      "sha256": "a3cc0a1fcd5345b505e74d0a91dbe73ba10c35248c41f3e6717976b87ccb65f8"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed808/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed808/final.extxyz",
+      "bytes": 4360,
+      "sha256": "8ac9656a891dfbee9c0cc25d0e8b24b88e244bf8b42ec017e477e315fd42fcca"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed909/summary.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed909/summary.json",
+      "bytes": 989,
+      "sha256": "bddf1beb635358be0aec65b09a1b2b9d5b9ba32829e5a7fe4a241ec1dc61dad2"
+    },
+    {
+      "path": "ag_glycerol_cpu/runs/contact25_seed909/final.extxyz",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/ag_glycerol_cpu_contact_20261002/runs/contact25_seed909/final.extxyz",
+      "bytes": 4360,
+      "sha256": "205cd2cc160cb327b30ea145377d7f16953aae2ab9c4ae14f08cbb0ffdc9b866"
+    },
+    {
+      "path": "kestrel/PROTOCOL.txt",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/kestrel_pymatgen_20261002/PROTOCOL.txt",
+      "bytes": 6464,
+      "sha256": "4bfacce9b6bac6294eae01fe7c1e4e7b75489782726d37ed0cc485276e58d6a4"
+    },
+    {
+      "path": "kestrel/manifest.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/kestrel_pymatgen_20261002/manifest.json",
+      "bytes": 16296,
+      "sha256": "7b4c409182580aed625a4afc592b434efdf59108e3059fe2ccd7b482cb9946c9"
+    },
+    {
+      "path": "kestrel/case_index.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/kestrel_pymatgen_20261002/case_index.csv",
+      "bytes": 3973,
+      "sha256": "a2193e46935e7ea25d015dfd03208f8866320baa9e285dd5d36a41098938cc66"
+    },
+    {
+      "path": "kestrel/bundle_audit.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/kestrel_pymatgen_20261002/bundle_audit.json",
+      "bytes": 239,
+      "sha256": "a4524ca9d3d4d07aeb8aad53d7afa47640d5725e6ba117aad94afa7f0dd09690"
+    },
+    {
+      "path": "beef/PROTOCOL.md",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_beef_20261002/PROTOCOL.md",
+      "bytes": 3646,
+      "sha256": "f1d6a53b801bc8106cf62703802e95f013d14997afa6b93f3767f88999db9d54"
+    },
+    {
+      "path": "beef/job_index.csv",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_beef_20261002/job_index.csv",
+      "bytes": 10763,
+      "sha256": "ce91eb92c5e702983ad11b82f623dae63fdf0e7886754ba6c6ec20e6036d209b"
+    },
+    {
+      "path": "beef/submission.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_beef_20261002/submission.json",
+      "bytes": 63248,
+      "sha256": "ea2814826a194f5eecfeaa06eeb097d1b03b9b6e3b83e00b2ced6440007481b3"
+    },
+    {
+      "path": "beef/preflight_checks.json",
+      "source": "/global/u1/j/jcho5/projects/charge-guided-adsorption-search/benchmarks/pymatgen_beef_20261002/preflight_checks.json",
+      "bytes": 10530,
+      "sha256": "907ec774cb3698f4e7e9d5e7e038de7a10d3a494f65d9ad763522c039b213cfa"
+    },
+    {
+      "path": "beef/queue_snapshot.json",
+      "source": "/tmp/bond_review_beef_status_20261002.json",
+      "bytes": 8724,
+      "sha256": "15a9f4b6b741aee1a1d663437297c8f03b284cb3fb0dc30c14ff2dd38eda876f"
+    }
+  ]
+}

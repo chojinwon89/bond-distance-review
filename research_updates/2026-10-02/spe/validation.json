@@ -1,0 +1,38 @@
+{
+  "html_pairs_checked": 1450,
+  "missing_ml": 74,
+  "panels": [
+    {
+      "functional": "pbe",
+      "n": 370,
+      "SPE_review": 111,
+      "outside_zoom": 0,
+      "all_published_MAE_eV": 0.47453184129729725,
+      "all_published_RMSE_eV": 0.5614802025562579
+    },
+    {
+      "functional": "pbe_d3",
+      "n": 351,
+      "SPE_review": 106,
+      "outside_zoom": 1,
+      "all_published_MAE_eV": 0.3586407945014245,
+      "all_published_RMSE_eV": 0.5391645250706611
+    },
+    {
+      "functional": "r2scan",
+      "n": 363,
+      "SPE_review": 165,
+      "outside_zoom": 0,
+      "all_published_MAE_eV": 0.4822246138292011,
+      "all_published_RMSE_eV": 0.5681965307235844
+    },
+    {
+      "functional": "beef_vdw",
+      "n": 366,
+      "SPE_review": 142,
+      "outside_zoom": 107,
+      "all_published_MAE_eV": 7.066728365710382,
+      "all_published_RMSE_eV": 13.37877349571246
+    }
+  ]
+}

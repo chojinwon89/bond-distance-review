@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-10-02T22:50:47.690044+00:00",
+  "production_inputs": 675,
+  "scaling_inputs": 4,
+  "passed": true,
+  "root": "/pscratch/sd/j/jcho5/VASP/kestrel_pymatgen_20261002/pymatgen",
+  "complexes": 660,
+  "references": 15
+}

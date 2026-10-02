@@ -1,0 +1,102 @@
+Kestrel independent pymatgen DFT campaign, prepared 2 October 2026
+
+Destination: /projects/ccpc/jcho/pymatgen/<surface>_<molecule>/PBE_D3/<start>/
+Shared references: /projects/ccpc/jcho/pymatgen/_references/<name>/PBE_D3/
+Control files: /projects/ccpc/jcho/pymatgen/_campaigns/20261002_pbe_d3/
+
+Status at packaging: staged on Perlmutter; NOT submitted on Kestrel.
+Kestrel external endpoint responded but rejected noninteractive authentication.
+
+Scope: Ag111, Pt111, Pd111, Ir111, Cu111 crossed with glycerol, formate,
+formic_acid, methane, O2, NH3, acetaldehyde, methanol, propanol (1-propanol),
+and ethanol. All 50 systems have independent top, bridge and hollow starts.
+There are 660 complex relaxations, 5 slab references, 10 gas references and
+4 optional scaling tests. No GOAD/MLIP adsorption coordinates or energies are
+used to select these starting structures. Existing isolated molecular inputs
+and independent slab CIFs are reused and their hashes are recorded.
+
+Slabs: four layers, lower two fixed; original archive cells retained.
+Ag, Pt, Pd: 36 metal atoms; Cu, Ir: 64 metal atoms. This preserves each
+surface's existing comparison cell. Different lateral cells imply different
+coverage across metals; do not assume identical coverage for cross-metal trends.
+Complexes range from 38 to 78 atoms. The same slab is used for all ten molecules
+on a given metal, and its reference has the identical cell and fixed layers.
+
+PBE+D3 zero damping (IVDW=11), as in the earlier pymatgen campaign:
+ENCUT=450 eV; EDIFF=1e-6; EDIFFG=-0.05 eV/A; NELM=300; NSW=300;
+IBRION=1; POTIM=0.2; ISIF=2; ALGO=Normal; ISPIN=2 for slabs/complexes;
+ISMEAR=1; SIGMA=0.05; LREAL=A; VDW_S6=1; VDW_SR=1.217.
+All slabs/complexes use the same Monkhorst-Pack 2x2x1 grid and zero shift.
+Every complex and its references use byte-identical species POTCAR blocks.
+New reference calculations avoid inheriting historical potential mismatches.
+NCORE=2 for complexes/slabs. NBANDS is set per composition and is divisible
+by 26 so 26- and 52-rank runs use the same number of bands.
+
+Gas references: 20-A cubic box, Gamma-only, ISMEAR=0, SIGMA=0.01, LREAL=false,
+no constraints. Closed-shell species use ISPIN=1. O2 uses ISPIN=2 and NUPDOWN=2
+(triplet); neutral CHO2 uses ISPIN=2 and NUPDOWN=1 (doublet). Formate here names
+an adsorbed CHO2 fragment in a neutral simulation cell; no extra electron or
+periodic charged-cell background is added. The gas reference is therefore
+neutral CHO2, not aqueous HCOO-minus. This differs from older spin-unpolarized
+gas files; older O2/formate adsorption energies cannot be mixed without a
+reference correction. Adsorbed systems are spin-polarized but have no fixed
+total spin. These runs do not exhaust possible surface spin solutions.
+
+Placement: every oxygen anchor, nitrogen for NH3, carbon for methane. O2's
+equivalent ends are represented once. Tilts are 0/60 degrees, 0/60/90 for
+formate, 0/90 for O2. Initial anchor height is 2.5 A above the local site plane,
+raised only to keep every molecular atom >=1.8 A above that plane. This is a
+vertical placement height, not an imposed final metal-adsorbate distance.
+During relaxation the adsorbate is unconstrained. Initial internal geometry,
+periodic-image separations and slab-contact collisions were checked.
+All three glycerol oxygens are sampled. This first campaign uses one isolated
+conformer; no exhaustive torsional or multi-anchor search is claimed.
+
+Resource plan: one shared node per job, 26 MPI ranks, one CPU per rank,
+2000 MB per CPU (~52 GB/job), OMP_NUM_THREADS=1. Gas references use 13 ranks.
+Requested walltime is 12 h; individual jobs are submitted without arrays.
+The submitter creates at most 20 dependency lanes, limiting simultaneous
+production jobs to 20 (~five whole-node equivalents when all use 26 cores).
+The shared partition permits unrelated jobs to share each physical node.
+VASP module is pinned to vasp/6.4.2 and its executable hash is frozen after
+the first successful Kestrel preflight. Verify module/account availability live.
+
+Kestrel's published guidance supports quarter- to half-node VASP runs; 26 ranks
+is a starting choice, not a measured optimum for this campaign. Four timing
+inputs compare identical Ag111/glycerol and Ir111/glycerol geometries at 26
+and 52 ranks with fixed NBANDS/NCORE and 20 SCF iterations. Timing-only jobs
+are excluded from adsorption energies. Compare core-seconds as well as wall
+time; use 52 cores only if its improvement warrants twice the resources.
+Official documentation:
+https://natlabrockies.github.io/HPC/Documentation/Applications/vasp/
+https://natlabrockies.github.io/HPC/Documentation/Systems/Kestrel/Running/
+
+After extracting the private bundle on Kestrel:
+  cd /projects/ccpc/jcho/pymatgen/_campaigns/20261002_pbe_d3
+  python3 kestrel_pymatgen_control.py audit
+  python3 kestrel_pymatgen_control.py submit --scaling --execute --lanes 4
+  # After the four timing jobs finish, inspect timings before production:
+  python3 kestrel_pymatgen_control.py scaling-report
+  python3 kestrel_pymatgen_control.py submit --execute --lanes 20
+  python3 kestrel_pymatgen_control.py report
+
+Without --execute the submitter only audits and prints a plan. Submitting
+requires the exact Kestrel destination, shared partition, ccpc association,
+and the pinned VASP executable. Every input is hashed and verified before
+submission and again before execution. Existing output files and recorded
+submissions are never overwritten. Ambiguous scheduler responses stop
+submission for manual reconciliation, preventing accidental duplicate jobs.
+
+The transfer archive contains licensed POTCAR files. Keep it within the
+authorized user's private HPC storage; do not commit it to public GitHub.
+Submit only from an authenticated Kestrel session. No Perlmutter jobs are
+launched by these scripts. The archive does not replace existing Kestrel data.
+
+Results: each job writes result.json and CONTCAR; collector writes results.csv
+and lowest_converged.json. E_ads = E_complex - E_slab - E_gas, only when all
+three same-campaign components are verified converged. Total energy is the
+VASP free-energy TOTEN, consistent with the existing comparison convention.
+Sigma-to-zero energy is retained separately. Lowest-converged geometry is
+not proof of a global minimum; final bonding/dissociation needs structural
+inspection before calling it an intact adsorption state. Scaling outputs
+are excluded. Archive all variants, not just the lowest-energy outcome.

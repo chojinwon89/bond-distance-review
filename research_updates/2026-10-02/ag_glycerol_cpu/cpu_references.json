@@ -1,0 +1,13 @@
+{
+  "slab": {
+    "energy_eV": -92.03837585449219,
+    "old_gpu_energy_eV": -92.03836059570312,
+    "CPU_minus_GPU_eV": -1.52587890625e-05
+  },
+  "molecule": {
+    "energy_eV": -76.22210693359375,
+    "old_gpu_energy_eV": -76.22211456298828,
+    "CPU_minus_GPU_eV": 7.62939453125e-06
+  },
+  "reference_energy_eV": -168.26048278808594
+}

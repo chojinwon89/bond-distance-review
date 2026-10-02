@@ -1,0 +1,771 @@
+{
+  "functional": "PBE+D3 (IVDW=11, zero damping)",
+  "surfaces": [
+    "Ag111",
+    "Pt111",
+    "Pd111",
+    "Ir111",
+    "Cu111"
+  ],
+  "molecules": [
+    "glycerol",
+    "formate",
+    "formic_acid",
+    "methane",
+    "O2",
+    "NH3",
+    "acetaldehyde",
+    "methanol",
+    "propanol",
+    "ethanol"
+  ],
+  "cases": [
+    {
+      "case": "Ag111_glycerol",
+      "surface": "Ag111",
+      "molecule": "glycerol",
+      "n_slab": 36,
+      "n_molecule": 14,
+      "starts": 24,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_formate",
+      "surface": "Ag111",
+      "molecule": "formate",
+      "n_slab": 36,
+      "n_molecule": 4,
+      "starts": 24,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_formic_acid",
+      "surface": "Ag111",
+      "molecule": "formic_acid",
+      "n_slab": 36,
+      "n_molecule": 5,
+      "starts": 16,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_methane",
+      "surface": "Ag111",
+      "molecule": "methane",
+      "n_slab": 36,
+      "n_molecule": 5,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_O2",
+      "surface": "Ag111",
+      "molecule": "O2",
+      "n_slab": 36,
+      "n_molecule": 2,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_NH3",
+      "surface": "Ag111",
+      "molecule": "NH3",
+      "n_slab": 36,
+      "n_molecule": 4,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_acetaldehyde",
+      "surface": "Ag111",
+      "molecule": "acetaldehyde",
+      "n_slab": 36,
+      "n_molecule": 7,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_methanol",
+      "surface": "Ag111",
+      "molecule": "methanol",
+      "n_slab": 36,
+      "n_molecule": 6,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_propanol",
+      "surface": "Ag111",
+      "molecule": "propanol",
+      "n_slab": 36,
+      "n_molecule": 12,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ag111_ethanol",
+      "surface": "Ag111",
+      "molecule": "ethanol",
+      "n_slab": 36,
+      "n_molecule": 9,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_glycerol",
+      "surface": "Pt111",
+      "molecule": "glycerol",
+      "n_slab": 36,
+      "n_molecule": 14,
+      "starts": 24,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_formate",
+      "surface": "Pt111",
+      "molecule": "formate",
+      "n_slab": 36,
+      "n_molecule": 4,
+      "starts": 24,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_formic_acid",
+      "surface": "Pt111",
+      "molecule": "formic_acid",
+      "n_slab": 36,
+      "n_molecule": 5,
+      "starts": 16,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_methane",
+      "surface": "Pt111",
+      "molecule": "methane",
+      "n_slab": 36,
+      "n_molecule": 5,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_O2",
+      "surface": "Pt111",
+      "molecule": "O2",
+      "n_slab": 36,
+      "n_molecule": 2,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_NH3",
+      "surface": "Pt111",
+      "molecule": "NH3",
+      "n_slab": 36,
+      "n_molecule": 4,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_acetaldehyde",
+      "surface": "Pt111",
+      "molecule": "acetaldehyde",
+      "n_slab": 36,
+      "n_molecule": 7,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_methanol",
+      "surface": "Pt111",
+      "molecule": "methanol",
+      "n_slab": 36,
+      "n_molecule": 6,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_propanol",
+      "surface": "Pt111",
+      "molecule": "propanol",
+      "n_slab": 36,
+      "n_molecule": 12,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pt111_ethanol",
+      "surface": "Pt111",
+      "molecule": "ethanol",
+      "n_slab": 36,
+      "n_molecule": 9,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_glycerol",
+      "surface": "Pd111",
+      "molecule": "glycerol",
+      "n_slab": 36,
+      "n_molecule": 14,
+      "starts": 24,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_formate",
+      "surface": "Pd111",
+      "molecule": "formate",
+      "n_slab": 36,
+      "n_molecule": 4,
+      "starts": 24,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_formic_acid",
+      "surface": "Pd111",
+      "molecule": "formic_acid",
+      "n_slab": 36,
+      "n_molecule": 5,
+      "starts": 16,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_methane",
+      "surface": "Pd111",
+      "molecule": "methane",
+      "n_slab": 36,
+      "n_molecule": 5,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_O2",
+      "surface": "Pd111",
+      "molecule": "O2",
+      "n_slab": 36,
+      "n_molecule": 2,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_NH3",
+      "surface": "Pd111",
+      "molecule": "NH3",
+      "n_slab": 36,
+      "n_molecule": 4,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_acetaldehyde",
+      "surface": "Pd111",
+      "molecule": "acetaldehyde",
+      "n_slab": 36,
+      "n_molecule": 7,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_methanol",
+      "surface": "Pd111",
+      "molecule": "methanol",
+      "n_slab": 36,
+      "n_molecule": 6,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_propanol",
+      "surface": "Pd111",
+      "molecule": "propanol",
+      "n_slab": 36,
+      "n_molecule": 12,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Pd111_ethanol",
+      "surface": "Pd111",
+      "molecule": "ethanol",
+      "n_slab": 36,
+      "n_molecule": 9,
+      "starts": 8,
+      "sites": {
+        "ontop": 1,
+        "bridge": 1,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_glycerol",
+      "surface": "Ir111",
+      "molecule": "glycerol",
+      "n_slab": 64,
+      "n_molecule": 14,
+      "starts": 30,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_formate",
+      "surface": "Ir111",
+      "molecule": "formate",
+      "n_slab": 64,
+      "n_molecule": 4,
+      "starts": 30,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_formic_acid",
+      "surface": "Ir111",
+      "molecule": "formic_acid",
+      "n_slab": 64,
+      "n_molecule": 5,
+      "starts": 20,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_methane",
+      "surface": "Ir111",
+      "molecule": "methane",
+      "n_slab": 64,
+      "n_molecule": 5,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_O2",
+      "surface": "Ir111",
+      "molecule": "O2",
+      "n_slab": 64,
+      "n_molecule": 2,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_NH3",
+      "surface": "Ir111",
+      "molecule": "NH3",
+      "n_slab": 64,
+      "n_molecule": 4,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_acetaldehyde",
+      "surface": "Ir111",
+      "molecule": "acetaldehyde",
+      "n_slab": 64,
+      "n_molecule": 7,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_methanol",
+      "surface": "Ir111",
+      "molecule": "methanol",
+      "n_slab": 64,
+      "n_molecule": 6,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_propanol",
+      "surface": "Ir111",
+      "molecule": "propanol",
+      "n_slab": 64,
+      "n_molecule": 12,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Ir111_ethanol",
+      "surface": "Ir111",
+      "molecule": "ethanol",
+      "n_slab": 64,
+      "n_molecule": 9,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_glycerol",
+      "surface": "Cu111",
+      "molecule": "glycerol",
+      "n_slab": 64,
+      "n_molecule": 14,
+      "starts": 30,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_formate",
+      "surface": "Cu111",
+      "molecule": "formate",
+      "n_slab": 64,
+      "n_molecule": 4,
+      "starts": 30,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_formic_acid",
+      "surface": "Cu111",
+      "molecule": "formic_acid",
+      "n_slab": 64,
+      "n_molecule": 5,
+      "starts": 20,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_methane",
+      "surface": "Cu111",
+      "molecule": "methane",
+      "n_slab": 64,
+      "n_molecule": 5,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_O2",
+      "surface": "Cu111",
+      "molecule": "O2",
+      "n_slab": 64,
+      "n_molecule": 2,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_NH3",
+      "surface": "Cu111",
+      "molecule": "NH3",
+      "n_slab": 64,
+      "n_molecule": 4,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_acetaldehyde",
+      "surface": "Cu111",
+      "molecule": "acetaldehyde",
+      "n_slab": 64,
+      "n_molecule": 7,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_methanol",
+      "surface": "Cu111",
+      "molecule": "methanol",
+      "n_slab": 64,
+      "n_molecule": 6,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_propanol",
+      "surface": "Cu111",
+      "molecule": "propanol",
+      "n_slab": 64,
+      "n_molecule": 12,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    },
+    {
+      "case": "Cu111_ethanol",
+      "surface": "Cu111",
+      "molecule": "ethanol",
+      "n_slab": 64,
+      "n_molecule": 9,
+      "starts": 10,
+      "sites": {
+        "ontop": 1,
+        "bridge": 2,
+        "hollow": 2
+      }
+    }
+  ],
+  "complex_jobs": 660,
+  "reference_jobs": 15,
+  "scaling_jobs": 4,
+  "planned_remote_root": "/projects/ccpc/jcho/pymatgen",
+  "local_stage": "/pscratch/sd/j/jcho5/VASP/kestrel_pymatgen_20261002/pymatgen",
+  "potentials": {
+    "Ag": {
+      "title": "PAW_PBE Ag 02Apr2005",
+      "source": "/pscratch/sd/j/jcho5/VASP/charge_search_validation/oxygenated_20260927/jobs/Ag111_glycerol/goad/relaxed/POTCAR",
+      "block_sha256": "d2e399fa2a358bf13ab57d58824fd42a4ef5f6695a3a1eeeacbf07fc02dc5b5b",
+      "zval": 11.0
+    },
+    "C": {
+      "title": "PAW_PBE C 08Apr2002",
+      "source": "/pscratch/sd/j/jcho5/VASP/charge_search_validation/oxygenated_20260927/jobs/Ag111_glycerol/goad/relaxed/POTCAR",
+      "block_sha256": "e324f39f282d3fd6b99a7bff390f4b2441edd3dd3eac607d1f1c01376f3d0dc0",
+      "zval": 4.0
+    },
+    "H": {
+      "title": "PAW_PBE H 15Jun2001",
+      "source": "/pscratch/sd/j/jcho5/VASP/charge_search_validation/oxygenated_20260927/jobs/Ag111_glycerol/goad/relaxed/POTCAR",
+      "block_sha256": "c7c1440066f80b3689496d8a45f8df6af183c40e59b514734edddfaa6840a3be",
+      "zval": 1.0
+    },
+    "O": {
+      "title": "PAW_PBE O 08Apr2002",
+      "source": "/pscratch/sd/j/jcho5/VASP/charge_search_validation/oxygenated_20260927/jobs/Ag111_glycerol/goad/relaxed/POTCAR",
+      "block_sha256": "8a74b9a1f5fdb3d0c3e0183c7873177abdbef07d407b310b7edcd9ed0a3eea64",
+      "zval": 6.0
+    },
+    "N": {
+      "title": "PAW_PBE N 08Apr2002",
+      "source": "/pscratch/sd/j/jcho5/VASP/vasp_mol/NH3/PBE_D3/POTCAR",
+      "block_sha256": "c3b51ab8258f836d3c8d29beefa95be51fc95b5d0ab7aca6cba204207a69162a",
+      "zval": 5.0
+    },
+    "Pt": {
+      "title": "PAW_PBE Pt_pv 12Dec2005",
+      "source": "/pscratch/sd/j/jcho5/VASP/vasp_slab/Pt111/PBE_D3/POTCAR",
+      "block_sha256": "865a8effdb30c929ab026521c6c5f313ca463b8d526718e0e62acac4a95bbccd",
+      "zval": 16.0
+    },
+    "Pd": {
+      "title": "PAW_PBE Pd_pv 28Jan2005",
+      "source": "/pscratch/sd/j/jcho5/VASP/vasp_slab/Pd111/PBE_D3/POTCAR",
+      "block_sha256": "7649b5d85ef86333e386f70c4bb8e91de2212d3485d3141b30952edf5b419c7c",
+      "zval": 16.0
+    },
+    "Ir": {
+      "title": "PAW_PBE Ir 06Sep2000",
+      "source": "/pscratch/sd/j/jcho5/VASP/vasp_slab/Ir111/PBE_D3/POTCAR",
+      "block_sha256": "1a22da3672b114729b5f9ec8e36b09719dc19d22e27d40a296255630dd42b2d2",
+      "zval": 9.0
+    },
+    "Cu": {
+      "title": "PAW_PBE Cu_pv 06Sep2000",
+      "source": "/pscratch/sd/j/jcho5/VASP/vasp_slab/Cu111/PBE_D3/POTCAR",
+      "block_sha256": "5e6725955bb98bfe67701373410d2d9928f9ef4096b10423e32537494246358c",
+      "zval": 17.0
+    }
+  },
+  "shared_complex_settings": {
+    "NWRITE": "2",
+    "ISTART": "0",
+    "ISPIN": "2",
+    "ENCUT": "450",
+    "NELM": "300",
+    "NELMIN": "4",
+    "EDIFF": "1E-6",
+    "EDIFFG": "-0.05",
+    "GGA": "PE",
+    "IVDW": "11",
+    "VDW_S6": "1.0",
+    "VDW_SR": "1.217",
+    "NSW": "300",
+    "IBRION": "1",
+    "ISMEAR": "1",
+    "SIGMA": "0.05",
+    "LDIAG": ".TRUE.",
+    "LREAL": "A",
+    "LWAVE": ".FALSE.",
+    "ICHARG": "2",
+    "ALGO": "Normal",
+    "LCHARG": ".FALSE.",
+    "POTIM": "0.2",
+    "ISIF": "2",
+    "NCORE": "2"
+  },
+  "slab_kpoints_sha256": "25eff781a10050518bb553b1389f55eecdf307cf9f5dcda7fc7154b72a9acaa8",
+  "versions": {
+    "ase": "3.29.0",
+    "pymatgen": "2026.5.4",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "source_script_sha256": "a9f3709eaac79a2d4ed6a01ead0b1c8b9decd6dd7806bf15daae6de4e58e9c69",
+  "status": "prepared locally; Kestrel SSH authentication unavailable; zero jobs submitted"
+}

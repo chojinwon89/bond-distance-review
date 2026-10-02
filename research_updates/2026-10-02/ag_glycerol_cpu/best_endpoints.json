@@ -1,0 +1,74 @@
+{
+  "baseline": {
+    "mode": "baseline",
+    "seed": 707,
+    "device": "cpu",
+    "search_evaluations": 1500,
+    "search_E_ads_eV": -0.4595794677734375,
+    "search_termination": "evaluation_budget",
+    "final_E_ads_eV": -0.541351318359375,
+    "valid": true,
+    "elapsed_seconds": 4055.409979589982,
+    "initial_population_sha256": "05ecc907e7a4c2808f3ac9e803095ed561b1525720ff87a9a6a673aec9ba05b5",
+    "oxygen_indices": [
+      0,
+      3,
+      5
+    ],
+    "O_Ag_distances_A": [
+      3.9916489473514964,
+      3.578900030832614,
+      2.8477557758484457
+    ],
+    "nearest_O_Ag_A": 2.8477557758484457,
+    "closest_oxygen_index": 5,
+    "energy_eV": -168.8018341064453,
+    "converged": true,
+    "fmax_eV_A": 0.04993235852469869,
+    "budget_exhausted": false,
+    "evaluations": 27,
+    "wall_seconds": 37.10598933091387,
+    "intact": true,
+    "admissible": true,
+    "min_contact_A": 2.8477557758484457,
+    "min_heavy_contact_A": 2.8477557758484457,
+    "relaxed_top_layer_spread_A": 0.06774321952995521,
+    "relaxed_surface_planarity_required": false
+  },
+  "contact25": {
+    "mode": "contact25",
+    "seed": 909,
+    "device": "cpu",
+    "search_evaluations": 1500,
+    "search_E_ads_eV": -0.4494781494140625,
+    "search_termination": "evaluation_budget",
+    "final_E_ads_eV": -0.519744873046875,
+    "valid": true,
+    "elapsed_seconds": 3744.5760005080374,
+    "initial_population_sha256": "02c4ea0c2b8606b57f3a2dc2390b62c859a886ff3ff27e1428c9357efcd61d64",
+    "oxygen_indices": [
+      0,
+      3,
+      5
+    ],
+    "O_Ag_distances_A": [
+      3.6362674100886734,
+      3.503133634118167,
+      3.935888593770915
+    ],
+    "nearest_O_Ag_A": 3.503133634118167,
+    "closest_oxygen_index": 3,
+    "energy_eV": -168.7802276611328,
+    "converged": true,
+    "fmax_eV_A": 0.0479412720265881,
+    "budget_exhausted": false,
+    "evaluations": 14,
+    "wall_seconds": 26.93925836100243,
+    "intact": true,
+    "admissible": true,
+    "min_contact_A": 3.0366620256909416,
+    "min_heavy_contact_A": 3.503133634118167,
+    "relaxed_top_layer_spread_A": 0.015207113545027795,
+    "relaxed_surface_planarity_required": false
+  }
+}

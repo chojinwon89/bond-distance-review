@@ -1,0 +1,23 @@
+{
+  "downloaded_utc": "2026-10-02T19:20:30.411294+00:00",
+  "files": {
+    "dft_comparison.html": {
+      "url": "https://chojinwon89.github.io/bond-distance-review/dft_comparison.html",
+      "last_modified": "Fri, 02 Oct 2026 12:52:34 GMT",
+      "sha256": "17f5a4c31c4ae810b0927db1abf2e29289ea1d101741a06631456687bd227b42",
+      "bytes": 1908040
+    },
+    "dft_comparison_singlepoint.csv": {
+      "url": "https://chojinwon89.github.io/bond-distance-review/dft_comparison_singlepoint.csv",
+      "last_modified": "Fri, 02 Oct 2026 12:52:34 GMT",
+      "sha256": "1711776b3208bf171ffe7002364ea3ada6427c5f69d5ddd8436d1c7dd927ab9b",
+      "bytes": 308319
+    },
+    "dft_singlepoint_vs_sevennet.csv": {
+      "url": "https://chojinwon89.github.io/bond-distance-review/dft_singlepoint_vs_sevennet.csv",
+      "last_modified": "Fri, 02 Oct 2026 12:52:34 GMT",
+      "sha256": "eaef248a5467739450f495cd3aa40ded0e38316e8b9682b3ae55e226c77d2f98",
+      "bytes": 127213
+    }
+  }
+}

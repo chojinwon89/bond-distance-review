@@ -1,0 +1,75 @@
+surface,molecule,functional,E_ads_DFT_SP,E_ads_ML_SP,delta_SP,ML_minus_SPE_minus_relaxed_DFT,E_ads_ML_relaxed_displayed,E_ads_DFT_relaxed_displayed,provenance,complex_directory,relaxed_review,SPE_review,analysis_eligible
+Cu111,CO2,beef_vdw,-0.16919604,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Cu111_top/singlepoint/beef_vdw,false,false,false
+Cu111,CO2,pbe,-0.00874943,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Cu111_top/singlepoint/PBE,false,false,false
+Cu111,CO2,r2scan,0.15463463,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CO2_Cu111_top/singlepoint/r2scan,false,false,false
+Cu111,H2O,beef_vdw,-0.11192136,,,,,-0.181,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,H2O,pbe,-0.05968903,,,,,-0.068,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Cu111/singlepoint/PBE,false,false,false
+Cu111,H2O,pbe_d3,-0.17547923,,,,,-0.408,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,H2O,r2scan,0.08301769,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2O_Cu111/singlepoint/r2scan,false,false,false
+Cu111,H2S,beef_vdw,-0.20028996,,,,,-0.356,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,H2S,pbe,-0.06379553,,,,,-0.249,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Cu111/singlepoint/PBE,false,false,false
+Cu111,H2S,pbe_d3,-0.33390637,,,,,-0.739,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,H2S,r2scan,0.05749916,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2S_Cu111/singlepoint/r2scan,false,false,false
+Cu111,N2,beef_vdw,-0.05704813,,,,,-0.132,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,N2,pbe,0.00193646,,,,,-0.011,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Cu111/singlepoint/PBE,false,false,false
+Cu111,N2,pbe_d3,0.01549006,,,,,-0.088,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,N2,r2scan,0.20254814,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/N2_Cu111/singlepoint/r2scan,false,false,false
+Cu111,NH3,beef_vdw,-0.52120069,,,,,-0.614,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,NH3,pbe,-0.48773619,,,,,-0.511,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Cu111/singlepoint/PBE,false,false,false
+Cu111,NH3,pbe_d3,-0.75030522,,,,,-0.866,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,NH3,r2scan,-0.45584146,,,,,-0.658,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/NH3_Cu111/singlepoint/r2scan,false,false,false
+Cu111,SO2,beef_vdw,-0.66605053,,,,,-0.751,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,SO2,pbe,-0.52005000,,,,,-0.560,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Cu111/singlepoint/PBE,false,false,false
+Cu111,SO2,pbe_d3,-0.92477809,,,,,-1.043,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,SO2,r2scan,-0.80648685,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/SO2_Cu111/singlepoint/r2scan,false,false,false
+Cu111,acetaldehyde,beef_vdw,-0.31157230,,,,,-0.413,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,acetaldehyde,pbe,-0.14417606,,,,,-0.164,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Cu111/singlepoint/PBE,false,false,false
+Cu111,acetaldehyde,pbe_d3,-0.34757773,,,,,-0.484,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,acetaldehyde,r2scan,-0.12291397,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CHO_Cu111/singlepoint/r2scan,false,false,false
+Cu111,acetic_acid,beef_vdw,-0.41822610,,,,,-0.517,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,acetic_acid,pbe_d3,-7.164,,,,,,Historical publication; refs unverified; git:23048650b883c5118871d1829a317187a65f0989; Previously published single-point result,,false,true,false
+Cu111,acetic_acid,r2scan,-0.24733098,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3COOH_Cu111/singlepoint/r2scan,false,false,false
+Cu111,ethane,beef_vdw,-0.22630897,,,,,-0.298,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,ethane,pbe,-0.01205185,,,,,-0.022,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Cu111/singlepoint/PBE,false,false,false
+Cu111,ethane,pbe_d3,-0.23199713,,,,,-0.421,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,ethane,r2scan,0.12773705,,,,,-0.089,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H6_Cu111/singlepoint/r2scan,false,false,false
+Cu111,ethanol,beef_vdw,-0.35835421,,,,,-0.440,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,ethanol,pbe,-0.10665859,,,,,-0.122,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Cu111/singlepoint/PBE,false,false,false
+Cu111,ethanol,pbe_d3,-0.35955086,,,,,-0.643,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,ethanol,r2scan,-0.02999970,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3CH2OH_Cu111/singlepoint/r2scan,false,false,false
+Cu111,ethene,beef_vdw,-0.22905529,,,,,-0.319,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,ethene,pbe,-0.03161161,,,,,-0.046,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/singlepoint/PBE,false,false,false
+Cu111,ethene,pbe_d3,-0.21085338,,,,,-0.785,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,ethene,r2scan,0.10479226,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/C2H4_Cu111/singlepoint/r2scan,false,false,false
+Cu111,formaldehyde,beef_vdw,-0.23003801,,,,,-0.328,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,formaldehyde,pbe,-0.06834690,,,,,-0.091,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Cu111/singlepoint/PBE,false,false,false
+Cu111,formaldehyde,pbe_d3,-0.18060774,,,,,-0.406,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,formaldehyde,r2scan,0.04595148,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/H2CO_Cu111/singlepoint/r2scan,false,false,false
+Cu111,formic_acid,beef_vdw,-0.30283602,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Cu111_top/singlepoint/beef_vdw,false,false,false
+Cu111,formic_acid,pbe,-0.12762866,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Cu111_top/singlepoint/PBE,false,false,false
+Cu111,formic_acid,pbe_d3,-0.33046614,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Cu111_top/singlepoint/PBE_D3,false,false,false
+Cu111,formic_acid,r2scan,-0.01720029,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/HCOOH_Cu111_top/singlepoint/r2scan,false,false,false
+Cu111,isopropanol,beef_vdw,-0.48254434,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_isopropanol/singlepoint/beef_vdw,false,false,false
+Cu111,isopropanol,pbe,-0.13170291,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_isopropanol/singlepoint/PBE,false,false,false
+Cu111,isopropanol,pbe_d3,-0.51483363,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_isopropanol/singlepoint/PBE_D3,false,false,false
+Cu111,isopropanol,r2scan,-0.09799658,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_isopropanol/singlepoint/r2scan,false,false,false
+Cu111,methane,beef_vdw,-0.13548807,,,,,-0.204,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Cu111/singlepoint/beef_vdw,false,false,false
+Cu111,methane,pbe,-0.00295517,,,,,-0.012,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Cu111/singlepoint/PBE,false,false,false
+Cu111,methane,pbe_d3,-0.11095210,,,,,-0.276,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Cu111/singlepoint/PBE_D3,false,false,false
+Cu111,methane,r2scan,0.15234749,,,,,-0.060,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH4_Cu111/singlepoint/r2scan,false,false,false
+Cu111,methanol,beef_vdw,-0.33628100,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu111_top/singlepoint/beef_vdw,false,false,false
+Cu111,methanol,pbe,-0.15486480,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu111_top/singlepoint/PBE,false,false,false
+Cu111,methanol,pbe_d3,-0.36909233,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu111_top/singlepoint/PBE_D3,false,false,false
+Cu111,methanol,r2scan,-0.11400296,,,,,,Cluster policy: Perlmutter first,/pscratch/sd/j/jcho5/VASP/dft_jobs/CH3OH_Cu111_top/singlepoint/r2scan,false,false,false
+Cu111,propane,beef_vdw,-0.32632389,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propane/singlepoint/beef_vdw,false,false,false
+Cu111,propane,pbe,-0.01678961,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propane/singlepoint/PBE,false,false,false
+Cu111,propane,pbe_d3,-0.33395286,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propane/singlepoint/PBE_D3,false,false,false
+Cu111,propane,r2scan,0.11348750,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propane/singlepoint/r2scan,false,false,false
+Cu111,propanol,beef_vdw,-0.51655703,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propanol/singlepoint/beef_vdw,false,false,false
+Cu111,propanol,pbe,-0.16723307,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propanol/singlepoint/PBE,false,false,false
+Cu111,propanol,pbe_d3,-0.58126452,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propanol/singlepoint/PBE_D3,false,false,false
+Cu111,propanol,r2scan,-0.14589438,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propanol/singlepoint/r2scan,false,false,false
+Cu111,propene,beef_vdw,-0.30664093,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propene/singlepoint/beef_vdw,false,false,false
+Cu111,propene,pbe,-0.04238095,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propene/singlepoint/PBE,false,false,false
+Cu111,propene,pbe_d3,-0.29383920,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propene/singlepoint/PBE_D3,false,false,false
+Cu111,propene,r2scan,0.08880039,,,,,,Cluster policy: Kestrel: no usable Perlmutter binding-energy candidate,/kfs3/scratch/jcho5/goad-global-optimization/poscar/best/C3/Cu111_propene/singlepoint/r2scan,false,false,false
