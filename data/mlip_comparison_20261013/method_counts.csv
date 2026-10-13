@@ -1,0 +1,8 @@
+checkpoint,modal,cohort,functional,MLIP_systems,DFT_SPE_systems,GOAD_DFT_relaxed_systems,compatible_pymatgen_DFT_systems
+7net-mf-ompa,omat24,pilot,beef_vdw,10,0,0,4
+7net-mf-ompa,omat24,pilot,pbe_d3,10,9,9,8
+7net-mf-ompa,omat24,legacy,beef_vdw,89,76,64,40
+7net-mf-ompa,omat24,legacy,pbe_d3,89,72,61,42
+7net-omni,matpes_r2scan,selected 50-system cohort,beef_vdw,50,47,17,22
+7net-omni,matpes_r2scan,selected 50-system cohort,pbe_d3,50,0,50,25
+7net-omni,matpes_r2scan,selected 50-system cohort,r2scan,50,22,21,14

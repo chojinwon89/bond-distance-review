@@ -1,0 +1,11 @@
+{
+  "source_published_utc": "2026-10-13T21:05:07.883624+00:00",
+  "source_comparison": "four_method_comparison_20261003",
+  "scope": "Published matched adsorption benchmark, not all HPC jobs; recent furfural campaign not added",
+  "source_sha256": {
+    "plot_data.csv": "fb8214c9ae38a024db004d6379de0ddb6ba2af69f1541ce3ea99fc1a9d9a20fd",
+    "coverage.csv": "15a03f149363c39e5d678457ccfe2263d0ba855cfc2c855297e086e999c24779",
+    "comparison_statistics.csv": "a9d9b615da4e988ceb8696cd796dd1b33573cf08012c092d1fc33934e64b6ecd"
+  },
+  "point_rows": 793
+}
