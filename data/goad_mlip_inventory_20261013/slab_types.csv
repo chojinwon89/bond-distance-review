@@ -1,0 +1,67 @@
+model,surface,run_reference_occurrences,molecules
+7net-mf-ompa / omat24,Ag100,781,146
+7net-mf-ompa / omat24,Ag110,775,146
+7net-mf-ompa / omat24,Ag111,810,146
+7net-mf-ompa / omat24,Au100,778,146
+7net-mf-ompa / omat24,Au110,777,146
+7net-mf-ompa / omat24,Au111,826,146
+7net-mf-ompa / omat24,Co0001,719,132
+7net-mf-ompa / omat24,Cr100,612,124
+7net-mf-ompa / omat24,Cr110,486,119
+7net-mf-ompa / omat24,Cr111,486,119
+7net-mf-ompa / omat24,Cu001,540,119
+7net-mf-ompa / omat24,Cu100,565,133
+7net-mf-ompa / omat24,Cu110,577,133
+7net-mf-ompa / omat24,Cu111,657,133
+7net-mf-ompa / omat24,Fe100,486,119
+7net-mf-ompa / omat24,Fe110,516,119
+7net-mf-ompa / omat24,Fe111,486,119
+7net-mf-ompa / omat24,Ir100,568,133
+7net-mf-ompa / omat24,Ir110,532,133
+7net-mf-ompa / omat24,Ir111,512,133
+7net-mf-ompa / omat24,Ni100,475,119
+7net-mf-ompa / omat24,Ni110,475,119
+7net-mf-ompa / omat24,Ni111,475,119
+7net-mf-ompa / omat24,Pd100,548,133
+7net-mf-ompa / omat24,Pd110,551,133
+7net-mf-ompa / omat24,Pd111,559,133
+7net-mf-ompa / omat24,Pt100,509,133
+7net-mf-ompa / omat24,Pt110,509,133
+7net-mf-ompa / omat24,Pt111,552,133
+7net-mf-ompa / omat24,Rh100,503,133
+7net-mf-ompa / omat24,Rh110,503,133
+7net-mf-ompa / omat24,Rh111,502,133
+7net-mf-ompa / omat24,Ru0001,421,119
+7net-omni / matpes_r2scan,Ag111,39,13
+7net-omni / matpes_r2scan,Cu111,39,13
+7net-omni / matpes_r2scan,Ir111,39,13
+7net-omni / matpes_r2scan,Pd111,39,13
+7net-omni / matpes_r2scan,Pt111,39,13
+MatterSim/5m,Ag100,744,132
+MatterSim/5m,Ag110,744,132
+MatterSim/5m,Ag111,744,132
+MatterSim/5m,Au100,744,132
+MatterSim/5m,Au110,744,132
+MatterSim/5m,Au111,744,132
+MatterSim/5m,Co0001,690,132
+MatterSim/5m,Cr100,540,106
+MatterSim/5m,Cr110,198,38
+MatterSim/5m,Cr111,198,38
+MatterSim/5m,Cu001,252,38
+MatterSim/5m,Cu100,198,38
+MatterSim/5m,Cu110,252,38
+MatterSim/5m,Cu111,252,38
+MatterSim/5m,Fe100,198,38
+MatterSim/5m,Fe110,198,38
+MatterSim/5m,Fe111,198,38
+MatterSim/5m,Ir100,198,38
+MatterSim/5m,Ir110,99,21
+MatterSim/5m,Ni100,54,9
+MatterSim/5m,Ni110,54,9
+MatterSim/5m,Ni111,54,9
+MatterSim/5m,Pd100,54,9
+MatterSim/5m,Pd110,54,9
+MatterSim/5m,Pd111,54,9
+MatterSim/5m,Pt100,54,9
+MatterSim/5m,Pt110,54,9
+MatterSim/5m,Pt111,54,9

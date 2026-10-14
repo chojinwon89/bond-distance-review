@@ -1,0 +1,67 @@
+{
+  "sources": {
+    "perlmutter": {
+      "cluster": "perlmutter",
+      "roots": [
+        "/pscratch/sd/j/jcho5/VASP/runs"
+      ],
+      "observed_utc": "2026-10-14T01:11:11.547001Z",
+      "files_examined": 5240,
+      "issues": []
+    },
+    "kestrel": {
+      "cluster": "kestrel",
+      "roots": [
+        "/scratch/jcho5/goad-global-optimization/runs",
+        "/projects/ccpc/jcho/sevennet_r2scan_20261005"
+      ],
+      "observed_utc": "2026-10-14T01:28:23.438881Z",
+      "files_examined": 27321,
+      "issues": []
+    }
+  },
+  "model_counts": [
+    {
+      "model": "7net-mf-ompa / omat24",
+      "slab_types": 33,
+      "molecule_identities": 146,
+      "slab_molecule_systems": 4317,
+      "seed_run_records": 19071,
+      "complex_convergence_supported_runs": 19057,
+      "reported_completed_only_runs": 14,
+      "unverified_runs": 0,
+      "observed_clusters": "kestrel;perlmutter"
+    },
+    {
+      "model": "7net-omni / matpes_r2scan",
+      "slab_types": 5,
+      "molecule_identities": 13,
+      "slab_molecule_systems": 65,
+      "seed_run_records": 195,
+      "complex_convergence_supported_runs": 195,
+      "reported_completed_only_runs": 0,
+      "unverified_runs": 0,
+      "observed_clusters": "kestrel;perlmutter"
+    },
+    {
+      "model": "MatterSim/5m",
+      "slab_types": 28,
+      "molecule_identities": 132,
+      "slab_molecule_systems": 1512,
+      "seed_run_records": 8421,
+      "complex_convergence_supported_runs": 8421,
+      "reported_completed_only_runs": 0,
+      "unverified_runs": 0,
+      "observed_clusters": "kestrel"
+    }
+  ],
+  "raw_records": 29002,
+  "identical_copies_removed": 919,
+  "excluded_count": 396,
+  "exclusion_reasons": {
+    "not a recognized slab label or missing molecule": 396
+  },
+  "scope": "GOAD only; completed result/summary records with all three component energies and adsorption-energy arithmetic within 0.0002 eV. Includes unverified convergence, separately counted. Slabs are distinct surface labels, molecules explicit-name identities, complexes distinct surface/molecule pairs; not independent geometry counts.",
+  "alias_policy": "Explicit molecular synonyms only; no merging by gross formula. Slab labels such as Cu001 and Cu100 remain distinct. Identical source-JSON SHA256 removed across mirrors; distinct seeds/campaigns retained.",
+  "identity_policy": "SevenNet from explicit checkpoint/modal or documented sevennet_omni factory alias. MatterSim/5m from calculator tag; exact checkpoint hash not established for legacy records. No claim of exhaustive MACE/CHGNet coverage."
+}

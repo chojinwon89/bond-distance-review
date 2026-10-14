@@ -1,0 +1,292 @@
+model,molecule,run_reference_occurrences,slab_types
+7net-mf-ompa / omat24,"1,6-anhydroglucofuranose",173,33
+7net-mf-ompa / omat24,1-butanol,123,33
+7net-mf-ompa / omat24,1-butene,156,33
+7net-mf-ompa / omat24,1-pentene,184,33
+7net-mf-ompa / omat24,2-butanol,123,33
+7net-mf-ompa / omat24,2-butene,123,33
+7net-mf-ompa / omat24,2-ethylphenol,48,8
+7net-mf-ompa / omat24,2-furanone,123,33
+7net-mf-ompa / omat24,2-heptanone,173,33
+7net-mf-ompa / omat24,2-hexanone,173,33
+7net-mf-ompa / omat24,2-pentanone,184,33
+7net-mf-ompa / omat24,3-MTHF,184,33
+7net-mf-ompa / omat24,3-hydroxypropionic_acid,156,33
+7net-mf-ompa / omat24,4-methylguaiacol,48,8
+7net-mf-ompa / omat24,5-HMF,184,33
+7net-mf-ompa / omat24,5-heptanone,184,33
+7net-mf-ompa / omat24,5-methylfurfural,173,33
+7net-mf-ompa / omat24,C2H,42,21
+7net-mf-ompa / omat24,C2H3,42,21
+7net-mf-ompa / omat24,C2H5,42,21
+7net-mf-ompa / omat24,CH,42,21
+7net-mf-ompa / omat24,CH2,116,33
+7net-mf-ompa / omat24,CH2OH,42,21
+7net-mf-ompa / omat24,CH3,116,33
+7net-mf-ompa / omat24,CO,91,33
+7net-mf-ompa / omat24,CO2,216,33
+7net-mf-ompa / omat24,COOH,42,21
+7net-mf-ompa / omat24,D-fructofuranose,173,33
+7net-mf-ompa / omat24,D-xylopyranose,173,33
+7net-mf-ompa / omat24,DME,138,33
+7net-mf-ompa / omat24,DMSO,74,33
+7net-mf-ompa / omat24,H2,74,33
+7net-mf-ompa / omat24,H2O,126,33
+7net-mf-ompa / omat24,H2S,115,33
+7net-mf-ompa / omat24,HCN,42,21
+7net-mf-ompa / omat24,HCO,74,33
+7net-mf-ompa / omat24,N2,115,33
+7net-mf-ompa / omat24,NH3,115,33
+7net-mf-ompa / omat24,NO,76,33
+7net-mf-ompa / omat24,NO2,74,33
+7net-mf-ompa / omat24,O2,116,33
+7net-mf-ompa / omat24,OOH,42,21
+7net-mf-ompa / omat24,SO2,115,33
+7net-mf-ompa / omat24,THF,123,33
+7net-mf-ompa / omat24,acetal,173,33
+7net-mf-ompa / omat24,acetaldehyde,132,33
+7net-mf-ompa / omat24,acetic_acid,129,33
+7net-mf-ompa / omat24,acetone,123,33
+7net-mf-ompa / omat24,acetophenone,48,8
+7net-mf-ompa / omat24,acetylene,42,21
+7net-mf-ompa / omat24,alpha-D-glucopyranose,173,33
+7net-mf-ompa / omat24,angelica_lactone,173,33
+7net-mf-ompa / omat24,aniline,173,33
+7net-mf-ompa / omat24,atomicC,42,21
+7net-mf-ompa / omat24,atomicH,42,21
+7net-mf-ompa / omat24,atomicO,42,21
+7net-mf-ompa / omat24,benzaldehyde,173,33
+7net-mf-ompa / omat24,benzene,184,33
+7net-mf-ompa / omat24,butadiene,156,33
+7net-mf-ompa / omat24,butanal,123,33
+7net-mf-ompa / omat24,butane,123,33
+7net-mf-ompa / omat24,butyric_acid,156,33
+7net-mf-ompa / omat24,caproic_acid,184,33
+7net-mf-ompa / omat24,carbonate,74,33
+7net-mf-ompa / omat24,citric_acid,173,33
+7net-mf-ompa / omat24,cyclobutanone,123,33
+7net-mf-ompa / omat24,cyclohexanone,173,33
+7net-mf-ompa / omat24,cyclopentanone,184,33
+7net-mf-ompa / omat24,diethyl_ether,123,33
+7net-mf-ompa / omat24,dimethyl_succinate,172,33
+7net-mf-ompa / omat24,ethane,217,33
+7net-mf-ompa / omat24,ethanol,234,33
+7net-mf-ompa / omat24,ethene,315,33
+7net-mf-ompa / omat24,ethyl_acetate,123,33
+7net-mf-ompa / omat24,ethylene_glycol,74,33
+7net-mf-ompa / omat24,eugenol,48,8
+7net-mf-ompa / omat24,formaldehyde,115,33
+7net-mf-ompa / omat24,formate,77,33
+7net-mf-ompa / omat24,formic_acid,134,33
+7net-mf-ompa / omat24,furan,123,33
+7net-mf-ompa / omat24,furfural,210,33
+7net-mf-ompa / omat24,furfuryl_alcohol,173,33
+7net-mf-ompa / omat24,gamma_butyrolactone,123,33
+7net-mf-ompa / omat24,gamma_valerolactone,173,33
+7net-mf-ompa / omat24,gluconic_acid,173,33
+7net-mf-ompa / omat24,glutaric_acid,173,33
+7net-mf-ompa / omat24,glycerol,270,33
+7net-mf-ompa / omat24,glycolic_acid,74,33
+7net-mf-ompa / omat24,glyoxal,74,33
+7net-mf-ompa / omat24,guaiacol,187,33
+7net-mf-ompa / omat24,heptane,173,33
+7net-mf-ompa / omat24,heptene,74,33
+7net-mf-ompa / omat24,hexanal,173,33
+7net-mf-ompa / omat24,hexane,173,33
+7net-mf-ompa / omat24,hexene,74,33
+7net-mf-ompa / omat24,hydroquinone,173,33
+7net-mf-ompa / omat24,hydroxyacetaldehyde,74,33
+7net-mf-ompa / omat24,hydroxyl,42,21
+7net-mf-ompa / omat24,isobutane,123,33
+7net-mf-ompa / omat24,isobutene,153,33
+7net-mf-ompa / omat24,isoeugenol,48,8
+7net-mf-ompa / omat24,isopentane,173,33
+7net-mf-ompa / omat24,isoprene,183,33
+7net-mf-ompa / omat24,isopropanol,255,33
+7net-mf-ompa / omat24,itaconic_acid,183,33
+7net-mf-ompa / omat24,lactic_acid,153,33
+7net-mf-ompa / omat24,levoglucosan,173,33
+7net-mf-ompa / omat24,levulinic_acid,182,33
+7net-mf-ompa / omat24,malic_acid,123,33
+7net-mf-ompa / omat24,malonic_acid,123,33
+7net-mf-ompa / omat24,methane,191,33
+7net-mf-ompa / omat24,methanol,133,33
+7net-mf-ompa / omat24,methoxy,42,21
+7net-mf-ompa / omat24,methyl_formate,73,33
+7net-mf-ompa / omat24,methylcyclopentenolone,172,33
+7net-mf-ompa / omat24,methylethylketone,120,33
+7net-mf-ompa / omat24,methylmethacrylate,183,33
+7net-mf-ompa / omat24,muconic_acid,172,33
+7net-mf-ompa / omat24,naphthalene,42,7
+7net-mf-ompa / omat24,octane,42,7
+7net-mf-ompa / omat24,octene,73,33
+7net-mf-ompa / omat24,oxalic_acid,73,33
+7net-mf-ompa / omat24,pentane,171,33
+7net-mf-ompa / omat24,pentanol,172,33
+7net-mf-ompa / omat24,phenol,181,33
+7net-mf-ompa / omat24,propanal,120,33
+7net-mf-ompa / omat24,propane,258,33
+7net-mf-ompa / omat24,propanol,258,33
+7net-mf-ompa / omat24,propene,258,33
+7net-mf-ompa / omat24,propionic_acid,153,33
+7net-mf-ompa / omat24,propyl_syringol,42,7
+7net-mf-ompa / omat24,pyrrole,120,33
+7net-mf-ompa / omat24,pyruvic_acid,153,33
+7net-mf-ompa / omat24,sorbitol,190,33
+7net-mf-ompa / omat24,styrene,42,7
+7net-mf-ompa / omat24,succinic_acid,120,33
+7net-mf-ompa / omat24,syringaldehyde,42,7
+7net-mf-ompa / omat24,syringol,42,7
+7net-mf-ompa / omat24,tartaric_acid,120,33
+7net-mf-ompa / omat24,thiophene,120,33
+7net-mf-ompa / omat24,toluene,183,33
+7net-mf-ompa / omat24,valeraldehyde,172,33
+7net-mf-ompa / omat24,valeric_acid,183,33
+7net-mf-ompa / omat24,vanillin,42,7
+7net-mf-ompa / omat24,xylene,42,7
+7net-mf-ompa / omat24,xylitol,172,33
+7net-omni / matpes_r2scan,NH3,15,5
+7net-omni / matpes_r2scan,O2,15,5
+7net-omni / matpes_r2scan,acetaldehyde,15,5
+7net-omni / matpes_r2scan,ethanol,15,5
+7net-omni / matpes_r2scan,formate,15,5
+7net-omni / matpes_r2scan,formic_acid,15,5
+7net-omni / matpes_r2scan,furfural,15,5
+7net-omni / matpes_r2scan,glycerol,15,5
+7net-omni / matpes_r2scan,guaiacol,15,5
+7net-omni / matpes_r2scan,methane,15,5
+7net-omni / matpes_r2scan,methanol,15,5
+7net-omni / matpes_r2scan,propanol,15,5
+7net-omni / matpes_r2scan,sorbitol,15,5
+MatterSim/5m,"1,6-anhydroglucofuranose",48,8
+MatterSim/5m,1-butanol,48,8
+MatterSim/5m,1-butene,114,19
+MatterSim/5m,1-pentene,114,19
+MatterSim/5m,2-butanol,48,8
+MatterSim/5m,2-butene,48,8
+MatterSim/5m,2-ethylphenol,48,8
+MatterSim/5m,2-furanone,48,8
+MatterSim/5m,2-heptanone,48,8
+MatterSim/5m,2-hexanone,48,8
+MatterSim/5m,2-pentanone,114,19
+MatterSim/5m,3-MTHF,114,19
+MatterSim/5m,3-hydroxypropionic_acid,114,19
+MatterSim/5m,4-methylguaiacol,48,8
+MatterSim/5m,5-HMF,114,19
+MatterSim/5m,5-heptanone,114,19
+MatterSim/5m,5-methylfurfural,48,8
+MatterSim/5m,CH2,24,8
+MatterSim/5m,CH3,24,8
+MatterSim/5m,CO,57,19
+MatterSim/5m,CO2,165,28
+MatterSim/5m,D-fructofuranose,48,8
+MatterSim/5m,D-xylopyranose,48,8
+MatterSim/5m,DME,57,19
+MatterSim/5m,DMSO,24,8
+MatterSim/5m,H2,24,8
+MatterSim/5m,H2O,57,19
+MatterSim/5m,H2S,24,8
+MatterSim/5m,HCO,24,8
+MatterSim/5m,N2,24,8
+MatterSim/5m,NH3,24,8
+MatterSim/5m,NO,24,8
+MatterSim/5m,NO2,24,8
+MatterSim/5m,O2,24,8
+MatterSim/5m,SO2,24,8
+MatterSim/5m,THF,48,8
+MatterSim/5m,acetal,48,8
+MatterSim/5m,acetaldehyde,57,19
+MatterSim/5m,acetic_acid,57,19
+MatterSim/5m,acetone,48,8
+MatterSim/5m,acetophenone,48,8
+MatterSim/5m,alpha-D-glucopyranose,48,8
+MatterSim/5m,angelica_lactone,48,8
+MatterSim/5m,aniline,48,8
+MatterSim/5m,benzaldehyde,48,8
+MatterSim/5m,benzene,114,19
+MatterSim/5m,butadiene,114,19
+MatterSim/5m,butanal,48,8
+MatterSim/5m,butane,48,8
+MatterSim/5m,butyric_acid,114,19
+MatterSim/5m,caproic_acid,114,19
+MatterSim/5m,carbonate,24,8
+MatterSim/5m,citric_acid,48,8
+MatterSim/5m,cyclobutanone,48,8
+MatterSim/5m,cyclohexanone,48,8
+MatterSim/5m,cyclopentanone,114,19
+MatterSim/5m,diethyl_ether,48,8
+MatterSim/5m,dimethyl_succinate,48,8
+MatterSim/5m,ethane,165,28
+MatterSim/5m,ethanol,165,28
+MatterSim/5m,ethene,219,28
+MatterSim/5m,ethyl_acetate,48,8
+MatterSim/5m,ethylene_glycol,24,8
+MatterSim/5m,eugenol,48,8
+MatterSim/5m,formaldehyde,24,8
+MatterSim/5m,formate,24,8
+MatterSim/5m,formic_acid,54,18
+MatterSim/5m,furan,48,8
+MatterSim/5m,furfural,108,18
+MatterSim/5m,furfuryl_alcohol,48,8
+MatterSim/5m,gamma_butyrolactone,48,8
+MatterSim/5m,gamma_valerolactone,48,8
+MatterSim/5m,gluconic_acid,48,8
+MatterSim/5m,glutaric_acid,48,8
+MatterSim/5m,glycerol,216,27
+MatterSim/5m,glycolic_acid,24,8
+MatterSim/5m,glyoxal,24,8
+MatterSim/5m,guaiacol,48,8
+MatterSim/5m,heptane,48,8
+MatterSim/5m,heptene,24,8
+MatterSim/5m,hexanal,48,8
+MatterSim/5m,hexane,48,8
+MatterSim/5m,hexene,24,8
+MatterSim/5m,hydroquinone,48,8
+MatterSim/5m,hydroxyacetaldehyde,24,8
+MatterSim/5m,isobutane,48,8
+MatterSim/5m,isobutene,108,18
+MatterSim/5m,isoeugenol,48,8
+MatterSim/5m,isopentane,48,8
+MatterSim/5m,isoprene,108,18
+MatterSim/5m,isopropanol,216,27
+MatterSim/5m,itaconic_acid,108,18
+MatterSim/5m,lactic_acid,108,18
+MatterSim/5m,levoglucosan,48,8
+MatterSim/5m,levulinic_acid,48,8
+MatterSim/5m,malic_acid,48,8
+MatterSim/5m,malonic_acid,42,7
+MatterSim/5m,methane,45,8
+MatterSim/5m,methanol,54,18
+MatterSim/5m,methyl_formate,21,7
+MatterSim/5m,methylcyclopentenolone,42,7
+MatterSim/5m,methylethylketone,42,7
+MatterSim/5m,methylmethacrylate,108,18
+MatterSim/5m,muconic_acid,42,7
+MatterSim/5m,naphthalene,42,7
+MatterSim/5m,octane,42,7
+MatterSim/5m,octene,21,7
+MatterSim/5m,oxalic_acid,21,7
+MatterSim/5m,pentane,42,7
+MatterSim/5m,pentanol,42,7
+MatterSim/5m,phenol,42,7
+MatterSim/5m,propanal,42,7
+MatterSim/5m,propane,216,27
+MatterSim/5m,propanol,216,27
+MatterSim/5m,propene,216,27
+MatterSim/5m,propionic_acid,108,18
+MatterSim/5m,propyl_syringol,42,7
+MatterSim/5m,pyrrole,42,7
+MatterSim/5m,pyruvic_acid,108,18
+MatterSim/5m,sorbitol,42,7
+MatterSim/5m,styrene,42,7
+MatterSim/5m,succinic_acid,42,7
+MatterSim/5m,syringaldehyde,42,7
+MatterSim/5m,syringol,42,7
+MatterSim/5m,tartaric_acid,42,7
+MatterSim/5m,thiophene,42,7
+MatterSim/5m,toluene,108,18
+MatterSim/5m,valeraldehyde,42,7
+MatterSim/5m,valeric_acid,108,18
+MatterSim/5m,vanillin,42,7
+MatterSim/5m,xylene,42,7
+MatterSim/5m,xylitol,42,7

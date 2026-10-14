@@ -1,0 +1,4 @@
+model,slab_types,molecule_identities,slab_molecule_systems,seed_run_records,complex_convergence_supported_runs,reported_completed_only_runs,unverified_runs,observed_clusters
+7net-mf-ompa / omat24,33,146,4317,19071,19057,14,0,kestrel;perlmutter
+7net-omni / matpes_r2scan,5,13,65,195,195,0,0,kestrel;perlmutter
+MatterSim/5m,28,132,1512,8421,8421,0,0,kestrel
